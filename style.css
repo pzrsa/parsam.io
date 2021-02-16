@@ -23,10 +23,14 @@ a:hover{
     text-decoration: underline;
 }
 .nav-bar {
-    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 .nav-link {
+    color: #333;
     display: inline;
+    text-decoration: none;
+}
+.nav-link:hover{
+    text-decoration: underline;
 }
