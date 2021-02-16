@@ -17,7 +17,7 @@ a:hover{
 }
 .name-logo{
     text-decoration: none;
-    color: #333;
+    color: blue;
 }
 .name-logo:hover {
     text-decoration: underline;
