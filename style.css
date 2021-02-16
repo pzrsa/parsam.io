@@ -1,0 +1,24 @@
+body{
+    max-width:40em;
+    margin:0 auto;
+    padding:5px;
+    font-family:'Inter', sans-serif;
+    font-size:20px;
+    line-height:30px;
+    color:#333;
+    background-color: #fff;
+}
+a {
+    color: #24a7ff;
+    text-decoration: underline;
+}
+a:hover{
+    text-decoration: none;
+}
+.name-logo{
+    text-decoration: none;
+    color: #333
+}
+.name-logo:hover {
+    text-decoration: underline;
+}
