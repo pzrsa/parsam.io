@@ -22,3 +22,11 @@ a:hover{
 .name-logo:hover {
     text-decoration: underline;
 }
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-link {
+    display: inline;
+}
