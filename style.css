@@ -15,15 +15,25 @@ a {
 a:hover{
     text-decoration: underline;
 }
-.name-logo{
+.nav-logo{
+    text-align: center;
     font-size: 48px;
     text-decoration: none;
     color: #333
 }
-.name-logo:hover {
-    text-decoration: underline;
+.welcome-header{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
-.nav-bar {
-    margin: 0;
-    padding: 0;
+.section-header {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.info-date{
+    font-size: 14px;
+}
+.post-title{
+    margin-bottom: -15px;
 }
