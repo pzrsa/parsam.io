@@ -21,10 +21,9 @@ a {
 a:hover{
     text-decoration: underline;
 }
-.name-logo{
-    font-size: 48px;
-    text-decoration: none;
-    color: #333
+#masthead a{
+    color: #333;
+    font-size: 50px;
 }
 .welcome-header{
     margin-top: 30px;
