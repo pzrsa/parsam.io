@@ -33,9 +33,14 @@ a:hover{
     margin-top: 70px;
     margin-bottom: 50px;
 }
-.info-date{
-    font-size: 14px;
-}
 .post-title{
-    margin-bottom: -15px;
+    margin-bottom: -10px;
+}
+.info-date{
+    font-size: 16px;
+    margin-bottom: -10px;
+}
+
+.post-summary {
+    padding-bottom: 10px;
 }
