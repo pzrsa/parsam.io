@@ -1,3 +1,9 @@
+head {
+    display: none;
+}
+html {
+    display: block;
+}
 body{
     max-width:40em;
     margin:0 auto;
@@ -15,19 +21,16 @@ a {
 a:hover{
     text-decoration: underline;
 }
-.nav-logo{
-    text-align: center;
+.name-logo{
     font-size: 48px;
     text-decoration: none;
     color: #333
 }
 .welcome-header{
-    text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
 }
 .section-header {
-    text-align: center;
     margin-top: 70px;
     margin-bottom: 50px;
 }
