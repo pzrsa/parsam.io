@@ -17,6 +17,28 @@ body {
 	background-color: #fff;
 }
 
+#home {
+	max-width: 40em;
+	margin: 0 auto;
+	padding: 5px;
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+	color: #333;
+	background-color: #fff;
+}
+
+#shoe-dog {
+	max-width: 40em;
+	margin: 0 auto;
+	padding: 5px;
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+	color: #333;
+	background-color: #fff;
+}
+
 a {
 	color: #24a7ff;
 	text-decoration: none;
@@ -74,6 +96,10 @@ a:hover {
 }
 
 @media(prefers-color-scheme:dark) {
+	#home {
+		background-color: #333;
+		color: #ebebeb
+	}
 	body {
 		background-color: #333;
 		color: #ebebeb
