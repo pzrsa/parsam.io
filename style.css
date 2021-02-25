@@ -1,82 +1,90 @@
 head {
-    display: none;
-}
-html {
-    display: block;
-}
-body{
-    max-width:40em;
-    margin:0 auto;
-    padding:5px;
-    font-family:'Inter', sans-serif;
-    font-size:20px;
-    line-height:30px;
-    color:#333;
-    background-color: #fff;
-}
-a {
-    color: #24a7ff;
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: underline;
-}
-#masthead a{
-    line-height: 45px;
-    color: #333;
-    font-size: 50px;
-}
-.welcome-header{
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-.section-header {
-    margin-top: 70px;
-    margin-bottom: 50px;
-}
-.post-title {
-    margin-bottom: -10px;
+	display: none;
 }
 
-.info-date{
-    margin-bottom: -12px;
-    font-size: 16px;
+html {
+	display: block;
+}
+
+body {
+	max-width: 40em;
+	margin: 0 auto;
+	padding: 5px;
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+	color: #333;
+	background-color: #fff;
+}
+
+a {
+	color: #24a7ff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#masthead a {
+	line-height: 45px;
+	color: #333;
+	font-size: 50px;
+}
+
+.welcome-header {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.section-header {
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+
+.post-title {
+	margin-bottom: -10px;
+}
+
+.info-date {
+	margin-bottom: -12px;
+	font-size: 16px;
 }
 
 .post-summary {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
-@media screen and (max-width: 440px){
-	section#masthead h1{
-		font-size:2em
+
+@media screen and (max-width: 440px) {
+	section#masthead h1 {
+		font-size: 2em
 	}
-	div.presentation_summary img{
-		display:block
-	}
-}
-@media screen and (min-width: 440px){
-	section#masthead h1{
-		font-size:3em
-	}
-	div.presentation_summary img{
-		float:right
+	div.presentation_summary img {
+		display: block
 	}
 }
-@media(prefers-color-scheme:dark){
-	body{
-		background-color:#333;
-		color:#ccc
+
+@media screen and (min-width: 440px) {
+	section#masthead h1 {
+		font-size: 3em
 	}
-	a{
-		color:#88f
+	div.presentation_summary img {
+		float: right
 	}
-	a:visited{
-		color:#aaf
+}
+
+@media(prefers-color-scheme:dark) {
+	body {
+		background-color: #333;
+		color: #ebebeb
 	}
-	.response{
-		background-color:#444
+	a {
+		color: #24a7ff
 	}
-	h1,h1 a,h2,h2 a,h3,h3 a,section#masthead h1 a{
-		color:#080
+	.response {
+		background-color: #333
+	}
+	h1, h1 a, h2, h2 a, h3, h3 a, section#masthead h1 a {
+		color: #6A5ACD
 	}
 }
