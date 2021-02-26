@@ -96,6 +96,10 @@ a:hover {
 }
 
 @media(prefers-color-scheme:dark) {
+	#shoe-dog {
+		background-color: #333;
+		color: #ebebeb
+	}
 	#home {
 		background-color: #333;
 		color: #ebebeb
