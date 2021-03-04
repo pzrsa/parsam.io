@@ -59,7 +59,14 @@ a:hover {
 .post-page-title {
 	text-align: center;
 	line-height: normal;
+	margin-bottom: 100px;
 }
+
+.book-cover {
+	width: 420px;
+	margin: 0 auto;
+}
+
 
 @media screen and (max-width: 440px) {
 	section#masthead h1 {
