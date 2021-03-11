@@ -63,9 +63,8 @@ a:hover {
 
 .book-cover {
 	width: 100%;
-  height: auto;
+	height: auto;
 }
-
 
 @media screen and (max-width: 440px) {
 	section#masthead h1 {
@@ -75,7 +74,6 @@ a:hover {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
-	
 }
 
 @media screen and (min-width: 440px) {
@@ -86,7 +84,6 @@ a:hover {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
-	
 }
 
 @media(prefers-color-scheme:dark) {
@@ -97,7 +94,6 @@ a:hover {
 	a {
 		color: #40C2DC
 	}
-
 	h1, h1 a, h2, h2 a, h3, section#masthead h1 a {
 		color: #ebebeb
 	}
