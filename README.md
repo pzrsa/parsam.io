@@ -1,5 +1,5 @@
-# Welcome to my personal website!
+# Welcome to my personal website
 
-If you're interested to visit it, simply go to this URL: https://www.parsamesgarha.com
+If you're interested to visit it, simply go to this URL: https://parsamesgarha.com
 
 Enjoy!
