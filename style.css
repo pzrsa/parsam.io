@@ -35,6 +35,7 @@ a:hover {
 .welcome-header {
 	margin-top: 30px;
 	margin-bottom: 50px;
+	line-height: normal;
 }
 
 .section-header {
