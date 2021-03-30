@@ -29,7 +29,6 @@ a:hover {
 #masthead h1 a{
 	line-height: normal;
 	color: #333;
-	font-size: 55px;
 }
 
 .welcome-header {
@@ -81,7 +80,7 @@ a:hover {
 
 @media screen and (max-width: 440px) {
 	header#masthead h1 a {
-		font-size: 1em
+		font-size: 1.5em
 	}
 	body {
 		padding-left: 5%;
@@ -94,7 +93,7 @@ a:hover {
 
 @media screen and (min-width: 440px) {
 	header#masthead h1 a {
-		font-size: 3em
+		font-size: 2em
 	}
 	body {
 		padding-left: 5%;
