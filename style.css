@@ -26,10 +26,10 @@ a:hover {
 	text-decoration: underline;
 }
 
-#masthead a {
+#masthead h1 a{
 	line-height: normal;
 	color: #333;
-	font-size: 50px;
+	font-size: 55px;
 }
 
 .welcome-header {
@@ -80,7 +80,7 @@ a:hover {
 }
 
 @media screen and (max-width: 440px) {
-	section#masthead h1 {
+	header#masthead h1 a {
 		font-size: 2em
 	}
 	body {
@@ -90,7 +90,7 @@ a:hover {
 }
 
 @media screen and (min-width: 440px) {
-	section#masthead h1 {
+	header#masthead h1 {
 		font-size: 3em
 	}
 	body {
@@ -107,7 +107,7 @@ a:hover {
 	a {
 		color: #40C2DC
 	}
-	h1, h1 a, h2, h2 a, h3, section#masthead h1 a {
+	h1, h1 a, h2, h2 a, h3, #masthead h1 a {
 		color: #ebebeb
 	}
 }
