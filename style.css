@@ -81,16 +81,19 @@ a:hover {
 
 @media screen and (max-width: 440px) {
 	header#masthead h1 a {
-		font-size: 2em
+		font-size: 1em
 	}
 	body {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
+	.welcome-header {
+		font-size: 38px;
+	}
 }
 
 @media screen and (min-width: 440px) {
-	header#masthead h1 {
+	header#masthead h1 a {
 		font-size: 3em
 	}
 	body {
