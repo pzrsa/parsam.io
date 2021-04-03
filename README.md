@@ -1,5 +1,9 @@
-# Welcome to my personal website
+# This is my Personal Blog.
 
-If you're interested to visit it, simply go to this URL: https://parsamesgarha.com
+I like to write notes on various books, providing summaries on them for others to get a rough understanding of what the it's about.
 
-Enjoy!
+I'm also planning on writing articles on topics like Tech, Entrepreneurship and maybe even on Lifestyle.
+
+I hope you find it useful, please check it out at: 
+
+https://parsamesgarha.com/
