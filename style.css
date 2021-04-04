@@ -17,7 +17,7 @@ body {
 	background-color: #fff;
 }
 
-body h1 h2 h3 h4 h5 h6{
+body h1 h2 h3 h4 h5 h6 {
 	line-height: normal;
 }
 
@@ -30,20 +30,22 @@ a:hover {
 	text-decoration: underline;
 }
 
-#masthead h1 a{
+#masthead h1, #masthead h1 a {
 	line-height: normal;
+	margin-top: 10px;
 	color: #333;
+	margin-bottom: 10px;
 }
 
 .welcome-header {
 	margin-top: 30px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	line-height: normal;
 }
 
 .section-header {
-	margin-top: 70px;
-	margin-bottom: 50px;
+	margin-top: 40px;
+	margin-bottom: 30px;
 	line-height: normal;
 }
 
@@ -51,20 +53,9 @@ a:hover {
 	margin-bottom: -10px;
 }
 
-.button {
-	background-color: whitesmoke;
-	border: none;
-	border-radius: 8px;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 25px;
-}
-
 .info-date {
 	margin-bottom: -12px;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .post-summary {
@@ -82,6 +73,14 @@ a:hover {
 	height: auto;
 }
 
+.social {
+	margin-top: 25px;
+}
+
+.social img {
+	height: 40px;
+}
+
 @media screen and (max-width: 440px) {
 	header#masthead h1 a {
 		font-size: 1.5em
@@ -96,7 +95,7 @@ a:hover {
 }
 
 @media screen and (min-width: 440px) {
-	header#masthead h1 a {
+	#masthead h1 a {
 		font-size: 1.5em
 	}
 	body {
