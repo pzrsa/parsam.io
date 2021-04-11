@@ -86,8 +86,8 @@ a:hover {
 		font-size: 1em
 	}
 	body {
-		padding-left: 5%;
-		padding-right: 5%;
+		padding-left: 4%;
+		padding-right: 4%;
 	}
 	.welcome-header {
 		font-size: 38px;
@@ -97,10 +97,6 @@ a:hover {
 @media screen and (min-width: 440px) {
 	#masthead h1 a {
 		font-size: 1.5em
-	}
-	body {
-		padding-left: 5%;
-		padding-right: 5%;
 	}
 }
 
