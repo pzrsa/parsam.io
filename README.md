@@ -1,11 +1,11 @@
-# This is my Personal Blog.
+# parsamesgarha.com
 
-I like to write notes on various books, providing summaries on them for others to get a rough understanding of what its about.
+Its powered by plain HTML5/CSS3 (probably quite obvious), and hosted through GitHub Pages.
 
-I'm also planning on writing articles on some topics like Tech, Entrepreneurship, Programming (obviously) and maybe even on Lifestyle.
+I write notes on various books, providing summaries on them for others to get a rough understanding of what they're about.
 
-I hope you find it useful, please check it out at:
+I'm also planning on writing posts on things like living a better life, money, startups, and programming.
+
+I hope you find my site useful, please check it out at:
 
 https://parsamesgarha.com/
-
-Thank you!
