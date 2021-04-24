@@ -1,6 +1,6 @@
 # parsamesgarha.com
 
-Its powered by plain HTML5/CSS3 (probably quite obvious), and hosted through GitHub Pages.
+Its powered by Jekyll and hosted through GitHub Pages. However there is no theme used, just plain CSS.
 
 I write notes on various books, providing summaries on them for others to get a rough understanding of what they're about.
 
