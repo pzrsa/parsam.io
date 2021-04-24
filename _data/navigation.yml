@@ -1,0 +1,14 @@
+- name: /home
+  link: /
+
+- name: /notes
+  link: /notes
+
+- name: /articles
+  link: /articles
+
+- name: /about
+  link: /about
+
+
+

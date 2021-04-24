@@ -1,0 +1,27 @@
+url: http://parsamesgarha.com/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /:categories/:title
+
+  -
+    scope:
+      path: "_posts/notes"
+      type: "posts"
+    values:
+      layout: "post"
+      category: notes
+  -
+    scope:
+      path: "_posts/articles"
+      type: "posts"
+    values:
+      layout: "post"
+      category: articles
+
+  

@@ -1,2 +1,3 @@
 .DS_Store
-templates
+.sass-cache
+.jekyll-cache
