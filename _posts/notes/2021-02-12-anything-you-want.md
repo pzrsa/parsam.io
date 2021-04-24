@@ -1,5 +1,5 @@
 ---
-book-author: Derek Sivers
+author: Derek Sivers
 description: Sivers didn't need a business plan, and neither do you. You don't need to think big; in fact, it's better if you don't. Anything You Want will inspire you to start with what you have, care about your customers more than yourself, and run your business like you don't need the money.
 ---
 
