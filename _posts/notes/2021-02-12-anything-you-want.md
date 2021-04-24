@@ -14,7 +14,8 @@ description: Sivers didn't need a business plan, and neither do you. You don't n
 Gave me so much insight on someone who ran a business all by himself without all the fluff and nonsense in a book. I was pretty engaged reading it in an hour and learning about his thought process while creating this hobby that turned into a business. One message that was being portrayed throughout it was that we should not be too worried about making a quick buck in business. Think long term and enjoy the ride. The more your business makes the more problems.
 
 # How I Discovered It
-I stumbled across it by a YouTuber named Ali Abdaal. I saw why not just read it since its only around 90 pages lol. Really glad I took the small amount of time to do so as it provided me with a clean perspective about running a successful company.
+
+I stumbled across it by a YouTuber called [Ali Abdaal](https://youtu.be/hv1gOEY3cs4). I saw why not just read it since its only around 90 pages lol. Really glad I took the small amount of time to do so as it provided me with a clean perspective about running a successful company.
 
 
 # Who Should Read It?
