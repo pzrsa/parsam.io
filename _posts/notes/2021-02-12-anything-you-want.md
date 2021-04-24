@@ -15,7 +15,7 @@ Gave me so much insight on someone who ran a business all by himself without all
 
 # How I Discovered It
 
-I stumbled across it by a YouTuber called [Ali Abdaal](https://youtu.be/hv1gOEY3cs4). I saw why not just read it since its only around 90 pages lol. Really glad I took the small amount of time to do so as it provided me with a clean perspective about running a successful company.
+I stumbled across it by a YouTuber called [Ali Abdaal](https://youtu.be/hv1gOEY3cs4){:target="_blank"}. I saw why not just read it since its only around 90 pages lol. Really glad I took the small amount of time to do so as it provided me with a clean perspective about running a successful company.
 
 
 # Who Should Read It?
