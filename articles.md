@@ -5,7 +5,7 @@ title: Articles
 
 # Articles
 
-<ul>
+<ul class="no-bullets">
     {% for post in site.posts %}
     {% if post.category == "articles" %}
     <li>

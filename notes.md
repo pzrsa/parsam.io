@@ -5,7 +5,7 @@ title: Notes
 
 # Book Notes
 
-<ul>
+<ul class="no-bullets">
     {% for post in site.posts %}
     {% if post.category == "notes" %}
     <li>

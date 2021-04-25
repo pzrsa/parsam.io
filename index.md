@@ -2,9 +2,9 @@
 layout: default
 title: Home
 ---
-# [Parsa Mesgarha](/)
+# Hi, I'm Parsa.
 
-P.S I'm currently doing a complete reconstruction of my website, so if you see anything weird, don't worry I have it under control. Still need to style the site as I literally have like 10 lines of code written for that.
+Btw I'm currently doing a complete reconstruction of my website, so if you see anything weird, don't worry I have it under control. Still need to style the site as I literally have like 10 lines of code written for that.
 
 My posts are still up and I even (finally) created an about page.
 
