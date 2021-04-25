@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 
-# About page
+# About Me
 
 Hey there, I'm a 17 year old from London in my final year of College studying Information Technology.
 
