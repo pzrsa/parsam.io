@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Notes
+title: Book Notes
 ---
 
 # Book Notes

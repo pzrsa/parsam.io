@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Parsa Mesgarha
 ---
 # Hi, I'm Parsa.
 
