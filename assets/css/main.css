@@ -16,6 +16,10 @@ body {
 	background-color: #fff;
 }
 
+h1, h2, h3 {
+	line-height: 40px;
+}
+
 nav a {
 	color: #333;
 	font-family: 'DM Mono', monospace;
