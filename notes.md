@@ -14,6 +14,7 @@ title: Book Notes
         {{ post.title }} - {{ post.author }}
         </a>
         </h2>
+        <h4>{{ post.date | date_to_string }}</h4>
         {{ post.description }}
     </li>
     {% endif %}
