@@ -9,7 +9,7 @@ title: Book Notes
     {% for post in site.posts %}
     {% if post.category == "notes" %}
     <li>
-        <h2>
+        <h2 class="post-title">
         <a href="{{ post.url }}">
         {{ post.title }} - {{ post.author }}
         </a>
