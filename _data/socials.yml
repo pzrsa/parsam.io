@@ -1,8 +1,8 @@
-- site: twitter
+- name: /twitter
   link: https://twitter.com/parsamesgarha
 
-- site: github
+- name: /github
   link: https://github.com/pzrsa
-  
-- site: linkedin
+
+- name: /linkedin
   link: https://www.linkedin.com/in/parsamesgarha/

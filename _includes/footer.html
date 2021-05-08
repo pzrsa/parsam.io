@@ -1,4 +1,9 @@
 <footer>
 
-    
+    {% for item in site.data.socials %}
+    <a target="_blank" href="{{ item.link }}">
+        {{ item.name }}
+    </a>
+    {% endfor %}
+
 </footer>
