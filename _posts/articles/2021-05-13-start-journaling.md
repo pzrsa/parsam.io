@@ -24,7 +24,7 @@ Anyways, my process with journaling is really simple. I don't like having to typ
 To save you time, I'll just give you a step by step on what you should do:
 
 1. Sign up for a free [Notion account](https://www.notion.so/personal){:target="\_blank"} if you don't have one already.
-2. I made a template on everything you need to get started, and its pretty much the exact same one I use. Head over to the link of the template and have a look around to get an idea of how it works.
+2. I made a template on everything you need to get started, and its pretty much the exact same one I use. Head over to [this link of the template](https://www.notion.so/parsamesgarha/98117e3cf962417381f710707ef6df80?v=e3e2396d3ffe4c4a81704debd8b72b46){:target="\_blank"} and have a look around to get an idea of how it works.
 3. If you're happy to use it, then simply hit Duplicate on the top right (make sure you're logged in). It will then (you guessed it) duplicate the entire page into your own account.
 4. I put in an example of how it would work, I tend to just write a bit sloppy in my journal but for the templates purpose I had to write a bit more for it to look nice.
 5. Now just get started with it, no matter what time it is for you, press the blue "New" button and select the premade template for you to journal in.
