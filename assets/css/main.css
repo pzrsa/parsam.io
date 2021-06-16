@@ -24,6 +24,14 @@ h4 {
   margin-bottom: 5px;
 }
 
+#name {
+  color: #333;
+  font-size: 37px;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
 nav a {
   color: #333;
   font-family: "DM Mono", monospace;
@@ -80,11 +88,14 @@ img {
   .post-title a {
     color: #ebebeb;
   }
-}
+  #name {
+    color: #ebebeb;
+  }
 
-@media screen and (max-width: 440px) {
-  body {
-    padding-left: 5px;
-    padding-right: 5px;
+  @media screen and (max-width: 440px) {
+    body {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
   }
 }

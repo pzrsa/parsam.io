@@ -1,6 +1,3 @@
-- name: /root
-  link: /
-
 - name: /notes
   link: /notes
 
@@ -9,6 +6,3 @@
 
 - name: /about
   link: /about
-
-
-
