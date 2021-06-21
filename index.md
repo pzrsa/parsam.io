@@ -10,7 +10,7 @@ I'm a 17 year old based in London, and I'm keen on learning deeply on topics lik
 
 I've just finished my final year of college, so I'll be putting more time and effort into writing on my website and also making YouTube videos.
 
-My website is where I write notes on various books, providing summaries on them for others to get a rough understanding of what they're about. On top of that, I write articles on topics revolving around living a better life, but also planning on doing more programming related stuff, like explaining my projects.
+My website is where I write [notes](/notes) on various books, providing summaries on them for others to get a rough understanding of what they're about. On top of that, I write articles on topics revolving around living a better life, but also planning on doing more programming related stuff, like explaining my projects.
 
 ## Me in much more than 15 seconds
 
