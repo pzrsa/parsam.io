@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&display=swap");
+
 html {
   font-family: "DM Sans", sans-serif;
 }
@@ -9,7 +12,7 @@ body {
   font-size: 20.5px;
   line-height: 30px;
   color: #333;
-  background-color: #fffaee;
+  background-color: #fff;
 }
 
 h1,
@@ -77,19 +80,19 @@ img {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #333;
-    color: #ebebeb;
+    color: #fff;
   }
 
   nav a,
   footer a {
-    color: #ebebeb;
+    color: #fff;
   }
 
   .post-title a {
-    color: #ebebeb;
+    color: #fff;
   }
   #name {
-    color: #ebebeb;
+    color: #fff;
   }
 
   @media screen and (max-width: 440px) {
