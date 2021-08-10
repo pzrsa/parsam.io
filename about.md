@@ -11,8 +11,4 @@ I'm not very "smart" on paper due to my previous lack of focus in class, but in 
 
 Anyways, I don't want to bore you any longer. I'm proud of myself for who I have become, and me just explaining might give some inspiration to show that anyone can set themselves up for a well rounded life. I'm not trying to say I'm successful, but a lot of things I'm doing are the right things to do at my age (what older people have told me who are doing pretty good in life). Its never too late to make a change and its also never too early. I'm well aware of how arrogant I sound whenever I talk about how I'm doing now, but honestly I'm just passionate about it and want to help.
 
-Please message me on [Twitter](https://twitter.com/parsamesgarha){:target="\_blank"} if you have ANY questions. The best advice I've received was through cold emailing some amazing people like [Derek Sivers](https://twitter.com/sivers){:target="\_blank"}, who literally convinced me to build this website from scratch instead of using a website builder.
-
-I would love to get to know you and also curious to know what you're doing with your life. I can provide some wisdom and also good material for you to take a look at.
-
 Thank you so much for reading this far, it truly means a lot.
