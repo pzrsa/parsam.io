@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 
 html {
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -27,7 +27,8 @@ h4 {
   margin-bottom: 5px;
 }
 
-#name {
+nav div#name a {
+  font-family: "Montserrat", sans-serif;
   color: #333;
   font-size: 37px;
   margin-top: 7px;
@@ -36,12 +37,12 @@ h4 {
 
 nav a {
   color: #333;
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 footer a {
   color: #333;
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 a {
@@ -79,6 +80,10 @@ img {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #333;
+    color: #fff;
+  }
+
+  nav div#name a {
     color: #fff;
   }
 
