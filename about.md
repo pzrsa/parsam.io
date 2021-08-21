@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Me
+permalink: /about
 ---
 
 I have a love for tech, startups and becoming a better version of myself. I was a really passionate gamer for almost half of my life, but put an end to that back in August 2020. My life has completely changed and now I do things I never even imagined doing before. Quitting has now unlocked this unseen part of my brain where I now am constantly curious about a lot of cool things.

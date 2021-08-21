@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Book Notes
+permalink: /notes
 ---
 
 <section class="posts">

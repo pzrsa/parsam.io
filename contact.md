@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact Me
+permalink: /contact
 ---
 
 Feel free to message me on [twitter](https://twitter.com/parsamesgarha){:target="\_blank"} if you wanna have a chat.
