@@ -172,12 +172,6 @@ header ul {
   font-variant-numeric: tabular-nums;
 }
 
-/* .post ul,
-.project ul,
-.post ol {
-  list-style-position: inside;
-} */
-
 main {
   display: flex;
   flex-wrap: wrap;
@@ -202,13 +196,16 @@ figcaption {
     display: inline;
     margin-right: 1rem;
   }
+
   .logo {
     padding-bottom: 1rem;
   }
+
   header ul {
     border-bottom: 1px solid #edf2f7;
     padding-bottom: 2rem;
   }
+
   nav ul {
     border-right: 0px;
   }
