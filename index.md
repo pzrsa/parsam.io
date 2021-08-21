@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: page
+title: ""
 ---
-
-<h1></h1>
 
 ## Me in 15 seconds (ish)
 
