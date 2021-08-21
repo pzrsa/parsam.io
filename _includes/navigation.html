@@ -1,9 +1,13 @@
-<nav>
-    <div id="name"><a href="/">Parsa Mesgarha</a></div>
-    {% for item in site.data.navigation %}
-    <a href="{{ item.url }}">
-        {{ item.title }}
+<header role="banner">
+    <h1 class="logo"><a href="/">Parsa</a></h1>
     </a>
-    {% endfor %}
-
-</nav>
+    <nav role="navigation">
+        <ul>
+            {% for item in site.data.navigation %}
+            <li>
+                <a href="{{ item.url }}">{{ item.title}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>
