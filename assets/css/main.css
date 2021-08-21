@@ -27,23 +27,36 @@ a {
   text-decoration: underline;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 pre {
   margin: 0.5rem 0;
   padding: 0.5rem;
 }
 
-.post p {
+.page p {
   margin: 0.5rem 0;
 }
 
-.post h1,
-.post h2,
-.post h3,
-.post h4 {
+.page h1,
+.page h2,
+.page h3,
+.page h4 {
   margin: 1rem 0;
 }
 
-.post h2:first-child,
+h4.author {
+  color: #6e6b6b;
+  margin-top: 0rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.page h2:first-child,
 .project h2:first-child,
 .photo h2:first-child {
   margin-top: 0;
