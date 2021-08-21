@@ -1,11 +1,11 @@
-- name: /twitter
-  link: https://twitter.com/parsamesgarha
+- title: Twitter
+  url: https://twitter.com/parsamesgarha
 
-- name: /github
-  link: https://github.com/pzrsa
+- title: GitHub
+  url: https://github.com/pzrsa
 
-- name: /linkedin
-  link: https://www.linkedin.com/in/parsamesgarha/
+- title: LinkedIn
+  url: https://www.linkedin.com/in/parsamesgarha/
 
-- name: /substack
-  link: https://parsamesgarha.substack.com/
+- title: Substack
+  url: https://parsamesgarha.substack.com/
