@@ -1,11 +1,11 @@
-- name: /notes
-  link: /notes
+- title: /notes
+  url: /notes
 
-- name: /articles
-  link: /articles
+- title: /articles
+  url: /articles
 
-- name: /about
-  link: /about
+- title: /about
+  url: /about
 
-- name: /contact
-  link: /contact
+- title: /contact
+  url: /contact

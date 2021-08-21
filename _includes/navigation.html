@@ -1,8 +1,8 @@
 <nav>
     <div id="name"><a href="/">Parsa Mesgarha</a></div>
     {% for item in site.data.navigation %}
-    <a href="{{ item.link }}">
-        {{ item.name }}
+    <a href="{{ item.url }}">
+        {{ item.title }}
     </a>
     {% endfor %}
 
