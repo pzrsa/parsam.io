@@ -9,27 +9,26 @@
     <meta name="description" content="Parsa Mesgarha's Website.">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
-    {% if page.title %}
+    {% if page.title == "" %}
     <title>
-        {{ page.title }} - Parsa Mesgarha
+        Parsa Mesgarha
     </title>
     {% else %}
     <title>
-        Parsa Mesgarha
+        {{ page.title }} - Parsa Mesgarha
     </title>
     {% endif %}
 </head>
 
-{% include navigation.html %}
-
-<hr>
-
 <body>
-    {{ content }}
+    <main role="main">
+
+        {% include navigation.html %}
+
+        {{ content }}
+
+    </main>
+
 </body>
-
-<hr>
-
-{% include footer.html %}
 
 </html>
