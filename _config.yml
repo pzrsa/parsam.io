@@ -7,27 +7,18 @@
 url: https://parsamesgarha.com/
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
       permalink: /:categories/:title
 
-  -
-    scope:
+  - scope:
       path: "_posts/notes"
-      type: "posts"
     values:
-      layout: "post"
       category: notes
-  -
-    scope:
+  - scope:
       path: "_posts/articles"
-      type: "posts"
     values:
-      layout: "post"
       category: articles
-
-  
