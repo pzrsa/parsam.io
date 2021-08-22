@@ -3,22 +3,22 @@ layout: page
 title: ""
 ---
 
-## Me in 15 seconds (ish)
+## 👋 Hi, I'm Parsa.
 
-I'm an 18 year old based in London. I'm keen on learning extensively on topics like tech, startups and life.
+I'm an 18 year old based in London. I'm keen on learning deeply about stuff like tech, startups and also living a good life.
 
-I've just finished my final year of college, so I'll be putting more time and effort into writing on my website and also making YouTube videos.
+I'm an [ex-gamer](https://www.youtube.com/c/prsaa){:target="\_blank"}, which is a surprise to most as that was my entire identity for most of my teen life. But, I still had some amazing times playing games with my friends. I genuinely don't think I could have been happier spending my time playing Call Of Duty (on console) and some other popular games (on PC).
 
-I'm currently figuring out what I want to do with my life going forward, especially now that I've turned 18. I might go to university for a degree in CS, or do something entrepreneurial early. Whatever I do, I know it'll be fine and there is nothing to worry about. Its the 21st century and there are millions of paths we can take, which is one thing I've started to notice.
+I spend the majority of my time now developing, mostly within the Python ecosystem. I've started programming at the beginning of 2021 and its completely changed my life. Right now I'm learning about JavaScript as I find myself to be interesting in that space of tech.
 
-Anyways, my website is where I write [notes](/notes) on various books, providing summaries and my overall verdict for others to get a rough understanding of what they're about. On top of that, I write [articles](/articles) on topics revolving around living a better life, but also planning on doing more programming related stuff, like explaining my projects.
+Anyways, my website is where I write [notes](/notes) on various books, providing summaries and my overall verdict for others to get a rough understanding of what they're about. On top of that, I write [articles](/articles) on topics revolving around living a better life.
 
-## Me in much more than 15 seconds
+If you don't want to miss out on any book notes I publish, subscribe to my [Substack](https://parsamesgarha.substack.com/){:target="\_blank"} so they land straight into your inbox.
 
-Head over to my [about](/about) page.
+## Interested to learn more?
 
-For a more professional tone, here is my current [resume](/assets/resume/resume.pdf){:target="\_blank"}.
+Feel free to have a look at my current [resume](/assets/resume/resume.pdf){:target="\_blank"}.
 
-## Miscellaneous stuff
+## My website
 
-If you're curious to know how this website looks under the hood, check out the repository over on [GitHub](https://github.com/pzrsa/pzrsa.github.io){:target="\_blank"}. I tend to keep my site simple and easy to use, since its much easier to maintain over the long term. My site is hosted on GitHub Pages which is a bonus for my static site.
+If you're curious to know how this website looks under the hood, check out the repository over on [GitHub](https://github.com/pzrsa/pzrsa.github.io){:target="\_blank"}. I tend to keep my site minimal and easy to navigate, since its much easier to maintain over the long term. My site is hosted on [GitHub Pages](https://pages.github.com/){:target="\_blank"}, which is a bonus for my static site.
