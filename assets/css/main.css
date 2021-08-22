@@ -214,7 +214,7 @@ figcaption {
     padding-bottom: 1rem;
   }
 
-  header ul {
+  header ul#socials {
     border-bottom: 1px solid #edf2f7;
     padding-bottom: 2rem;
   }

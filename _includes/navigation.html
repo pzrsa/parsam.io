@@ -4,7 +4,15 @@
         <ul>
             {% for item in site.data.navigation %}
             <li>
-                <a href="{{ item.url }}" {% if item.url==page.url %} class="active" {% endif %}>{{ item.title}}</a>
+                <a href="{{ item.url }}" {% if item.url==page.url %} class="active" {% endif %}>{{ item.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <ul id="socials" style="margin-top: 2rem;">
+            {% for item in site.data.socials %}
+            <li>
+                <a href="{{ item.url }}" target="_blank"><img src="{{ item.logo }}" width="20" height="20" alt=""></a>
             </li>
             {% endfor %}
         </ul>
