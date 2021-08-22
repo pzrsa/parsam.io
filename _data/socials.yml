@@ -1,11 +1,11 @@
 - title: Twitter
   url: https://twitter.com/parsamesgarha
+  logo: /assets/images/icons/twitter.svg
 
 - title: GitHub
   url: https://github.com/pzrsa
+  logo: /assets/images/icons/github.svg
 
 - title: LinkedIn
   url: https://www.linkedin.com/in/parsamesgarha/
-
-- title: Substack
-  url: https://parsamesgarha.substack.com/
+  logo: /assets/images/icons/linkedin.svg
