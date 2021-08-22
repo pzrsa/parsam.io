@@ -7,7 +7,7 @@ title: ""
 
 I'm an 18 year old based in London. I'm keen on learning deeply about stuff like tech, startups and also living a good life.
 
-I'm an [ex-gamer](https://www.youtube.com/c/prsaa){:target="\_blank"}, which is a surprise to most as that was my entire identity for most of my teen life. But, I still had some amazing times playing games with my friends. I genuinely don't think I could have been happier spending my time playing Call Of Duty (on console) and some other popular games (on PC).
+I'm an [ex-gamer](https://www.youtube.com/c/prsaa){:target="\_blank"}, which is a surprise to new people I meet, but that was my entire identity for most of my teen life. Either way, I still had some amazing times playing games with my friends. I genuinely don't think I could have been happier spending my time playing Call of Duty (on console) and some other popular games ([on my custom built PC](/assets/images/built-pc.jpeg).)
 
 I spend the majority of my time now developing, mostly within the Python ecosystem. I've started programming at the beginning of 2021 and its completely changed my life. Right now I'm learning about JavaScript as I find myself to be interesting in that space of tech.
 
