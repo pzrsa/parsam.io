@@ -15,10 +15,6 @@ Anyways, my website is where I write [notes](/notes) on various books, providing
 
 If you don't want to miss out on any book notes I publish, subscribe to my [Substack](https://parsamesgarha.substack.com/){:target="\_blank"} so they land straight into your inbox.
 
-## Interested to learn more?
-
-Feel free to have a look at my current [resume](/assets/resume/resume.pdf){:target="\_blank"}.
-
-## My website
+## My site
 
 If you're curious to know how this website looks under the hood, check out the repository over on [GitHub](https://github.com/pzrsa/pzrsa.github.io){:target="\_blank"}. I tend to keep my site minimal and easy to navigate, since its much easier to maintain over the long term. My site is hosted on [GitHub Pages](https://pages.github.com/){:target="\_blank"}, which is a bonus for my static site.
