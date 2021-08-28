@@ -6,13 +6,13 @@
   url: https://github.com/pzrsa
   logo: /assets/images/icons/github.svg
 
-- title: Substack
-  url: https://parsamesgarha.substack.com/
-  logo: /assets/images/icons/substack.svg
+# - title: Substack
+#   url: https://parsamesgarha.substack.com/
+#   logo: /assets/images/icons/substack.svg
 
-- title: YouTube
-  url: https://www.youtube.com/channel/UCIIXFxDwjdQtIlf5or_DcwQ
-  logo: /assets/images/icons/youtube.svg
+# - title: YouTube
+#   url: https://www.youtube.com/channel/UCIIXFxDwjdQtIlf5or_DcwQ
+#   logo: /assets/images/icons/youtube.svg
 
 - title: LinkedIn
   url: https://www.linkedin.com/in/parsamesgarha/
