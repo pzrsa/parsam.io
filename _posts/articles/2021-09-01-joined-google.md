@@ -1,5 +1,5 @@
 ---
-title: So I joined Google!
+title: So I joined Google
 ---
 
 Hi, just wanted to make this short post sharing that I've joined Google as a Software Development/Engineering Apprentice!
