@@ -6,7 +6,7 @@ title: ""
 ## 👋 Hi, I'm Parsa.
 
 I'm an 18 year old based in London, currently a
-**Software Engineer Apprentice at <span style="color: #4285F4">G</span><span style="color: #DB4437">o</span><span style="color: #F4B400">o</span><span style="color: #4285F4">g</span><span style="color: #0F9D58">l</span><span style="color: #DB4437">e</span>**!
+**Software Development Apprentice at <span style="color: #4285F4">G</span><span style="color: #DB4437">o</span><span style="color: #F4B400">o</span><span style="color: #4285F4">g</span><span style="color: #0F9D58">l</span><span style="color: #DB4437">e</span>**!
 
 Keen on learning deeply about stuff like tech, startups, and life, I tend to spend the majority of my time learning through books, podcasts and other resources online.
 
