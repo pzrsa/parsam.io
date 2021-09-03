@@ -1,5 +1,5 @@
 <header role="banner">
-    <h1 class="logo"><a href="/">Parsa</a></h1></a>
+    <h1 class="logo"><a href="/">Parsa</a></h1>
     <nav role="navigation">
         <ul>
             {% for item in site.data.navigation %}
@@ -9,11 +9,10 @@
             {% endfor %}
         </ul>
 
-        <ul id="socials" style="margin-top: 2rem;">
+        <ul id="socials">
             {% for item in site.data.socials %}
             <li>
-                <a href="{{ item.url }}" target="_blank" rel="noreferrer"><img src="{{ item.logo }}" width="20"
-                        height="20" alt="{{ item.title }} Logo"></a>
+                <a href="{{ item.url }}" target="_blank" rel="noreferrer"><svg class="social-logo" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>{{ item.title }} Logo</title>{{ item.logo }}</svg></a>
             </li>
             {% endfor %}
         </ul>
