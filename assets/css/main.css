@@ -183,6 +183,15 @@ header ul {
   font-variant-numeric: tabular-nums;
 }
 
+header ul#socials {
+  margin-top: 2rem;
+}
+
+.social-logo {
+  width: 20px;
+  height: 20px;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
