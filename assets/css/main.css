@@ -211,6 +211,24 @@ section {
 figcaption {
   font-size: smaller;
 }
+
+@media (prefers-color-scheme: dark) {
+  *,
+  :after,
+  :before {
+    background-color: #111;
+    color: #fff;
+  }
+
+  nav ul {
+    border-right: 1px solid #20201f;
+  }
+
+  .social-logo {
+    fill: #fff;
+  }
+}
+
 @media screen and (max-width: 45rem) {
   header li {
     display: inline;
@@ -232,5 +250,12 @@ figcaption {
 
   .photos ul {
     margin-top: 0.5rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    header ul#socials {
+      border-bottom: 1px solid #20201f;
+      padding-bottom: 2rem;
+    }
   }
 }
