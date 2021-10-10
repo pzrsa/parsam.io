@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/76453314?v=4">
-    <meta name="description" content="Parsa Mesgarha's Website.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://avatars.githubusercontent.com/u/76453314?v=4"
+    />
+    <meta name="description" content="Parsa Mesgarha's Website." />
+    <!-- Facebook things  -->
+    <meta property="og:title" content="Parsa Mesgarha" />
+    <meta property="og:description" content="Parsa Mesgarha's site" />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/76453314?v=4"
+    />
+    <!-- Twitter things -->
+    <meta name="twitter:title" content="Parsa Mesgarha" />
+    <meta name="twitter:description" content="Parsa Mesgarha's site" />
+    <meta
+      name="twitter:image"
+      content="https://avatars.githubusercontent.com/u/76453314?v=4"
+    />
 
     {% if page.title == "" %}
-    <title>
-        Parsa Mesgarha
-    </title>
+    <title>Parsa Mesgarha</title>
     {% else %}
-    <title>
-        {{ page.title }} - Parsa Mesgarha
-    </title>
+    <title>{{ page.title }} - Parsa Mesgarha</title>
     {% endif %}
-</head>
+  </head>
 
-<body>
-    <main role="main">
-
-        {% include navigation.html %}
-
-        {{ content }}
-
-    </main>
-
-</body>
-
+  <body>
+    <main role="main">{% include navigation.html %} {{ content }}</main>
+  </body>
 </html>
