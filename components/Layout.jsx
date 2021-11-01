@@ -1,6 +1,6 @@
 import Head from "next/head";
 import utilStyles from "../styles/modules/Layout.module.css";
-import NavBar from "./NavBar";
+import Navbar from "./Navbar";
 
 export const siteTitle = "parsa";
 
@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="og:title" content={siteTitle} />
       </Head>
-      <NavBar />
+      <Navbar />
       <main>{children}</main>
     </div>
   );

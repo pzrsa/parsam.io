@@ -1,15 +1,25 @@
 import Link from "next/link";
 
-const NavBar = () => {
+const NavLink = ({ children, href }) => {
+  return (
+    <li>
+      <Link href={href}>
+        <a>{children}</a>
+      </Link>
+    </li>
+  );
+};
+
+const Navbar = () => {
   return (
     <nav>
-      <Link href="/">
-        <a>
+      <ul>
+        <NavLink href="/">
           <h1>parsa.</h1>
-        </a>
-      </Link>
+        </NavLink>
+      </ul>
     </nav>
   );
 };
 
-export default NavBar;
+export default Navbar;
