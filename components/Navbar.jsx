@@ -13,8 +13,8 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <NavLink href="/">Home</NavLink>
-      <NavLink href="/">Notes</NavLink>
-      <NavLink href="/">Writing</NavLink>
+      <NavLink href="/notes">Notes</NavLink>
+      <NavLink href="/writing">Writing</NavLink>
     </nav>
   );
 };
