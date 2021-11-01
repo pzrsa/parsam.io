@@ -15,7 +15,7 @@ const Home = () => {
           alt="Parsa"
         />
         <div className={styles.greeting}>
-          <h1 className={utilStyles.heading2Xl}>👋 Hey, I&apos;m Parsa.</h1>
+          <h1 className={utilStyles.heading2Xl}>👋 Hi, I&apos;m Parsa.</h1>
           <p className={utilStyles.lightText}>
             Software Development Apprentice at Google{" "}
           </p>
