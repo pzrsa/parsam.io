@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/modules/Home.module.css";
 import utilStyles from "../styles/utils.module.css";
@@ -5,6 +6,9 @@ import utilStyles from "../styles/utils.module.css";
 const Home = () => {
   return (
     <div>
+      <Head>
+        <title>Parsa Mesgarha</title>
+      </Head>
       <header className={styles.header}>
         <Image
           priority
