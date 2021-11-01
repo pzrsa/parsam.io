@@ -9,3 +9,9 @@
 .greeting p {
   margin: 0;
 }
+
+.latest {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
