@@ -1,10 +1,10 @@
 import Link from "next/link";
 import styles from "../styles/modules/Navbar.module.css";
 
-const NavLink = ({ children, href }) => {
+const NavLink = ({ href, text }) => {
   return (
     <Link href={href}>
-      <a className={styles.navLink}>{children}</a>
+      <a className={styles.navLink}>{text}</a>
     </Link>
   );
 };
@@ -12,9 +12,9 @@ const NavLink = ({ children, href }) => {
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <NavLink href="/">Home</NavLink>
-      <NavLink href="/notes">Notes</NavLink>
-      <NavLink href="/writing">Writing</NavLink>
+      <NavLink href="/" text="Home" />
+      <NavLink href="/notes" text="Notes" />
+      <NavLink href="/writing" text="Writing" />
     </nav>
   );
 };

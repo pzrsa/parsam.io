@@ -1,13 +1,17 @@
 .navbar {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
   gap: 1rem;
+  align-items: center;
   margin-bottom: 2rem;
+  font-size: 1.2rem;
 }
 
 .navLink {
   font-weight: 725;
-  font-size: 1.1rem;
+  transition: 125ms;
+}
+
+.navLink:hover {
+  color: #777;
 }
