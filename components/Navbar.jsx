@@ -12,9 +12,9 @@ const NavLink = ({ children, href }) => {
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <NavLink href="/">home</NavLink>
-      <NavLink href="/">notes</NavLink>
-      <NavLink href="/">writing</NavLink>
+      <NavLink href="/">Home</NavLink>
+      <NavLink href="/">Notes</NavLink>
+      <NavLink href="/">Writing</NavLink>
     </nav>
   );
 };
