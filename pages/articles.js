@@ -1,13 +1,13 @@
 import utilStyles from "../styles/utils.module.css";
 
-const Writing = () => {
+const Articles = () => {
   return (
     <div>
       <header>
-        <h1 className={utilStyles.heading2Xl}>Writing</h1>
+        <h1 className={utilStyles.heading2Xl}>Articles</h1>
       </header>
     </div>
   );
 };
 
-export default Writing;
+export default Articles;

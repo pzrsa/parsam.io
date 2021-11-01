@@ -23,7 +23,7 @@ const Home = () => {
       </header>
       <div className={styles.latest}>
         <h1 className={utilStyles.headingXl}>Latest Book Note</h1>
-        <h1 className={utilStyles.headingXl}>Latest Writing</h1>
+        <h1 className={utilStyles.headingXl}>Latest Article</h1>
       </div>
     </div>
   );

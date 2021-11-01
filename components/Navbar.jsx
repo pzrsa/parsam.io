@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <NavLink href="/" text="Home" />
       <NavLink href="/notes" text="Notes" />
-      <NavLink href="/writing" text="Writing" />
+      <NavLink href="/articles" text="Articles" />
     </nav>
   );
 };
