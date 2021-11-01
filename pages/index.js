@@ -9,7 +9,7 @@ const Home = () => {
         <Image
           priority
           className={utilStyles.borderCircle}
-          src="https://avatars.githubusercontent.com/u/76453314"
+          src="/images/avatar.jpg"
           height={144}
           width={144}
           alt="Parsa"
