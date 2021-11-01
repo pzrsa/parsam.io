@@ -4,7 +4,7 @@ const Writing = () => {
   return (
     <div>
       <header>
-        <h1 className={utilStyles.headingXl}>Writing</h1>
+        <h1 className={utilStyles.heading2Xl}>Writing</h1>
       </header>
     </div>
   );

@@ -4,7 +4,7 @@ const Notes = () => {
   return (
     <div>
       <header>
-        <h1 className={utilStyles.headingXl}>Book Notes</h1>
+        <h1 className={utilStyles.heading2Xl}>Book Notes</h1>
       </header>
     </div>
   );
