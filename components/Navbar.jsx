@@ -1,23 +1,20 @@
 import Link from "next/link";
+import styles from "../styles/modules/Navbar.module.css";
 
 const NavLink = ({ children, href }) => {
   return (
-    <li>
-      <Link href={href}>
-        <a>{children}</a>
-      </Link>
-    </li>
+    <Link href={href}>
+      <a className={styles.navLink}>{children}</a>
+    </Link>
   );
 };
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <NavLink href="/">
-          <h1>parsa.</h1>
-        </NavLink>
-      </ul>
+    <nav className={styles.navbar}>
+      <NavLink href="/">home</NavLink>
+      <NavLink href="/">notes</NavLink>
+      <NavLink href="/">writing</NavLink>
     </nav>
   );
 };

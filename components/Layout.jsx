@@ -1,12 +1,12 @@
 import Head from "next/head";
-import utilStyles from "../styles/modules/Layout.module.css";
+import styles from "../styles/modules/Layout.module.css";
 import Navbar from "./Navbar";
 
 export const siteTitle = "parsa";
 
 const Layout = ({ children }) => {
   return (
-    <div className={utilStyles.container}>
+    <div className={styles.container}>
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="og:title" content={siteTitle} />

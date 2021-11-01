@@ -1,0 +1,10 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navLink {
+  font-weight: 700;
+}
