@@ -5,7 +5,10 @@ class ParsaDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/favicon.ico" />
+          <link
+            href="https://avatars.githubusercontent.com/u/76453314"
+            rel="shortcut icon"
+          />
           <meta name="description" content="Parsa's Personal Website." />
         </Head>
         <body>
