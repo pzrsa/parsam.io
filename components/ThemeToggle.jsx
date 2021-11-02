@@ -16,6 +16,7 @@ const ThemeToggle = () => {
   return (
     <div>
       <button
+        aria-label="Theme Toggle"
         className={styles.button}
         onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       >
