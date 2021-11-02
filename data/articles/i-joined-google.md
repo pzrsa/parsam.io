@@ -5,7 +5,7 @@ date: "2021-09-01"
 
 Hi, just wanted to make this short post sharing that I've joined Google as a Software Development/Engineering Apprentice!
 
-My official start date is on 6 September 2021 and I'll be taking a 3 month bootcamp beforehand at [Makers](https://makers.tech/){:target="\_blank"}. Then, when 2022 comes around I'll be working in their head office in London which is pretty cool.
+My official start date is on 6 September 2021 and I'll be taking a 3 month bootcamp beforehand at [Makers](https://makers.tech/). Then, when 2022 comes around I'll be working in their head office in London which is pretty cool.
 
 ![Google Start Date Countdown](/images/articles/i-joined-google/google-onboarding.jpeg)
 
@@ -13,6 +13,6 @@ Just for some context, I applied back in late June at the last minute and it too
 
 Also, since I am doing this for 24 months, I'm deferring my year of entry for university to 2023. I think this opportunity is a once in a lifetime one and I want to take advantage of the position I've been given. I'd still love to learn about Computer Science at University because I'm just interested in the history of traditional tech and the fundamentals associated.
 
-Look out for articles or videos on my [channel](https://www.youtube.com/channel/UCIIXFxDwjdQtIlf5or_DcwQ){:target="\_blank"} in the future documenting my experience of working there and what I'm learning. Feel free to follow me on [twitter](https://twitter.com/parsamesgarha){:target="\_blank"} for any additional updates.
+Look out for articles or videos on my [channel](https://www.youtube.com/channel/UCIIXFxDwjdQtIlf5or_DcwQ) in the future documenting my experience of working there and what I'm learning. Feel free to follow me on [twitter](https://twitter.com/parsamesgarha) for any additional updates.
 
 Thanks for reading this far, means a lot :)
