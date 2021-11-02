@@ -19,7 +19,7 @@ He also explains that you shouldn't expect a ton of people to come to you after 
 
 ## How I Discovered It
 
-I think it was mainly from [Ali Abdaal](https://youtu.be/hv1gOEY3cs4){:target="\_blank"} mentioning it a thousand times on how it changed his life. Alongside Anything You Want, I saw this book in the same video and saw it was less than 100 pages to read. Yeah I sound like some fanboy of him as I mentioned him before but who cares, I find value from these books regardless.
+I think it was mainly from [Ali Abdaal](https://youtu.be/hv1gOEY3cs4) mentioning it a thousand times on how it changed his life. Alongside Anything You Want, I saw this book in the same video and saw it was less than 100 pages to read. Yeah I sound like some fanboy of him as I mentioned him before but who cares, I find value from these books regardless.
 
 ## Who Should Read It?
 
@@ -29,7 +29,7 @@ I think that in this day and age we should all be putting ourselves out there, s
 
 - I don't really care about others opinions now, they might get to me from time to time, but still realised how everyone is facing their own problems.
 - Making an attempt to not waste peoples time. I tend to review what I am about to post and think about if anyone would find this useful after reading it (hopefully this book note is for you!).
-- Going to make sure I maintain my website and have it grow with me along my journey. I will engage with my audience and provide the best level of quality that I can (message me on [Twitter](https://twitter.com/parsamesgarha){:target="\_blank"}!).
+- Going to make sure I maintain my website and have it grow with me along my journey. I will engage with my audience and provide the best level of quality that I can (message me on [Twitter](https://twitter.com/parsamesgarha)!).
 - When this website starts doing well, I want to start a newsletter as he mentions how important it is when providing insight to your more interested audience, even if its a small update.
 - Now, I know I am getting way too ahead of myself, but the idea of a tip/donation on my page if someone feels generous is an idea I like. Not prioritising it of course, but a nice addition if someone wants to give a nice gesture. Something like "buy me a coffee" sounds friendly lol.
 
