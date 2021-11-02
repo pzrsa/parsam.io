@@ -19,7 +19,7 @@ export const getStaticPaths = async () => {
 };
 
 const Article = ({ articleData }) => {
-  return <Post postData={articleData} />;
+  return <Post postType="article" postData={articleData} />;
 };
 
 export default Article;

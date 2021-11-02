@@ -2,7 +2,7 @@ import Head from "next/head";
 import utilStyles from "../styles/utils.module.css";
 import Date from "./Date";
 
-const Post = ({ postData }) => {
+const Post = ({ postType, postData }) => {
   return (
     <div>
       <Head>
@@ -11,6 +11,7 @@ const Post = ({ postData }) => {
       <header>
         <h1 className={utilStyles.heading2Xl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
+          {postType === "note" ? <>by {postData.author} - </> : ""}
           <Date dateString={postData.date} />
         </div>
       </header>

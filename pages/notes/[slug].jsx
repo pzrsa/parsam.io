@@ -19,7 +19,7 @@ export const getStaticPaths = async () => {
 };
 
 const Note = ({ noteData }) => {
-  return <Post postData={noteData} />;
+  return <Post postType="note" postData={noteData} />;
 };
 
 export default Note;
