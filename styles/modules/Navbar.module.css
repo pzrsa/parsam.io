@@ -12,6 +12,7 @@
 .navLink {
   font-weight: 725;
   transition: 125ms;
+  text-decoration: none;
 }
 
 .navLink:hover {

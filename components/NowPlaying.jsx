@@ -11,14 +11,12 @@ const NowPlaying = () => {
   return (
     <>
       {data?.isPlaying ? (
-        <div>
-          <p>
-            <SiSpotify /> Listening to{" "}
-            <a href={data.songUrl} rel="prefetch, noreferrer" target="_blank">
-              {data.title} by {data.artist}
-            </a>
-          </p>
-        </div>
+        <p>
+          <SiSpotify /> Listening to{" "}
+          <a href={data.songUrl} rel="prefetch noreferrer" target="_blank">
+            {data.title} by {data.artist}
+          </a>
+        </p>
       ) : (
         <p>
           <SiSpotify /> Not listening to anything
