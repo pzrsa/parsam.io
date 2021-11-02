@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/modules/Navbar.module.css";
+import ThemeToggle from "./ThemeToggle";
 
 const NavLink = ({ href, text }) => {
   return (
@@ -15,6 +16,9 @@ const Navbar = () => {
       <NavLink href="/" text="Home" />
       <NavLink href="/notes" text="Notes" />
       <NavLink href="/articles" text="Articles" />
+      <div className={styles.toggle}>
+        <ThemeToggle />
+      </div>
     </nav>
   );
 };

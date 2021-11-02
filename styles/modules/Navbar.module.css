@@ -2,9 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  flex-direction: row;
   align-items: center;
   margin-bottom: 2rem;
   font-size: 1.2rem;
+  height: 45px;
 }
 
 .navLink {
@@ -14,4 +16,11 @@
 
 .navLink:hover {
   color: #999;
+  text-decoration: none;
+}
+
+.toggle {
+  margin: auto;
+  display: flex;
+  align-items: center;
 }
