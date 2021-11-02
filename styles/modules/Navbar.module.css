@@ -13,6 +13,7 @@
   font-weight: 725;
   transition: 125ms;
   text-decoration: none;
+  color: inherit;
 }
 
 .navLink:hover {

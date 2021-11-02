@@ -7,3 +7,7 @@
 .listItem {
   margin: 0 0 1.25rem;
 }
+
+.listItem a {
+  color: inherit;
+}
