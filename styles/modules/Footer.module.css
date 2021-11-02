@@ -1,0 +1,10 @@
+.footer {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.item {
+  color: inherit;
+  font-size: 1.5rem;
+}

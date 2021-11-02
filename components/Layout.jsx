@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/modules/Layout.module.css";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 export const siteTitle = "Parsa Mesgarha";
@@ -14,6 +15,7 @@ const Layout = ({ children }) => {
       </Head>
       <Navbar />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 };
