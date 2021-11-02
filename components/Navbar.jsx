@@ -16,9 +16,8 @@ const Navbar = () => {
       <NavLink href="/" text="Home" />
       <NavLink href="/notes" text="Notes" />
       <NavLink href="/articles" text="Articles" />
-      <div className={styles.toggle}>
-        <ThemeToggle />
-      </div>
+      <span style={{ flexGrow: 1 }}></span>
+      <ThemeToggle />
     </nav>
   );
 };
