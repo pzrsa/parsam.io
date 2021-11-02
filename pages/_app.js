@@ -4,7 +4,7 @@ import "../styles/globals.css";
 
 const App = ({ Component, pageProps }) => {
   return (
-    <ThemeProvider>
+    <ThemeProvider attribute="class">
       <Layout>
         <Component {...pageProps} />
       </Layout>

@@ -8,6 +8,16 @@ body {
   font-size: 18px;
 }
 
+.light {
+  background-color: #fff;
+  color: #111;
+}
+
+.dark {
+  background-color: #111;
+  color: #fff;
+}
+
 a {
   color: inherit;
   text-decoration: none;
