@@ -6,7 +6,7 @@ const Post = ({ postData }) => {
   return (
     <div>
       <Head>
-        <title>{postData.title}</title>
+        <title>{postData.title} - Parsa Mesgarha</title>
       </Head>
       <header>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
