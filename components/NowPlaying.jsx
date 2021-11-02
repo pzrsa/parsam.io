@@ -20,7 +20,7 @@ const NowPlaying = () => {
         </p>
       ) : (
         <p className={styles.p}>
-          <SiSpotify /> Not listening to anything
+          <SiSpotify className={styles.icon} /> Not listening to anything
         </p>
       )}
     </>
