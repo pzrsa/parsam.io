@@ -1,16 +1,21 @@
+import Link from "next/link";
+import Date from "../components/Date";
 import styles from "../styles/modules/Posts.module.css";
+import utilStyles from "../styles/utils.module.css";
 
-const Posts = ({ itemsData }) => {
+const Posts = ({ postType, itemsData }) => {
   return (
     <section>
       <ul className={styles.list}>
         {itemsData.map(({ slug, title, date }) => (
           <li className={styles.listItem} key={slug}>
-            {title}
+            <Link href={`/${postType}/${slug}`}>
+              <a className={utilStyles.headingMd}>{title}</a>
+            </Link>
             <br />
-            {slug}
-            <br />
-            {date}
+            <small className={utilStyles.lightText}>
+              <Date dateString={date} />
+            </small>
           </li>
         ))}
       </ul>

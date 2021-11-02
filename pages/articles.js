@@ -21,7 +21,7 @@ const Articles = ({ allArticlesData }) => {
       <header>
         <h1 className={utilStyles.heading2Xl}>Articles</h1>
       </header>
-      <Posts itemsData={allArticlesData} />
+      <Posts postType="articles" itemsData={allArticlesData} />
     </div>
   );
 };
