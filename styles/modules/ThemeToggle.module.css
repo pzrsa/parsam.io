@@ -5,10 +5,5 @@
   width: 35px;
   height: 35px;
   padding: 0;
-  transition: 125ms;
   cursor: pointer;
-}
-
-.button:hover {
-  border: solid 2.8px;
 }
