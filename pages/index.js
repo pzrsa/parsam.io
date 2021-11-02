@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { SiSpotify } from "react-icons/si";
+import NowPlaying from "../components/NowPlaying";
 import styles from "../styles/modules/Home.module.css";
 import utilStyles from "../styles/utils.module.css";
 
@@ -16,7 +16,7 @@ const Home = () => {
             Software Development Apprentice at Google{" "}
           </p>
           <div className={styles.nowPlaying}>
-            <SiSpotify /> Listening to POWER by Kanye West
+            <NowPlaying />
           </div>
         </div>
       </header>
