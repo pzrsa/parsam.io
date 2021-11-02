@@ -1,10 +1,17 @@
 .footer {
-  margin-top: 1.5rem;
+  margin-top: 3rem;
+  padding-top: 20px;
   display: flex;
   gap: 0.8rem;
+  border-top: 1px solid #999;
 }
 
 .item {
   color: inherit;
   font-size: 1.5rem;
+  transition: 125ms;
+}
+
+.item:hover {
+  color: #999;
 }
