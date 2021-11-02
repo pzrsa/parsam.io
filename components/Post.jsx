@@ -9,7 +9,7 @@ const Post = ({ postData }) => {
         <title>{postData.title} - Parsa Mesgarha</title>
       </Head>
       <header>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+        <h1 className={utilStyles.heading2Xl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>

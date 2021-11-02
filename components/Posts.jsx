@@ -10,12 +10,12 @@ const Posts = ({ postType, itemsData }) => {
         {itemsData.map(({ slug, title, date }) => (
           <li className={styles.listItem} key={slug}>
             <Link href={`/${postType}/${slug}`}>
-              <a className={utilStyles.headingMd}>{title}</a>
+              <a className={utilStyles.headingXl}>{title}</a>
             </Link>
             <br />
-            <small className={utilStyles.lightText}>
+            <p className={utilStyles.lightText}>
               <Date dateString={date} />
-            </small>
+            </p>
           </li>
         ))}
       </ul>
