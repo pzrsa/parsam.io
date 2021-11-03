@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
 
   const title = "Parsa Mesgarha";
   const description = "Parsa Mesgarha's website about tech, books and life.";
-  const image = "/images/avatar.jpg";
+  const image = "https://parsam.io/images/avatar.jpg";
 
   return (
     <div className={styles.container}>
