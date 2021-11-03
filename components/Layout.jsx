@@ -7,8 +7,9 @@ import Navbar from "./Navbar";
 const Layout = ({ children }) => {
   const router = useRouter();
 
-  const title = "Parsa Mesgarha";
-  const description = "Parsa Mesgarha's website about tech, books and life.";
+  const title = "Parsa Mesgarha - Programmer, lifelong learner.";
+  const description =
+    "Parsa Mesgarha - Programmer, lifelong learner. Documenting my journey.";
   const image = "https://parsam.io/images/avatar.jpg";
 
   return (

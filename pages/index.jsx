@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>Parsa Mesgarha</title>
+        <title>Parsa Mesgarha - Programmer, lifelong learner.</title>
       </Head>
       <header className={styles.header}>
         <div className={styles.greeting}>
