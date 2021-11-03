@@ -38,8 +38,15 @@ const Home = () => {
             <a>articles</a>
           </Link>{" "}
           which revolve around the topics I’m most interested in. I’m trying my
-          best to improve on making quality posts, so feel free to message me on
-          twitter with any feedback you might have.
+          best to improve on making quality posts, so feel free to message me on{" "}
+          <a
+            href="https://twitter.com/_parsam"
+            rel="prefetch noreferrer"
+            target="_blank"
+          >
+            twitter
+          </a>{" "}
+          with any feedback you might have.
         </p>
         <p>
           Also if you don’t want to miss out on any book notes I publish,
