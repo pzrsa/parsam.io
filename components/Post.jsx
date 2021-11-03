@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Link from "next/link";
+import styles from "../styles/modules/Post.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Date from "./Date";
 
@@ -16,6 +18,13 @@ const Post = ({ postType, postData }) => {
         </div>
       </header>
       <article dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      <div className={styles.backToHome}>
+        <Link href={`/${postType}s`}>
+          <a>
+            <h1 className={utilStyles.headingMd}>← Back to {postType}s</h1>
+          </a>
+        </Link>
+      </div>
     </div>
   );
 };
