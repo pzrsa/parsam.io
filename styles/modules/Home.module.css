@@ -1,0 +1,14 @@
+.header {
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.greeting h1,
+.greeting p {
+  margin: 0;
+}
+
+.nowPlaying {
+  width: 100%;
+  margin-top: 1rem;
+}

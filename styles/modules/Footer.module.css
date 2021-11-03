@@ -1,0 +1,15 @@
+.footer {
+  margin-top: 10rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.item {
+  color: inherit;
+  font-size: 1.5rem;
+  transition: 125ms;
+}
+
+.item:hover {
+  color: #999;
+}

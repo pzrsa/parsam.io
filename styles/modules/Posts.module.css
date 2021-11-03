@@ -1,0 +1,13 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  margin: 0 0 2rem;
+}
+
+.listItem a {
+  color: inherit;
+}
