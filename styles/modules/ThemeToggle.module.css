@@ -7,3 +7,13 @@
   padding: 0;
   cursor: pointer;
 }
+
+.light {
+  background-color: #c2bdbd;
+  color: #111;
+}
+
+.dark {
+  background-color: #444;
+  color: #fff;
+}

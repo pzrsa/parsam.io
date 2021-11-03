@@ -17,8 +17,8 @@ const ThemeToggle = () => {
     <div>
       <button
         aria-label="Theme Toggle"
-        className={styles.button}
         onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+        className={`${styles.button} ${styles[resolvedTheme]}`}
       >
         {resolvedTheme === "dark" ? (
           <MdOutlineLightMode />
