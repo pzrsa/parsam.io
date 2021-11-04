@@ -1,5 +1,6 @@
 .p {
   font-size: 1.2rem;
+  transition: 125ms;
 }
 
 .p a {
@@ -8,4 +9,12 @@
 
 .icon {
   vertical-align: -3px;
+}
+
+.nowPlaying a {
+  text-decoration: none;
+}
+
+.nowPlaying:hover {
+  color: #777;
 }

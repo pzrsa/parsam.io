@@ -10,12 +10,12 @@ const NowPlaying = () => {
   if (!data) return <div>Loading...</div>;
 
   return (
-    <>
+    <div className={styles.nowPlaying}>
       {data?.isPlaying ? (
         <p className={styles.p}>
-          <SiSpotify className={styles.icon} /> Listening to{" "}
           <a href={data.songUrl} rel="prefetch noreferrer" target="_blank">
-            {data.title} by {data.artist}
+            <SiSpotify className={styles.icon} /> Listening to {data.title} by{" "}
+            {data.artist}
           </a>
         </p>
       ) : (
@@ -23,7 +23,7 @@ const NowPlaying = () => {
           <SiSpotify className={styles.icon} /> Not listening to anything
         </p>
       )}
-    </>
+    </div>
   );
 };
 
