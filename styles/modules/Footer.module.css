@@ -1,13 +1,14 @@
 .footer {
-  margin-top: 10rem;
+  margin-top: 8rem;
   display: flex;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .item {
   color: inherit;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   transition: 125ms;
+  text-decoration: none;
 }
 
 .item:hover {
