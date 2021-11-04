@@ -1,6 +1,7 @@
 .p {
   font-size: 1.2rem;
   transition: 125ms;
+  cursor: default;
 }
 
 .p a {
