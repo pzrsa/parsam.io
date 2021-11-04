@@ -21,9 +21,9 @@ const ThemeToggle = () => {
         className={`${styles.button} ${styles[resolvedTheme]}`}
       >
         {resolvedTheme === "dark" ? (
-          <MdOutlineLightMode />
+          <MdOutlineLightMode className={styles.icon} />
         ) : (
-          <MdOutlineDarkMode />
+          <MdOutlineDarkMode className={styles.icon} />
         )}
       </button>
     </div>

@@ -8,6 +8,14 @@
   cursor: pointer;
 }
 
+.icon {
+  vertical-align: -2.5px;
+}
+
+.button:hover {
+  background-color: #888;
+}
+
 .light {
   background-color: #c2bdbd;
   color: #111;
