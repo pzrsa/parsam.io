@@ -1,7 +1,13 @@
-.backToHome {
-  margin-top: 2.5rem;
+.backToPage {
+  margin-top: 3rem;
 }
 
-.backToHome a {
+.backToPage a {
   color: inherit;
+  text-decoration: none;
+  transition: 125ms;
+}
+
+.backToPage a:hover {
+  color: #999;
 }

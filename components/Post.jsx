@@ -18,7 +18,7 @@ const Post = ({ postType, postData }) => {
         </div>
       </header>
       <article dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      <div className={styles.backToHome}>
+      <div className={styles.backToPage}>
         <Link href={`/${postType}s`}>
           <a>
             <h1 className={utilStyles.headingMd}>← Back to {postType}s</h1>
