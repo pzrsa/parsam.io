@@ -18,15 +18,21 @@ const FooterItem = ({ href, icon }) => {
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <FooterItem href="https://twitter.com/_parsam" icon={<SiTwitter />} />
-      <FooterItem href="https://github.com/pzrsa" icon={<SiGithub />} />
+      <FooterItem
+        href="https://twitter.com/_parsam"
+        icon={<SiTwitter title="Twitter" />}
+      />
+      <FooterItem
+        href="https://github.com/pzrsa"
+        icon={<SiGithub title="GitHub" />}
+      />
       <FooterItem
         href="https://github.com/pzrsa/parsam.io"
-        icon={<VscSourceControl />}
+        icon={<VscSourceControl title="Source Code" />}
       />
       <FooterItem
         href="https://www.linkedin.com/in/parsamesgarha/"
-        icon={<SiLinkedin />}
+        icon={<SiLinkedin title="LinkedIn" />}
       />
     </footer>
   );
