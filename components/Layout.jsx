@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <meta name="robots" content="follow, index" />
+        <meta name="robots" content="all" />
         <meta content={description} name="description" />
         <meta property="og:url" content={`https://parsam.io${router.asPath}`} />
         <link rel="canonical" href={`https://parsam.io${router.asPath}`} />
