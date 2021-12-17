@@ -3,7 +3,7 @@ import useSWR from "swr";
 import fetcher from "../lib/fetcher";
 import styles from "../styles/modules/NowPlaying.module.css";
 
-const NowPlaying = () => {
+const NowPlaying: React.FC = () => {
   const { data, error } = useSWR("/api/now-playing", fetcher);
 
   if (error) return <div>Failed to load</div>;

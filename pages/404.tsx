@@ -1,7 +1,7 @@
 import Head from "next/head";
 import utilStyles from "../styles/utils.module.css";
 
-const Custom404 = () => {
+const Custom404: React.FC = () => {
   return (
     <div>
       <Head>

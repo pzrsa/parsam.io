@@ -3,7 +3,12 @@ import Date from "../components/Date";
 import styles from "../styles/modules/Posts.module.css";
 import utilStyles from "../styles/utils.module.css";
 
-const Posts = ({ postType, itemsData }) => {
+interface PostsProps {
+  postType: string;
+  itemsData: [{ slug: string; title: string; date: string; author: string }];
+}
+
+const Posts: React.FC<PostsProps> = ({ postType, itemsData }) => {
   return (
     <section>
       <ul className={styles.list}>

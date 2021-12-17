@@ -1,8 +1,14 @@
+import { ReactElement } from "react";
 import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
 import { VscSourceControl } from "react-icons/vsc";
 import styles from "../styles/modules/Footer.module.css";
 
-const FooterItem = ({ href, icon }) => {
+interface FooterProps {
+  href: string;
+  icon: ReactElement;
+}
+
+const FooterItem: React.FC<FooterProps> = ({ href, icon }) => {
   return (
     <a
       className={styles.item}

@@ -4,7 +4,7 @@ import NowPlaying from "../components/NowPlaying";
 import styles from "../styles/modules/Home.module.css";
 import utilStyles from "../styles/utils.module.css";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <div>
       <Head>

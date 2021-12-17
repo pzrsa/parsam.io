@@ -1,9 +1,10 @@
+import { GetStaticProps } from "next";
 import Head from "next/head";
 import Posts from "../components/Posts";
 import { getSortedArticlesData } from "../lib/articles";
 import utilStyles from "../styles/utils.module.css";
 
-export const getStaticProps = () => {
+export const getStaticProps: GetStaticProps = () => {
   const allArticlesData = getSortedArticlesData();
   return {
     props: {
@@ -12,7 +13,13 @@ export const getStaticProps = () => {
   };
 };
 
-const Articles = ({ allArticlesData }) => {
+interface ArticlesProps {
+  allArticlesData: [
+    { slug: string; title: string; date: string; author: string }
+  ];
+}
+
+const Articles: React.FC<ArticlesProps> = ({ allArticlesData }) => {
   return (
     <div>
       <Head>

@@ -4,7 +4,17 @@ import styles from "../styles/modules/Post.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Date from "./Date";
 
-const Post = ({ postType, postData }) => {
+interface PostProps {
+  postType: string;
+  postData: {
+    title: string;
+    author: string;
+    date: string;
+    contentHtml: string;
+  };
+}
+
+const Post: React.FC<PostProps> = ({ postType, postData }) => {
   return (
     <div>
       <Head>

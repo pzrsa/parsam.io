@@ -4,7 +4,7 @@ import styles from "../styles/modules/Layout.module.css";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-const Layout = ({ children }) => {
+const Layout: React.FC = ({ children }) => {
   const router = useRouter();
 
   const title = "Parsa Mesgarha - Programmer, lifelong learner.";
