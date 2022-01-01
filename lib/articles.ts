@@ -64,7 +64,7 @@ export const getAllArticleSlugs = () => {
   });
 };
 
-export const getArticleData = async (slug: string) => {
+export const getArticleData = async (slug: any) => {
   const fullPath = path.join(articlesDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 

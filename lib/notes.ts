@@ -64,7 +64,7 @@ export const getAllNoteSlugs = () => {
   });
 };
 
-export const getNoteData = async (slug: string) => {
+export const getNoteData = async (slug: any) => {
   const fullPath = path.join(notesDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
