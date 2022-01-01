@@ -27,7 +27,7 @@ export const getSortedNotesData = () => {
     };
   });
   // Sort posts by date
-  return allNotesData.sort(({ date: a }, { date: b }) => {
+  return allNotesData.sort(({ date: a }: any, { date: b }: any) => {
     if (a < b) {
       return 1;
     } else if (a > b) {
@@ -64,7 +64,7 @@ export const getAllNoteSlugs = () => {
   });
 };
 
-export const getNoteData = async (slug) => {
+export const getNoteData = async (slug: string) => {
   const fullPath = path.join(notesDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 

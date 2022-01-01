@@ -27,7 +27,7 @@ export const getSortedArticlesData = () => {
     };
   });
   // Sort posts by date
-  return allArticlesData.sort(({ date: a }, { date: b }) => {
+  return allArticlesData.sort(({ date: a }: any, { date: b }: any) => {
     if (a < b) {
       return 1;
     } else if (a > b) {
@@ -64,7 +64,7 @@ export const getAllArticleSlugs = () => {
   });
 };
 
-export const getArticleData = async (slug) => {
+export const getArticleData = async (slug: string) => {
   const fullPath = path.join(articlesDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
