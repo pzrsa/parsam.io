@@ -23,9 +23,10 @@ const Home: React.FC = () => {
       </header>
       <div>
         <p>
-          Keen on learning deeply about stuff like tech, startups, and life, I
-          tend to spend the majority of my time learning through books, podcasts
-          and other resources online.
+          I&apos;m an 18 year old from London, England who&apos;s keen on
+          learning deeply about stuff like tech, startups, and life. I tend to
+          spend the majority of my time learning through books, podcasts and
+          other resources online.
         </p>
         <p>
           My website is where I write{" "}
