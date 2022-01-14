@@ -33,16 +33,16 @@ const Footer = () => {
         icon={<SiGithub title="GitHub" />}
       />
       <FooterItem
+        href="https://www.youtube.com/channel/UCIIXFxDwjdQtIlf5or_DcwQ"
+        icon={<SiYoutube title="YouTube" />}
+      />
+      <FooterItem
         href="https://github.com/pzrsa/parsam.io"
         icon={<VscSourceControl title="Source Code" />}
       />
       <FooterItem
         href="https://www.linkedin.com/in/parsamesgarha/"
         icon={<SiLinkedin title="LinkedIn" />}
-      />
-      <FooterItem
-        href="https://www.youtube.com/channel/UCIIXFxDwjdQtIlf5or_DcwQ"
-        icon={<SiYoutube title="YouTube" />}
       />
     </footer>
   );
