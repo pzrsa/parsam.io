@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiTwitter, SiYoutube } from "react-icons/si";
 import { VscSourceControl } from "react-icons/vsc";
 import styles from "../styles/modules/Footer.module.css";
 
@@ -39,6 +39,10 @@ const Footer = () => {
       <FooterItem
         href="https://www.linkedin.com/in/parsamesgarha/"
         icon={<SiLinkedin title="LinkedIn" />}
+      />
+      <FooterItem
+        href="https://www.youtube.com/channel/UCIIXFxDwjdQtIlf5or_DcwQ"
+        icon={<SiYoutube title="YouTube" />}
       />
     </footer>
   );
