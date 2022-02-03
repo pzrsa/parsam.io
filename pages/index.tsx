@@ -14,7 +14,13 @@ const Home: React.FC = () => {
         <div className={styles.greeting}>
           <h1 className={utilStyles.heading2Xl}>👋 Hi, I&apos;m Parsa.</h1>
           <p className={utilStyles.lightText}>
-            Software Development Apprentice at Google
+            Software Development Apprentice at{" "}
+            <span style={{ color: "#4885ed" }}>G</span>
+            <span style={{ color: "#db3236" }}>o</span>
+            <span style={{ color: "#f4c20d" }}>o</span>
+            <span style={{ color: "#4885ed" }}>g</span>
+            <span style={{ color: "#3cba54" }}>l</span>
+            <span style={{ color: "#db3236" }}>e</span>
           </p>
           <div className={styles.nowPlaying}>
             <NowPlaying />
