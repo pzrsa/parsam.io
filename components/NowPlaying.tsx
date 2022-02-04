@@ -14,7 +14,7 @@ const NowPlaying: React.FC = () => {
       {data?.isPlaying ? (
         <p className={styles.p}>
           <a href={data.songUrl} rel="prefetch noreferrer" target="_blank">
-            <SiSpotify className={styles.icon} /> Playing{" "}
+            <SiSpotify className={styles.icon} /> Listening to{" "}
             <strong>
               {data.title} by {data.artist}
             </strong>{" "}
@@ -22,7 +22,7 @@ const NowPlaying: React.FC = () => {
         </p>
       ) : (
         <p className={styles.p}>
-          <SiSpotify className={styles.icon} /> Not playing
+          <SiSpotify className={styles.icon} /> Not listening to music
         </p>
       )}
     </div>
