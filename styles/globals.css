@@ -37,3 +37,19 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/* If the screen size is 601px wide or more (desktop) */
+@media screen and (min-width: 601px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+
+/* If the screen size is 600px wide or less (mobile) */
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
