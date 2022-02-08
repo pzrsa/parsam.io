@@ -22,7 +22,7 @@ const NowPlaying: React.FC = () => {
         </p>
       ) : (
         <p className={styles.p}>
-          <SiSpotify className={styles.icon} /> Not listening to music
+          <SiSpotify className={styles.icon} /> Not playing anything
         </p>
       )}
     </div>
