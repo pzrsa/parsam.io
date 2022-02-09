@@ -1,5 +1,5 @@
 ---
-title: "Getting Started With Journaling"
+title: "How To Start Journaling"
 date: "2021-05-13"
 ---
 

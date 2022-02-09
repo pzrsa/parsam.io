@@ -1,5 +1,5 @@
 ---
-title: "So I joined Google"
+title: "I Joined Google"
 date: "2021-09-01"
 ---
 
