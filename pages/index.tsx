@@ -59,7 +59,7 @@ const Home: React.FC = () => {
           Also if you don’t want to miss out on any book notes I publish,
           subscribe to my{" "}
           <a
-            href="https://parsamesgarha.substack.com/"
+            href="https://parsam.substack.com/"
             rel="prefetch noreferrer"
             target="_blank"
           >
