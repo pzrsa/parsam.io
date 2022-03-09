@@ -3,7 +3,6 @@ import Link from "next/link";
 import styles from "../styles/modules/Post.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Date from "./Date";
-import { useRouter } from "next/router";
 
 interface PostProps {
   postType: string;
@@ -17,7 +16,6 @@ interface PostProps {
 }
 
 const Post: React.FC<PostProps> = ({ postType, postData }) => {
-  const router = useRouter();
   return (
     <div>
       <Head>
