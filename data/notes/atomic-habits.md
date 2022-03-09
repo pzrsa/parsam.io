@@ -3,6 +3,7 @@ title: "Atomic Habits"
 date: "2021-03-22"
 author: "James Clear"
 description: "People think that when you want to change your life, you need to think big. James Clear knows that real change comes from the compound effect of hundreds of small decisions."
+image: "/images/notes/covers/ah.jpg"
 ---
 
 ## Book in 3 Sentences
