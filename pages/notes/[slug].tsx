@@ -25,6 +25,7 @@ interface NoteProps {
     author: string;
     date: string;
     contentHtml: string;
+    image: string;
   };
 }
 

@@ -25,6 +25,7 @@ interface ArticleProps {
     author: string;
     date: string;
     contentHtml: string;
+    image: string;
   };
 }
 
