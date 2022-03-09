@@ -22,12 +22,12 @@ const Layout: React.FC = ({ children }) => {
         <meta property="og:site_name" content={title} key="og:site_name" />
         <meta property="og:description" content={description} />
         <meta property="og:title" content={title} key="og:title" />
-        <meta property="og:image" content={image} />
+        <meta property="og:image" content={image} key="og:image" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@_parsam" />
         <meta name="twitter:title" content={title} key="twitter:title" />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={image} />
+        <meta name="twitter:image" content={image} key="twitter:image" />
       </Head>
       <Navbar />
       <main>{children}</main>

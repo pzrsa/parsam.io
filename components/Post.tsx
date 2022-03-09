@@ -12,6 +12,7 @@ interface PostProps {
     author: string;
     date: string;
     contentHtml: string;
+    image: string;
   };
 }
 
@@ -27,13 +28,17 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
           key="og:site_name"
         />
         <meta property="og:title" content={postData.title} key="og:title" />
-        {/*<meta property="og:image" content={image} />*/}
+        <meta property="og:image" content={postData.image} key="og:image" />
         <meta
           name="twitter:title"
           content={postData.title}
           key="twitter:title"
         />
-        {/*<meta name="twitter:image" content={image} />*/}
+        <meta
+          name="twitter:image"
+          content={postData.image}
+          key="twitter:image"
+        />
       </Head>
       <header>
         <h1 className={utilStyles.heading2Xl}>{postData.title}</h1>
