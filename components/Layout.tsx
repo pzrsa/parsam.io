@@ -10,7 +10,7 @@ const Layout: React.FC = ({ children }) => {
   const title = "Parsa Mesgarha - Programmer, lifelong learner.";
   const description =
     "Parsa Mesgarha - Programmer, lifelong learner. Documenting my journey.";
-  const image = "https://parsam.io/images/avatar.jpg";
+  const image = "/images/avatar.jpg";
 
   return (
     <div className={styles.container}>
