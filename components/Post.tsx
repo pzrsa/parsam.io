@@ -21,14 +21,18 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
     <div>
       <Head>
         <title>{postData.title} - Parsa Mesgarha</title>
-        <meta name="robots" content="all" />
-        <meta content={postData.title} name="description" />
-        <meta property="og:site_name" content={postData.title} />
-        <meta property="og:description" content={postData.title} />
-        <meta property="og:title" content={postData.title} />
+        <meta
+          property="og:site_name"
+          content={postData.title}
+          key="og:site_name"
+        />
+        <meta property="og:title" content={postData.title} key="og:title" />
         {/*<meta property="og:image" content={image} />*/}
-        <meta name="twitter:title" content={postData.title} />
-        <meta name="twitter:description" content={postData.title} />
+        <meta
+          name="twitter:title"
+          content={postData.title}
+          key="twitter:title"
+        />
         {/*<meta name="twitter:image" content={image} />*/}
       </Head>
       <header>

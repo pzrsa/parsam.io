@@ -19,13 +19,13 @@ const Layout: React.FC = ({ children }) => {
         <meta content={description} name="description" />
         <meta property="og:url" content={`https://parsam.io${router.asPath}`} />
         <link rel="canonical" href={`https://parsam.io${router.asPath}`} />
-        <meta property="og:site_name" content={title} />
+        <meta property="og:site_name" content={title} key="og:site_name" />
         <meta property="og:description" content={description} />
-        <meta property="og:title" content={title} />
+        <meta property="og:title" content={title} key="og:title" />
         <meta property="og:image" content={image} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@_parsam" />
-        <meta name="twitter:title" content={title} />
+        <meta name="twitter:title" content={title} key="twitter:title" />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
       </Head>
