@@ -31,7 +31,11 @@ const Layout: React.FC = ({ children }) => {
         <meta name="twitter:site" content="@_parsam" />
         <meta name="twitter:title" content={title} key="twitter:title" />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={image} key="twitter:image" />
+        <meta
+          name="twitter:image"
+          content={`https://parsam.io${image}`}
+          key="twitter:image"
+        />
       </Head>
       <Navbar />
       <main>{children}</main>
