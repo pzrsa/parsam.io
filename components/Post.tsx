@@ -30,7 +30,11 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
           content={`${postData.title} by ${postData.author}`}
           key="og:title"
         />
-        <meta property="og:image" content={postData.image} key="og:image" />
+        <meta
+          property="og:image"
+          content={`https://parsam.io${postData.image}`}
+          key="og:image"
+        />
         <meta
           name="twitter:title"
           content={`${postData.title} by ${postData.author}`}
@@ -38,7 +42,7 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         />
         <meta
           name="twitter:image"
-          content={postData.image}
+          content={`https://parsam.io${postData.image}`}
           key="twitter:image"
         />
       </Head>
