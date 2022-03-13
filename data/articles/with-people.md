@@ -3,7 +3,7 @@ title: "Working With People"
 date: "2022-02-09"
 ---
 
-As you might know, I’ve [joined an apprenticeship at Google](https://parsam.io/articles/i-joined-google) 5 months ago. I completed my 3 month bootcamp in December last year, with an additional 3 weeks of internal training. So, when January 2022 started, I was assigned to a team of incredible people which has been really exciting to be a part of.
+As you might know, I’ve [joined an apprenticeship at Google](https://parsam.io/articles/joined-google) 5 months ago. I completed my 3 month bootcamp in December last year, with an additional 3 weeks of internal training. So, when January 2022 started, I was assigned to a team of incredible people which has been really exciting to be a part of.
 
 I thought it would be valuable to share some thoughts and observations I've made from working in a new environment. Everyone's experience will probably differ, but I still think they’re worth jotting down for anyone in an internship or new job.
 
