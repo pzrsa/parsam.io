@@ -5,7 +5,7 @@ import utilStyles from "../styles/utils.module.css";
 import Date from "./Date";
 
 interface PostProps {
-  postType: string;
+  postType: "note" | "article";
   postData: {
     title: string;
     author: string;
@@ -22,7 +22,11 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         <title>{postData.title} - Parsa Mesgarha</title>
         <meta
           property="og:site_name"
-          content={`${postData.title} by ${postData.author}`}
+          content={
+            postType === "note"
+              ? `${postData.title} by ${postData.author}`
+              : postData.title
+          }
           key="og:site_name"
         />
         <meta
