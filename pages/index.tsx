@@ -35,6 +35,18 @@ const Home: React.FC = () => {
           other resources online.
         </p>
         <p>
+          I currently work within the{" "}
+          <a
+            href="https://play.google.com/console/about/"
+            rel="prefetch noreferrer"
+            target="_blank"
+          >
+            Play Console
+          </a>{" "}
+          team, helping developers with publishing and maintaining their app on
+          the Play Store.
+        </p>
+        <p>
           My website is where I write{" "}
           <Link href="/notes">
             <a>notes</a>
