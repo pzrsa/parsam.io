@@ -43,8 +43,8 @@ const Home: React.FC = () => {
           >
             Play Console
           </a>{" "}
-          team, helping developers with publishing and maintaining their app on
-          the Play Store.
+          team, with a focus on making the Google Play Console the best app
+          distribution platform for developers.
         </p>
         <p>
           My website is where I write{" "}
