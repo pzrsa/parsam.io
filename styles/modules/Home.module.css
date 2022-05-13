@@ -9,6 +9,6 @@
 }
 
 .nowPlaying {
-  width: 100%;
+  max-width: fit-content;
   margin-top: 1rem;
 }
