@@ -21,7 +21,7 @@ interface ArticlesProps {
 
 const Articles: React.FC<ArticlesProps> = ({ allArticlesData }) => {
   return (
-    <div>
+    <>
       <Head>
         <title>Articles - Parsa Mesgarha</title>
       </Head>
@@ -29,7 +29,7 @@ const Articles: React.FC<ArticlesProps> = ({ allArticlesData }) => {
         <h1 className={utilStyles.heading2Xl}>Articles</h1>
       </header>
       <Posts postType="articles" itemsData={allArticlesData} />
-    </div>
+    </>
   );
 };
 

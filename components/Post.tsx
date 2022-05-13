@@ -17,7 +17,7 @@ interface PostProps {
 
 const Post: React.FC<PostProps> = ({ postType, postData }) => {
   return (
-    <div>
+    <>
       <Head>
         <title>{postData.title} - Parsa Mesgarha</title>
         <meta
@@ -65,7 +65,7 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
           </a>
         </Link>
       </div>
-    </div>
+    </>
   );
 };
 

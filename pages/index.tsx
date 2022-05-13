@@ -6,7 +6,7 @@ import utilStyles from "../styles/utils.module.css";
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Parsa Mesgarha - Programmer, lifelong learner.</title>
       </Head>
@@ -80,7 +80,7 @@ const Home: React.FC = () => {
           so they land straight into your inbox.
         </p>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -19,7 +19,7 @@ interface NotesProps {
 
 const Notes: React.FC<NotesProps> = ({ allNotesData }) => {
   return (
-    <div>
+    <>
       <Head>
         <title>Book Notes - Parsa Mesgarha</title>
       </Head>
@@ -27,7 +27,7 @@ const Notes: React.FC<NotesProps> = ({ allNotesData }) => {
         <h1 className={utilStyles.heading2Xl}>Book Notes</h1>
       </header>
       <Posts postType="notes" itemsData={allNotesData} />
-    </div>
+    </>
   );
 };
 

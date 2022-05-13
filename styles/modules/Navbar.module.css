@@ -1,11 +1,10 @@
 .navbar {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
   flex-direction: row;
   align-items: center;
   margin-bottom: 1rem;
-  font-size: 1.2rem;
   height: 45px;
 }
 
@@ -25,4 +24,18 @@
   margin: auto;
   display: flex;
   align-items: center;
+}
+
+/* If the screen size is 601px wide or more (desktop) */
+@media screen and (min-width: 301px) {
+  .navbar {
+    font-size: 1.2rem;
+  }
+}
+
+/* If the screen size is 600px wide or less (mobile) */
+@media screen and (max-width: 300px) {
+  .navbar {
+    font-size: 1rem;
+  }
 }
