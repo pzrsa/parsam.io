@@ -2,6 +2,7 @@ import { ReactElement } from "react";
 import { SiGithub, SiLinkedin, SiTwitter, SiYoutube } from "react-icons/si";
 import { VscSourceControl } from "react-icons/vsc";
 import styles from "../styles/modules/Footer.module.css";
+import ThemeToggle from "./ThemeToggle";
 
 interface FooterProps {
   href: string;
@@ -44,6 +45,8 @@ const Footer = () => {
         href="https://www.linkedin.com/in/parsamesgarha/"
         icon={<SiLinkedin title="LinkedIn" />}
       />
+      <span style={{ flexGrow: 1 }} />
+      <ThemeToggle />
     </footer>
   );
 };

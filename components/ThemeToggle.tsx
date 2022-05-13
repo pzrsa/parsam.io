@@ -8,25 +8,22 @@ const ThemeToggle: React.FC = () => {
 
   const { resolvedTheme, setTheme } = useTheme();
 
-  // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
 
   if (!mounted) return null;
 
   return (
-    <div>
-      <button
-        aria-label="Theme Toggle"
-        onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-        className={`${styles.button} ${styles[resolvedTheme!]}`}
-      >
-        {resolvedTheme === "dark" ? (
-          <MdOutlineLightMode className={styles.icon} />
-        ) : (
-          <MdOutlineDarkMode className={styles.icon} />
-        )}
-      </button>
-    </div>
+    <button
+      aria-label="Theme Toggle"
+      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      className={`${styles.button} ${styles[resolvedTheme!]}`}
+    >
+      {resolvedTheme === "dark" ? (
+        <MdOutlineLightMode className={styles.icon} />
+      ) : (
+        <MdOutlineDarkMode className={styles.icon} />
+      )}
+    </button>
   );
 };
 
