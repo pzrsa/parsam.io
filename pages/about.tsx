@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { IconType } from "react-icons";
 import {
+  SiChakraui,
   SiGo,
   SiIntellijidea,
   SiJava,
@@ -64,16 +65,31 @@ const About: React.FC = ({}) => {
         <h2 className={utilStyles.headingLg}>Things I like</h2>
         <ul>
           <li>
-            Free and open source projects. It&apos;s fascinating that random
-            people all over the internet make the world a better place.
+            <a
+              href="https://github.com/pzrsa?tab=stars"
+              rel="prefetch noreferrer"
+              target="_blank"
+            >
+              Open source projects
+            </a>
+            . It&apos;s fascinating that random people all over the internet are
+            able to come together to change the world.
           </li>
           <li>
             Reading non-fiction and fiction books on my Kindle. Currently
-            reading The Obstacle Is the Way by Ryan Holiday.
+            reading{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/The_Obstacle_Is_the_Way"
+              rel="prefetch noreferrer"
+              target="_blank"
+            >
+              The Obstacle Is the Way
+            </a>{" "}
+            by Ryan Holiday.
           </li>
           <li>
             Mechanical keyboards. I love the fact that I could build something
-            with parts tailored to my preferences. I use a keyboard daily so it
+            with parts tailored to my preference. I use a keyboard daily, so it
             makes sense for me to invest in tools that inspire me to use them
             more.
           </li>
@@ -86,9 +102,9 @@ const About: React.FC = ({}) => {
             >
               monkeytype
             </a>
-            . Highest wpm is 114. I&apos;ve now thankfully moved over to using 9
-            fingers for typing after only using 3 previously. Wasn&apos;t easy
-            but 100% worth the frustration in the beginning.
+            . I&apos;ve now thankfully moved over to using 9 fingers for typing
+            after only using 3 previously. Wasn&apos;t easy but 100% worth the
+            frustration in the beginning. My current highest WPM is 114.
           </li>
           <li>
             I enjoy speaking with enthuastic people just trying to share their
@@ -107,6 +123,7 @@ const About: React.FC = ({}) => {
           <TechItem name="TypeScript" Icon={SiTypescript} />
           <TechItem name="Node.js" Icon={SiNodedotjs} />
           <TechItem name="Next.js" Icon={SiNextdotjs} />
+          <TechItem name="Chakra UI" Icon={SiChakraui} />
           <TechItem name="Go" Icon={SiGo} />
           <TechItem name="Java" Icon={SiJava} />
           <TechItem name="PostgreSQL" Icon={SiPostgresql} />
