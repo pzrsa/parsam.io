@@ -1,0 +1,8 @@
+.header {
+  margin-bottom: 2rem;
+}
+
+.me {
+  display: flex;
+  gap: 0.5rem;
+}
