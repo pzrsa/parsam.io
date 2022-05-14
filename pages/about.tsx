@@ -33,7 +33,7 @@ const About: React.FC = ({}) => {
   return (
     <>
       <Head>
-        <title>Parsa Mesgarha - About</title>
+        <title>About Me - Parsa Mesgarha</title>
       </Head>
       <header className={styles.header}>
         <h1 className={utilStyles.heading2Xl}>About Me</h1>
