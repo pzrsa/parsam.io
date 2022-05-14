@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { IconType } from "react-icons";
 import {
-  SiChakraui,
   SiGo,
   SiIntellijidea,
   SiJava,
@@ -123,7 +122,6 @@ const About: React.FC = ({}) => {
           <TechItem name="TypeScript" Icon={SiTypescript} />
           <TechItem name="Node.js" Icon={SiNodedotjs} />
           <TechItem name="Next.js" Icon={SiNextdotjs} />
-          <TechItem name="Chakra UI" Icon={SiChakraui} />
           <TechItem name="Go" Icon={SiGo} />
           <TechItem name="Java" Icon={SiJava} />
           <TechItem name="PostgreSQL" Icon={SiPostgresql} />
