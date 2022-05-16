@@ -121,10 +121,16 @@ const About: React.FC = ({}) => {
             programming a joy.
           </li>
           <li>
-            Consuming most content at 2x speed, but I do watch films or shows at
-            normal speed. But most of the videos I watch online are
-            informational. Audiobooks and podcasts I always listen at 2x speed
-            because why not.
+            Consuming informational content at 2x speed.{" "}
+            <a
+              href="https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en"
+              rel="prefetch noreferrer"
+              target="_blank"
+            >
+              Video Speed Controller
+            </a>{" "}
+            has completely changed the way I watch videos. I of course watch
+            movies and shows at normal speed, I&apos;m not a psycho.
           </li>
         </ul>
         <h2 className={utilStyles.headingLg}>Technologies</h2>
