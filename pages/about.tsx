@@ -53,8 +53,8 @@ const About: React.FC = ({}) => {
           <Image
             className={utilStyles.rounded}
             src={avatar}
-            height={750}
-            width={750}
+            height={700}
+            width={700}
             objectFit="cover"
             alt="Parsa Mesgarha"
           />
@@ -115,6 +115,16 @@ const About: React.FC = ({}) => {
             and to this day I just love how clean and classic it looks. Although
             I wear an Apple Watch daily, I enjoy putting the Seiko on every now
             and then which does feel good.
+          </li>
+          <li>
+            Vi keybinds, I can&apos;t live without them as it simply makes
+            programming a joy.
+          </li>
+          <li>
+            Consuming most content at 2x speed, but I do watch films or shows at
+            normal speed. But most of the videos I watch online are
+            informational. Audiobooks and podcasts I always listen at 2x speed
+            because why not.
           </li>
         </ul>
         <h2 className={utilStyles.headingLg}>Technologies</h2>

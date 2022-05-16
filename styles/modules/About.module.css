@@ -6,3 +6,10 @@
   display: flex;
   gap: 0.5rem;
 }
+
+/* If the screen size is 300px wide or less (mobile) */
+@media screen and (max-width: 450px) {
+  .me {
+    display: inherit;
+  }
+}

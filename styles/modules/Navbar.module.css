@@ -26,14 +26,14 @@
   align-items: center;
 }
 
-/* If the screen size is 601px wide or more (desktop) */
+/* If the screen size is 301px wide or more (desktop) */
 @media screen and (min-width: 301px) {
   .navbar {
     font-size: 1.2rem;
   }
 }
 
-/* If the screen size is 600px wide or less (mobile) */
+/* If the screen size is 300px wide or less (mobile) */
 @media screen and (max-width: 300px) {
   .navbar {
     font-size: 1rem;
