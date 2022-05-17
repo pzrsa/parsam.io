@@ -21,7 +21,8 @@ body {
 }
 
 a {
-  color: #0070f3;
+  color: inherit;
+  font-weight: bold;
   text-decoration: underline;
 }
 
