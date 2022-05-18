@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import NowPlaying from "../components/NowPlaying";
-import styles from "../styles/modules/Home.module.css";
-import utilStyles from "../styles/utils.module.css";
 
 const Home: React.FC = () => {
   return (
@@ -10,24 +8,24 @@ const Home: React.FC = () => {
       <Head>
         <title>Parsa Mesgarha - Programmer, lifelong learner.</title>
       </Head>
-      <header className={styles.header}>
-        <div className={styles.greeting}>
-          <h1 className={utilStyles.heading2Xl}>👋 Hi, I&apos;m Parsa.</h1>
-          <p className={utilStyles.lightText}>
+      <header className="gap-1 mb-2">
+        <div className="m-0">
+          <h1 className="text-4xl font-extrabold">👋 Hi, I&apos;m Parsa.</h1>
+          <p className="text-lg font-semibold text-neutral-600 dark:text-neutral-400">
             Software Development Apprentice at{" "}
-            <span style={{ color: "#4885ed" }}>G</span>
-            <span style={{ color: "#db3236" }}>o</span>
-            <span style={{ color: "#f4c20d" }}>o</span>
-            <span style={{ color: "#4885ed" }}>g</span>
-            <span style={{ color: "#3cba54" }}>l</span>
-            <span style={{ color: "#db3236" }}>e</span>
+            <span className="text-google-blue">G</span>
+            <span className="text-google-red">o</span>
+            <span className="text-google-yellow">o</span>
+            <span className="text-google-blue">g</span>
+            <span className="text-google-green">l</span>
+            <span className="text-google-red">e</span>
           </p>
-          <div className={styles.nowPlaying}>
+          <div className="max-w-fit mt-5">
             <NowPlaying />
           </div>
         </div>
       </header>
-      <div>
+      <div className="prose dark:prose-invert">
         <p>
           I&apos;m an 18 year old from London, England who&apos;s keen on
           learning deeply about stuff like tech, startups, and life. I tend to
