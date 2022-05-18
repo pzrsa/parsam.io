@@ -103,7 +103,8 @@ const About: React.FC = ({}) => {
             </a>
             . I&apos;ve now thankfully moved over to using 9 fingers for typing
             after only using 3 previously. Wasn&apos;t easy but 100% worth the
-            frustration in the beginning. My current highest WPM is 114.
+            frustration in the beginning. My current highest WPM is 116 (95%
+            accuracy).
           </li>
           <li>
             I enjoy speaking with enthuastic people just trying to share their
