@@ -8,7 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "date-fns": "^2.25.0",
+    "dayjs": "^1.11.2",
     "gray-matter": "^4.0.3",
     "next": "12.1.0",
     "next-themes": "^0.0.15",
