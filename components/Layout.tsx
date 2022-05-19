@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import styles from "../styles/modules/Layout.module.css";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
@@ -13,7 +12,7 @@ const Layout: React.FC = ({ children }) => {
   const image = "/images/avatar.jpg";
 
   return (
-    <div className={styles.container}>
+    <div className="max-w-2xl mx-auto px-6 mt-4 mb-6">
       <Head>
         <meta name="robots" content="all" />
         <meta content={description} name="description" />
