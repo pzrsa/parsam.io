@@ -31,7 +31,7 @@ class ParsaDocument extends Document {
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
-        <body className="bg-white dark:bg-black text-black dark:text-white antialiased">
+        <body>
           <Main />
           <NextScript />
         </body>
