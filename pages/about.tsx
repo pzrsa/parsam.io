@@ -13,8 +13,6 @@ import {
   SiVisualstudiocode,
 } from "react-icons/si";
 import avatar from "../public/images/avatar.jpg";
-import styles from "../styles/modules/About.module.css";
-import utilStyles from "../styles/utils.module.css";
 
 interface TechItemProps {
   name: string;
@@ -23,8 +21,11 @@ interface TechItemProps {
 
 const TechItem: React.FC<TechItemProps> = ({ name, Icon }) => {
   return (
-    <li>
-      <Icon /> {name}
+    <li className="flex space-x-2 items-center">
+      <span>
+        <Icon />
+      </span>
+      <span>{name}</span>
     </li>
   );
 };
@@ -35,10 +36,10 @@ const About: React.FC = ({}) => {
       <Head>
         <title>About Me - Parsa Mesgarha</title>
       </Head>
-      <header className={styles.header}>
-        <h1 className={utilStyles.heading2Xl}>About Me</h1>
-        <div className={styles.me}>
-          <div>
+      <div>
+        <h1 className="text-4xl font-extrabold mb-4">About Me</h1>
+        <div className="relative sm:flex">
+          <div className="prose dark:prose-invert mb-5 sm:mr-3 sm:mb-0">
             <p>
               If you&apos;re interested to learn more about me for some reason,
               here&apos;s a list of things that might paint a picture of the
@@ -50,19 +51,19 @@ const About: React.FC = ({}) => {
               reach out as I like meeting new people!
             </p>
           </div>
-          <Image
-            className={utilStyles.rounded}
-            src={avatar}
-            height={700}
-            width={700}
-            objectFit="cover"
-            alt="Parsa Mesgarha"
-          />
+          <div className="mx-auto w-[200px] sm:w-[800px]">
+            <Image
+              className="rounded-2xl"
+              src={avatar}
+              objectFit="cover"
+              alt="Parsa Mesgarha"
+            />
+          </div>
         </div>
-      </header>
+      </div>
       <div>
-        <h2 className={utilStyles.headingLg}>Things I like</h2>
-        <ul>
+        <h2 className="text-2xl font-bold mb-3 mt-8">Things I like</h2>
+        <ul className="prose dark:prose-invert list-disc list-outside">
           <li>
             <a
               href="https://github.com/pzrsa?tab=stars"
@@ -134,8 +135,8 @@ const About: React.FC = ({}) => {
             movies and shows at normal speed, I&apos;m not a psycho.
           </li>
         </ul>
-        <h2 className={utilStyles.headingLg}>Technologies</h2>
-        <ul>
+        <h2 className="text-2xl font-bold mb-3 mt-8">Technologies</h2>
+        <ul className="grid grid-cols-2 gap-5 prose dark:prose-invert">
           <TechItem name="TypeScript" Icon={SiTypescript} />
           <TechItem name="Node.js" Icon={SiNodedotjs} />
           <TechItem name="Next.js" Icon={SiNextdotjs} />
@@ -146,8 +147,8 @@ const About: React.FC = ({}) => {
           <TechItem name="IntelliJ" Icon={SiIntellijidea} />
           <TechItem name="VSCode" Icon={SiVisualstudiocode} />
         </ul>
-        <h2 className={utilStyles.headingLg}>Setup</h2>
-        <ul>
+        <h2 className="text-2xl font-bold mb-3 mt-8">Setup</h2>
+        <ul className="prose dark:prose-invert list-disc list-outside">
           <li>M1 MacBook Pro 13&quot;.</li>
           <li>
             <a

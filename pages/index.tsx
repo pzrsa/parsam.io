@@ -8,23 +8,21 @@ const Home: React.FC = () => {
       <Head>
         <title>Parsa Mesgarha - Programmer, lifelong learner.</title>
       </Head>
-      <header className="gap-1 mb-2">
-        <div className="m-0">
-          <h1 className="text-4xl font-extrabold">👋 Hi, I&apos;m Parsa.</h1>
-          <p className="text-lg font-semibold text-neutral-600 dark:text-neutral-400">
-            Software Development Apprentice at{" "}
-            <span className="text-google-blue">G</span>
-            <span className="text-google-red">o</span>
-            <span className="text-google-yellow">o</span>
-            <span className="text-google-blue">g</span>
-            <span className="text-google-green">l</span>
-            <span className="text-google-red">e</span>
-          </p>
-          <div className="max-w-fit mt-5">
-            <NowPlaying />
-          </div>
+      <div className="gap-1 mb-3">
+        <h1 className="text-4xl font-extrabold">👋 Hi, I&apos;m Parsa.</h1>
+        <p className="text-lg font-semibold text-neutral-600 dark:text-neutral-400">
+          Software Development Apprentice at{" "}
+          <span className="text-google-blue">G</span>
+          <span className="text-google-red">o</span>
+          <span className="text-google-yellow">o</span>
+          <span className="text-google-blue">g</span>
+          <span className="text-google-green">l</span>
+          <span className="text-google-red">e</span>
+        </p>
+        <div className="max-w-fit mt-5">
+          <NowPlaying />
         </div>
-      </header>
+      </div>
       <div className="prose dark:prose-invert">
         <p>
           I&apos;m an 18 year old from London, England who&apos;s keen on
