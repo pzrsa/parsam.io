@@ -2,7 +2,6 @@ import { GetStaticProps } from "next";
 import Head from "next/head";
 import Posts from "../components/Posts";
 import { getSortedNotesData } from "../lib/notes";
-import utilStyles from "../styles/utils.module.css";
 
 export const getStaticProps: GetStaticProps = () => {
   const allNotesData = getSortedNotesData();
@@ -24,7 +23,7 @@ const Notes: React.FC<NotesProps> = ({ allNotesData }) => {
         <title>Book Notes - Parsa Mesgarha</title>
       </Head>
       <header>
-        <h1 className={utilStyles.heading2Xl}>Book Notes</h1>
+        <h1 className="text-4xl font-extrabold mb-8">Book Notes</h1>
       </header>
       <Posts postType="notes" itemsData={allNotesData} />
     </>
