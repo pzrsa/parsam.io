@@ -16,6 +16,24 @@ module.exports = {
           green: "#3cba54",
         },
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            a: {
+              color: theme("colors.blue.600"),
+              fontWeight: "700",
+            },
+          },
+        },
+        invert: {
+          css: {
+            a: {
+              color: theme("colors.blue.500"),
+              fontWeight: "700",
+            },
+          },
+        },
+      }),
     },
   },
   plugins: [require("@tailwindcss/typography")],
