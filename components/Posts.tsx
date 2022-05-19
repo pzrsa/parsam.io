@@ -1,7 +1,5 @@
 import Link from "next/link";
 import Date from "../components/Date";
-import styles from "../styles/modules/Posts.module.css";
-import utilStyles from "../styles/utils.module.css";
 
 interface PostsProps {
   postType: string;
@@ -11,14 +9,15 @@ interface PostsProps {
 const Posts: React.FC<PostsProps> = ({ postType, itemsData }) => {
   return (
     <section>
-      <ul className={styles.list}>
+      <ul>
         {itemsData.map(({ slug, title, date, author }) => (
-          <li className={styles.listItem} key={slug}>
+          <li className="mb-8" key={slug}>
             <Link href={`/${postType}/${slug}`}>
-              <a className={utilStyles.headingXl}>{title}</a>
+              <a className="text-3xl font-bold underline hover:no-underline">
+                {title}
+              </a>
             </Link>
-            <br />
-            <p className={utilStyles.lightText}>
+            <p className="text-neutral-600 dark:text-neutral-400 mt-2">
               {postType === "notes" ? <>by {author} - </> : ""}
               <Date dateString={date} />
             </p>

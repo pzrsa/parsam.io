@@ -22,9 +22,7 @@ const Notes: React.FC<NotesProps> = ({ allNotesData }) => {
       <Head>
         <title>Book Notes - Parsa Mesgarha</title>
       </Head>
-      <header>
-        <h1 className="text-4xl font-extrabold mb-8">Book Notes</h1>
-      </header>
+      <h1 className="text-4xl font-extrabold mb-8">Book Notes</h1>
       <Posts postType="notes" itemsData={allNotesData} />
     </>
   );
