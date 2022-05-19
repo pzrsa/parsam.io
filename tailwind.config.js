@@ -22,6 +22,9 @@ module.exports = {
             a: {
               color: theme("colors.blue.600"),
               fontWeight: "700",
+              "&:hover": {
+                "text-decoration": "none",
+              },
             },
           },
         },
