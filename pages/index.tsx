@@ -9,8 +9,10 @@ const Home: React.FC = () => {
         <title>Parsa Mesgarha - Programmer, lifelong learner.</title>
       </Head>
       <div className="gap-1 mb-3">
-        <h1 className="text-4xl font-extrabold">👋 Hi, I&apos;m Parsa.</h1>
-        <p className="text-lg font-semibold text-neutral-600 dark:text-neutral-400">
+        <h1 className="text-4xl font-extrabold sm:text-5xl">
+          👋 Hi, I&apos;m Parsa.
+        </h1>
+        <p className="text-sm sm:text-lg font-semibold text-neutral-600 dark:text-neutral-400">
           Software Development Apprentice at{" "}
           <span className="text-google-blue">G</span>
           <span className="text-google-red">o</span>

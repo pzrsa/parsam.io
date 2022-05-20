@@ -36,9 +36,9 @@ module.exports = {
           },
         },
       }),
-    },
-    screens: {
-      fold: { max: "325px" },
+      screens: {
+        fold: { max: "325px" },
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

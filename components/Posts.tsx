@@ -13,7 +13,7 @@ const Posts: React.FC<PostsProps> = ({ postType, itemsData }) => {
         {itemsData.map(({ slug, title, date, author }) => (
           <li className="mb-8" key={slug}>
             <Link href={`/${postType}/${slug}`}>
-              <a className="text-3xl font-bold underline hover:no-underline">
+              <a className="text-3xl sm:text-4xl font-bold underline hover:no-underline">
                 {title}
               </a>
             </Link>
