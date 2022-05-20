@@ -10,7 +10,7 @@ const NowPlaying: React.FC = () => {
   if (!data) return <div>loading...</div>;
 
   return (
-    <div className="flex p-1 rounded-lg items-center hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-all text-sm sm:text-lg fold:text-xs group">
+    <div className="flex p-1 rounded-lg items-center hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-all text-base sm:text-lg fold:text-xs group">
       {data?.isPlaying ? (
         <a
           className="flex items-center space-x-2 cursor-pointer"
