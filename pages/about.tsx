@@ -22,11 +22,10 @@ interface TechItemProps {
 
 const TechItem: React.FC<TechItemProps> = ({ name, Icon }) => {
   return (
-    <li className="space-x-2 flex items-center">
-      <span>
-        <Icon />
+    <li>
+      <span className="gap-x-2 flex items-center">
+        <Icon /> {name}
       </span>
-      <span>{name}</span>
     </li>
   );
 };
@@ -104,11 +103,6 @@ const About: React.FC = ({}) => {
             accuracy).
           </li>
           <li>
-            I enjoy speaking with enthuastic people just trying to share their
-            interests. If the person has a personal website, then we most likely
-            would bond.
-          </li>
-          <li>
             Mechanical watches. I own a Seiko SNZG13K1 that I bought for £100,
             and to this day I just love how clean and classic it looks. Although
             I wear an Apple Watch daily, I enjoy putting the Seiko on every now
@@ -130,9 +124,18 @@ const About: React.FC = ({}) => {
             has completely changed the way I watch videos. I of course watch
             movies and shows at normal speed, I&apos;m not a psycho.
           </li>
+          <li>
+            Building things from scratch as opposed to buying it. It&apos;s much
+            more fulfilling to enjoy the journey.
+          </li>
+          <li>
+            Using things for their pure functionality. I love barebones and
+            minimalist stuff, it just feels better to use. Also if you build it
+            from scratch, it has your own mistakes on it.
+          </li>
         </ul>
         <h2 className="text-2xl font-bold mb-3 mt-8">Technologies</h2>
-        <ul className="list-disc grid grid-cols-2 gap-2 sm:grid-cols-3">
+        <ul className="list-disc prose dark:prose-invert">
           <TechItem name="TypeScript" Icon={SiTypescript} />
           <TechItem name="Node.js" Icon={SiNodedotjs} />
           <TechItem name="Next.js" Icon={SiNextdotjs} />
