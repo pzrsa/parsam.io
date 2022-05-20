@@ -1,7 +1,6 @@
 import { SiSpotify } from "react-icons/si";
 import useSWR from "swr";
 import fetcher from "../lib/fetcher";
-import styles from "../styles/modules/NowPlaying.module.css";
 
 const NowPlaying: React.FC = () => {
   const { data, error } = useSWR("/api/now-playing", fetcher);
@@ -10,19 +9,28 @@ const NowPlaying: React.FC = () => {
   if (!data) return <div>loading...</div>;
 
   return (
-    <div className={styles.nowPlaying}>
+    <div className="text-md sm:text-lg fold:text-sm">
       {data?.isPlaying ? (
-        <p className={styles.p}>
-          <a href={data.songUrl} rel="prefetch noreferrer" target="_blank">
-            <SiSpotify className={styles.icon} /> Listening to{" "}
-            <strong>
-              {data.title} by {data.artist}
-            </strong>{" "}
-          </a>
-        </p>
+        <a
+          className="flex space-x-2 items-center hover:text-neutral-500 dark:hover:text-neutral-400 transition-all cursor-pointer"
+          href={data.songUrl}
+          rel="prefetch noreferrer"
+          target="_blank"
+        >
+          <span>
+            <SiSpotify />
+          </span>
+          <span>
+            Listening to <span className="font-bold">{data.title}</span> by{" "}
+            <span className="font-bold">{data.artist}</span>
+          </span>
+        </a>
       ) : (
-        <p className={styles.p}>
-          <SiSpotify className={styles.icon} /> Not playing anything
+        <p className="flex space-x-2 items-center hover:text-neutral-500 dark:hover:text-neutral-400 transition-all cursor-default">
+          <span>
+            <SiSpotify />
+          </span>
+          <span>Not playing anything</span>
         </p>
       )}
     </div>
