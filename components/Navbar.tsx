@@ -8,7 +8,7 @@ interface NavbarProps {
 const NavLink: React.FC<NavbarProps> = ({ href, text }) => {
   return (
     <Link href={href}>
-      <a className="font-semibold hover:text-neutral-500 dark:hover:text-neutral-400 transition-all text-xl fold:text-base items-center justify-center flex">
+      <a className="font-bold hover:text-neutral-500 dark:hover:text-neutral-400 transition-all text-xl fold:text-base items-center justify-center flex">
         {text}
       </a>
     </Link>
