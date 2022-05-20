@@ -125,8 +125,10 @@ const About: React.FC = ({}) => {
             movies and shows at normal speed, I&apos;m not a psycho.
           </li>
           <li>
-            Building things from scratch as opposed to buying it. It&apos;s much
-            more fulfilling to enjoy the journey.
+            Building things from scratch as opposed to buying it from the shelf.
+            It&apos;s much more fulfilling to enjoy the journey. When something
+            is built, it even has your own battle scars from making some
+            mistakes.
           </li>
         </ul>
         <h2 className="text-2xl font-bold mb-3 mt-8">Technologies</h2>
