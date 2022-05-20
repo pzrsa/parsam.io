@@ -1,7 +1,6 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
-import styles from "../styles/modules/ThemeToggle.module.css";
 
 const ThemeToggle: React.FC = () => {
   const [mounted, setMounted] = useState(false);
@@ -16,12 +15,12 @@ const ThemeToggle: React.FC = () => {
     <button
       aria-label="Theme Toggle"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-      className={`${styles.button} ${styles[resolvedTheme!]}`}
+      className="flex bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-600 w-8 h-8 items-center justify-center transition-all rounded-lg"
     >
       {resolvedTheme === "dark" ? (
-        <MdOutlineLightMode className={styles.icon} />
+        <MdOutlineLightMode />
       ) : (
-        <MdOutlineDarkMode className={styles.icon} />
+        <MdOutlineDarkMode />
       )}
     </button>
   );
