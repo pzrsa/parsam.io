@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 
 interface NavbarProps {
   href: string;
@@ -7,7 +8,7 @@ interface NavbarProps {
 const NavLink: React.FC<NavbarProps> = ({ href, text }) => {
   return (
     <Link href={href}>
-      <a className="font-semibold hover:text-neutral-500 dark:hover:text-neutral-400 transition-all text-xl fold:text-base">
+      <a className="font-semibold hover:text-neutral-500 dark:hover:text-neutral-400 transition-all text-xl sm:text-2xl fold:text-base items-center justify-center flex">
         {text}
       </a>
     </Link>
@@ -16,11 +17,13 @@ const NavLink: React.FC<NavbarProps> = ({ href, text }) => {
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-wrap gap-3 mb-6">
+    <nav className="flex gap-3 mb-6">
       <NavLink href="/" text="Home" />
       <NavLink href="/about" text="About" />
       <NavLink href="/notes" text="Notes" />
       <NavLink href="/articles" text="Articles" />
+      <span className="flex-grow" />
+      <ThemeToggle />
     </nav>
   );
 };

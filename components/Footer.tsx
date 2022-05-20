@@ -1,7 +1,6 @@
 import { ReactElement } from "react";
 import { SiGithub, SiLinkedin, SiTwitter, SiYoutube } from "react-icons/si";
 import { VscSourceControl } from "react-icons/vsc";
-import ThemeToggle from "./ThemeToggle";
 
 interface FooterProps {
   href: string;
@@ -11,7 +10,7 @@ interface FooterProps {
 const FooterItem: React.FC<FooterProps> = ({ href, icon }) => {
   return (
     <a
-      className="text-2xl hover:text-neutral-500 dark:hover:text-neutral-400 transition-all "
+      className="text-2xl fold:text-xl hover:text-neutral-500 dark:hover:text-neutral-400 transition-all"
       href={href}
       rel="prefetch noreferrer"
       target="_blank"
@@ -23,7 +22,7 @@ const FooterItem: React.FC<FooterProps> = ({ href, icon }) => {
 
 const Footer = () => {
   return (
-    <footer className="mt-10 flex gap-3 items-center">
+    <footer className="mt-10 flex gap-4 items-center">
       <FooterItem
         href="https://twitter.com/_parsam"
         icon={<SiTwitter title="Twitter" />}
@@ -44,8 +43,6 @@ const Footer = () => {
         href="https://www.linkedin.com/in/parsamesgarha/"
         icon={<SiLinkedin title="LinkedIn" />}
       />
-      <span className="flex-grow" />
-      <ThemeToggle />
     </footer>
   );
 };
