@@ -21,7 +21,7 @@ const Home: React.FC = () => {
           <span className="text-google-green">l</span>
           <span className="text-google-red">e</span>
         </p>
-        <div className="max-w-fit my-4">
+        <div className="max-w-fit my-6">
           <NowPlaying />
         </div>
       </div>
