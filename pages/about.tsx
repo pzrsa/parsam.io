@@ -22,10 +22,8 @@ interface TechItemProps {
 
 const TechItem: React.FC<TechItemProps> = ({ name, Icon }) => {
   return (
-    <li>
-      <span className="gap-x-2 flex items-center">
-        <Icon /> {name}
-      </span>
+    <li className="gap-x-2 flex items-center">
+      <Icon /> {name}
     </li>
   );
 };
@@ -132,7 +130,7 @@ const About: React.FC = ({}) => {
           </li>
         </ul>
         <h2 className="text-2xl font-bold mb-3 mt-8">Technologies</h2>
-        <ul className="list-disc prose dark:prose-invert">
+        <ul className="gap-y-3 grid grid-cols-2 sm:grid-cols-3 justify-between">
           <TechItem name="TypeScript" Icon={SiTypescript} />
           <TechItem name="Node.js" Icon={SiNodedotjs} />
           <TechItem name="Next.js" Icon={SiNextdotjs} />
