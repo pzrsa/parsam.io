@@ -1,5 +1,6 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
+import PageTitle from "../components/PageTitle";
 import Posts from "../components/Posts";
 import { getSortedArticlesData } from "../lib/articles";
 
@@ -24,7 +25,7 @@ const Articles: React.FC<ArticlesProps> = ({ allArticlesData }) => {
       <Head>
         <title>Articles - Parsa Mesgarha</title>
       </Head>
-      <h1 className="text-4xl font-extrabold mb-8">Articles</h1>
+      <PageTitle name="Articles" />
       <Posts postType="articles" itemsData={allArticlesData} />
     </>
   );

@@ -12,6 +12,7 @@ import {
   SiTypescript,
   SiVisualstudiocode,
 } from "react-icons/si";
+import PageTitle from "../components/PageTitle";
 import avatar from "../public/images/avatar.jpg";
 
 interface TechItemProps {
@@ -37,7 +38,7 @@ const About: React.FC = ({}) => {
         <title>About Me - Parsa Mesgarha</title>
       </Head>
       <div>
-        <h1 className="text-4xl font-extrabold mb-8">About Me</h1>
+        <PageTitle name="About Me" />
         <div className="relative sm:flex">
           <div className="prose dark:prose-invert mb-5 sm:mr-3 sm:mb-0">
             <p>
