@@ -21,7 +21,7 @@ interface TechItemProps {
 
 const TechItem: React.FC<TechItemProps> = ({ name, Icon }) => {
   return (
-    <li className="flex space-x-2 items-center">
+    <li className="space-x-2 flex items-center">
       <span>
         <Icon />
       </span>
@@ -136,7 +136,7 @@ const About: React.FC = ({}) => {
           </li>
         </ul>
         <h2 className="text-2xl font-bold mb-3 mt-8">Technologies</h2>
-        <ul className="grid grid-cols-2 gap-5 prose dark:prose-invert">
+        <ul className="list-disc grid grid-cols-2 gap-2 sm:grid-cols-3">
           <TechItem name="TypeScript" Icon={SiTypescript} />
           <TechItem name="Node.js" Icon={SiNodedotjs} />
           <TechItem name="Next.js" Icon={SiNextdotjs} />
@@ -148,7 +148,7 @@ const About: React.FC = ({}) => {
           <TechItem name="VSCode" Icon={SiVisualstudiocode} />
         </ul>
         <h2 className="text-2xl font-bold mb-3 mt-8">Setup</h2>
-        <ul className="prose dark:prose-invert list-disc list-outside">
+        <ul className="prose dark:prose-invert list-disc">
           <li>M1 MacBook Pro 13&quot;.</li>
           <li>
             <a
