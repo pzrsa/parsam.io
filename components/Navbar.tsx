@@ -17,7 +17,7 @@ const NavLink: React.FC<NavbarProps> = ({ href, text }) => {
 
 const Navbar = () => {
   return (
-    <nav className="flex gap-3 mb-6">
+    <nav className="flex gap-2 sm:gap-3 mb-6">
       <NavLink href="/" text="Home" />
       <NavLink href="/about" text="About" />
       <NavLink href="/notes" text="Notes" />
