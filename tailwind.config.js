@@ -32,7 +32,6 @@ module.exports = {
           css: {
             a: {
               color: theme("colors.blue.500"),
-              fontWeight: "700",
             },
           },
         },
