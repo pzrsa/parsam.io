@@ -12,7 +12,7 @@ const Layout: React.FC = ({ children }) => {
   const image = "/images/avatar.jpg";
 
   return (
-    <div className="max-w-2xl mx-auto px-5 my-8">
+    <div className="max-w-2xl mx-auto px-6 my-8">
       <Head>
         <meta name="robots" content="all" />
         <meta content={description} name="description" />
