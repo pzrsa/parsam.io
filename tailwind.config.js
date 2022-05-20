@@ -19,6 +19,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            color: theme("colors.black"),
             a: {
               color: theme("colors.blue.600"),
               fontWeight: "700",
@@ -29,6 +30,7 @@ module.exports = {
           },
         },
         invert: {
+          color: theme("colors.white"),
           css: {
             a: {
               color: theme("colors.blue.500"),
