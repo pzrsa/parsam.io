@@ -38,11 +38,11 @@ const About: React.FC = ({}) => {
       </Head>
       <div>
         <PageTitle name="About Me" />
-        <div className="relative sm:flex">
+        <div className="relative sm:flex sm:flex-row-reverse">
           <div className="mx-auto w-60 h-60 sm:w-full sm:h-full ">
             <Image className="rounded-xl" src={avatar} alt="Parsa Mesgarha" />
           </div>
-          <div className="prose dark:prose-invert mt-5 sm:ml-3 sm:mt-0">
+          <div className="prose dark:prose-invert mt-5 sm:mr-3 sm:mt-0">
             <p>
               If you&apos;re interested to learn more about me for some reason,
               here&apos;s a list of things that might paint a picture of the
