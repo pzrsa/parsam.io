@@ -30,8 +30,8 @@ module.exports = {
           },
         },
         invert: {
-          color: theme("colors.white"),
           css: {
+            color: theme("colors.white"),
             a: {
               color: theme("colors.blue.500"),
             },
