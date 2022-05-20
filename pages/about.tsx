@@ -128,11 +128,6 @@ const About: React.FC = ({}) => {
             Building things from scratch as opposed to buying it. It&apos;s much
             more fulfilling to enjoy the journey.
           </li>
-          <li>
-            Using things for their pure functionality. I love barebones and
-            minimalist stuff, it just feels better to use. Also if you build it
-            from scratch, it has your own mistakes on it.
-          </li>
         </ul>
         <h2 className="text-2xl font-bold mb-3 mt-8">Technologies</h2>
         <ul className="list-disc prose dark:prose-invert">
