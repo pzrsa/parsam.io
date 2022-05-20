@@ -8,7 +8,7 @@ const Home: React.FC = () => {
       <Head>
         <title>Parsa Mesgarha - Programmer, lifelong learner.</title>
       </Head>
-      <div className="gap-1 mb-3">
+      <div className="gap-1">
         <h1 className="text-4xl font-extrabold sm:text-5xl fold:text-3xl">
           👋 Hi, I&apos;m Parsa.
         </h1>
@@ -21,7 +21,7 @@ const Home: React.FC = () => {
           <span className="text-google-green">l</span>
           <span className="text-google-red">e</span>
         </p>
-        <div className="max-w-fit mt-5">
+        <div className="max-w-fit my-4">
           <NowPlaying />
         </div>
       </div>
