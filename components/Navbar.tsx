@@ -1,5 +1,4 @@
 import Link from "next/link";
-import styles from "../styles/modules/Navbar.module.css";
 
 interface NavbarProps {
   href: string;
@@ -8,14 +7,16 @@ interface NavbarProps {
 const NavLink: React.FC<NavbarProps> = ({ href, text }) => {
   return (
     <Link href={href}>
-      <a className={styles.navLink}>{text}</a>
+      <a className="font-semibold hover:text-neutral-500 dark:hover:text-neutral-400 transition-all text-xl fold:text-base">
+        {text}
+      </a>
     </Link>
   );
 };
 
 const Navbar = () => {
   return (
-    <nav className={styles.navbar}>
+    <nav className="flex flex-wrap gap-3 mb-6">
       <NavLink href="/" text="Home" />
       <NavLink href="/about" text="About" />
       <NavLink href="/notes" text="Notes" />
