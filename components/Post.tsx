@@ -1,7 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "../styles/modules/Post.module.css";
-import utilStyles from "../styles/utils.module.css";
 import Date from "./Date";
 
 interface PostProps {
@@ -50,18 +48,23 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
           key="twitter:image"
         />
       </Head>
-      <header>
-        <h1 className={utilStyles.heading2Xl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
+      <div className="mb-4">
+        <h1 className="text-4xl sm:text-5xl font-extrabold">
+          {postData.title}
+        </h1>
+        <div className="text-neutral-600 dark:text-neutral-400 mt-1">
           {postType === "note" ? <>by {postData.author} - </> : ""}
           <Date dateString={postData.date} />
         </div>
-      </header>
-      <article dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      <div className={styles.backToPage}>
+      </div>
+      <article
+        className="prose dark:prose-invert"
+        dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+      />
+      <div className="max-w-fit mt-6">
         <Link href={`/${postType}s`}>
-          <a>
-            <h1 className={utilStyles.headingMd}>← Back to {postType}s</h1>
+          <a className="text-xl font-bold fold:text-sm hover:text-neutral-500 dark:hover:text-neutral-400 transition-all cursor-pointer">
+            ← Back to {postType}s
           </a>
         </Link>
       </div>
