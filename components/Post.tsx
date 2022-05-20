@@ -61,7 +61,7 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         className="prose dark:prose-invert"
         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
       />
-      <div className="max-w-fit mt-6">
+      <div className="max-w-fit my-10">
         <Link href={`/${postType}s`}>
           <a className="text-xl font-bold fold:text-sm hover:text-neutral-500 dark:hover:text-neutral-400 transition-all cursor-pointer">
             ← Back to {postType}s
