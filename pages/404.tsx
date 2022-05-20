@@ -1,5 +1,4 @@
 import Head from "next/head";
-import utilStyles from "../styles/utils.module.css";
 
 const Custom404: React.FC = () => {
   return (
@@ -7,7 +6,7 @@ const Custom404: React.FC = () => {
       <Head>
         <title>404 - Parsa Mesgarha</title>
       </Head>
-      <h1 style={{ textAlign: "center" }} className={utilStyles.heading2Xl}>
+      <h1 className="text-center text-2xl sm:text-4xl font-black">
         404 - Page not found
       </h1>
     </>
