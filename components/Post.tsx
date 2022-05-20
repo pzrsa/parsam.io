@@ -52,7 +52,7 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         <h1 className="text-4xl sm:text-5xl font-extrabold">
           {postData.title}
         </h1>
-        <div className="text-neutral-600 dark:text-neutral-400 mt-1">
+        <div className="text-neutral-600 dark:text-neutral-400 mt-2">
           {postType === "note" ? <>by {postData.author} - </> : ""}
           <Date dateString={postData.date} />
         </div>
