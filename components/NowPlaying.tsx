@@ -10,10 +10,10 @@ const NowPlaying: React.FC = () => {
   if (!data) return <div>loading...</div>;
 
   return (
-    <div className="flex px-2 py-2 rounded-lg items-center hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-all text-base sm:text-lg fold:text-xs group">
+    <>
       {data?.isPlaying ? (
         <a
-          className="flex items-center space-x-2 cursor-pointer"
+          className="flex items-center space-x-2 cursor-pointer hover:text-neutral-500 dark:hover:text-neutral-400 transition-all group"
           href={data.songUrl}
           rel="prefetch noreferrer"
           target="_blank"
@@ -23,8 +23,8 @@ const NowPlaying: React.FC = () => {
               className="rounded-lg group-hover:opacity-80 transition-all"
               alt={data.album}
               src={data.albumImageUrl}
-              width={96}
-              height={96}
+              width={60}
+              height={60}
             />
           </span>
           <span>
@@ -36,14 +36,14 @@ const NowPlaying: React.FC = () => {
           </span>
         </a>
       ) : (
-        <p className="flex space-x-2 items-center cursor-default">
+        <p className="flex space-x-2 items-center cursor-default hover:text-neutral-500 dark:hover:text-neutral-400 transition-all">
           <span>
             <SiSpotify />
           </span>
           <span>Not playing anything</span>
         </p>
       )}
-    </div>
+    </>
   );
 };
 
