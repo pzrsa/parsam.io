@@ -6,8 +6,8 @@ import fetcher from "../lib/fetcher";
 const NowPlaying: React.FC = () => {
   const { data, error } = useSWR("/api/now-playing", fetcher);
 
-  if (error) return <div>failed to load :&#40;</div>;
-  if (!data) return <div>loading...</div>;
+  if (error) return <>failed to load :&#40;</>;
+  if (!data) return <>loading...</>;
 
   return (
     <>
