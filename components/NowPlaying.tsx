@@ -6,11 +6,17 @@ import fetcher from "../lib/fetcher";
 const NowPlaying: React.FC = () => {
   const { data, error } = useSWR("/api/now-playing", fetcher);
 
-  if (error) return <>failed to load :&#40;</>;
-  if (!data) return <>loading...</>;
+  if (error)
+    return (
+      <div className="text-base sm:text-lg fold:text-sm">
+        failed to load :&#40;
+      </div>
+    );
+  if (!data)
+    return <div className="text-base sm:text-lg fold:text-sm">loading...</div>;
 
   return (
-    <>
+    <div className="text-base sm:text-lg fold:text-sm">
       {data?.isPlaying ? (
         <a
           className="flex items-center space-x-2 cursor-pointer hover:text-neutral-500 dark:hover:text-neutral-400 transition-all group"
@@ -43,7 +49,7 @@ const NowPlaying: React.FC = () => {
           <span>Not playing anything</span>
         </p>
       )}
-    </>
+    </div>
   );
 };
 
