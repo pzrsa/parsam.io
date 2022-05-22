@@ -32,10 +32,12 @@ Anyone who is really trying to find some sort of meaning in their life or give v
 - I started to watch more interviews that involve Phil himself, [like this by Stanford](https://www.youtube.com/watch?v=OHTosaWWKvg) (where he graduated from with a degree in Accounting) that explains his story as well.
 - Realised that sometimes it's healthy to give up, you shouldn't be too naive or ignorant about running your business when its not succeeding. Similar to what Derek Sivers says in Anything You Want:
 
-"We all have lots of ideas, creations, and projects. When you present one to the world and it’s not a hit, don’t keep pushing it as is. Instead, get back to improving and inventing."
+> We all have lots of ideas, creations, and projects. When you present one to the world and it’s not a hit, don’t keep pushing it as is. Instead, get back to improving and inventing.
 
 ## Some Quotes
 
-- "And those who urge entrepreneurs to never give up? Charlatans. Sometimes you have to give up. Sometimes knowing when to give up, when to try something else, is genius. Giving up doesn’t mean stopping. Don’t ever stop. Luck plays a big role. Yes, I’d like to publicly acknowledge the power of luck. Athletes get lucky, poets get lucky, businesses get lucky. Hard work is critical, a good team is essential, brains and determination are invaluable, but luck may decide the outcome."
-- "Don’t tell people how to do things, tell them what to do and let them surprise you with their results."
-- "When it came rolling in, the money affected us all. Not much, and not for long, because none of us was ever driven by money. But that’s the nature of money. Whether you have it or not, whether you want it or not, whether you like it or not, it will try to define your days. Our task as human being is not to let it."
+> And those who urge entrepreneurs to never give up? Charlatans. Sometimes you have to give up. Sometimes knowing when to give up, when to try something else, is genius. Giving up doesn’t mean stopping. Don’t ever stop. Luck plays a big role. Yes, I’d like to publicly acknowledge the power of luck. Athletes get lucky, poets get lucky, businesses get lucky. Hard work is critical, a good team is essential, brains and determination are invaluable, but luck may decide the outcome.
+
+> Don’t tell people how to do things, tell them what to do and let them surprise you with their results.
+
+> When it came rolling in, the money affected us all. Not much, and not for long, because none of us was ever driven by money. But that’s the nature of money. Whether you have it or not, whether you want it or not, whether you like it or not, it will try to define your days. Our task as human being is not to let it.

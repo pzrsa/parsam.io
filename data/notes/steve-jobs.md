@@ -36,6 +36,8 @@ Overall, this was a great book, and one of the most enjoyable biographies I have
 
 ## Some Quotes
 
-- “You should never start a company with the goal of getting rich. Your goal should be making something you believe in and making a company that will last.”
-- “Some people say, "Give the customers what they want." But that's not my approach. Our job is to figure out what they're going to want before they do. I think Henry Ford once said, "If I'd asked customers what they wanted, they would have told me, 'A faster horse!'" People don't know what they want until you show it to them.”
-- "When you're doing something for yourself, or your best friend or family, you're not going to cheese out. If you don't love something, you're not gonna go the extra mile, work the extra weekend, challenge the status quo as much."
+> You should never start a company with the goal of getting rich. Your goal should be making something you believe in and making a company that will last.
+
+> Some people say, "Give the customers what they want." But that's not my approach. Our job is to figure out what they're going to want before they do. I think Henry Ford once said, "If I'd asked customers what they wanted, they would have told me, 'A faster horse!'" People don't know what they want until you show it to them.
+
+> When you're doing something for yourself, or your best friend or family, you're not going to cheese out. If you don't love something, you're not gonna go the extra mile, work the extra weekend, challenge the status quo as much.

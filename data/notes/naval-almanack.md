@@ -41,10 +41,16 @@ Anyways, young people who are getting started in their life should read this boo
 
 ## Some Quotes
 
-- "You’re not going to get rich renting out your time. You must own equity—a piece of a business—to gain your financial freedom."
-- "If you can’t decide, the answer is no. If I’m faced with a difficult choice, such as: Should I marry this person? Should I take this job? Should I buy this house? Should I move to this city? Should I go into business with this person? If you cannot decide, the answer is no. And the reason is, modern society is full of options. There are tons and tons of options. We live on a planet of seven billion people, and we are connected to everybody on the internet. There are hundreds of thousands of careers available to you. There are so many choices."
-- "To me, happiness is not about positive thoughts. It’s not about negative thoughts. It’s about the absence of desire, especially the absence of desire for external things. The fewer desires I can have, the more I can accept the current state of things, the less my mind is moving, because the mind really exists in motion toward the future or the past. The more present I am, the happier and more content I will be. If I latch onto a feeling, if I say, “Oh, I’m happy now,” and I want to stay happy, then I’m going to drop out of that happiness. Now, suddenly, the mind is moving. It’s trying to attach to something. It’s trying to create a permanent situation out of a temporary situation."
-- "When you’re young, you have time. You have health, but you have no money. When you’re middle-aged, you have money and you have health, but you have no time. When you’re old, you have money and you have time, but you have no health. So the trifecta is trying to get all three at once. By the time people realize they have enough money, they’ve lost their time and their health."
-- "Playing video games will make you happier in the short run—and I used to be an avid gamer—but in the long run, it could ruin your happiness. You’re being fed dopamine and having dopamine withdrawn from you in these little uncontrollable ways."
-- "The greatest superpower is the ability to change yourself."
-- "How do you define wisdom? Understanding the long-term consequences of your actions."
+> You’re not going to get rich renting out your time. You must own equity—a piece of a business—to gain your financial freedom.
+
+> If you can’t decide, the answer is no. If I’m faced with a difficult choice, such as: Should I marry this person? Should I take this job? Should I buy this house? Should I move to this city? Should I go into business with this person? If you cannot decide, the answer is no. And the reason is, modern society is full of options. There are tons and tons of options. We live on a planet of seven billion people, and we are connected to everybody on the internet. There are hundreds of thousands of careers available to you. There are so many choices.
+
+> To me, happiness is not about positive thoughts. It’s not about negative thoughts. It’s about the absence of desire, especially the absence of desire for external things. The fewer desires I can have, the more I can accept the current state of things, the less my mind is moving, because the mind really exists in motion toward the future or the past. The more present I am, the happier and more content I will be. If I latch onto a feeling, if I say, “Oh, I’m happy now,” and I want to stay happy, then I’m going to drop out of that happiness. Now, suddenly, the mind is moving. It’s trying to attach to something. It’s trying to create a permanent situation out of a temporary situation.
+
+> When you’re young, you have time. You have health, but you have no money. When you’re middle-aged, you have money and you have health, but you have no time. When you’re old, you have money and you have time, but you have no health. So the trifecta is trying to get all three at once. By the time people realize they have enough money, they’ve lost their time and their health.
+
+> Playing video games will make you happier in the short run—and I used to be an avid gamer—but in the long run, it could ruin your happiness. You’re being fed dopamine and having dopamine withdrawn from you in these little uncontrollable ways.
+
+> The greatest superpower is the ability to change yourself.
+
+> How do you define wisdom? Understanding the long-term consequences of your actions.

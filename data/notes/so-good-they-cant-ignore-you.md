@@ -37,8 +37,12 @@ As this book is more catered to landing a successful career, new grads are going
 
 ## Some Quotes
 
-- "Telling someone to “follow their passion” is not just an act of innocent optimism, but potentially the foundation for a career riddled with confusion and angst."
-- "If you’re not uncomfortable, then you’re probably stuck at an 'acceptable level.'"
-- "In other words, in most jobs you should expect your employer to resist your move toward more control; they have every incentive to try to convince you to reinvest your career capital back into your career at their company, obtaining more money and prestige instead of more control, and this can be a hard argument to resist"
-- "If you’re not in control of your career, it can chew you up and spit you out."
-- "Working right trumps finding the right work."
+> Telling someone to “follow their passion” is not just an act of innocent optimism, but potentially the foundation for a career riddled with confusion and angst.
+
+> If you’re not uncomfortable, then you’re probably stuck at an 'acceptable level.'
+
+> In other words, in most jobs you should expect your employer to resist your move toward more control; they have every incentive to try to convince you to reinvest your career capital back into your career at their company, obtaining more money and prestige instead of more control, and this can be a hard argument to resist
+
+> If you’re not in control of your career, it can chew you up and spit you out.
+
+> Working right trumps finding the right work.

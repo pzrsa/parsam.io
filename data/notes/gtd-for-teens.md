@@ -33,6 +33,8 @@ Anyone who is aiming to be organised to be honest. This could range from profess
 
 ## Some Quotes
 
-- "Your mind is for having ideas, not holding them."
-- "You can do anything, but not everything."
-- "Use your mind to think about things, rather than think of them."
+> Your mind is for having ideas, not holding them.
+
+> You can do anything, but not everything.
+
+> Use your mind to think about things, rather than think of them.

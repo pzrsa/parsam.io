@@ -36,9 +36,14 @@ I think that in this day and age we should all be putting ourselves out there, s
 
 ## Some Quotes
 
-- "The act of sharing is one of generosity—you’re putting something out there because you think it might be helpful or entertaining to someone on the other side of the screen."
-- "Build a good name. Keep your name clean. Don’t make compromises. Don’t worry about making a bunch of money or being successful. Be concerned with doing good work . . . and if you can build a good name, eventually that name will be its own currency.”
-- "Make stuff you love and talk about stuff you love and you’ll attract people who love that kind of stuff. It’s that simple."
-- “The trick is not caring what EVERYBODY thinks of you and just caring about what the RIGHT people think of you.” —Brian Michael Bendis
-- “Anyone who isn’t embarrassed of who they were last year probably isn’t learning enough,” writes author Alain de Botton.
-- "Look for something new to learn, and when you find it, dedicate yourself to learning it out in the open. Document your progress and share as you go so that others can learn along with you. Show your work, and when the right people show up, pay close attention to them, because they’ll have a lot to show you."
+> The act of sharing is one of generosity—you’re putting something out there because you think it might be helpful or entertaining to someone on the other side of the screen.
+
+> Build a good name. Keep your name clean. Don’t make compromises. Don’t worry about making a bunch of money or being successful. Be concerned with doing good work . . . and if you can build a good name, eventually that name will be its own currency.”
+
+> Make stuff you love and talk about stuff you love and you’ll attract people who love that kind of stuff. It’s that simple.
+
+> “The trick is not caring what EVERYBODY thinks of you and just caring about what the RIGHT people think of you.” —Brian Michael Bendis
+
+> “Anyone who isn’t embarrassed of who they were last year probably isn’t learning enough,” writes author Alain de Botton.
+
+> Look for something new to learn, and when you find it, dedicate yourself to learning it out in the open. Document your progress and share as you go so that others can learn along with you. Show your work, and when the right people show up, pay close attention to them, because they’ll have a lot to show you.

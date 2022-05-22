@@ -34,8 +34,12 @@ If you're looking to improve upon yourself and just want to achieve more, read t
 
 ## Some Quotes
 
-- "It’s the work you did long ago—when it seemed that you weren’t making any progress—that makes the jump today possible."
-- "You have a new goal and a new plan, but you haven’t changed who you are."
-- "Habits reduce cognitive load and free up mental capacity, so you can allocate your attention to other tasks."
-- "Be the designer of your world and not merely the consumer of it."
-- "One study found that when a chimpanzee learns an effective way to crack nuts open as a member of one group and then switches to a new group that uses a less effective strategy, it will avoid using the superior nut cracking method just to blend in with the rest of the chimps."
+> It’s the work you did long ago—when it seemed that you weren’t making any progress—that makes the jump today possible.
+
+> You have a new goal and a new plan, but you haven’t changed who you are.
+
+> Habits reduce cognitive load and free up mental capacity, so you can allocate your attention to other tasks.
+
+> Be the designer of your world and not merely the consumer of it.
+
+> One study found that when a chimpanzee learns an effective way to crack nuts open as a member of one group and then switches to a new group that uses a less effective strategy, it will avoid using the superior nut cracking method just to blend in with the rest of the chimps.

@@ -34,6 +34,8 @@ To be honest, anyone who is looking to get into entrepreneurship (of course lol)
 
 ## Some Quotes
 
-- "You’ll notice that as my company got bigger, my stories about it were less happy. That was my lesson learned. I’m happier with five employees than with eighty-five, and happiest working alone."
-- "There’s a big difference between being self-employed and being a business owner. Being self-employed feels like freedom until you realise that if you take time off, your business crumbles. To be a true business owner, make it so that you could leave for a year, and when you came back, your business would be doing better than when you left."
-- "Yes, it may take longer. Yes, it may be inefficient. Yes, it may even cost you millions of dollars in lost opportunities because your business is growing slower because you’re insisting on doing something yourself. But the whole point of doing anything is because it makes you happy! That’s it!"
+> You’ll notice that as my company got bigger, my stories about it were less happy. That was my lesson learned. I’m happier with five employees than with eighty-five, and happiest working alone.
+
+> There’s a big difference between being self-employed and being a business owner. Being self-employed feels like freedom until you realise that if you take time off, your business crumbles. To be a true business owner, make it so that you could leave for a year, and when you came back, your business would be doing better than when you left.
+
+> Yes, it may take longer. Yes, it may be inefficient. Yes, it may even cost you millions of dollars in lost opportunities because your business is growing slower because you’re insisting on doing something yourself. But the whole point of doing anything is because it makes you happy! That’s it!
