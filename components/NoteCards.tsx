@@ -14,7 +14,7 @@ const NoteCards: React.FC<NoteCardsProps> = ({ notes }) => {
         {notes.map((note) => (
           <Link key={note.slug} href={`/notes/${note.slug}`}>
             <a className="group">
-              <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg cursor-pointer">
+              <div className="aspect-w-6 aspect-h-8 overflow-hidden rounded-lg cursor-pointer">
                 <Image
                   alt={note.title}
                   src={`/images/notes/covers/${note.image}`}
