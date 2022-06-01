@@ -24,7 +24,11 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         />
         <meta
           property="og:title"
-          content={`${postData.title} by ${postData.author}`}
+          content={
+            postType === "note"
+              ? `${postData.title} by ${postData.author}`
+              : postData.title
+          }
           key="og:title"
         />
         <meta
@@ -41,7 +45,11 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         ) : null}
         <meta
           name="twitter:title"
-          content={`${postData.title} by ${postData.author}`}
+          content={
+            postType === "note"
+              ? `${postData.title} by ${postData.author}`
+              : postData.title
+          }
           key="twitter:title"
         />
         <meta
