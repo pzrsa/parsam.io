@@ -1,6 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import Post from "../../components/Post";
 import { getAllArticleSlugs, getArticleData } from "../../lib/articles";
+import { Post as PostType } from "../../lib/types";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const articleData = await getArticleData(params!.slug);
@@ -20,13 +21,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 interface ArticleProps {
-  articleData: {
-    title: string;
-    author: string;
-    date: string;
-    contentHtml: string;
-    image: string;
-  };
+  articleData: PostType;
 }
 
 const Article: React.FC<ArticleProps> = ({ articleData }) => {

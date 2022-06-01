@@ -8,3 +8,12 @@ export type Notes = [
     image: string;
   }
 ];
+
+export interface Post {
+  title: string;
+  author: string;
+  description: string;
+  date: string;
+  image: string;
+  contentHtml: string;
+}

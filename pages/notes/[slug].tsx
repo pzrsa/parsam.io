@@ -1,6 +1,7 @@
 import { GetStaticProps } from "next";
 import Post from "../../components/Post";
 import { getAllNoteSlugs, getNoteData } from "../../lib/notes";
+import { Post as PostType } from "../../lib/types";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const noteData = await getNoteData(params!.slug);
@@ -20,13 +21,7 @@ export const getStaticPaths = async () => {
 };
 
 interface NoteProps {
-  noteData: {
-    title: string;
-    author: string;
-    date: string;
-    contentHtml: string;
-    image: string;
-  };
+  noteData: PostType;
 }
 
 const Note: React.FC<NoteProps> = ({ noteData }) => {

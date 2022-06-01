@@ -1,16 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
+import { Post } from "../lib/types";
 import Date from "./Date";
 
 interface PostProps {
   postType: "note" | "article";
-  postData: {
-    title: string;
-    author: string;
-    date: string;
-    contentHtml: string;
-    image: string;
-  };
+  postData: Post;
 }
 
 const Post: React.FC<PostProps> = ({ postType, postData }) => {
@@ -33,6 +28,11 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
           key="og:title"
         />
         <meta
+          property="og:description"
+          content={postType === "note" ? postData.description : postData.title}
+          key="og:description"
+        />
+        <meta
           property="og:image"
           content={`https://parsam.io/${postData.image}`}
           key="og:image"
@@ -41,6 +41,11 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
           name="twitter:title"
           content={`${postData.title} by ${postData.author}`}
           key="twitter:title"
+        />
+        <meta
+          name="twitter:description"
+          content={postType === "note" ? postData.description : postData.title}
+          key="twitter:description"
         />
         <meta
           name="twitter:image"
