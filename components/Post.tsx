@@ -32,13 +32,13 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
           content={postType === "note" ? postData.description : postData.title}
           key="og:description"
         />
-        <meta
-          property="og:image"
-          content={`https://parsam.io${
-            postType === "note" ? "/images/notes/covers/" : "/"
-          }${postData.image}`}
-          key="og:image"
-        />
+        {postType === "note" ? (
+          <meta
+            property="og:image"
+            content={`https://parsam.io/images/notes/covers/${postData.image}`}
+            key="og:image"
+          />
+        ) : null}
         <meta
           name="twitter:title"
           content={`${postData.title} by ${postData.author}`}
@@ -49,13 +49,14 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
           content={postType === "note" ? postData.description : postData.title}
           key="twitter:description"
         />
-        <meta
-          name="twitter:image"
-          content={`https://parsam.io${
-            postType === "note" ? "/images/notes/covers/" : "/"
-          }${postData.image}`}
-          key="twitter:image"
-        />
+
+        {postType === "note" ? (
+          <meta
+            name="twitter:image"
+            content={`https://parsam.io/images/notes/covers/${postData.image}`}
+            key="twitter:image"
+          />
+        ) : null}
       </Head>
       <div className="mb-4">
         <h1 className="text-4xl sm:text-5xl font-extrabold">
