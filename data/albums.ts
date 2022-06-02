@@ -32,9 +32,19 @@ export const albums: Album[] = [
     url: "https://open.spotify.com/album/748dZDqSZy6aPXKcI9H80u",
   },
   {
+    title: "Eternal Atake",
+    image: "https://i.scdn.co/image/ab67616d0000b273dea510881ec1e506485303e4",
+    url: "https://open.spotify.com/album/0fEO7g2c5onkaXsybEtuD2",
+  },
+  {
     title: "Graduation",
     image: "https://i.scdn.co/image/ab67616d0000b27326f7f19c7f0381e56156c94a",
     url: "https://open.spotify.com/album/4SZko61aMnmgvNhfhgTuD3",
+  },
+  {
+    title: "Dawn FM",
+    image: "https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d",
+    url: "https://open.spotify.com/album/2nLOHgzXzwFEpl62zAgCEC",
   },
   {
     title: "It's Almost Dry",
