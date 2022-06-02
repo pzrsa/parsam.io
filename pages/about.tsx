@@ -13,7 +13,7 @@ import {
   SiVisualstudiocode,
 } from "react-icons/si";
 import PageTitle from "../components/PageTitle";
-import { albums } from "../data/albums";
+import { albums } from "../data/music";
 import avatar from "../public/images/avatar.jpg";
 
 interface TechItemProps {
