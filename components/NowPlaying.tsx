@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { SiSpotify } from "react-icons/si";
 import useSWR from "swr";
 import fetcher from "../lib/fetcher";
@@ -24,15 +23,6 @@ const NowPlaying: React.FC = () => {
           rel="prefetch noreferrer"
           target="_blank"
         >
-          <span className="flex min-w-fit items-center justify-center">
-            <Image
-              className="rounded-lg group-hover:opacity-80 transition-all"
-              alt={data.album}
-              src={data.albumImageUrl}
-              width={60}
-              height={60}
-            />
-          </span>
           <span>
             <SiSpotify />
           </span>
