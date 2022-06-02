@@ -17,3 +17,9 @@ export interface Post {
   image: string;
   contentHtml: string;
 }
+
+export interface Album {
+  title: string;
+  image: string;
+  url: string;
+}
