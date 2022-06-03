@@ -140,27 +140,6 @@ const About: React.FC = ({}) => {
             <TechItem name="IntelliJ" Icon={SiIntellijidea} />
             <TechItem name="VSCode" Icon={SiVisualstudiocode} />
           </ul>
-          <h2 className="text-2xl font-bold mb-3 mt-8">Music</h2>
-          <div className="grid grid-cols-2 gap-y-6 gap-x-6 sm:grid-cols-3 fold:grid-cols-1">
-            {albums.map((album) => (
-              <a
-                href={album.url}
-                className="group"
-                key={album.title}
-                rel="prefetch noreferrer"
-                target="_blank"
-              >
-                <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg cursor-pointer">
-                  <Image
-                    alt={album.title}
-                    src={album.image}
-                    layout="fill"
-                    className="group-hover:opacity-75 transition-all"
-                  />
-                </div>
-              </a>
-            ))}
-          </div>
           <h2 className="text-2xl font-bold mb-3 mt-8">Setup</h2>
           <ul>
             <li>M1 MacBook Pro 13&quot;.</li>
@@ -182,6 +161,27 @@ const About: React.FC = ({}) => {
             <li>DeltaHub Minimalistic Desk Pad.</li>
             <li>Twelve South Curve MacBook Stand.</li>
           </ul>
+          <h2 className="text-2xl font-bold mb-3 mt-8">Music</h2>
+          <div className="grid grid-cols-2 gap-y-6 gap-x-6 sm:grid-cols-3 fold:grid-cols-1">
+            {albums.map((album) => (
+              <a
+                href={album.url}
+                className="group"
+                key={album.title}
+                rel="prefetch noreferrer"
+                target="_blank"
+              >
+                <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg cursor-pointer">
+                  <Image
+                    alt={album.title}
+                    src={album.image}
+                    layout="fill"
+                    className="group-hover:opacity-75 transition-all"
+                  />
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </>
