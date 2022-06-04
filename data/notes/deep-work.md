@@ -8,7 +8,7 @@ image: "dw.jpg"
 
 ## Book in 3 Sentences
 
-1. Deep Work is a state of distraction-free concentration pushing your cognitive capabilities to the limit. Cultivate this skill and you will thrive, as focusing in the modern era with all the unnecessary noise in the world is like a superpower that allows you to work towards you personal and professional goals.
+1. Deep Work is a state of distraction-free concentration pushing your cognitive capabilities to the limit. Cultivate this skill and you will thrive, as focusing in the modern era with all the unnecessary noise in the world is like a superpower that allows you to work towards your personal and professional goals.
 2. Context switching from a shallow task (scrolling social media) to a deep one (writing a book note) will heavily draw from your willpower. Instead, create rituals and routines in an appropriate environment to help you ease into the transition of doing cognitively demanding work.
 3. Take the “craftsman” approach for selecting network tools like social media instead of following the “any-benefit” approach. Use the tool only if it has a substantial benefit and is worth the drag on your time and attention. Misusing tools without awareness of its cons, and just blindly following its one benefit will result in negative impacts to your productivity, resulting in no progress on what needs to be done.
 
