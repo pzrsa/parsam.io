@@ -1,17 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import { IconType } from "react-icons";
-import {
-  SiGo,
-  SiIntellijidea,
-  SiJava,
-  SiNeovim,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiPostgresql,
-  SiTypescript,
-  SiVisualstudiocode,
-} from "react-icons/si";
 import PageTitle from "../components/PageTitle";
 import { albums } from "../data/music";
 import avatar from "../public/images/avatar.jpg";
@@ -20,14 +9,6 @@ interface TechItemProps {
   name: string;
   Icon: IconType;
 }
-
-const TechItem: React.FC<TechItemProps> = ({ name, Icon }) => {
-  return (
-    <li className="gap-x-2 flex items-center">
-      <Icon /> {name}
-    </li>
-  );
-};
 
 const About: React.FC = ({}) => {
   return (
@@ -135,18 +116,6 @@ const About: React.FC = ({}) => {
               something is built, it even has your own battle scars from making
               some mistakes.
             </li>
-          </ul>
-          <h2 className="text-2xl font-bold mb-3 mt-8">Technologies</h2>
-          <ul className="not-prose gap-y-3 grid grid-cols-2 sm:grid-cols-3 justify-between">
-            <TechItem name="TypeScript" Icon={SiTypescript} />
-            <TechItem name="Node.js" Icon={SiNodedotjs} />
-            <TechItem name="Next.js" Icon={SiNextdotjs} />
-            <TechItem name="Go" Icon={SiGo} />
-            <TechItem name="Java" Icon={SiJava} />
-            <TechItem name="PostgreSQL" Icon={SiPostgresql} />
-            <TechItem name="Neovim" Icon={SiNeovim} />
-            <TechItem name="IntelliJ" Icon={SiIntellijidea} />
-            <TechItem name="VSCode" Icon={SiVisualstudiocode} />
           </ul>
           <h2 className="text-2xl font-bold mb-3 mt-8">Setup</h2>
           <ul>
