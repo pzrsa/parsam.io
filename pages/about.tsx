@@ -95,15 +95,23 @@ const About: React.FC = ({}) => {
               >
                 monkeytype
               </a>
-              . I&apos;ve now thankfully moved over to using 9 fingers for
-              typing after only using 3 previously. Wasn&apos;t easy but 100%
-              worth the frustration in the beginning. My current highest WPM is
-              116 (95% accuracy).
+              . I used to type with just 3 fingers, but now use 9 which has been
+              a great decision despite the frustration in the beginning. My
+              current personal record is{" "}
+              <a
+                href="/images/wpm.png"
+                rel="prefetch noreferrer"
+                target="_blank"
+              >
+                120wpm
+              </a>
+              .
             </li>
             <li>
               Mechanical watches and G-Shock&apos;s. I own a Seiko SNZG13K1 and
               a G-Shock GA-B2100-1A1, both of which I bought for under £100. I
-              just love how clean they look and how good it feels wearing them.
+              just love how minimal they are which makes me feel good wearing
+              them.
             </li>
             <li>
               Vi keybinds, I can&apos;t live without them as it simply makes
