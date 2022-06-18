@@ -3,7 +3,7 @@ import Image from "next/image";
 import { IconType } from "react-icons";
 import PageTitle from "../components/PageTitle";
 import { albums } from "../data/music";
-import avatar from "../public/images/avatar.jpg";
+import avatar from "../public/images/avatar2.jpg";
 
 interface TechItemProps {
   name: string;
