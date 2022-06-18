@@ -50,16 +50,15 @@ const About: React.FC = ({}) => {
               are able to come together to change the world.
             </li>
             <li>
-              Reading non-fiction and fiction books on my Kindle. Currently
-              reading{" "}
+              Reading{" "}
               <a
-                href="https://en.wikipedia.org/wiki/The_Obstacle_Is_the_Way"
+                href="https://www.goodreads.com/review/list/125053326-parsa?shelf=currently-reading"
                 rel="prefetch noreferrer"
                 target="_blank"
               >
-                The Obstacle Is the Way
+                books
               </a>{" "}
-              by Ryan Holiday.
+              on my Kindle Paperwhite.
             </li>
             <li>
               Mechanical keyboards. I love the fact that I could build something
