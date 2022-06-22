@@ -17,24 +17,9 @@ export const albums: Album[] = [
     url: "https://open.spotify.com/album/1atjqOZTCdrjxjMyCPZc2g",
   },
   {
-    title: "To Pimp A Butterfly",
-    image: "https://i.scdn.co/image/ab67616d0000b273cdb645498cd3d8a2db4d05e1",
-    url: "https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
-  },
-  {
     title: "My Beautiful Dark Twisted Fantasy",
     image: "https://i.scdn.co/image/ab67616d0000b273d9194aa18fa4c9362b47464f",
     url: "https://open.spotify.com/album/20r762YmB5HeofjMCiPMLv",
-  },
-  {
-    title: "good kid, m.A.A.d city",
-    image: "https://i.scdn.co/image/ab67616d0000b27378de8b28de36a74afc0348b5",
-    url: "https://open.spotify.com/album/748dZDqSZy6aPXKcI9H80u",
-  },
-  {
-    title: "Eternal Atake",
-    image: "https://i.scdn.co/image/ab67616d0000b273dea510881ec1e506485303e4",
-    url: "https://open.spotify.com/album/0fEO7g2c5onkaXsybEtuD2",
   },
   {
     title: "Graduation",
@@ -42,13 +27,8 @@ export const albums: Album[] = [
     url: "https://open.spotify.com/album/4SZko61aMnmgvNhfhgTuD3",
   },
   {
-    title: "Dawn FM",
-    image: "https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d",
-    url: "https://open.spotify.com/album/2nLOHgzXzwFEpl62zAgCEC",
-  },
-  {
-    title: "It's Almost Dry",
-    image: "https://i.scdn.co/image/ab67616d0000b273e27dfef438562f2ecb98a642",
-    url: "https://open.spotify.com/album/6o38CdD7CUlZDCFhjZYLDH",
+    title: "ye",
+    image: "https://i.scdn.co/image/ab67616d0000b2730cd942c1a864afa4e92d04f2",
+    url: "https://open.spotify.com/album/2Ek1q2haOnxVqhvVKqMvJe?si=uXy2SpMtRcuwnQVcDphEag",
   },
 ];
