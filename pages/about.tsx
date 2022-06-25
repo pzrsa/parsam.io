@@ -25,12 +25,20 @@ const About: React.FC = ({}) => {
             <p>
               These things bring joy to my life, and there could be someone out
               there who has similar interests. If thats the case, feel free to
-              reach out as I like meeting new people!
+              reach out on{" "}
+              <a
+                href="https://twitter.com/_parsam"
+                rel="prefetch noreferrer"
+                target="_blank"
+              >
+                Twitter
+              </a>{" "}
+              as I like meeting new people.
             </p>
           </div>
         </div>
         <div>
-          <h2 className="text-2xl font-bold mb-3 mt-8">Things I like</h2>
+          <h2 className="text-2xl font-bold mb-3 mt-8">Yes</h2>
           <ul>
             <li>
               <a
@@ -46,7 +54,7 @@ const About: React.FC = ({}) => {
             <li>
               Reading{" "}
               <a
-                href="https://www.goodreads.com/review/list/125053326-parsa?shelf=currently-reading"
+                href="https://www.goodreads.com/review/list/125053326?page=1&shelf=%23ALL%23"
                 rel="prefetch noreferrer"
                 target="_blank"
               >
@@ -55,10 +63,8 @@ const About: React.FC = ({}) => {
               on my Kindle Paperwhite.
             </li>
             <li>
-              Mechanical keyboards. I love the fact that I could build something
-              with parts tailored to my preference. I use a keyboard daily, so
-              it makes sense for me to invest in tools that inspire me to use
-              them more.
+              Mechanical keyboards. I use a keyboard daily, so it makes sense
+              for me to invest in tools that inspire me to use them more.
             </li>
             <li>
               Doing typing tests on{" "}
