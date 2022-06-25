@@ -1,14 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import { IconType } from "react-icons";
 import PageTitle from "../components/PageTitle";
 import { albums } from "../data/music";
 import avatar from "../public/images/avatar2.jpg";
-
-interface TechItemProps {
-  name: string;
-  Icon: IconType;
-}
 
 const About: React.FC = ({}) => {
   return (
@@ -115,27 +109,6 @@ const About: React.FC = ({}) => {
               something is built, it even has your own battle scars from making
               some mistakes.
             </li>
-          </ul>
-          <h2 className="text-2xl font-bold mb-3 mt-8">Setup</h2>
-          <ul>
-            <li>M1 MacBook Pro 13&quot;.</li>
-            <li>
-              <a
-                href="https://youtu.be/RqktmDE-TGA"
-                rel="prefetch noreferrer"
-                target="_blank"
-              >
-                KBD67 Lite R3
-              </a>
-              .
-            </li>
-            <li>MX Master 3.</li>
-            <li>Lenovo P27h-20 27&quot; Monitor.</li>
-            <li>Ergo Desks Liberty Standing Desk.</li>
-            <li>IKEA JÄRVFJÄLLET Chair.</li>
-            <li>Sony WH-1000XM4 Headphones.</li>
-            <li>DeltaHub Minimalistic Desk Pad.</li>
-            <li>Twelve South Curve MacBook Stand.</li>
           </ul>
           <h2 className="text-2xl font-bold mb-3 mt-8">Music</h2>
           <div className="grid grid-cols-2 gap-y-6 gap-x-6 sm:grid-cols-3 fold:grid-cols-1">

@@ -27,8 +27,8 @@ const Home: React.FC = () => {
       </div>
       <div className="prose dark:prose-invert">
         <p>
-          I&apos;m an 18 year old from London, England who&apos;s keen on
-          learning deeply about stuff like tech, startups, and life.
+          I&apos;m an 18 year old from London, England keen on learning deeply
+          about stuff I love including tech, startups and life.
         </p>
         <p>
           I currently work within the{" "}
@@ -39,41 +39,20 @@ const Home: React.FC = () => {
           >
             Play Console
           </a>{" "}
-          team, with a focus on making the Google Play Console the best app
-          distribution platform for developers.
+          team, with a focus on making it the best app distribution platform for
+          developers.
         </p>
         <p>
-          My website is where I write{" "}
+          I write{" "}
           <Link href="/notes">
             <a>notes</a>
           </Link>{" "}
-          on the books I’ve read, providing summaries for others to get a rough
-          understanding of what the book is about. On top of that, I write{" "}
+          on the books I&apos;ve read, providing summaries for others through my
+          thoughts on the book. I also write{" "}
           <Link href="/articles">
             <a>articles</a>
           </Link>{" "}
-          which revolve around the topics I’m most interested in. I’m trying my
-          best to improve on making quality posts, so feel free to message me on{" "}
-          <a
-            href="https://twitter.com/_parsam"
-            rel="prefetch noreferrer"
-            target="_blank"
-          >
-            twitter
-          </a>{" "}
-          with any feedback you might have.
-        </p>
-        <p>
-          Also if you don’t want to miss out on any book notes I publish,
-          subscribe to my{" "}
-          <a
-            href="https://parsam.substack.com/"
-            rel="prefetch noreferrer"
-            target="_blank"
-          >
-            Substack
-          </a>{" "}
-          so they land straight into your inbox.
+          (though rarely) on stuff I find interesting enough to share.
         </p>
       </div>
     </>
