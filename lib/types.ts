@@ -1,15 +1,5 @@
-export type Notes = [
-  {
-    slug: string;
-    title: string;
-    date: string;
-    author: string;
-    description: string;
-    image: string;
-  }
-];
-
 export interface Post {
+  slug: string;
   title: string;
   author: string;
   description: string;

@@ -1,8 +1,9 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
+import ArticlesList from "../components/ArticlesList";
 import PageTitle from "../components/PageTitle";
-import Posts from "../components/Posts";
 import { getSortedArticlesData } from "../lib/articles";
+import { Post } from "../lib/types";
 
 export const getStaticProps: GetStaticProps = () => {
   const allArticlesData = getSortedArticlesData();
@@ -14,9 +15,7 @@ export const getStaticProps: GetStaticProps = () => {
 };
 
 interface ArticlesProps {
-  allArticlesData: [
-    { slug: string; title: string; date: string; author: string }
-  ];
+  allArticlesData: Post[];
 }
 
 const Articles: React.FC<ArticlesProps> = ({ allArticlesData }) => {
@@ -26,7 +25,7 @@ const Articles: React.FC<ArticlesProps> = ({ allArticlesData }) => {
         <title>Articles - Parsa Mesgarha</title>
       </Head>
       <PageTitle name="Articles" />
-      <Posts postType="articles" itemsData={allArticlesData} />
+      <ArticlesList articles={allArticlesData} />
     </>
   );
 };

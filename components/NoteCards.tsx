@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Notes } from "../lib/types";
+import { Post } from "../lib/types";
 import Date from "./Date";
 
 interface NoteCardsProps {
-  notes: Notes;
+  notes: Post[];
 }
 
 const NoteCards: React.FC<NoteCardsProps> = ({ notes }) => {
@@ -28,7 +28,7 @@ const NoteCards: React.FC<NoteCardsProps> = ({ notes }) => {
                   {note.title}
                 </h2>
                 <p className="text-neutral-600 dark:text-neutral-400">
-                  by {note.author} - <Date dateString={note.date} />
+                  {note.author} • <Date dateString={note.date} />
                 </p>
               </div>
             </a>

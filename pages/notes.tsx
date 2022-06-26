@@ -3,7 +3,7 @@ import Head from "next/head";
 import NoteCards from "../components/NoteCards";
 import PageTitle from "../components/PageTitle";
 import { getSortedNotesData } from "../lib/notes";
-import { Notes } from "../lib/types";
+import { Post } from "../lib/types";
 
 export const getStaticProps: GetStaticProps = () => {
   const allNotesData = getSortedNotesData();
@@ -15,7 +15,7 @@ export const getStaticProps: GetStaticProps = () => {
 };
 
 interface NotesProps {
-  allNotesData: Notes;
+  allNotesData: Post[];
 }
 
 const Notes: React.FC<NotesProps> = ({ allNotesData }) => {
