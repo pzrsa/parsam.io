@@ -71,7 +71,7 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
           {postData.title}
         </h1>
         <div className="text-neutral-600 dark:text-neutral-400 mt-2">
-          {postType === "note" ? <>by {postData.author} - </> : ""}
+          {postType === "note" ? <>{postData.author} • </> : ""}
           <Date dateString={postData.date} />
         </div>
       </div>
