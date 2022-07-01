@@ -27,7 +27,7 @@ const Home: React.FC = () => {
       </div>
       <div className="prose dark:prose-invert">
         <p>
-          I&apos;m an 18 year old from London, England keen on learning deeply
+          I&apos;m a 19 year old from London, England keen on learning deeply
           about stuff I love including tech, startups and life.
         </p>
         <p>
