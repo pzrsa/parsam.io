@@ -13,7 +13,7 @@ const ArticlesList: React.FC<ArticlesListProps> = ({ articles }) => {
         {articles.map((article) => (
           <li className="mb-8" key={article.slug}>
             <Link href={`/articles/${article.slug}`}>
-              <a className="text-3xl sm:text-4xl font-bold underline hover:no-underline">
+              <a className="hover:text-neutral-500 dark:group-hover:text-neutral-400 transition-all text-3xl sm:text-4xl font-bold">
                 {article.title}
               </a>
             </Link>
