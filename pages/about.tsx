@@ -69,23 +69,13 @@ const About: React.FC = ({}) => {
             <li>
               Doing typing tests on{" "}
               <a
-                href="https://monkeytype.com/"
+                href="https://monkeytype.com/profile/PiD5IrU9SsdiY6c2yDMUq72wigz1"
                 rel="prefetch noreferrer"
                 target="_blank"
               >
                 monkeytype
               </a>
-              . I used to type with just 3 fingers, but now use 9 which has been
-              a great decision despite the frustration in the beginning. My
-              current personal record is{" "}
-              <a
-                href="/images/wpm.png"
-                rel="prefetch noreferrer"
-                target="_blank"
-              >
-                120wpm
-              </a>
-              .
+              . My current personal record is 122wpm.
             </li>
             <li>
               Mechanical watches and G-Shock&apos;s. I own a Seiko SNZG13K1 and

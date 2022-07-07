@@ -13,7 +13,7 @@ const Home: React.FC = () => {
           👋 Hey, I&apos;m Parsa.
         </h1>
         <p className="text-sm sm:text-lg font-semibold text-neutral-600 dark:text-neutral-400">
-          Software Development Apprentice at{" "}
+          Software Engineering Apprentice at{" "}
           <span className="text-google-blue">G</span>
           <span className="text-google-red">o</span>
           <span className="text-google-yellow">o</span>
