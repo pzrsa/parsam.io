@@ -38,7 +38,7 @@ const About: React.FC = ({}) => {
           </div>
         </div>
         <div>
-          <h2 className="text-2xl font-bold mb-3 mt-8">Yes</h2>
+          <h2 className="text-2xl font-bold mb-3 mt-8">I Like</h2>
           <ul>
             <li>
               <a
@@ -100,10 +100,9 @@ const About: React.FC = ({}) => {
               movies and shows at normal speed, I&apos;m not a psycho.
             </li>
             <li>
-              Building things from scratch as opposed to buying it from the
-              shelf. It&apos;s much more fulfilling to enjoy the journey. When
-              something is built, it even has your own battle scars from making
-              some mistakes.
+              Building things from scratch (within my capabilities) before
+              buying it. It&apos;s a nice feeling when something has your own
+              battle scars from making some mistakes.
             </li>
           </ul>
           <h2 className="text-2xl font-bold mb-3 mt-8">Music</h2>
