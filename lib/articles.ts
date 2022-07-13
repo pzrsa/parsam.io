@@ -2,6 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import { remark } from "remark";
+import remarkExternalLinks from "remark-external-links";
 import html from "remark-html";
 
 const articlesDirectory = path.join(process.cwd(), "data/articles");
@@ -73,6 +74,7 @@ export const getArticleData = async (slug: any) => {
 
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
+    .use(remarkExternalLinks, {target: "_blank", rel: "prefetch noreferrer"})
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
