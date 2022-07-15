@@ -72,4 +72,4 @@ I can now use the same VPS to deploy other projects in the future without breaki
 
   I had bought two domains, `setupscope.com` and `mechkeebs.com`, which totalled me £32. Yes, £32 because NameCheap decided to not make it clear that the `mechkeebs.com` domain was on their marketplace. Meaning I had bought a domain that had expired a few weeks in. Unfortunately I purchased it again like a fool.
 
-  Next time I will just hog a `.vercel.app` domain for free, up until I am certain to launch. I wasted so much time and brainpower on a domain that barely had any benefits. Still, having `api.mechkeebs.com`is pretty cool though.
+  Next time I will just hog a `.vercel.app` domain for free, up until I am certain to launch. I wasted so much time and brainpower on a domain that barely had any benefits. Still, having `api.mechkeebs.com` is pretty cool though.
