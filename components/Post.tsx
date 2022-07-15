@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import { Post } from "../lib/types";
 import Date from "./Date";
 
@@ -9,10 +8,11 @@ interface PostProps {
 }
 
 const Post: React.FC<PostProps> = ({ postType, postData }) => {
+  const title = `${postData.title} - Parsa Mesgarha`;
   return (
     <>
       <Head>
-        <title>{postData.title} - Parsa Mesgarha</title>
+        <title>{title}</title>
         <meta
           property="og:site_name"
           content={
@@ -70,7 +70,7 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         <h1 className="text-4xl sm:text-5xl font-extrabold">
           {postData.title}
         </h1>
-        <div className="text-neutral-600 dark:text-neutral-400 mt-2">
+        <div className="font-mono text-neutral-600 dark:text-neutral-400 mt-2">
           {postType === "note" ? <>{postData.author} • </> : ""}
           <Date dateString={postData.date} />
         </div>
@@ -79,13 +79,6 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         className="prose dark:prose-invert"
         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
       />
-      <div className="max-w-fit my-12">
-        <Link href={`/${postType}s`}>
-          <a className="text-xl font-bold fold:text-sm hover:text-neutral-500 dark:hover:text-neutral-400 transition-all cursor-pointer">
-            ← Back to {postType}s
-          </a>
-        </Link>
-      </div>
     </>
   );
 };

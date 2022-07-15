@@ -12,7 +12,7 @@ const Home: React.FC = () => {
         <h1 className="text-4xl font-extrabold sm:text-5xl fold:text-3xl">
           👋 Hey, I&apos;m Parsa.
         </h1>
-        <p className="text-sm sm:text-lg font-semibold text-neutral-600 dark:text-neutral-400">
+        <p className="font-mono text-sm sm:text-lg font-semibold text-neutral-600 dark:text-neutral-400">
           Software Engineering Apprentice at{" "}
           <span className="text-google-blue">G</span>
           <span className="text-google-red">o</span>

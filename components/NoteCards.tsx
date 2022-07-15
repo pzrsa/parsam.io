@@ -10,7 +10,7 @@ interface NoteCardsProps {
 const NoteCards: React.FC<NoteCardsProps> = ({ notes }) => {
   return (
     <div className="mx-auto">
-      <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3">
         {notes.map((note) => (
           <Link key={note.slug} href={`/notes/${note.slug}`}>
             <a className="group">
@@ -27,7 +27,7 @@ const NoteCards: React.FC<NoteCardsProps> = ({ notes }) => {
                 <h2 className="mt-2 text-xl sm:text-2xl font-bold">
                   {note.title}
                 </h2>
-                <p className="text-neutral-600 dark:text-neutral-400">
+                <p className="font-mono text-neutral-600 dark:text-neutral-400">
                   {note.author} • <Date dateString={note.date} />
                 </p>
               </div>

@@ -17,7 +17,7 @@ const ArticlesList: React.FC<ArticlesListProps> = ({ articles }) => {
                 {article.title}
               </a>
             </Link>
-            <p className="text-neutral-600 dark:text-neutral-400 mt-2">
+            <p className="font-mono text-neutral-600 dark:text-neutral-400 mt-2">
               <Date dateString={article.date} />
             </p>
           </li>
