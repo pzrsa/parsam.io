@@ -21,7 +21,7 @@ However the [`next/image`](https://nextjs.org/docs/basic-features/image-optimiza
 
 I do know that [they're aware of the feedback](https://twitter.com/leeerob/status/1545480513846185984?s=20&t=Sz5ATLanuOhtZKm9I1JGVQ), so I'm hoping to see some more improvements on it soon.
 
-#### Chakra UI
+### Chakra UI
 
 This was my first time using a component library like [Chakra UI](https://chakra-ui.com/) or [MUI](https://mui.com/).
 It was fun slapping components together and making them just work for someone who hates styling. I felt very spoiled.
