@@ -5,10 +5,26 @@ import { albums } from "../data/music";
 import avatar from "../public/images/avatar2.jpg";
 
 const About: React.FC = ({}) => {
+  const title = "About Me - Parsa Mesgarha";
+  const image = "/images/og/about.svg";
+
   return (
     <>
       <Head>
-        <title>About Me - Parsa Mesgarha</title>
+        <title>{title}</title>
+        <meta property="og:site_name" content={title} key="og:site_name" />
+        <meta property="og:title" content={title} key="og:title" />
+        <meta
+          property="og:image"
+          content={`https://parsam.io${image}`}
+          key="og:image"
+        />
+        <meta name="twitter:title" content={title} key="twitter:title" />
+        <meta
+          name="twitter:image"
+          content={`https://parsam.io${image}`}
+          key="twitter:image"
+        />
       </Head>
       <div className="prose dark:prose-invert">
         <PageTitle name="About Me" />

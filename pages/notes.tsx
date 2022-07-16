@@ -19,10 +19,26 @@ interface NotesProps {
 }
 
 const Notes: React.FC<NotesProps> = ({ allNotesData }) => {
+  const title = "Book Notes - Parsa Mesgarha";
+  const image = "/images/og/notes.svg";
+
   return (
     <>
       <Head>
-        <title>Book Notes - Parsa Mesgarha</title>
+        <title>{title}</title>
+        <meta property="og:site_name" content={title} key="og:site_name" />
+        <meta property="og:title" content={title} key="og:title" />
+        <meta
+          property="og:image"
+          content={`https://parsam.io${image}`}
+          key="og:image"
+        />
+        <meta name="twitter:title" content={title} key="twitter:title" />
+        <meta
+          name="twitter:image"
+          content={`https://parsam.io${image}`}
+          key="twitter:image"
+        />
       </Head>
       <PageTitle name="Book Notes" />
       <NoteCards notes={allNotesData} />
