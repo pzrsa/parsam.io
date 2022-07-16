@@ -7,6 +7,16 @@ const Home: React.FC = () => {
     <>
       <Head>
         <title>Parsa Mesgarha - Programmer, lifelong learner.</title>
+        <meta
+          property="og:image"
+          content={"https://parsam.io/images/og/index.svg"}
+          key="og:image"
+        />
+        <meta
+          name="twitter:image"
+          content={"https://parsam.io/images/og/index.svg"}
+          key="twitter:image"
+        />
       </Head>
       <div className="gap-1">
         <h1 className="text-4xl font-extrabold sm:text-5xl fold:text-3xl">
