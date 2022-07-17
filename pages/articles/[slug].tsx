@@ -1,10 +1,13 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import Post from "../../components/Post";
-import { getAllArticleSlugs, getArticleData } from "../../lib/articles";
 import { Post as PostType } from "../../lib/types";
+import path from "path";
+import { getAllPostSlugs, getPostData } from "../../lib/posts";
+
+const articlesDirectory = path.join(process.cwd(), "data/articles");
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const articleData = await getArticleData(params!.slug);
+  const articleData = await getPostData(params!.slug, articlesDirectory);
   return {
     props: {
       articleData,
@@ -13,7 +16,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getAllArticleSlugs();
+  const paths = getAllPostSlugs(articlesDirectory);
   return {
     paths,
     fallback: false,

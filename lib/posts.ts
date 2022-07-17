@@ -5,17 +5,14 @@ import { remark } from "remark";
 import remarkExternalLinks from "remark-external-links";
 import html from "remark-html";
 
-const articlesDirectory = path.join(process.cwd(), "data/articles");
-
-export const getSortedArticlesData = () => {
-  // Get file names under data/articles
-  const fileNames = fs.readdirSync(articlesDirectory);
-  const allArticlesData = fileNames.map((fileName) => {
+export const getSortedPostData = (directory: string) => {
+  const fileNames = fs.readdirSync(directory);
+  const allPostsData = fileNames.map((fileName) => {
     // Remove ".md" from file name to get slug
     const slug = fileName.replace(/\.md$/, "");
 
     // Read markdown file as string
-    const fullPath = path.join(articlesDirectory, fileName);
+    const fullPath = path.join(directory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
 
     // Use gray-matter to parse the post metadata section
@@ -28,7 +25,7 @@ export const getSortedArticlesData = () => {
     };
   });
   // Sort posts by date
-  return allArticlesData.sort(({ date: a }: any, { date: b }: any) => {
+  return allPostsData.sort(({ date: a }: any, { date: b }: any) => {
     if (a < b) {
       return 1;
     } else if (a > b) {
@@ -39,22 +36,8 @@ export const getSortedArticlesData = () => {
   });
 };
 
-export const getAllArticleSlugs = () => {
-  const fileNames = fs.readdirSync(articlesDirectory);
-
-  // Returns an array that looks like this:
-  // [
-  //   {
-  //     params: {
-  //       slug: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       slug: 'pre-rendering'
-  //     }
-  //   }
-  // ]
+export const getAllPostSlugs = (directory: string) => {
+  const fileNames = fs.readdirSync(directory);
 
   return fileNames.map((fileName) => {
     return {
@@ -65,8 +48,8 @@ export const getAllArticleSlugs = () => {
   });
 };
 
-export const getArticleData = async (slug: any) => {
-  const fullPath = path.join(articlesDirectory, `${slug}.md`);
+export const getPostData = async (slug: any, directory: string) => {
+  const fullPath = path.join(directory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
   // Use gray-matter to parse the post metadata section
@@ -74,7 +57,7 @@ export const getArticleData = async (slug: any) => {
 
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
-    .use(remarkExternalLinks, {target: "_blank", rel: "prefetch noreferrer"})
+    .use(remarkExternalLinks, { target: "_blank", rel: "prefetch noreferrer" })
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();

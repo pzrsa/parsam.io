@@ -2,11 +2,14 @@ import { GetStaticProps } from "next";
 import Head from "next/head";
 import ArticlesList from "../components/ArticlesList";
 import PageTitle from "../components/PageTitle";
-import { getSortedArticlesData } from "../lib/articles";
+import { getSortedPostData } from "../lib/posts";
 import { Post } from "../lib/types";
+import path from "path";
 
 export const getStaticProps: GetStaticProps = () => {
-  const allArticlesData = getSortedArticlesData();
+  const articlesDirectory = path.join(process.cwd(), "data/articles");
+
+  const allArticlesData = getSortedPostData(articlesDirectory);
   return {
     props: {
       allArticlesData,
