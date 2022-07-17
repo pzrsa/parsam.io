@@ -56,7 +56,7 @@ But this time, I was looking forward to finally getting my hands dirty with dev 
 
 I also took the opportunity to learn Docker, which has been incredible. At the beginning I was paranoid about how how Docker images actually work, mostly for security reasons. There were many instances where I nearly pushed some secrets up to [Docker Hub](https://hub.docker.com/), but I refactored my code to accomodate for that.
 
-You could check out the [MechKeebs repo](https://hub.docker.com/repository/docker/pzrsa/mechkeebs) that contains all the images if you want.
+You could check out the [MechKeebs repo](https://hub.docker.com/r/pzrsa/mechkeebs) that contains all the images if you want.
 
 DigitalOcean provides computing services, similar to platforms like Google Cloud and AWS but at a bearable scale. I created a $6 VPS (could last me over a year with the free credits), and slapped Dokku onto it which is now my own mini Heroku.
 
