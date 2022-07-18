@@ -16,7 +16,7 @@ All websites are completely different from each other. Sure some people might us
 
 For me, having a website was never about creating a brand. It was just about writing for myself about my progress to look back on every few months and years. If someone ends up reading it then great, but it should rarely be your goal in the beginning.
 
-If you want to make money, sell your soal to SEO optimisation writing about nonsense.
+If you want to make money, sell your soul to SEO optimisation writing about nonsense.
 
 Otherwise if you want to build a platform for decades to come, keep reading.
 
@@ -28,7 +28,7 @@ One of my favourite people, [Derek Sivers](https://sive.rs/) told me to build a 
 
 I was going to use a website builder like [Webflow](https://webflow.com/), but Derek advised against that and instead sent a code snippet for a basic HTML layout. It was the most life changing email I had received in my life. It was the one email that started with me learning about technology.
 
-One point that stook out to me that Derek said is a philopshopy I still stand by when starting anything:
+One point that stook out to me that Derek said is a philosophy I still stand by when starting anything:
 
 > Don't let anyone sell you on some complex solution. They're saying you need a jumbo jet when really you need a bicycle. Do your HTML by hand like this, and then you'll know when your site has become so big that you need a little more automation to help manage changes or links to the hundreds of pages inside. But until then, no no no. Just do HTML by hand.
 
@@ -52,11 +52,11 @@ After having this website for over a year, I've had a magnitude of noticeable be
 
 A good book I recommend you read is [Show Your Work](https://austinkleon.com/show-your-work/) by [Austin Kleon](https://austinkleon.com/). I wrote a [book note](https://parsam.io/notes/show-your-work) on it that I encourage you to check out. This was the book that plunged me to start my website, alongside Derek Sivers' actionable steps.
 
-It goes over why you don't need to be some sort of expert on something to share it. Just write about anything at anytime. Heck right now I am writing this all over the place, but still just writing because I had this urge to write something that people might benefit from.
+It goes over why you don't need to be some sort of expert on something to share it. Just write about anything at any time. Heck right now I am writing this all over the place, but still just writing because I had this urge to write something that people might benefit from.
 
 ## Independence
 
-When you have a website that you own and manage, you take back that digital freedom that we've all lost as social media websites grown in popularity.
+When you have a website that you own and manage, you take back that digital freedom that we've all lost as social media websites grow in popularity.
 
 Technically you are still reliant on the hosting provider (I personally use [Vercel](https://vercel.com/) and think they are great), but I'm not trying to take it that far just to host my website.
 
@@ -79,7 +79,7 @@ If you're technical and want to use a web framework I recommend:
 
    There are plenty of services that you could buy a domain from. I recommend starting with [Namecheap](https://www.namecheap.com/). Don't bother spending more than £10 per year, you want to get up and running quickly. Try to go for something like `.xyz` if your name is common. The goal is to just own a domain name, you could always change it.
 
-3. **Start distributing copies of your content on other platforms**. This practice was something I've been doing since the inception of my website. Its known as [POSSE](https://indieweb.org/POSSE). I never knew until my friend [Cameron](https://cameronbrown.co.uk/) showed me.
+3. **Start distributing copies of your content on other platforms**. This practice was something I've been doing since the inception of my website. It's known as [POSSE](https://indieweb.org/POSSE). I never knew until my friend [Cameron](https://cameronbrown.co.uk/) showed me.
 
    Everytime you create a new post, post it on all the social media sites and take advantage of the popular network without being reliant. Put it on Twitter, Substack, Medium, Reddit, Hacker News, Facebook (jk) and any other place you could. The aim is to have all of that traffic also pointed to your website.
 
