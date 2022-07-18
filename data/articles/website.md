@@ -1,5 +1,5 @@
 ---
-title: "You Should Have a Website"
+title: "Make a Website"
 date: "2022-07-18"
 ---
 
