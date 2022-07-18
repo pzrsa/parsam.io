@@ -28,7 +28,7 @@ One of my favourite people, [Derek Sivers](https://sive.rs/) told me to build a 
 
 I was going to use a website builder like [Webflow](https://webflow.com/), but Derek advised against that and instead sent a code snippet for a basic HTML layout. It was the most life changing email I had received in my life. It was the one email that started with me learning about technology.
 
-One point that stook out to me that Derek said is a philosophy I still stand by when starting anything:
+One point that stood out to me that Derek said is a philosophy I still stand by when starting anything:
 
 > Don't let anyone sell you on some complex solution. They're saying you need a jumbo jet when really you need a bicycle. Do your HTML by hand like this, and then you'll know when your site has become so big that you need a little more automation to help manage changes or links to the hundreds of pages inside. But until then, no no no. Just do HTML by hand.
 
