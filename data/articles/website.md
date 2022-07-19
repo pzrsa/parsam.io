@@ -91,4 +91,4 @@ Whenever you share a new idea online, it contributes to this digital land you ow
 
 I like the idea of your website being an asset. If you don't become a digital landlord, you will forever stay a tenant with no control.
 
-What I'm trying to say is that, the more ideas you put out on the internet, the more opportunities there are for luck to sway in your favour. It allows serendipity to its thing.
+What I'm trying to say is that, the more ideas you put out on the internet, the more opportunities there are for luck to sway in your favour. It allows serendipity to do its thing.
