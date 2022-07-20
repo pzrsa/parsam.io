@@ -1,47 +1,37 @@
-import { ReactElement } from "react";
-import { SiGithub, SiLinkedin, SiTwitter, SiYoutube } from "react-icons/si";
-import { VscSourceControl } from "react-icons/vsc";
+import Link from "next/link";
 
 interface FooterProps {
   href: string;
-  icon: ReactElement;
+  name: string;
 }
 
-const FooterItem: React.FC<FooterProps> = ({ href, icon }) => {
+const FooterItem: React.FC<FooterProps> = ({ href, name }) => {
   return (
     <a
-      className="text-2xl fold:text-xl hover:text-neutral-500 dark:hover:text-neutral-400 transition-all"
+      className="font-mono font-bold text-md sm:text-lg fold:text-base hover:text-neutral-500 dark:hover:text-neutral-400 transition-all"
       href={href}
       rel="prefetch noreferrer"
       target="_blank"
     >
-      {icon}
+      {name}
     </a>
   );
 };
 
 const Footer = () => {
   return (
-    <footer className="mt-10 flex gap-4 items-center">
-      <FooterItem
-        href="https://twitter.com/_parsam"
-        icon={<SiTwitter title="Twitter" />}
-      />
-      <FooterItem
-        href="https://github.com/pzrsa"
-        icon={<SiGithub title="GitHub" />}
-      />
+    <footer className="grid grid-cols-3 sm:flex-row sm:flex gap-2 sm:gap-3 md:gap-4 fold:gap-2 mt-10">
+      <Link href={"/feeds"}>
+        <a className="font-mono font-bold text-md sm:text-lg fold:text-base hover:text-neutral-500 dark:hover:text-neutral-400 transition-all">
+          feeds
+        </a>
+      </Link>
+      <FooterItem href="https://github.com/pzrsa/parsam.io" name="source" />
+      <FooterItem href="https://twitter.com/_parsam" name="twitter" />
+      <FooterItem href="https://github.com/pzrsa" name="github" />
       <FooterItem
         href="https://www.youtube.com/channel/UCIIXFxDwjdQtIlf5or_DcwQ"
-        icon={<SiYoutube title="YouTube" />}
-      />
-      <FooterItem
-        href="https://github.com/pzrsa/parsam.io"
-        icon={<VscSourceControl title="Source Code" />}
-      />
-      <FooterItem
-        href="https://www.linkedin.com/in/parsamesgarha/"
-        icon={<SiLinkedin title="LinkedIn" />}
+        name="youtube"
       />
     </footer>
   );
