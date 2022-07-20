@@ -3,7 +3,7 @@ import Head from "next/head";
 import PageTitle from "../components/PageTitle";
 import { generateFeeds } from "../lib/feeds";
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = () => {
   generateFeeds();
 
   return { props: {} };
