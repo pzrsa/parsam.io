@@ -10,17 +10,21 @@ export const getStaticProps: GetStaticProps = () => {
 };
 
 const Feeds: React.FC = () => {
+  const title = "Feeds - Parsa Mesgarha";
   const image = "/images/og/feeds.svg";
 
   return (
     <>
       <Head>
-        <title>Feeds - Parsa Mesgarha</title>
+        <title>{title}</title>
+        <meta property="og:site_name" content={title} key="og:site_name" />
+        <meta property="og:title" content={title} key="og:title" />
         <meta
           property="og:image"
           content={`https://parsam.io${image}`}
           key="og:image"
         />
+        <meta name="twitter:title" content={title} key="twitter:title" />
         <meta
           name="twitter:image"
           content={`https://parsam.io${image}`}
