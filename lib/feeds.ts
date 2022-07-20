@@ -2,6 +2,7 @@ import { Feed } from "feed";
 import fs from "fs";
 import {
   ARTICLES_ATOM_FEED,
+  ARTICLES_DIRECTORY,
   FEED_FOLDER,
   NOTES_ATOM_FEED,
   NOTES_DIRECTORY,
@@ -48,7 +49,7 @@ const generateNotesFeed = () => {
 };
 
 const generateArticlesFeed = () => {
-  const posts = getSortedPostData(NOTES_DIRECTORY);
+  const posts = getSortedPostData(ARTICLES_DIRECTORY);
 
   const feed = new Feed({
     title: "Parsa's Articles",
