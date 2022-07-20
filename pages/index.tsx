@@ -1,8 +1,16 @@
+import { GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import NowPlaying from "../components/NowPlaying";
+import { generateNotesRSSFeed } from "../lib/feed";
 
-const Home: React.FC = () => {
+export const getStaticProps: GetStaticProps = async () => {
+  await generateNotesRSSFeed();
+
+  return { props: {} };
+};
+
+const Index: React.FC = () => {
   const image = "/images/og/index.svg";
 
   return (
@@ -22,7 +30,7 @@ const Home: React.FC = () => {
       </Head>
       <div className="gap-1">
         <h1 className="text-4xl font-extrabold sm:text-5xl fold:text-3xl">
-          👋 Hey, I&apos;m Parsa.
+          Hey, I&apos;m Parsa.
         </h1>
         <p className="font-mono text-sm sm:text-lg font-semibold text-neutral-600 dark:text-neutral-400">
           Software Engineering Apprentice at{" "}
@@ -71,4 +79,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Index;

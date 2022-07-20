@@ -1,13 +1,11 @@
 import { GetStaticProps } from "next";
 import Post from "../../components/Post";
+import { NOTES_DIRECTORY } from "../../lib/constants";
 import { getAllPostSlugs, getPostData } from "../../lib/posts";
 import { Post as PostType } from "../../lib/types";
-import path from "path";
-
-const notesDirectory = path.join(process.cwd(), "data/notes");
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const noteData = await getPostData(params!.slug, notesDirectory);
+  const noteData = await getPostData(params!.slug, NOTES_DIRECTORY);
   return {
     props: {
       noteData,
@@ -16,7 +14,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths = async () => {
-  const paths = getAllPostSlugs(notesDirectory);
+  const paths = getAllPostSlugs(NOTES_DIRECTORY);
   return {
     paths,
     fallback: false,
