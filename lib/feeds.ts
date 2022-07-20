@@ -18,7 +18,7 @@ const generateNotesFeed = () => {
   const posts = getSortedPostData(NOTES_DIRECTORY);
 
   const feed = new Feed({
-    title: "Book Notes",
+    title: "Parsa's Book Notes",
     description: "Notes on the books I've read.",
     id: "https://parsam.io/notes",
     link: "https://parsam.io/notes",
@@ -51,7 +51,7 @@ const generateArticlesFeed = () => {
   const posts = getSortedPostData(NOTES_DIRECTORY);
 
   const feed = new Feed({
-    title: "Articles",
+    title: "Parsa's Articles",
     description: "Thoughts on stuff I find interesting.",
     id: "https://parsam.io/articles",
     link: "https://parsam.io/articles",
