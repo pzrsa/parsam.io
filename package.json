@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "dayjs": "^1.11.3",
+    "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
     "next": "12.2.0",
     "next-themes": "^0.2.0",

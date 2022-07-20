@@ -1,14 +1,6 @@
-import { GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import NowPlaying from "../components/NowPlaying";
-import { generateNotesRSSFeed } from "../lib/feed";
-
-export const getStaticProps: GetStaticProps = async () => {
-  await generateNotesRSSFeed();
-
-  return { props: {} };
-};
 
 const Index: React.FC = () => {
   const image = "/images/og/index.svg";

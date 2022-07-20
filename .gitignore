@@ -14,6 +14,10 @@
 # testing
 /coverage
 
+# feed
+public/notes.atom
+public/articles.atom
+
 # next.js
 /.next/
 /out/
