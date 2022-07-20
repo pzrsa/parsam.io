@@ -69,7 +69,7 @@ const generateArticlesFeed = () => {
     feed.addItem({
       id: post.slug,
       title: post.title,
-      link: `https://parsam.io/notes/${post.slug}`,
+      link: `https://parsam.io/articles/${post.slug}`,
       content: post.contentHtml,
       date: new Date(post.date),
     });
