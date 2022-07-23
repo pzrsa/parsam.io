@@ -51,7 +51,7 @@ const Feeds: React.FC = () => {
           >
             NetNewsWire
           </a>{" "}
-          for reading my RSS feeds.
+          for reading RSS feeds.
         </p>
       </div>
     </>
