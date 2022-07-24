@@ -1,5 +1,4 @@
 import Link from "next/link";
-import ThemeToggle from "./ThemeToggle";
 
 interface NavbarProps {
   href: string;
@@ -22,8 +21,6 @@ const Navbar = () => {
       <NavLink href="/about" text="about" />
       <NavLink href="/notes" text="notes" />
       <NavLink href="/articles" text="articles" />
-      <span className="flex-grow" />
-      <ThemeToggle />
     </nav>
   );
 };
