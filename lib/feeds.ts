@@ -38,7 +38,7 @@ const generateNotesFeed = () => {
       title: post.title,
       description: post.description,
       link: `https://parsam.io/notes/${post.slug}`,
-      image: post.image,
+      image: `https://parsam.io/images/notes/covers/${post.slug}.jpg`,
       content: post.contentHtml,
       date: new Date(post.date),
     });

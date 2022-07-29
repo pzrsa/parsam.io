@@ -17,7 +17,7 @@ const NoteCards: React.FC<NoteCardsProps> = ({ notes }) => {
               <div className="aspect-w-4 aspect-h-6 overflow-hidden rounded-lg cursor-pointer">
                 <Image
                   alt={note.title}
-                  src={`/images/notes/covers/${note.image}`}
+                  src={`/images/notes/covers/${note.slug}.jpg`}
                   layout="fill"
                   className="group-hover:opacity-75 transition-all"
                 />

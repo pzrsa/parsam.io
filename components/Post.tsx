@@ -39,7 +39,7 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         {postType === "note" ? (
           <meta
             property="og:image"
-            content={`https://parsam.io/images/notes/covers/${postData.image}`}
+            content={`https://parsam.io/images/notes/covers/${postData.slug}.jpg`}
             key="og:image"
           />
         ) : null}
@@ -61,7 +61,7 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         {postType === "note" ? (
           <meta
             name="twitter:image"
-            content={`https://parsam.io/images/notes/covers/${postData.image}`}
+            content={`https://parsam.io/images/notes/covers/${postData.slug}.jpg`}
             key="twitter:image"
           />
         ) : null}

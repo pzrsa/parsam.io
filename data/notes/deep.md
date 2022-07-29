@@ -3,7 +3,6 @@ title: "Deep Work"
 date: "2022-06-03"
 author: "Cal Newport"
 description: "Deep work is the ability to focus without distraction on a cognitively demanding task. Deep work will make you better at what you do, let you achieve more in less time and provide the sense of true fulfilment that comes from the mastery of a skill. In short, deep work is like a superpower in our increasingly competitive economy."
-image: "dw.jpg"
 ---
 
 ## Book in 3 Sentences

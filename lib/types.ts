@@ -5,7 +5,6 @@ export interface Post {
   contentHtml: string;
   author?: string;
   description?: string;
-  image?: string;
 }
 
 export interface Album {
