@@ -20,7 +20,7 @@ const FooterItem: React.FC<FooterProps> = ({ href, name }) => {
 
 const Footer = () => {
   return (
-    <footer className="grid grid-cols-3 sm:flex-row sm:flex gap-2 sm:gap-3 md:gap-4 mt-10">
+    <footer className="grid grid-cols-3 sm:flex-row sm:flex gap-4 mt-10">
       <Link href={"/feeds"}>
         <a className="font-mono font-bold text-md sm:text-lg hover:text-neutral-500 dark:hover:text-neutral-400 transition-all">
           feeds
