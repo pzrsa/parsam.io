@@ -38,9 +38,6 @@ module.exports = {
           },
         },
       }),
-      screens: {
-        fold: { max: "325px" },
-      },
     },
   },
   corePlugins: {

@@ -122,7 +122,7 @@ const About: React.FC = ({}) => {
             </li>
           </ul>
           <h2 className="text-2xl font-bold mb-3 mt-8">Music</h2>
-          <div className="grid grid-cols-2 gap-y-6 gap-x-6 sm:grid-cols-3 fold:grid-cols-1">
+          <div className="grid grid-cols-2 gap-y-6 gap-x-6 sm:grid-cols-3">
             {albums.map((album) => (
               <a
                 href={album.url}
