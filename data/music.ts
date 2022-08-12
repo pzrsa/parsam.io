@@ -29,6 +29,6 @@ export const albums: Album[] = [
   {
     title: "ye",
     image: "https://i.scdn.co/image/ab67616d0000b2730cd942c1a864afa4e92d04f2",
-    url: "https://open.spotify.com/album/2Ek1q2haOnxVqhvVKqMvJe?si=uXy2SpMtRcuwnQVcDphEag",
+    url: "https://open.spotify.com/album/2Ek1q2haOnxVqhvVKqMvJe",
   },
 ];
