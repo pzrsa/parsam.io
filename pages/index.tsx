@@ -45,14 +45,13 @@ const Index: React.FC = () => {
         <p>
           I currently work within the{" "}
           <a
-            href="https://play.google.com/console/about/"
+            href="https://www.android.com/"
             rel="prefetch noreferrer"
             target="_blank"
           >
-            Play Console
+            Android
           </a>{" "}
-          team, with a focus on making it the best app distribution platform for
-          developers.
+          team.
         </p>
         <p>
           I write{" "}
