@@ -91,7 +91,7 @@ const About: React.FC = ({}) => {
               >
                 monkeytype
               </a>
-              . My current personal record is 122wpm.
+              . My current personal record is 126wpm.
             </li>
             <li>
               Mechanical watches and G-Shock&apos;s. I own a Seiko SNZG13K1 and
