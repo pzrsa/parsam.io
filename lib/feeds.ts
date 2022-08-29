@@ -36,7 +36,7 @@ const generateNotesFeed = () => {
     feed.addItem({
       id: post.slug,
       title: post.title,
-      description: post.description,
+      description: post.contentHtml,
       link: `https://parsam.io/notes/${post.slug}`,
       image: `https://parsam.io/images/notes/covers/${post.slug}.jpg`,
       content: post.contentHtml,
@@ -69,6 +69,7 @@ const generateArticlesFeed = () => {
     feed.addItem({
       id: post.slug,
       title: post.title,
+      description: post.contentHtml,
       link: `https://parsam.io/articles/${post.slug}`,
       content: post.contentHtml,
       date: new Date(post.date),
