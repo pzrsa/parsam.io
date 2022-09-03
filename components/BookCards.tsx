@@ -10,7 +10,7 @@ interface NoteCardsProps {
 const NoteCards: React.FC<NoteCardsProps> = ({ notes }) => {
   return (
     <div className="mx-auto">
-      <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-2 gap-y-10 gap-x-6 md:grid-cols-3">
         {notes.map((note) => (
           <Link key={note.slug} href={`/notes/${note.slug}`}>
             <a className="group">

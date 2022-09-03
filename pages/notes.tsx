@@ -1,6 +1,6 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import NoteCards from "../components/NoteCards";
+import BookCards from "../components/BookCards";
 import PageTitle from "../components/PageTitle";
 import { NOTES_DIRECTORY } from "../lib/constants";
 import { getSortedPostData } from "../lib/posts";
@@ -42,7 +42,7 @@ const Notes: React.FC<NotesProps> = ({ allNotesData }) => {
         />
       </Head>
       <PageTitle name="Book Notes" />
-      <NoteCards notes={allNotesData} />
+      <BookCards notes={allNotesData} />
     </>
   );
 };
