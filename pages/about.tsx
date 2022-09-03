@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import PageTitle from "../components/PageTitle";
 import { albums } from "../data/music";
-import avatar from "../public/images/avatar2.jpg";
+import me from "../public/images/me.jpg";
 
 const About: React.FC = ({}) => {
   const title = "About Me - Parsa Mesgarha";
@@ -30,7 +30,7 @@ const About: React.FC = ({}) => {
         <PageTitle name="About Me" />
         <div className="relative sm:flex sm:flex-row-reverse">
           <div className="mx-auto w-60 h-60 sm:w-full sm:h-full ">
-            <Image className="rounded-full" src={avatar} alt="Parsa Mesgarha" />
+            <Image className="rounded-full" src={me} alt="Parsa Mesgarha" />
           </div>
           <div className="prose dark:prose-invert mt-5 sm:mr-3 sm:mt-0">
             <p>
