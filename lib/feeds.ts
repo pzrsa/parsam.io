@@ -7,7 +7,7 @@ import {
   NOTES_ATOM_FEED,
   NOTES_DIRECTORY,
 } from "./constants";
-import { getSortedPostData } from "./posts";
+import { getPostData, getSortedPostData } from "./posts";
 import { Post } from "./types";
 
 export const generateFeeds = () => {
@@ -23,23 +23,25 @@ const generateNotesFeed = () => {
     description: "Notes on the books I've read.",
     id: "https://parsam.io/notes",
     link: "https://parsam.io/notes",
-    image: "https://parsam.io/images/og/notes.svg",
-    copyright: `All rights reserved ${new Date().getFullYear()}, Parsa Mesgarha`,
+    favicon: "https://parsam.io/favicons/favicon.ico",
+    image: "https://parsam.io/images/og/notes.jpg",
+    copyright: `All rights reserved ${new Date().getFullYear()}, Parsa.`,
     author: {
-      name: "Parsa Mesgarha",
+      name: "Parsa",
       email: "hi@parsam.io",
       link: "https://parsam.io/",
     },
   });
 
-  (posts as Post[]).forEach((post) => {
+  (posts as Post[]).forEach(async (post) => {
+    const postData = await getPostData(post!.slug, NOTES_DIRECTORY);
+
     feed.addItem({
       id: post.slug,
       title: post.title,
-      description: post.contentHtml,
+      content: postData.contentHtml,
       link: `https://parsam.io/notes/${post.slug}`,
       image: `https://parsam.io/images/notes/covers/${post.slug}.jpg`,
-      content: post.contentHtml,
       date: new Date(post.date),
     });
   });
@@ -56,22 +58,24 @@ const generateArticlesFeed = () => {
     description: "Thoughts on stuff I find interesting.",
     id: "https://parsam.io/articles",
     link: "https://parsam.io/articles",
-    image: "https://parsam.io/images/og/articles.svg",
-    copyright: `All rights reserved ${new Date().getFullYear()}, Parsa Mesgarha`,
+    favicon: "https://parsam.io/favicons/favicon.ico",
+    image: "https://parsam.io/images/og/articles.jpg",
+    copyright: `All rights reserved ${new Date().getFullYear()}, Parsa.`,
     author: {
-      name: "Parsa Mesgarha",
+      name: "Parsa",
       email: "hi@parsam.io",
       link: "https://parsam.io/",
     },
   });
 
-  (posts as Post[]).forEach((post) => {
+  (posts as Post[]).forEach(async (post) => {
+    const postData = await getPostData(post!.slug, ARTICLES_DIRECTORY);
+
     feed.addItem({
       id: post.slug,
       title: post.title,
-      description: post.contentHtml,
+      content: postData.contentHtml,
       link: `https://parsam.io/articles/${post.slug}`,
-      content: post.contentHtml,
       date: new Date(post.date),
     });
   });
