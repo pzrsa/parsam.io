@@ -11,7 +11,7 @@ export const getStaticProps: GetStaticProps = () => {
 
 const Feeds: React.FC = () => {
   const title = "Feeds - Parsa Mesgarha";
-  const image = "/images/og/feeds.svg";
+  const image = "feeds.jpg";
 
   return (
     <>
@@ -21,13 +21,13 @@ const Feeds: React.FC = () => {
         <meta property="og:title" content={title} key="og:title" />
         <meta
           property="og:image"
-          content={`https://parsam.io${image}`}
+          content={`https://parsam.io/images/og/${image}`}
           key="og:image"
         />
         <meta name="twitter:title" content={title} key="twitter:title" />
         <meta
           name="twitter:image"
-          content={`https://parsam.io${image}`}
+          content={`https://parsam.io/images/og/${image}`}
           key="twitter:image"
         />
       </Head>

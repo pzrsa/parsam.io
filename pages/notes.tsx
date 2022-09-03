@@ -21,7 +21,7 @@ interface NotesProps {
 
 const Notes: React.FC<NotesProps> = ({ allNotesData }) => {
   const title = "Book Notes - Parsa Mesgarha";
-  const image = "/images/og/notes.svg";
+  const image = "notes.jpg";
 
   return (
     <>
@@ -31,13 +31,13 @@ const Notes: React.FC<NotesProps> = ({ allNotesData }) => {
         <meta property="og:title" content={title} key="og:title" />
         <meta
           property="og:image"
-          content={`https://parsam.io${image}`}
+          content={`https://parsam.io/images/og/${image}`}
           key="og:image"
         />
         <meta name="twitter:title" content={title} key="twitter:title" />
         <meta
           name="twitter:image"
-          content={`https://parsam.io${image}`}
+          content={`https://parsam.io/images/og/${image}`}
           key="twitter:image"
         />
       </Head>

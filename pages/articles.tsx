@@ -21,7 +21,7 @@ interface ArticlesProps {
 
 const Articles: React.FC<ArticlesProps> = ({ allArticlesData }) => {
   const title = "Articles - Parsa Mesgarha";
-  const image = "/images/og/articles.svg";
+  const image = "articles.jpg";
 
   return (
     <>
@@ -31,13 +31,13 @@ const Articles: React.FC<ArticlesProps> = ({ allArticlesData }) => {
         <meta property="og:title" content={title} key="og:title" />
         <meta
           property="og:image"
-          content={`https://parsam.io${image}`}
+          content={`https://parsam.io/images/og/${image}`}
           key="og:image"
         />
         <meta name="twitter:title" content={title} key="twitter:title" />
         <meta
           name="twitter:image"
-          content={`https://parsam.io${image}`}
+          content={`https://parsam.io/images/og/${image}`}
           key="twitter:image"
         />
       </Head>

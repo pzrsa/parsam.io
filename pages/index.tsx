@@ -3,7 +3,7 @@ import Link from "next/link";
 import NowPlaying from "../components/NowPlaying";
 
 const Index: React.FC = () => {
-  const image = "/images/og/index.svg";
+  const image = "index.jpg";
 
   return (
     <>
@@ -11,12 +11,12 @@ const Index: React.FC = () => {
         <title>Parsa Mesgarha - Programmer, lifelong learner.</title>
         <meta
           property="og:image"
-          content={`https://parsam.io${image}`}
+          content={`https://parsam.io/images/og/${image}`}
           key="og:image"
         />
         <meta
           name="twitter:image"
-          content={`https://parsam.io${image}`}
+          content={`https://parsam.io/images/og/${image}`}
           key="twitter:image"
         />
       </Head>

@@ -6,7 +6,7 @@ import me from "../public/images/me.jpg";
 
 const About: React.FC = ({}) => {
   const title = "About Me - Parsa Mesgarha";
-  const image = "/images/og/about.svg";
+  const image = "about.jpg";
 
   return (
     <>
@@ -16,13 +16,13 @@ const About: React.FC = ({}) => {
         <meta property="og:title" content={title} key="og:title" />
         <meta
           property="og:image"
-          content={`https://parsam.io${image}`}
+          content={`https://parsam.io/images/og/${image}`}
           key="og:image"
         />
         <meta name="twitter:title" content={title} key="twitter:title" />
         <meta
           name="twitter:image"
-          content={`https://parsam.io${image}`}
+          content={`https://parsam.io/images/og/${image}`}
           key="twitter:image"
         />
       </Head>
