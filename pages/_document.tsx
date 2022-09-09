@@ -17,6 +17,12 @@ class ParsaDocument extends Document {
             sizes="16x16"
             href="/favicons/favicon-16x16.png"
           />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicons/apple-touch-icon.png"
+          />
+          <meta name="theme-color" content="#111111" />
         </Head>
         <body className="bg-white dark:bg-black text-black dark:text-white">
           <Main />
