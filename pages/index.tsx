@@ -43,13 +43,13 @@ const Index: React.FC = () => {
           about stuff I love including tech, startups and life.
         </p>
         <p>
-          I currently work within the{" "}
+          I work within the{" "}
           <a
-            href="https://www.android.com/"
+            href="https://web.dev/web-on-android/"
             rel="prefetch noreferrer"
             target="_blank"
           >
-            Android
+            Web on Android
           </a>{" "}
           team.
         </p>
