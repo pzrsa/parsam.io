@@ -8,15 +8,19 @@ const handler = async (_: NextApiRequest, res: NextApiResponse) => {
     return res.status(200).json({ isPlaying: false });
   }
 
-  const song = await response.json();
-  const isPlaying = song.is_playing;
-  const title = song.item.name;
-  const artist = song.item.artists
+  const data = await response.json();
+  if (data.currently_playing_type !== "track") {
+    return res.status(200).json({ isPlaying: false });
+  }
+
+  const isPlaying: boolean = data.is_playing;
+  const title: string = data.item.name;
+  const artist: string = data.item.artists
     .map((_artist: { name: string }) => _artist.name)
     .join(", ");
-  const album = song.item.album.name;
-  const albumImageUrl = song.item.album.images[0].url;
-  const songUrl = song.item.external_urls.spotify;
+  const album: string = data.item.album.name;
+  const albumImageUrl: string = data.item.album.images[0].url;
+  const songUrl: string = data.item.external_urls.spotify;
 
   return res.status(200).json({
     album,
