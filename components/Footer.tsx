@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <footer className="grid grid-cols-3 sm:flex-row sm:flex gap-4 mt-10">
       <FooterItem href="https://github.com/pzrsa/parsam.io" name="source" />
-      <FooterItem href="https://twitter.com/_parsam" name="twitter" />
+      <FooterItem href="https://twitter.com/pzrsaa" name="twitter" />
       <FooterItem href="https://github.com/pzrsa" name="github" />
       <FooterItem
         href="https://www.youtube.com/channel/UCIIXFxDwjdQtIlf5or_DcwQ"

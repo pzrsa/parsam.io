@@ -35,7 +35,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           key="og:image"
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@_parsam" />
+        <meta name="twitter:site" content="@pzrsaa" />
         <meta name="twitter:title" content={title} key="twitter:title" />
         <meta
           name="twitter:description"

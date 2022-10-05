@@ -43,7 +43,7 @@ const About: React.FC = ({}) => {
               there who has similar interests. If thats the case, feel free to
               reach out on{" "}
               <a
-                href="https://twitter.com/_parsam"
+                href="https://twitter.com/pzrsaa"
                 rel="prefetch noreferrer"
                 target="_blank"
               >
