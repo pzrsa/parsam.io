@@ -41,12 +41,11 @@ const Index: React.FC = () => {
       </div>
       <div className="prose dark:prose-invert">
         <p>
-          I&apos;m a 19 year old from London, England keen on learning deeply
-          about{" "}
+          I&apos;m a 19 y/o from London, keen on learning deeply about{" "}
           <Link href="/about">
             <a>stuff I love</a>
           </Link>{" "}
-          including tech, startups and life.
+          like tech, startups and life.
         </p>
         <p>
           I currently work within the{" "}
