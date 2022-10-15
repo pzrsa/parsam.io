@@ -4,7 +4,7 @@ import PageTitle from "../components/PageTitle";
 import { albums } from "../data/music";
 import me from "../public/images/me.jpg";
 
-const About: React.FC = ({}) => {
+const About: React.FC = ({ }) => {
   const title = "About Me - Parsa Mesgarha";
   const image = "about.jpg";
 
@@ -122,6 +122,19 @@ const About: React.FC = ({}) => {
             </li>
           </ul>
           <h2 className="text-2xl font-bold mb-3 mt-8">Music</h2>
+          <p>
+            I&apos;m a big Kanye and Kendrick fan, but if you want to see the
+            other artists I listen to (yes, they exist), you can check my{" "}
+            <a
+              href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
+              rel="prefetch noreferrer"
+              target="_blank"
+            >
+              Spotify profile
+            </a>
+            . Clearly my music choice is not that diverse, but I enjoy keeping
+            it that way.
+          </p>
           <div className="grid grid-cols-2 gap-y-6 gap-x-6 sm:grid-cols-3">
             {albums.map((album) => (
               <a
