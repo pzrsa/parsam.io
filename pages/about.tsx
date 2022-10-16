@@ -123,8 +123,24 @@ const About: React.FC = ({ }) => {
           </ul>
           <h2 className="text-2xl font-bold mb-3 mt-8">Music</h2>
           <p>
-            I&apos;m a big Kanye and Kendrick fan, but if you want to see the
-            other artists I listen to (yes, they exist), you can check my{" "}
+            I&apos;m a big{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/Kanye_West"
+              rel="prefetch noreferrer"
+              target="_blank"
+            >
+              Ye
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/Kendrick_Lamar"
+              rel="prefetch noreferrer"
+              target="_blank"
+            >
+              Kendrick
+            </a>{" "}
+            fan, but if you want to see the other artists I listen to (yes, they
+            exist), you can check my{" "}
             <a
               href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
               rel="prefetch noreferrer"
