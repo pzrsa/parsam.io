@@ -124,14 +124,13 @@ const About: React.FC = ({ }) => {
           <h2 className="text-2xl font-bold mb-3 mt-8">Music</h2>
           <p>
             I&apos;m mostly a hip hop fan, but listen to a range of other
-            genres. If you want to see my recently played artists you can check
-            out my{" "}
+            genres. Feel free to check out my{" "}
             <a
-              href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
+              href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk/recently-played-artists"
               rel="prefetch noreferrer"
               target="_blank"
             >
-              Spotify profile
+              recently played artists
             </a>
             .
           </p>
