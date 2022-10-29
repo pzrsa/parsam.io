@@ -94,10 +94,24 @@ const About: React.FC = ({ }) => {
               . My current personal record is 133wpm.
             </li>
             <li>
-              Mechanical watches and G-Shock&apos;s. I own a Seiko SNZG13K1 and
-              a G-Shock GA-B2100-1A1, both of which I bought for under £100. I
-              just love how minimal they are which makes me feel good wearing
-              them.
+              Mechanical watches and G-Shock&apos;s. I own a Seiko{" "}
+              <a
+                href="https://wornandwound.com/review/seiko-5-snzg-review/"
+                rel="prefetch noreferrer"
+                target="_blank"
+              >
+                SNZG13K1
+              </a>{" "}
+              and a G-Shock{" "}
+              <a
+                href="https://www.casio.com/intl/watches/gshock/product.GA-B2100-1A1/"
+                rel="prefetch noreferrer"
+                target="_blank"
+              >
+                GA-B2100-1A1
+              </a>
+              , both of which I bought for under £100. I just love how minimal
+              they are which makes me feel good wearing them.
             </li>
             <li>
               Vi keybinds, I can&apos;t live without them as it simply makes
