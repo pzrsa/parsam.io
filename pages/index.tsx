@@ -48,13 +48,21 @@ const Index: React.FC = () => {
           like tech, startups and life.
         </p>
         <p>
-          I currently work within the{" "}
+          I&apos;m currently working on the{" "}
           <a
             href="https://www.w3.org"
             rel="prefetch noreferrer"
             target="_blank"
           >
-            Web
+            Web Platform
+          </a>
+          , mostly through{" "}
+          <a
+            href="https://www.google.com/chrome/"
+            rel="prefetch noreferrer"
+            target="_blank"
+          >
+            Chrome
           </a>{" "}
           on{" "}
           <a
@@ -64,7 +72,6 @@ const Index: React.FC = () => {
           >
             Android
           </a>{" "}
-          team, focusing on problems related to the Web ecosystem for Android
           devices.
         </p>
         <p>
