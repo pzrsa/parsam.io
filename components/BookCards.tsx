@@ -3,11 +3,11 @@ import Link from "next/link";
 import { Post } from "../lib/types";
 import Date from "./Date";
 
-interface NoteCardsProps {
+interface BookCardsProps {
   notes: Post[];
 }
 
-const NoteCards: React.FC<NoteCardsProps> = ({ notes }) => {
+const BookCards: React.FC<BookCardsProps> = ({ notes }) => {
   return (
     <div className="mx-auto">
       <div className="grid grid-cols-2 gap-y-10 gap-x-6 md:grid-cols-3">
@@ -39,4 +39,4 @@ const NoteCards: React.FC<NoteCardsProps> = ({ notes }) => {
   );
 };
 
-export default NoteCards;
+export default BookCards;
