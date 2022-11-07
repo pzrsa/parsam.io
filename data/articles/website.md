@@ -42,7 +42,7 @@ After having this website for over a year, I've had a magnitude of noticeable be
 - **Learn about people letting me know that they've read my posts**. I don't have any statistics on how many people view my site, so it's a nice surprise. Also it's a much deeper connection over social media likes/comments.
 - **Gained better clarity over my thoughts**. Sometimes writing about something you're going through publicly is a good way to gain control over the situation.
 - **Increased surface area for serendipity to impact me**. Opportunities simply arise more because I am putting myself out there.
-- **Met interesting people with mutual interests from their website**. Messaged [Alistair](https://twitter.com/alistaiiiir) on Twitter randomly one day and ended up meeting him IRL (cool guy).
+- **Met interesting people with mutual interests from their website**. Messaged [Alistair](https://twitter.com/alistaiiiir) on twitter randomly one day and ended up meeting him IRL (cool guy).
 - **Sandbox to experiment new technologies**. I've recently switched to using [Tailwind CSS](https://tailwindcss.com/) to style my website, and using my website as the foundation to learn was a no-brainer.
 - **Separates me from candidates who may only have a resume to show**. I think having a website to show your work is much stronger than a resume because of the unique factor.
 - **Simply a non-monetary asset I take care of**. I do invest in stocks, but this website will stay with me forever and will continue to increase in my personal value.

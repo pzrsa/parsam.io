@@ -29,7 +29,7 @@ I think that in this day and age we should all be putting ourselves out there, s
 
 - I don't really care about others opinions now, they might get to me from time to time, but still realised how everyone is facing their own problems.
 - Making an attempt to not waste peoples time. I tend to review what I am about to post and think about if anyone would find this useful after reading it (hopefully this book note is for you!).
-- Going to make sure I maintain my website and have it grow with me along my journey. I will engage with my audience and provide the best level of quality that I can (message me on [Twitter](https://twitter.com/parsamesgarha)!).
+- Going to make sure I maintain my website and have it grow with me along my journey. I will engage with my audience and provide the best level of quality that I can (message me on [twitter](https://twitter.com/pzrsaa)!).
 - When this website starts doing well, I want to start a newsletter as he mentions how important it is when providing insight to your more interested audience, even if its a small update.
 - Now, I know I am getting way too ahead of myself, but the idea of a tip/donation on my page if someone feels generous is an idea I like. Not prioritising it of course, but a nice addition if someone wants to give a nice gesture. Something like "buy me a coffee" sounds friendly lol.
 

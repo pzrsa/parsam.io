@@ -4,7 +4,7 @@ import PageTitle from "../components/PageTitle";
 import { albums } from "../data/music";
 import me from "../public/images/me.jpg";
 
-const About: React.FC = ({ }) => {
+const About: React.FC = ({}) => {
   const title = "About Me - Parsa Mesgarha";
   const image = "about.jpg";
 
@@ -47,7 +47,7 @@ const About: React.FC = ({ }) => {
                 rel="prefetch noreferrer"
                 target="_blank"
               >
-                Twitter
+                twitter
               </a>{" "}
               as I like meeting new people.
             </p>
