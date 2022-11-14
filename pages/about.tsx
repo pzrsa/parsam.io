@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import PageTitle from "../components/PageTitle";
 import { albums } from "../data/music";
 import me from "../public/images/me.jpg";
