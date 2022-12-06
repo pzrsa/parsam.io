@@ -85,7 +85,7 @@ const About: React.FC = ({}) => {
             <li>
               Doing typing tests on{" "}
               <a
-                href="https://monkeytype.com/profile/PiD5IrU9SsdiY6c2yDMUq72wigz1"
+                href="https://monkeytype.com/profile/pzrsa"
                 rel="prefetch noreferrer"
                 target="_blank"
               >
