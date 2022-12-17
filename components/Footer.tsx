@@ -22,10 +22,7 @@ const Footer = () => {
       <FooterItem href="https://github.com/pzrsa/parsam.io" name="source" />
       <FooterItem href="https://twitter.com/pzrsaa" name="twitter" />
       <FooterItem href="https://github.com/pzrsa" name="github" />
-      <FooterItem
-        href="https://www.youtube.com/channel/UCIIXFxDwjdQtIlf5or_DcwQ"
-        name="youtube"
-      />
+      <FooterItem href="https://www.youtube.com/@pzrsa" name="youtube" />
     </footer>
   );
 };
