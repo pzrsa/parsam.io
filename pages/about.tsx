@@ -110,8 +110,8 @@ const About: React.FC = ({}) => {
               >
                 GA-B2100-1A1
               </a>
-              , both of which I bought for under £100. I just love how minimal
-              they are which makes me feel good wearing them.
+              . I love how boringly beautiful they are, which makes me feel good
+              wearing them.
             </li>
             <li>
               Vi keybinds, I can&apos;t live without them as it simply makes
