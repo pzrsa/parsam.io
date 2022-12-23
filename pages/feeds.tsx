@@ -45,7 +45,7 @@ const Feeds: React.FC = () => {
           For reading RSS feeds, I recommend{" "}
           <a
             href={
-              "https://apps.apple.com/us/app/netnewswire-rss-reader/id1480640210"
+              "https://apps.apple.com/app/netnewswire-rss-reader/id1480640210"
             }
             rel="prefetch noreferrer"
             target="_blank"
