@@ -41,6 +41,29 @@ const Feeds: React.FC = () => {
             <a href={"/articles.atom"}>Articles</a>
           </li>
         </ul>
+        <p>
+          For reading RSS feeds, I recommend{" "}
+          <a
+            href={
+              "https://apps.apple.com/us/app/netnewswire-rss-reader/id1480640210"
+            }
+            rel="prefetch noreferrer"
+            target="_blank"
+          >
+            NetNewsWire
+          </a>{" "}
+          for iOS, and{" "}
+          <a
+            href={
+              "https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play"
+            }
+            rel="prefetch noreferrer"
+            target="_blank"
+          >
+            Feeder
+          </a>{" "}
+          for Android.
+        </p>
       </div>
     </>
   );
