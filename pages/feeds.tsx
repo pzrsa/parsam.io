@@ -5,7 +5,6 @@ import { generateFeeds } from "../lib/feeds";
 
 export const getStaticProps: GetStaticProps = () => {
   generateFeeds();
-
   return { props: {} };
 };
 
