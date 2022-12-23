@@ -10,6 +10,7 @@
   "dependencies": {
     "@vercel/analytics": "^0.1.6",
     "dayjs": "^1.11.7",
+    "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "latest",
