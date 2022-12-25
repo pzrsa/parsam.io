@@ -1,6 +1,6 @@
 ---
-title: "MechKeebs"
 date: "2022-07-15"
+title: "MechKeebs"
 ---
 
 After [many months](https://github.com/pzrsa/mechkeebs/graphs/code-frequency), I finally managed to launch a personal project that helped me learn a bunch of [technologies](https://github.com/pzrsa/mechkeebs#technologies) I was interested in.

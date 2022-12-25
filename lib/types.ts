@@ -1,10 +1,12 @@
 export interface Post {
   slug: string;
-  title: string;
-  date: string;
   contentHtml: string;
+  date: string;
+  title: string;
+  subtitle?: string;
   author?: string;
   description?: string;
+  genre?: string;
 }
 
 export interface Album {

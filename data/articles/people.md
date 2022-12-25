@@ -1,6 +1,6 @@
 ---
-title: "Working With People"
 date: "2022-02-09"
+title: "Working With People"
 ---
 
 As you might know, I’ve [joined an apprenticeship at Google](https://parsam.io/articles/joined-google) 5 months ago. I completed my 3 month bootcamp in December last year, with an additional 3 weeks of internal training. So, when January 2022 started, I was assigned to a team of incredible people which has been really exciting to be a part of.
