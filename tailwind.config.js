@@ -1,3 +1,10 @@
+const round = (num) =>
+  num
+    .toFixed(7)
+    .replace(/(\.[0-9]+?)0+$/, "$1")
+    .replace(/\.0$/, "");
+const rem = (px) => `${round(px / 16)}rem`;
+
 module.exports = {
   darkMode: "media",
   content: [
@@ -20,6 +27,7 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme("colors.black"),
+            fontSize: rem(17),
             a: {
               color: theme("colors.blue.600"),
               fontWeight: "700",
@@ -31,6 +39,7 @@ module.exports = {
         },
         invert: {
           css: {
+            fontSize: rem(17),
             color: theme("colors.white"),
             a: {
               color: theme("colors.blue.500"),
