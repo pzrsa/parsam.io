@@ -34,14 +34,12 @@ const About: React.FC = ({}) => {
           </div>
           <div className="prose dark:prose-invert mt-5 sm:mr-3 sm:mt-0">
             <p>
-              If you&apos;re interested to learn more about me for some reason,
-              here&apos;s a list of things that might paint a picture of the
-              type of person I am.
+              For the really curious, I&apos;ve compiled a list of some things
+              that might paint a picture of the type of person I am.
             </p>
             <p>
-              These things bring joy to my life, and there could be someone out
-              there who has similar interests. If thats the case, feel free to
-              reach out on{" "}
+              These things bring me joy, and there could be someone out there
+              who has similar interests. If thats the case, message me on{" "}
               <a
                 href="https://twitter.com/pzrsaa"
                 rel="prefetch noreferrer"
@@ -49,7 +47,7 @@ const About: React.FC = ({}) => {
               >
                 twitter
               </a>{" "}
-              as I like meeting new people.
+              as I love meeting new people.
             </p>
           </div>
         </div>
