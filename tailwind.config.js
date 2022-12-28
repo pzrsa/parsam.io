@@ -27,7 +27,7 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme("colors.black"),
-            fontSize: rem(17),
+            fontSize: rem(18),
             a: {
               color: theme("colors.blue.600"),
               fontWeight: "700",
@@ -39,7 +39,7 @@ module.exports = {
         },
         invert: {
           css: {
-            fontSize: rem(17),
+            fontSize: rem(18),
             color: theme("colors.white"),
             a: {
               color: theme("colors.blue.500"),
