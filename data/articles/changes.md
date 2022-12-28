@@ -3,7 +3,7 @@ date: "2022-12-28"
 title: "Some changes to my posts"
 ---
 
-Recently I realised that writing posts has become a chore for me. Clearly this is the case as my track record with publishing reflects this. I never wanted this to happen, but as I took on more reponsibilities my current writing process was too time consuming.
+Recently I realised that writing posts has become a chore for me. Clearly this is the case as my track record with publishing reflects this. I never wanted this to happen, but as I took on more responsibilities my current writing process was too time consuming.
 
 I'm not a company who writes perfectly crafted blog posts with hours of research put into them. I'm a guy who wants to document what he's interested in for his future self to be proud of, and if even one person finds them resonating then thats a huge bonus.
 
