@@ -32,6 +32,7 @@ const Feeds: React.FC = () => {
       </Head>
       <PageTitle name="Feeds" />
       <div className="prose dark:prose-invert">
+        <h2 className="text-2xl font-bold mb-3 mt-8">RSS</h2>
         <ul>
           <li>
             <a href={"/notes.atom"}>Book Notes</a>
@@ -62,6 +63,19 @@ const Feeds: React.FC = () => {
             Feeder
           </a>{" "}
           for Android.
+        </p>
+        <h2 className="text-2xl font-bold mb-3 mt-8">Email</h2>
+        <p>
+          If you&apos;d prefer to receive my posts in your inbox, you can
+          subscribe to my{" "}
+          <a
+            href={"https://parsam.substack.com/"}
+            rel="prefetch noreferrer"
+            target="_blank"
+          >
+            Substack
+          </a>
+          .
         </p>
       </div>
     </>
