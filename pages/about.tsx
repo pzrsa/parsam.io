@@ -12,14 +12,21 @@ const About: React.FC = ({}) => {
     <>
       <Head>
         <title>{title}</title>
+        <meta name="description" content={title} />
         <meta property="og:site_name" content={title} key="og:site_name" />
         <meta property="og:title" content={title} key="og:title" />
+        <meta property="og:description" content={title} key="og:description" />
         <meta
           property="og:image"
           content={`https://parsam.io/images/og/${image}`}
           key="og:image"
         />
         <meta name="twitter:title" content={title} key="twitter:title" />
+        <meta
+          name="twitter:description"
+          content={title}
+          key="twitter:description"
+        />
         <meta
           name="twitter:image"
           content={`https://parsam.io/images/og/${image}`}
