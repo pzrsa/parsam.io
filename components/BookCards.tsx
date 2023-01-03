@@ -1,7 +1,6 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
 import { Post } from "../lib/types";
-import Date from "./Date";
 
 interface BookCardsProps {
   notes: Post[];
@@ -12,8 +11,7 @@ const BookCards: React.FC<BookCardsProps> = ({ notes }) => {
     <div className="mx-auto">
       <div className="grid grid-cols-2 gap-y-10 gap-x-6 md:grid-cols-3">
         {notes.map((note) => (
-          (<Link key={note.slug} href={`/notes/${note.slug}`} className="group">
-
+          <Link key={note.slug} href={`/notes/${note.slug}`} className="group">
             <div className="aspect-w-4 aspect-h-6 overflow-hidden rounded-lg cursor-pointer">
               <Image
                 alt={note.title}
@@ -27,11 +25,10 @@ const BookCards: React.FC<BookCardsProps> = ({ notes }) => {
                 {note.title}
               </h2>
               <p className="font-mono text-neutral-600 dark:text-neutral-400">
-                {note.author} • <Date dateString={note.date} />
+                {note.author}
               </p>
             </div>
-
-          </Link>)
+          </Link>
         ))}
       </div>
     </div>
