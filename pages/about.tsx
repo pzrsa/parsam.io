@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/legacy/image";
 import PageTitle from "../components/PageTitle";
-import { albums } from "../data/music";
 import me from "../public/images/me.jpg";
 
 const About: React.FC = ({}) => {
@@ -140,39 +139,6 @@ const About: React.FC = ({}) => {
               battle scars from making some mistakes.
             </li>
           </ul>
-          <h2 className="text-2xl font-bold mb-3 mt-8">Music</h2>
-          <p>
-            I&apos;m mostly a hip hop fan, but listen to a range of other
-            genres. Feel free to check out my{" "}
-            <a
-              href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk/recently-played-artists"
-              rel="prefetch noreferrer"
-              target="_blank"
-            >
-              recently played artists
-            </a>
-            .
-          </p>
-          <div className="grid grid-cols-2 gap-y-6 gap-x-6 sm:grid-cols-3">
-            {albums.map((album) => (
-              <a
-                href={album.url}
-                className="group"
-                key={album.title}
-                rel="prefetch noreferrer"
-                target="_blank"
-              >
-                <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg cursor-pointer">
-                  <Image
-                    alt={album.title}
-                    src={album.image}
-                    layout="fill"
-                    className="group-hover:opacity-75 transition-all"
-                  />
-                </div>
-              </a>
-            ))}
-          </div>
         </div>
       </div>
     </>
