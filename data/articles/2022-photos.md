@@ -1,5 +1,5 @@
 ---
-date: "2023-01-14"
+date: "2023-01-15"
 title: "Some photos from 2022"
 ---
 
