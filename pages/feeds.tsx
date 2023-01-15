@@ -3,12 +3,12 @@ import Head from "next/head";
 import PageTitle from "../components/PageTitle";
 import { generateFeeds } from "../lib/feeds";
 
-export const getStaticProps: GetStaticProps = () => {
+export const getStaticProps: GetStaticProps = async () => {
   generateFeeds();
   return { props: {} };
 };
 
-const Feeds: React.FC = () => {
+export default function Feeds() {
   const title = "Feeds - Parsa Mesgarha";
   const image = "feeds.jpg";
 
@@ -87,6 +87,4 @@ const Feeds: React.FC = () => {
       </div>
     </>
   );
-};
-
-export default Feeds;
+}

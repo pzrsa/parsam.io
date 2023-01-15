@@ -6,7 +6,7 @@ import { ARTICLES_DIRECTORY } from "../lib/constants";
 import { getSortedPostData } from "../lib/posts";
 import { Post } from "../lib/types";
 
-export const getStaticProps: GetStaticProps = () => {
+export const getStaticProps: GetStaticProps = async () => {
   const allArticlesData = getSortedPostData(ARTICLES_DIRECTORY);
   return {
     props: {
