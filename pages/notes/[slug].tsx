@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next";
+import { GetStaticPaths, GetStaticProps } from "next";
 import Post from "../../components/Post";
 import { NOTES_DIRECTORY } from "../../lib/constants";
 import { getAllPostSlugs, getPostData } from "../../lib/posts";
@@ -13,7 +13,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 };
 
-export const getStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostSlugs(NOTES_DIRECTORY);
   return {
     paths,
