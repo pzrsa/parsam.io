@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const Custom404: React.FC = () => {
+export default function Custom404() {
   return (
     <>
       <Head>
@@ -11,6 +11,4 @@ const Custom404: React.FC = () => {
       </h1>
     </>
   );
-};
-
-export default Custom404;
+}

@@ -3,7 +3,7 @@ import Image from "next/legacy/image";
 import PageTitle from "../components/PageTitle";
 import me from "../public/images/me.jpg";
 
-const About: React.FC = ({}) => {
+export default function About() {
   const title = "About Me - Parsa Mesgarha";
   const image = "about.jpg";
 
@@ -143,6 +143,4 @@ const About: React.FC = ({}) => {
       </div>
     </>
   );
-};
-
-export default About;
+}

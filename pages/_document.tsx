@@ -1,6 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
 
-class ParsaDocument extends Document {
+export default class ParsaDocument extends Document {
   render() {
     return (
       <Html
@@ -35,5 +35,3 @@ class ParsaDocument extends Document {
     );
   }
 }
-
-export default ParsaDocument;
