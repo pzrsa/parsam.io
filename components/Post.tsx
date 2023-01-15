@@ -42,7 +42,9 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
             content={`https://parsam.io/images/notes/covers/${postData.slug}.jpg`}
             key="og:image"
           />
-        ) : null}
+        ) : (
+          <meta property="og:image" key="og:image" />
+        )}
         <meta
           name="twitter:title"
           content={
@@ -64,7 +66,9 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
             content={`https://parsam.io/images/notes/covers/${postData.slug}.jpg`}
             key="twitter:image"
           />
-        ) : null}
+        ) : (
+          <meta property="twitter:image" key="twitter:image" />
+        )}
       </Head>
       <div className="mb-4">
         <h1 className="text-4xl sm:text-5xl font-extrabold">
