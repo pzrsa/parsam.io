@@ -1,6 +1,6 @@
 ---
 date: "2022-12-28"
-title: "Some changes to my posts"
+title: "Making changes to my posts"
 ---
 
 Recently I realised that writing posts has become a chore for me. Clearly this is the case as my track record with publishing reflects this. I never wanted this to happen, but as I took on more responsibilities my current writing process was too time consuming.
