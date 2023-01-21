@@ -99,11 +99,7 @@ export default function About() {
             </li>
             <li>
               Mechanical watches and G-Shock&apos;s. I own a Seiko{" "}
-              <a
-                href="https://wornandwound.com/review/seiko-5-snzg-review/"
-                rel="prefetch noreferrer"
-                target="_blank"
-              >
+              <a href="/images/articles/2022-photos/seiko.jpg" target="_blank">
                 SNZG13K1
               </a>{" "}
               and a G-Shock{" "}
