@@ -1,6 +1,6 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import BookCards from "../components/BookCards";
+import BookCard from "../components/BookCard";
 import PageTitle from "../components/PageTitle";
 import { NOTES_DIRECTORY } from "../lib/constants";
 import { getSortedPostData } from "../lib/posts";
@@ -54,7 +54,13 @@ const Notes: React.FC<NotesProps> = ({ allNotesData }) => {
         />
       </Head>
       <PageTitle name="Book Notes" />
-      <BookCards notes={allNotesData} />
+      <div className="mx-auto">
+        <div className="grid grid-cols-2 gap-y-10 gap-x-6 md:grid-cols-3">
+          {allNotesData.map((note) => (
+            <BookCard key={note.slug} note={note} />
+          ))}
+        </div>
+      </div>
     </>
   );
 };

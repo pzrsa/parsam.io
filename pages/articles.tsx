@@ -1,6 +1,6 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import ArticlesList from "../components/ArticlesList";
+import ArticleItem from "../components/ArticleItem";
 import PageTitle from "../components/PageTitle";
 import { ARTICLES_DIRECTORY } from "../lib/constants";
 import { getSortedPostData } from "../lib/posts";
@@ -54,7 +54,11 @@ const Articles: React.FC<ArticlesProps> = ({ allArticlesData }) => {
         />
       </Head>
       <PageTitle name="Articles" />
-      <ArticlesList articles={allArticlesData} />
+      <ul>
+        {allArticlesData.map((article) => (
+          <ArticleItem key={article.slug} article={article} />
+        ))}
+      </ul>
     </>
   );
 };
