@@ -9,7 +9,7 @@ interface BookCardProps {
 const BookCard: React.FC<BookCardProps> = ({ note }) => {
   return (
     <Link href={`/notes/${note.slug}`} className="group">
-      <div className="aspect-w-4 aspect-h-6 overflow-hidden rounded-lg cursor-pointer">
+      <div className="aspect-w-6 aspect-h-9 overflow-hidden rounded-lg cursor-pointer">
         <Image
           alt={note.title}
           src={`/images/notes/covers/${note.slug}.jpg`}
