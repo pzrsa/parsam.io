@@ -7,7 +7,7 @@ I feel like at some point in my life I should pause on seeking out the next self
 
 The idea behind why I feel this way about self-help books is mostly because so many of them are BS. I've known this for a long time, but I didn't want to fully believe it for some reason. I know self-help books won't suddenly change my life, so I'd rather enjoy what I'm reading to improve my life in other aspects.
 
-Besides, most of my time spent reading is on articles online. so I wouldn't be missing out on much. A lot of the things I've learnt come from those articles written by amazing strangers, and on a much bigger variety of topics.
+Besides, most of my time spent reading is on articles online, so I wouldn't be missing out on much. A lot of the things I've learnt come from those articles written by amazing strangers, and on a much bigger variety of topics.
 
 Also it's hard to come across authors with interesting enough backstories that make their books compelling enough to read. Many authors are just repeating what others have said centuries ago. I know I'm making some bold claims, but that's how I feel about it. And listen, I'm all for stealing like an artist, but sometimes it's a waste of the reader's time. There's a reason why platforms that summarise books exist.
 
