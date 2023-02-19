@@ -29,6 +29,10 @@ const Footer = () => {
       </Link>
       <FooterItem href="https://github.com/pzrsa" name="github" />
       <FooterItem href="https://twitter.com/pzrsaa" name="twitter" />
+      <FooterItem
+        href="https://www.linkedin.com/in/parsamesgarha/"
+        name="linkedin"
+      />
       <FooterItem href="https://www.youtube.com/@pzrsa" name="youtube" />
       <FooterItem href="https://github.com/pzrsa/parsam.io" name="source" />
     </footer>
