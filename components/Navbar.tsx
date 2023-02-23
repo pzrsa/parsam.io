@@ -6,13 +6,12 @@ interface NavbarProps {
 }
 const NavLink: React.FC<NavbarProps> = ({ href, text }) => {
   return (
-    (<Link
+    <Link
       href={href}
-      className="font-bold font-mono hover:text-neutral-500 dark:hover:text-neutral-400 transition-all text-md sm:text-lg items-center justify-center flex">
-
+      className="font-bold font-mono hover:text-neutral-500 dark:hover:text-neutral-400 transition-all text-md sm:text-lg items-center justify-center flex"
+    >
       {text}
-
-    </Link>)
+    </Link>
   );
 };
 
@@ -23,6 +22,7 @@ const Navbar = () => {
       <NavLink href="/about" text="about" />
       <NavLink href="/notes" text="notes" />
       <NavLink href="/articles" text="articles" />
+      <NavLink href="/feeds" text="feeds" />
     </nav>
   );
 };

@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface FooterProps {
   href: string;
   name: string;
@@ -21,12 +19,6 @@ const FooterItem: React.FC<FooterProps> = ({ href, name }) => {
 const Footer = () => {
   return (
     <footer className="grid grid-cols-3 sm:flex-row sm:flex gap-4 mt-10">
-      <Link
-        href={"/feeds"}
-        className="font-mono font-bold text-md sm:text-lg hover:text-neutral-500 dark:hover:text-neutral-400 transition-all"
-      >
-        feeds
-      </Link>
       <FooterItem href="https://github.com/pzrsa" name="github" />
       <FooterItem href="https://twitter.com/pzrsaa" name="twitter" />
       <FooterItem
