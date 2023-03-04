@@ -10,17 +10,17 @@ genre: "Self-help"
 
 1. Success isn't reached after making a breakthrough moment, instead it's just the result of doing daily things that compound over a long period of time.
 2. A lot of things that benefit us are boring, but the most successful people often just get through that boredom regardless and get shit done.
-3. Instead of focusing on what you want to achieve (like losing 5kg), focus on who you want to become as a person in the long term of attempting that goal (so getting fit over all and going for a run few times a week).
+3. Instead of focusing on what you want to achieve (like losing 5kg), focus on who you want to become as a person in the long term of attempting that goal (so getting fit over all and going for a run a few times a week).
 
 ## Impressions
 
 Ok in short, I liked this book a lot. It made me realise that most of the small decisions we make today shape our life in the future. Habits can compound both positively and negatively, so obviously aim to make them positive!
 
-One point that stood out to me was that instead of creating the usual goals and achieving them, we can build systems instead that allow us to feel satisfied while its running. However, goals are crucial for pointing you to the direction you want to go, the system is just your vehicle. Both need each other to work either way.
+One point that stood out to me was that instead of creating the usual goals and achieving them, we can build systems instead that allow us to feel satisfied while it's running. However, goals are crucial for pointing you to the direction you want to go, the system is just your vehicle. Both need each other to work either way.
 
-Another point I liked a lot is shaping our habits into who we want to become. Lets say you want to become a well rounded programmer, ask yourself these questions when writing code, for example "would a software engineer do this?" or "how would a software engineer approach this?". I know thats a bit vague, but writing good, readable code is something I'm trying to get better at, so those types of questions have been useful to me personally.
+Another point I liked a lot is shaping our habits into who we want to become. Let's say you want to become a well rounded programmer, ask yourself these questions when writing code, for example "would a software engineer do this?" or "how would a software engineer approach this?". I know that's a bit vague, but writing good, readable code is something I'm trying to get better at, so those types of questions have been useful to me personally.
 
-Final point I find interesting is that the environment that we put ourselves can surprisingly effect our behaviours. Lets say you want to eat healthier, and you usually stock up on Nutella for breakfast regularly. Next time you go to the supermarket, make sure to avoid your traditional path when buying food and avoid the section where that Nutella is. Our brains automatically won't be able to just guide you back there, so making those commitments beforehand can improve your health a lot without realising.
+Final point I find interesting is that the environment that we put ourselves in can surprisingly affect our behaviour. Let's say you want to eat healthier, and you usually stock up on Nutella for breakfast regularly. Next time you go to the supermarket, make sure to avoid your traditional path when buying food and avoid the section where that Nutella is. Our brains automatically won't be able to just guide you back there, so making those commitments beforehand can improve your health a lot without realising.
 
 ## Who Should Read It?
 
@@ -28,9 +28,9 @@ If you're looking to improve upon yourself and just want to achieve more, read t
 
 ## How It Impacted Me
 
-- Started implementing the rule where I cannot miss out on habits for more than 2 days - if I missed out on 1 day of journalling, I make the promise to not miss out on another.
+- Started implementing the rule where I cannot miss out on habits for more than 2 days - if I missed out on 1 day of journaling, I make the promise to not miss out on another.
 - Asking myself questions before making important decisions - like "would an athlete eat this?" to prevent myself from eating unhealthy foods.
-- Acknowledged that goals are for setting my direction, so I make sure that I make well thought out systems that allow me to hit them.
+- Acknowledge that goals are for setting my direction, so I make sure that I make well thought out systems that allow me to hit them.
 
 ## Some Quotes
 

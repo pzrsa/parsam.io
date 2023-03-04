@@ -14,7 +14,7 @@ genre: "Biography"
 
 ## Impressions
 
-Overall, amazing story of the man that created the shoe company we all know called Nike. I found it interesting on how his 'crazy idea' led into this absolute giant of a shoe company. Adidas and Puma were already well established companies, but for someone as small as Phil to come in and disrupt the industry gave me an amazing sense of inspiration in terms anyone can achieve anything. Phil's leadership and passion for shoes was what drove this company that we all know and love today into success. I also loved Bill Bowerman (his former coach) and Jeff Johnson (employee #1), these guys were real necessities in the company. I stayed engaged for the entire Audiobook and also found some hints of comedy in it. Keep in mind Phil was not that good of a social person. He was an introvert and never really liked to put himself out there to people. On the other hand, he also disliked the idea of advertising as he believed that the product should speak for itself, not a commercial. Later on he realised the power of promoting your product to the public and how it made his company grow exponentially.
+Overall, an amazing story of the man that created the shoe company we all know called Nike. I found it interesting on how his 'crazy idea' led into this absolute giant of a shoe company. Adidas and Puma were already well established companies, but for someone as small as Phil to come in and disrupt the industry gave me an amazing sense of inspiration in terms anyone can achieve anything. Phil's leadership and passion for shoes was what drove this company that we all know and love today into success. I also loved Bill Bowerman (his former coach) and Jeff Johnson (employee #1), these guys were real necessities in the company. I stayed engaged for the entire Audiobook and also found some hints of comedy in it. Keep in mind Phil was not that good of a social person. He was an introvert and never really liked to put himself out there to people. On the other hand, he also disliked the idea of advertising as he believed that the product should speak for itself, not a commercial. Later on he realised the power of promoting your product to the public and how it made his company grow exponentially.
 
 ## How I Discovered It
 
@@ -22,7 +22,7 @@ I had recently just finished [Think and Grow Rich](https://www.amazon.co.uk/Thin
 
 ## Who Should Read It?
 
-Anyone who is really trying to find some sort of meaning in their life or give value to the world should read it. On top of that, theres a lot of communicating examples shown throughout the memoir where Phil was just a shy introvert. So if you relate to Phil in lack of people skills, then this book will resonate with you and you might learn how to be better at networking. Overall, most people who are interested in business will for sure find this memoir a great read/listen (I would recommend listening to the audiobook version).
+Anyone who is really trying to find some sort of meaning in their life or give value to the world should read it. On top of that, there's a lot of communicating examples shown throughout the memoir where Phil was just a shy introvert. So if you relate to Phil in lack of people skills, then this book will resonate with you and you might learn how to be better at networking. Overall, most people who are interested in business will for sure find this memoir a great read/listen (I would recommend listening to the audiobook version).
 
 ## How It Impacted Me
 
@@ -30,7 +30,7 @@ Anyone who is really trying to find some sort of meaning in their life or give v
 - I found out that the first people you employ in your company and people you choose to be with for the lifespan of the business would be one of the most important decisions you make. Jeff, Bill, Penny (his wife) and many others were all important people who allowed him to stay running this company.
 - Made me want to improve upon negotiating and networking skills, most of the things and different tricks Phil did allowed the company to turn into this behemoth.
 - I started to watch more interviews that involve Phil himself, [like this by Stanford](https://www.youtube.com/watch?v=OHTosaWWKvg) (where he graduated from with a degree in Accounting) that explains his story as well.
-- Realised that sometimes it's healthy to give up, you shouldn't be too naive or ignorant about running your business when its not succeeding. Similar to what Derek Sivers says in Anything You Want:
+- Realised that sometimes it's healthy to give up, you shouldn't be too naive or ignorant about running your business when it's not succeeding. Similar to what Derek Sivers says in Anything You Want:
 
 > We all have lots of ideas, creations, and projects. When you present one to the world and it’s not a hit, don’t keep pushing it as is. Instead, get back to improving and inventing.
 
