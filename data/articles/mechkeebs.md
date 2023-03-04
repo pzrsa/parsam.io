@@ -54,7 +54,7 @@ Plus I definitely did not pick GCP because of obvious reasons.
 The most dev ops stuff I had done was doing a quick `git push` to Heroku to launch my crappy [Python web app](https://github.com/pzrsa/flaskify) back in the day.
 But this time, I was looking forward to finally getting my hands dirty with dev ops work. I had $100 in credits provided by the [GitHub Student Developer Pack](https://education.github.com/pack), so I was ready to use the [DigitalOcean](https://www.digitalocean.com/) + [Dokku](https://dokku.com/) combo.
 
-I also took the opportunity to learn Docker, which has been incredible. At the beginning I was paranoid about how how Docker images actually work, mostly for security reasons. There were many instances where I nearly pushed some secrets up to [Docker Hub](https://hub.docker.com/), but I refactored my code to accomodate for that.
+I also took the opportunity to learn Docker, which has been incredible. At the beginning I was paranoid about how Docker images actually work, mostly for security reasons. There were many instances where I nearly pushed some secrets up to [Docker Hub](https://hub.docker.com/), but I refactored my code to accommodate for that.
 
 You could check out the [MechKeebs repo](https://hub.docker.com/r/pzrsa/mechkeebs) that contains all the images if you want.
 
@@ -65,7 +65,7 @@ I can now use the same VPS to deploy other projects in the future without breaki
 ## Some things I learned
 
 - **Spend no more than a couple weeks on a project**.
-  I took way too long to get this out the door. I started in Nov 2021, and deployed it in Jul 2022. Obviously I didn't work on it daily during that period, it was more of a 1-2 month break and working in bursts. If I had instead abandoned the project I could've built other stuff in that time, which would help me identify patterns for a great project idea.
+  I took way too long to get this out the door. I started in November 2021, and deployed it in July 2022. Obviously I didn't work on it daily during that period, it was more of a 1-2 month break and working in bursts. If I had instead abandoned the project I could've built other stuff in that time, which would help me identify patterns for a great project idea.
 
 - **Skip the domain purchase**.
   Before MechKeebs, the original project was SetupScope. As you could guess, it was a similar idea, but for desk setups. Users would've been able to pinpoint on an image the items on their desk, making it more interactive.

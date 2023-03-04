@@ -1,6 +1,6 @@
 ---
 date: "2022-07-18"
-title: "Make a Website"
+title: "Make a website"
 ---
 
 With all of these social media platforms, it's becoming so polluted in the digital world.

@@ -1,6 +1,6 @@
 ---
 date: "2022-02-09"
-title: "Working With People"
+title: "Working with people"
 ---
 
 As you might know, I’ve [joined an apprenticeship at Google](https://parsam.io/articles/joined-google) 5 months ago. I completed my 3 month bootcamp in December last year, with an additional 3 weeks of internal training. So, when January 2022 started, I was assigned to a team of incredible people which has been really exciting to be a part of.
@@ -17,6 +17,6 @@ I doubt anyone would be frustrated with you asking a question, unless it's obvio
 
 ## Forget memorising everything
 
-After joining, I was being assigned a new technology to learn quite often, which was obviously overwhelming for me as its hard to balance it all. But, I noticed how everything I was learning I would forget in a couple of days. This is because I wasn't really using it in a real world project, so my brain wasn't too keen on remembering anything. But the important thing was that I knew about its presence, so if I came across something that might needed a specific library, I would know it would be a good fit. I had no idea how to use it, but like I said before, I know how to search and find answers efficiently which would allow me to.
+After joining, I was assigned a new technology to learn quite often, which was obviously overwhelming for me as it's hard to balance it all. But, I noticed how everything I was learning I would forget in a couple of days. This is because I wasn't really using it in a real world project, so my brain wasn't too keen on remembering anything. But the important thing was that I knew about its presence, so if I came across something that might need a specific library, I would know it would be a good fit. I had no idea how to use it, but like I said before, I know how to search and find answers efficiently which would allow me to.
 
 That's all for now, but I’ll be looking out for any other things I notice in the coming months that’ll be valuable to share.
