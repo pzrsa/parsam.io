@@ -87,7 +87,7 @@ export default function About() {
               for me to invest in tools that inspire me to use them more.
             </li>
             <li>
-              Doing typing tests on{" "}
+              Typing, especially via tests on{" "}
               <a
                 href="https://monkeytype.com/profile/pzrsa"
                 rel="prefetch noreferrer"
@@ -95,7 +95,7 @@ export default function About() {
               >
                 monkeytype
               </a>
-              . My current personal record is 133wpm.
+              . My personal record is currently 133 wpm.
             </li>
             <li>
               Mechanical watches and G-Shock&apos;s. I own a Seiko{" "}
@@ -118,7 +118,7 @@ export default function About() {
               interacting with the computer a joy.
             </li>
             <li>
-              Consuming informational content at 2x speed.{" "}
+              Consuming <i>informational</i> content at 2x speed.{" "}
               <a
                 href="https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en"
                 rel="prefetch noreferrer"
@@ -126,17 +126,55 @@ export default function About() {
               >
                 Video Speed Controller
               </a>{" "}
-              has completely changed the way I watch videos. I of course watch
-              movies and shows at normal speed, I&apos;m not a psycho.
+              has completely changed the way I watch videos. And yes, I watch
+              other stuff at normal speed, I&apos;m not a psycho.
             </li>
+          </ul>
+        </div>
+        <div>
+          <h2 className="text-2xl font-bold mb-3 mt-8">More Links</h2>
+          <ul>
+            <LinkItem href="https://www.youtube.com/@pzrsa" name="YouTube" />
+            <LinkItem
+              href="https://news.ycombinator.com/user?id=pzrsa"
+              name="HN"
+            />
             <li>
-              Building things from scratch (within my capabilities) before
-              buying it. It&apos;s a nice feeling when something has your own
-              battle scars from making some mistakes.
+              <a
+                rel="prefetch noreferrer me"
+                href="https://mastodon.social/@pzrsa"
+              >
+                Mastodon
+              </a>
             </li>
+            <LinkItem href="https://medium.com/@pzrsa" name="Medium" />
+            <LinkItem
+              href="https://stackoverflow.com/users/14889706/pzrsa"
+              name="Stack Overflow"
+            />
+            <LinkItem
+              href="https://monkeytype.com/profile/pzrsa"
+              name="Monkeytype"
+            />
+            <LinkItem href="https://www.goodreads.com/pzrsa" name="Goodreads" />
           </ul>
         </div>
       </div>
     </>
   );
 }
+
+interface LinkItemProps {
+  href: string;
+  name: string;
+}
+
+const LinkItem: React.FC<LinkItemProps> = ({ href, name }) => {
+  return (
+    <li>
+      <a href={href} rel="prefetch noreferrer" target="_blank">
+        {name}
+      </a>
+    </li>
+  );
+};

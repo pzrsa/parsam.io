@@ -1,9 +1,9 @@
-interface FooterProps {
+interface FooterItemProps {
   href: string;
   name: string;
 }
 
-const FooterItem: React.FC<FooterProps> = ({ href, name }) => {
+const FooterItem: React.FC<FooterItemProps> = ({ href, name }) => {
   return (
     <a
       className="font-mono font-bold text-md sm:text-lg  hover:text-neutral-500 dark:hover:text-neutral-400 transition-all"
@@ -25,7 +25,7 @@ const Footer = () => {
         href="https://www.linkedin.com/in/parsamesgarha/"
         name="linkedin"
       />
-      <FooterItem href="https://www.youtube.com/@pzrsa" name="youtube" />
+      <FooterItem href="https://parsam.substack.com/" name="substack" />
       <FooterItem href="https://github.com/pzrsa/parsam.io" name="source" />
     </footer>
   );
