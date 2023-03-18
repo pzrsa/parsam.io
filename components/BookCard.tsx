@@ -18,7 +18,7 @@ const BookCard: React.FC<BookCardProps> = ({ note }) => {
         />
       </div>
       <div className="group-hover:text-neutral-500 dark:group-hover:text-neutral-400 transition-all">
-        <h2 className="mt-2 text-xl sm:text-2xl font-bold">{note.title}</h2>
+        <h1 className="mt-2 text-xl sm:text-2xl font-bold">{note.title}</h1>
         <p className="font-mono text-neutral-600 dark:text-neutral-400">
           {note.author} • {note.genre}
         </p>

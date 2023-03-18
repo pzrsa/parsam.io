@@ -58,7 +58,7 @@ export default function About() {
           </div>
         </div>
         <div>
-          <h2 className="text-2xl font-bold mb-3 mt-8">I Like</h2>
+          <h1 className="text-2xl font-bold mb-3 mt-8">I Like</h1>
           <ul>
             <li>
               <a
@@ -132,7 +132,7 @@ export default function About() {
           </ul>
         </div>
         <div>
-          <h2 className="text-2xl font-bold mb-3 mt-8">More Links</h2>
+          <h1 className="text-2xl font-bold mb-3 mt-8">More Links</h1>
           <ul>
             <LinkItem href="https://www.youtube.com/@pzrsa" name="YouTube" />
             <LinkItem

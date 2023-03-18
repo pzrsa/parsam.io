@@ -41,7 +41,7 @@ export default function Index() {
       </div>
       <div className="prose dark:prose-invert">
         <p>
-          I&apos;m a 19 y/o from London, keen on learning deeply about{" "}
+          I&apos;m a 19 y/o from London who&apos;s keen on learning deeply about{" "}
           <Link href="/about">stuff I love</Link> like tech, startups and life.
         </p>
         <p>

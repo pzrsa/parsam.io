@@ -39,7 +39,7 @@ export default function Feeds() {
       </Head>
       <PageTitle name="Feeds" />
       <div className="prose dark:prose-invert">
-        <h2 className="text-2xl font-bold mb-3 mt-8">RSS</h2>
+        <h1 className="text-2xl font-bold mb-3 mt-8">RSS</h1>
         <ul>
           <li>
             <a href={"/notes.atom"}>Book Notes</a>
@@ -71,7 +71,7 @@ export default function Feeds() {
           </a>{" "}
           for Android.
         </p>
-        <h2 className="text-2xl font-bold mb-3 mt-8">Email</h2>
+        <h1 className="text-2xl font-bold mb-3 mt-8">Email</h1>
         <p>
           If you&apos;d prefer to receive my posts in your inbox, you can
           subscribe to my{" "}
