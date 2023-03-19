@@ -69,3 +69,7 @@ export const getPostData = async (slug: any, directory: string) => {
     ...matterResult.data,
   };
 };
+
+export const getLatestPost = (directory: string) => {
+  return getSortedPostData(directory)[0];
+};

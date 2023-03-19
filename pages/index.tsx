@@ -1,8 +1,29 @@
+import { GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import Date from "../components/Date";
 import NowPlaying from "../components/NowPlaying";
+import { ARTICLES_DIRECTORY, NOTES_DIRECTORY } from "../lib/constants";
+import { getLatestPost } from "../lib/posts";
+import { Post } from "../lib/types";
 
-export default function Index() {
+export const getStaticProps: GetStaticProps = async () => {
+  const latestBookNote = getLatestPost(NOTES_DIRECTORY);
+  const latestArticle = getLatestPost(ARTICLES_DIRECTORY);
+  return {
+    props: {
+      latestBookNote,
+      latestArticle,
+    },
+  };
+};
+
+interface IndexProps {
+  latestBookNote: Post;
+  latestArticle: Post;
+}
+
+const Index: React.FC<IndexProps> = ({ latestBookNote, latestArticle }) => {
   const image = "index.jpg";
 
   return (
@@ -21,10 +42,10 @@ export default function Index() {
         />
       </Head>
       <div className="gap-1">
-        <h1 className="text-4xl font-extrabold sm:text-5xl">
+        <h1 className="text-4xl sm:text-5xl font-extrabold ">
           Hi, I&apos;m Parsa.
         </h1>
-        <p className="font-mono text-sm sm:text-lg font-semibold text-neutral-600 dark:text-neutral-400">
+        <p className="text-sm sm:text-lg font-mono font-semibold text-neutral-600 dark:text-neutral-400">
           Software Engineering Apprentice at{" "}
           <span className="font-serif">
             <span className="text-google-blue">G</span>
@@ -78,6 +99,36 @@ export default function Index() {
           I find interesting enough to share.
         </p>
       </div>
+      <div>
+        <h1 className="text-3xl sm:text-4xl font-bold my-4">
+          Latest Book Note
+        </h1>
+        <Link
+          href={`/notes/${latestBookNote.slug}`}
+          className="hover:text-neutral-500 dark:hover:text-neutral-400 transition-all text-2xl sm:text-3xl font-bold"
+        >
+          {latestBookNote.title}
+        </Link>
+        <p className="font-mono text-neutral-600 dark:text-neutral-400">
+          {latestBookNote.author} • {latestBookNote.genre} •{" "}
+          <Date dateString={latestBookNote.date} />
+        </p>
+        <p className="mt-2">{latestBookNote.description}</p>
+      </div>
+      <div>
+        <h1 className="text-3xl sm:text-4xl font-bold my-4">Latest Article</h1>
+        <Link
+          href={`/articles/${latestArticle.slug}`}
+          className="hover:text-neutral-500 dark:hover:text-neutral-400 transition-all text-2xl sm:text-3xl font-bold"
+        >
+          {latestArticle.title}
+        </Link>
+        <p className="font-mono text-neutral-600 dark:text-neutral-400 mt-1">
+          <Date dateString={latestArticle.date} />
+        </p>
+      </div>
     </>
   );
-}
+};
+
+export default Index;
