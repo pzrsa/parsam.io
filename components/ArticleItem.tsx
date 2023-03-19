@@ -11,7 +11,7 @@ const ArticleItem: React.FC<ArticleItemProps> = ({ article }) => {
     <li className="mb-8" key={article.slug}>
       <Link
         href={`/articles/${article.slug}`}
-        className="hover:text-neutral-500 dark:group-hover:text-neutral-400 transition-all text-3xl sm:text-4xl font-bold"
+        className="hover:text-neutral-500 dark:hover:text-neutral-400 transition-all text-3xl sm:text-4xl font-bold"
       >
         {article.title}
       </Link>
