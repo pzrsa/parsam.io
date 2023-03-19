@@ -38,27 +38,68 @@ export default function About() {
           <div className="mx-auto w-60 h-60 sm:w-full sm:h-full ">
             <Image className="rounded-full" src={me} alt="Parsa Mesgarha" />
           </div>
-          <div className="prose dark:prose-invert mt-5 sm:mr-3 sm:mt-0">
+          <div className="prose dark:prose-invert sm:mr-3">
             <p>
-              For the really curious, I&apos;ve compiled a list of some things
-              that might paint a picture of the type of person I am.
+              My name&apos;s Parsa, and I&apos;m a 19 year old from London,
+              England. Currently I&apos;m at Google as a Software Engineering{" "}
+              <a
+                href="https://buildyourfuture.withgoogle.com/apprenticeships"
+                rel="prefetch noreferrer"
+                target="_blank"
+              >
+                Apprentice
+              </a>
+              , working on the{" "}
+              <a
+                href="https://web.dev/"
+                rel="prefetch noreferrer"
+                target="_blank"
+              >
+                Web
+              </a>{" "}
+              via{" "}
+              <a
+                href="https://www.chromium.org/Home/"
+                rel="prefetch noreferrer"
+                target="_blank"
+              >
+                Chrome
+              </a>{" "}
+              for{" "}
+              <a
+                href="https://source.android.com/"
+                rel="prefetch noreferrer"
+                target="_blank"
+              >
+                Android
+              </a>
+              .
             </p>
             <p>
-              These things bring me joy, and there could be someone out there
-              who has similar interests. If thats the case, message me on{" "}
+              This page is intended to paint a picture of the type of person I
+              am, so if anything on here resonates with you, don&apos;t hesitate
+              to reach out on either{" "}
               <a
                 href="https://twitter.com/pzrsaa"
                 rel="prefetch noreferrer"
                 target="_blank"
               >
-                twitter
+                Twitter
+              </a>
+              ,{" "}
+              <a
+                href="https://discord.com/users/798613615448031313"
+                rel="prefetch noreferrer"
+              >
+                Discord
               </a>{" "}
-              as I love meeting new people.
+              (<b>parsa#1055</b>) or <a href="mailto:hi@parsam.io">Email</a> (
+              <b>hi@parsam.io</b>).
             </p>
           </div>
         </div>
         <div>
-          <h1 className="text-2xl font-bold mb-3 mt-8">I Like</h1>
+          <h1 className="text-2xl font-bold mb-3 mt-8">Interests</h1>
           <ul>
             <li>
               <a
@@ -133,6 +174,9 @@ export default function About() {
         </div>
         <div>
           <h1 className="text-2xl font-bold mb-3 mt-8">More Links</h1>
+          <p>
+            This is just a place I can safely dump links of me on the internet:
+          </p>
           <ul>
             <LinkItem href="https://www.youtube.com/@pzrsa" name="YouTube" />
             <LinkItem
@@ -141,8 +185,8 @@ export default function About() {
             />
             <li>
               <a
-                rel="prefetch noreferrer me"
                 href="https://mastodon.social/@pzrsa"
+                rel="prefetch noreferrer me"
               >
                 Mastodon
               </a>
