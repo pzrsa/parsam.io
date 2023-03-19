@@ -62,21 +62,19 @@ const Index: React.FC<IndexProps> = ({ latestBookNote, latestArticle }) => {
       </div>
       <div className="prose dark:prose-invert">
         <p>
-          I&apos;m a 19 y/o from London who&apos;s keen on learning deeply about{" "}
-          <Link href="/about">stuff I love</Link> like tech, startups and life.
+          I&apos;m a 19 y/o from London constantly learning on a deeper level
+          about the stuff I care about. If you&apos;re curious enough to learn
+          more about me (for whatever reason), check out my{" "}
+          <Link href="/about">about page</Link>.
         </p>
         <p>
           I&apos;m currently working on the{" "}
-          <a
-            href="https://www.w3.org"
-            rel="prefetch noreferrer"
-            target="_blank"
-          >
+          <a href="https://web.dev/" rel="prefetch noreferrer" target="_blank">
             Web Platform
           </a>
           , mostly through{" "}
           <a
-            href="https://www.google.com/chrome/"
+            href="https://www.chromium.org/Home/"
             rel="prefetch noreferrer"
             target="_blank"
           >
@@ -84,7 +82,7 @@ const Index: React.FC<IndexProps> = ({ latestBookNote, latestArticle }) => {
           </a>{" "}
           on{" "}
           <a
-            href="https://android.com"
+            href="https://source.android.com/"
             rel="prefetch noreferrer"
             target="_blank"
           >
@@ -95,8 +93,8 @@ const Index: React.FC<IndexProps> = ({ latestBookNote, latestArticle }) => {
         <p>
           I write <Link href="/notes">notes</Link> on the books I&apos;ve read,
           providing summaries for others through my thoughts on the book. I also
-          write <Link href="/articles">articles</Link> (though rarely) on stuff
-          I find interesting enough to share.
+          write <Link href="/articles">articles</Link> on stuff I find
+          interesting enough to share.
         </p>
       </div>
       <div>
