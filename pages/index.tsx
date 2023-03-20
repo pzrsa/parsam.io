@@ -62,17 +62,11 @@ const Index: React.FC<IndexProps> = ({ latestBookNote, latestArticle }) => {
       </div>
       <div className="prose dark:prose-invert">
         <p>
-          I&apos;m a 19 y/o from London constantly learning on a deeper level
-          about the stuff I care about. If you&apos;re curious enough to learn
-          more about me (for whatever reason), check out my{" "}
-          <Link href="/about">about page</Link>.
-        </p>
-        <p>
-          I&apos;m currently working on the{" "}
+          I&apos;m a 19 y/o from London currently working on the{" "}
           <a href="https://web.dev/" rel="prefetch noreferrer" target="_blank">
-            Web Platform
-          </a>
-          , mostly through{" "}
+            Web
+          </a>{" "}
+          via{" "}
           <a
             href="https://www.chromium.org/Home/"
             rel="prefetch noreferrer"
@@ -80,21 +74,22 @@ const Index: React.FC<IndexProps> = ({ latestBookNote, latestArticle }) => {
           >
             Chrome
           </a>{" "}
-          on{" "}
+          for{" "}
           <a
             href="https://source.android.com/"
             rel="prefetch noreferrer"
             target="_blank"
           >
             Android
-          </a>{" "}
-          devices.
+          </a>
+          . If you&apos;re curious enough to learn more about me (for whatever
+          reason), check out my <Link href="/about">about page</Link>.
         </p>
         <p>
-          I write <Link href="/notes">notes</Link> on the books I&apos;ve read,
-          providing summaries for others through my thoughts on the book. I also
-          write <Link href="/articles">articles</Link> on stuff I find
-          interesting enough to share.
+          On this website, I write <Link href="/notes">notes</Link> on the books
+          I&apos;ve read, providing summaries for others with my thoughts on the
+          book. I also write <Link href="/articles">articles</Link> on stuff I
+          find interesting enough to share.
         </p>
       </div>
       <div>
