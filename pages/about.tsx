@@ -38,7 +38,7 @@ export default function About() {
           <div className="mx-auto w-60 h-60 sm:w-full sm:h-full ">
             <Image className="rounded-full" src={me} alt="Parsa Mesgarha" />
           </div>
-          <div className="prose dark:prose-invert sm:mr-3">
+          <div className="prose dark:prose-invert mt-5 sm:mr-3 sm:mt-0">
             <p>
               My name&apos;s Parsa, and I&apos;m a 19 year old from London,
               England. Currently I&apos;m at Google as a Software Engineering{" "}
