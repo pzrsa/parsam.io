@@ -99,7 +99,7 @@ export default function About() {
           </div>
         </div>
         <div>
-          <h1 className="text-2xl font-bold mb-3 mt-8">Interests</h1>
+          <h1 className="text-2xl font-bold mb-3 mt-8">Likes</h1>
           <ul>
             <li>
               <a
