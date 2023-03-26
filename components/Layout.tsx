@@ -1,13 +1,8 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useRouter } from "next/router";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
-
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
 
   const title = "Parsa Mesgarha - Programmer, lifelong learner.";
@@ -48,10 +43,52 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           key="twitter:image"
         />
       </Head>
-      <Navbar />
+      <nav className="flex flex-wrap gap-4 mb-6">
+        <NavLink href="/" text="index" />
+        <NavLink href="/about" text="about" />
+        <NavLink href="/notes" text="notes" />
+        <NavLink href="/articles" text="articles" />
+        <NavLink href="/feeds" text="feeds" />
+      </nav>
       <main>{children}</main>
-      <Footer />
+      <footer className="grid grid-cols-3 sm:flex-row sm:flex gap-4 mt-10">
+        <FooterItem href="https://github.com/pzrsa" name="github" />
+        <FooterItem href="https://twitter.com/pzrsaa" name="twitter" />
+        <FooterItem
+          href="https://www.linkedin.com/in/parsamesgarha/"
+          name="linkedin"
+        />
+        <FooterItem href="https://parsam.substack.com/" name="substack" />
+        <FooterItem href="https://github.com/pzrsa/parsam.io" name="source" />
+      </footer>
     </div>
+  );
+};
+
+const NavLink: React.FC<{ href: string; text: string }> = ({ href, text }) => {
+  return (
+    <Link
+      href={href}
+      className="font-bold font-mono hover:text-neutral-500 dark:hover:text-neutral-400 transition-all text-md sm:text-lg items-center justify-center flex"
+    >
+      {text}
+    </Link>
+  );
+};
+
+const FooterItem: React.FC<{ href: string; name: string }> = ({
+  href,
+  name,
+}) => {
+  return (
+    <a
+      className="font-mono font-bold text-md sm:text-lg  hover:text-neutral-500 dark:hover:text-neutral-400 transition-all"
+      href={href}
+      rel="prefetch noreferrer"
+      target="_blank"
+    >
+      {name}
+    </a>
   );
 };
 
