@@ -3,12 +3,12 @@ import customParseFormat from "dayjs/plugin/customParseFormat";
 
 interface DateProps {
   dateString: string;
+  format: string;
 }
 
-const Date: React.FC<DateProps> = ({ dateString }) => {
+const Date: React.FC<DateProps> = ({ dateString, format }) => {
   dayjs.extend(customParseFormat);
-  const date = dayjs(dateString).format("MMM D, YYYY");
-  return <time dateTime={dateString}>{date}</time>;
+  return <time dateTime={dateString}>{dayjs(dateString).format(format)}</time>;
 };
 
 export default Date;
