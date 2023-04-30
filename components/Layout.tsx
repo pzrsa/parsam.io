@@ -46,9 +46,12 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <nav className="flex flex-wrap gap-4 mb-6">
         <NavLink href="/" text="index" />
         <NavLink href="/about" text="about" />
-        <NavLink href="/notes" text="notes" />
-        <NavLink href="/articles" text="articles" />
-        <NavLink href="/feeds" text="feeds" />
+        <a
+          href="/feed.atom"
+          className="font-bold font-mono hover:text-neutral-500 dark:hover:text-neutral-400 transition-all text-md sm:text-lg items-center justify-center flex"
+        >
+          rss
+        </a>
       </nav>
       <main>{children}</main>
       <footer className="grid grid-cols-3 sm:flex-row sm:flex gap-4 mt-10">
