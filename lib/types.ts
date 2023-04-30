@@ -9,9 +9,6 @@ export interface Post {
   subtitle?: string;
   author?: string;
   description?: string;
-  genre?: string;
-  isbn?: string;
-  rating?: string;
 }
 
 export interface Album {

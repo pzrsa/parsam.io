@@ -3,8 +3,7 @@ date: "2021-04-07"
 title: "Getting Things Done for Teens"
 author: "David Allen"
 description: "Getting Things Done for Teens is a fresh take on David Allen’s classic Getting Things Done, adapting it for a younger audience. Framing life as a game to be played, it offers simple methods that teens can use to win."
-genre: "Self-help"
-type: "note"
+book: true
 ---
 
 ## Book in 3 Sentences
