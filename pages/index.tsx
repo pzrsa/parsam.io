@@ -1,8 +1,7 @@
-import dayjs from "dayjs";
-import customParseFormat from "dayjs/plugin/customParseFormat";
 import type { GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import DateFormat from "../components/Date";
 import NowPlaying from "../components/NowPlaying";
 import { generateFeed } from "../lib/feeds";
 import { getSortedPostData } from "../lib/posts";
@@ -94,31 +93,36 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
         <h1 className="text-2xl sm:text-3xl font-bold my-2">Posts</h1>
         <ul>
           {posts.map((post, i) => {
-            dayjs.extend(customParseFormat);
-            const date = dayjs(post.date).format("D MMM");
-            const year = new Date(post.date).getFullYear();
+            const getYear = (date: string) => new Date(date).getFullYear();
+            const year = getYear(post.date);
             const firstForYear =
-              !posts[i - 1] ||
-              new Date(posts[i - 1].date).getFullYear() !== year;
+              !posts[i - 1] || getYear(posts[i - 1].date) !== year;
             const lastForYear =
-              !posts[i + 1] ||
-              new Date(posts[i + 1].date).getFullYear() !== year;
+              !posts[i + 1] || getYear(posts[i + 1].date) !== year;
 
             return (
               <li key={post.id}>
-                <span className="flex justify-end mb-1">
+                <span className="flex justify-end mb-2">
                   {firstForYear && <span className="font-bold">{year}</span>}
                 </span>
-                <Link href={`/${post.id}`} className="group">
+                <Link href={`/${post.id}`}>
                   <span
-                    className={`flex items-center group-hover:text-neutral-500 dark:group-hover:text-neutral-400 transition-all ${
+                    className={`flex items-baseline hover:text-neutral-500 dark:hover:text-neutral-400 transition-all gap-6 ${
                       lastForYear ? "mb-4" : ""
                     }`}
                   >
-                    <span className="flex-1 text-lg font-semibold">
-                      {post.title}
+                    <span className="flex-1 text-lg ">
+                      <span className="font-semibold">{post.title}</span>
+                      {post.book && (
+                        <span className="font-mono text-neutral-600 dark:text-neutral-400">
+                          {" // "}
+                          {post.author}
+                        </span>
+                      )}
                     </span>
-                    <span className="font-mono">{date}</span>
+                    <span className="font-mono text-neutral-600 dark:text-neutral-400">
+                      <DateFormat dateString={post.date} format="MMM D" />
+                    </span>
                   </span>
                 </Link>
               </li>

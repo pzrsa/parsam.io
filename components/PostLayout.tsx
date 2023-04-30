@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { Post as PostType } from "../lib/types";
 import Date from "./Date";
 
@@ -73,9 +74,21 @@ const PostLayout: React.FC<PostProps> = ({ postData }) => {
         <h1 className="text-3xl sm:text-4xl font-extrabold mb-3">
           {postData.title}
         </h1>
-        <div className="font-mono text-neutral-600 dark:text-neutral-400">
-          {postData.book ? <>{postData.author}</> : ""}
-          <Date dateString={postData.date} />
+        <div className="flex">
+          <span className="font-mono text-neutral-600 dark:text-neutral-400 flex-1">
+            {postData.book ? (
+              <>
+                {postData.author}
+                {" // "}
+              </>
+            ) : (
+              ""
+            )}
+            <Date dateString={postData.date} format="MMM D, YYYY" />
+          </span>
+          <span className="font-mono font-bold hover:text-neutral-500 dark:hover:text-neutral-400 transition-all">
+            <Link href={"/"}>Back</Link>
+          </span>
         </div>
       </div>
       <article
