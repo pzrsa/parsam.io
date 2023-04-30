@@ -43,6 +43,4 @@ yarn-error.log*
 .idea
 
 # feeds
-public/notes.atom
-public/articles.atom
 public/feed.atom
