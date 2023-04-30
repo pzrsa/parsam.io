@@ -8,7 +8,7 @@ You.
 
 Consciously or not, I think we all are actors in different parts of our life. Everyone talks or dresses a certain way when they are put in a set environment.
 
-I recently had the privilege of speaking with [Ali Eslami](https://twitter.com/arkitus), a Senior Research Scientist at [DeepMind](https://www.deepmind.com/). He was a major factor in my success [joining Google](https://parsam.io/articles/google), so I'm grateful to be able to call him a friend. We spoke about many topics, but one point that resonated with me the most was his realisation of how we all are actors.
+I recently had the privilege of speaking with [Ali Eslami](https://twitter.com/arkitus), a Senior Research Scientist at [DeepMind](https://www.deepmind.com/). He was a major factor in my success [joining Google](https://parsam.io/google), so I'm grateful to be able to call him a friend. We spoke about many topics, but one point that resonated with me the most was his realisation of how we all are actors.
 
 Obviously there are many reasons why we do this, but I think the main reason is because we want to be perceived differently by certain types of people.
 

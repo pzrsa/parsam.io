@@ -25,7 +25,7 @@ Otherwise if you want to build a platform for decades to come, keep reading.
 
 Before I started this website back in [February 2021](https://github.com/pzrsa/parsam.io/commit/7927cccdda9843bdc7c4b17ff80626516d628301), I was writing book notes as I was trying to make reading a habit. The best way to remember the takeaways was to just write it in my own words. Didn't have to be perfect, I just had to be able to explain it in 3 sentences.
 
-One of my favourite people, [Derek Sivers](https://sive.rs/) told me to build a site from scratch after I emailed him about the [note I wrote](https://parsam.io/notes/anything-you-want) on his book [Anything You Want](https://sive.rs/a).
+One of my favourite people, [Derek Sivers](https://sive.rs/) told me to build a site from scratch after I emailed him about the [note I wrote](https://parsam.io/anything-you-want) on his book [Anything You Want](https://sive.rs/a).
 
 I was going to use a website builder like [Webflow](https://webflow.com/), but Derek advised against that and instead sent a code snippet for a basic HTML layout. It was the most life changing email I had received in my life. It was the one email that started with me learning about technology.
 
@@ -51,7 +51,7 @@ After having this website for over a year, I've had a magnitude of noticeable be
 
 ## Show Your Work
 
-A good book I recommend you read is [Show Your Work](https://austinkleon.com/show-your-work/) by [Austin Kleon](https://austinkleon.com/). I wrote a [book note](https://parsam.io/notes/show-your-work) on it that I encourage you to check out. This was the book that plunged me to start my website, alongside Derek Sivers' actionable steps.
+A good book I recommend you read is [Show Your Work](https://austinkleon.com/show-your-work/) by [Austin Kleon](https://austinkleon.com/). I wrote a [book note](https://parsam.io/show-your-work) on it that I encourage you to check out. This was the book that plunged me to start my website, alongside Derek Sivers' actionable steps.
 
 It goes over why you don't need to be some sort of expert on something to share it. Just write about anything at any time. Heck right now I am writing this all over the place, but still just writing because I had this urge to write something that people might benefit from.
 
