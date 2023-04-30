@@ -74,7 +74,7 @@ const PostLayout: React.FC<PostProps> = ({ postData }) => {
         <h1 className="text-3xl sm:text-4xl font-extrabold mb-3">
           {postData.title}
         </h1>
-        <div className="flex">
+        <div className="flex gap-3">
           <span className="font-mono text-neutral-600 dark:text-neutral-400 flex-1">
             {postData.book ? (
               <>
