@@ -1,6 +1,7 @@
 ---
 date: "2023-01-15"
 title: "Some photos from 2022"
+type: "article"
 ---
 
 I was inspired by [this post](https://tiramisu.bearblog.dev/2021-photos/) to share some of my favourite photos from 2022.

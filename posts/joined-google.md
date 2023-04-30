@@ -1,6 +1,7 @@
 ---
 date: "2021-09-01"
 title: "I joined Google"
+type: "article"
 ---
 
 Hi, I just wanted to make this short post sharing that I've joined Google as a Software Development/Engineering Apprentice!
