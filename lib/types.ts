@@ -1,10 +1,11 @@
 export interface Post {
-  slug: string;
+  id: string;
   contentHtml: string;
   date: string;
   title: string;
 
-  // specific to book notes
+  // book note
+  book?: boolean;
   subtitle?: string;
   author?: string;
   description?: string;

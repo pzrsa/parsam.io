@@ -8,22 +8,22 @@ import html from "remark-html";
 export const getSortedPostData = (directory: string) => {
   const fileNames = fs.readdirSync(directory);
   const allPostsData = fileNames.map((fileName) => {
-    // Remove ".md" from file name to get slug
-    const slug = fileName.replace(/\.md$/, "");
+    // Remove ".md" from file name to get id
+    const id = fileName.replace(/\.md$/, "");
 
     // Read markdown file as string
     const fullPath = path.join(directory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
 
-    // Use gray-matter to parse the post metadata section
+    // Use gray-matter to parse the post's metadata section
     const matterResult = matter(fileContents);
 
-    // Combine the data with the slug
     return {
-      slug,
+      id,
       ...matterResult.data,
     };
   });
+
   // Sort posts by date
   return allPostsData.sort(({ date: a }: any, { date: b }: any) => {
     if (a < b) {
@@ -36,20 +36,20 @@ export const getSortedPostData = (directory: string) => {
   });
 };
 
-export const getAllPostSlugs = (directory: string) => {
+export const getAllPostIds = (directory: string) => {
   const fileNames = fs.readdirSync(directory);
 
   return fileNames.map((fileName) => {
     return {
       params: {
-        slug: fileName.replace(/\.md$/, ""),
+        id: fileName.replace(/\.md$/, ""),
       },
     };
   });
 };
 
-export const getPostData = async (slug: any, directory: string) => {
-  const fullPath = path.join(directory, `${slug}.md`);
+export const getPostData = async (id: string, directory: string) => {
+  const fullPath = path.join(directory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
   // Use gray-matter to parse the post metadata section
@@ -62,9 +62,7 @@ export const getPostData = async (slug: any, directory: string) => {
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
 
-  // Combine the data with the slug
   return {
-    slug,
     contentHtml,
     ...matterResult.data,
   };
