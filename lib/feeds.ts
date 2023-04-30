@@ -1,11 +1,11 @@
 import { Feed, Item } from "feed";
 import fs from "fs";
-import { FEED_PATH, POSTS_DIRECTORY } from "./constants";
+import { FEED_PATH } from "./constants";
 import { getPostData, getSortedPostData } from "./posts";
 import type { Post } from "./types";
 
 export const generateFeed = () => {
-  const posts = getSortedPostData(POSTS_DIRECTORY);
+  const posts = getSortedPostData();
 
   const feed = new Feed({
     title: "Parsa's Posts",
@@ -22,7 +22,7 @@ export const generateFeed = () => {
   });
 
   (posts as Post[]).forEach(async (post) => {
-    const postData = await getPostData(post.id, POSTS_DIRECTORY);
+    const postData = await getPostData(post.id);
     let item: Item = {
       id: post.id,
       title: post.title,

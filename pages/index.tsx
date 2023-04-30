@@ -4,14 +4,13 @@ import type { GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import NowPlaying from "../components/NowPlaying";
-import { POSTS_DIRECTORY } from "../lib/constants";
 import { generateFeed } from "../lib/feeds";
 import { getSortedPostData } from "../lib/posts";
 import { Post } from "../lib/types";
 
 export const getStaticProps: GetStaticProps = async () => {
   generateFeed();
-  const posts = getSortedPostData(POSTS_DIRECTORY);
+  const posts = getSortedPostData();
   return {
     props: {
       posts,

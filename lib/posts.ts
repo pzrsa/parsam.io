@@ -4,15 +4,16 @@ import path from "path";
 import { remark } from "remark";
 import remarkExternalLinks from "remark-external-links";
 import html from "remark-html";
+import { POSTS_DIRECTORY } from "./constants";
 
-export const getSortedPostData = (directory: string) => {
-  const fileNames = fs.readdirSync(directory);
+export const getSortedPostData = () => {
+  const fileNames = fs.readdirSync(POSTS_DIRECTORY);
   const allPostsData = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, "");
 
     // Read markdown file as string
-    const fullPath = path.join(directory, fileName);
+    const fullPath = path.join(POSTS_DIRECTORY, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
 
     // Use gray-matter to parse the post's metadata section
@@ -36,8 +37,8 @@ export const getSortedPostData = (directory: string) => {
   });
 };
 
-export const getAllPostIds = (directory: string) => {
-  const fileNames = fs.readdirSync(directory);
+export const getAllPostIds = () => {
+  const fileNames = fs.readdirSync(POSTS_DIRECTORY);
 
   return fileNames.map((fileName) => {
     return {
@@ -48,8 +49,8 @@ export const getAllPostIds = (directory: string) => {
   });
 };
 
-export const getPostData = async (id: string, directory: string) => {
-  const fullPath = path.join(directory, `${id}.md`);
+export const getPostData = async (id: string) => {
+  const fullPath = path.join(POSTS_DIRECTORY, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
   // Use gray-matter to parse the post metadata section
@@ -66,8 +67,4 @@ export const getPostData = async (id: string, directory: string) => {
     contentHtml,
     ...matterResult.data,
   };
-};
-
-export const getLatestPost = (directory: string) => {
-  return getSortedPostData(directory)[0];
 };
