@@ -1,13 +1,12 @@
 import Head from "next/head";
-import { Post } from "../lib/types";
+import { Post as PostType } from "../lib/types";
 import Date from "./Date";
 
 interface PostProps {
-  postType: "note" | "article";
-  postData: Post;
+  postData: PostType;
 }
 
-const Post: React.FC<PostProps> = ({ postType, postData }) => {
+const PostLayout: React.FC<PostProps> = ({ postData }) => {
   const title = `${postData.title} - Parsa Mesgarha`;
   return (
     <>
@@ -16,7 +15,7 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         <meta
           property="og:site_name"
           content={
-            postType === "note"
+            postData.book
               ? `${postData.title} by ${postData.author}`
               : postData.title
           }
@@ -25,7 +24,7 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         <meta
           property="og:title"
           content={
-            postType === "note"
+            postData.book
               ? `${postData.title} by ${postData.author}`
               : postData.title
           }
@@ -33,13 +32,13 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         />
         <meta
           property="og:description"
-          content={postType === "note" ? postData.description : postData.title}
+          content={postData.book ? postData.description : postData.title}
           key="og:description"
         />
-        {postType === "note" ? (
+        {postData.book ? (
           <meta
             property="og:image"
-            content={`https://parsam.io/images/notes/covers/${postData.slug}.jpg`}
+            content={`https://parsam.io/images/notes/covers/${postData.id}.jpg`}
             key="og:image"
           />
         ) : (
@@ -48,7 +47,7 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         <meta
           name="twitter:title"
           content={
-            postType === "note"
+            postData.book
               ? `${postData.title} by ${postData.author}`
               : postData.title
           }
@@ -56,14 +55,14 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         />
         <meta
           name="twitter:description"
-          content={postType === "note" ? postData.description : postData.title}
+          content={postData.book ? postData.description : postData.title}
           key="twitter:description"
         />
 
-        {postType === "note" ? (
+        {postData.book ? (
           <meta
             name="twitter:image"
-            content={`https://parsam.io/images/notes/covers/${postData.slug}.jpg`}
+            content={`https://parsam.io/images/notes/covers/${postData.id}.jpg`}
             key="twitter:image"
           />
         ) : (
@@ -71,17 +70,11 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
         )}
       </Head>
       <div className="mb-4">
-        <h1 className="text-4xl sm:text-5xl font-extrabold">
+        <h1 className="text-3xl sm:text-4xl font-extrabold mb-3">
           {postData.title}
         </h1>
-        <div className="font-mono text-neutral-600 dark:text-neutral-400 mt-2">
-          {postType === "note" ? (
-            <>
-              {postData.author} • {postData.genre} •{" "}
-            </>
-          ) : (
-            ""
-          )}
+        <div className="font-mono text-neutral-600 dark:text-neutral-400">
+          {postData.book ? <>{postData.author}</> : ""}
           <Date dateString={postData.date} />
         </div>
       </div>
@@ -93,4 +86,4 @@ const Post: React.FC<PostProps> = ({ postType, postData }) => {
   );
 };
 
-export default Post;
+export default PostLayout;
