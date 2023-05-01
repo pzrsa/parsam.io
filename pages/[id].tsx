@@ -25,7 +25,7 @@ interface PostProps {
 }
 
 const Post: React.FC<PostProps> = ({ data }) => {
-  return <PostLayout postData={data} />;
+  return <PostLayout data={data} />;
 };
 
 export default Post;

@@ -1,45 +1,42 @@
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
 import Head from "next/head";
 import Link from "next/link";
 import { Post as PostType } from "../lib/types";
 import Date from "./Date";
 
 interface PostProps {
-  postData: PostType;
+  data: PostType;
 }
 
-const PostLayout: React.FC<PostProps> = ({ postData }) => {
-  const title = `${postData.title} - Parsa Mesgarha`;
+const PostLayout: React.FC<PostProps> = ({ data }) => {
+  const title = `${data.title} - Parsa Mesgarha`;
+  dayjs.extend(relativeTime);
+  const relativeDate = dayjs().to(data.date);
+
   return (
     <>
       <Head>
         <title>{title}</title>
         <meta
           property="og:site_name"
-          content={
-            postData.book
-              ? `${postData.title} by ${postData.author}`
-              : postData.title
-          }
+          content={data.book ? `${data.title} by ${data.author}` : data.title}
           key="og:site_name"
         />
         <meta
           property="og:title"
-          content={
-            postData.book
-              ? `${postData.title} by ${postData.author}`
-              : postData.title
-          }
+          content={data.book ? `${data.title} by ${data.author}` : data.title}
           key="og:title"
         />
         <meta
           property="og:description"
-          content={postData.book ? postData.description : postData.title}
+          content={data.book ? data.description : data.title}
           key="og:description"
         />
-        {postData.book ? (
+        {data.book ? (
           <meta
             property="og:image"
-            content={`https://parsam.io/images/notes/covers/${postData.id}.jpg`}
+            content={`https://parsam.io/images/notes/covers/${data.id}.jpg`}
             key="og:image"
           />
         ) : (
@@ -47,23 +44,19 @@ const PostLayout: React.FC<PostProps> = ({ postData }) => {
         )}
         <meta
           name="twitter:title"
-          content={
-            postData.book
-              ? `${postData.title} by ${postData.author}`
-              : postData.title
-          }
+          content={data.book ? `${data.title} by ${data.author}` : data.title}
           key="twitter:title"
         />
         <meta
           name="twitter:description"
-          content={postData.book ? postData.description : postData.title}
+          content={data.book ? data.description : data.title}
           key="twitter:description"
         />
 
-        {postData.book ? (
+        {data.book ? (
           <meta
             name="twitter:image"
-            content={`https://parsam.io/images/notes/covers/${postData.id}.jpg`}
+            content={`https://parsam.io/images/notes/covers/${data.id}.jpg`}
             key="twitter:image"
           />
         ) : (
@@ -72,19 +65,20 @@ const PostLayout: React.FC<PostProps> = ({ postData }) => {
       </Head>
       <div className="mb-4 px-6">
         <h1 className="text-3xl sm:text-4xl font-extrabold mb-3">
-          {postData.title}
+          {data.title}
         </h1>
         <div className="flex gap-3 items-center">
           <span className="font-mono text-neutral-600 dark:text-neutral-400 flex-1">
-            {postData.book ? (
+            {data.book ? (
               <>
-                {postData.author}
+                {data.author}
                 {" // "}
               </>
             ) : (
               ""
             )}
-            <Date dateString={postData.date} format="MMM D, YYYY" />
+            <Date dateString={data.date} format="MMM D, YYYY" /> ({relativeDate}
+            )
           </span>
           <span>
             <Link
@@ -98,7 +92,7 @@ const PostLayout: React.FC<PostProps> = ({ postData }) => {
       </div>
       <article
         className="prose dark:prose-invert px-6"
-        dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+        dangerouslySetInnerHTML={{ __html: data.contentHtml }}
       />
     </>
   );
