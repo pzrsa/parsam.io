@@ -11,7 +11,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const image = "/images/me.jpg";
 
   return (
-    <div className="max-w-2xl mx-auto px-6 my-8">
+    <div className="max-w-2xl mx-auto my-8">
       <Head>
         <meta name="robots" content="all" />
         <meta content={description} name="description" />
@@ -43,18 +43,30 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           key="twitter:image"
         />
       </Head>
-      <nav className="flex flex-wrap gap-4 mb-6">
-        <NavLink href="/" text="index" />
-        <NavLink href="/about" text="about" />
+      <nav className="flex mb-6 gap-1 px-4 items-center">
+        <span className="flex-1">
+          <Link
+            href={"/"}
+            className="font-bold text-xl sm:text-2xl hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+          >
+            Parsa Mesgarha
+          </Link>
+        </span>
+        <Link
+          href={"/about"}
+          className="font-bold font-mono sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+        >
+          about
+        </Link>
         <a
           href="/feed.atom"
-          className="font-bold font-mono hover:text-neutral-500 dark:hover:text-neutral-400 transition-all text-md sm:text-lg items-center justify-center flex"
+          className="font-bold sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
         >
           rss
         </a>
       </nav>
       <main>{children}</main>
-      <footer className="grid grid-cols-3 sm:flex-row sm:flex gap-4 mt-10">
+      <footer className="grid grid-cols-3 sm:flex sm:flex-row gap-1 mt-6 px-4">
         <FooterItem href="https://github.com/pzrsa" name="github" />
         <FooterItem href="https://twitter.com/pzrsaa" name="twitter" />
         <FooterItem
@@ -68,24 +80,13 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   );
 };
 
-const NavLink: React.FC<{ href: string; text: string }> = ({ href, text }) => {
-  return (
-    <Link
-      href={href}
-      className="font-bold font-mono hover:text-neutral-500 dark:hover:text-neutral-400 transition-all text-md sm:text-lg items-center justify-center flex"
-    >
-      {text}
-    </Link>
-  );
-};
-
 const FooterItem: React.FC<{ href: string; name: string }> = ({
   href,
   name,
 }) => {
   return (
     <a
-      className="font-mono font-bold text-md sm:text-lg  hover:text-neutral-500 dark:hover:text-neutral-400 transition-all"
+      className="font-bold font-mono sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
       href={href}
       rel="prefetch noreferrer"
       target="_blank"
