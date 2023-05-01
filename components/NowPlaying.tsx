@@ -10,31 +10,31 @@ const NowPlaying: React.FC = () => {
   if (!data) return <div className="text-base sm:text-lg">loading...</div>;
 
   return (
-    <div className="text-base sm:text-lg">
+    <span className="text-base sm:text-lg">
       {data?.isPlaying ? (
         <a
-          className="flex items-center space-x-2 cursor-pointer hover:text-neutral-500 dark:hover:text-neutral-400 transition-all group"
           href={data.songUrl}
           rel="prefetch noreferrer"
           target="_blank"
+          className="flex items-baseline gap-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
         >
           <span>
-            <SiSpotify />
+            <SiSpotify color="#1DB954" />
           </span>
           <span>
-            Listening to <span className="font-bold">{data.title}</span> by{" "}
+            Playing <span className="font-bold">{data.title}</span> by{" "}
             <span className="font-bold">{data.artist}</span>
           </span>
         </a>
       ) : (
-        <p className="flex space-x-2 items-center cursor-default hover:text-neutral-500 dark:hover:text-neutral-400 transition-all">
+        <span className="flex gap-2 items-center cursor-default hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2">
           <span>
-            <SiSpotify />
+            <SiSpotify color="#1DB954" />
           </span>
           <span>Not playing anything</span>
-        </p>
+        </span>
       )}
-    </div>
+    </span>
   );
 };
 

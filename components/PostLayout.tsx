@@ -70,11 +70,11 @@ const PostLayout: React.FC<PostProps> = ({ postData }) => {
           <meta property="twitter:image" key="twitter:image" />
         )}
       </Head>
-      <div className="mb-4">
+      <div className="mb-4 px-6">
         <h1 className="text-3xl sm:text-4xl font-extrabold mb-3">
           {postData.title}
         </h1>
-        <div className="flex gap-3">
+        <div className="flex gap-3 items-center">
           <span className="font-mono text-neutral-600 dark:text-neutral-400 flex-1">
             {postData.book ? (
               <>
@@ -86,13 +86,18 @@ const PostLayout: React.FC<PostProps> = ({ postData }) => {
             )}
             <Date dateString={postData.date} format="MMM D, YYYY" />
           </span>
-          <span className="font-mono font-bold hover:text-neutral-500 dark:hover:text-neutral-400 transition-all">
-            <Link href={"/"}>Back</Link>
+          <span>
+            <Link
+              href={"/"}
+              className="font-bold font-mono hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+            >
+              Back
+            </Link>
           </span>
         </div>
       </div>
       <article
-        className="prose dark:prose-invert"
+        className="prose dark:prose-invert px-6"
         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
       />
     </>

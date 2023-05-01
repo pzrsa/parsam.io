@@ -39,26 +39,28 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
           key="twitter:image"
         />
       </Head>
-      <div className="gap-1">
-        <h1 className="text-4xl sm:text-5xl font-extrabold ">
-          Hi, I&apos;m Parsa.
-        </h1>
-        <p className="text-sm sm:text-lg font-mono font-semibold text-neutral-600 dark:text-neutral-400">
-          Software Engineering Apprentice at{" "}
-          <span className="font-serif">
-            <span className="text-google-blue">G</span>
-            <span className="text-google-red">o</span>
-            <span className="text-google-yellow">o</span>
-            <span className="text-google-blue">g</span>
-            <span className="text-google-green">l</span>
-            <span className="text-google-red">e</span>
-          </span>
-        </p>
+      <div className="gap-1 px-4">
+        <div className="px-2">
+          <h1 className="text-4xl sm:text-5xl font-extrabold ">
+            Hi, I&apos;m Parsa.
+          </h1>
+          <p className="text-sm sm:text-lg font-mono font-semibold text-neutral-600 dark:text-neutral-400">
+            Software Engineering Apprentice at{" "}
+            <span className="font-serif">
+              <span className="text-google-blue">G</span>
+              <span className="text-google-red">o</span>
+              <span className="text-google-yellow">o</span>
+              <span className="text-google-blue">g</span>
+              <span className="text-google-green">l</span>
+              <span className="text-google-red">e</span>
+            </span>
+          </p>
+        </div>
         <div className="max-w-fit my-6">
           <NowPlaying />
         </div>
       </div>
-      <div className="prose dark:prose-invert">
+      <div className="prose dark:prose-invert px-6">
         <p>
           I&apos;m a 19 y/o from London currently working on the{" "}
           <a href="https://web.dev/" rel="prefetch noreferrer" target="_blank">
@@ -89,8 +91,8 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
           I find interesting enough to share.
         </p>
       </div>
-      <div>
-        <h1 className="text-2xl sm:text-3xl font-bold my-2">Posts</h1>
+      <div className="px-4">
+        <h1 className="text-2xl sm:text-3xl font-bold mt-6 px-2">Posts</h1>
         <ul>
           {posts.map((post, i) => {
             const getYear = (date: string) => new Date(date).getFullYear();
@@ -102,12 +104,14 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
 
             return (
               <li key={post.id}>
-                <span className="flex justify-end mb-2">
-                  {firstForYear && <span className="font-bold">{year}</span>}
-                </span>
+                {firstForYear && (
+                  <span className="font-bold flex justify-end mb-2">
+                    {year}
+                  </span>
+                )}
                 <Link href={`/${post.id}`}>
                   <span
-                    className={`flex items-baseline hover:text-neutral-500 dark:hover:text-neutral-400 transition-all gap-6 ${
+                    className={`flex items-baseline hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2 gap-6 ${
                       lastForYear ? "mb-4" : ""
                     }`}
                   >

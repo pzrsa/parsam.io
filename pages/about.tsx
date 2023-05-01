@@ -32,7 +32,7 @@ export default function About() {
           key="twitter:image"
         />
       </Head>
-      <div className="prose dark:prose-invert">
+      <div className="prose dark:prose-invert px-6">
         <PageTitle name="About Me" />
         <div className="relative sm:flex sm:flex-row-reverse">
           <div className="mx-auto w-60 h-60 sm:w-full sm:h-full ">
