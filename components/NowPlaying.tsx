@@ -6,11 +6,20 @@ const NowPlaying: React.FC = () => {
   const { data, error } = useSWR("/api/now-playing", fetcher);
 
   if (error)
-    return <div className="text-base sm:text-lg">failed to load :&#40;</div>;
-  if (!data) return <div className="text-base sm:text-lg">loading...</div>;
+    return (
+      <span className="sm:text-lg flex cursor-default hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2">
+        failed to load
+      </span>
+    );
+  if (!data)
+    return (
+      <span className="sm:text-lg flex cursor-default hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2">
+        loading...
+      </span>
+    );
 
   return (
-    <span className="text-base sm:text-lg">
+    <span className="sm:text-lg">
       {data?.isPlaying ? (
         <a
           href={data.songUrl}
