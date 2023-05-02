@@ -47,7 +47,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <span className="flex-1">
           <Link
             href={"/"}
-            className="font-bold text-xl sm:text-2xl hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+            className="font-bold font-mono text-xl sm:text-2xl hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
           >
             Parsa Mesgarha
           </Link>
@@ -60,7 +60,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         </Link>
         <a
           href="/feed.atom"
-          className="font-bold sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+          className="font-bold font-mono sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
         >
           rss
         </a>
