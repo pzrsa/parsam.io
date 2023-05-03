@@ -7,15 +7,11 @@ const NowPlaying: React.FC = () => {
 
   if (error)
     return (
-      <span className="sm:text-lg flex cursor-default hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2">
-        failed to load
-      </span>
+      <span className="sm:text-lg cursor-default p-2">failed to load</span>
     );
   if (!data)
     return (
-      <span className="sm:text-lg flex cursor-default hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2">
-        loading...
-      </span>
+      <span className="sm:text-lg flex cursor-default p-2">loading...</span>
     );
 
   return (

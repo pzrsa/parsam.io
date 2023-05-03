@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useRouter } from "next/router";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
+  const pathname = usePathname();
 
   const title = "Parsa Mesgarha - Programmer, lifelong learner.";
   const description =
@@ -45,12 +47,18 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       </Head>
       <nav className="flex mb-6 gap-1 px-4 items-center">
         <span className="flex-1">
-          <Link
-            href={"/"}
-            className="font-bold font-mono text-xl sm:text-2xl hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
-          >
-            Parsa Mesgarha
-          </Link>
+          {pathname === "/" ? (
+            <span className="font-bold font-mono text-xl sm:text-2xl cursor-default p-2">
+              Parsa Mesgarha
+            </span>
+          ) : (
+            <Link
+              href={"/"}
+              className="font-bold font-mono text-xl sm:text-2xl hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+            >
+              Parsa Mesgarha
+            </Link>
+          )}
         </span>
         <Link
           href={"/about"}
