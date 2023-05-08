@@ -86,15 +86,8 @@ export default function About() {
               >
                 Twitter
               </a>
-              ,{" "}
-              <a
-                href="https://discord.com/users/798613615448031313"
-                rel="prefetch noreferrer"
-              >
-                Discord
-              </a>{" "}
-              (<b>parsa#1055</b>) or <a href="mailto:hi@parsam.io">Email</a> (
-              <b>hi@parsam.io</b>).
+              , Discord (<b>parsa#1055</b>) or{" "}
+              <a href="mailto:hi@parsam.io">Email</a> (<b>hi@parsam.io</b>).
             </p>
           </div>
         </div>

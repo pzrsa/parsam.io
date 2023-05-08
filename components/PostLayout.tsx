@@ -63,7 +63,7 @@ const PostLayout: React.FC<PostProps> = ({ data }) => {
           <meta property="twitter:image" key="twitter:image" />
         )}
       </Head>
-      <div className="mb-4 px-6">
+      <div className="mb-6 px-6">
         <h1 className="text-3xl sm:text-4xl font-extrabold mb-3">
           {data.title}
         </h1>
