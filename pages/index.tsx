@@ -22,12 +22,13 @@ interface IndexProps {
 }
 
 const Index: React.FC<IndexProps> = ({ posts }) => {
+  const title = "Parsa Mesgarha";
   const image = "index.jpg";
 
   return (
     <>
       <Head>
-        <title>Parsa Mesgarha - Programmer, lifelong learner.</title>
+        <title>{title}</title>
         <meta
           property="og:image"
           content={`https://parsam.io/images/og/${image}`}

@@ -7,7 +7,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
   const pathname = usePathname();
 
-  const title = "Parsa Mesgarha - Programmer, lifelong learner.";
+  const title = "Parsa Mesgarha";
   const description =
     "Parsa Mesgarha - Programmer, lifelong learner. Documenting my journey.";
   const image = "/images/me.jpg";
