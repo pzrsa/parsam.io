@@ -3,7 +3,6 @@ date: "2021-02-16"
 title: "Show Your Work!"
 author: "Austin Kleon"
 description: "Show Your Work! is about why generosity trumps genius. It's about getting findable, about using the network instead of wasting time networking. It's not self-promotion, it's self-discovery let others into your process, then let them steal from you."
-book: true
 ---
 
 ## Book in 3 Sentences

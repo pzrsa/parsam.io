@@ -3,7 +3,6 @@ date: "2021-05-30"
 title: "Almanack of Naval Ravikant"
 author: "Eric Jorgenson"
 description: "Naval Ravikant is an entrepreneur, philosopher, and investor who has captivated the world with his principles for building wealth and creating long-term happiness. Through Naval’s own words, you will learn how to walk your own unique path toward a happier, wealthier life."
-book: true
 ---
 
 ## Book in 3 Sentences

@@ -20,20 +20,20 @@ const PostLayout: React.FC<PostProps> = ({ data }) => {
         <title>{title}</title>
         <meta
           property="og:site_name"
-          content={data.book ? `${data.title} by ${data.author}` : data.title}
+          content={data.author ? `${data.title} by ${data.author}` : data.title}
           key="og:site_name"
         />
         <meta
           property="og:title"
-          content={data.book ? `${data.title} by ${data.author}` : data.title}
+          content={data.author ? `${data.title} by ${data.author}` : data.title}
           key="og:title"
         />
         <meta
           property="og:description"
-          content={data.book ? data.description : data.title}
+          content={data.author ? data.description : data.title}
           key="og:description"
         />
-        {data.book ? (
+        {data.author ? (
           <meta
             property="og:image"
             content={`https://parsam.io/images/notes/covers/${data.id}.jpg`}
@@ -44,16 +44,16 @@ const PostLayout: React.FC<PostProps> = ({ data }) => {
         )}
         <meta
           name="twitter:title"
-          content={data.book ? `${data.title} by ${data.author}` : data.title}
+          content={data.author ? `${data.title} by ${data.author}` : data.title}
           key="twitter:title"
         />
         <meta
           name="twitter:description"
-          content={data.book ? data.description : data.title}
+          content={data.author ? data.description : data.title}
           key="twitter:description"
         />
 
-        {data.book ? (
+        {data.author ? (
           <meta
             name="twitter:image"
             content={`https://parsam.io/images/notes/covers/${data.id}.jpg`}
@@ -69,7 +69,7 @@ const PostLayout: React.FC<PostProps> = ({ data }) => {
         </h1>
         <div className="flex gap-3 items-center">
           <span className="font-mono text-neutral-600 dark:text-neutral-400 flex-1">
-            {data.book ? (
+            {data.author ? (
               <>
                 {data.author}
                 {" // "}

@@ -3,7 +3,6 @@ date: "2021-02-13"
 title: "Shoe Dog"
 author: "Phil Knight"
 description: "In 1962, fresh out of business school, Phil Knight borrowed $50 from his father and created a company with a simple mission: import high-quality, low-cost athletic shoes from Japan. Selling the shoes from the boot of his Plymouth, Knight grossed $8000 in his first year. Today, Nike's annual sales top $30 billion."
-book: true
 ---
 
 ## Book in 3 Sentences

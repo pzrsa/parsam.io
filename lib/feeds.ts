@@ -30,7 +30,7 @@ export const generateFeed = () => {
       link: `https://parsam.io/${post.id}`,
       date: new Date(post.date),
     };
-    if (post.book) {
+    if (post.author) {
       item.image = `https://parsam.io/images/notes/covers/${post.id}.jpg`;
     }
 

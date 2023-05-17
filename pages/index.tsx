@@ -118,7 +118,7 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
                   >
                     <span className="flex-1 text-lg ">
                       <span className="font-semibold">{post.title}</span>
-                      {post.book && (
+                      {post.author && (
                         <span className="font-mono text-neutral-600 dark:text-neutral-400">
                           {" // "}
                           {post.author}

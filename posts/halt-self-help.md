@@ -1,7 +1,6 @@
 ---
 date: "2023-01-30"
 title: "Halting self-help books at some point"
-type: "article"
 ---
 
 I feel like at some point in my life I should pause on seeking out the next self-help book and instead invest that time and energy into reading the classics that have stood the test of time. I won't go over those "classics", but I have a general idea of them that includes books from authors I find to be influential.

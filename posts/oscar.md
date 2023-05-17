@@ -1,7 +1,6 @@
 ---
 date: "2022-08-03"
 title: "And the Oscar goes to..."
-type: "article"
 ---
 
 You.

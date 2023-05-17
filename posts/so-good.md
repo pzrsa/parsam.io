@@ -3,7 +3,6 @@ date: "2021-06-27"
 title: "So Good They Can't Ignore You"
 author: "Cal Newport"
 description: "Cal Newport suggests that it should be a person's talent and skill - and not necessarily their passion - that determines their career path. Newport presents compelling scientific and contemporary case study evidence that the key to one's career success is to find out what you do well, then to put all of your efforts into that direction."
-book: true
 ---
 
 ## Book in 3 Sentences

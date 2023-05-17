@@ -3,7 +3,6 @@ date: "2021-11-05"
 title: "Steve Jobs"
 author: "Walter Isaacson"
 description: "Walter Isaacson tells the story of the rollercoaster life and searingly intense personality of creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital publishing."
-book: true
 ---
 
 ## Book in 3 Sentences
