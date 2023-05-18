@@ -75,13 +75,17 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       </nav>
       <main>{children}</main>
       <footer className="grid grid-cols-3 sm:flex sm:flex-row gap-1 mt-6 px-4">
-        <FooterItem href="https://github.com/pzrsa" name="github" />
         <FooterItem href="https://twitter.com/pzrsaa" name="twitter" />
+        <FooterItem href="https://github.com/pzrsa" name="github" />
         <FooterItem
-          href="https://www.linkedin.com/in/parsamesgarha/"
+          href="https://www.instagram.com/parsamesgarha"
+          name="instagram"
+        />
+        <FooterItem
+          href="https://www.linkedin.com/in/parsamesgarha"
           name="linkedin"
         />
-        <FooterItem href="https://parsam.substack.com/" name="substack" />
+        <FooterItem href="https://parsam.substack.com" name="substack" />
         <FooterItem href="https://github.com/pzrsa/parsam.io" name="source" />
       </footer>
     </div>
