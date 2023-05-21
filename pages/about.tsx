@@ -75,7 +75,73 @@ export default function About() {
             </div>
           </div>
           <div>
-            <h2>Likes</h2>
+            <h3>Gym</h3>
+            <blockquote>
+              No man has the right to be an amateur in the matter of physical
+              training. It is a shame for a man to grow old without seeing the
+              beauty and strength of which his body is capable - Socrates
+            </blockquote>
+            <ul>
+              <li>
+                Currently training 4-5 days a week, mostly focusing on strength
+                and hypertrophy with the occasional cardio. I&apos;m slowly
+                transitioning away from the{" "}
+                <ExternalLink
+                  href="https://www.muscleandstrength.com/workouts/the-ultimate-bro-split"
+                  name="Bro Split"
+                />{" "}
+                to a modified version of{" "}
+                <ExternalLink
+                  href="https://www.muscleandstrength.com/workouts/6-day-powerbuilding-split-meal-plan"
+                  name="Push/Pull/Legs"
+                />
+                .{" "}
+              </li>
+              <li>
+                My current{" "}
+                <ExternalLink
+                  href="https://en.wikipedia.org/wiki/Bench_press"
+                  name="Bench Press"
+                />{" "}
+                PR is 100kg.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Supplements</h3>
+            <ul>
+              <li>
+                <ExternalLink
+                  href="https://www.optimumnutrition.com/en-gb/Products/Advanced-Fitness/Muscle-Building/Micronised-Creatine-Powder/p/creatine-micronized"
+                  name="Creatine Monohydrate"
+                />{" "}
+                (daily, post-workout, ~5g)
+              </li>
+              <li>
+                <ExternalLink
+                  href="https://www.optimumnutrition.com/en-gb/Products/Protein-Powders/Gold-Standard-100%25-Whey-Protein-/p/gold-standard-100-whey-protein"
+                  name="Whey Protein"
+                />{" "}
+                (daily, post-workout, ~48g)
+              </li>
+              <li>
+                <ExternalLink
+                  href="https://www.vitabiotics.com/products/wellman-original-tablets"
+                  name="Multivitamin"
+                />{" "}
+                (daily, post-meal)
+              </li>
+              <li>
+                <ExternalLink
+                  href="https://www.vitabiotics.com/products/ultra-vitamin-d-2000iu-extra-strength-96-tablets"
+                  name="Vitamin D"
+                />{" "}
+                (daily, anytime)
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Likes</h3>
             <ul>
               <li>
                 <ExternalLink
@@ -135,7 +201,7 @@ export default function About() {
             </ul>
           </div>
           <div>
-            <h2>More Links</h2>
+            <h3>More Links</h3>
             <ul>
               <li>
                 <ExternalLink
