@@ -115,28 +115,28 @@ export default function About() {
                   href="https://www.optimumnutrition.com/en-gb/Products/Advanced-Fitness/Muscle-Building/Micronised-Creatine-Powder/p/creatine-micronized"
                   name="Creatine Monohydrate"
                 />{" "}
-                (daily, post-workout, ~5g)
+                (daily, ~5g)
               </li>
               <li>
                 <ExternalLink
                   href="https://www.optimumnutrition.com/en-gb/Products/Protein-Powders/Gold-Standard-100%25-Whey-Protein-/p/gold-standard-100-whey-protein"
                   name="Whey Protein"
                 />{" "}
-                (daily, post-workout, ~48g)
+                (daily, ~48g)
               </li>
               <li>
                 <ExternalLink
                   href="https://www.vitabiotics.com/products/wellman-original-tablets"
                   name="Multivitamin"
                 />{" "}
-                (daily, post-meal)
+                (daily)
               </li>
               <li>
                 <ExternalLink
                   href="https://www.vitabiotics.com/products/ultra-vitamin-d-2000iu-extra-strength-96-tablets"
                   name="Vitamin D"
                 />{" "}
-                (daily, anytime)
+                (daily)
               </li>
             </ul>
           </div>
