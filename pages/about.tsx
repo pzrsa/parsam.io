@@ -75,7 +75,7 @@ export default function About() {
             </div>
           </div>
           <div>
-            <h3>Gym</h3>
+            <h3>Fitness</h3>
             <blockquote>
               No man has the right to be an amateur in the matter of physical
               training. It is a shame for a man to grow old without seeing the
