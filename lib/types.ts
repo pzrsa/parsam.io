@@ -9,3 +9,9 @@ export interface Post {
   author?: string;
   description?: string;
 }
+
+export interface Film {
+  title: string;
+  imageID: string;
+  imdbID: string;
+}

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/legacy/image";
 import PageTitle from "../components/PageTitle";
+import { FAVOURITE_FILMS } from "../lib/data";
 import me from "../public/images/me.jpg";
 
 export default function About() {
@@ -115,14 +116,14 @@ export default function About() {
                   href="https://www.optimumnutrition.com/en-gb/Products/Advanced-Fitness/Muscle-Building/Micronised-Creatine-Powder/p/creatine-micronized"
                   name="Creatine Monohydrate"
                 />{" "}
-                (daily, ~5g)
+                (daily)
               </li>
               <li>
                 <ExternalLink
                   href="https://www.optimumnutrition.com/en-gb/Products/Protein-Powders/Gold-Standard-100%25-Whey-Protein-/p/gold-standard-100-whey-protein"
                   name="Whey Protein"
                 />{" "}
-                (daily, ~48g)
+                (daily)
               </li>
               <li>
                 <ExternalLink
@@ -140,6 +141,31 @@ export default function About() {
               </li>
             </ul>
           </div>
+          <div>
+            <h3>Favourites</h3>
+            <h4>Films</h4>
+            <div className="grid grid-cols-3 gap-y-6 gap-x-6 sm:grid-cols-4">
+              {FAVOURITE_FILMS.map((film) => (
+                <a
+                  href={`https://www.imdb.com/title/${film.imdbID}`}
+                  className="group"
+                  key={film.title}
+                  rel="prefetch noreferrer"
+                  target="_blank"
+                >
+                  <div className="aspect-w-2 aspect-h-3 overflow-hidden rounded-lg cursor-pointer">
+                    <Image
+                      alt={film.title}
+                      src={`https://image.tmdb.org/t/p/original/${film.imageID}.jpg`}
+                      layout="fill"
+                      className="group-hover:opacity-75 transition-all"
+                    />
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+
           <div>
             <h3>Likes</h3>
             <ul>
