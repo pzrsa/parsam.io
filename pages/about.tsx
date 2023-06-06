@@ -105,7 +105,12 @@ export default function About() {
                   href="https://en.wikipedia.org/wiki/Bench_press"
                   name="Bench Press"
                 />{" "}
-                PR is 100kg.
+                PR is 100kg. I&apos;m certain it can be 110kg when I learn to{" "}
+                <ExternalLink
+                  name="leg drive"
+                  href="https://www.google.com/search?q=what+is+leg+drive"
+                />{" "}
+                effectively.
               </li>
             </ul>
           </div>
