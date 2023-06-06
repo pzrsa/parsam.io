@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/legacy/image";
 import PageTitle from "../components/PageTitle";
-import { FAVOURITE_FILMS } from "../lib/data";
+import { FAVOURITE_FILMS, FAVOURITE_SHOWS } from "../lib/data";
 import me from "../public/images/me.jpg";
 
 export default function About() {
@@ -157,6 +157,27 @@ export default function About() {
                     <Image
                       alt={film.title}
                       src={`https://image.tmdb.org/t/p/original/${film.imageID}.jpg`}
+                      layout="fill"
+                      className="group-hover:opacity-75 transition-all"
+                    />
+                  </div>
+                </a>
+              ))}
+            </div>
+            <h4>Shows</h4>
+            <div className="grid grid-cols-3 gap-y-6 gap-x-6 sm:grid-cols-4">
+              {FAVOURITE_SHOWS.map((show) => (
+                <a
+                  href={`https://www.imdb.com/title/${show.imdbID}`}
+                  className="group"
+                  key={show.title}
+                  rel="prefetch noreferrer"
+                  target="_blank"
+                >
+                  <div className="aspect-w-2 aspect-h-3 overflow-hidden rounded-lg cursor-pointer">
+                    <Image
+                      alt={show.title}
+                      src={`https://image.tmdb.org/t/p/original/${show.imageID}.jpg`}
                       layout="fill"
                       className="group-hover:opacity-75 transition-all"
                     />

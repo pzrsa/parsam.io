@@ -15,3 +15,9 @@ export interface Film {
   imageID: string;
   imdbID: string;
 }
+
+export interface Show {
+  title: string;
+  imageID: string;
+  imdbID: string;
+}

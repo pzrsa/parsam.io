@@ -1,15 +1,15 @@
-import { Film } from "./types";
+import { Film, Show } from "./types";
 
 export const FAVOURITE_FILMS: Film[] = [
-  {
-    title: "Spider-Man: Across the Spider-Verse",
-    imageID: "8Vt6mWEReuy4Of61Lnj5Xj704m8",
-    imdbID: "tt9362722",
-  },
   {
     title: "Spider-Man: Into the Spider-Verse",
     imageID: "iiZZdoQBEYBv6id8su7ImL0oCbD",
     imdbID: "tt4633694",
+  },
+  {
+    title: "Spider-Man: Across the Spider-Verse",
+    imageID: "8Vt6mWEReuy4Of61Lnj5Xj704m8",
+    imdbID: "tt9362722",
   },
   {
     title: "Taxi Driver",
@@ -17,24 +17,19 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0075314",
   },
   {
-    title: "The Dark Knight",
-    imageID: "qJ2tW6WMUDux911r6m7haRef0WH",
-    imdbID: "tt0468569",
-  },
-  {
-    title: "Her",
-    imageID: "eCOtqtfvn7mxGl6nfmq4b1exJRc",
-    imdbID: "tt1798709",
-  },
-  {
     title: "The Social Network",
     imageID: "n0ybibhJtQ5icDqTp8eRytcIHJx",
     imdbID: "tt1285016",
   },
   {
-    title: "Guardians of the Galaxy Vol. 3",
-    imageID: "r2J02Z2OpNTctfOSN1Ydgii51I3",
-    imdbID: "tt6791350",
+    title: "The Dark Knight",
+    imageID: "qJ2tW6WMUDux911r6m7haRef0WH",
+    imdbID: "tt0468569",
+  },
+  {
+    title: "Fight Club",
+    imageID: "pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK",
+    imdbID: "tt0137523",
   },
   {
     title: "La La Land",
@@ -42,9 +37,14 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt3783958",
   },
   {
-    title: "Mad Max: Fury Road",
-    imageID: "hA2ple9q4qnwxp3hKVNhroipsir",
-    imdbID: "tt1392190",
+    title: "Baby Driver",
+    imageID: "rmnQ9jKW72bHu8uKlMjPIb2VLMI",
+    imdbID: "tt3890160",
+  },
+  {
+    title: "Her",
+    imageID: "eCOtqtfvn7mxGl6nfmq4b1exJRc",
+    imdbID: "tt1798709",
   },
   {
     title: "Amélie",
@@ -62,14 +62,14 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0892769",
   },
   {
+    title: "Guardians of the Galaxy Vol. 3",
+    imageID: "r2J02Z2OpNTctfOSN1Ydgii51I3",
+    imdbID: "tt6791350",
+  },
+  {
     title: "Inglourious Basterds",
     imageID: "7sfbEnaARXDDhKm0CZ7D7uc2sbo",
     imdbID: "tt0361748",
-  },
-  {
-    title: "Fight Club",
-    imageID: "pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK",
-    imdbID: "tt0137523",
   },
   {
     title: "Superbad",
@@ -82,9 +82,9 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0446029",
   },
   {
-    title: "Baby Driver",
-    imageID: "rmnQ9jKW72bHu8uKlMjPIb2VLMI",
-    imdbID: "tt3890160",
+    title: "Mad Max: Fury Road",
+    imageID: "hA2ple9q4qnwxp3hKVNhroipsir",
+    imdbID: "tt1392190",
   },
   {
     title: "John Wick: Chapter 4",
@@ -162,9 +162,9 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0780504",
   },
   {
-    title: "Knives Out",
-    imageID: "pThyQovXQrw2m0s9x82twj48Jq4",
-    imdbID: "tt8946378",
+    title: "Steve Jobs",
+    imageID: "92vhEJ6xWoDJ8UHECAJaRofaSCZ",
+    imdbID: "tt2080374",
   },
   {
     title: "Akira",
@@ -180,5 +180,68 @@ export const FAVOURITE_FILMS: Film[] = [
     title: "Top Gun: Maverick",
     imageID: "62HCnUTziyWcpDaBO2i1DX17ljH",
     imdbID: "tt1745960",
+  },
+];
+
+export const FAVOURITE_SHOWS: Show[] = [
+  {
+    title: "Invincible",
+    imageID: "yDWJYRAwMNKbIYT8ZB33qy84uzO",
+    imdbID: "tt6741278",
+  },
+  {
+    title: "Arcane",
+    imageID: "fqldf2t8ztc9aiwn3k6mlX3tvRT",
+    imdbID: "tt11126994",
+  },
+  {
+    title: "Atlanta",
+    imageID: "8HZyGMnPLVVb00rmrh6A2SbK9NX",
+    imdbID: "tt4288182",
+  },
+  {
+    title: "Silicon Valley",
+    imageID: "dc5r71XI1gD4YwIUoEYCLiVvtss",
+    imdbID: "tt2575988",
+  },
+  {
+    title: "BoJack Horseman",
+    imageID: "pB9L0jAnEQLMKgexqCEocEW8TA",
+    imdbID: "tt3398228",
+  },
+  {
+    title: "Community",
+    imageID: "3KUjDt8XY7w2Ku70UE0SECmv1zP",
+    imdbID: "tt1439629",
+  },
+  {
+    title: "The Boys",
+    imageID: "mY7SeH4HFFxW1hiI6cWuwCRKptN",
+    imdbID: "tt1190634",
+  },
+  {
+    title: "Hunter x Hunter",
+    imageID: "ucpgmUR1h5Te1BYegKItoPjOeF7",
+    imdbID: "tt2098220",
+  },
+  {
+    title: "BEEF",
+    imageID: "5sPPUbeHytbTnaIVBNcCQ4p6XYY",
+    imdbID: "tt14403178",
+  },
+  {
+    title: "Stranger Things",
+    imageID: "49WJfeN0moxb9IPfGn8AIqMGskD",
+    imdbID: "tt4574334",
+  },
+  {
+    title: "Rick and Morty",
+    imageID: "cvhNj9eoRBe5SxjCbQTkh05UP5K",
+    imdbID: "tt2861424",
+  },
+  {
+    title: "One Punch Man",
+    imageID: "iE3s0lG5QVdEHOEZnoAxjmMtvne",
+    imdbID: "tt4508902",
   },
 ];
