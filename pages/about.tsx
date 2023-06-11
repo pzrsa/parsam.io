@@ -77,7 +77,7 @@ export default function About() {
           </div>
           <div>
             <h3>Fitness</h3>
-            Heres an (
+            Here&apos;s an (
             <ExternalLink
               href="https://en.wikipedia.org/wiki/Socratic_problem"
               name="alleged"
