@@ -77,11 +77,21 @@ export default function About() {
           </div>
           <div>
             <h3>Fitness</h3>
+            Heres an (
+            <ExternalLink
+              href="https://en.wikipedia.org/wiki/Socratic_problem"
+              name="alleged"
+            />
+            ) quote from{" "}
+            <ExternalLink
+              href="https://en.wikipedia.org/wiki/Socrates"
+              name="Socrates"
+            />{" "}
+            I like coming back to for my own personal motivation:
             <blockquote>
               No man has the right to be an amateur in the matter of physical
               training. It is a shame for a man to grow old without seeing the
-              beauty and strength of which his body is capable - Socrates (more
-              or less)
+              beauty and strength of which his body is capable
             </blockquote>
             <ul>
               <li>
