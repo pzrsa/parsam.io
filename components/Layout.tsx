@@ -60,12 +60,18 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             </Link>
           )}
         </span>
-        <Link
-          href={"/about"}
-          className="font-bold font-mono sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
-        >
-          about
-        </Link>
+        {pathname === "/about" ? (
+          <span className="font-bold font-mono sm:text-lg cursor-default p-2">
+            about
+          </span>
+        ) : (
+          <Link
+            href={"/about"}
+            className="font-bold font-mono sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+          >
+            about
+          </Link>
+        )}
         <a
           href="/feed.atom"
           className="font-bold font-mono sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
