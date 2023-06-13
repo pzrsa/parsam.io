@@ -96,8 +96,13 @@ export default function About() {
             <ul>
               <li>
                 Currently training 4-5 days a week, mostly focusing on strength
-                and hypertrophy with the occasional cardio. I&apos;m slowly
-                transitioning away from the{" "}
+                and{" "}
+                <ExternalLink
+                  href="https://en.wikipedia.org/wiki/Muscle_hypertrophy"
+                  name="hypertrophy"
+                />{" "}
+                with the occasional cardio. I&apos;m slowly transitioning away
+                from the{" "}
                 <ExternalLink
                   href="https://www.muscleandstrength.com/workouts/the-ultimate-bro-split"
                   name="Bro Split"
