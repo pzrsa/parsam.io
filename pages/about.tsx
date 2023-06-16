@@ -69,7 +69,7 @@ export default function About() {
                   href="https://twitter.com/pzrsaa"
                   name="Twitter"
                 />
-                , Discord (<b>parsa#1055</b>) or{" "}
+                , Discord (<b>@pzrsa</b>) or{" "}
                 <ExternalLink href="mailto:hi@parsam.io" name="Email" /> (
                 <b>hi@parsam.io</b>).
               </p>
