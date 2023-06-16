@@ -77,22 +77,6 @@ export default function About() {
           </div>
           <div>
             <h3>Fitness</h3>
-            Here&apos;s an (
-            <ExternalLink
-              href="https://en.wikipedia.org/wiki/Socratic_problem"
-              name="alleged"
-            />
-            ) quote from{" "}
-            <ExternalLink
-              href="https://en.wikipedia.org/wiki/Socrates"
-              name="Socrates"
-            />{" "}
-            I like coming back to for my own personal motivation:
-            <blockquote>
-              No man has the right to be an amateur in the matter of physical
-              training. It is a shame for a man to grow old without seeing the
-              beauty and strength of which his body is capable
-            </blockquote>
             <ul>
               <li>
                 Currently training 4-5 days a week, mostly focusing on strength
@@ -101,8 +85,10 @@ export default function About() {
                   href="https://en.wikipedia.org/wiki/Muscle_hypertrophy"
                   name="hypertrophy"
                 />{" "}
-                with the occasional cardio. I&apos;m slowly transitioning away
-                from the{" "}
+                with the occasional cardio.{" "}
+              </li>
+              <li>
+                I&apos;m slowly transitioning away from the{" "}
                 <ExternalLink
                   href="https://www.muscleandstrength.com/workouts/the-ultimate-bro-split"
                   name="Bro Split"
@@ -113,19 +99,6 @@ export default function About() {
                   name="Push/Pull/Legs"
                 />
                 .{" "}
-              </li>
-              <li>
-                My current{" "}
-                <ExternalLink
-                  href="https://en.wikipedia.org/wiki/Bench_press"
-                  name="Bench Press"
-                />{" "}
-                PR is 100kg. I&apos;m certain it can be 110kg when I learn to{" "}
-                <ExternalLink
-                  name="leg drive"
-                  href="https://www.google.com/search?q=what+is+leg+drive"
-                />{" "}
-                effectively.
               </li>
             </ul>
           </div>
