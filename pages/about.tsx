@@ -205,12 +205,15 @@ export default function About() {
                 for me to invest in tools that inspire me to use them more.
               </li>
               <li>
-                Typing, especially via tests on{" "}
+                Typing on{" "}
+                <ExternalLink href="https://monkeytype.com" name="monkeytype" />
+                , I&apos;m actually addicted to it. Feel free to check out my
+                personal records on my{" "}
                 <ExternalLink
                   href="https://monkeytype.com/profile/pzrsa"
-                  name="monkeytype"
+                  name="profile"
                 />
-                . My personal record is currently 133 wpm.
+                .
               </li>
               <li>
                 Mechanical watches and G-Shock&apos;s. I own a Seiko{" "}
@@ -248,6 +251,12 @@ export default function About() {
                 <ExternalLink
                   href="https://www.youtube.com/@pzrsa"
                   name="YouTube"
+                />
+              </li>
+              <li>
+                <ExternalLink
+                  href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
+                  name="Spotify"
                 />
               </li>
               <li>
