@@ -147,7 +147,7 @@ export default function About() {
                   rel="prefetch noreferrer"
                   target="_blank"
                 >
-                  <div className="aspect-w-2 aspect-h-3 overflow-hidden rounded-lg cursor-pointer">
+                  <div className="aspect-w-2 aspect-h-3 overflow-hidden rounded-lg cursor-pointer shadow-lg">
                     <Image
                       alt={film.title}
                       src={`https://image.tmdb.org/t/p/original/${film.imageID}.jpg`}
@@ -168,7 +168,7 @@ export default function About() {
                   rel="prefetch noreferrer"
                   target="_blank"
                 >
-                  <div className="aspect-w-2 aspect-h-3 overflow-hidden rounded-lg cursor-pointer">
+                  <div className="aspect-w-2 aspect-h-3 overflow-hidden rounded-lg cursor-pointer shadow-lg">
                     <Image
                       alt={show.title}
                       src={`https://image.tmdb.org/t/p/original/${show.imageID}.jpg`}
