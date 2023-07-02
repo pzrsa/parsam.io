@@ -63,7 +63,7 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
       </div>
       <div className="prose dark:prose-invert px-6">
         <p>
-          I&apos;m a 19 y/o from London currently working on the{" "}
+          I&apos;m a 20 y/o from London currently working on the{" "}
           <a href="https://web.dev/" rel="prefetch noreferrer" target="_blank">
             Web
           </a>{" "}
