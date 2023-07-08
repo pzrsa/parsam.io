@@ -117,9 +117,9 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt8772262",
   },
   {
-    title: "I Lost My Body",
-    imageID: "z5dXCywyo8zEPNDkeQY7nbvkrz8",
-    imdbID: "tt9806192",
+    title: "The Devil Wears Prada",
+    imageID: "8912AsVuS7Sj915apArUFbv6F9L",
+    imdbID: "tt0458352",
   },
   {
     title: "Get Out",
