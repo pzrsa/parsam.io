@@ -167,9 +167,9 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt2080374",
   },
   {
-    title: "Akira",
-    imageID: "neZ0ykEsPqxamsX6o5QNUFILQrz",
-    imdbID: "tt0094625",
+    title: "The Batman",
+    imageID: "74xTEgt7R36Fpooo50r9T25onhq",
+    imdbID: "tt1877830",
   },
   {
     title: "Kung Fu Panda 2",
