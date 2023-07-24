@@ -62,11 +62,6 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0892769",
   },
   {
-    title: "Guardians of the Galaxy Vol. 3",
-    imageID: "r2J02Z2OpNTctfOSN1Ydgii51I3",
-    imdbID: "tt6791350",
-  },
-  {
     title: "Inglourious Basterds",
     imageID: "7sfbEnaARXDDhKm0CZ7D7uc2sbo",
     imdbID: "tt0361748",
@@ -87,9 +82,14 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt1392190",
   },
   {
-    title: "John Wick: Chapter 4",
-    imageID: "vZloFAK7NmvMGKE7VkF5UHaz0I",
-    imdbID: "tt10366206",
+    title: "Drive",
+    imageID: "602vevIURmpDfzbnv5Ubi6wIkQm",
+    imdbID: "tt0780504",
+  },
+  {
+    title: "Harry Potter and the Deathly Hallows: Part 2",
+    imageID: "c54HpQmuwXjHq2C9wmoACjxoom3",
+    imdbID: "tt1201607",
   },
   {
     title: "American Psycho",
@@ -147,6 +147,11 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt6751668",
   },
   {
+    title: "John Wick: Chapter 4",
+    imageID: "vZloFAK7NmvMGKE7VkF5UHaz0I",
+    imdbID: "tt10366206",
+  },
+  {
     title: "Whiplash",
     imageID: "7fn624j5lj3xTme2SgiLCeuedmO",
     imdbID: "tt2582802",
@@ -157,9 +162,9 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0245429",
   },
   {
-    title: "Drive",
-    imageID: "602vevIURmpDfzbnv5Ubi6wIkQm",
-    imdbID: "tt0780504",
+    title: "Guardians of the Galaxy Vol. 3",
+    imageID: "r2J02Z2OpNTctfOSN1Ydgii51I3",
+    imdbID: "tt6791350",
   },
   {
     title: "Steve Jobs",
@@ -175,11 +180,6 @@ export const FAVOURITE_FILMS: Film[] = [
     title: "Kung Fu Panda 2",
     imageID: "mtqqD00vB4PGRt20gWtGqFhrkd0",
     imdbID: "tt1302011",
-  },
-  {
-    title: "Top Gun: Maverick",
-    imageID: "62HCnUTziyWcpDaBO2i1DX17ljH",
-    imdbID: "tt1745960",
   },
 ];
 
