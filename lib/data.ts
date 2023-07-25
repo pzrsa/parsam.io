@@ -147,9 +147,9 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt6751668",
   },
   {
-    title: "John Wick: Chapter 4",
-    imageID: "vZloFAK7NmvMGKE7VkF5UHaz0I",
-    imdbID: "tt10366206",
+    title: "Oppenheimer",
+    imageID: "8Gxv8gSFCU0XGDykEGv7zR1n2ua",
+    imdbID: "tt15398776",
   },
   {
     title: "Whiplash",
