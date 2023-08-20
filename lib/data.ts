@@ -240,8 +240,8 @@ export const FAVOURITE_SHOWS: Show[] = [
     imdbID: "tt2861424",
   },
   {
-    title: "One Punch Man",
-    imageID: "iE3s0lG5QVdEHOEZnoAxjmMtvne",
-    imdbID: "tt4508902",
+    title: "Top Boy",
+    imageID: "cfqHWQQDwvKT8Xoe0AXzHBXcF1u",
+    imdbID: "tt1830379",
   },
 ];
