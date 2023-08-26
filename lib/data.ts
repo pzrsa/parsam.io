@@ -185,9 +185,9 @@ export const FAVOURITE_FILMS: Film[] = [
 
 export const FAVOURITE_SHOWS: Show[] = [
   {
-    title: "Invincible",
-    imageID: "yDWJYRAwMNKbIYT8ZB33qy84uzO",
-    imdbID: "tt6741278",
+    title: "Atlanta",
+    imageID: "8HZyGMnPLVVb00rmrh6A2SbK9NX",
+    imdbID: "tt4288182",
   },
   {
     title: "Arcane",
@@ -195,9 +195,9 @@ export const FAVOURITE_SHOWS: Show[] = [
     imdbID: "tt11126994",
   },
   {
-    title: "Atlanta",
-    imageID: "8HZyGMnPLVVb00rmrh6A2SbK9NX",
-    imdbID: "tt4288182",
+    title: "Invincible",
+    imageID: "yDWJYRAwMNKbIYT8ZB33qy84uzO",
+    imdbID: "tt6741278",
   },
   {
     title: "Silicon Valley",
@@ -215,33 +215,18 @@ export const FAVOURITE_SHOWS: Show[] = [
     imdbID: "tt1439629",
   },
   {
+    title: "Top Boy",
+    imageID: "cfqHWQQDwvKT8Xoe0AXzHBXcF1u",
+    imdbID: "tt1830379",
+  },
+  {
     title: "The Boys",
     imageID: "mY7SeH4HFFxW1hiI6cWuwCRKptN",
     imdbID: "tt1190634",
   },
   {
-    title: "Hunter x Hunter",
-    imageID: "ucpgmUR1h5Te1BYegKItoPjOeF7",
-    imdbID: "tt2098220",
-  },
-  {
     title: "BEEF",
     imageID: "5sPPUbeHytbTnaIVBNcCQ4p6XYY",
     imdbID: "tt14403178",
-  },
-  {
-    title: "Stranger Things",
-    imageID: "49WJfeN0moxb9IPfGn8AIqMGskD",
-    imdbID: "tt4574334",
-  },
-  {
-    title: "Rick and Morty",
-    imageID: "cvhNj9eoRBe5SxjCbQTkh05UP5K",
-    imdbID: "tt2861424",
-  },
-  {
-    title: "Top Boy",
-    imageID: "cfqHWQQDwvKT8Xoe0AXzHBXcF1u",
-    imdbID: "tt1830379",
   },
 ];
