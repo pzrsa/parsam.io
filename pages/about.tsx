@@ -266,20 +266,6 @@ export default function About() {
                 />
               </li>
               <li>
-                <a href="https://mastodon.social/@pzrsa" rel="prefetch me">
-                  Mastodon
-                </a>
-              </li>
-              <li>
-                <ExternalLink href="https://medium.com/@pzrsa" name="Medium" />
-              </li>
-              <li>
-                <ExternalLink
-                  href="https://stackoverflow.com/users/14889706/pzrsa"
-                  name="Stack Overflow"
-                />
-              </li>
-              <li>
                 <ExternalLink
                   href="https://monkeytype.com/profile/pzrsa"
                   name="Monkeytype"
