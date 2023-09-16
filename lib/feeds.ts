@@ -28,7 +28,7 @@ export const generateFeed = () => {
       title: post.title,
       content: postData.contentHtml,
       link: `https://parsam.io/${post.id}`,
-      date: new Date(post.date),
+      date: new Date(`${post.date}T19:19:19`),
     };
     if (post.author) {
       item.image = `https://parsam.io/images/notes/covers/${post.id}.jpg`;
