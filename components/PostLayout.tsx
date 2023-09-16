@@ -1,5 +1,3 @@
-import dayjs from "dayjs";
-import relativeTime from "dayjs/plugin/relativeTime";
 import Head from "next/head";
 import Link from "next/link";
 import { Post as PostType } from "../lib/types";
@@ -11,8 +9,6 @@ interface PostProps {
 
 const PostLayout: React.FC<PostProps> = ({ data }) => {
   const title = `${data.title} - Parsa Mesgarha`;
-  dayjs.extend(relativeTime);
-  const relativeDate = dayjs().to(data.date);
 
   return (
     <>
@@ -77,8 +73,7 @@ const PostLayout: React.FC<PostProps> = ({ data }) => {
             ) : (
               ""
             )}
-            <Date dateString={data.date} format="MMM D, YYYY" /> ({relativeDate}
-            )
+            <Date dateString={data.date} format="MMMM D, YYYY" />
           </span>
           <span>
             <Link
