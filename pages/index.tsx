@@ -106,7 +106,7 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
             return (
               <li key={post.id}>
                 {firstForYear && (
-                  <span className="font-bold flex justify-end mb-2">
+                  <span className="font-bold flex justify-end mb-3">
                     {year}
                   </span>
                 )}
@@ -119,9 +119,14 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
                     <span className="flex-1 text-lg ">
                       <span className="font-semibold">{post.title}</span>
                       {post.author && (
-                        <span className="font-mono text-neutral-600 dark:text-neutral-400">
-                          {" // "}
-                          {post.author}
+                        <span>
+                          <span className="font-mono text-neutral-600 dark:text-neutral-400">
+                            {" // "}
+                            {post.author}
+                          </span>
+                          <div className="mt-2 font-light text-neutral-800 dark:text-neutral-200">
+                            {post.description}
+                          </div>
                         </span>
                       )}
                     </span>
