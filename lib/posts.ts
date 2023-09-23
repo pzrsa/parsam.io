@@ -64,6 +64,7 @@ export const getPostData = async (id: string) => {
   const contentHtml = processedContent.toString();
 
   return {
+    id,
     contentHtml,
     ...matterResult.data,
   };
