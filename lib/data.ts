@@ -142,9 +142,9 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0245429",
   },
   {
-    title: "Guardians of the Galaxy Vol. 3",
-    imageID: "r2J02Z2OpNTctfOSN1Ydgii51I3",
-    imdbID: "tt6791350",
+    title: "Past Lives",
+    imageID: "rzO71VFu7CpJMfF5TQNMj0d1lSV",
+    imdbID: "tt13238346",
   },
   {
     title: "The Batman",
