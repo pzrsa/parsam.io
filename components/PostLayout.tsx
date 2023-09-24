@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { Post as PostType } from "../lib/types";
 import Date from "./Date";
@@ -89,6 +90,15 @@ const PostLayout: React.FC<PostProps> = ({ data }) => {
         className="prose dark:prose-invert px-6"
         dangerouslySetInnerHTML={{ __html: data.contentHtml }}
       />
+      {data.author ? (
+        <div className="aspect-w-6 aspect-h-8 overflow-hidden rounded-lg mx-12">
+          <Image
+            alt={data.title}
+            src={`/images/notes/covers/${data.id}.jpg`}
+            layout="fill"
+          />
+        </div>
+      ) : null}
     </>
   );
 };
