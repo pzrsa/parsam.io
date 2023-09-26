@@ -46,7 +46,7 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
             Hi, I&apos;m Parsa.
           </h1>
           <p className="text-sm sm:text-lg font-mono font-semibold text-neutral-600 dark:text-neutral-400">
-            Software Engineering Apprentice at{" "}
+            Software Engineer at{" "}
             <span className="font-serif">
               <span className="text-google-blue">G</span>
               <span className="text-google-red">o</span>

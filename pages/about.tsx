@@ -43,12 +43,8 @@ export default function About() {
             <div className="prose dark:prose-invert mt-5 sm:mr-3 sm:mt-0">
               <p>
                 My name&apos;s Parsa, and I&apos;m a 20 year old from London,
-                England. Currently I&apos;m at Google as a Software Engineering{" "}
-                <ExternalLink
-                  href="https://buildyourfuture.withgoogle.com/apprenticeships"
-                  name="Apprentice"
-                />
-                , working on the{" "}
+                England. Currently I&apos;m at Google as a Software Engineer
+                working on the{" "}
                 <ExternalLink href="https://web.dev/" name="Web" /> via{" "}
                 <ExternalLink
                   href="https://www.chromium.org/Home/"
