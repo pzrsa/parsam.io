@@ -49,18 +49,20 @@ const Blog: React.FC<BlogProps> = ({ posts }) => {
           key="twitter:image"
         />
       </Head>
-      <div className="px-6">
-        <span className="flex gap-1 items-baseline">
-          <span className="flex-1">
-            <PageTitle>Blog</PageTitle>
+      <div className="px-4">
+        <div className="px-2">
+          <span className="flex gap-1 items-baseline">
+            <span className="flex-1">
+              <PageTitle>Blog</PageTitle>
+            </span>
+            <a
+              href="/feed.atom"
+              className="sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+            >
+              <SiRss />
+            </a>
           </span>
-          <a
-            href="/feed.atom"
-            className="sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
-          >
-            <SiRss />
-          </a>
-        </span>
+        </div>
         <ul>
           {posts.map((post, i) => {
             const getYear = (date: string) => new Date(date).getFullYear();
