@@ -2,7 +2,7 @@ import type { GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import NowPlaying from "../components/NowPlaying";
-import { generateFeed } from "../lib/feeds";
+import { generateFeed } from "../lib/feed";
 import { getSortedPostData } from "../lib/posts";
 import { Post } from "../lib/types";
 

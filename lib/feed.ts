@@ -8,14 +8,15 @@ export const generateFeed = () => {
   const posts = getSortedPostData();
 
   const feed = new Feed({
-    title: "Parsa's Posts",
-    description: "Parsa's Posts",
+    title: "Parsa Mesgarha's Blog",
+    description: "Parsa Mesgarha's Blog",
     id: "https://parsam.io/",
-    link: "https://parsam.io/",
+    link: "https://parsam.io/blog",
     favicon: "https://parsam.io/favicons/favicon.ico",
+    image: "https://parsam.io/images/og/blog.jpg",
     copyright: `All rights reserved ${new Date().getFullYear()}, Parsa.`,
     author: {
-      name: "Parsa",
+      name: "Parsa Mesgarha",
       email: "hi@parsam.io",
       link: "https://parsam.io/",
     },
