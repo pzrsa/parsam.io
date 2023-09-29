@@ -4,24 +4,25 @@ import fetcher from "../lib/fetcher";
 
 const NowPlaying: React.FC = () => {
   const { data, error } = useSWR("/api/now-playing", fetcher);
+  const SpotifyIcon = () => <SiSpotify color="#1DB954" />;
 
   if (error)
     return (
-      <span className="flex gap-2 items-baseline sm:text-lg cursor-default p-2">
+      <p className="sm:text-lg flex items-baseline gap-2 cursor-default p-2">
         <span>
-          <SiSpotify color="#1DB954" />
+          <SpotifyIcon />
         </span>
         failed to load
-      </span>
+      </p>
     );
   if (!data)
     return (
-      <span className="flex gap-2 items-baseline sm:text-lg cursor-default p-2">
+      <p className="sm:text-lg flex items-baseline gap-2 cursor-default p-2">
         <span>
-          <SiSpotify color="#1DB954" />
+          <SpotifyIcon />
         </span>
         loading...
-      </span>
+      </p>
     );
 
   return (
@@ -34,7 +35,7 @@ const NowPlaying: React.FC = () => {
           className="flex items-baseline gap-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
         >
           <span>
-            <SiSpotify color="#1DB954" />
+            <SpotifyIcon />
           </span>
           <span>
             Playing <span className="font-bold">{data.title}</span> by{" "}
@@ -42,12 +43,12 @@ const NowPlaying: React.FC = () => {
           </span>
         </a>
       ) : (
-        <span className="flex gap-2 items-baseline cursor-default hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2">
+        <p className="flex items-baseline gap-2 cursor-default hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2">
           <span>
-            <SiSpotify color="#1DB954" />
+            <SpotifyIcon />
           </span>
-          <span>Not playing anything</span>
-        </span>
+          Not playing anything
+        </p>
       )}
     </span>
   );
