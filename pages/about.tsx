@@ -34,7 +34,7 @@ export default function About() {
         />
       </Head>
       <div className="px-6">
-        <PageTitle name="About" />
+        <PageTitle>About</PageTitle>
         <div className="prose dark:prose-invert">
           <div className="relative sm:flex sm:flex-row-reverse">
             <div className="mx-auto w-60 h-60 sm:w-full sm:h-full ">

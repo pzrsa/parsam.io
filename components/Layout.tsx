@@ -72,12 +72,18 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             about
           </Link>
         )}
-        <a
-          href="/feed.atom"
-          className="font-bold font-mono sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
-        >
-          rss
-        </a>
+        {pathname === "/blog" ? (
+          <span className="font-bold font-mono sm:text-lg cursor-default p-2">
+            blog
+          </span>
+        ) : (
+          <Link
+            href={"/blog"}
+            className="font-bold font-mono sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+          >
+            blog
+          </Link>
+        )}
       </nav>
       <main>{children}</main>
       <footer className="grid grid-cols-3 sm:flex sm:flex-row gap-1 mt-6 px-4">
@@ -91,7 +97,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           href="https://www.linkedin.com/in/parsamesgarha"
           name="linkedin"
         />
-        <FooterItem href="https://parsam.substack.com" name="substack" />
         <FooterItem href="https://github.com/pzrsa/parsam.io" name="source" />
       </footer>
     </div>

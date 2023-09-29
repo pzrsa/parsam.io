@@ -78,7 +78,7 @@ const PostLayout: React.FC<PostProps> = ({ data }) => {
           </span>
           <span>
             <Link
-              href={"/"}
+              href={"/blog"}
               className="font-bold font-mono hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
             >
               Back
