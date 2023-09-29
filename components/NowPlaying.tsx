@@ -7,11 +7,21 @@ const NowPlaying: React.FC = () => {
 
   if (error)
     return (
-      <span className="sm:text-lg cursor-default p-2">failed to load</span>
+      <span className="flex gap-2 items-baseline sm:text-lg cursor-default p-2">
+        <span>
+          <SiSpotify color="#1DB954" />
+        </span>
+        failed to load
+      </span>
     );
   if (!data)
     return (
-      <span className="sm:text-lg flex cursor-default p-2">loading...</span>
+      <span className="flex gap-2 items-baseline sm:text-lg cursor-default p-2">
+        <span>
+          <SiSpotify color="#1DB954" />
+        </span>
+        loading...
+      </span>
     );
 
   return (
@@ -32,7 +42,7 @@ const NowPlaying: React.FC = () => {
           </span>
         </a>
       ) : (
-        <span className="flex gap-2 items-center cursor-default hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2">
+        <span className="flex gap-2 items-baseline cursor-default hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2">
           <span>
             <SiSpotify color="#1DB954" />
           </span>
