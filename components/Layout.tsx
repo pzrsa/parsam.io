@@ -2,6 +2,14 @@ import Head from "next/head";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/router";
+import { IconType } from "react-icons";
+import {
+  SiGit,
+  SiGithub,
+  SiInstagram,
+  SiLinkedin,
+  SiTwitter,
+} from "react-icons/si";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
@@ -86,35 +94,35 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         )}
       </nav>
       <main>{children}</main>
-      <footer className="grid grid-cols-3 sm:flex sm:flex-row gap-1 mt-6 px-4">
-        <FooterItem href="https://twitter.com/pzrsaa" name="twitter" />
-        <FooterItem href="https://github.com/pzrsa" name="github" />
+      <footer className="flex flex-row gap-1 mt-6 px-4 justify-center">
+        <FooterItem href="https://twitter.com/pzrsaa" Icon={SiTwitter} />
+        <FooterItem href="https://github.com/pzrsa" Icon={SiGithub} />
         <FooterItem
           href="https://www.instagram.com/parsamesgarha"
-          name="instagram"
+          Icon={SiInstagram}
         />
         <FooterItem
           href="https://www.linkedin.com/in/parsamesgarha"
-          name="linkedin"
+          Icon={SiLinkedin}
         />
-        <FooterItem href="https://github.com/pzrsa/parsam.io" name="source" />
+        <FooterItem href="https://github.com/pzrsa/parsam.io" Icon={SiGit} />
       </footer>
     </div>
   );
 };
 
-const FooterItem: React.FC<{ href: string; name: string }> = ({
+const FooterItem: React.FC<{ href: string; Icon: IconType }> = ({
   href,
-  name,
+  Icon,
 }) => {
   return (
     <a
-      className="font-bold font-mono sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+      className="text-lg sm:text-xl hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
       href={href}
       rel="prefetch noreferrer"
       target="_blank"
     >
-      {name}
+      {<Icon />}
     </a>
   );
 };
