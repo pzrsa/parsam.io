@@ -42,19 +42,14 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt3890160",
   },
   {
-    title: "Spider-Man: Across the Spider-Verse",
-    imageID: "8Vt6mWEReuy4Of61Lnj5Xj704m8",
-    imdbID: "tt9362722",
-  },
-  {
     title: "The Dark Knight Rises",
     imageID: "hr0L2aueqlP2BYUblTTjmtn0hw4",
     imdbID: "tt1345836",
   },
   {
-    title: "Oppenheimer",
-    imageID: "8Gxv8gSFCU0XGDykEGv7zR1n2ua",
-    imdbID: "tt15398776",
+    title: "WALL·E",
+    imageID: "hbhFnRzzg6ZDmm8YAmxBnQpQIPh",
+    imdbID: "tt0910970",
   },
   {
     title: "Her",
@@ -67,6 +62,11 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0211915",
   },
   {
+    title: "Harry Potter and the Deathly Hallows: Part 2",
+    imageID: "c54HpQmuwXjHq2C9wmoACjxoom3",
+    imdbID: "tt1201607",
+  },
+  {
     title: "Pulp Fiction",
     imageID: "d5iIlFn5s0ImszYzBPb8JPIfbXD",
     imdbID: "tt0110912",
@@ -75,11 +75,6 @@ export const FAVOURITE_FILMS: Film[] = [
     title: "Inglourious Basterds",
     imageID: "7sfbEnaARXDDhKm0CZ7D7uc2sbo",
     imdbID: "tt0361748",
-  },
-  {
-    title: "Harry Potter and the Deathly Hallows: Part 2",
-    imageID: "c54HpQmuwXjHq2C9wmoACjxoom3",
-    imdbID: "tt1201607",
   },
   {
     title: "Drive",
@@ -107,6 +102,11 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt8772262",
   },
   {
+    title: "Oppenheimer",
+    imageID: "8Gxv8gSFCU0XGDykEGv7zR1n2ua",
+    imdbID: "tt15398776",
+  },
+  {
     title: "Scott Pilgrim vs. the World",
     imageID: "g5IoYeudx9XBEfwNL0fHvSckLBz",
     imdbID: "tt0446029",
@@ -132,14 +132,19 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt1853728",
   },
   {
-    title: "Parasite",
-    imageID: "7IiTTgloJzvGI1TAYymCfbfl3vT",
-    imdbID: "tt6751668",
+    title: "Spider-Man: Across the Spider-Verse",
+    imageID: "8Vt6mWEReuy4Of61Lnj5Xj704m8",
+    imdbID: "tt9362722",
   },
   {
     title: "Spirited Away",
     imageID: "39wmItIWsg5sZMyRUHLkWBcuVCM",
     imdbID: "tt0245429",
+  },
+  {
+    title: "Parasite",
+    imageID: "7IiTTgloJzvGI1TAYymCfbfl3vT",
+    imdbID: "tt6751668",
   },
   {
     title: "Past Lives",
@@ -155,11 +160,6 @@ export const FAVOURITE_FILMS: Film[] = [
     title: "The Notebook",
     imageID: "rNzQyW4f8B8cQeg7Dgj3n6eT5k9",
     imdbID: "tt0332280",
-  },
-  {
-    title: "The Devil Wears Prada",
-    imageID: "8912AsVuS7Sj915apArUFbv6F9L",
-    imdbID: "tt0458352",
   },
 ];
 
