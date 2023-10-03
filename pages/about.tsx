@@ -75,8 +75,7 @@ export default function About() {
             <h3>Fitness</h3>
             <ul>
               <li>
-                Currently training 4-5 days a week, mostly focusing on strength
-                and{" "}
+                I aim to train 4-5 days a week, mostly focusing on strength and{" "}
                 <ExternalLink
                   href="https://en.wikipedia.org/wiki/Muscle_hypertrophy"
                   name="hypertrophy"
@@ -84,14 +83,14 @@ export default function About() {
                 with the occasional cardio.{" "}
               </li>
               <li>
-                I&apos;m slowly transitioning away from the{" "}
+                I&apos;ve transitioned away from the{" "}
                 <ExternalLink
-                  href="https://www.muscleandstrength.com/workouts/the-ultimate-bro-split"
+                  href="https://www.google.com/search?q=bro+split"
                   name="Bro Split"
                 />{" "}
-                to a modified version of{" "}
+                to my own version of{" "}
                 <ExternalLink
-                  href="https://www.muscleandstrength.com/workouts/6-day-powerbuilding-split-meal-plan"
+                  href="https://www.google.com/search?q=push+pull+legs"
                   name="Push/Pull/Legs"
                 />
                 .{" "}
@@ -133,6 +132,7 @@ export default function About() {
           </div>
           <div>
             <h3>Favourites</h3>
+            <em>Sorted alphabetically, each one linking to its IMDB page.</em>
             <h4>Films</h4>
             <div className="grid grid-cols-4 gap-y-6 gap-x-6">
               {FAVOURITE_FILMS.map((film) => (
@@ -175,70 +175,6 @@ export default function About() {
                 </a>
               ))}
             </div>
-          </div>
-
-          <div>
-            <h3>Likes</h3>
-            <ul>
-              <li>
-                <ExternalLink
-                  href="https://github.com/pzrsa?tab=stars"
-                  name="Open source projects"
-                />
-                . It&apos;s fascinating that random people all over the internet
-                are able to come together to change the world.
-              </li>
-              <li>
-                Reading{" "}
-                <ExternalLink
-                  href="https://www.goodreads.com/review/list/125053326?page=1&shelf=%23ALL%23"
-                  name="books"
-                />{" "}
-                on my Kindle Paperwhite.
-              </li>
-              <li>
-                Mechanical keyboards. I use a keyboard daily, so it makes sense
-                for me to invest in tools that inspire me to use them more.
-              </li>
-              <li>
-                Typing on{" "}
-                <ExternalLink href="https://monkeytype.com" name="monkeytype" />
-                , I&apos;m actually addicted to it. Feel free to check out my
-                personal records on my{" "}
-                <ExternalLink
-                  href="https://monkeytype.com/profile/pzrsa"
-                  name="profile"
-                />
-                .
-              </li>
-              <li>
-                Mechanical watches and G-Shock&apos;s. I own a Seiko{" "}
-                <ExternalLink
-                  href="/images/articles/2022-photos/seiko.jpg"
-                  name="SNZG13K1"
-                />{" "}
-                and a G-Shock{" "}
-                <ExternalLink
-                  href="https://www.casio.com/intl/watches/gshock/product.GA-B2100-1A1/"
-                  name="GA-B2100-1A1"
-                />
-                . I love how boringly beautiful they are, which makes me feel
-                good wearing them.
-              </li>
-              <li>
-                Vi keybinds, I can&apos;t live without them as it simply makes
-                interacting with the computer a joy.
-              </li>
-              <li>
-                Consuming <i>informational</i> content at 2x speed.{" "}
-                <ExternalLink
-                  href="https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en"
-                  name="Video Speed Controller"
-                />{" "}
-                has completely changed the way I watch videos. And yes, I watch
-                other stuff at normal speed, I&apos;m not a psycho.
-              </li>
-            </ul>
           </div>
           <div>
             <h3>More Links</h3>
