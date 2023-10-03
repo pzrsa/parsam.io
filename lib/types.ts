@@ -10,14 +10,12 @@ export interface Post {
   description?: string;
 }
 
-export interface Film {
+interface Media {
   title: string;
   imageID: string;
   imdbID: string;
 }
 
-export interface Show {
-  title: string;
-  imageID: string;
-  imdbID: string;
-}
+export interface Film extends Media {}
+
+export interface Show extends Media {}
