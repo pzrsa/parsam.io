@@ -161,7 +161,7 @@ export const FAVOURITE_FILMS: Film[] = [
     imageID: "rNzQyW4f8B8cQeg7Dgj3n6eT5k9",
     imdbID: "tt0332280",
   },
-].toSorted((a, b) => a.title.localeCompare(b.title));
+].sort((a, b) => a.title.localeCompare(b.title));
 
 export const FAVOURITE_SHOWS: Show[] = [
   {
@@ -209,4 +209,4 @@ export const FAVOURITE_SHOWS: Show[] = [
     imageID: "5sPPUbeHytbTnaIVBNcCQ4p6XYY",
     imdbID: "tt14403178",
   },
-].toSorted((a, b) => a.title.localeCompare(b.title));
+].sort((a, b) => a.title.localeCompare(b.title));
