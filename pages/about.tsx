@@ -73,62 +73,92 @@ export default function About() {
           </div>
           <div>
             <h3>Fitness</h3>
-            <ul>
-              <li>
-                I aim to train 4-5 days a week, mostly focusing on strength and{" "}
-                <ExternalLink
-                  href="https://en.wikipedia.org/wiki/Muscle_hypertrophy"
-                  name="hypertrophy"
-                />{" "}
-                with the occasional cardio.{" "}
-              </li>
-              <li>
-                I&apos;ve transitioned away from the{" "}
-                <ExternalLink
-                  href="https://www.google.com/search?q=bro+split"
-                  name="Bro Split"
-                />{" "}
-                to my own version of{" "}
-                <ExternalLink
-                  href="https://www.google.com/search?q=push+pull+legs"
-                  name="Push/Pull/Legs"
-                />
-                .{" "}
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Supplements</h3>
-            <ul>
-              <li>
-                <ExternalLink
-                  href="https://www.optimumnutrition.com/en-gb/Products/Advanced-Fitness/Muscle-Building/Micronised-Creatine-Powder/p/creatine-micronized"
-                  name="Creatine Monohydrate"
-                />{" "}
-                (daily)
-              </li>
-              <li>
-                <ExternalLink
-                  href="https://www.optimumnutrition.com/en-gb/Products/Protein-Powders/Gold-Standard-100%25-Whey-Protein-/p/gold-standard-100-whey-protein"
-                  name="Whey Protein"
-                />{" "}
-                (daily)
-              </li>
-              <li>
-                <ExternalLink
-                  href="https://www.vitabiotics.com/products/wellman-original-tablets"
-                  name="Multivitamin"
-                />{" "}
-                (daily)
-              </li>
-              <li>
-                <ExternalLink
-                  href="https://www.vitabiotics.com/products/ultra-vitamin-d-2000iu-extra-strength-96-tablets"
-                  name="Vitamin D"
-                />{" "}
-                (daily)
-              </li>
-            </ul>
+            <div>
+              <h4>Workout Routine</h4>
+              <ul>
+                <li>
+                  I aim to train 4-5 days a week, mostly focusing on strength
+                  and{" "}
+                  <ExternalLink
+                    href="https://en.wikipedia.org/wiki/Muscle_hypertrophy"
+                    name="hypertrophy"
+                  />{" "}
+                  with the occasional cardio.{" "}
+                </li>
+                <li>
+                  I&apos;ve transitioned away from the{" "}
+                  <ExternalLink
+                    href="https://www.google.com/search?q=bro+split"
+                    name="Bro Split"
+                  />{" "}
+                  to my own version of{" "}
+                  <ExternalLink
+                    href="https://www.google.com/search?q=push+pull+legs"
+                    name="Push/Pull/Legs"
+                  />{" "}
+                  which is shown below. It&apos;s probably not the most optimal,
+                  but it&apos;s what works with the equipment accessible to me.
+                </li>
+              </ul>
+              <h5>Push</h5>
+              <ul>
+                <li>Flat Barbell Bench Press</li>
+                <li>Incline Dumbbell Bench Press</li>
+                <li>Seated Dumbbell Shoulder Press</li>
+                <li>Standing Straight Bar Tricep Pushdown</li>
+                <li>Standing Cable Chest Flyes</li>
+                <li>Dropset (max to 1kg) Lateral Raises</li>
+              </ul>
+              <h5>Pull</h5>
+              <ul>
+                <li>Conventional Deadlift</li>
+                <li>Seated Lat Pulldown</li>
+                <li>Seated Cable Row</li>
+                <li>Incline Dumbbell Bicep Curl</li>
+                <li>Standing Cable Face Pulls</li>
+                <li>Cable Bicep Curls</li>
+                <li>Cable Wrist Curls</li>
+              </ul>
+              <h5>Legs</h5>
+            </div>
+            <div>
+              <h4>Supplements</h4>
+              <ul>
+                <li>
+                  <ExternalLink
+                    href="https://www.myprotein.com/sports-nutrition/creatine-monohydrate-powder/10530050.html"
+                    name="Creatine Monohydrate"
+                  />
+                </li>
+                <li>
+                  <ExternalLink
+                    href="https://www.optimumnutrition.com/en-gb/Products/Protein-Powders/Gold-Standard-100%25-Whey-Protein-/p/gold-standard-100-whey-protein"
+                    name="Whey Protein"
+                  />
+                </li>
+                <li>
+                  <ExternalLink
+                    href="https://www.vitabiotics.com/products/wellman-original-tablets"
+                    name="Multivitamin"
+                  />
+                </li>
+                <li>
+                  <ExternalLink
+                    href="https://www.vitabiotics.com/products/ultra-vitamin-d-2000iu-extra-strength-96-tablets"
+                    name="Vitamin D"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p>jk, here&apos;s my Legs routine:</p>
+              <ul>
+                <li>Barbell Back Squat</li>
+                <li>Dumbbell Bulgarian Split Squat</li>
+                <li>Leg Extension Machine</li>
+                <li>Leg Press Machine</li>
+              </ul>
+            </div>
           </div>
           <div>
             <h3>Favourites</h3>
