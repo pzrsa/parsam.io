@@ -37,7 +37,7 @@ export default function About() {
         <PageTitle>About</PageTitle>
         <div className="prose dark:prose-invert">
           <div className="relative sm:flex sm:flex-row-reverse">
-            <div className="mx-auto w-60 h-60 sm:w-full sm:h-full ">
+            <div className="mx-auto w-60 h-60 sm:w-full sm:h-full">
               <Image className="rounded-full" src={me} alt="Parsa Mesgarha" />
             </div>
             <div className="prose dark:prose-invert mt-5 sm:mr-3 sm:mt-0">
