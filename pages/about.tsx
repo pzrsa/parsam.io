@@ -151,7 +151,7 @@ export default function About() {
               </ul>
             </div>
             <div>
-              <p>jk, here&apos;s my Legs routine:</p>
+              <p>jk, here&apos;s my Legs day:</p>
               <ul>
                 <li>Barbell Back Squat</li>
                 <li>Dumbbell Bulgarian Split Squat</li>
