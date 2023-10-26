@@ -33,7 +33,7 @@ const PostLayout: React.FC<PostProps> = ({ data }) => {
         {data.author ? (
           <meta
             property="og:image"
-            content={`https://parsam.io/images/notes/covers/${data.id}.jpg`}
+            content={`https://parsam.io/images/books/${data.id}.jpg`}
             key="og:image"
           />
         ) : (
@@ -53,7 +53,7 @@ const PostLayout: React.FC<PostProps> = ({ data }) => {
         {data.author ? (
           <meta
             name="twitter:image"
-            content={`https://parsam.io/images/notes/covers/${data.id}.jpg`}
+            content={`https://parsam.io/images/books/${data.id}.jpg`}
             key="twitter:image"
           />
         ) : (
@@ -94,7 +94,7 @@ const PostLayout: React.FC<PostProps> = ({ data }) => {
         <div className="aspect-w-6 aspect-h-8 overflow-hidden rounded-lg mx-12">
           <Image
             alt={data.title}
-            src={`/images/notes/covers/${data.id}.jpg`}
+            src={`/images/books/${data.id}.jpg`}
             layout="fill"
           />
         </div>

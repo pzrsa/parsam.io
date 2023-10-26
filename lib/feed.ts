@@ -32,7 +32,7 @@ export const generateFeed = () => {
       date: new Date(`${post.date}T19:19:19`),
     };
     if (post.author) {
-      item.image = `https://parsam.io/images/notes/covers/${post.id}.jpg`;
+      item.image = `https://parsam.io/images/books/${post.id}.jpg`;
     }
 
     feed.addItem(item);
