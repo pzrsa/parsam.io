@@ -77,9 +77,9 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0361748",
   },
   {
-    title: "Drive",
-    imageID: "602vevIURmpDfzbnv5Ubi6wIkQm",
-    imdbID: "tt0780504",
+    title: "Gone Girl",
+    imageID: "lv5xShBIDPe7m4ufdlV0IAc7Avk",
+    imdbID: "tt2267998",
   },
   {
     title: "Superbad",
