@@ -8,7 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.0.2",
+    "@vercel/analytics": "^1.1.1",
     "dayjs": "^1.11.10",
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
@@ -19,18 +19,18 @@
     "remark": "^14.0.3",
     "remark-external-links": "^9.0.1",
     "remark-html": "^15.0.2",
-    "swr": "^2.2.2"
+    "swr": "^2.2.4"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.10",
-    "@types/node": "^20.6.3",
-    "@types/react": "^18.2.22",
-    "autoprefixer": "^10.4.15",
+    "@types/node": "^20.8.9",
+    "@types/react": "^18.2.33",
+    "autoprefixer": "^10.4.16",
     "eslint": "8",
     "eslint-config-next": "latest",
-    "postcss": "^8.4.30",
-    "tailwindcss": "^3.3.3",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
     "typescript": "^5.2.2"
   }
 }
