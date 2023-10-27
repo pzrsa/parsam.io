@@ -137,9 +137,9 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt9362722",
   },
   {
-    title: "Spirited Away",
-    imageID: "39wmItIWsg5sZMyRUHLkWBcuVCM",
-    imdbID: "tt0245429",
+    title: "Killers of the Flower Moon",
+    imageID: "dB6Krk806zeqd0YNp2ngQ9zXteH",
+    imdbID: "tt5537002",
   },
   {
     title: "Parasite",
