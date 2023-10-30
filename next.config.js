@@ -1,7 +1,16 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["i.scdn.co", "image.tmdb.org"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.scdn.co",
+      },
+      {
+        protocol: "https",
+        hostname: "image.tmdb.org",
+      },
+    ],
   },
   async redirects() {
     return [
