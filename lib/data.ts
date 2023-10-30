@@ -205,8 +205,8 @@ export const FAVOURITE_SHOWS: Show[] = [
     imdbID: "tt1190634",
   },
   {
-    title: "BEEF",
-    imageID: "5sPPUbeHytbTnaIVBNcCQ4p6XYY",
-    imdbID: "tt14403178",
+    title: "Dave",
+    imageID: "iorStu3DHuscNfQiIyQomvMyO0h",
+    imdbID: "tt8531222",
   },
 ].sort((a, b) => a.title.localeCompare(b.title));
