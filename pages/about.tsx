@@ -161,9 +161,7 @@ export default function About() {
             </div>
           </div>
           <div>
-            <h3>Favourites</h3>
-            <em>Sorted alphabetically, each one linking to its IMDB page.</em>
-            <h4>Films</h4>
+            <h3>Favourite Films</h3>
             <div className="grid grid-cols-4 gap-y-6 gap-x-6">
               {FAVOURITE_FILMS.map((film) => (
                 <a
@@ -184,7 +182,7 @@ export default function About() {
                 </a>
               ))}
             </div>
-            <h4>Shows</h4>
+            <h3>Favourite Shows</h3>
             <div className="grid grid-cols-3 gap-y-6 gap-x-6">
               {FAVOURITE_SHOWS.map((show) => (
                 <a
