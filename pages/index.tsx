@@ -52,7 +52,7 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
             target="_blank"
           >
             <Image
-              className="rounded-full w-16 h-16 grayscale hover:grayscale-0 hover:animate-spin"
+              className="rounded-full w-16 h-16 grayscale hover:grayscale-0 hover:animate-spin motion-reduce:animate-none transition-all"
               src={me}
               alt="Parsa Mesgarha"
             />

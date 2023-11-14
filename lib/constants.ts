@@ -6,7 +6,6 @@ export const FEED_PATH = "./public/feed.atom";
 export const FONT_SOURCE_CODE_PRO = Source_Code_Pro({
   subsets: ["latin"],
 });
-
 export const FONT_SOURCE_SERIF = Source_Serif_4({
   subsets: ["latin"],
 });

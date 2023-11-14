@@ -6,7 +6,7 @@ export default class ParsaDocument extends Document {
     return (
       <Html
         lang="en"
-        className={`bg-white dark:bg-black text-black dark:text-white ${FONT_SOURCE_SERIF.className}`}
+        className="bg-white dark:bg-black text-black dark:text-white"
       >
         <Head>
           <link
