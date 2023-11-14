@@ -6,8 +6,7 @@ import { generateFeed } from "../lib/feed";
 import { getSortedPostData } from "../lib/posts";
 import { Post } from "../lib/types";
 import me from "../public/images/me.jpg";
-import Image from "next/image";
-import LegacyImage from "next/legacy/image";
+import Image from "next/legacy/image";
 import { FONT_SOURCE_CODE_PRO, FONT_SOURCE_SERIF } from "../lib/constants";
 import { FAVOURITE_FILMS, FAVOURITE_SHOWS } from "../lib/data";
 
@@ -45,19 +44,20 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
         />
       </Head>
       <div className="px-4">
-        <div className="flex gap-2 px-2">
+        <div className="flex gap-2 px-2 items-center">
           <a
             href="https://twitter.com/pzrsaa"
             rel="prefetch noreferrer"
             target="_blank"
+            className="w-16 h-16"
           >
             <Image
-              className="rounded-full w-16 h-16 grayscale hover:grayscale-0 hover:animate-spin motion-reduce:animate-none transition-all"
-              src={me}
               alt="Parsa Mesgarha"
+              src={me}
+              className="rounded-full grayscale hover:grayscale-0 hover:animate-spin motion-reduce:animate-none transition-all shadow-lg"
             />
           </a>
-          <div className="flex flex-col">
+          <div>
             <h1 className="text-3xl sm:text-4xl font-extrabold ">
               Hi, I&apos;m Parsa.
             </h1>
@@ -105,7 +105,7 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
           interesting enough to share.
         </p>
         <p>
-          If anything here piques your interests, don&apos;t hesitate to{" "}
+          If anything here piques your interest, don&apos;t hesitate to{" "}
           <ExternalLink href="mailto:hi@parsam.io" name="reach out" />!
         </p>
         <div>
@@ -208,7 +208,7 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
                 target="_blank"
               >
                 <div className="aspect-w-2 aspect-h-3 overflow-hidden rounded-lg cursor-pointer shadow-lg">
-                  <LegacyImage
+                  <Image
                     alt={film.title}
                     src={`https://image.tmdb.org/t/p/original/${film.imageID}.jpg`}
                     layout="fill"
@@ -229,7 +229,7 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
                 target="_blank"
               >
                 <div className="aspect-w-2 aspect-h-3 overflow-hidden rounded-lg cursor-pointer shadow-lg">
-                  <LegacyImage
+                  <Image
                     alt={show.title}
                     src={`https://image.tmdb.org/t/p/original/${show.imageID}.jpg`}
                     layout="fill"
