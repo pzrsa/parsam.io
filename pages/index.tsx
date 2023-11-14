@@ -49,12 +49,12 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
             href="https://twitter.com/pzrsaa"
             rel="prefetch noreferrer"
             target="_blank"
-            className="w-16 h-16"
+            className="w-16 h-16 rounded-full overflow-hidden shadow-lg"
           >
             <Image
               alt="Parsa Mesgarha"
               src={me}
-              className="rounded-full grayscale hover:grayscale-0 hover:animate-spin motion-reduce:animate-none transition-all shadow-lg"
+              className="grayscale hover:grayscale-0 hover:animate-spin motion-reduce:animate-none transition-all"
             />
           </a>
           <div>
