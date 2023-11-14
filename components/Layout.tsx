@@ -10,6 +10,7 @@ import {
   SiLinkedin,
   SiTwitter,
 } from "react-icons/si";
+import { FONT_SOURCE_CODE_PRO } from "../lib/constants";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
@@ -53,41 +54,39 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           key="twitter:image"
         />
       </Head>
-      <nav className="flex mb-6 gap-1 px-4 items-center">
+      <nav
+        className={`flex mb-6 gap-1 px-4 items-center ${FONT_SOURCE_CODE_PRO.className}`}
+      >
         <span className="flex-1">
           {pathname === "/" ? (
-            <span className="font-bold font-mono text-xl sm:text-2xl cursor-default p-2">
+            <span className="font-bold text-xl sm:text-2xl cursor-default p-2">
               Parsa Mesgarha
             </span>
           ) : (
             <Link
               href={"/"}
-              className="font-bold font-mono text-xl sm:text-2xl hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+              className="font-bold text-xl sm:text-2xl hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
             >
               Parsa Mesgarha
             </Link>
           )}
         </span>
         {pathname === "/about" ? (
-          <span className="font-bold font-mono sm:text-lg cursor-default p-2">
-            about
-          </span>
+          <span className="font-bold sm:text-lg cursor-default p-2">about</span>
         ) : (
           <Link
             href={"/about"}
-            className="font-bold font-mono sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+            className="font-bold sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
           >
             about
           </Link>
         )}
         {pathname === "/blog" ? (
-          <span className="font-bold font-mono sm:text-lg cursor-default p-2">
-            blog
-          </span>
+          <span className="font-bold sm:text-lg cursor-default p-2">blog</span>
         ) : (
           <Link
             href={"/blog"}
-            className="font-bold font-mono sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+            className="font-bold sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
           >
             blog
           </Link>

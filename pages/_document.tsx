@@ -1,11 +1,12 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
+import { FONT_SOURCE_SERIF } from "../lib/constants";
 
 export default class ParsaDocument extends Document {
   render() {
     return (
       <Html
         lang="en"
-        className="bg-white dark:bg-black text-black dark:text-white"
+        className={`bg-white dark:bg-black text-black dark:text-white ${FONT_SOURCE_SERIF.className}`}
       >
         <Head>
           <link
