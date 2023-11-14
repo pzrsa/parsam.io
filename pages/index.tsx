@@ -5,6 +5,9 @@ import NowPlaying from "../components/NowPlaying";
 import { generateFeed } from "../lib/feed";
 import { getSortedPostData } from "../lib/posts";
 import { Post } from "../lib/types";
+import me from "../public/images/me.jpg";
+import Image from "next/image";
+import { FONT_SOURCE_CODE_PRO, FONT_SOURCE_SERIF } from "../lib/constants";
 
 export const getStaticProps: GetStaticProps = async () => {
   generateFeed();
@@ -39,22 +42,35 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
           key="twitter:image"
         />
       </Head>
-      <div className="gap-1 px-4">
-        <div className="px-2">
-          <h1 className="text-3xl sm:text-4xl font-extrabold ">
-            Hi, I&apos;m Parsa.
-          </h1>
-          <p className="text-sm sm:text-lg font-mono font-semibold text-neutral-600 dark:text-neutral-400">
-            Software Engineer at{" "}
-            <span className="font-serif">
-              <span className="text-google-blue">G</span>
-              <span className="text-google-red">o</span>
-              <span className="text-google-yellow">o</span>
-              <span className="text-google-blue">g</span>
-              <span className="text-google-green">l</span>
-              <span className="text-google-red">e</span>
-            </span>
-          </p>
+      <div className="px-4">
+        <div className="flex gap-2 px-2">
+          <a
+            href="https://twitter.com/pzrsaa"
+            rel="prefetch noreferrer"
+            target="_blank"
+          >
+            <Image
+              className="rounded-full w-16 h-16 grayscale hover:grayscale-0 hover:animate-spin"
+              src={me}
+              alt="Parsa Mesgarha"
+            />
+          </a>
+          <div className="flex flex-col">
+            <h1 className="text-3xl sm:text-4xl font-extrabold ">
+              Hi, I&apos;m Parsa.
+            </h1>
+            <p className="text-sm sm:text-lg font-semibold text-neutral-600 dark:text-neutral-400">
+              Software Engineer at{" "}
+              <span className={`${FONT_SOURCE_CODE_PRO.className}`}>
+                <span className="text-google-blue">G</span>
+                <span className="text-google-red">o</span>
+                <span className="text-google-yellow">o</span>
+                <span className="text-google-blue">g</span>
+                <span className="text-google-green">l</span>
+                <span className="text-google-red">e</span>
+              </span>
+            </p>
+          </div>
         </div>
         <div className="max-w-fit my-6">
           <NowPlaying />
