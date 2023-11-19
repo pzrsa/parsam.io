@@ -20,11 +20,7 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-interface IndexProps {
-  posts: Post[];
-}
-
-const Index: React.FC<IndexProps> = ({ posts }) => {
+export default function Index() {
   const title = "Parsa Mesgarha";
   const image = "index.jpg";
 
@@ -44,24 +40,24 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
         />
       </Head>
       <div className="px-4">
-        <div className="flex gap-2 px-2 items-center">
+        <div className="flex items-center gap-2 px-2">
           <a
             href="https://twitter.com/pzrsaa"
             rel="prefetch noreferrer"
             target="_blank"
-            className="w-16 h-16 rounded-full overflow-hidden shadow-lg"
+            className="h-16 w-16 overflow-hidden rounded-full shadow-lg"
           >
             <Image
               alt="Parsa Mesgarha"
               src={me}
-              className="grayscale hover:grayscale-0 hover:animate-spin motion-reduce:animate-none transition-all"
+              className="grayscale transition-all hover:animate-spin hover:grayscale-0 motion-reduce:animate-none"
             />
           </a>
           <div>
-            <h1 className="text-3xl sm:text-4xl font-extrabold ">
+            <h1 className="text-3xl font-extrabold sm:text-4xl ">
               Hi, I&apos;m Parsa.
             </h1>
-            <p className="text-sm sm:text-lg font-semibold text-neutral-600 dark:text-neutral-400">
+            <p className="text-sm font-semibold text-neutral-600 dark:text-neutral-400 sm:text-lg">
               Software Engineer at{" "}
               <span className={`${FONT_SOURCE_CODE_PRO.className}`}>
                 <span className="text-google-blue">G</span>
@@ -74,7 +70,7 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
             </p>
           </div>
         </div>
-        <div className="max-w-fit my-6">
+        <div className="my-6 max-w-fit">
           <NowPlaying />
         </div>
       </div>
@@ -198,7 +194,7 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
         </div>
         <div>
           <h3>Favourite Films</h3>
-          <div className="grid grid-cols-4 gap-y-6 gap-x-6">
+          <div className="grid grid-cols-4 gap-x-6 gap-y-6">
             {FAVOURITE_FILMS.map((film) => (
               <a
                 href={`https://www.imdb.com/title/${film.imdbID}`}
@@ -207,19 +203,19 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
                 rel="prefetch noreferrer"
                 target="_blank"
               >
-                <div className="aspect-w-2 aspect-h-3 overflow-hidden rounded-lg cursor-pointer shadow-lg">
+                <div className="aspect-w-2 aspect-h-3 cursor-pointer overflow-hidden rounded-lg shadow-lg">
                   <Image
                     alt={film.title}
                     src={`https://image.tmdb.org/t/p/original/${film.imageID}.jpg`}
                     layout="fill"
-                    className="group-hover:opacity-75 transition-all"
+                    className="transition-all group-hover:opacity-75"
                   />
                 </div>
               </a>
             ))}
           </div>
           <h3>Favourite Shows</h3>
-          <div className="grid grid-cols-3 gap-y-6 gap-x-6">
+          <div className="grid grid-cols-3 gap-x-6 gap-y-6">
             {FAVOURITE_SHOWS.map((show) => (
               <a
                 href={`https://www.imdb.com/title/${show.imdbID}`}
@@ -228,12 +224,12 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
                 rel="prefetch noreferrer"
                 target="_blank"
               >
-                <div className="aspect-w-2 aspect-h-3 overflow-hidden rounded-lg cursor-pointer shadow-lg">
+                <div className="aspect-w-2 aspect-h-3 cursor-pointer overflow-hidden rounded-lg shadow-lg">
                   <Image
                     alt={show.title}
                     src={`https://image.tmdb.org/t/p/original/${show.imageID}.jpg`}
                     layout="fill"
-                    className="group-hover:opacity-75 transition-all"
+                    className="transition-all group-hover:opacity-75"
                   />
                 </div>
               </a>
@@ -278,7 +274,7 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
       </div>
     </>
   );
-};
+}
 
 interface ExternalLinkProps {
   href: string;
@@ -292,5 +288,3 @@ const ExternalLink: React.FC<ExternalLinkProps> = ({ href, name }) => {
     </a>
   );
 };
-
-export default Index;
