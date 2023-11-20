@@ -10,7 +10,7 @@ import {
   SiLinkedin,
   SiTwitter,
 } from "react-icons/si";
-import { FONT_SOURCE_CODE_PRO, FONT_SOURCE_SERIF } from "../lib/constants";
+import { FONT_BRICOLAGE, FONT_SOURCE_CODE_PRO } from "../lib/constants";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
@@ -22,7 +22,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const image = "/images/me.jpg";
 
   return (
-    <div className={`max-w-2xl mx-auto my-8 ${FONT_SOURCE_SERIF.className}`}>
+    <div className={`max-w-2xl mx-auto my-8 ${FONT_BRICOLAGE.className}`}>
       <Head>
         <meta name="robots" content="all" />
         <meta content={description} name="description" />

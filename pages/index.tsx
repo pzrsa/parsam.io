@@ -1,14 +1,13 @@
 import type { GetStaticProps } from "next";
 import Head from "next/head";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import NowPlaying from "../components/NowPlaying";
+import { FONT_SOURCE_CODE_PRO } from "../lib/constants";
+import { FAVOURITE_FILMS, FAVOURITE_SHOWS } from "../lib/data";
 import { generateFeed } from "../lib/feed";
 import { getSortedPostData } from "../lib/posts";
-import { Post } from "../lib/types";
 import me from "../public/images/me.jpg";
-import Image from "next/legacy/image";
-import { FONT_SOURCE_CODE_PRO, FONT_SOURCE_SERIF } from "../lib/constants";
-import { FAVOURITE_FILMS, FAVOURITE_SHOWS } from "../lib/data";
 
 export const getStaticProps: GetStaticProps = async () => {
   generateFeed();

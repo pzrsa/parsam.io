@@ -1,5 +1,4 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
-import { FONT_SOURCE_SERIF } from "../lib/constants";
 
 export default class ParsaDocument extends Document {
   render() {
