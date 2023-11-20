@@ -6,7 +6,6 @@ import DateFormat from "../components/Date";
 import PageTitle from "../components/PageTitle";
 import { getSortedPostData } from "../lib/posts";
 import { Post } from "../lib/types";
-import { FONT_SOURCE_CODE_PRO } from "../lib/constants";
 
 export const getStaticProps: GetStaticProps = async () => {
   const posts = getSortedPostData();
@@ -76,9 +75,7 @@ const Blog: React.FC<BlogProps> = ({ posts }) => {
             return (
               <li key={post.id}>
                 {firstForYear && (
-                  <span
-                    className={`font-bold flex justify-end mb-3 ${FONT_SOURCE_CODE_PRO.className}`}
-                  >
+                  <span className="font-bold flex justify-end mb-3">
                     {year}
                   </span>
                 )}
@@ -102,9 +99,7 @@ const Blog: React.FC<BlogProps> = ({ posts }) => {
                         </span>
                       )}
                     </span>
-                    <span
-                      className={`text-neutral-600 dark:text-neutral-400 ${FONT_SOURCE_CODE_PRO.className}`}
-                    >
+                    <span className="text-neutral-600 dark:text-neutral-400">
                       <DateFormat dateString={post.date} format="MMM D" />
                     </span>
                   </span>

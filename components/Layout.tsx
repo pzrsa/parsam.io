@@ -10,7 +10,7 @@ import {
   SiLinkedin,
   SiTwitter,
 } from "react-icons/si";
-import { FONT_BRICOLAGE, FONT_SOURCE_CODE_PRO } from "../lib/constants";
+import { FONT_BRICOLAGE } from "../lib/constants";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
@@ -54,9 +54,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           key="twitter:image"
         />
       </Head>
-      <nav
-        className={`flex mb-6 gap-1 px-4 items-center ${FONT_SOURCE_CODE_PRO.className}`}
-      >
+      <nav className="flex mb-6 gap-1 px-4 items-center">
         <span className="flex-1">
           {pathname === "/" ? (
             <span className="font-bold text-xl sm:text-2xl cursor-default p-2">

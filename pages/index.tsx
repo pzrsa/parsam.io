@@ -3,7 +3,6 @@ import Head from "next/head";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import NowPlaying from "../components/NowPlaying";
-import { FONT_SOURCE_CODE_PRO } from "../lib/constants";
 import { FAVOURITE_FILMS, FAVOURITE_SHOWS } from "../lib/data";
 import { generateFeed } from "../lib/feed";
 import { getSortedPostData } from "../lib/posts";
@@ -58,7 +57,7 @@ export default function Index() {
             </h1>
             <p className="text-sm font-semibold text-neutral-600 dark:text-neutral-400 sm:text-lg">
               Software Engineer at{" "}
-              <span className={`${FONT_SOURCE_CODE_PRO.className}`}>
+              <span>
                 <span className="text-google-blue">G</span>
                 <span className="text-google-red">o</span>
                 <span className="text-google-yellow">o</span>

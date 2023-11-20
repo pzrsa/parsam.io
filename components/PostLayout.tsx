@@ -3,7 +3,6 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 import { Post as PostType } from "../lib/types";
 import Date from "./Date";
-import { FONT_SOURCE_CODE_PRO } from "../lib/constants";
 
 interface PostProps {
   data: PostType;
@@ -66,9 +65,7 @@ const PostLayout: React.FC<PostProps> = ({ data }) => {
           {data.title}
         </h1>
         <div className="flex gap-3 items-center">
-          <span
-            className={`text-neutral-600 dark:text-neutral-400 flex-1 ${FONT_SOURCE_CODE_PRO.className}`}
-          >
+          <span className="text-neutral-600 dark:text-neutral-400 flex-1">
             {data.author ? (
               <>
                 {data.author}
@@ -82,7 +79,7 @@ const PostLayout: React.FC<PostProps> = ({ data }) => {
           <span>
             <Link
               href={"/blog"}
-              className={`font-bold hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2 ${FONT_SOURCE_CODE_PRO.className}`}
+              className="font-bold hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
             >
               Back
             </Link>
