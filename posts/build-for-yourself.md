@@ -1,6 +1,6 @@
 ---
 date: "2023-11-27"
-title: "Build for yourself, the rest will figure itself out"
+title: "Build for yourself, all else will follow"
 ---
 
 I recently saw a [clip](https://youtu.be/PW-t3DEi-Wg?t=43) of Tarantino saying he watches his own films, and when asked why, he said something that is just perfect:
