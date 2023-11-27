@@ -94,9 +94,9 @@ export default function Index() {
           >
             Android
           </a>
-          . On this website, I have a <Link href="/blog">blog</Link> writing
-          notes on the books I&apos;ve read, and articles on stuff I find
-          interesting enough to share.
+          . I have a <Link href="/blog">blog</Link> writing notes on the books
+          I&apos;ve read, and articles on stuff I find interesting enough to
+          share.
         </p>
         <p>
           If anything here piques your interest, don&apos;t hesitate to{" "}
