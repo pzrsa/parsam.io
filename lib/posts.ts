@@ -58,7 +58,10 @@ export const getPostData = async (id: string) => {
 
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
-    .use(remarkExternalLinks, { target: "_blank", rel: "prefetch noreferrer" })
+    .use(remarkExternalLinks as any, {
+      target: "_blank",
+      rel: "prefetch noreferrer",
+    })
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
