@@ -75,6 +75,11 @@ export const FAVOURITE_SHOWS: Show[] = [
     imdbID: "tt6741278",
   },
   {
+    title: "The Inbetweeners",
+    imageID: "qNmcaXDndOkY6v9QiJjnxQD09GJ",
+    imdbID: "tt1220617",
+  },
+  {
     title: "Dave",
     imageID: "iorStu3DHuscNfQiIyQomvMyO0h",
     imdbID: "tt8531222",
@@ -98,11 +103,6 @@ export const FAVOURITE_SHOWS: Show[] = [
     title: "Top Boy",
     imageID: "cfqHWQQDwvKT8Xoe0AXzHBXcF1u",
     imdbID: "tt1830379",
-  },
-  {
-    title: "The Boys",
-    imageID: "mY7SeH4HFFxW1hiI6cWuwCRKptN",
-    imdbID: "tt1190634",
   },
   {
     title: "Community",
