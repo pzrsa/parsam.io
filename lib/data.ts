@@ -2,14 +2,14 @@ import { Film, Show } from "./types";
 
 export const FAVOURITE_FILMS: Film[] = [
   {
-    title: "The Social Network",
-    imageID: "n0ybibhJtQ5icDqTp8eRytcIHJx",
-    imdbID: "tt1285016",
-  },
-  {
     title: "La La Land",
     imageID: "uDO8zWDhfWwoFdKS4fzkUJt0Rf0",
     imdbID: "tt3783958",
+  },
+  {
+    title: "The Social Network",
+    imageID: "n0ybibhJtQ5icDqTp8eRytcIHJx",
+    imdbID: "tt1285016",
   },
   {
     title: "The Dark Knight",
@@ -37,9 +37,14 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt4633694",
   },
   {
-    title: "Harry Potter and the Deathly Hallows: Part 2",
-    imageID: "c54HpQmuwXjHq2C9wmoACjxoom3",
-    imdbID: "tt1201607",
+    title: "WALL·E",
+    imageID: "hbhFnRzzg6ZDmm8YAmxBnQpQIPh",
+    imdbID: "tt0910970",
+  },
+  {
+    title: "Coco",
+    imageID: "gGEsBPAijhVUFoiNpgZXqRVWJt2",
+    imdbID: "tt2380307",
   },
   {
     title: "Inglourious Basterds",
@@ -47,19 +52,14 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0361748",
   },
   {
-    title: "WALL·E",
-    imageID: "hbhFnRzzg6ZDmm8YAmxBnQpQIPh",
-    imdbID: "tt0910970",
+    title: "Harry Potter and the Deathly Hallows: Part 2",
+    imageID: "c54HpQmuwXjHq2C9wmoACjxoom3",
+    imdbID: "tt1201607",
   },
   {
     title: "Whiplash",
     imageID: "7fn624j5lj3xTme2SgiLCeuedmO",
     imdbID: "tt2582802",
-  },
-  {
-    title: "Pulp Fiction",
-    imageID: "d5iIlFn5s0ImszYzBPb8JPIfbXD",
-    imdbID: "tt0110912",
   },
 ];
 
