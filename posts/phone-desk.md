@@ -11,4 +11,4 @@ So yeah, that's the main benefit from doing this I guess, and I suggest you give
 
 It's nothing groundbreaking, but you'd be surprised with how many people sleep right next to their phone and think it's ok.
 
-![My phone on my desk](/images/articles/phone-desk/phone.jpg)
+![My phone on my desk](/images/blog/phone-desk/phone.jpg)

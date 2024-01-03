@@ -7,7 +7,7 @@ Hi, I just wanted to make this short post sharing that I've joined Google as a S
 
 My official start date is on 6 September 2021 and I'll be taking a 3 month bootcamp beforehand at [Makers](https://makers.tech/). Then, when 2022 comes around I'll be working in their head office in London which is pretty cool.
 
-![Google start date countdown](/images/articles/joined-google/google-onboarding.jpeg)
+![Google start date countdown](/images/blog/joined-google/google-onboarding.jpeg)
 
 Just for some context, I applied back in late June at the last minute and it took 2 months for the entire selection process. It was a bit nerve-racking, but I did learn a lot in the whole interviewing process. I won't go into much detail here, but I'm looking to make a long video or article just breaking down the entire process as there is not much out there for apprenticeships in engineering roles.
 
