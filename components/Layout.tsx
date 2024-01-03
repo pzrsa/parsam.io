@@ -3,13 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/router";
 import { IconType } from "react-icons";
-import {
-  SiGit,
-  SiGithub,
-  SiInstagram,
-  SiLinkedin,
-  SiTwitter,
-} from "react-icons/si";
+import { SiGit, SiGithub, SiInstagram, SiLinkedin, SiX } from "react-icons/si";
 import { FONT_BRICOLAGE } from "../lib/constants";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -82,7 +76,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       </nav>
       <main>{children}</main>
       <footer className="flex flex-row gap-1 mt-6 px-4 justify-center">
-        <FooterItem href="https://twitter.com/pzrsaa" Icon={SiTwitter} />
+        <FooterItem href="https://twitter.com/pzrsaa" Icon={SiX} />
         <FooterItem href="https://github.com/pzrsa" Icon={SiGithub} />
         <FooterItem
           href="https://www.instagram.com/parsamesgarha"
