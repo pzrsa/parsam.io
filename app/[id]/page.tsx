@@ -46,7 +46,7 @@ export default async function Page({ params }: { params: { id: string } }) {
           {post.title}
         </h1>
         <div className="flex gap-3 items-center">
-          <span className="text-neutral-600 dark:text-neutral-400 flex-1">
+          <span className="text-zinc-600 dark:text-zinc-400 flex-1">
             {post.author ? (
               <>
                 {post.author}
@@ -60,7 +60,7 @@ export default async function Page({ params }: { params: { id: string } }) {
           <span>
             <Link
               href={"/blog"}
-              className="font-bold hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+              className="font-bold hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2"
             >
               Back
             </Link>

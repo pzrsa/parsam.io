@@ -66,7 +66,7 @@ const FooterItem: React.FC<{ href: string; Icon: IconType }> = ({
 }) => {
   return (
     <a
-      className="text-lg sm:text-xl hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+      className="text-lg sm:text-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2"
       href={href}
       rel="prefetch noreferrer"
       target="_blank"

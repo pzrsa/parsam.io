@@ -19,7 +19,6 @@ const config: Config = {
       colors: {
         white: "#fff",
         black: "#111",
-        blackHover: "#222",
         google: {
           blue: "#4885ed",
           red: "#db3236",
@@ -30,8 +29,8 @@ const config: Config = {
       typography: (theme: any) => ({
         DEFAULT: {
           css: {
-            color: theme("colors.black"),
             fontSize: rem(17),
+            color: theme("colors.black"),
             a: {
               color: theme("colors.blue.600"),
               fontWeight: "700",
@@ -43,7 +42,6 @@ const config: Config = {
         },
         invert: {
           css: {
-            fontSize: rem(17),
             color: theme("colors.white"),
             a: {
               color: theme("colors.blue.500"),

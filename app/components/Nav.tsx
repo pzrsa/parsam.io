@@ -16,7 +16,7 @@ export default function Nav() {
         ) : (
           <Link
             href={"/"}
-            className="font-bold text-xl sm:text-2xl hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+            className="font-bold text-xl sm:text-2xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2"
           >
             Parsa Mesgarha
           </Link>
@@ -27,7 +27,7 @@ export default function Nav() {
       ) : (
         <Link
           href={"/blog"}
-          className="font-bold sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+          className="font-bold sm:text-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2"
         >
           blog
         </Link>

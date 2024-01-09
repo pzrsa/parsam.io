@@ -34,7 +34,7 @@ const NowPlaying: React.FC = () => {
           href={data.songUrl}
           rel="prefetch noreferrer"
           target="_blank"
-          className="flex items-baseline gap-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+          className="flex items-baseline gap-2 cursor-pointer hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2"
         >
           <span>
             <SpotifyIcon />
@@ -45,7 +45,7 @@ const NowPlaying: React.FC = () => {
           </span>
         </a>
       ) : (
-        <p className="flex items-baseline gap-2 cursor-default hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2">
+        <p className="flex items-baseline gap-2 cursor-default hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2">
           <span>
             <SpotifyIcon />
           </span>

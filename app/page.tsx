@@ -21,7 +21,6 @@ export default function Page() {
             <Image
               alt="Parsa Mesgarha"
               src={me}
-              placeholder="blur"
               className="grayscale transition-all hover:animate-spin hover:grayscale-0 motion-reduce:animate-none"
             />
           </a>
@@ -29,7 +28,7 @@ export default function Page() {
             <h1 className="text-3xl font-extrabold sm:text-4xl ">
               Hi, I&apos;m Parsa.
             </h1>
-            <p className="text-sm font-semibold text-neutral-600 dark:text-neutral-400 sm:text-lg">
+            <p className="text-sm font-semibold text-zinc-600 dark:text-zinc-400 sm:text-lg">
               Software Engineer at{" "}
               <span>
                 <span className="text-google-blue">G</span>

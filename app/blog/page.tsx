@@ -28,7 +28,7 @@ export default function Page() {
             </span>
             <a
               href="/feed.atom"
-              className="sm:text-lg hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2"
+              className="sm:text-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2"
             >
               <SiRss />
             </a>
@@ -52,7 +52,7 @@ export default function Page() {
                 )}
                 <Link href={`/${post.id}`}>
                   <span
-                    className={`flex items-baseline hover:bg-gray-100 dark:hover:bg-blackHover transition-all rounded-sm p-2 gap-6 ${
+                    className={`flex items-baseline hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2 gap-6 ${
                       lastForYear ? "mb-4" : ""
                     }`}
                   >
@@ -60,17 +60,17 @@ export default function Page() {
                       <span className="font-semibold">{post.title}</span>
                       {post.author && (
                         <span>
-                          <span className="text-neutral-600 dark:text-neutral-400">
+                          <span className="text-zinc-600 dark:text-zinc-400">
                             {" // "}
                             {post.author}
                           </span>
-                          <div className="mt-2 font-light text-neutral-800 dark:text-neutral-200">
+                          <div className="mt-2 font-light text-zinc-800 dark:text-zinc-200">
                             {post.description}
                           </div>
                         </span>
                       )}
                     </span>
-                    <span className="text-neutral-600 dark:text-neutral-400">
+                    <span className="text-zinc-600 dark:text-zinc-400">
                       <DateFormat dateString={post.date} format="MMM D" />
                     </span>
                   </span>
