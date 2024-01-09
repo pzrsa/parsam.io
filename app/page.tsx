@@ -1,7 +1,7 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
 import me from "../public/images/me.jpg";
-import NowPlaying from "./components/now-playing";
+import NowPlaying from "./components/NowPlaying";
 import { FAVOURITE_FILMS, FAVOURITE_SHOWS } from "./lib/data";
 import { generateFeed } from "./lib/feed";
 

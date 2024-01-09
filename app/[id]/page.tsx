@@ -1,6 +1,6 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
-import DateFormat from "../components/date-format";
+import DateFormat from "../components/DateFormat";
 import { getAllPostIds, getPostData } from "../lib/posts";
 
 import type { Metadata } from "next";
