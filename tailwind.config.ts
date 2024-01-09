@@ -1,11 +1,13 @@
-const round = (num) =>
+import type { Config } from "tailwindcss";
+
+const round = (num: any) =>
   num
     .toFixed(7)
     .replace(/(\.[0-9]+?)0+$/, "$1")
     .replace(/\.0$/, "");
-const rem = (px) => `${round(px / 16)}rem`;
+const rem = (px: any) => `${round(px / 16)}rem`;
 
-module.exports = {
+const config: Config = {
   darkMode: "media",
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -25,7 +27,7 @@ module.exports = {
           green: "#3cba54",
         },
       },
-      typography: (theme) => ({
+      typography: (theme: any) => ({
         DEFAULT: {
           css: {
             color: theme("colors.black"),
@@ -59,3 +61,5 @@ module.exports = {
     require("@tailwindcss/aspect-ratio"),
   ],
 };
+
+export default config;
