@@ -40,14 +40,7 @@ export const getSortedPostData = () => {
 
 export const getAllPostIds = () => {
   const fileNames = fs.readdirSync(POSTS_DIRECTORY);
-
-  return fileNames.map((fileName) => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, ""),
-      },
-    };
-  });
+  return fileNames.map((fileName) => ({ id: fileName.replace(/\.md$/, "") }));
 };
 
 export const getPostData = async (id: string): Promise<Post> => {

@@ -36,13 +36,8 @@ export async function generateStaticParams() {
   return paths;
 }
 
-async function getPost(id: string) {
-  const post = await getPostData(id);
-  return post;
-}
-
 export default async function Page({ params }: { params: { id: string } }) {
-  const post = await getPost(params.id);
+  const post = await getPostData(params.id);
 
   return (
     <section>
