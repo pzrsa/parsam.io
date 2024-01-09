@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { SiRss } from "react-icons/si";
-import DateFormat from "../components/DateFormat";
+import DateFormat from "../components/date-format";
 import { getSortedPostData } from "../lib/posts";
 import { Post } from "../lib/types";
 

@@ -2,7 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 import { IconType } from "react-icons";
 import { SiGit, SiGithub, SiInstagram, SiLinkedin, SiX } from "react-icons/si";
-import Nav from "./components/Nav";
+import Nav from "./components/nav";
 import "./globals.css";
 import { FONT_BRICOLAGE } from "./lib/constants";
 
