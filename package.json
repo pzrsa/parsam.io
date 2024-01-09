@@ -19,19 +19,19 @@
     "remark": "^14.0.3",
     "remark-external-links": "^9.0.1",
     "remark-html": "^15.0.2",
-    "sharp": "^0.33.0",
+    "sharp": "^0.33.1",
     "swr": "^2.2.4"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.10",
-    "@types/node": "^20.10.4",
-    "@types/react": "^18.2.45",
+    "@types/node": "^20.10.7",
+    "@types/react": "^18.2.47",
     "autoprefixer": "^10.4.16",
     "eslint": "8",
     "eslint-config-next": "latest",
-    "postcss": "^8.4.32",
-    "tailwindcss": "^3.3.6",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   }
 }
