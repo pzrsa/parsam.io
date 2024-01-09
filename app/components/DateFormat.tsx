@@ -6,9 +6,9 @@ interface DateProps {
   format: string;
 }
 
-const Date: React.FC<DateProps> = ({ dateString, format }) => {
+const DateFormat: React.FC<DateProps> = ({ dateString, format }) => {
   dayjs.extend(customParseFormat);
   return <time dateTime={dateString}>{dayjs(dateString).format(format)}</time>;
 };
 
-export default Date;
+export default DateFormat;

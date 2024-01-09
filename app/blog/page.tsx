@@ -1,59 +1,30 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import Link from "next/link";
-import type { GetStaticProps } from "next/types";
 import { SiRss } from "react-icons/si";
-import DateFormat from "../components/Date";
-import PageTitle from "../components/PageTitle";
+import DateFormat from "../components/DateFormat";
 import { getSortedPostData } from "../lib/posts";
 import { Post } from "../lib/types";
 
-export const getStaticProps: GetStaticProps = async () => {
-  const posts = getSortedPostData();
-  return {
-    props: {
-      posts,
-    },
-  };
+export const metadata: Metadata = {
+  title: "Blog",
+  openGraph: {
+    images: ["https://parsam.io/images/og/blog.jpg"],
+  },
+  twitter: {
+    images: ["https://parsam.io/images/og/blog.jpg"],
+  },
 };
 
-interface BlogProps {
-  posts: Post[];
-}
-
-const Blog: React.FC<BlogProps> = ({ posts }) => {
-  const title = "Blog - Parsa Mesgarha";
-  const image = "blog.jpg";
+export default function Page() {
+  const posts = getSortedPostData() as Post[];
 
   return (
     <>
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={title} />
-        <meta property="og:site_name" content={title} key="og:site_name" />
-        <meta property="og:title" content={title} key="og:title" />
-        <meta property="og:description" content={title} key="og:description" />
-        <meta
-          property="og:image"
-          content={`https://parsam.io/images/og/${image}`}
-          key="og:image"
-        />
-        <meta name="twitter:title" content={title} key="twitter:title" />
-        <meta
-          name="twitter:description"
-          content={title}
-          key="twitter:description"
-        />
-        <meta
-          name="twitter:image"
-          content={`https://parsam.io/images/og/${image}`}
-          key="twitter:image"
-        />
-      </Head>
       <div className="px-4">
         <div className="px-2">
           <span className="flex gap-1 items-baseline">
             <span className="flex-1">
-              <PageTitle>Blog</PageTitle>
+              <h1 className="text-3xl sm:text-4xl font-extrabold mb-8">Blog</h1>
             </span>
             <a
               href="/feed.atom"
@@ -111,9 +82,7 @@ const Blog: React.FC<BlogProps> = ({ posts }) => {
       </div>
     </>
   );
-};
-
-export default Blog;
+}
 
 interface ExternalLinkProps {
   href: string;

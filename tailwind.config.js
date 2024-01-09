@@ -8,6 +8,7 @@ const rem = (px) => `${round(px / 16)}rem`;
 module.exports = {
   darkMode: "media",
   content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],

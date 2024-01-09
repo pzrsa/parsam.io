@@ -5,6 +5,7 @@ import { remark } from "remark";
 import remarkExternalLinks from "remark-external-links";
 import html from "remark-html";
 import { POSTS_DIRECTORY } from "./constants";
+import { Post } from "./types";
 
 export const getSortedPostData = () => {
   const fileNames = fs.readdirSync(POSTS_DIRECTORY);
@@ -49,7 +50,7 @@ export const getAllPostIds = () => {
   });
 };
 
-export const getPostData = async (id: string) => {
+export const getPostData = async (id: string): Promise<Post> => {
   const fullPath = path.join(POSTS_DIRECTORY, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
@@ -70,5 +71,5 @@ export const getPostData = async (id: string) => {
     id,
     contentHtml,
     ...matterResult.data,
-  };
+  } as Post;
 };

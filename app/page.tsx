@@ -1,53 +1,27 @@
-import type { GetStaticProps } from "next";
-import Head from "next/head";
 import Image from "next/legacy/image";
 import Link from "next/link";
-import NowPlaying from "../components/NowPlaying";
-import { FAVOURITE_FILMS, FAVOURITE_SHOWS } from "../lib/data";
-import { generateFeed } from "../lib/feed";
-import { getSortedPostData } from "../lib/posts";
 import me from "../public/images/me.jpg";
+import NowPlaying from "./components/NowPlaying";
+import { FAVOURITE_FILMS, FAVOURITE_SHOWS } from "./lib/data";
+import { generateFeed } from "./lib/feed";
 
-export const getStaticProps: GetStaticProps = async () => {
+export default function Page() {
   generateFeed();
-  const posts = getSortedPostData();
-  return {
-    props: {
-      posts,
-    },
-  };
-};
-
-export default function Index() {
-  const title = "Parsa Mesgarha";
-  const image = "index.jpg";
 
   return (
     <>
-      <Head>
-        <title>{title}</title>
-        <meta
-          property="og:image"
-          content={`https://parsam.io/images/og/${image}`}
-          key="og:image"
-        />
-        <meta
-          name="twitter:image"
-          content={`https://parsam.io/images/og/${image}`}
-          key="twitter:image"
-        />
-      </Head>
       <div className="px-4">
         <div className="flex items-center gap-2 px-2">
           <a
             href="https://twitter.com/pzrsaa"
             rel="prefetch noreferrer"
             target="_blank"
-            className="h-16 w-16 overflow-hidden rounded-full shadow-lg"
+            className="h-16 w-16 overflow-hidden rounded-full shadow-lg relative"
           >
             <Image
               alt="Parsa Mesgarha"
               src={me}
+              placeholder="blur"
               className="grayscale transition-all hover:animate-spin hover:grayscale-0 motion-reduce:animate-none"
             />
           </a>
