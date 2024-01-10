@@ -29,15 +29,7 @@ export default function Page() {
               Hi, I&apos;m Parsa.
             </h1>
             <p className="text-sm font-semibold text-zinc-600 dark:text-zinc-400 sm:text-lg">
-              Software Engineer at{" "}
-              <span>
-                <span className="text-google-blue">G</span>
-                <span className="text-google-red">o</span>
-                <span className="text-google-yellow">o</span>
-                <span className="text-google-blue">g</span>
-                <span className="text-google-green">l</span>
-                <span className="text-google-red">e</span>
-              </span>
+              Software Engineer at <span className="text-[#cc0000]">???</span>
             </p>
           </div>
         </div>
@@ -47,11 +39,13 @@ export default function Page() {
       </div>
       <div className="prose dark:prose-invert px-6">
         <p>
-          I&apos;m a 20 y/o from London currently working on the{" "}
+          I&apos;m 20 years old, Persian, born in England, and have spent the
+          majority of my life in London. I was at Google for 2 years, primarily
+          contributing to the{" "}
           <a href="https://web.dev/" rel="prefetch noreferrer" target="_blank">
-            Web
+            Web Platform
           </a>{" "}
-          via{" "}
+          through{" "}
           <a
             href="https://www.chromium.org/Home/"
             rel="prefetch noreferrer"
@@ -59,7 +53,7 @@ export default function Page() {
           >
             Chrome
           </a>{" "}
-          for{" "}
+          and{" "}
           <a
             href="https://source.android.com/"
             rel="prefetch noreferrer"
@@ -67,7 +61,17 @@ export default function Page() {
           >
             Android
           </a>
-          . I have a <Link href="/blog">blog</Link> writing notes on the books
+          .
+        </p>
+        <p>
+          Recently I&apos;ve signed a contract for a new position based in
+          Berlin, so currently I&apos;m going through the whole immigration
+          process which I&apos;m really looking forward to. I&apos;m estimated
+          to start in March, and I&apos;ll of course be sharing more news on
+          this next endeavour by then :)
+        </p>
+        <p>
+          I have a <Link href="/blog">blog</Link> writing notes on the books
           I&apos;ve read, and articles on stuff I find interesting enough to
           share.
         </p>

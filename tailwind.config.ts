@@ -19,12 +19,6 @@ const config: Config = {
       colors: {
         white: "#fff",
         black: "#111",
-        google: {
-          blue: "#4885ed",
-          red: "#db3236",
-          yellow: "#f4c20d",
-          green: "#3cba54",
-        },
       },
       typography: (theme: any) => ({
         DEFAULT: {
@@ -35,7 +29,7 @@ const config: Config = {
               color: theme("colors.blue.600"),
               fontWeight: "700",
               "&:hover": {
-                "text-decoration": "none",
+                textDecoration: "none",
               },
             },
           },
