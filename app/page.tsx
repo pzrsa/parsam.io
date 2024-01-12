@@ -76,7 +76,6 @@ export default function Page() {
           If anything here piques your interest, don&apos;t hesitate to{" "}
           <ExternalLink href="mailto:hi@parsam.io" name="reach out" />!
         </p>
-        <div></div>
         <div>
           <h3>Fitness</h3>
           <div>
