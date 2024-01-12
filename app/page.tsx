@@ -3,11 +3,8 @@ import Link from "next/link";
 import me from "../public/images/me.jpg";
 import NowPlaying from "./components/NowPlaying";
 import { FAVOURITE_FILMS, FAVOURITE_SHOWS } from "./lib/data";
-import { generateFeed } from "./lib/feed";
 
 export default function Page() {
-  generateFeed();
-
   return (
     <>
       <div className="px-4">
@@ -79,6 +76,7 @@ export default function Page() {
           If anything here piques your interest, don&apos;t hesitate to{" "}
           <ExternalLink href="mailto:hi@parsam.io" name="reach out" />!
         </p>
+        <div></div>
         <div>
           <h3>Fitness</h3>
           <div>

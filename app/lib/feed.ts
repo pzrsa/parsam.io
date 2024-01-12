@@ -12,7 +12,7 @@ export const generateFeed = () => {
     description: "Parsa Mesgarha's Blog",
     id: "https://parsam.io/",
     link: "https://parsam.io/blog",
-    favicon: "https://parsam.io/favicons/favicon.ico",
+    favicon: "https://parsam.io/favicon.ico",
     image: "https://parsam.io/images/og/blog.jpg",
     copyright: `All rights reserved ${new Date().getFullYear()}, Parsa.`,
     author: {

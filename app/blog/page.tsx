@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { SiRss } from "react-icons/si";
 import DateFormat from "../components/DateFormat";
+import { generateFeed } from "../lib/feed";
 import { getSortedPostData } from "../lib/posts";
 import { Post } from "../lib/types";
 
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  generateFeed();
   const posts = getSortedPostData() as Post[];
 
   return (
