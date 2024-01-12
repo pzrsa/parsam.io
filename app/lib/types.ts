@@ -12,7 +12,7 @@ export interface Post {
 
 interface Media {
   title: string;
-  imageID: string;
+  tmdbImageID: string;
   imdbID: string;
 }
 
