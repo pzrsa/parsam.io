@@ -4,7 +4,7 @@ import { IconType } from "react-icons";
 import { SiGit, SiGithub, SiInstagram, SiLinkedin, SiX } from "react-icons/si";
 import Nav from "./components/Nav";
 import "./globals.css";
-import { FONT_BRICOLAGE } from "./lib/constants";
+import { FONT_BRICOLAGE, INDEX_OG_PATH } from "./lib/constants";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://parsam.io"),
@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   description: "Parsa Mesgarha",
   openGraph: {
     url: "https://parsam.io",
-    images: ["https://parsam.io/images/og/index.jpg"],
+    images: [INDEX_OG_PATH],
   },
   twitter: {
     card: "summary_large_image",
     creator: "@pzrsaa",
-    images: ["https://parsam.io/images/og/index.jpg"],
+    images: [INDEX_OG_PATH],
   },
   robots: {
     index: true,

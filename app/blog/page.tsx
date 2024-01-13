@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { SiRss } from "react-icons/si";
 import DateFormat from "../components/DateFormat";
+import { BLOG_OG_PATH } from "../lib/constants";
 import { generateFeed } from "../lib/feed";
 import { getSortedPostData } from "../lib/posts";
 import { Post } from "../lib/types";
@@ -9,10 +10,10 @@ import { Post } from "../lib/types";
 export const metadata: Metadata = {
   title: "Blog",
   openGraph: {
-    images: ["https://parsam.io/images/og/blog.jpg"],
+    images: [BLOG_OG_PATH],
   },
   twitter: {
-    images: ["https://parsam.io/images/og/blog.jpg"],
+    images: [BLOG_OG_PATH],
   },
 };
 

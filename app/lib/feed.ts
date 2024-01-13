@@ -1,6 +1,6 @@
 import { Feed, Item } from "feed";
 import fs from "fs";
-import { FEED_PATH } from "./constants";
+import { BLOG_OG_PATH, FEED_PATH } from "./constants";
 import { getPostData, getSortedPostData } from "./posts";
 import type { Post } from "./types";
 
@@ -13,7 +13,7 @@ export const generateFeed = () => {
     id: "https://parsam.io/",
     link: "https://parsam.io/blog",
     favicon: "https://parsam.io/favicon.ico",
-    image: "https://parsam.io/images/og/blog.jpg",
+    image: BLOG_OG_PATH,
     copyright: `All rights reserved ${new Date().getFullYear()}, Parsa.`,
     author: {
       name: "Parsa Mesgarha",
