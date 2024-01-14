@@ -2,7 +2,12 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 import me from "../public/images/me.jpg";
 import NowPlaying from "./components/NowPlaying";
-import { FAVOURITE_FILMS, FAVOURITE_SHOWS, SHOWS_WATCHING } from "./lib/data";
+import {
+  FAVOURITE_ALBUMS,
+  FAVOURITE_FILMS,
+  FAVOURITE_SHOWS,
+  SHOWS_WATCHING,
+} from "./lib/data";
 
 export default function Page() {
   return (
@@ -104,6 +109,27 @@ export default function Page() {
         </div>
         <div>
           <h2>Favourites</h2>
+          <h3>Albums</h3>
+          <div className="grid grid-cols-3 gap-x-6 gap-y-6">
+            {FAVOURITE_ALBUMS.map((album) => (
+              <a
+                href={`https://open.spotify.com/album/${album.spotifyID}`}
+                className="group"
+                key={album.title}
+                rel="prefetch noreferrer"
+                target="_blank"
+              >
+                <div className="aspect-w-1 aspect-h-1 cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                  <Image
+                    alt={album.title}
+                    src={`https://i.scdn.co/image/${album.spotifyImageID}`}
+                    layout="fill"
+                    className="transition-all group-hover:opacity-75"
+                  />
+                </div>
+              </a>
+            ))}
+          </div>
           <h3>Films</h3>
           <div className="grid grid-cols-4 gap-x-6 gap-y-6">
             {FAVOURITE_FILMS.map((film) => (

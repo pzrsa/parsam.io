@@ -1,4 +1,4 @@
-import { Film, Show } from "./types";
+import { Album, Film, Show } from "./types";
 
 export const SHOWS_WATCHING: Show[] = [
   {
@@ -30,6 +30,54 @@ export const SHOWS_WATCHING: Show[] = [
     title: "Arcane",
     tmdbImageID: "fqldf2t8ztc9aiwn3k6mlX3tvRT",
     imdbID: "tt11126994",
+  },
+];
+
+export const FAVOURITE_ALBUMS: Album[] = [
+  {
+    title: "KIDS SEE GHOSTS",
+    spotifyImageID: "ab67616d0000b273013c00ee367dd85396f79c82",
+    spotifyID: "6pwuKxMUkNg673KETsXPUV",
+  },
+  {
+    title: "Yeezus",
+    spotifyImageID: "ab67616d0000b2731dacfbc31cc873d132958af9",
+    spotifyID: "7D2NdGvBHIavgLhmcwhluK",
+  },
+  {
+    title: "Random Access Memories",
+    spotifyImageID: "ab67616d0000b2739b9b36b0e22870b9f542d937",
+    spotifyID: "4m2880jivSbbyEGAKfITCa",
+  },
+  {
+    title: "The Life Of Pablo",
+    spotifyImageID: "ab67616d0000b2732a7db835b912dc5014bd37f4",
+    spotifyID: "7gsWAHLeT0w7es6FofOXk1",
+  },
+  {
+    title: "My Beautiful Dark Twisted Fantasy",
+    spotifyImageID: "ab67616d0000b273d9194aa18fa4c9362b47464f",
+    spotifyID: "20r762YmB5HeofjMCiPMLv",
+  },
+  {
+    title: "Graduation",
+    spotifyImageID: "ab67616d0000b27326f7f19c7f0381e56156c94a",
+    spotifyID: "4SZko61aMnmgvNhfhgTuD3",
+  },
+  {
+    title: "ye",
+    spotifyImageID: "ab67616d0000b2730cd942c1a864afa4e92d04f2",
+    spotifyID: "2Ek1q2haOnxVqhvVKqMvJe",
+  },
+  {
+    title: "La La Land (Original Motion Picture Soundtrack)",
+    spotifyImageID: "ab67616d0000b2730bdf4dd39843ad48c5b66bc4",
+    spotifyID: "3GU8BzFEAdFSRjc8jZkL3S",
+  },
+  {
+    title: "Discovery",
+    spotifyImageID: "ab67616d0000b273b33d46dfa2635a47eebf63b2",
+    spotifyID: "2noRn2Aes5aoNVsU6iWThc",
   },
 ];
 
