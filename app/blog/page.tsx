@@ -10,9 +10,12 @@ import { Post } from "../lib/types";
 export const metadata: Metadata = {
   title: "Blog",
   openGraph: {
+    url: "https://parsam.io",
     images: [BLOG_OG_PATH],
   },
   twitter: {
+    card: "summary_large_image",
+    creator: "@pzrsaa",
     images: [BLOG_OG_PATH],
   },
 };

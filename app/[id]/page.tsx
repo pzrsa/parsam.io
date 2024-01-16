@@ -22,6 +22,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
+      creator: "@pzrsaa",
       title: title,
       description: author ? description : title,
       images: author && [`https://parsam.io/images/books/${id}.jpg`],
