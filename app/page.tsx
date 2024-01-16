@@ -95,12 +95,17 @@ export default function Page() {
                 rel="prefetch noreferrer"
                 target="_blank"
               >
-                <div className="aspect-w-2 aspect-h-3 cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                <div className="aspect-w-2 aspect-h-3 cursor-pointer overflow-visible shadow-2xl">
+                  {show.active && (
+                    <span className="-top-1 -left-1 inline-flex rounded-full h-3 w-3 bg-green-500 z-10">
+                      <span className="animate-ping h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    </span>
+                  )}
                   <Image
                     alt={show.title}
                     src={`https://image.tmdb.org/t/p/original/${show.tmdbImageID}.jpg`}
                     layout="fill"
-                    className="transition-all group-hover:opacity-75"
+                    className="transition-all group-hover:opacity-75 rounded-sm"
                   />
                 </div>
               </a>
@@ -119,12 +124,12 @@ export default function Page() {
                 rel="prefetch noreferrer"
                 target="_blank"
               >
-                <div className="aspect-w-1 aspect-h-1 cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                <div className="aspect-w-1 aspect-h-1 cursor-pointer shadow-2xl">
                   <Image
                     alt={album.title}
                     src={`https://i.scdn.co/image/${album.spotifyImageID}`}
                     layout="fill"
-                    className="transition-all group-hover:opacity-75"
+                    className="transition-all group-hover:opacity-75 rounded-sm"
                   />
                 </div>
               </a>
@@ -140,12 +145,12 @@ export default function Page() {
                 rel="prefetch noreferrer"
                 target="_blank"
               >
-                <div className="aspect-w-2 aspect-h-3 cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                <div className="aspect-w-2 aspect-h-3 cursor-pointer shadow-2xl">
                   <Image
                     alt={film.title}
                     src={`https://image.tmdb.org/t/p/original/${film.tmdbImageID}.jpg`}
                     layout="fill"
-                    className="transition-all group-hover:opacity-75"
+                    className="transition-all group-hover:opacity-75 rounded-sm"
                   />
                 </div>
               </a>
@@ -161,12 +166,12 @@ export default function Page() {
                 rel="prefetch noreferrer"
                 target="_blank"
               >
-                <div className="aspect-w-2 aspect-h-3 cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                <div className="aspect-w-2 aspect-h-3 cursor-pointer shadow-2xl">
                   <Image
                     alt={show.title}
                     src={`https://image.tmdb.org/t/p/original/${show.tmdbImageID}.jpg`}
                     layout="fill"
-                    className="transition-all group-hover:opacity-75"
+                    className="transition-all group-hover:opacity-75 rounded-sm"
                   />
                 </div>
               </a>

@@ -18,7 +18,9 @@ interface Media {
 
 export interface Film extends Media {}
 
-export interface Show extends Media {}
+export interface Show extends Media {
+  active?: true;
+}
 
 export interface Album {
   title: string;
