@@ -1,10 +1,11 @@
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
+import { Bricolage_Grotesque } from "next/font/google";
 import { IconType } from "react-icons";
 import { SiGit, SiGithub, SiInstagram, SiLinkedin, SiX } from "react-icons/si";
 import Nav from "./components/Nav";
 import "./globals.css";
-import { FONT_BRICOLAGE, INDEX_OG_PATH } from "./lib/constants";
+import { INDEX_OG_PATH } from "./lib/constants";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://parsam.io"),
@@ -28,6 +29,12 @@ export const metadata: Metadata = {
   },
 };
 
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin"],
+  display: "swap",
+  adjustFontFallback: false,
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -36,7 +43,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-white dark:bg-black text-black dark:text-white ${FONT_BRICOLAGE.className}`}
+      className={`bg-white dark:bg-black text-black dark:text-white antialiased ${bricolage.className}`}
     >
       <body className={`max-w-2xl mx-auto my-8`}>
         <Analytics />

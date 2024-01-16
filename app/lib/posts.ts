@@ -4,17 +4,18 @@ import path from "path";
 import { remark } from "remark";
 import remarkExternalLinks from "remark-external-links";
 import html from "remark-html";
-import { POSTS_DIRECTORY } from "./constants";
 import { Post } from "./types";
 
+const postsDirectory = path.join(process.cwd(), "posts");
+
 export const getSortedPostData = () => {
-  const fileNames = fs.readdirSync(POSTS_DIRECTORY);
+  const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, "");
 
     // Read markdown file as string
-    const fullPath = path.join(POSTS_DIRECTORY, fileName);
+    const fullPath = path.join(postsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
 
     // Use gray-matter to parse the post's metadata section
@@ -39,12 +40,12 @@ export const getSortedPostData = () => {
 };
 
 export const getAllPostIds = () => {
-  const fileNames = fs.readdirSync(POSTS_DIRECTORY);
+  const fileNames = fs.readdirSync(postsDirectory);
   return fileNames.map((fileName) => ({ id: fileName.replace(/\.md$/, "") }));
 };
 
 export const getPostData = async (id: string): Promise<Post> => {
-  const fullPath = path.join(POSTS_DIRECTORY, `${id}.md`);
+  const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
   // Use gray-matter to parse the post metadata section

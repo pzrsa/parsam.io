@@ -1,8 +1,10 @@
 import { Feed, Item } from "feed";
 import fs from "fs";
-import { BLOG_OG_PATH, FEED_PATH } from "./constants";
+import { BLOG_OG_PATH } from "./constants";
 import { getPostData, getSortedPostData } from "./posts";
 import type { Post } from "./types";
+
+const feedPath = "./public/feed.atom";
 
 export const generateFeed = () => {
   const posts = getSortedPostData();
@@ -37,6 +39,6 @@ export const generateFeed = () => {
 
     feed.addItem(item);
 
-    fs.writeFileSync(FEED_PATH, feed.atom1());
+    fs.writeFileSync(feedPath, feed.atom1());
   });
 };
