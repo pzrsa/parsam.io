@@ -1,4 +1,3 @@
-import Image from "next/legacy/image";
 import Link from "next/link";
 import DateFormat from "../components/DateFormat";
 import { getAllPostIds, getPostData } from "../lib/posts";
@@ -72,15 +71,6 @@ export default async function Page({ params }: { params: { id: string } }) {
         className="prose dark:prose-invert px-6 prose-img:rounded-sm prose-img:shadow-sm"
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
-      {post.author ? (
-        <div className="aspect-w-6 aspect-h-8 overflow-hidden rounded-lg mx-12">
-          <Image
-            alt={post.title}
-            src={`/images/books/${post.id}.jpg`}
-            layout="fill"
-          />
-        </div>
-      ) : null}
     </section>
   );
 }

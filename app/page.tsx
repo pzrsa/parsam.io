@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import me from "../public/images/avatar.jpeg";
 import NowPlaying from "./components/NowPlaying";
@@ -18,12 +18,14 @@ export default function Page() {
             href="https://twitter.com/pzrsaa"
             rel="prefetch noreferrer"
             target="_blank"
-            className="h-16 w-16 overflow-hidden rounded-full shadow-lg relative"
+            className="shadow-2xl"
           >
             <Image
               alt="Parsa Mesgarha"
               src={me}
-              className="grayscale transition-all hover:animate-spin hover:grayscale-0 motion-reduce:animate-none"
+              className="grayscale transition-all hover:animate-spin hover:grayscale-0 motion-reduce:animate-none rounded-full"
+              height={64}
+              width={64}
             />
           </a>
           <div>
@@ -81,12 +83,12 @@ export default function Page() {
             Recently I&apos;ve signed a contract for a new position based in
             Berlin, so currently I&apos;m going through the whole immigration
             process which I&apos;m really looking forward to. I&apos;m estimated
-            to start in March, and I&apos;ll of course be sharing more news on
+            to start in April, and I&apos;ll of course be sharing more news on
             this next endeavour by then :)
           </p>
           <h3>Media</h3>
           <h4>Shows I&apos;m watching</h4>
-          <div className="grid grid-cols-3 gap-x-6 gap-y-6">
+          <div className="grid grid-cols-3 gap-x-6 gap-y-6 not-prose">
             {SHOWS_WATCHING.map((show) => (
               <a
                 href={`https://www.imdb.com/title/${show.imdbID}`}
@@ -104,7 +106,7 @@ export default function Page() {
                   <Image
                     alt={show.title}
                     src={`https://image.tmdb.org/t/p/original/${show.tmdbImageID}.jpg`}
-                    layout="fill"
+                    fill
                     className="transition-all group-hover:opacity-75 rounded-sm"
                   />
                 </div>
@@ -115,7 +117,7 @@ export default function Page() {
         <div>
           <h2>Favourites</h2>
           <h3>Albums</h3>
-          <div className="grid grid-cols-3 gap-x-6 gap-y-6">
+          <div className="grid grid-cols-3 gap-x-6 gap-y-6 not-prose">
             {FAVOURITE_ALBUMS.map((album) => (
               <a
                 href={`https://open.spotify.com/album/${album.spotifyID}`}
@@ -128,7 +130,7 @@ export default function Page() {
                   <Image
                     alt={album.title}
                     src={`https://i.scdn.co/image/${album.spotifyImageID}`}
-                    layout="fill"
+                    fill
                     className="transition-all group-hover:opacity-75 rounded-sm"
                   />
                 </div>
@@ -136,7 +138,7 @@ export default function Page() {
             ))}
           </div>
           <h3>Films</h3>
-          <div className="grid grid-cols-4 gap-x-6 gap-y-6">
+          <div className="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">
             {FAVOURITE_FILMS.map((film) => (
               <a
                 href={`https://www.imdb.com/title/${film.imdbID}`}
@@ -149,7 +151,7 @@ export default function Page() {
                   <Image
                     alt={film.title}
                     src={`https://image.tmdb.org/t/p/original/${film.tmdbImageID}.jpg`}
-                    layout="fill"
+                    fill
                     className="transition-all group-hover:opacity-75 rounded-sm"
                   />
                 </div>
@@ -157,7 +159,7 @@ export default function Page() {
             ))}
           </div>
           <h3>Shows</h3>
-          <div className="grid grid-cols-3 gap-x-6 gap-y-6">
+          <div className="grid grid-cols-3 gap-x-6 gap-y-6 not-prose">
             {FAVOURITE_SHOWS.map((show) => (
               <a
                 href={`https://www.imdb.com/title/${show.imdbID}`}
@@ -170,7 +172,7 @@ export default function Page() {
                   <Image
                     alt={show.title}
                     src={`https://image.tmdb.org/t/p/original/${show.tmdbImageID}.jpg`}
-                    layout="fill"
+                    fill
                     className="transition-all group-hover:opacity-75 rounded-sm"
                   />
                 </div>
