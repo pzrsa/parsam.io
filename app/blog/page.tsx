@@ -52,7 +52,7 @@ export default function Page() {
             return (
               <li key={post.id}>
                 {firstForYear && (
-                  <span className="font-bold flex justify-end mb-3">
+                  <span className="font-bold flex justify-end mb-3 text-lg">
                     {year}
                   </span>
                 )}

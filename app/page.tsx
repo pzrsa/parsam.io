@@ -1,6 +1,6 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
-import me from "../public/images/me.jpg";
+import me from "../public/images/avatar.jpeg";
 import NowPlaying from "./components/NowPlaying";
 import {
   FAVOURITE_ALBUMS,
