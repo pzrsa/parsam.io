@@ -26,7 +26,7 @@ const config: Config = {
             fontSize: rem(17),
             color: theme("colors.black"),
             a: {
-              color: theme("colors.rose.600"),
+              color: theme("colors.blue.600"),
               fontWeight: "700",
               "&:hover": {
                 textDecoration: "none",
@@ -38,7 +38,7 @@ const config: Config = {
           css: {
             color: theme("colors.white"),
             a: {
-              color: theme("colors.rose.500"),
+              color: theme("colors.blue.500"),
             },
           },
         },

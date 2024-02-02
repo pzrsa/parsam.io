@@ -2,7 +2,14 @@ import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
 import { IconType } from "react-icons";
-import { SiGit, SiGithub, SiInstagram, SiLinkedin, SiX } from "react-icons/si";
+import {
+  SiGit,
+  SiGithub,
+  SiInstagram,
+  SiLinkedin,
+  SiX,
+  SiYoutube,
+} from "react-icons/si";
 import Nav from "./components/Nav";
 import "./globals.css";
 import { INDEX_OG_PATH } from "./lib/constants";
@@ -52,6 +59,7 @@ export default function RootLayout({
         <footer className="flex flex-row gap-1 mt-6 px-4 justify-center">
           <FooterItem href="https://twitter.com/pzrsaa" Icon={SiX} />
           <FooterItem href="https://github.com/pzrsa" Icon={SiGithub} />
+          <FooterItem href="https://www.youtube.com/@pzrsa" Icon={SiYoutube} />
           <FooterItem
             href="https://www.instagram.com/parsamesgarha"
             Icon={SiInstagram}

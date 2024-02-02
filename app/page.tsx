@@ -185,12 +185,6 @@ export default function Page() {
           <ul>
             <li>
               <ExternalLink
-                href="https://www.youtube.com/@pzrsa"
-                name="YouTube"
-              />
-            </li>
-            <li>
-              <ExternalLink
                 href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
                 name="Spotify"
               />
