@@ -9,7 +9,9 @@ export async function generateMetadata({
 }: {
   params: { id: string };
 }): Promise<Metadata> {
-  const { title, description, author, id } = await getPostData(params.id);
+  const { title, description, author } = await getPostData(params.id);
+
+  const image = `https://parsam.io/og?title=${title}`;
 
   return {
     title: title,
@@ -17,14 +19,14 @@ export async function generateMetadata({
     openGraph: {
       title: title,
       description: author ? description : title,
-      images: author && [`https://parsam.io/images/books/${id}.jpg`],
+      images: image,
     },
     twitter: {
       card: "summary_large_image",
       creator: "@pzrsaa",
       title: title,
       description: author ? description : title,
-      images: author && [`https://parsam.io/images/books/${id}.jpg`],
+      images: image,
     },
   };
 }
