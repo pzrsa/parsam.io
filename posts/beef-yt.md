@@ -7,7 +7,7 @@ I like to watch a lot of YouTube, and I also like to watch a few great shows, on
 
 Anyways, as someone who likes to dissect and discuss everything when it comes to films/shows, I like rewatching clips from important scenes on YouTube to catch details I didn't notice on first watch. I also love the discourse behind it in the comments, because I get to learn more about the hidden meanings behind every piece of dialogue, body language, etc.
 
-But oh my god, I wish YouTube would stop showing me spoilers from the show in my recommended and up next. Why on earth does it think it's a good idea to recommend a scene from the finale when I just watched one clip from the first season?
+But oh my God, I wish YouTube would stop showing me spoilers from the show in my recommended and up next. Why on earth does it think it's a good idea to recommend a scene from the finale when I just watched one clip from the first season?
 
 I’ve constantly clicked “Not interested” on the video after I’ve sadly read the title, but it still keeps coming back with the same shit. I couldn't tell you how many shows they’ve ruined because of this. I feel like I'm getting punished for liking something a bit too much.
 
