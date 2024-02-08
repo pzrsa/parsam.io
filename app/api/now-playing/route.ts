@@ -1,16 +1,15 @@
-import { NextApiRequest, NextApiResponse } from "next";
-import { getNowPlaying } from "../../app/lib/spotify";
+import { getNowPlaying } from "../../lib/spotify";
 
-export default async function handler(_: NextApiRequest, res: NextApiResponse) {
+export async function GET(request: Request) {
   const response = await getNowPlaying();
 
   if (response.status === 204 || response.status > 400) {
-    return res.status(200).json({ isPlaying: false });
+    return Response.json({ isPlaying: false }, { status: 200 });
   }
 
   const data = await response.json();
   if (data.currently_playing_type !== "track") {
-    return res.status(200).json({ isPlaying: false });
+    return Response.json({ isPlaying: false }, { status: 200 });
   }
 
   const isPlaying: boolean = data.is_playing;
@@ -22,12 +21,15 @@ export default async function handler(_: NextApiRequest, res: NextApiResponse) {
   const albumImageUrl: string = data.item.album.images[0].url;
   const songUrl: string = data.item.external_urls.spotify;
 
-  return res.status(200).json({
-    album,
-    albumImageUrl,
-    artist,
-    isPlaying,
-    songUrl,
-    title,
-  });
+  return Response.json(
+    {
+      album,
+      albumImageUrl,
+      artist,
+      isPlaying,
+      songUrl,
+      title,
+    },
+    { status: 200 },
+  );
 }
