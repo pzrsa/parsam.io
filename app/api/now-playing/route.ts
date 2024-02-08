@@ -1,5 +1,8 @@
 import { getNowPlaying } from "../../lib/spotify";
 
+export const dynamic = "force-dynamic";
+export const runtime = "edge";
+
 export async function GET(_: Request) {
   const response = await getNowPlaying();
 
