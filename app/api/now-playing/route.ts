@@ -1,6 +1,6 @@
 import { getNowPlaying } from "../../lib/spotify";
 
-export async function GET(request: Request) {
+export async function GET(_: Request) {
   const response = await getNowPlaying();
 
   if (response.status === 204 || response.status > 400) {
