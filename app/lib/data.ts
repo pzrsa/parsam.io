@@ -1,40 +1,4 @@
 import { Album, Film, Show } from "./types";
-
-export const SHOWS_WATCHING: Show[] = [
-  {
-    title: "The Bear",
-    tmdbImageID: "3MVHF64rlvH1eofKefIoazXwOK0",
-    imdbID: "tt14452776",
-    active: true,
-  },
-  {
-    title: "Succession",
-    tmdbImageID: "7HW47XbkNQ5fiwQFYGWdw9gs144",
-    imdbID: "tt7660850",
-    active: true,
-  },
-  {
-    title: "Invincible",
-    tmdbImageID: "yDWJYRAwMNKbIYT8ZB33qy84uzO",
-    imdbID: "tt6741278",
-  },
-  {
-    title: "The Boys",
-    tmdbImageID: "7Ns6tO3aYjppI5bFhyYZurOYGBT",
-    imdbID: "tt1190634",
-  },
-  {
-    title: "Dave",
-    tmdbImageID: "iorStu3DHuscNfQiIyQomvMyO0h",
-    imdbID: "tt8531222",
-  },
-  {
-    title: "Arcane",
-    tmdbImageID: "fqldf2t8ztc9aiwn3k6mlX3tvRT",
-    imdbID: "tt11126994",
-  },
-];
-
 export const FAVOURITE_ALBUMS: Album[] = [
   {
     title: "KIDS SEE GHOSTS",
@@ -146,11 +110,12 @@ export const FAVOURITE_FILMS: Film[] = [
   },
 ];
 
-export const FAVOURITE_SHOWS: Show[] = [
+export const SHOWS_WATCHING: Show[] = [
   {
-    title: "Atlanta",
-    tmdbImageID: "8HZyGMnPLVVb00rmrh6A2SbK9NX",
-    imdbID: "tt4288182",
+    title: "The Bear",
+    tmdbImageID: "3MVHF64rlvH1eofKefIoazXwOK0",
+    imdbID: "tt14452776",
+    active: true,
   },
   {
     title: "Invincible",
@@ -158,9 +123,9 @@ export const FAVOURITE_SHOWS: Show[] = [
     imdbID: "tt6741278",
   },
   {
-    title: "The Inbetweeners",
-    tmdbImageID: "qNmcaXDndOkY6v9QiJjnxQD09GJ",
-    imdbID: "tt1220617",
+    title: "The Boys",
+    tmdbImageID: "7Ns6tO3aYjppI5bFhyYZurOYGBT",
+    imdbID: "tt1190634",
   },
   {
     title: "Dave",
@@ -172,6 +137,25 @@ export const FAVOURITE_SHOWS: Show[] = [
     tmdbImageID: "fqldf2t8ztc9aiwn3k6mlX3tvRT",
     imdbID: "tt11126994",
   },
+];
+
+export const FAVOURITE_SHOWS: Show[] = [
+  {
+    title: "Succession",
+    tmdbImageID: "7HW47XbkNQ5fiwQFYGWdw9gs144",
+    imdbID: "tt7660850",
+    active: true,
+  },
+  {
+    title: "Atlanta",
+    tmdbImageID: "8HZyGMnPLVVb00rmrh6A2SbK9NX",
+    imdbID: "tt4288182",
+  },
+  {
+    title: "The Inbetweeners",
+    tmdbImageID: "qNmcaXDndOkY6v9QiJjnxQD09GJ",
+    imdbID: "tt1220617",
+  },
   {
     title: "Silicon Valley",
     tmdbImageID: "dc5r71XI1gD4YwIUoEYCLiVvtss",
@@ -181,11 +165,6 @@ export const FAVOURITE_SHOWS: Show[] = [
     title: "BoJack Horseman",
     tmdbImageID: "pB9L0jAnEQLMKgexqCEocEW8TA",
     imdbID: "tt3398228",
-  },
-  {
-    title: "Top Boy",
-    tmdbImageID: "cfqHWQQDwvKT8Xoe0AXzHBXcF1u",
-    imdbID: "tt1830379",
   },
   {
     title: "Community",
