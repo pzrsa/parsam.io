@@ -44,7 +44,7 @@ export default async function Page({ params }: { params: { id: string } }) {
   return (
     <section>
       <div className="mb-6 px-6">
-        <h1 className="text-3xl sm:text-4xl font-extrabold mb-3">
+        <h1 className="text-2xl sm:text-3xl font-extrabold mb-3">
           {post.title}
         </h1>
         <div className="flex gap-3 items-center">
@@ -62,7 +62,7 @@ export default async function Page({ params }: { params: { id: string } }) {
           <span>
             <Link
               href={"/blog"}
-              className="font-bold hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2"
+              className="font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2"
             >
               Back
             </Link>

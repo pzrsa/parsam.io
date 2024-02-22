@@ -1,12 +1,5 @@
 import type { Config } from "tailwindcss";
 
-const round = (num: any) =>
-  num
-    .toFixed(7)
-    .replace(/(\.[0-9]+?)0+$/, "$1")
-    .replace(/\.0$/, "");
-const rem = (px: any) => `${round(px / 16)}rem`;
-
 const config: Config = {
   darkMode: "media",
   content: [
@@ -28,7 +21,6 @@ const config: Config = {
       typography: (theme: any) => ({
         DEFAULT: {
           css: {
-            fontSize: rem(17),
             color: theme("colors.black"),
             a: {
               fontWeight: "700",

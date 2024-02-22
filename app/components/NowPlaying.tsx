@@ -10,7 +10,7 @@ const NowPlaying: React.FC = () => {
 
   if (error)
     return (
-      <p className="sm:text-lg flex items-baseline gap-2 cursor-default p-2">
+      <p className="flex items-baseline gap-2 cursor-default p-2">
         <span>
           <SpotifyIcon />
         </span>
@@ -19,7 +19,7 @@ const NowPlaying: React.FC = () => {
     );
   if (!data)
     return (
-      <p className="sm:text-lg flex items-baseline gap-2 cursor-default p-2">
+      <p className="flex items-baseline gap-2 cursor-default p-2">
         <span>
           <SpotifyIcon />
         </span>
@@ -28,7 +28,7 @@ const NowPlaying: React.FC = () => {
     );
 
   return (
-    <span className="sm:text-lg">
+    <span>
       {data?.isPlaying ? (
         <a
           href={data.songUrl}

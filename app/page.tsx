@@ -23,16 +23,16 @@ export default function Page() {
             <Image
               alt="Parsa Mesgarha"
               src={me}
-              className="grayscale transition-all hover:animate-spin hover:grayscale-0 motion-reduce:animate-none rounded-full"
-              height={64}
-              width={64}
+              className="grayscale transition-all hover:motion-safe:animate-spin hover:grayscale-0 rounded-full"
+              height={70}
+              width={70}
             />
           </a>
           <div>
-            <h1 className="text-3xl font-extrabold sm:text-4xl ">
+            <h1 className="text-xl sm:text-2xl font-extrabold">
               Hi, I&apos;m Parsa.
             </h1>
-            <p className="text-sm font-semibold text-zinc-600 dark:text-zinc-400 sm:text-lg">
+            <p className="font-semibold text-zinc-600 dark:text-zinc-400">
               Software Engineer at{" "}
               <span className="line-through">
                 <span className="text-google-blue">G</span>

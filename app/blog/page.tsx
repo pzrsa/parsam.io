@@ -30,7 +30,7 @@ export default function Page() {
         <div className="px-2">
           <span className="flex gap-1 items-baseline">
             <span className="flex-1">
-              <h1 className="text-3xl sm:text-4xl font-extrabold mb-8">Blog</h1>
+              <h1 className="text-2xl sm:text-3xl font-extrabold mb-8">Blog</h1>
             </span>
             <a
               href="/feed.atom"
@@ -52,7 +52,7 @@ export default function Page() {
             return (
               <li key={post.id}>
                 {firstForYear && (
-                  <span className="font-bold flex justify-end mb-3 text-lg">
+                  <span className="font-bold flex justify-end mb-3">
                     {year}
                   </span>
                 )}
@@ -62,7 +62,7 @@ export default function Page() {
                       lastForYear ? "mb-4" : ""
                     }`}
                   >
-                    <span className="flex-1 text-lg ">
+                    <span className="flex-1">
                       <span className="font-semibold">{post.title}</span>
                       {post.author && (
                         <span>
