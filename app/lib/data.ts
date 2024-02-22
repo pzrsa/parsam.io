@@ -144,7 +144,6 @@ export const FAVOURITE_SHOWS: Show[] = [
     title: "Succession",
     tmdbImageID: "7HW47XbkNQ5fiwQFYGWdw9gs144",
     imdbID: "tt7660850",
-    active: true,
   },
   {
     title: "Atlanta",

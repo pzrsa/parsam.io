@@ -18,6 +18,12 @@ const config: Config = {
       colors: {
         white: "#fff",
         black: "#111",
+        google: {
+          blue: "#4885ed",
+          red: "#db3236",
+          yellow: "#f4c20d",
+          green: "#3cba54",
+        },
       },
       typography: (theme: any) => ({
         DEFAULT: {
@@ -25,10 +31,10 @@ const config: Config = {
             fontSize: rem(17),
             color: theme("colors.black"),
             a: {
-              color: theme("colors.blue.600"),
               fontWeight: "700",
               "&:hover": {
                 textDecoration: "none",
+                color: theme("colors.zinc.500"),
               },
             },
           },
@@ -36,9 +42,6 @@ const config: Config = {
         invert: {
           css: {
             color: theme("colors.white"),
-            a: {
-              color: theme("colors.blue.500"),
-            },
           },
         },
       }),
