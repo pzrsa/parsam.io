@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
-import { Bricolage_Grotesque } from "next/font/google";
+import { Inter } from "next/font/google";
 import { IconType } from "react-icons";
 import {
   SiGit,
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
 };
 
-const bricolage = Bricolage_Grotesque({
+const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   adjustFontFallback: false,
@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-white dark:bg-black text-black dark:text-white antialiased ${bricolage.className}`}
+      className={`bg-white dark:bg-black text-black dark:text-white antialiased ${inter.className}`}
     >
       <body className={`max-w-2xl mx-auto my-8`}>
         <Analytics />
@@ -86,7 +86,7 @@ const FooterItem: React.FC<{ href: string; Icon: IconType }> = ({
       rel="prefetch noreferrer"
       target="_blank"
     >
-      {<Icon />}
+      <Icon />
     </a>
   );
 };
