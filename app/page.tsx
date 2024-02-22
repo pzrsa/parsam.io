@@ -33,7 +33,15 @@ export default function Page() {
               Hi, I&apos;m Parsa.
             </h1>
             <p className="text-sm font-semibold text-zinc-600 dark:text-zinc-400 sm:text-lg">
-              Software Engineer at <span className="text-[#cc0000]">???</span>
+              Software Engineer at{" "}
+              <span className="line-through">
+                <span className="text-google-blue">G</span>
+                <span className="text-google-red">o</span>
+                <span className="text-google-yellow">o</span>
+                <span className="text-google-blue">g</span>
+                <span className="text-google-green">l</span>
+                <span className="text-google-red">e</span>
+              </span>
             </p>
           </div>
         </div>
