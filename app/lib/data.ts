@@ -74,6 +74,11 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0075314",
   },
   {
+    title: "Dune: Part Two",
+    tmdbImageID: "8b8R8l88Qje9dn9OE8PY05Nxl1X",
+    imdbID: "tt15239678",
+  },
+  {
     title: "Gone Girl",
     tmdbImageID: "lv5xShBIDPe7m4ufdlV0IAc7Avk",
     imdbID: "tt2267998",
@@ -99,14 +104,9 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0361748",
   },
   {
-    title: "Harry Potter and the Deathly Hallows: Part 2",
-    tmdbImageID: "c54HpQmuwXjHq2C9wmoACjxoom3",
-    imdbID: "tt1201607",
-  },
-  {
-    title: "Whiplash",
-    tmdbImageID: "7fn624j5lj3xTme2SgiLCeuedmO",
-    imdbID: "tt2582802",
+    title: "Mad Max: Fury Road",
+    tmdbImageID: "8tZYtuWezp8JbcsvHYO0O46tFbo",
+    imdbID: "tt1392190",
   },
 ];
 
