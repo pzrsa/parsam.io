@@ -24,10 +24,6 @@ const config: Config = {
             color: theme("colors.black"),
             a: {
               fontWeight: "700",
-              "&:hover": {
-                textDecoration: "none",
-                color: theme("colors.zinc.500"),
-              },
             },
           },
         },
