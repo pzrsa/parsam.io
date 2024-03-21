@@ -59,14 +59,6 @@ export default async function Page({ params }: { params: { id: string } }) {
             )}
             <DateFormat dateString={post.date} format="MMMM D, YYYY" />
           </span>
-          <span>
-            <Link
-              href={"/blog"}
-              className="font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2"
-            >
-              Back
-            </Link>
-          </span>
         </div>
       </div>
       <article

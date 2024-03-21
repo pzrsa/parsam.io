@@ -1,6 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
-import { Azeret_Mono } from "next/font/google";
 import { IconType } from "react-icons";
 import {
   SiGit,
@@ -36,12 +35,6 @@ export const metadata: Metadata = {
   },
 };
 
-const font = Azeret_Mono({
-  subsets: ["latin"],
-  display: "swap",
-  adjustFontFallback: false,
-});
-
 export default function RootLayout({
   children,
 }: {
@@ -50,7 +43,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-white dark:bg-black text-black dark:text-white antialiased ${font.className}`}
+      className={`bg-white dark:bg-black text-black dark:text-white antialiased`}
     >
       <body className={`max-w-2xl mx-auto my-8`}>
         <Analytics />
