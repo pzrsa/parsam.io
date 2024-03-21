@@ -115,12 +115,12 @@ export const SHOWS_WATCHING: Show[] = [
     title: "The Bear",
     tmdbImageID: "3MVHF64rlvH1eofKefIoazXwOK0",
     imdbID: "tt14452776",
-    active: true,
   },
   {
     title: "Invincible",
     tmdbImageID: "yDWJYRAwMNKbIYT8ZB33qy84uzO",
     imdbID: "tt6741278",
+    active: true,
   },
   {
     title: "The Boys",
