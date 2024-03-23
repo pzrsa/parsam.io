@@ -82,8 +82,36 @@ export default function Page() {
         </p>
         <p>
           If anything here piques your interest, don&apos;t hesitate to{" "}
-          <ExternalLink href="mailto:hi@parsam.io" name="reach out" />!
+          <ExternalLink href="mailto:hi@parsam.io">reach out</ExternalLink>, I
+          love meeting new people!
         </p>
+        <div>
+          <h3>Links</h3>
+          <div className="not-prose grid grid-cols-3 sm:grid-cols-4 -mx-2">
+            <LinkItem href="https://twitter.com/pzrsaa">Twitter/X</LinkItem>
+            <LinkItem href="https://github.com/pzrsa">GitHub</LinkItem>
+            <LinkItem href="https://www.youtube.com/@pzrsa">YouTube</LinkItem>
+            <LinkItem href="https://www.instagram.com/parsamesgarha">
+              Instagram
+            </LinkItem>
+            <LinkItem href="https://www.linkedin.com/in/parsamesgarha">
+              LinkedIn
+            </LinkItem>
+            <LinkItem href="https://github.com/pzrsa/parsam.io">
+              Source
+            </LinkItem>
+            <LinkItem href="https://letterboxd.com/pzrsa/">Letterboxd</LinkItem>
+            <LinkItem href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk">
+              Spotify
+            </LinkItem>
+            <LinkItem href="https://monkeytype.com/profile/pzrsa">
+              Monkeytype
+            </LinkItem>
+            <LinkItem href="https://www.goodreads.com/pzrsa">
+              Goodreads
+            </LinkItem>
+          </div>
+        </div>
         <div>
           <h2>Now</h2>
           <h3>Career</h3>
@@ -95,7 +123,7 @@ export default function Page() {
             this next endeavour by then :)
           </p>
           <h3>Media</h3>
-          <h4>Shows I&apos;m watching or waiting</h4>
+          <h4>Shows I&apos;m watching or waiting for</h4>
           <div className="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">
             {SHOWS_WATCHING.map((show) => (
               <a
@@ -188,55 +216,45 @@ export default function Page() {
             ))}
           </div>
         </div>
-        <div>
-          <h3>More Links</h3>
-          <ul>
-            <li>
-              <ExternalLink
-                href="https://letterboxd.com/pzrsa/"
-                name="Letterboxd"
-              />
-            </li>
-            <li>
-              <ExternalLink
-                href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
-                name="Spotify"
-              />
-            </li>
-            <li>
-              <ExternalLink
-                href="https://news.ycombinator.com/user?id=pzrsa"
-                name="HN"
-              />
-            </li>
-            <li>
-              <ExternalLink
-                href="https://monkeytype.com/profile/pzrsa"
-                name="Monkeytype"
-              />
-            </li>
-            <li>
-              <ExternalLink
-                href="https://www.goodreads.com/pzrsa"
-                name="Goodreads"
-              />
-            </li>
-          </ul>
-        </div>
       </div>
     </>
   );
 }
 
-interface ExternalLinkProps {
+const ExternalLink = ({
+  href,
+  className,
+  children,
+}: {
   href: string;
-  name: string;
-}
-
-const ExternalLink: React.FC<ExternalLinkProps> = ({ href, name }) => {
+  className?: string;
+  children: React.ReactNode;
+}) => {
   return (
-    <a href={href} rel="prefetch noreferrer" target="_blank">
-      {name}
+    <a
+      href={href}
+      rel="prefetch noreferrer"
+      target="_blank"
+      className={className}
+    >
+      {children}
     </a>
+  );
+};
+
+const LinkItem = ({
+  children,
+  href,
+}: {
+  children: React.ReactNode;
+  href: string;
+}) => {
+  return (
+    <ExternalLink
+      href={href}
+      className="hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2 flex items-center gap-2 font-semibold"
+    >
+      {children}
+    </ExternalLink>
   );
 };
