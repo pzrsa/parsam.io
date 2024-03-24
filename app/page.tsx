@@ -12,8 +12,8 @@ import {
 export default function Page() {
   return (
     <>
-      <div className="px-4">
-        <div className="flex items-center gap-2 px-2">
+      <div>
+        <div className="flex items-center gap-2">
           <a
             href="https://twitter.com/pzrsaa"
             rel="prefetch noreferrer"
@@ -49,7 +49,7 @@ export default function Page() {
           <NowPlaying />
         </div>
       </div>
-      <div className="prose dark:prose-invert px-6">
+      <div className="prose dark:prose-invert">
         <p>
           I&apos;m 20 years old, Persian, born in England, and have spent the
           majority of my life in London. I was at Google for 2 years, primarily
@@ -87,7 +87,7 @@ export default function Page() {
         </p>
         <div>
           <h3>Links</h3>
-          <div className="not-prose grid grid-cols-3 sm:grid-cols-4 -mx-2">
+          <div className="not-prose grid grid-cols-3 sm:grid-cols-4">
             <LinkItem href="https://twitter.com/pzrsaa">Twitter/X</LinkItem>
             <LinkItem href="https://github.com/pzrsa">GitHub</LinkItem>
             <LinkItem href="https://www.youtube.com/@pzrsa">YouTube</LinkItem>
@@ -252,7 +252,7 @@ const LinkItem = ({
   return (
     <ExternalLink
       href={href}
-      className="hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2 flex items-center gap-2 font-semibold"
+      className="text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-all flex items-center gap-2 w-fit"
     >
       {children}
     </ExternalLink>

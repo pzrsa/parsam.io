@@ -22,9 +22,6 @@ const config: Config = {
         DEFAULT: {
           css: {
             color: theme("colors.black"),
-            a: {
-              fontWeight: "700",
-            },
           },
         },
         invert: {

@@ -43,7 +43,7 @@ export default async function Page({ params }: { params: { id: string } }) {
 
   return (
     <section>
-      <div className="mb-6 px-6">
+      <div className="mb-6">
         <h1 className="text-2xl sm:text-3xl font-extrabold mb-3">
           {post.title}
         </h1>
@@ -62,7 +62,7 @@ export default async function Page({ params }: { params: { id: string } }) {
         </div>
       </div>
       <article
-        className="prose dark:prose-invert px-6 prose-img:rounded-sm prose-img:shadow-2xl"
+        className="prose dark:prose-invert prose-img:rounded-sm prose-img:shadow-2xl"
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
     </section>

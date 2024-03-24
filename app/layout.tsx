@@ -36,7 +36,7 @@ export default function RootLayout({
       lang="en"
       className={`bg-white dark:bg-black text-black dark:text-white antialiased`}
     >
-      <body className={`max-w-2xl mx-auto my-8`}>
+      <body className={`max-w-2xl mx-auto py-8 px-6`}>
         <Analytics />
         <Nav />
         <main>{children}</main>

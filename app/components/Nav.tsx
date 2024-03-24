@@ -7,27 +7,27 @@ export default function Nav() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex mb-6 gap-1 px-4 items-center">
+    <nav className="flex mb-6 gap-1 items-center">
       <span className="flex-1">
         {pathname === "/" ? (
-          <span className="font-bold text-lg sm:text-xl cursor-default p-2">
+          <span className="font-bold text-lg sm:text-xl cursor-default">
             Parsa Mesgarha
           </span>
         ) : (
           <Link
             href={"/"}
-            className="font-bold text-lg sm:text-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2"
+            className="font-bold text-lg sm:text-xl text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-all"
           >
             Parsa Mesgarha
           </Link>
         )}
       </span>
       {pathname === "/blog" ? (
-        <span className="font-bold cursor-default p-2">blog</span>
+        <span className="font-bold cursor-default">blog</span>
       ) : (
         <Link
           href={"/blog"}
-          className="font-bold hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all rounded-sm p-2"
+          className="font-bold text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-all"
         >
           blog
         </Link>
