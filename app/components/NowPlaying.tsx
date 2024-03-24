@@ -10,7 +10,7 @@ const NowPlaying: React.FC = () => {
 
   if (error)
     return (
-      <p className="flex items-baseline gap-2 cursor-default text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-all">
+      <p className="flex items-baseline gap-2">
         <span>
           <SpotifyIcon />
         </span>
@@ -19,11 +19,11 @@ const NowPlaying: React.FC = () => {
     );
   if (!data)
     return (
-      <p className="flex items-baseline gap-2 cursor-default text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-all">
+      <p className="flex items-baseline gap-2">
         <span>
           <SpotifyIcon />
         </span>
-        loading...
+        Loading...
       </p>
     );
 
@@ -34,7 +34,7 @@ const NowPlaying: React.FC = () => {
           href={data.songUrl}
           rel="prefetch noreferrer"
           target="_blank"
-          className="flex items-baseline gap-2 cursor-pointer text-black hover:text-zinc-500 dark:text-white dark:hover:text-zinc-400  transition-all"
+          className="flex items-baseline gap-2"
         >
           <span>
             <SpotifyIcon />
@@ -45,12 +45,17 @@ const NowPlaying: React.FC = () => {
           </span>
         </a>
       ) : (
-        <p className="flex items-baseline gap-2 cursor-default text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-all">
+        <a
+          href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
+          rel="prefetch noreferrer"
+          target="_blank"
+          className="flex items-baseline gap-2"
+        >
           <span>
             <SpotifyIcon />
           </span>
           Not playing anything
-        </p>
+        </a>
       )}
     </span>
   );

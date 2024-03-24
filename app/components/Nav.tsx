@@ -14,21 +14,15 @@ export default function Nav() {
             Parsa Mesgarha
           </span>
         ) : (
-          <Link
-            href={"/"}
-            className="font-bold text-lg sm:text-xl text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-all"
-          >
+          <Link href={"/"} className="font-bold text-lg sm:text-xl">
             Parsa Mesgarha
           </Link>
         )}
       </span>
       {pathname === "/blog" ? (
-        <span className="font-bold cursor-default">blog</span>
+        <span className="font-bold underline cursor-default">blog</span>
       ) : (
-        <Link
-          href={"/blog"}
-          className="font-bold text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-all"
-        >
+        <Link href={"/blog"} className="font-bold underline">
           blog
         </Link>
       )}

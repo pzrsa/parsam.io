@@ -252,7 +252,7 @@ const LinkItem = ({
   return (
     <ExternalLink
       href={href}
-      className="text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-all flex items-center gap-2 w-fit"
+      className="flex items-center gap-2 w-fit underline"
     >
       {children}
     </ExternalLink>

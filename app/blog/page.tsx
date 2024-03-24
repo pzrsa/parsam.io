@@ -30,10 +30,7 @@ export default function Page() {
         <span className="flex-1">
           <h1 className="text-2xl sm:text-3xl font-extrabold mb-8">Blog</h1>
         </span>
-        <a
-          href="/feed.atom"
-          className="sm:text-lg text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-all"
-        >
+        <a href="/feed.atom">
           <SiRss />
         </a>
       </span>
@@ -51,13 +48,9 @@ export default function Page() {
               {firstForYear && (
                 <span className="font-bold flex justify-end mb-3">{year}</span>
               )}
-              <Link href={`/${post.id}`}>
-                <span
-                  className={`flex items-baseline text-zinc-500 hover:text-black dark:hover:text-zinc-400 dark:text-white transition-all gap-6 ${
-                    lastForYear ? "mb-4" : ""
-                  }`}
-                >
-                  <span className="flex-1">
+              <span className={`flex ${lastForYear ? "mb-4" : ""}`}>
+                <span className="flex-1">
+                  <Link href={`/${post.id}`} className="underline">
                     <span className="font-semibold">{post.title}</span>
                     {post.author && (
                       <span>
@@ -67,12 +60,12 @@ export default function Page() {
                         </span>
                       </span>
                     )}
-                  </span>
-                  <span className="text-zinc-600 dark:text-zinc-400">
-                    <DateFormat dateString={post.date} format="MMM D" />
-                  </span>
+                  </Link>
                 </span>
-              </Link>
+                <span className="text-zinc-600 dark:text-zinc-400">
+                  <DateFormat dateString={post.date} format="MMM D" />
+                </span>
+              </span>
             </li>
           );
         })}
