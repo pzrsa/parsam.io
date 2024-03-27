@@ -29,7 +29,9 @@ export const generateFeed = () => {
     let item: Item = {
       id: post.id,
       title: post.title,
-      image: `https://parsam.io/og?title=${post.title}`,
+      image: post.author
+        ? `https://parsam.io/og?title=${post.title} - ${post.author}`
+        : `https://parsam.io/og?title=${post.title}`,
       content: postData.contentHtml,
       link: `https://parsam.io/${post.id}`,
       date: new Date(`${post.date}T19:19:19`),

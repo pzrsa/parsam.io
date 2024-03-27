@@ -11,7 +11,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { title, description, author } = await getPostData(params.id);
 
-  const image = `https://parsam.io/og?title=${title}`;
+  const image = author
+    ? `https://parsam.io/og?title=${title} - ${author}`
+    : `https://parsam.io/og?title=${title}`;
 
   return {
     title: title,

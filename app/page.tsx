@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import me from "../public/images/avatar.jpeg";
+import me from "../public/avatar.jpeg";
 import NowPlaying from "./components/NowPlaying";
 import {
   FAVOURITE_ALBUMS,
@@ -104,6 +104,7 @@ export default function Page() {
             <LinkItem href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk">
               Spotify
             </LinkItem>
+            <LinkItem href="https://www.last.fm/user/pzrsa">Last.fm</LinkItem>
             <LinkItem href="https://monkeytype.com/profile/pzrsa">
               Monkeytype
             </LinkItem>
