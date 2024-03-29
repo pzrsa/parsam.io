@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-const font = localFont({
+const quattro = localFont({
   src: [
     {
       path: "./fonts/iAWriterQuattroS-Regular.woff2",
@@ -60,7 +60,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-white dark:bg-black text-black dark:text-white antialiased ${font.className}`}
+      className={`bg-white dark:bg-black text-black dark:text-white antialiased ${quattro.className}`}
     >
       <body className={`max-w-2xl mx-auto py-8 px-6`}>
         <Analytics />
