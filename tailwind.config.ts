@@ -17,6 +17,9 @@ const config: Config = {
           yellow: "#f4c20d",
           green: "#3cba54",
         },
+        tesla: {
+          red: "#cc0000",
+        },
       },
       typography: (theme: any) => ({
         DEFAULT: {

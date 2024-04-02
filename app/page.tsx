@@ -33,15 +33,7 @@ export default function Page() {
               Hi, I&apos;m Parsa.
             </h1>
             <p className="font-semibold text-zinc-600 dark:text-zinc-400">
-              Software Engineer at{" "}
-              <span className="line-through">
-                <span className="text-google-blue">G</span>
-                <span className="text-google-red">o</span>
-                <span className="text-google-yellow">o</span>
-                <span className="text-google-blue">g</span>
-                <span className="text-google-green">l</span>
-                <span className="text-google-red">e</span>
-              </span>
+              Software Engineer at <span className="text-tesla-red">Tesla</span>
             </p>
           </div>
         </div>
@@ -52,7 +44,12 @@ export default function Page() {
       <div className="prose dark:prose-invert">
         <p>
           I&apos;m 20 years old, Persian, born in England, and have spent the
-          majority of my life in London. I was at Google for 2 years, primarily
+          majority of my life in London.{" "}
+        </p>
+        <p>
+          I&apos;m currently working at{" "}
+          <ExternalLink href="https://www.tesla.com">Tesla</ExternalLink>, based
+          in Berlin. Prior to this, I was at Google for 2 years, primarily
           contributing to the{" "}
           <a href="https://web.dev/" rel="prefetch noreferrer" target="_blank">
             Web Platform
@@ -117,11 +114,8 @@ export default function Page() {
           <h2>Now</h2>
           <h3>Career</h3>
           <p>
-            Recently I&apos;ve signed a contract for a new position based in
-            Berlin, so currently I&apos;m going through the whole immigration
-            process which I&apos;m really looking forward to. I&apos;m estimated
-            to start in April, and I&apos;ll of course be sharing more news on
-            this next endeavour by then :)
+            I joined Tesla, and moved to Berlin! More details in this{" "}
+            <Link href={"/tesla"}>post</Link>.
           </p>
           <h3>Media</h3>
           <h4>Shows I&apos;m watching or waiting for</h4>
