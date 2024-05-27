@@ -1,4 +1,5 @@
 import { Album, Film, Show } from "./types";
+
 export const FAVOURITE_ALBUMS: Album[] = [
   {
     title: "KIDS SEE GHOSTS",
@@ -31,6 +32,11 @@ export const FAVOURITE_ALBUMS: Album[] = [
     spotifyID: "4SZko61aMnmgvNhfhgTuD3",
   },
   {
+    title: "To Pimp A Butterfly",
+    spotifyImageID: "ab67616d0000b273cdb645498cd3d8a2db4d05e1",
+    spotifyID: "7Ks4VCY1wFebnOdJrM13t6",
+  },
+  {
     title: "ye",
     spotifyImageID: "ab67616d0000b2730cd942c1a864afa4e92d04f2",
     spotifyID: "2Ek1q2haOnxVqhvVKqMvJe",
@@ -44,6 +50,11 @@ export const FAVOURITE_ALBUMS: Album[] = [
     title: "Discovery",
     spotifyImageID: "ab67616d0000b273b33d46dfa2635a47eebf63b2",
     spotifyID: "2noRn2Aes5aoNVsU6iWThc",
+  },
+  {
+    title: "An Evening With Silk Sonic",
+    spotifyImageID: "ab67616d0000b273d0bbd3ea2ec554f17a6603cc",
+    spotifyID: "5lka5RUbLVQGO94mKAPMRO",
   },
 ];
 
@@ -80,8 +91,8 @@ export const FAVOURITE_FILMS: Film[] = [
   },
   {
     title: "Gone Girl",
-    tmdbImageID: "lv5xShBIDPe7m4ufdlV0IAc7Avk",
-    imdbID: "tt2267998",
+    tmdbImageID: "3bhkrj58Vtu7enYsRolD1fZdja1",
+    imdbID: "tt0068646",
   },
   {
     title: "Spider-Man: Into the Spider-Verse",
@@ -120,7 +131,6 @@ export const SHOWS_WATCHING: Show[] = [
     title: "Invincible",
     tmdbImageID: "yDWJYRAwMNKbIYT8ZB33qy84uzO",
     imdbID: "tt6741278",
-    active: true,
   },
   {
     title: "The Boys",
