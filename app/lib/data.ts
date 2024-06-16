@@ -138,6 +138,12 @@ export const SHOWS_WATCHING: Show[] = [
     imdbID: "tt1190634",
   },
   {
+    title: "Shogun",
+    tmdbImageID: "7O4iVfOMQmdCSxhOg1WnzG1AgYT",
+    imdbID: "tt2788316",
+    active: true,
+  },
+  {
     title: "Dave",
     tmdbImageID: "iorStu3DHuscNfQiIyQomvMyO0h",
     imdbID: "tt8531222",
