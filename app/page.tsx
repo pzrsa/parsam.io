@@ -43,7 +43,7 @@ export default function Page() {
       </div>
       <div className="prose dark:prose-invert">
         <p>
-          I&apos;m 20 years old, Persian, born in England, and have spent the
+          I&apos;m 21 years old, Persian, born in England, and have spent the
           majority of my life in London.{" "}
         </p>
         <p>
