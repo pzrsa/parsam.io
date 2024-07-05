@@ -32,6 +32,11 @@ export const FAVOURITE_ALBUMS: Album[] = [
     spotifyID: "4SZko61aMnmgvNhfhgTuD3",
   },
   {
+    title: "good kid, m.A.A.d city",
+    spotifyImageID: "ab67616d0000b27378de8b28de36a74afc0348b5",
+    spotifyID: "748dZDqSZy6aPXKcI9H80u",
+  },
+  {
     title: "To Pimp A Butterfly",
     spotifyImageID: "ab67616d0000b273cdb645498cd3d8a2db4d05e1",
     spotifyID: "7Ks4VCY1wFebnOdJrM13t6",
@@ -138,20 +143,19 @@ export const SHOWS_WATCHING: Show[] = [
     imdbID: "tt1190634",
   },
   {
+    title: "Arcane",
+    tmdbImageID: "fqldf2t8ztc9aiwn3k6mlX3tvRT",
+    imdbID: "tt11126994",
+  },
+  {
     title: "Shogun",
     tmdbImageID: "7O4iVfOMQmdCSxhOg1WnzG1AgYT",
     imdbID: "tt2788316",
-    active: true,
   },
   {
     title: "Dave",
     tmdbImageID: "iorStu3DHuscNfQiIyQomvMyO0h",
     imdbID: "tt8531222",
-  },
-  {
-    title: "Arcane",
-    tmdbImageID: "fqldf2t8ztc9aiwn3k6mlX3tvRT",
-    imdbID: "tt11126994",
   },
 ];
 
