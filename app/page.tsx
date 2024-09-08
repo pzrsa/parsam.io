@@ -14,12 +14,7 @@ export default function Page() {
     <>
       <div>
         <div className="flex items-center gap-2">
-          <a
-            href="https://twitter.com/pzrsaa"
-            rel="prefetch noreferrer"
-            target="_blank"
-            className="shadow-2xl"
-          >
+          <ExternalLink href="https://twitter.com/pzrsaa">
             <Image
               alt="Parsa Mesgarha"
               src={me}
@@ -27,7 +22,7 @@ export default function Page() {
               height={70}
               width={70}
             />
-          </a>
+          </ExternalLink>
           <div>
             <h1 className="text-xl sm:text-2xl font-extrabold">
               Hi, I&apos;m Parsa.
@@ -51,25 +46,15 @@ export default function Page() {
           <ExternalLink href="https://www.tesla.com">Tesla</ExternalLink>, based
           in Berlin. Prior to this, I was at Google for 2 years, primarily
           contributing to the{" "}
-          <a href="https://web.dev/" rel="prefetch noreferrer" target="_blank">
-            Web Platform
-          </a>{" "}
+          <ExternalLink href="https://web.dev/">Web Platform</ExternalLink>{" "}
           through{" "}
-          <a
-            href="https://www.chromium.org/Home/"
-            rel="prefetch noreferrer"
-            target="_blank"
-          >
+          <ExternalLink href="https://www.chromium.org/Home/">
             Chrome
-          </a>{" "}
+          </ExternalLink>{" "}
           and{" "}
-          <a
-            href="https://source.android.com/"
-            rel="prefetch noreferrer"
-            target="_blank"
-          >
+          <ExternalLink href="https://source.android.com/">
             Android
-          </a>
+          </ExternalLink>
           .
         </p>
         <p>
@@ -189,6 +174,12 @@ export default function Page() {
               </a>
             ))}
           </div>
+          <p>
+            You can see the rest on my{" "}
+            <ExternalLink href="https://letterboxd.com/pzrsa/likes/films/by/date/size/large/">
+              Letterboxd
+            </ExternalLink>
+          </p>
           <h3>Shows</h3>
           <div className="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">
             {FAVOURITE_SHOWS.map((show) => (

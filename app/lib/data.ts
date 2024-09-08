@@ -65,24 +65,24 @@ export const FAVOURITE_ALBUMS: Album[] = [
 
 export const FAVOURITE_FILMS: Film[] = [
   {
-    title: "La La Land",
-    tmdbImageID: "uDO8zWDhfWwoFdKS4fzkUJt0Rf0",
-    imdbID: "tt3783958",
-  },
-  {
     title: "The Social Network",
     tmdbImageID: "n0ybibhJtQ5icDqTp8eRytcIHJx",
     imdbID: "tt1285016",
   },
   {
-    title: "The Dark Knight",
-    tmdbImageID: "qJ2tW6WMUDux911r6m7haRef0WH",
-    imdbID: "tt0468569",
+    title: "Gladiator",
+    tmdbImageID: "ty8TGRuvJLPUmAR1H1nRIsgwvim",
+    imdbID: "tt0172495",
   },
   {
-    title: "Baby Driver",
-    tmdbImageID: "rmnQ9jKW72bHu8uKlMjPIb2VLMI",
-    imdbID: "tt3890160",
+    title: "Perfect Blue",
+    tmdbImageID: "bee6ZQVaSAUhlBinsP9In8x8vO1",
+    imdbID: "tt0156887",
+  },
+  {
+    title: "La La Land",
+    tmdbImageID: "uDO8zWDhfWwoFdKS4fzkUJt0Rf0",
+    imdbID: "tt3783958",
   },
   {
     title: "Taxi Driver",
@@ -90,12 +90,7 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0075314",
   },
   {
-    title: "Dune: Part Two",
-    tmdbImageID: "8b8R8l88Qje9dn9OE8PY05Nxl1X",
-    imdbID: "tt15239678",
-  },
-  {
-    title: "Gone Girl",
+    title: "The Godfather",
     tmdbImageID: "3bhkrj58Vtu7enYsRolD1fZdja1",
     imdbID: "tt0068646",
   },
@@ -105,9 +100,14 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt4633694",
   },
   {
-    title: "WALL·E",
-    tmdbImageID: "hbhFnRzzg6ZDmm8YAmxBnQpQIPh",
-    imdbID: "tt0910970",
+    title: "Mad Max: Fury Road",
+    tmdbImageID: "8tZYtuWezp8JbcsvHYO0O46tFbo",
+    imdbID: "tt1392190",
+  },
+  {
+    title: "The Dark Knight",
+    tmdbImageID: "qJ2tW6WMUDux911r6m7haRef0WH",
+    imdbID: "tt0468569",
   },
   {
     title: "Coco",
@@ -115,14 +115,14 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt2380307",
   },
   {
+    title: "WALL·E",
+    tmdbImageID: "hbhFnRzzg6ZDmm8YAmxBnQpQIPh",
+    imdbID: "tt0910970",
+  },
+  {
     title: "Inglourious Basterds",
     tmdbImageID: "7sfbEnaARXDDhKm0CZ7D7uc2sbo",
     imdbID: "tt0361748",
-  },
-  {
-    title: "Mad Max: Fury Road",
-    tmdbImageID: "8tZYtuWezp8JbcsvHYO0O46tFbo",
-    imdbID: "tt1392190",
   },
 ];
 
@@ -131,6 +131,7 @@ export const SHOWS_WATCHING: Show[] = [
     title: "The Bear",
     tmdbImageID: "3MVHF64rlvH1eofKefIoazXwOK0",
     imdbID: "tt14452776",
+    active: true,
   },
   {
     title: "Invincible",
@@ -146,11 +147,6 @@ export const SHOWS_WATCHING: Show[] = [
     title: "Arcane",
     tmdbImageID: "fqldf2t8ztc9aiwn3k6mlX3tvRT",
     imdbID: "tt11126994",
-  },
-  {
-    title: "Shogun",
-    tmdbImageID: "7O4iVfOMQmdCSxhOg1WnzG1AgYT",
-    imdbID: "tt2788316",
   },
   {
     title: "Dave",
@@ -189,5 +185,10 @@ export const FAVOURITE_SHOWS: Show[] = [
     title: "Community",
     tmdbImageID: "3KUjDt8XY7w2Ku70UE0SECmv1zP",
     imdbID: "tt1439629",
+  },
+  {
+    title: "Shogun",
+    tmdbImageID: "7O4iVfOMQmdCSxhOg1WnzG1AgYT",
+    imdbID: "tt2788316",
   },
 ];
