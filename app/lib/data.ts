@@ -172,9 +172,9 @@ export const FAVOURITE_SHOWS: Show[] = [
     imdbID: "tt1220617",
   },
   {
-    title: "Silicon Valley",
-    tmdbImageID: "dc5r71XI1gD4YwIUoEYCLiVvtss",
-    imdbID: "tt2575988",
+    title: "Top Boy",
+    tmdbImageID: "mGZpOEaLZTRzWeQMq5SZM5BbDZg",
+    imdbID: "tt1830379",
   },
   {
     title: "BoJack Horseman",
@@ -185,6 +185,11 @@ export const FAVOURITE_SHOWS: Show[] = [
     title: "Community",
     tmdbImageID: "3KUjDt8XY7w2Ku70UE0SECmv1zP",
     imdbID: "tt1439629",
+  },
+  {
+    title: "Silicon Valley",
+    tmdbImageID: "dc5r71XI1gD4YwIUoEYCLiVvtss",
+    imdbID: "tt2575988",
   },
   {
     title: "Shogun",
