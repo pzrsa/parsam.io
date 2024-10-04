@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import "./globals.css";
 import { INDEX_OG_PATH } from "./lib/constants";
 import localFont from "next/font/local";
+import { Lora } from "next/font/google";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://parsam.io"),
@@ -27,29 +28,8 @@ export const metadata: Metadata = {
   },
 };
 
-const quattro = localFont({
-  src: [
-    {
-      path: "./fonts/iAWriterQuattroS-Regular.woff2",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "./fonts/iAWriterQuattroS-Italic.woff2",
-      weight: "400",
-      style: "italic",
-    },
-    {
-      path: "./fonts/iAWriterQuattroS-Bold.woff2",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "./fonts/iAWriterQuattroS-BoldItalic.woff2",
-      weight: "700",
-      style: "italic",
-    },
-  ],
+const lora = Lora({
+  subsets: ["latin"],
 });
 
 export default function RootLayout({
@@ -60,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-white dark:bg-black text-black dark:text-white antialiased ${quattro.className}`}
+      className={`bg-white dark:bg-black text-black dark:text-white antialiased ${lora.className}`}
     >
       <body className={`max-w-2xl mx-auto py-8 px-6`}>
         <Analytics />

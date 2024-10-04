@@ -20,7 +20,7 @@ export default function Nav() {
         )}
       </span>
       {pathname === "/blog" ? (
-        <span className="font-bold underline cursor-default">blog</span>
+        <span className="font-bold cursor-default">blog</span>
       ) : (
         <Link href={"/blog"} className="font-bold underline">
           blog
