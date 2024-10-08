@@ -3,8 +3,7 @@ import { Metadata } from "next";
 import Nav from "./components/Nav";
 import "./globals.css";
 import { INDEX_OG_PATH } from "./lib/constants";
-import localFont from "next/font/local";
-import { Lora } from "next/font/google";
+import { IBM_Plex_Serif } from "next/font/google";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://parsam.io"),
@@ -28,8 +27,9 @@ export const metadata: Metadata = {
   },
 };
 
-const lora = Lora({
+const ibm = IBM_Plex_Serif({
   subsets: ["latin"],
+  weight: "400",
 });
 
 export default function RootLayout({
@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-white dark:bg-black text-black dark:text-white antialiased ${lora.className}`}
+      className={`bg-white dark:bg-black text-black dark:text-white antialiased ${ibm.className}`}
     >
       <body className={`max-w-2xl mx-auto py-8 px-6`}>
         <Analytics />
