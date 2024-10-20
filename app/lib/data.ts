@@ -70,11 +70,6 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt1285016",
   },
   {
-    title: "Gladiator",
-    tmdbImageID: "ty8TGRuvJLPUmAR1H1nRIsgwvim",
-    imdbID: "tt0172495",
-  },
-  {
     title: "Perfect Blue",
     tmdbImageID: "bee6ZQVaSAUhlBinsP9In8x8vO1",
     imdbID: "tt0156887",
@@ -90,9 +85,9 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0075314",
   },
   {
-    title: "The Godfather",
-    tmdbImageID: "3bhkrj58Vtu7enYsRolD1fZdja1",
-    imdbID: "tt0068646",
+    title: "Hot Fuzz",
+    tmdbImageID: "zPib4ukTSdXvHP9pxGkFCe34f3y",
+    imdbID: "tt0425112",
   },
   {
     title: "Spider-Man: Into the Spider-Verse",
@@ -105,24 +100,9 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt1392190",
   },
   {
-    title: "The Dark Knight",
-    tmdbImageID: "qJ2tW6WMUDux911r6m7haRef0WH",
-    imdbID: "tt0468569",
-  },
-  {
-    title: "Coco",
-    tmdbImageID: "gGEsBPAijhVUFoiNpgZXqRVWJt2",
-    imdbID: "tt2380307",
-  },
-  {
-    title: "WALL·E",
-    tmdbImageID: "hbhFnRzzg6ZDmm8YAmxBnQpQIPh",
-    imdbID: "tt0910970",
-  },
-  {
-    title: "Inglourious Basterds",
-    tmdbImageID: "7sfbEnaARXDDhKm0CZ7D7uc2sbo",
-    imdbID: "tt0361748",
+    title: "Four Lions",
+    tmdbImageID: "x4JzaRPXBs9wiHCe3e3ymXWuwfd",
+    imdbID: "tt1341167",
   },
 ];
 
