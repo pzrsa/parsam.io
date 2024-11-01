@@ -5,7 +5,7 @@ title: "Some photos from 2022"
 
 I was inspired by [this post](https://tiramisu.bearblog.dev/2021-photos/) to share some of my favourite photos from 2022.
 
-## 🇪🇸 Tenerife, Spain
+# 🇪🇸 Tenerife, Spain
 
 ![Plane to Tenerife](/tenerife-plane.jpg "Plane to Tenerife")
 
@@ -20,7 +20,7 @@ _This strange looking plant is a [Echium wildpretii](https://en.wikipedia.org/wi
 
 ![Plane leaving Tenerife](/tenerife-plane2.jpg "Plane leaving Tenerife")
 
-## 🇨🇭 Zurich, Switzerland
+# 🇨🇭 Zurich, Switzerland
 
 ![Google in Zurich](/zurich-google.jpg "Google in Zurich")
 
@@ -30,7 +30,7 @@ _This strange looking plant is a [Echium wildpretii](https://en.wikipedia.org/wi
 
 ![Plane leaving Zurich](/zurich-plane.jpg "Plane leaving Zurich")
 
-## Misc
+# Misc
 
 ![Everyday carry](/edc-2022.jpg "Everyday carry")
 

@@ -64,7 +64,7 @@ export default async function Page({ params }: { params: { id: string } }) {
         </div>
       </div>
       <article
-        className="prose dark:prose-invert prose-img:rounded-sm prose-img:shadow-2xl"
+        className="prose dark:prose-invert prose-h1:text-2xl prose-h2:text-xl prose-headings:text-lg prose-img:rounded-sm prose-img:shadow-2xl"
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
     </section>

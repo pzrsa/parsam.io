@@ -5,13 +5,13 @@ author: "Cal Newport"
 description: "Deep work is the ability to focus without distraction on a cognitively demanding task. Deep work will make you better at what you do, let you achieve more in less time and provide the sense of true fulfilment that comes from the mastery of a skill. In short, deep work is like a superpower in our increasingly competitive economy."
 ---
 
-## Book in 3 Sentences
+# Book in 3 Sentences
 
 1. Deep Work is a state of distraction-free concentration pushing your cognitive capabilities to the limit. Cultivate this skill and you will thrive, as focusing in the modern era with all the unnecessary noise in the world is like a superpower that allows you to work towards your personal and professional goals.
 2. Context switching from a shallow task (scrolling social media) to a deep one (writing a book note) will heavily draw from your willpower. Instead, create rituals and routines in an appropriate environment to help you ease into the transition of doing cognitively demanding work.
 3. Take the “craftsman” approach for selecting network tools like social media instead of following the “any-benefit” approach. Use the tool only if it has a substantial benefit and is worth the drag on your time and attention. Misusing tools without awareness of its cons, and just blindly following its one benefit will result in negative impacts to your productivity, resulting in no progress on what needs to be done.
 
-## Impressions
+# Impressions
 
 For me, deep work has been something I’ve always wanted to achieve, but it's often very hard to do so in the modern world which is full of distraction. However, this book was able to teach me the value of deep work, and how important it is to master this skill. If you manage to cultivate the skill, you would be able to produce outputs that no other person doing shallow work could.
 
@@ -25,19 +25,19 @@ However, this is not the case for most people that use these network tools. Peop
 
 But, if you do decide to use these platforms, don’t just be a consumer, be a creator. Take advantage of the platform and audience these tools provide you, and create any sort of content about anything you’re good at. If you don’t, you just end up as a consumer, mindlessly scrolling and numbing your brain to low quality content. Engineers have relentlessly tuned algorithms to keep you engaged on the platform, constantly withdrawing and giving hits of dopamine in return for you to watch more ads.
 
-## Who Should Read It?
+# Who Should Read It?
 
 I think people heading into University studying something dense, or a knowledge worker heading into a career with a lot of pinging going on (like Google Chat or Slack) should read Cal Newport’s work. Learning how to time-block is crucial for a student, as you would want to make sure you are using up your time efficiently, while also leaving room for personal stuff. As for someone in their career, learning when to be available for meetings is important, as that would set boundaries on who can invade your deep state of work within the work day.
 
 As I always say, this book won't suddenly turn you into a working machine (if that is your goal), it should however introduce you to some concepts for helping you stay focused in a distracting world.
 
-## How It Impacted Me
+# How It Impacted Me
 
 - Started time-blocking in my calendar as a guide for the day. Not strictly, however that is the plan that I would slowly ease into as I get older with more responsibilities.
 - When waiting for something (like in a queue for coffee), my first instinct is to no longer bring out my phone. It might make sense to kill time, but I should learn to be content with myself and what's around me. So far it has helped me with improving my sense of patience and alertness.
 - I’m now cautious whenever I embark on selecting a new tool (like a note-taking app) for anything. I’m always tempted to download new shiny apps that popup on [Hacker News](https://news.ycombinator.com/news) to freshen things up, but in the end it has rarely done me any good. Most of the apps you see are distracting you from actually doing the work, so just sticking with the basics and getting value out of or improving on the system you already have is much more important.
 
-## Some Quotes
+# Some Quotes
 
 > In this new economy, three groups will have a particular advantage: those who can work well and creatively with intelligent machines, those who are the best at what they do, and those with access to capital.
 

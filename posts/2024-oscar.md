@@ -5,7 +5,7 @@ title: "Oscar predictions 2024"
 
 The [2024 Oscar's](https://www.oscars.org/oscars/ceremonies/2024) are happening this March, and I thought I'd share my predictions. I'll be doing this for every year, including the Golden Globes and Emmys (which I just missed out on sharing my thoughts with, oh well).
 
-## Best picture
+# Best picture
 
 - American Fiction
 - Anatomy of a Fall
@@ -20,7 +20,7 @@ The [2024 Oscar's](https://www.oscars.org/oscars/ceremonies/2024) are happening 
 
 Watched Barbie, Killers of the Flower Moon, Oppenheimer and Past Lives. I think Oppenheimer will win, what it achieved on a technological level was so impressive to witness in the theatre.
 
-## Best original score
+# Best original score
 
 - American Fiction
 - Indiana Jones and the Dial of Destiny
@@ -30,7 +30,7 @@ Watched Barbie, Killers of the Flower Moon, Oppenheimer and Past Lives. I think 
 
 Oppenheimer. If you wanna know why, just look at my [last.fm scrobbles](<https://www.last.fm/user/pzrsa/library/music/Ludwig+G%C3%B6ransson/Oppenheimer+(Original+Motion+Picture+Soundtrack)?date_preset=ALL>).
 
-## Best director
+# Best director
 
 - Anatomy of a Fall - Justine Triet
 - Killers of the Flower Moon - Martin Scorsese
@@ -40,7 +40,7 @@ Oppenheimer. If you wanna know why, just look at my [last.fm scrobbles](<https:/
 
 The goats Scorsese and Nolan going head to head, but I truly think Nolan has set another standard going forward.
 
-## Best actor
+# Best actor
 
 - Bradley Cooper - Maestro
 - Colman Domingo - Rustin
@@ -50,7 +50,7 @@ The goats Scorsese and Nolan going head to head, but I truly think Nolan has set
 
 Only saw Cillian Murphy, and honestly think it's time for the man to win. Also I think the Academy want to join the hype around it, since I guess that's how it works 🤷‍♂️.
 
-## Best actress
+# Best actress
 
 - Annette Bening - Nyad
 - **Lily Gladstone - Killers of the Flower Moon**
@@ -60,7 +60,7 @@ Only saw Cillian Murphy, and honestly think it's time for the man to win. Also I
 
 Saw Lily Gladstone, and her performance brought me to tears. She gave me that feeling of guilt, even though I had nothing to do with the Osage murders. I also really like Emma Stone, but I've yet to watch Poor Things but I can see a world where she wins. I'm going with Lily for this one.
 
-## Best supporting actress
+# Best supporting actress
 
 - **Emily Blunt - Oppenheimer**
 - Danielle Brooks - The Color Purple
@@ -70,7 +70,7 @@ Saw Lily Gladstone, and her performance brought me to tears. She gave me that fe
 
 I liked Emily Blunt (especially in the end scene where Oppenheimer was handed an award, if you've seen the film you know how cold she was in it), but there's a lot of hype around Da'Vine Joy Randolph performance in The Holdovers so idk.
 
-## Best supporting actor
+# Best supporting actor
 
 - Sterling K Brown - American Fiction
 - **Robert De Niro - Killers of the Flower Moon**
@@ -80,7 +80,7 @@ I liked Emily Blunt (especially in the end scene where Oppenheimer was handed an
 
 I mean, De Niro was the scariest mf in Killers of the Flower Moon, and he's one of my favourites, but I also found RDJ chilling as Levi Strauss. De Niro for this one.
 
-## Best adapted screenplay
+# Best adapted screenplay
 
 - American Fiction
 - Barbie
@@ -90,7 +90,7 @@ I mean, De Niro was the scariest mf in Killers of the Flower Moon, and he's one 
 
 I think Oppenheimers pacing for a 3 hour biopic was well done.
 
-## Best original screenplay
+# Best original screenplay
 
 - Anatomy of a Fall
 - The Holdovers
@@ -100,7 +100,7 @@ I think Oppenheimers pacing for a 3 hour biopic was well done.
 
 Past Lives, great film and score. Definitely brought me to tears, and if you didn't already know, I tend to tear or cry a lot when it comes to films/shows, but rarely anything else. It's really strange.
 
-## Best original song
+# Best original song
 
 - The Fire Inside - Flamin' Hot (Diane Warren)
 - **I'm Just Ken - Barbie (Mark Ronson, Andrew Wyatt)**
@@ -110,7 +110,7 @@ Past Lives, great film and score. Definitely brought me to tears, and if you did
 
 To be honest, I don't care about this one but I'll just say I'm Just Ken cause Ryan Gosling.
 
-## Best animated feature
+# Best animated feature
 
 - **The Boy and the Heron**
 - Elemental
@@ -120,7 +120,7 @@ To be honest, I don't care about this one but I'll just say I'm Just Ken cause R
 
 The Boy and the Heron, haven't even watched it yet but I just have a hunch it's winning. Across the Spider-Verse was so good though, but doesn't feel complete to win.
 
-## Best costume design
+# Best costume design
 
 - **Barbie**
 - Killers of the Flower Moon
@@ -130,7 +130,7 @@ The Boy and the Heron, haven't even watched it yet but I just have a hunch it's 
 
 I liked Barbie, Killers of the Flower Moon or Poor Things. I think Barbie. Heard good things about Napoleon costume design, but that film felt like such a joke to many, so I don't think so.
 
-## Best make-up and hairstyling
+# Best make-up and hairstyling
 
 - Golda
 - Maestro
@@ -140,7 +140,7 @@ I liked Barbie, Killers of the Flower Moon or Poor Things. I think Barbie. Heard
 
 Poor Things, from the trailer it looks cute.
 
-## Best production design
+# Best production design
 
 - **Barbie**
 - **Killers of the Flower Moon**
@@ -150,7 +150,7 @@ Poor Things, from the trailer it looks cute.
 
 Barbie's World looked incredible, but I loved the rawness of both Killers of the Flower Moon and Oppenheimer.
 
-## Best sound
+# Best sound
 
 - **The Creator**
 - Maestro
@@ -160,7 +160,7 @@ Barbie's World looked incredible, but I loved the rawness of both Killers of the
 
 The Creator was a great sci-fi visually and audibly, but man Oppenheimer was soo good so idk.
 
-## Best film editing
+# Best film editing
 
 - Anatomy of a Fall
 - The Holdovers
@@ -170,7 +170,7 @@ The Creator was a great sci-fi visually and audibly, but man Oppenheimer was soo
 
 No idea, no gripes with Killers of the Flower Moon or Oppenheimer.
 
-## Best cinematography
+# Best cinematography
 
 - El Conde
 - Killers of the Flower Moon
@@ -180,7 +180,7 @@ No idea, no gripes with Killers of the Flower Moon or Oppenheimer.
 
 Oppenheimer for sure.
 
-## Best visual effects
+# Best visual effects
 
 - **The Creator**
 - Godzilla Minus One
@@ -192,7 +192,7 @@ The Creator was beautiful. The fact it was all shot on a [Sony FX3](https://nofi
 
 # Idk for these
 
-## Best international feature
+# Best international feature
 
 - Io Capitano
 - Perfect Days
@@ -200,7 +200,7 @@ The Creator was beautiful. The fact it was all shot on a [Sony FX3](https://nofi
 - The Teachers' Lounge
 - The Zone of Interest
 
-## Best documentary feature
+# Best documentary feature
 
 - Bobi Wine: The People's President
 - The Eternal Memory
@@ -208,7 +208,7 @@ The Creator was beautiful. The fact it was all shot on a [Sony FX3](https://nofi
 - To Kill a Tiger
 - 20 Days in Mariupol
 
-## Best live action short
+# Best live action short
 
 - The After
 - Invincible
@@ -216,7 +216,7 @@ The Creator was beautiful. The fact it was all shot on a [Sony FX3](https://nofi
 - Red, White and Blue
 - The Wonderful Story of Henry Sugar
 
-## Best animated short
+# Best animated short
 
 - Letter to a Pig
 - Ninety-Five Senses
@@ -224,7 +224,7 @@ The Creator was beautiful. The fact it was all shot on a [Sony FX3](https://nofi
 - Pachyderme
 - War Is Over! Inspired by the Music of John & Yoko
 
-## Best documentary short
+# Best documentary short
 
 - The ABCs of Book Banning
 - The Barber of Little Rock

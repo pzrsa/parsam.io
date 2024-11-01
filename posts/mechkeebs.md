@@ -10,9 +10,9 @@ After [many months](https://github.com/pzrsa/mechkeebs/graphs/code-frequency), I
 ![MechKeebs Home Page](/mechkeebs.jpg)
 It wasn't intended to solve any problems, but I've learnt from a few great engineers that solving problems at my stage shouldn't be the focus. I should still obviously solve a problem when needed, but that will just come with time as I expose myself to more projects.
 
-## Technologies
+# Technologies
 
-### Next.js
+# Next.js
 
 One of the most popular React frameworks is [Next.js](https://nextjs.org/), created by [Vercel](https://vercel.com).
 The site you're on right now was also of course built with Next.js, using [static generation](https://nextjs.org/docs/basic-features/pages#static-generation-recommended).
@@ -21,7 +21,7 @@ However the [`next/image`](https://nextjs.org/docs/basic-features/image-optimiza
 
 I do know that [they're aware of the feedback](https://twitter.com/leeerob/status/1545480513846185984?s=20&t=Sz5ATLanuOhtZKm9I1JGVQ), so I'm hoping to see some more improvements on it soon.
 
-### Chakra UI
+# Chakra UI
 
 This was my first time using a component library like [Chakra UI](https://chakra-ui.com/) or [MUI](https://mui.com/).
 It was fun slapping components together and making them just work for someone who hates styling. I felt very spoiled.
@@ -31,7 +31,7 @@ Plus it's not really the library's fault as I don't think performance is their m
 
 After switching away from the default [CSS Modules](https://github.com/css-modules/css-modules) Next.js provides, I took a look at using [Tailwind CSS](https://tailwindcss.com/) for this site. I'm quite happy with it so far, so will most likely use it in future projects.
 
-### SWR
+# SWR
 
 For keeping the data fresh, I used [SWR](https://swr.vercel.app/), which is also created by Vercel.
 I found it enjoyable to use, mostly because of how minimal it feels. It just works.
@@ -41,7 +41,7 @@ SWR also has a handy [integration with Next.js](https://swr.vercel.app/docs/with
 
 The SSR + client side fetching combo was perfect, and I look forward to using it more.
 
-### Google Cloud Storage
+# Google Cloud Storage
 
 Using [Cloud Storage](https://cloud.google.com/storage) was quite easy to get up and running with the [Node.js library](https://github.com/googleapis/nodejs-storage).
 
@@ -49,7 +49,7 @@ I made the mistake of sending the image back to the server, then compressing it 
 
 Plus I definitely did not pick GCP because of obvious reasons.
 
-### DigitalOcean + Dokku
+# DigitalOcean + Dokku
 
 The most dev ops stuff I had done was doing a quick `git push` to Heroku to launch my crappy [Python web app](https://github.com/pzrsa/flaskify) back in the day.
 But this time, I was looking forward to finally getting my hands dirty with dev ops work. I had $100 in credits provided by the [GitHub Student Developer Pack](https://education.github.com/pack), so I was ready to use the [DigitalOcean](https://www.digitalocean.com/) + [Dokku](https://dokku.com/) combo.
@@ -62,7 +62,7 @@ DigitalOcean provides computing services, similar to platforms like Google Cloud
 
 I can now use the same VPS to deploy other projects in the future without breaking the bank. I want to see how far I could go before my 1GB Memory 25GB SSD could no longer handle it. But if we're going to be real, I don't think I would gain that sort of traffic.
 
-## Some things I learned
+# Some things I learned
 
 - **Spend no more than a couple weeks on a project**.
   I took way too long to get this out the door. I started in November 2021, and deployed it in July 2022. Obviously I didn't work on it daily during that period, it was more of a 1-2 month break and working in bursts. If I had instead abandoned the project I could've built other stuff in that time, which would help me identify patterns for a great project idea.

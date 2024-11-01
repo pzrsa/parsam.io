@@ -5,13 +5,13 @@ title: "How to start journaling"
 
 I've been journaling since late last year, and there are a lot of things I've learnt about myself. But the thing is, I know this isn't the case for the majority of people. It's hard to build the habit since it's so boring and looks like it takes up a lot of time. But in reality I found a way that helped me and might help you. I'll be sharing some of my past experiences of how it's benefited me, and how powerful of a habit journaling can be for a meaningful life.
 
-## How Journaling Can Benefit You
+# How Journaling Can Benefit You
 
 Before I get into how to journal, I would like to first give some points on why you should. There are a lot of reasons to journal. But the reason you should mainly is gaining clarity over your own thoughts. Journaling can allow you to feel calmer and more at ease with yourself, since how you feel is written down and not jumbled in your head. Our focus is constantly distracted from one new hot topic to another, but have you actually sat down and thought for a second on how you feel? That constant context switching can be damaging to your well being, so realising how you feel right now can benefit your future self.
 
 On the other hand, the bonus of journaling is looking back on yourself months or years later and seeing those improvements visually. Usually there's a problem you're facing in the present that seems impossible to fix, but you tend to overcome it and be surprised. So with journaling you can go back and realise that you've gone through something like this before, and think to yourself "oh yeah, I remember doing that, it can really help me now".
 
-## My Process
+# My Process
 
 Enough of the beauty of journaling, let me explain how to actually start. If you Google "how to journal", you will see loads of results and most of them are just flooded with conflicting advice and people trying to sell you their "self-improvement" course. You're probably well aware of them, but I found this pretty simple process to get started. I'm a lazy guy, and I made a lot of mistakes trying to make it a habit. But I'll try my best to make the process as frictionless as possible. Keep in mind that no book, article (even this amazing one you're reading) or video will magically turn you into a monk. Take what you need and make your own process from those building blocks.
 
@@ -19,7 +19,7 @@ Anyways, my process with journaling is really simple. I don't like having to typ
 
 ![Notion journaling prompt](/journal-prompt.jpg)
 
-## How To Get Started With It
+# How To Get Started With It
 
 To save you time, I'll just give you a step by step on what you should do:
 
@@ -29,7 +29,7 @@ To save you time, I'll just give you a step by step on what you should do:
 4. I put in an example of how it would work. I tend to just write a bit sloppy in my journal but for the template's purpose I had to write a bit more for it to look nice.
 5. Now just get started with it, no matter what time it is for you, press the blue "New" button and select the premade template for you to journal in.
 
-## Maintaining The Habit
+# Maintaining The Habit
 
 I made this mistake where I felt like I had to write a ton under every question, but the important thing is just writing something. No one besides you is going to see it, so write what makes sense for you. If you want to write just a word, go ahead, DO IT! I think that's the best mindset to go by in the beginning where you just want to write how your day went in a short amount of time. I've had those bad days where I was in a rut and wrote like 3 words for each prompt. But it makes me feel much better and going back a few months later it makes me laugh sometimes of how lazy I was in the situation.
 
