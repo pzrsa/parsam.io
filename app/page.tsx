@@ -3,7 +3,6 @@ import Link from "next/link";
 import me from "../public/avatar.jpeg";
 import NowPlaying from "./components/NowPlaying";
 import { FAVOURITE_ALBUMS, FAVOURITE_FILMS, FAVOURITE_SHOWS } from "./lib/data";
-import { RecentTracks } from "./components/LastFM";
 
 export default function Page() {
   return (
