@@ -2,12 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import me from "../public/avatar.jpeg";
 import NowPlaying from "./components/NowPlaying";
-import {
-  FAVOURITE_ALBUMS,
-  FAVOURITE_FILMS,
-  FAVOURITE_SHOWS,
-  SHOWS_WATCHING,
-} from "./lib/data";
+import { FAVOURITE_ALBUMS, FAVOURITE_FILMS, FAVOURITE_SHOWS } from "./lib/data";
+import { RecentTracks } from "./components/LastFM";
 
 export default function Page() {
   return (
@@ -102,33 +98,6 @@ export default function Page() {
             I joined Tesla, and moved to Berlin! More details in this{" "}
             <Link href={"/tesla"}>post</Link>.
           </p>
-          <h3>Media</h3>
-          <h4>Shows I&apos;m watching or waiting for</h4>
-          <div className="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">
-            {SHOWS_WATCHING.map((show) => (
-              <a
-                href={`https://www.imdb.com/title/${show.imdbID}`}
-                className="group"
-                key={show.title}
-                rel="prefetch noreferrer"
-                target="_blank"
-              >
-                <div className="aspect-w-2 aspect-h-3 cursor-pointer overflow-visible shadow-2xl">
-                  {show.active && (
-                    <span className="-top-1 -left-1 inline-flex rounded-full h-2.5 w-2.5 bg-zinc-900 dark:bg-zinc-100 z-10">
-                      <span className="animate-ping h-full w-full rounded-full bg-zinc-800 dark:bg-zinc-200 opacity-75"></span>
-                    </span>
-                  )}
-                  <Image
-                    alt={show.title}
-                    src={`https://image.tmdb.org/t/p/original/${show.tmdbImageID}.jpg`}
-                    fill
-                    className="transition-all group-hover:opacity-75 rounded-sm"
-                  />
-                </div>
-              </a>
-            ))}
-          </div>
         </div>
         <div>
           <h2>Favourites</h2>
@@ -179,6 +148,7 @@ export default function Page() {
             <ExternalLink href="https://letterboxd.com/pzrsa/likes/films/by/date/size/large/">
               Letterboxd
             </ExternalLink>
+            .
           </p>
           <h3>Shows</h3>
           <div className="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">

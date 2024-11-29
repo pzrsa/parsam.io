@@ -11,18 +11,14 @@ const NowPlaying: React.FC = () => {
   if (error)
     return (
       <p className="flex items-baseline gap-2">
-        <span>
-          <SpotifyIcon />
-        </span>
+        <SpotifyIcon />
         failed to load
       </p>
     );
   if (!data)
     return (
       <p className="flex items-baseline gap-2">
-        <span>
-          <SpotifyIcon />
-        </span>
+        <SpotifyIcon />
         Loading...
       </p>
     );
@@ -51,9 +47,7 @@ const NowPlaying: React.FC = () => {
           target="_blank"
           className="flex items-baseline gap-2"
         >
-          <span>
-            <SpotifyIcon />
-          </span>
+          <SpotifyIcon />
           Not playing anything
         </a>
       )}

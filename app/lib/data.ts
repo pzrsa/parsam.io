@@ -7,29 +7,9 @@ export const FAVOURITE_ALBUMS: Album[] = [
     spotifyID: "6pwuKxMUkNg673KETsXPUV",
   },
   {
-    title: "Yeezus",
-    spotifyImageID: "ab67616d0000b2731dacfbc31cc873d132958af9",
-    spotifyID: "7D2NdGvBHIavgLhmcwhluK",
-  },
-  {
-    title: "Random Access Memories",
-    spotifyImageID: "ab67616d0000b2739b9b36b0e22870b9f542d937",
-    spotifyID: "4m2880jivSbbyEGAKfITCa",
-  },
-  {
-    title: "The Life Of Pablo",
-    spotifyImageID: "ab67616d0000b2732a7db835b912dc5014bd37f4",
-    spotifyID: "7gsWAHLeT0w7es6FofOXk1",
-  },
-  {
-    title: "My Beautiful Dark Twisted Fantasy",
-    spotifyImageID: "ab67616d0000b273d9194aa18fa4c9362b47464f",
-    spotifyID: "20r762YmB5HeofjMCiPMLv",
-  },
-  {
-    title: "Graduation",
-    spotifyImageID: "ab67616d0000b27326f7f19c7f0381e56156c94a",
-    spotifyID: "4SZko61aMnmgvNhfhgTuD3",
+    title: "IGOR",
+    spotifyImageID: "ab67616d0000b2737005885df706891a3c182a57",
+    spotifyID: "5zi7WsKlIiUXv09tbGLKsE",
   },
   {
     title: "good kid, m.A.A.d city",
@@ -37,9 +17,34 @@ export const FAVOURITE_ALBUMS: Album[] = [
     spotifyID: "748dZDqSZy6aPXKcI9H80u",
   },
   {
+    title: "My Beautiful Dark Twisted Fantasy",
+    spotifyImageID: "ab67616d0000b273d9194aa18fa4c9362b47464f",
+    spotifyID: "20r762YmB5HeofjMCiPMLv",
+  },
+  {
+    title: "Yeezus",
+    spotifyImageID: "ab67616d0000b2731dacfbc31cc873d132958af9",
+    spotifyID: "7D2NdGvBHIavgLhmcwhluK",
+  },
+  {
+    title: "The Life Of Pablo",
+    spotifyImageID: "ab67616d0000b2732a7db835b912dc5014bd37f4",
+    spotifyID: "7gsWAHLeT0w7es6FofOXk1",
+  },
+  {
+    title: "Graduation",
+    spotifyImageID: "ab67616d0000b27326f7f19c7f0381e56156c94a",
+    spotifyID: "4SZko61aMnmgvNhfhgTuD3",
+  },
+  {
     title: "To Pimp A Butterfly",
     spotifyImageID: "ab67616d0000b273cdb645498cd3d8a2db4d05e1",
     spotifyID: "7Ks4VCY1wFebnOdJrM13t6",
+  },
+  {
+    title: "Random Access Memories",
+    spotifyImageID: "ab67616d0000b2739b9b36b0e22870b9f542d937",
+    spotifyID: "4m2880jivSbbyEGAKfITCa",
   },
   {
     title: "ye",
@@ -47,14 +52,9 @@ export const FAVOURITE_ALBUMS: Album[] = [
     spotifyID: "2Ek1q2haOnxVqhvVKqMvJe",
   },
   {
-    title: "La La Land (Original Motion Picture Soundtrack)",
-    spotifyImageID: "ab67616d0000b2730bdf4dd39843ad48c5b66bc4",
-    spotifyID: "3GU8BzFEAdFSRjc8jZkL3S",
-  },
-  {
-    title: "Discovery",
-    spotifyImageID: "ab67616d0000b273b33d46dfa2635a47eebf63b2",
-    spotifyID: "2noRn2Aes5aoNVsU6iWThc",
+    title: "My Dear Melancholy,",
+    spotifyImageID: "ab67616d0000b2731f6a2a40bb692936879db730",
+    spotifyID: "4qZBW3f2Q8y0k1A84d4iAO",
   },
   {
     title: "An Evening With Silk Sonic",
@@ -124,11 +124,6 @@ export const SHOWS_WATCHING: Show[] = [
     imdbID: "tt1190634",
   },
   {
-    title: "Arcane",
-    tmdbImageID: "fqldf2t8ztc9aiwn3k6mlX3tvRT",
-    imdbID: "tt11126994",
-  },
-  {
     title: "Dave",
     tmdbImageID: "iorStu3DHuscNfQiIyQomvMyO0h",
     imdbID: "tt8531222",
@@ -137,13 +132,18 @@ export const SHOWS_WATCHING: Show[] = [
 
 export const FAVOURITE_SHOWS: Show[] = [
   {
+    title: "Arcane",
+    tmdbImageID: "oTGEwkp1mPgWNMgVSM53TWfzgSc",
+    imdbID: "tt11126994",
+  },
+  {
     title: "Succession",
-    tmdbImageID: "7HW47XbkNQ5fiwQFYGWdw9gs144",
+    tmdbImageID: "hS62paPx7Ls3c6voXcXJzJNaTG4",
     imdbID: "tt7660850",
   },
   {
     title: "Atlanta",
-    tmdbImageID: "8HZyGMnPLVVb00rmrh6A2SbK9NX",
+    tmdbImageID: "pDaERwg3NdKiLAApjxGTU7aYzze",
     imdbID: "tt4288182",
   },
   {
@@ -153,7 +153,7 @@ export const FAVOURITE_SHOWS: Show[] = [
   },
   {
     title: "Top Boy",
-    tmdbImageID: "mGZpOEaLZTRzWeQMq5SZM5BbDZg",
+    tmdbImageID: "cfqHWQQDwvKT8Xoe0AXzHBXcF1u",
     imdbID: "tt1830379",
   },
   {
@@ -163,17 +163,12 @@ export const FAVOURITE_SHOWS: Show[] = [
   },
   {
     title: "Community",
-    tmdbImageID: "3KUjDt8XY7w2Ku70UE0SECmv1zP",
+    tmdbImageID: "tfX9KvvHdzfChgM7TZOd39QhOqN",
     imdbID: "tt1439629",
   },
   {
-    title: "Silicon Valley",
-    tmdbImageID: "dc5r71XI1gD4YwIUoEYCLiVvtss",
-    imdbID: "tt2575988",
-  },
-  {
-    title: "Shogun",
-    tmdbImageID: "7O4iVfOMQmdCSxhOg1WnzG1AgYT",
-    imdbID: "tt2788316",
+    title: "The Penguin",
+    tmdbImageID: "7I3EypifSHlW1BmmHbXXevqUUA7",
+    imdbID: "tt15435876",
   },
 ];
