@@ -3,13 +3,14 @@ import Link from "next/link";
 import me from "../public/avatar.jpeg";
 import NowPlaying from "./components/NowPlaying";
 import { FAVOURITE_ALBUMS, FAVOURITE_FILMS, FAVOURITE_SHOWS } from "./lib/data";
+import { ExternalLink } from "./components/common";
 
 export default function Page() {
   return (
     <>
       <div>
         <div className="flex items-center gap-2">
-          <ExternalLink href="https://twitter.com/pzrsaa">
+          <ExternalLink href="https://x.com/pzrsaa">
             <Image
               alt="Parsa Mesgarha"
               src={me}
@@ -65,7 +66,7 @@ export default function Page() {
         <div>
           <h3>Links</h3>
           <div className="not-prose grid grid-cols-3 sm:grid-cols-4">
-            <LinkItem href="https://twitter.com/pzrsaa">Twitter/X</LinkItem>
+            <LinkItem href="https://x.com/pzrsaa">Twitter/X</LinkItem>
             <LinkItem href="https://github.com/pzrsa">GitHub</LinkItem>
             <LinkItem href="https://www.youtube.com/@pzrsa">YouTube</LinkItem>
             <LinkItem href="https://www.instagram.com/parsamesgarha">
@@ -75,7 +76,7 @@ export default function Page() {
               LinkedIn
             </LinkItem>
             <LinkItem href="https://github.com/pzrsa/parsam.io">
-              Source
+              Source Code
             </LinkItem>
             <LinkItem href="https://letterboxd.com/pzrsa/">Letterboxd</LinkItem>
             <LinkItem href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk">
@@ -94,8 +95,8 @@ export default function Page() {
           <h2>Now</h2>
           <h3>Career</h3>
           <p>
-            I joined Tesla, and moved to Berlin! More details in this{" "}
-            <Link href={"/tesla"}>post</Link>.
+            I joined Tesla, and moved to Berlin! More details in this post:{" "}
+            <Link href={"/tesla"}>I joined Tesla (and moved to Berlin)</Link>.
           </p>
         </div>
         <div>
@@ -175,27 +176,6 @@ export default function Page() {
     </>
   );
 }
-
-const ExternalLink = ({
-  href,
-  className,
-  children,
-}: {
-  href: string;
-  className?: string;
-  children: React.ReactNode;
-}) => {
-  return (
-    <a
-      href={href}
-      rel="prefetch noreferrer"
-      target="_blank"
-      className={className}
-    >
-      {children}
-    </a>
-  );
-};
 
 const LinkItem = ({
   children,
