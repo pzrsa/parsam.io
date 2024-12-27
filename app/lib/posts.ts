@@ -28,15 +28,17 @@ export const getSortedPostData = () => {
   });
 
   // Sort posts by date
-  return allPostsData.sort(({ date: a }: any, { date: b }: any) => {
-    if (a < b) {
-      return 1;
-    } else if (a > b) {
-      return -1;
-    } else {
-      return 0;
-    }
-  });
+  return allPostsData
+    .filter(({ draft }: any) => !draft)
+    .sort(({ date: a }: any, { date: b }: any) => {
+      if (a < b) {
+        return 1;
+      } else if (a > b) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
 };
 
 export const getAllPostIds = () => {

@@ -3,6 +3,7 @@ export interface Post {
   contentHtml: string;
   date: string;
   title: string;
+  draft?: boolean;
 
   // book note
   subtitle?: string;

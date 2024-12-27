@@ -60,6 +60,7 @@ export default async function Page({ params }: { params: { id: string } }) {
             )}
             <DateFormat dateString={post.date} format="MMMM D, YYYY" />
           </span>
+          {post.draft ? <span>DRAFT</span> : ""}
         </div>
       </div>
       <article
