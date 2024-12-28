@@ -75,6 +75,7 @@ export default async function Page({ params }: { params: { id: string } }) {
             following me on{" "}
             <ExternalLink href="https://x.com/pzrsaa">Twitter/X</ExternalLink>
           </li>
+          <li>sharing this post</li>
           <li>
             subscribing via <a href="/feed.atom">RSS</a>
           </li>
