@@ -49,6 +49,7 @@ I didn't even care about how much I sold my setup for, I just wanted to get rid 
 After selling it all, I obviously didn't have a computer at this point, so I bought some random refurbished Dell computer, the type that you'd use in school.
 
 I went from a setup like this:
+
 <video controls>
 
   <source src="/setup-1.mov">
