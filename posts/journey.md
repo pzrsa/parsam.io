@@ -1,6 +1,6 @@
 ---
 date: "2024-12-27"
-title: "From Google to Tesla - My journey from 17 to a mid-level software engineer"
+title: "From Google to Tesla: My Journey from a 17 y/o Gamer to Software Engineer"
 draft: true
 ---
 
@@ -24,11 +24,11 @@ Without further ado, I hope you enjoy this glimpse into my journey 🤝
 
 The story begins in July 2020, London. I'd just turned 17 and finished my first out of second year of college (2 years of pre-university) doing a BTEC Level 3 in Information Technology. My college was quite rough, I'm pretty sure someone got stabbed there.
 
-During my summer break my routine was waking up late, hopping on my gaming pc and playing mostly Fortnite non stop till the AM with the boys. I was actually pretty good, even went along to make a couple grand from playing tournaments. But this was the routine I'd served for the last 3-4 years at that point. Gaming was what I lived for.
+During my summer break my routine was waking up late, hopping on my gaming pc and playing mostly Fortnite non stop till the AM with the boys. I was actually pretty good, even went along to make a couple grand from playing tournaments. This had been my routine for the last 3-4 years. Gaming was what I lived for.
 
 But one day all of this started to vanish. To this day I genuinely can't pinpoint exactly what caused it, but I know I just got rid of everything cold turkey. I cut off ties with the friends I'd played games with, deleted social media, and in the coming weeks sold all my gaming equipment.
 
-I didn't even care about how much I sold my setup for, I just wanted to get rid of it all. I was just sick and tired of myself, and really wanted to make a change. I knew that this was the only route that would work.
+I didn't even care about how much I sold my setup for, I just wanted to get rid of it all. I was just sick and tired of myself and really wanted to make a change. I knew that this was the only route that would work for me.
 
 After selling it all, I obviously didn't have a computer at this point, so I bought some random refurbished Dell computer, the type that you'd use in school.
 
@@ -39,7 +39,7 @@ I went from a setup like this:
 To this:
 ![](/setup-2.jpg)
 
-I felt reborn while I was going through all of this. I had turned to a completely different person. In all honesty though, the next few months were some of the loneliest I've ever been. I turned into a full on robot. But I finally broke the state of autopilot I was in for those past few years where I was letting life pass by.
+I felt reborn, and while I was going through all of this I had turned to a completely different person, bordering on robot. In all honesty though, the next few months were some of the loneliest I've ever been. But I finally broke the state of autopilot I was in for those past few years where I was letting life pass by.
 
 During this period I also tried to do some Amazon drop-shipping stuff, which I find absolutely hilarious. I did a ton of research, but I didn't spend a single penny on actually selling something. In hindsight though that experience did teach me a lot about communicating, even though I practically did nothing.
 
@@ -59,7 +59,7 @@ I started doing some research into learning this thing called coding, so I went 
 
 After finishing it I got kinda bored with making elements do stuff, so I moved on to learning an actual programming language, Python, through a Udemy course (even made a [video](https://www.youtube.com/watch?v=iAYsqj7_95I) on it). God I looked so young in that video.
 
-Fun fact: the worst grade I got in my GCSEs was in computer science. In that class we learned the basics of Python, and I remember while doing this Udemy course that I regretted so many of my choices to not be better in school. I was a bright kid, yet somehow could never get good grades because I was so obsessed with playing video games, and kinda fell in with the wrong crowd.
+Fun fact: the worst grade I got in my GCSEs was in computer science. In that class we learned the basics of Python, and I remember while doing this Udemy course that I regretted so many of my choices to not be better in school. I was a bright kid, yet somehow could never get good grades because I was so obsessed with playing video games.
 
 In February 2021 I slowly but surely started building a bunch of random crap using technologies like Python and Flask. I generally started to get myself really interested in the web space.
 
@@ -113,7 +113,7 @@ After a lot of thinking, I cancelled my university placement and accepted the of
 
 ![](/welcome-google.jpeg)
 
-I went through the usual onboarding stuff, then met my first ever manager and team. I joined the [Play Console](https://developer.android.com/distribute/console) team, responsible for handling the core services, with my case being sending messages to users.
+I went through the usual onboarding stuff. I then met my first ever manager and joined the [Play Console](https://developer.android.com/distribute/console) team. Our team was responsible for handling the core services, with my case being sending messages to users.
 
 Everyone in my team gave me the necessary mentoring to do things at Google scale. There was also so much tooling involved that it takes months just to feel comfortable. They say 6 months is the time it usually takes before you actually get into the rhythm. My mentor, who worked at the company for 20+ years, was an absolute legend so I learned so much from him.
 
