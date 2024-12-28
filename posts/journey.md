@@ -34,10 +34,7 @@ After selling it all, I obviously didn't have a computer at this point, so I bou
 
 I went from a setup like this:
 
-<video controls>
-
-  <source src="/setup-1.mov">
-</video>
+![](/setup-1.jpg)
 
 To this:
 ![](/setup-2.jpg)
