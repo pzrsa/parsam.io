@@ -14,7 +14,7 @@ With a background like that, no one could've ever predicted I'd end up where I a
 
 Now, at 21, as the year comes to a close and marking roughly four years since I started learning to code I find myself reflecting. I figured it'd be a good time to finally share my story going from a newbie programmer to a mid-level software engineer at Tesla.
 
-I've been meaning to share my story for a while now but never got around to it. I aim to do this authentically, and not resort to the clickbait tactics that is too often associated with FAANG "success" stories. I hope my journey serves as a form of inspiration, especially for young people looking to get their foot through the tech door. I certainly would've loved to read something like this when I was starting out.
+I've been meaning to share my story for a while now but never got around to it. I aim to do this authentically, and not resort to the clickbait tactics that are too often associated with FAANG "success" stories. I hope my journey serves as a form of inspiration, especially for young people looking to get their foot through the tech door. I certainly would've loved to read something like this when I was starting out.
 
 > Acquire worldly wisdom and adjust your behavior accordingly. If your new behavior gives you a little temporary unpopularity with your peer group…then to hell with them. (Charlie Munger, [Poor Charlie's Almanack](https://press.stripe.com/poor-charlies-almanack))
 
@@ -22,23 +22,7 @@ Without further ado, I hope you enjoy this glimpse into my journey 🤝
 
 # Being Reborn
 
-The story begins in July 2020, London. I'd just turned 17 and finished my first out of second year of college doing a BTEC Level 3 in Information Technology. My college was quite rough, I'm pretty sure someone got stabbed there.
-
-**Quick lesson on the UK's education system**
-In the last two years of secondary school, students take their GCSEs, where they'd select 8-10 different subjects to study. Students must take the mandatory subjects like Maths, English and Science, alongside the optional subjects like History and Computer Science.
-
-At the end of that second year students sit an exam to test their knowledge, where they'll receive their final grade. The grading system is from 9 (highest grade) to 1, replacing the letter (A\* to G) system which older folks may remember. I think I was in the second year after this was [introduced](https://ofqual.blog.gov.uk/2018/03/02/gcse-9-to-1-grades-a-brief-guide-for-parents/).
-
-After finishing secondary school, students may move on and pick a choice between studying A-Levels or BTECs:
-
-- A-Levels are more theoretical/traditional, they can pick 3 subjects. They take an exam at the end like GCSEs. Sought after by top universities with high grades.
-- BTECs are supposed to be more hands on, usually one subject, but can also do it alongside an A-Level. Final grade is accessed by handing in assignments, with the highest grade being D\*D\*D\* (for a BTEC Level 3). Less sought after by top universities.
-
-Usually students who get good grades on their GCSEs go on to do A-Levels since the minimum requirements are higher than BTECs. In my case, I got to do a BTEC Level 3 since I had a grade 5 in English Language and Literature, 4 in Science, and 3 in Maths. I needed a grade 4 in Maths, so they let me take the IT course on the condition that I retake my Maths exam and get at least a 4. I retook it later on and got the 4.
-
-So why am I telling you all this? Well, high GCSE and A-Level grades are most sought after by the top universities, whereas low GCSE grades with BTECs narrow your options pretty limited. Speaking purely from my experience as part of the latter, I'll come out and say that it's ridiculous how much you're punished for doing bad in secondary school. You can see how a number on a piece of paper can determine the route you end up on, thus likely impacting your career path. Teachers in my college put so much fear in me about this idea, as if not doing well will wind me up jobless.
-
-Back to the story.
+The story begins in July 2020, London. I'd just turned 17 and finished my first out of second year of college (2 years of pre-university) doing a BTEC Level 3 in Information Technology. My college was quite rough, I'm pretty sure someone got stabbed there.
 
 During my summer break my routine was waking up late, hopping on my gaming pc and playing mostly Fortnite non stop till the AM with the boys. I was actually pretty good, even went along to make a couple grand from playing tournaments. But this was the routine I'd served for the last 3-4 years at that point. Gaming was what I lived for.
 
@@ -64,9 +48,11 @@ During this period I also tried to do some Amazon drop-shipping stuff, which I f
 
 # Applying to University
 
-In December 2020 I was also in the process of applying to university. As mentioned before, I had terrible grades. So the fact that I was doing a BTEC and not an A-Level, also meant that my options were pretty limited for applying to a good university.
+In December 2020 I was also in the process of applying to university. As mentioned before, I had terrible grades, which meant that my options were limited to low ranked universities.
 
-At this point I wasn't even considering anything tech related, so I decided to apply for 5 places in the subject of Accounting/Finance. I wanted to be a finance bro. I applied to Queen Mary University of London, University of Exeter, and University of Reading.
+I'll come out and say that it's ridiculous how much you're punished for doing bad in secondary school. You can see how a number on a piece of paper can determine the route you end up on, thus likely impacting your career path. Teachers in my college put so much fear in me about this idea, as if not doing well will wind me up jobless.
+
+At this point I wasn't even considering anything tech related, so I decided to apply to places in the subject of Accounting/Finance as I wanted to be a finance bro.
 
 # Learning to Code
 
@@ -146,7 +132,7 @@ I worked on a feature called WebAPKs, which enabled users to install web apps as
 
 Our server was handling tens of millions of monthly requests, and working on this team also got me super interested in how cool backend architecture is.
 
-I learned so much from my time at Google. I worked with some of the smartest people, and I felt so grateful being the dumbest in the room.
+I learned so much from my time at Google. I worked some of the smartest people, and I felt so grateful being the dumbest in the room.
 
 # Looking for the next opportunity
 
