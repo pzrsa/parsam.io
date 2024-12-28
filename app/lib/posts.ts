@@ -59,7 +59,7 @@ export const getPostData = async (id: string): Promise<Post> => {
       target: "_blank",
       rel: "prefetch noreferrer",
     })
-    .use(html)
+    .use(html, { sanitize: false })
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
 
