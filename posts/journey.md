@@ -1,14 +1,12 @@
 ---
 date: "2024-12-27"
-title: "From Google to Tesla: My Journey from a 17 y/o Gamer to Software Engineer"
+title: "How I went from a video game addicted 17 year old to software engineer at Google and Tesla"
 draft: true
 ---
 
 It's been over three years since I started my career as a software engineer, and during this time I've had the fascinating opportunity to work at two of the most innovative companies in the world: Google and Tesla.
 
 I started out as a 17 year old addicted to video games, struggling with terrible grades, and lacking any real ambitions.
-
-![](/me-snap-hairline.jpg)
 
 With a background like that, no one could've ever predicted I'd end up where I am today. I went from a complete bum to... less of a bum.
 
@@ -131,6 +129,10 @@ Our server was handling tens of millions of monthly requests, and working on thi
 
 I learned so much from my time at Google. I worked some of the smartest people, and I felt so grateful being the dumbest in the room.
 
+Even got a photo with [Sundar Pichai](https://en.wikipedia.org/wiki/Sundar_Pichai).
+
+![](/pichAI.jpeg)
+
 # Looking for the next opportunity
 
 Everything was honestly incredible. Free food/gym, smart people, interesting problems, so I couldn't really complain much. With that said however, I had to start looking for my next opportunity.
@@ -157,7 +159,7 @@ But now I feel like I have a good routine going on, which is what I at least wan
 
 My team is incredible, I feel like we get along with each other really well. I'm sure at least one of you is going to read this post. While on this topic, one thing I've learned about teams is that you could have the best product in the world, but if the people in your team don't enjoy working together then what's the point? I'm glad I realised early on what a good team looks like because in all my cases I've gotten along so well with them. There's probably a difference between a team who get along at work and a team who you can also go out and enjoy with.
 
-One thing I find unique about Tesla is that despite it being worth over a trillion, it still operates like a startup. I wanted to work in a smaller environment, but I still appreciate not having to deal with the risks associated with working at a startup.
+One thing I find unique about Tesla is that despite it being worth over a trillion, it still operates like a startup. I wanted to work in a smaller environment, but I still appreciate not having to deal with a startup going belly up.
 
 # Reflection
 
