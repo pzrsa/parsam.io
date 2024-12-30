@@ -4,46 +4,61 @@ title: "How I went from a video game addicted 17 year old to software engineer a
 draft: true
 ---
 
-It's been over three years since I started my career as a software engineer, and during this time I've had the fascinating opportunity to work at two of the most innovative companies in the world: Google and Tesla.
+4 years ago, I started my software engineering career at just 17 years old. And during this time I've already had the rare opportunity to work at two innovative companies: [Google](https://google.com) and [Tesla](https://tesla.com).
 
-I started out as a 17 year old addicted to video games, struggling with terrible grades, and lacking any real ambitions.
+You're likely assuming that (rightfully so) I'm some well educated wiz kid to pull this off, but you'd be surprised to learn that I never even went to university. I had terrible grades in school, and my worst grade was ironically in computer science.
 
-With a background like that, no one could've ever predicted I'd end up where I am today. I went from a complete bum to... less of a bum.
+With a background like that, no one could've ever predicted I'd end up in the position I am today. I went from a complete bum to... well... less of a bum.
 
-Now, at 21, as the year comes to a close and marking roughly four years since I started learning to code I find myself reflecting. I figured it'd be a good time to finally share my story going from a newbie programmer to a mid-level software engineer at Tesla.
+The new year has come to a start, and it marks roughly four years since I started learning to code. I figured it'd be a good time to finally share my unique journey going from a newbie to a mid-level software engineer at Tesla.
 
-I've been meaning to share my story for a while now but never got around to it. I aim to do this authentically, and not resort to the clickbait tactics that are too often associated with FAANG "success" stories. I hope my journey serves as a form of inspiration, especially for young people looking to get their foot through the tech door. I certainly would've loved to read something like this when I was starting out.
+One of my life philosophies is authenticity, and I see a huge lack of it with [FAANG](https://en.wikipedia.org/wiki/Big_Tech) stories that resort to clickbait tactics to make a quick buck.
 
-> Acquire worldly wisdom and adjust your behavior accordingly. If your new behavior gives you a little temporary unpopularity with your peer group…then to hell with them. (Charlie Munger, [Poor Charlie's Almanack](https://press.stripe.com/poor-charlies-almanack))
+I hope I can serve as a form of inspiration, especially for young people looking to get a jump start to their career through an unconventional route. I certainly would've loved to read something like this when I was starting out.
 
 Without further ado, I hope you enjoy this glimpse into my journey 🤝
 
-# Being Reborn
+# Reincarnated
 
-The story begins in July 2020, London. I'd just turned 17 and finished my first out of second year of college (2 years of pre-university) doing a BTEC Level 3 in Information Technology. My college was quite rough, I'm pretty sure someone got stabbed there.
+The story begins in July 2020, London. I'd just turned 17 and finished my first out of second year of college doing a [BTEC Level 3](https://en.wikipedia.org/wiki/BTEC_Extended_Diploma) in Information Technology. In the UK, college refers to pre-university, kinda like senior high school I think. My college was a bit rough, I'm pretty sure someone got stabbed there.
 
-During my summer break my routine was waking up late, hopping on my gaming pc and playing mostly Fortnite non stop till the AM with the boys. I was actually pretty good, even went along to make a couple grand from playing tournaments. This had been my routine for the last 3-4 years. Gaming was what I lived for.
+For the past 3 to 4 years until then my routine on non-school days was hopping on my gaming PC immediately after waking up and grinding video games non-stop until the AM with the boys.
 
-But one day all of this started to vanish. To this day I genuinely can't pinpoint exactly what caused it, but I know I just got rid of everything cold turkey. I cut off ties with the friends I'd played games with, deleted social media, and in the coming weeks sold all my gaming equipment.
+I was fairly good at most games since I started playing at a young age, but when Fortnite released I took it a lot more competitively, to the point of making a few grand from tournaments. I know, this bit of my journey is quite embarrassing since it's literally a kids game that I loved playing.
+
+But one day all of this started to vanish. To this day I can't pinpoint exactly what caused it, but I know I just got rid of everything cold turkey. I cut off ties with the friends I'd played games with, deleted social media, and in the coming weeks sold all my gaming equipment.
 
 I didn't even care about how much I sold my setup for, I just wanted to get rid of it all. I was just sick and tired of myself and really wanted to make a change. I knew that this was the only route that would work for me.
 
 After selling it all, I obviously didn't have a computer at this point, so I bought some random refurbished Dell computer, the type that you'd use in school.
 
 I went from a setup like this:
-
 ![](/setup-1.jpg)
 
 To this:
 ![](/setup-2.jpg)
 
-I felt reborn, and while I was going through all of this I had turned to a completely different person, bordering on robot. In all honesty though, the next few months were some of the loneliest I've ever been. But I finally broke the state of autopilot I was in for those past few years where I was letting life pass by.
+I felt reborn, and while I was going through all of this I had turned into a completely different person, bordering into a robot.
 
-During this period I also tried to do some Amazon drop-shipping stuff, which I find absolutely hilarious. I did a ton of research, but I didn't spend a single penny on actually selling something. In hindsight though that experience did teach me a lot about communicating, even though I practically did nothing.
+In all honesty though, the next few months were some of the loneliest I've ever experienced. But I finally broke the state of autopilot I was in for most of my life, letting time pass by.
+
+If you're curious, I've not touched video games again. The only exception was when I bought a PS5 after joining Google just to play the spider-man games. I ended up returning it immediately after finishing the game. It was funny when the guy I was returning it to was a bit surprised since it during a time where it was still hard to get.
+
+I was extremely against video games after quitting, but after some time I realised everyone has their own way to destress.
+
+Personally, I enjoy lifting weights by following a powerlifting program, logging my workouts (I use [Gravitus](https://gravitus.com/)) and seeing the progress over time. I see it as more of a duty than a hobby for me, but I'm progressing on my lifts just as someone is progressing their character in a game.
+
+With that said, I think most people who are struggling with finding purpose could start with being more intentional with what they spend their free time on. This obviously isn't just tied to video games, but it's a common trap that boys my age get stuck with.
+
+I still mostly see negatives with playing video games. I try to avoid saying stuff like that, since it's such a touchy subject and people don't want to face the truth. Some people make it work, I mean heck look at [my boss](https://www.forbes.com/sites/paultassi/2024/11/22/elon-musk-apparently-just-became-the-no-1-diablo-4-player-in-the-world/).
+
+Anyways, since I'd carved out the only thing I did in a day, I started using my time to devour a lot of YouTube videos learning how to start a business. I tried to do some Amazon drop-shipping stuff, which I find absolutely hilarious cause it feels like such a scammy thing to do.
+
+I did a ton of research, but I didn't spend a single penny on actually buying something from [Alibaba](https://www.alibaba.com/) and selling it. In hindsight though that experience did teach me a lot about communicating, even though I practically did nothing.
 
 # Applying to University
 
-In December 2020 I was also in the process of applying to university. As mentioned before, I had terrible grades, which meant that my options were limited to low ranked universities.
+In December 2020, I was also in the process of applying to university. I mentioned at the beginning that I had bad grades, which meant that my options were limited to low ranked universities.
 
 I'll come out and say that it's ridiculous how much you're punished for doing bad in secondary school. You can see how a number on a piece of paper can determine the route you end up on, thus likely impacting your career path. Teachers in my college put so much fear in me about this idea, as if not doing well will wind me up jobless.
 
@@ -57,8 +72,6 @@ I started doing some research into learning this thing called coding, so I went 
 
 After finishing it I got kinda bored with making elements do stuff, so I moved on to learning an actual programming language, Python, through a Udemy course (even made a [video](https://www.youtube.com/watch?v=iAYsqj7_95I) on it). God I looked so young in that video.
 
-Fun fact: the worst grade I got in my GCSEs was in computer science. In that class we learned the basics of Python, and I remember while doing this Udemy course that I regretted so many of my choices to not be better in school. I was a bright kid, yet somehow could never get good grades because I was so obsessed with playing video games.
-
 In February 2021 I slowly but surely started building a bunch of random crap using technologies like Python and Flask. I generally started to get myself really interested in the web space.
 
 ![](/2021-contributions.png)
@@ -67,13 +80,17 @@ One script I wrote was a web scraper to notify when the PS5 was back in stock on
 
 But I still felt quite limited in what I could do on the web. Everything felt so vanilla, and lacked the sauce. Naturally I gravitated towards acquiring the final infinity stone for building websites: JavaScript. I stumbled upon [The Odin Project](https://www.theodinproject.com/), and I remember this being a pretty solid course to learn JS/Node.
 
-I thought "this programming stuff is pretty cool, I wonder if I could make a career out of it". So after a ton of thinking, I decided to decline my university offers for accounting, and applied for a computer science course at the University of Derby. They also provided me with a conditional offer, thus I was finally set on heading to uni in September.
+I thought "this programming stuff is pretty cool, I wonder if I could make a career out of it". After some research, I decided to decline my offers, and applied to study Computer Science at another low-ranked university. They also provided me with an offer, so I was finally set on starting university later that year in September.
 
 # Building my Website
 
-As you could imagine, I never read books (with the only exception of course being the Diary of a Wimpy Kid series). The first "real" book I ever read was "Think and Grow Rich". It was gifted to me by one of my dad's friends, and he was preaching to me about how much it changed his life, so 17 year old me was like "eh I'll read it I guess". Looking back on it, this book contained a lot of snake oil BS, but honestly it was the best thing I could've read at the time.
+As you could imagine, I never read books (with the only exception of course being the Diary of a Wimpy Kid series). The first "real" book I ever read was "Think and Grow Rich".
 
-It got me interested to start reading the typical self help books, so after reading a few more, I stumbled upon someone who I'd say had a profound impact on my life, and that man is [Derek Sivers](https://sive.rs/). I read “[Anything You Want](https://sive.rs/a)” after seeing it in an [Ali Abdaal video](https://www.youtube.com/watch?v=hv1gOEY3cs4&t=376s), and it absolutely changed my life. It had a bunch of incredible lessons to learn from for both life and business.
+It was gifted to me by one of my dad's friends, and he was preaching to me about how much it changed his life, so 17 year old me was like "eh I'll read it I guess". Looking back on it, this book contained a lot of [snake oil BS](https://en.wikipedia.org/wiki/Snake_oil), but honestly it was the best thing I could've read at the time.
+
+It got me interested to start reading more books, to which I stumbled upon someone who I'd say had a profoundly positive impact on my life, and that man is [Derek Sivers](https://sive.rs/).
+
+I read his book, “[Anything You Want](https://sive.rs/a)” after seeing it in an [Ali Abdaal video](https://www.youtube.com/watch?v=hv1gOEY3cs4&t=376s), and it changed my life. It had a bunch of lessons to learn from for both life and business.
 
 I checked out Derek's website, and emailed him a full on novel about my whole life story, not expecting him to respond. But to my surprise, I got a response, and after a few back and forths, I mentioned to him that I built a website using Webflow, costing me $16 a month.
 
@@ -83,7 +100,7 @@ He proceeded to tell me to give me a step by step guide on building a website fr
 
 I love another thing he told me:
 
-> But for making a new site? Don't let anyone sell you on some complex solution. They're saying you need a jumbo jet when really you need a bicycle. Do your HTML by hand like this, and then you'll know when your site has become so big that you need a little more automation to help manage changes or links to the hundreds of pages inside. But until then, no no no. Just do HTML by hand.
+> "But for making a new site? Don't let anyone sell you on some complex solution. They're saying you need a jumbo jet when really you need a bicycle. Do your HTML by hand like this, and then you'll know when your site has become so big that you need a little more automation to help manage changes or links to the hundreds of pages inside. But until then, no no no. Just do HTML by hand."
 
 The first ever [book note](https://parsam.io/anything-you-want) I wrote was on "Anything You Want".
 
@@ -135,15 +152,15 @@ Even got a photo with [Sundar Pichai](https://en.wikipedia.org/wiki/Sundar_Picha
 
 # Looking for the next opportunity
 
-Everything was honestly incredible. Free food/gym, smart people, interesting problems, so I couldn't really complain much. With that said however, I had to start looking for my next opportunity.
+Everything was honestly great. Free food/gym, smart people, interesting problems, so I couldn't really complain much. With that said however, I had to start looking for my next opportunity.
 
-I was back to grinding Leetcode and reaching out to the incredible people I've met over the past 2 years. I hit the ground running and started interviewing with places like Meta, Spotify, Datadog, Cloudflare, Intercom, JPMorgan, XTX Markets, and much more.
+My main motivation for a new opportunity was that I wanted to change everything up while I can at a young age. Not only does moving to a new company bring new challenges, but moving to a new city would allow me to grow as a person like no other way. I'd learn to live alone, cook for myself, and just overall be a man. I'm grateful that I can live with my parents, but it was time I started living by myself at 20.
+
+I was back to grinding Leetcode and reaching out to the incredible people I've met over the past 2 years. I hit the ground running and started interviewing with places like [Meta](https://meta.com/), [Spotify](https://spotify.com/), [Datadog](https://www.datadoghq.com/), [Cloudflare](https://www.cloudflare.com/), [JPMorgan Chase](https://www.jpmorganchase.com/), [XTX Markets](https://www.xtxmarkets.com/), [Hudson River Trading](https://www.hudsonrivertrading.com/), etc.
 
 My Spotify interviews went quite well, but unfortunately didn't receive an offer as the head count was removed. I think it might be because they were anticipating layoffs a few months later (January 2024), but still spoke with great people.
 
 However, an opportunity popped up which had the perfect combination of everything I wanted in my next chapter: Tesla. My friend [Cyrus](https://x.com/cyrusyari) kindly referred me to them, and I'm forever grateful for him.
-
-My main motivation for a new opportunity was that I wanted to change everything up while I can at a young age. Not only does moving to a new company bring new challenges, but moving to a new city would allow me to grow as a person like no other way. I'd learn to live alone, cook for myself, and just overall be a man. Living with parents is great and all, but it was time I started living by myself at 20.
 
 Tesla was perfect for this as I would move to Berlin, not far from London. Although it is Germany, Berlin is quite fine since in most situations I find I don't need to speak the German language. I started learning it about a month ago now.
 
