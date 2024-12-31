@@ -50,18 +50,21 @@ export const getPostData = async (id: string): Promise<Post> => {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
+  // Pre-process the wiki-style images before parsing
+  const processedContent = fileContents.replace(/!\[\[(.*?)\]\]/g, "![]($1)");
+
   // Use gray-matter to parse the post metadata section
-  const matterResult = matter(fileContents);
+  const matterResult = matter(processedContent);
 
   // Use remark to convert markdown into HTML string
-  const processedContent = await remark()
+  const processedHtml = await remark()
     .use(remarkExternalLinks, {
       target: "_blank",
       rel: "prefetch noreferrer",
     })
     .use(html, { sanitize: false })
     .process(matterResult.content);
-  const contentHtml = processedContent.toString();
+  const contentHtml = processedHtml.toString();
 
   return {
     id,
