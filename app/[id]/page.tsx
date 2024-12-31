@@ -49,7 +49,7 @@ export default async function Page({ params }: { params: { id: string } }) {
           {post.title}
         </h1>
         <div className="flex gap-3 items-center">
-          <span className="text-zinc-600 dark:text-zinc-400 flex-1">
+          <span className="flex-1 text-zinc-600">
             {post.author ? (
               <>
                 {post.author}
@@ -64,23 +64,23 @@ export default async function Page({ params }: { params: { id: string } }) {
         </div>
       </div>
       <article
-        className="prose dark:prose-invert prose-h1:text-2xl prose-h2:text-xl prose-headings:text-lg prose-img:rounded-sm prose-img:shadow-2xl mb-10"
+        className="prose prose-h1:text-2xl prose-h2:text-xl prose-headings:text-lg prose-img:rounded-sm prose-img:shadow-2xl"
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
-      <div className="prose dark:prose-invert prose-h1:text-lg">
-        <h1>Thanks for reading!</h1>
-        <p>Consider...</p>
+      <hr className="my-8 border-zinc-600" />
+      <div className="prose">
+        <p>If you enjoyed this post, please consider...</p>
         <ul>
           <li>
             following me on{" "}
             <ExternalLink href="https://x.com/pzrsaa">Twitter/X</ExternalLink>
           </li>
-          <li>sharing this post</li>
+          <li>sharing it with a friend</li>
           <li>
-            subscribing via <a href="/feed.atom">RSS</a>
+            subscribing via <a href="/feed.atom">RSS</a> to get the latest posts
           </li>
           <li>
-            sending me an{" "}
+            sharing your thoughts over{" "}
             <ExternalLink href="mailto:hi@parsam.io">email</ExternalLink>
           </li>
         </ul>

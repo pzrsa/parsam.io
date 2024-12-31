@@ -42,7 +42,7 @@ I felt reborn, and while I was going through all of this I had turned into a com
 
 In all honesty though, the next few months were some of the loneliest I've ever experienced. But I finally broke the state of autopilot I was in for most of my life, letting time pass by.
 
-If you're curious, I've not touched video games again. The only exception was when I bought a PS5 after joining Google just to play the [spider-man games](<https://en.wikipedia.org/wiki/Spider-Man_(video_game_series)>). I ended up returning it immediately after finishing the game. It was funny when the guy I was returning it to was a bit surprised since it was still hard to get at that time.
+If you're curious, I've not touched video games again. The only exception was when I bought a PS5 after joining Google just to play the [spider-man games](<https://en.wikipedia.org/wiki/Spider-Man_(video_game_series)>). I ended up returning it immediately after finishing them. It was funny when the guy I was returning it to was a bit surprised since it was still hard to get at that time.
 
 If you'd asked me about my stance on games after I'd just quit, I would've been super against it. But after some time I realised everyone has their own way to destress.
 

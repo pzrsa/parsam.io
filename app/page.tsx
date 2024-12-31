@@ -23,7 +23,7 @@ export default function Page() {
             <h1 className="text-xl sm:text-2xl font-extrabold">
               Hi, I&apos;m Parsa.
             </h1>
-            <p className="font-semibold text-zinc-600 dark:text-zinc-400">
+            <p className="font-semibold text-zinc-600">
               Software Engineer at <span className="text-tesla-red">Tesla</span>
             </p>
           </div>
@@ -32,7 +32,7 @@ export default function Page() {
           <NowPlaying />
         </div>
       </div>
-      <div className="prose dark:prose-invert">
+      <div className="prose">
         <p>
           I&apos;m 21 years old, Persian, born in England, and have spent the
           majority of my life in London.{" "}
@@ -54,13 +54,12 @@ export default function Page() {
           .
         </p>
         <p>
-          I have a <Link href="/blog">blog</Link> writing notes on the books
-          I&apos;ve read, and articles on stuff I find interesting enough to
-          share.
+          I have a <Link href="/blog">blog</Link> where I write about stuff I
+          find interesting enough to share.
         </p>
         <p>
           If anything here piques your interest, don&apos;t hesitate to{" "}
-          <ExternalLink href="mailto:hi@parsam.io">reach out</ExternalLink>, I
+          <ExternalLink href="mailto:hi@parsam.io">reach out</ExternalLink>. I
           love meeting new people!
         </p>
         <div>
@@ -187,7 +186,7 @@ const LinkItem = ({
   return (
     <ExternalLink
       href={href}
-      className="flex items-center gap-2 w-fit underline"
+      className="flex items-center gap-2 w-fit underline text-blue-600"
     >
       {children}
     </ExternalLink>

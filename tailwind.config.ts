@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         white: "#fff",
-        black: "#111",
+        black: "#000",
         google: {
           blue: "#4885ed",
           red: "#db3236",
@@ -25,11 +25,9 @@ const config: Config = {
         DEFAULT: {
           css: {
             color: theme("colors.black"),
-          },
-        },
-        invert: {
-          css: {
-            color: theme("colors.white"),
+            a: {
+              color: theme("colors.blue.600"),
+            },
           },
         },
       }),

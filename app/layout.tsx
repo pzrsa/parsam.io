@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-white dark:bg-black text-black dark:text-white antialiased ${ibm.className}`}
+      className={`bg-white text-black antialiased ${ibm.className}`}
     >
       <body className={`max-w-2xl mx-auto py-8 px-6`}>
         <Analytics />

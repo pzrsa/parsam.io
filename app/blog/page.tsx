@@ -54,7 +54,7 @@ export default function Page() {
                     <span className="font-semibold">{post.title}</span>
                     {post.author && (
                       <span>
-                        <span className="text-zinc-600 dark:text-zinc-400">
+                        <span className="text-zinc-600">
                           {" - "}
                           {post.author}
                         </span>
@@ -62,7 +62,7 @@ export default function Page() {
                     )}
                   </Link>
                 </span>
-                <span className="text-zinc-600 dark:text-zinc-400">
+                <span className="text-zinc-600">
                   <DateFormat dateString={post.date} format="MMM D" />
                 </span>
               </span>
