@@ -1,5 +1,5 @@
 ---
-date: "2024-12-27"
+date: "2024-01-03"
 title: "How I went from a video game addicted 17 year old to software engineer at Google and Tesla"
 draft: true
 ---
