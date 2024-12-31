@@ -67,7 +67,7 @@ export default async function Page({ params }: { params: { id: string } }) {
         className="prose prose-h1:text-2xl prose-h2:text-xl prose-headings:text-lg prose-img:rounded-sm prose-img:shadow-2xl"
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
-      <hr className="my-8 border-zinc-600" />
+      <hr className="my-12 border-neutral-300" />
       <div className="prose">
         <p>If you enjoyed this post, please consider...</p>
         <ul>
