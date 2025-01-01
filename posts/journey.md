@@ -33,10 +33,10 @@ I didn't even care about how much I sold my setup for, I just wanted to get rid 
 After selling it all, I obviously didn't have a computer at this point, so I bought some random refurbished Dell computer, the type that you'd use in school.
 
 I went from a setup like this:
-![](/setup-1.jpg)
+![](setup-1.jpg)
 
 To this:
-![](/setup-2.jpg)
+![](setup-2.jpg)
 
 I felt reborn, and while I was going through all of this I had turned into a completely different person, bordering into a robot.
 
@@ -74,7 +74,7 @@ After finishing it I got kinda bored with making elements do stuff, so I moved o
 
 In February 2021 I slowly but surely started building a bunch of random crap using technologies like [Python](https://python.org) and [Flask](https://flask.palletsprojects.com/en/stable/) (a web framework). I generally started to get myself really interested in the web space.
 
-![](/2021-contributions.png)
+![](2021-contributions.png)
 
 I wrote a script to notify me when the PS5 was back in stock on Amazon by literally using a web scraper and listening for an element change. Sure it’s the most basic thing you could build, but I just felt so proud of it.
 
@@ -94,7 +94,7 @@ I read his book, “[Anything You Want](https://sive.rs/a)” after seeing it in
 
 I checked out Derek's website, emailed him a novel about my whole life story, not expecting him to respond. I surprisingly got a response, and after a few back and forths, I mentioned to him that I built a website using Webflow, costing me $16 a month.
 
-![](/derek-email.png)
+![](derek-email.png)
 
 He proceeded to tell me to give me a step by step guide on building a website from scratch, using pure HTML/CSS. I was mind blown, I immediately switched over to hosting on [GitHub Pages](https://pages.github.com/), and thus the inception of my new open source website was [born](https://github.com/pzrsa/parsam.io/commit/7927cccdda9843bdc7c4b17ff80626516d628301).
 
@@ -128,7 +128,7 @@ After a lot of thinking, I deferred my university date to next year and accepted
 
 # Working at Google
 
-![](/welcome-google.jpeg)
+![](welcome-google.jpeg)
 
 I started at Google in September 2021, and went through the usual onboarding stuff. I met my first ever manager and joined the [Play Console](https://developer.android.com/distribute/console) team.
 
@@ -153,7 +153,7 @@ Our server was handling tens of millions of monthly requests, and working on thi
 I learned so much from my time at Google. I worked with some of the smartest people, and I felt so grateful being the dumbest in the room.
 
 Even got a photo with [Sundar Pichai](https://en.wikipedia.org/wiki/Sundar_Pichai).
-![](/pichAI.jpeg)
+![](pichAI.jpeg)
 
 # In search for the next opportunity
 
@@ -206,6 +206,6 @@ It goes without saying I'm humbled and grateful for everyone I've come across th
 This is still just the beginning, I have a long way ahead of me.
 
 Shoutout to [Taimur](https://x.com/taimurabdaal) for giving me the idea to write this post.
-![](/taimur-selfie.jpg)
+![](taimur-selfie.jpg)
 
 I also want to take the time to say thank you so much for reading this far. It means the world to me, and I hope it was of some value to you.

@@ -3,7 +3,7 @@ import Link from "next/link";
 import me from "../public/avatar.jpeg";
 import NowPlaying from "./components/NowPlaying";
 import { FAVOURITE_ALBUMS, FAVOURITE_FILMS, FAVOURITE_SHOWS } from "./lib/data";
-import { ExternalLink } from "./components/common";
+import { ExternalLink, SubscribeForm } from "./components/common";
 
 export default function Page() {
   return (
@@ -63,6 +63,8 @@ export default function Page() {
           love meeting new people!
         </p>
         <div>
+          <h3>Newsletter</h3>
+          <SubscribeForm />
           <h3>Links</h3>
           <div className="not-prose grid grid-cols-3 sm:grid-cols-4">
             <LinkItem href="https://x.com/pzrsaa">Twitter/X</LinkItem>

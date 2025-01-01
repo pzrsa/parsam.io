@@ -31,3 +31,29 @@ export const DateFormat: React.FC<DateProps> = ({ dateString, format }) => {
   dayjs.extend(customParseFormat);
   return <time dateTime={dateString}>{dayjs(dateString).format(format)}</time>;
 };
+
+export const SubscribeForm = () => {
+  return (
+    <>
+      <p>Subscribe to get new posts in your inbox - spam-free, always.</p>
+
+      <form
+        action="https://buttondown.email/api/emails/embed-subscribe/parsam"
+        method="post"
+        target="_blank"
+        className="flex gap-2"
+      >
+        <input
+          type="email"
+          name="email"
+          placeholder="diesel@jessepinkman.com"
+          required
+          className="flex-1 px-2 py-1 border rounded-sm"
+        />
+        <button type="submit" className="px-3 py-1 border rounded-sm">
+          Subscribe
+        </button>
+      </form>
+    </>
+  );
+};

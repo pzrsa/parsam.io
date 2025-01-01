@@ -1,4 +1,4 @@
-import { DateFormat, ExternalLink } from "../components/common";
+import { DateFormat, ExternalLink, SubscribeForm } from "../components/common";
 import { getAllPostIds, getPostData } from "../lib/posts";
 
 import type { Metadata } from "next";
@@ -74,17 +74,16 @@ export default async function Page({
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
       <hr className="my-12 border-neutral-300" />
-      <div className="prose">
-        <p>If you enjoyed this post, please consider...</p>
+      <div className="prose prose-h3:text-lg">
+        <h3>Enjoyed this post?</h3>
+        <SubscribeForm />
+        <p>And please consider...</p>
         <ul>
           <li>
             following me on{" "}
             <ExternalLink href="https://x.com/pzrsaa">Twitter/X</ExternalLink>
           </li>
-          <li>sharing it with a friend</li>
-          <li>
-            subscribing via <a href="/feed.atom">RSS</a> to get the latest posts
-          </li>
+          <li>sharing this post with a friend</li>
           <li>
             sharing your thoughts over{" "}
             <ExternalLink href="mailto:hi@parsam.io">email</ExternalLink>
