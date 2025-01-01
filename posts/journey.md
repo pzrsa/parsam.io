@@ -12,9 +12,9 @@ With a background like that, no one could've ever predicted I'd end up in the po
 
 The new year has come to a start, and it marks roughly four years since I started learning to code. I figured it'd be a good time to finally share my unique journey going from a newbie to a mid-level software engineer at Tesla.
 
-One of my life philosophies is authenticity, and I see a huge lack of it with [FAANG](https://en.wikipedia.org/wiki/Big_Tech) stories that resort to clickbait tactics to make a quick buck.
-
 I hope I can serve as a form of inspiration, especially for young people looking to get a jump start to their career through an unconventional route. I certainly would've loved to read something like this when I was starting out.
+
+One of my life philosophies is authenticity, and I see a huge lack of it with [FAANG](https://en.wikipedia.org/wiki/Big_Tech) stories that resort to clickbait tactics to make a quick buck.
 
 Without further ado, I hope you enjoy this glimpse into my journey 🤝
 
@@ -193,19 +193,22 @@ If you give someone the opportunity to lock in for a whole year, no outside cont
 
 Ever since I made this change I've been on a constant cycle of change.
 
-Every interaction and decision I make now somehow plays into this idea that makes me want to improve it. I remember in my first few months of Google, on the tube back home I'd reflect on the day completely and ask myself a bunch of questions.
+Most interactions and decisions I make somehow makes me want to improve, no matter what it is.
 
 Everyone does this to some extent, but I often feel like it can be damaging since I never feel stable. I don't hear people speak about this, so I certainly hope I'm not alone.
 
 It's also worth mentioning that if you get into the game early, you're going to always feel like the youngest. Still to this day, I've not worked with someone who was younger than me. It rapidly matures you, and the people you're going to hang out with will be much older than you.
 
-It doesn't sound like much, but it does affect you to some extent. You can never feel connected to the people your age who are in completely different life circumstances. Don't get me wrong I'm honestly grateful for this position, but I get this feeling that I somehow fast tracked my way, and I can't afford to stop.
+It doesn't sound like much, but it does affect you to some extent. You can never feel connected to the people your age who are in completely different life circumstances. Don't get me wrong I'm extremely lucky and grateful for this position, but I get this feeling that I somehow fast tracked my way, and I can't afford to stop.
+
+Luck played a heavy role in my journey, but it's because I set myself up in situations to improve the chances of it. When you do so many things, serendipity does its job.
 
 It goes without saying I'm humbled and grateful for everyone I've come across through this wild journey. I couldn't have made it this far without some people sharing their time with me.
 
 This is still just the beginning, I have a long way ahead of me.
 
 Shoutout to [Taimur](https://x.com/taimurabdaal) for giving me the idea to write this post.
+
 ![](taimur-selfie.jpg)
 
 I also want to take the time to say thank you so much for reading this far. It means the world to me, and I hope it was of some value to you.
