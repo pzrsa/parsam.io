@@ -1,20 +1,22 @@
 ---
 date: "2025-01-03"
-title: "How I went from a video game addicted 17 year old to software engineer at Google and Tesla"
+title: "I went from a gaming addiction at 17 to a software engineer at Google and Tesla"
 draft: true
 ---
 
 4 years ago, I started my software engineering career at just 17 years old. And during this time I've already had the rare opportunity to work at two innovative companies: [Google](https://google.com) and [Tesla](https://tesla.com).
 
-You're likely assuming that (rightfully so) I'm some well educated wiz kid to pull this off, but you'd be surprised to learn that I never even went to university. I had terrible grades in school, and my worst grade was ironically in computer science.
+You're probably thinking I'm some educated wiz kid to pull this off, but you'd be surprised to learn that I never even went to university.
+
+I had terrible grades in school, and my worst grade was ironically in computer science. I also by no means come from a wealthy family.
 
 With a background like that, no one could've ever predicted I'd end up in the position I am today. I went from a complete bum to... well... less of a bum.
 
-The new year has come to a start, and it marks roughly four years since I started learning to code. I figured it'd be a good time to finally share my unique journey going from a newbie to a mid-level software engineer at Tesla.
+2025 has come to a start, and it marks roughly four years since I started learning to code. I figured it'd be a good time to finally share my unique journey going from a newbie to a mid-level software engineer at Tesla.
 
-I hope I can serve as a form of inspiration, especially for young people looking to get a jump start to their career through an unconventional route. I certainly would've loved to read something like this when I was starting out.
+I hope I can serve as a form of inspiration, especially for young people looking to get a jump start to their career through an unconventional route. I certainly would've loved to read something like this when I was starting out, even though I never used to read lol.
 
-One of my life philosophies is authenticity, and I see a huge lack of it with [FAANG](https://en.wikipedia.org/wiki/Big_Tech) stories that resort to clickbait tactics to make a quick buck.
+One of my life philosophies is authenticity, and I see a huge lack of it with [FAANG](https://en.wikipedia.org/wiki/Big_Tech) stories that resort to clickbait tactics to make a quick buck.I suppose this post will be a breath of fresh air.
 
 Without further ado, I hope you enjoy this glimpse into my journey 🤝
 
