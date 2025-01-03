@@ -1,7 +1,6 @@
 ---
 date: "2025-01-03"
-title: "I went from a gaming addiction at 17 to a software engineer at Google and Tesla"
-draft: true
+title: "I went from a gaming addiction at 17 to working at Google and Tesla by 21"
 ---
 
 4 years ago, I started my software engineering career at 17. During this time, I've had the rare opportunity to work at two innovative companies: [Google](https://google.com) and [Tesla](https://tesla.com).
@@ -42,7 +41,7 @@ To this:
 
 I felt reborn, but transformed into someone almost robotic. The following months were deeply lonely, but I finally broke free from the autopilot state that had consumed most of my life.
 
-I haven't touched video games since, except I briefly played the [Spider-Man series](https://en.wikipedia.org/wiki/Spider-Man_(video_game_series)) on PS5 after joining Google. I returned it immediately after finishing - the guy who collected it was a bit surprised since PS5s were still hard to find.
+I haven't touched video games since, except I briefly played the [Spider-Man series](<https://en.wikipedia.org/wiki/Spider-Man_(video_game_series)>) on PS5 after joining Google. I returned it immediately after finishing - the guy who collected it was a bit surprised since PS5s were still hard to find.
 
 My stance on gaming has changed over the years. Initially, I was strongly against it, but now I've grown to realise everyone has their own way to de-stress.
 
@@ -84,24 +83,24 @@ I thought "this programming stuff is pretty cool, I wonder if I could make a car
 
 # Building my Website
 
-As you could imagine, I never read books (except the *Diary of a Wimpy Kid* series). The first "real" book I ever read was [*Think and Grow Rich*](https://en.wikipedia.org/wiki/Think_and_Grow_Rich).
+As you could imagine, I never read books (except the _Diary of a Wimpy Kid_ series). The first "real" book I ever read was [_Think and Grow Rich_](https://en.wikipedia.org/wiki/Think_and_Grow_Rich).
 
 It was gifted to me by one of my dad's friends, who preached about how much it changed his life. 17 year old me thought "eh I'll read it I guess." Looking back, this book contained a lot of [snake-oil BS](https://en.wikipedia.org/wiki/Snake_oil), but it was exactly what I needed at the time.
 
 Through this newfound interest in reading, I discovered a man who'd change my life: [Derek Sivers](https://sive.rs/).
 
-I read his book [*Anything You Want*](https://sive.rs/a) after seeing it in an [Ali Abdaal video](https://www.youtube.com/watch?v=hv1gOEY3cs4&t=376s). I loved it - it was packed with lessons about life and business.
+I read his book [_Anything You Want_](https://sive.rs/a) after seeing it in an [Ali Abdaal video](https://www.youtube.com/watch?v=hv1gOEY3cs4&t=376s). I loved it - it was packed with lessons about life and business.
 
-The first ever book note I wrote was on *Anything You Want* ([link](https://parsam.io/anything-you-want)).
+The first ever book note I wrote was on _Anything You Want_ ([link](https://parsam.io/anything-you-want)).
 
 I checked out Derek's website and emailed him a novel of my life story, not expecting a response. To my surprise, he replied. After a few exchanges, I mentioned I'd built a website using Webflow, costing $16 monthly.
 
 This is what he said:
 
 > But I don't think you need to pay $16/month to Webflow. For the kind of site you're doing, static HTML would be WAY cheaper, more educational for you, and give you total control to move it anywhere, no monthly fee.  
-  My best advice to make a simple site is this:  
-  Start simple from before you even begin : stay simple in how you think of it, and how you make it. Don't let people tell you it needs to be any more complex than this.
-  Create one new folder on your computer called "website" and do everything I say below in that folder.
+>  My best advice to make a simple site is this:  
+>  Start simple from before you even begin : stay simple in how you think of it, and how you make it. Don't let people tell you it needs to be any more complex than this.
+> Create one new folder on your computer called "website" and do everything I say below in that folder.
 
 He gave me a step-by-step guide on building a website from scratch using pure HTML/CSS. Mind blown, I immediately switched to hosting on [GitHub Pages](https://pages.github.com/), and my new open source website was [born](https://github.com/pzrsa/parsam.io/commit/7927cccdda9843bdc7c4b17ff80626516d628301).
 
@@ -214,3 +213,4 @@ Shoutout to [Taimur](https://x.com/taimurabdaal) for giving me the idea to write
 ![](taimur-selfie.jpg)
 
 I also want to take the time to say thank you so much for reading this far. It means the world to me, and I hope it was of some value to you.
+
