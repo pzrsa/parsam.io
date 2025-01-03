@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://parsam.io"),
   title: {
     template: "%s - Parsa Mesgarha",
-    default: "Parsa Mesgarha",
+    default: "Parsa Mesgarha - Software Engineer at Tesla",
   },
-  description: "Parsa Mesgarha",
+  description: "Parsa Mesgarha - Software Engineer at Tesla",
   openGraph: {
     url: "https://parsam.io",
     images: [INDEX_OG_PATH],
