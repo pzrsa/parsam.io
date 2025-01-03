@@ -130,6 +130,8 @@ With just 2 days left to accept, my recruiter called. I got the job offer.
 
 After careful thinking, I deferred university and accepted the once-in-a-lifetime offer to join Google.
 
+Before joining, I turned 18 and completed my BTEC.
+
 # The Google Years
 
 ![](welcome-google.jpeg)
