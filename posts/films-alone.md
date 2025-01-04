@@ -7,7 +7,7 @@ I watch a lot of [films](https://letterboxd.com/pzrsa/)... not as much as I wish
 
 you can really immerse in the filmmakers world, since you don't have to worry about making comments to your friends next to you. I can just let loose and let the film take me away.
 
-![](/don-cinema.jpg)
+![](don-cinema.jpg)
 (pic of me watching films alone)
 
 I mean yeah you get some loud people in the theatre, but in general I watch films that attracts the type of crowd who appreciates the art of cinema, so are pretty respectful about it.
@@ -20,4 +20,4 @@ a lot of people are surprised to hear when I say I'm watching a film alone, but 
 
 so if you've never done it before, I suggest you give it a go, it'll be a fun experience, and you'll probably meet some cool people!
 
-![](/marty.jpg)
+![](marty.jpg)

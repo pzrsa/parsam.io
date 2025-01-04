@@ -7,7 +7,7 @@ After [many months](https://github.com/pzrsa/mechkeebs/graphs/code-frequency), I
 
 [MechKeebs](https://mechkeebs.com/) is (in short) a clone of [r/mk](https://www.reddit.com/r/MechanicalKeyboards) where users can post their mechanical keyboard.
 
-![MechKeebs Home Page](/mechkeebs.jpg)
+![MechKeebs Home Page](mechkeebs.jpg)
 It wasn't intended to solve any problems, but I've learnt from a few great engineers that solving problems at my stage shouldn't be the focus. I should still obviously solve a problem when needed, but that will just come with time as I expose myself to more projects.
 
 # Technologies

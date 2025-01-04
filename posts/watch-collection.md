@@ -9,7 +9,7 @@ Over the years I’ve built a small collection (with 3 watches I don’t know if
 
 # SEIKO (the OG)
 
-![](/seiko.jpeg)
+![](seiko.jpeg)
 
 My beloved _SEIKO SNZG13K1_, the one that started it all. I bought this beauty back in September 2020 as my first ever mechanical watch, all for less than £100.
 
@@ -17,17 +17,17 @@ What attracted me to it was its practical design. I also love the small red acce
 
 On the inside, it uses a [7S36C](https://calibercorner.com/seiko-caliber-7s36/) automatic movement, which is a pretty basic movement on paper. Yet, despite its shortcomings (lack of [hacking](https://en.wikipedia.org/wiki/Hack_watch) or [hand-winding](https://www.google.com/search?q=define+watch+hand+winding)), I greatly appreciate the engineering gone into building a decently performant movement at a reasonable price.
 
-![](/seiko-back.jpeg)
+![](seiko-back.jpeg)
 
 I've only ever used 3 straps for this watch. The stock bracelet, a black nato strap, a leather strap, and a Spectre Bond Marine Nationale strap (pictured below). It’s just so versatile, it can pretty much go with any style of strap.
 
 Anyways, my SEIKO has always held a special place in my heart, and I'm always grateful for how it's introduced me to this hobby. Every time someone asks me what brands they should look at for their first watch, SEIKO is always on the top of that list.
 
-![](/wearing-seiko.jpeg)
+![](wearing-seiko.jpeg)
 
 # G-SHOCK "CasiOak"
 
-![](/g-shock.jpeg)
+![](g-shock.jpeg)
 
 This is my daily driver, the _G-SHOCK GA-B2100-1A1ER_. I bought this in May 2022, also for about £100 (thank you student discount). It has by far been my most worn watch, simply because it's a G-SHOCK, and that's enough of a reason.
 
@@ -41,7 +41,7 @@ I absolutely love this watch since I think it perfectly pictures my minimalistic
 
 I thought it would also be worth sharing the latest edition in my collection, the _Casio A168_. I got this for about £30, and I just couldn't see myself going about building a collection without having this in it. It's such a classic, and you can't really go wrong owning a watch like this.
 
-![](/casio.jpeg)
+![](casio.jpeg)
 
 # My Dream Watch
 

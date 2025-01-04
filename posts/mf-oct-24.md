@@ -8,7 +8,7 @@ I'm starting a new series on my blog where I share some of the interesting thing
 # Brave Browser (and vertical tabs)
 
 I've toyed with the idea of switching to vertical tabs before, but it's not natively supported in Chrome. I'm fully aware of the benefits of using vertical anything, like I've always used a vertical dock (it's hidden so rly no benefit). I finally made the switch to [Brave](https://brave.com/) since it supports it [natively](https://brave.com/blog/vertical-tabs/), and so far it's been great. At the office I have a wide screen monitor, so it's been nice to have a static sidebar of tabs where I can actually read the title of the page, and scroll if needed. The issue with horizontal tabs is that as your tabs scale, it just gets reduced down to a favicon.
-![brave-tabs.heic](/brave-tabs.jpeg)
+![brave-tabs.heic](brave-tabs.jpeg)
 
 # Fish Shell
 
@@ -39,7 +39,7 @@ So you know Dr Martens, right? Well, Dr Martens used to be manufactured by NPS (
 If you value craftsmanship and history, Solovair is a great choice for leather shoes/boots. Many people buy Dr Martens just for the yellow stitches, which is not a status game I want to play. I'm so happy with my purchase, and what makes it even more satisfying is that I bought this from their outlet where I got a ~60% discount on them.
 
 Photo of me wearing them as part of my halloween costume:
-![solovair-boots.heic](/solovair-boots.jpeg)
+![solovair-boots.heic](solovair-boots.jpeg)
 
 # Wrangler 31MWZ Cowboy Cut Jeans
 

@@ -160,9 +160,7 @@ Our server handled tens of millions of monthly requests, sparking my interest in
 
 My time at Google was invaluable. I worked with brilliant people and felt grateful being the dumbest in the room.
 
-Even got a photo with [Sundar Pichai](https://en.wikipedia.org/wiki/Sundar_Pichai).
-
-![](pichAI.jpeg)
+![Even got a photo with Sundar Pichai](pichAI.jpeg)
 
 Life at Google was fantastic - free food and gym, smart people, interesting problems. Still, I knew it was time to look for my next opportunity.
 
@@ -210,9 +208,6 @@ It goes without saying I'm humbled and grateful for everyone I've met through th
 
 This is still just the beginning, I have a long way ahead of me.
 
-Shoutout to [Taimur](https://x.com/taimurabdaal) for giving me the idea to write this post.
-
-![](taimur-selfie.jpg)
+![Shoutout to Taimur (@taimurabdaal) for giving me the idea to write this post.](taimur-selfie.jpg)
 
 I also want to take the time to say thank you so much for reading this far. It means the world to me, and I hope it was of some value to you.
-

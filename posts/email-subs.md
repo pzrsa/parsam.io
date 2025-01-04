@@ -32,4 +32,4 @@ This is all it took:
 
 If you'd like to be one of the first subscribers, then please do share your email at the bottom of this post. It would truly mean a lot to me, and I hope to provide value for your time.
 
-However if you're like me and also enjoy using an RSS reader (I use [NetNewsWire](https://netnewswire.com/)), then you can stay updated by following my [ATOM feed](/feed.atom).
+However if you're like me and also enjoy using an RSS reader (I use [NetNewsWire](https://netnewswire.com/)), then you can stay updated by following my [ATOM feed](feed.atom)
