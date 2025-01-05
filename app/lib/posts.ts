@@ -1,10 +1,9 @@
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
-import { remark } from "remark";
-import remarkExternalLinks from "remark-external-links";
+import { PostWithContent, PostWithContentHtml } from "./types";
 import html from "remark-html";
-import { Post } from "./types";
+import { remark } from "remark";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
@@ -46,29 +45,34 @@ export const getAllPostIds = () => {
   return fileNames.map((fileName) => ({ id: fileName.replace(/\.md$/, "") }));
 };
 
-export const getPostData = async (id: string): Promise<Post> => {
+export const getPost = (id: string) => {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
-  // Pre-process the wiki-style images before parsing
-  const processedContent = fileContents.replace(/!\[\[(.*?)\]\]/g, "![]($1)");
+  const matterResult = matter(fileContents);
 
-  // Use gray-matter to parse the post metadata section
-  const matterResult = matter(processedContent);
+  const content = matterResult.content;
+
+  return {
+    id,
+    content,
+    ...matterResult.data,
+  } as PostWithContent;
+};
+
+export const getPostWithHtml = async (id: string) => {
+  const fullPath = path.join(postsDirectory, `${id}.md`);
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+
+  const matterResult = matter(fileContents);
 
   // Use remark to convert markdown into HTML string
-  const processedHtml = await remark()
-    .use(remarkExternalLinks, {
-      target: "_blank",
-      rel: "prefetch noreferrer",
-    })
-    .use(html, { sanitize: false })
-    .process(matterResult.content);
+  const processedHtml = await remark().use(html).process(matterResult.content);
   const contentHtml = processedHtml.toString();
 
   return {
     id,
     contentHtml,
     ...matterResult.data,
-  } as Post;
+  } as PostWithContentHtml;
 };

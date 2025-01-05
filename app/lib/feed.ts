@@ -1,8 +1,8 @@
 import { Feed, Item } from "feed";
 import fs from "fs";
 import { BLOG_OG_PATH } from "./constants";
-import { getPostData, getSortedPostData } from "./posts";
-import type { Post } from "./types";
+import { getPostWithHtml, getSortedPostData } from "./posts";
+import type { PostWithContentHtml } from "./types";
 
 const feedPath = "./public/feed.atom";
 
@@ -24,8 +24,9 @@ export const generateFeed = () => {
     },
   });
 
-  (posts as Post[]).forEach(async (post) => {
-    const postData = await getPostData(post.id);
+  (posts as PostWithContentHtml[]).forEach(async (post) => {
+    const postData = await getPostWithHtml(post.id);
+
     let item: Item = {
       id: post.id,
       title: post.title,

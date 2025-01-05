@@ -1,15 +1,20 @@
+import { useRemarkSync } from "react-remark";
 import { DateFormat, ExternalLink, SubscribeForm } from "../components/common";
-import { getAllPostIds, getPostData } from "../lib/posts";
+import { getAllPostIds, getPost } from "../lib/posts";
 
 import type { Metadata } from "next";
+import remarkExternalLinks from "remark-external-links";
+import { PostWithContent } from "../lib/types";
+import Image from "next/image";
+import { ComponentPropsWithoutRef } from "react";
 
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
-  const id = (await params).id;
-  const { title, description, author } = await getPostData(id);
+  const { id } = await params;
+  const { title, description, author } = getPost(id);
 
   const image = author
     ? `https://parsam.io/og?title=${title} - ${author}`
@@ -45,8 +50,8 @@ export default async function Page({
 }: {
   params: Promise<{ id: string }>;
 }) {
-  const id = (await params).id;
-  const post = await getPostData(id);
+  const { id } = await params;
+  const post = getPost(id);
 
   return (
     <section>
@@ -69,10 +74,7 @@ export default async function Page({
           {post.draft ? <span>DRAFT</span> : ""}
         </div>
       </div>
-      <article
-        className="prose prose-h1:text-2xl prose-h2:text-xl prose-headings:text-lg prose-img:rounded-sm prose-img:shadow-2xl"
-        dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-      />
+      <Article post={post} />
       <hr className="my-12 border-neutral-300" />
       <div className="prose prose-h3:text-lg">
         <h3>Enjoyed this post?</h3>
@@ -93,3 +95,47 @@ export default async function Page({
     </section>
   );
 }
+
+const Article: React.FC<{ post: PostWithContent }> = ({ post }) => {
+  const reactContent = useRemarkSync(post.content, {
+    remarkPlugins: [
+      {
+        plugins: [remarkExternalLinks],
+        settings: {
+          target: "_blank",
+          rel: "prefetch noreferrer",
+        },
+      } as any,
+    ],
+    rehypeReactOptions: {
+      components: {
+        img: (props: ComponentPropsWithoutRef<"img">) => {
+          return (
+            <span className="block mb-5">
+              <a href={`/${props.src}`} target="_blank">
+                <Image
+                  height={800}
+                  width={400}
+                  style={{ width: "100%", height: "auto" }}
+                  alt={props.alt ?? ""}
+                  src={`/${props.src}`}
+                  className="rounded-sm shadow-2xl mb-2"
+                  priority
+                />
+              </a>
+              {props.alt && (
+                <span className="block text-center text-sm">{props.alt}</span>
+              )}
+            </span>
+          );
+        },
+      },
+    },
+  });
+
+  return (
+    <article className="prose prose-h1:text-2xl prose-h2:text-xl prose-headings:text-lg ">
+      {reactContent}
+    </article>
+  );
+};

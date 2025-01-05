@@ -5,7 +5,7 @@ import { DateFormat } from "../components/common";
 import { BLOG_OG_PATH } from "../lib/constants";
 import { generateFeed } from "../lib/feed";
 import { getSortedPostData } from "../lib/posts";
-import { Post } from "../lib/types";
+import { BasePost } from "../lib/types";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   generateFeed();
-  const posts = getSortedPostData() as Post[];
+  const posts = getSortedPostData() as BasePost[];
 
   return (
     <>

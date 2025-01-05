@@ -1,6 +1,5 @@
-export interface Post {
+export type BasePost = {
   id: string;
-  contentHtml: string;
   date: string;
   title: string;
   draft?: boolean;
@@ -9,7 +8,15 @@ export interface Post {
   subtitle?: string;
   author?: string;
   description?: string;
-}
+};
+
+export type PostWithContent = BasePost & {
+  content: string;
+};
+
+export type PostWithContentHtml = BasePost & {
+  contentHtml: string;
+};
 
 interface Media {
   title: string;
