@@ -14,9 +14,9 @@ export default function Page() {
             <Image
               alt="Parsa Mesgarha"
               src={me}
-              className="grayscale transition-all hover:motion-safe:animate-spin hover:grayscale-0 rounded-full"
-              height={70}
-              width={70}
+              className="transition-all hover:scale-110 rounded-full"
+              height={80}
+              width={80}
             />
           </ExternalLink>
           <div>
