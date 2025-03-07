@@ -46,7 +46,7 @@ export const SubscribeForm = () => {
         <input
           type="email"
           name="email"
-          placeholder="diesel@jessepinkman.com"
+          placeholder="saul@bettercallsaul.com"
           required
           className="flex-1 px-2 py-1 border rounded-sm"
         />
