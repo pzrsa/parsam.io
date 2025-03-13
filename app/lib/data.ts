@@ -90,19 +90,9 @@ export const FAVOURITE_FILMS: Film[] = [
     imdbID: "tt0425112",
   },
   {
-    title: "Spider-Man: Into the Spider-Verse",
-    tmdbImageID: "iiZZdoQBEYBv6id8su7ImL0oCbD",
-    imdbID: "tt4633694",
-  },
-  {
     title: "Mad Max: Fury Road",
     tmdbImageID: "8tZYtuWezp8JbcsvHYO0O46tFbo",
     imdbID: "tt1392190",
-  },
-  {
-    title: "Four Lions",
-    tmdbImageID: "x4JzaRPXBs9wiHCe3e3ymXWuwfd",
-    imdbID: "tt1341167",
   },
 ];
 
@@ -137,26 +127,6 @@ export const FAVOURITE_SHOWS: Show[] = [
     imdbID: "tt11126994",
   },
   {
-    title: "Succession",
-    tmdbImageID: "hS62paPx7Ls3c6voXcXJzJNaTG4",
-    imdbID: "tt7660850",
-  },
-  {
-    title: "Atlanta",
-    tmdbImageID: "pDaERwg3NdKiLAApjxGTU7aYzze",
-    imdbID: "tt4288182",
-  },
-  {
-    title: "The Inbetweeners",
-    tmdbImageID: "qNmcaXDndOkY6v9QiJjnxQD09GJ",
-    imdbID: "tt1220617",
-  },
-  {
-    title: "Top Boy",
-    tmdbImageID: "cfqHWQQDwvKT8Xoe0AXzHBXcF1u",
-    imdbID: "tt1830379",
-  },
-  {
     title: "BoJack Horseman",
     tmdbImageID: "pB9L0jAnEQLMKgexqCEocEW8TA",
     imdbID: "tt3398228",
@@ -167,8 +137,23 @@ export const FAVOURITE_SHOWS: Show[] = [
     imdbID: "tt1439629",
   },
   {
-    title: "The Penguin",
-    tmdbImageID: "7I3EypifSHlW1BmmHbXXevqUUA7",
-    imdbID: "tt15435876",
+    title: "Atlanta",
+    tmdbImageID: "pDaERwg3NdKiLAApjxGTU7aYzze",
+    imdbID: "tt4288182",
+  },
+  {
+    title: "Succession",
+    tmdbImageID: "hS62paPx7Ls3c6voXcXJzJNaTG4",
+    imdbID: "tt7660850",
+  },
+  {
+    title: "The Inbetweeners",
+    tmdbImageID: "qNmcaXDndOkY6v9QiJjnxQD09GJ",
+    imdbID: "tt1220617",
+  },
+  {
+    title: "Top Boy",
+    tmdbImageID: "cfqHWQQDwvKT8Xoe0AXzHBXcF1u",
+    imdbID: "tt1830379",
   },
 ];
