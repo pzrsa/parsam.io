@@ -132,14 +132,19 @@ export const FAVOURITE_SHOWS: Show[] = [
     imdbID: "tt3398228",
   },
   {
+    title: "Atlanta",
+    tmdbImageID: "pDaERwg3NdKiLAApjxGTU7aYzze",
+    imdbID: "tt4288182",
+  },
+  {
     title: "Community",
     tmdbImageID: "tfX9KvvHdzfChgM7TZOd39QhOqN",
     imdbID: "tt1439629",
   },
   {
-    title: "Atlanta",
-    tmdbImageID: "pDaERwg3NdKiLAApjxGTU7aYzze",
-    imdbID: "tt4288182",
+    title: "Better Call Saul",
+    tmdbImageID: "rbNc44otT6VRd7QpxqlUAMyByaQ",
+    imdbID: "tt3032476",
   },
   {
     title: "Succession",

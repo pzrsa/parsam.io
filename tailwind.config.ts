@@ -24,8 +24,23 @@ const config: Config = {
         DEFAULT: {
           css: {
             color: theme("colors.black"),
+            h1: {
+              textTransform: "uppercase",
+            },
+            h2: {
+              textTransform: "uppercase",
+            },
+            h3: {
+              textTransform: "uppercase",
+            },
             a: {
               color: theme("colors.blue.700"),
+              textDecoration: "underline",
+              textDecorationThickness: "2px",
+              "&:hover": {
+                backgroundColor: theme("colors.black"),
+                color: theme("colors.white"),
+              },
             },
           },
         },

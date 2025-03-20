@@ -119,7 +119,7 @@ const Article: React.FC<{ post: PostWithContent }> = ({ post }) => {
                   style={{ width: "100%", height: "auto" }}
                   alt={props.alt ?? ""}
                   src={`/${props.src}`}
-                  className="rounded-sm shadow-2xl mb-2"
+                  className="shadow-2xl mb-2"
                   priority
                 />
               </a>
@@ -134,7 +134,7 @@ const Article: React.FC<{ post: PostWithContent }> = ({ post }) => {
   });
 
   return (
-    <article className="prose prose-h1:text-2xl prose-h2:text-xl prose-headings:text-lg ">
+    <article className="prose prose-h1:text-2xl prose-h2:text-xl prose-headings:text-lg">
       {reactContent}
     </article>
   );

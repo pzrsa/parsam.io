@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Nav from "./components/Nav";
 import "./globals.css";
 import { INDEX_OG_PATH } from "./lib/constants";
-import { IBM_Plex_Serif } from "next/font/google";
+import { Courier_Prime } from "next/font/google";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://parsam.io"),
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-const ibm = IBM_Plex_Serif({
+const courierPrime = Courier_Prime({
   subsets: ["latin"],
   weight: "400",
 });
@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-white text-black antialiased ${ibm.className}`}
+      className={`bg-white text-black antialiased ${courierPrime.className}`}
     >
       <body className={`max-w-2xl mx-auto py-8 px-6`}>
         <Analytics />

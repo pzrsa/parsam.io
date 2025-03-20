@@ -9,39 +9,44 @@ export default function Page() {
   return (
     <>
       <div>
-        <div className="flex items-center gap-2">
-          <ExternalLink href="https://x.com/pzrsaa">
-            <Image
-              alt="Parsa Mesgarha"
-              src={me}
-              className="transition-all hover:scale-110 rounded-full"
-              height={80}
-              width={80}
-            />
-          </ExternalLink>
-          <div>
-            <h1 className="text-xl sm:text-2xl font-extrabold">
-              Hi, I&apos;m Parsa.
-            </h1>
-            <p className="font-semibold text-zinc-600">
-              Software Engineer at <span className="text-tesla-red">Tesla</span>
-            </p>
+        <div className="flex flex-row items-center gap-4 mb-6">
+          <div className="flex-shrink-0">
+            <ExternalLink href="https://x.com/pzrsaa">
+              <Image
+                alt="Parsa Mesgarha"
+                src={me}
+                className="border-2 border-black"
+                height={80}
+                width={80}
+                style={{ width: "80px", height: "80px" }}
+              />
+            </ExternalLink>
           </div>
-        </div>
-        <div className="my-6 max-w-fit">
-          <NowPlaying />
+          <div className="w-fit">
+            <NowPlaying />
+          </div>
         </div>
       </div>
       <div className="prose">
         <p>
           I&apos;m 21 years old, Persian, born in England, and have spent the
-          majority of my life in London.{" "}
+          majority of my life in London.
         </p>
         <p>
-          I&apos;m currently working at{" "}
-          <ExternalLink href="https://www.tesla.com">Tesla</ExternalLink>, based
-          in Berlin. Prior to this, I was at Google for 2 years, primarily
-          contributing to the{" "}
+          I&apos;m currently working as a Software Engineer at{" "}
+          <ExternalLink href="https://www.tesla.com" className="text-tesla-red">
+            Tesla
+          </ExternalLink>{" "}
+          in Berlin. Prior to this, I was at{" "}
+          <ExternalLink href="https://google.com">
+            <span className="text-google-blue">G</span>
+            <span className="text-google-red">o</span>
+            <span className="text-google-yellow">o</span>
+            <span className="text-google-blue">g</span>
+            <span className="text-google-green">l</span>
+            <span className="text-google-red">e</span>
+          </ExternalLink>{" "}
+          for 2 years, primarily contributing to the the{" "}
           <ExternalLink href="https://web.dev/">Web Platform</ExternalLink>{" "}
           through{" "}
           <ExternalLink href="https://www.chromium.org/Home/">
@@ -94,7 +99,6 @@ export default function Page() {
         </div>
         <div>
           <h2>Now</h2>
-          <h3>Career</h3>
           <p>
             I joined Tesla, and moved to Berlin! More details in this post:{" "}
             <Link href={"/tesla"}>I joined Tesla (and moved to Berlin)</Link>.
@@ -117,7 +121,6 @@ export default function Page() {
                     alt={album.title}
                     src={`https://i.scdn.co/image/${album.spotifyImageID}`}
                     fill
-                    className="transition-all group-hover:opacity-75 rounded-sm"
                   />
                 </div>
               </a>
@@ -138,7 +141,6 @@ export default function Page() {
                     alt={film.title}
                     src={`https://image.tmdb.org/t/p/original/${film.tmdbImageID}.jpg`}
                     fill
-                    className="transition-all group-hover:opacity-75 rounded-sm"
                   />
                 </div>
               </a>
@@ -166,7 +168,6 @@ export default function Page() {
                     alt={show.title}
                     src={`https://image.tmdb.org/t/p/original/${show.tmdbImageID}.jpg`}
                     fill
-                    className="transition-all group-hover:opacity-75 rounded-sm"
                   />
                 </div>
               </a>

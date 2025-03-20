@@ -3,5 +3,15 @@
 @tailwind utilities;
 
 ::selection {
-  @apply bg-zinc-100;
+  @apply bg-black text-white;
+}
+
+@layer base {
+  a {
+    @apply underline decoration-2 hover:bg-black hover:text-white transition-colors;
+  }
+
+  img {
+    @apply border-2 border-black;
+  }
 }

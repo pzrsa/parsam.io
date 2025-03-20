@@ -5,25 +5,26 @@ import { usePathname } from "next/navigation";
 
 export default function Nav() {
   const pathname = usePathname();
+  const name = "PARSA MESGARHA";
 
   return (
-    <nav className="flex mb-6 gap-1 items-center">
+    <nav className="flex mb-6 items-center">
       <span className="flex-1">
         {pathname === "/" ? (
-          <span className="font-bold text-lg sm:text-xl cursor-default">
-            Parsa Mesgarha
-          </span>
+          <h1 className="font-bold text-lg sm:text-xl cursor-default">
+            {name}
+          </h1>
         ) : (
           <Link href={"/"} className="font-bold text-lg sm:text-xl">
-            Parsa Mesgarha
+            {name}
           </Link>
         )}
       </span>
       {pathname === "/blog" ? (
-        <span className="font-bold cursor-default">blog</span>
+        <h1 className="font-bold cursor-default">BLOG</h1>
       ) : (
         <Link href={"/blog"} className="font-bold underline">
-          blog
+          BLOG
         </Link>
       )}
     </nav>

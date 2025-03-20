@@ -7,17 +7,18 @@ import fetcher from "../lib/fetcher";
 const NowPlaying: React.FC = () => {
   const { data, error } = useSWR("/api/now-playing", fetcher);
   const SpotifyIcon = () => <SiSpotify color="#1DB954" />;
+  const baseClassName = "flex items-baseline gap-2 border-2 border-black p-2";
 
   if (error)
     return (
-      <p className="flex items-baseline gap-2">
+      <p className={baseClassName}>
         <SpotifyIcon />
         failed to load
       </p>
     );
   if (!data)
     return (
-      <p className="flex items-baseline gap-2">
+      <p className={baseClassName}>
         <SpotifyIcon />
         Loading...
       </p>
@@ -30,7 +31,7 @@ const NowPlaying: React.FC = () => {
           href={data.songUrl}
           rel="prefetch noreferrer"
           target="_blank"
-          className="flex items-baseline gap-2"
+          className={baseClassName}
         >
           <span>
             <SpotifyIcon />
@@ -45,7 +46,7 @@ const NowPlaying: React.FC = () => {
           href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
           rel="prefetch noreferrer"
           target="_blank"
-          className="flex items-baseline gap-2"
+          className={baseClassName}
         >
           <SpotifyIcon />
           Not playing anything

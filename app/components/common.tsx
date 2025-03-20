@@ -1,5 +1,6 @@
 import dayjs from "dayjs";
 import customParseFormat from "dayjs/plugin/customParseFormat";
+import { ReactNode } from "react";
 
 interface DateProps {
   dateString: string;
@@ -41,16 +42,19 @@ export const SubscribeForm = () => {
         action="https://buttondown.email/api/emails/embed-subscribe/parsam"
         method="post"
         target="_blank"
-        className="flex gap-2"
+        className="flex flex-col sm:flex-row gap-4 mt-2"
       >
         <input
           type="email"
           name="email"
           placeholder="saul@bettercallsaul.com"
           required
-          className="flex-1 px-2 py-1 border rounded-sm"
+          className="flex-1 px-4 py-2 border-2 border-black focus:outline-none"
         />
-        <button type="submit" className="px-3 py-1 border rounded-sm">
+        <button
+          type="submit"
+          className="px-6 py-2 bg-black text-white uppercase font-bold tracking-wider border-2 border-black hover:bg-white hover:text-black transition-colors"
+        >
           Subscribe
         </button>
       </form>
