@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: "media",
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -26,7 +25,7 @@ const config: Config = {
           css: {
             color: theme("colors.black"),
             a: {
-              color: theme("colors.blue.600"),
+              color: theme("colors.blue.700"),
             },
           },
         },
