@@ -8,7 +8,7 @@ import { getSortedPostData } from "../lib/posts";
 import { BasePost } from "../lib/types";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "BLOG",
   openGraph: {
     url: "https://parsam.io",
     images: [BLOG_OG_PATH],
@@ -28,7 +28,7 @@ export default function Page() {
     <>
       <span className="flex gap-1 items-baseline">
         <span className="flex-1">
-          <h1 className="text-2xl sm:text-3xl font-extrabold mb-8">Blog</h1>
+          <h1 className="text-2xl sm:text-3xl font-extrabold mb-8">BLOG</h1>
         </span>
         <a href="/feed.atom">
           <SiRss />
