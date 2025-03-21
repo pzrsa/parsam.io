@@ -8,7 +8,7 @@ const NowPlaying: React.FC = () => {
   const { data, error } = useSWR("/api/now-playing", fetcher);
   const SpotifyIcon = () => <SiSpotify color="#1DB954" />;
   const baseClassName =
-    "flex items-baseline gap-2 border-2 border-black p-2 bg-black text-white hover:bg-white hover:text-black";
+    "flex items-baseline gap-2 border-2 border-black p-2 bg-black text-white hover:bg-white hover:text-black uppercase";
 
   if (error)
     return (

@@ -7,6 +7,12 @@
 }
 
 @layer base {
+  h1,
+  h2,
+  h3 {
+    @apply uppercase;
+  }
+
   a {
     @apply underline decoration-2 hover:bg-black hover:text-white transition-colors;
   }

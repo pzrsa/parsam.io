@@ -8,7 +8,7 @@ import { getSortedPostData } from "../lib/posts";
 import { BasePost } from "../lib/types";
 
 export const metadata: Metadata = {
-  title: "BLOG",
+  title: "Blog",
   openGraph: {
     url: "https://parsam.io",
     images: [BLOG_OG_PATH],
@@ -28,7 +28,7 @@ export default function Page() {
     <>
       <span className="flex gap-1 items-baseline">
         <span className="flex-1">
-          <h1 className="text-2xl sm:text-3xl font-extrabold mb-8">BLOG</h1>
+          <h1 className="text-2xl sm:text-3xl mb-8">Blog</h1>
         </span>
         <a href="/feed.atom">
           <SiRss />
@@ -51,15 +51,10 @@ export default function Page() {
               <span className={`flex ${lastForYear ? "mb-4" : ""}`}>
                 <span className="flex-1">
                   <Link href={`/${post.id}`}>
-                    <span className="font-semibold">{post.title}</span>
-                    {post.author && (
-                      <span>
-                        <span className="text-zinc-600">
-                          {" - "}
-                          {post.author}
-                        </span>
-                      </span>
-                    )}
+                    <span className="font-semibold uppercase">
+                      {post.title}
+                    </span>
+                    {post.author && <span> ({post.author})</span>}
                   </Link>
                 </span>
                 <span className="text-zinc-600">
