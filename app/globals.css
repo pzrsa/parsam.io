@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 ::selection {
-  @apply bg-black text-white;
+    @apply bg-black text-white;
 }
 
 @layer base {
-  h1,
-  h2,
-  h3 {
-    @apply uppercase;
-  }
+    h1,
+    h2,
+    h3 {
+        @apply uppercase font-bold;
+    }
 
-  a {
-    @apply underline decoration-2 hover:bg-black hover:text-white transition-colors;
-  }
+    a {
+        @apply underline decoration-2 hover:bg-black hover:text-white transition-colors;
+    }
 
-  img {
-    @apply border-2 border-black;
-  }
+    img {
+        @apply border-2 border-black;
+    }
 }

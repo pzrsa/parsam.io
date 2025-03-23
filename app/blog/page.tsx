@@ -51,9 +51,7 @@ export default function Page() {
               <span className={`flex ${lastForYear ? "mb-4" : ""}`}>
                 <span className="flex-1">
                   <Link href={`/${post.id}`}>
-                    <span className="font-semibold uppercase">
-                      {post.title}
-                    </span>
+                    <span className="font-bold uppercase">{post.title}</span>
                     {post.author && <span> ({post.author})</span>}
                   </Link>
                 </span>
