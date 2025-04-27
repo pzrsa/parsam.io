@@ -23,7 +23,7 @@
     }
 
     a {
-        @apply decoration-2 hover:bg-black hover:text-white transition-colors;
+        @apply decoration-2 underline hover:bg-black hover:text-white transition-colors;
     }
 
     img {
