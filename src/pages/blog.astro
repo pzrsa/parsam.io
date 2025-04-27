@@ -7,14 +7,53 @@ posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
 <Layout>
-    <h1>My posts</h1>
-    <ul>
+    <span class="flex gap-1 items-baseline">
+        <span class="flex-1">
+            <h1 class="text-2xl sm:text-3xl mb-8">Blog</h1>
+        </span>
+        <!-- <a href="/feed.atom">
+          <SiRss />
+        </a> -->
+    </span>
+    <ul class="flex flex-col gap-4">
         {
-            posts.map((post) => (
-                <li>
-                    <a href={`/${post.id}`}>{post.data.title}</a>
-                </li>
-            ))
+            posts.map((post, i) => {
+                const year = post.data.date.getFullYear();
+                const firstForYear =
+                    !posts[i - 1] ||
+                    posts[i - 1].data.date.getFullYear() !== year;
+                const lastForYear =
+                    !posts[i + 1] ||
+                    posts[i + 1].data.date.getFullYear() !== year;
+
+                return (
+                    <li>
+                        {firstForYear && (
+                            <span class="font-bold flex justify-end mb-3">
+                                {year}
+                            </span>
+                        )}
+                        <span class={`flex ${lastForYear ? "mb-4" : ""}`}>
+                            <span class="flex-1">
+                                <a href={`/${post.id}`}>
+                                    <span class="font-bold uppercase">
+                                        {post.data.title}
+                                    </span>
+                                    {post.data.author && (
+                                        <span> ({post.data.author})</span>
+                                    )}
+                                </a>
+                            </span>
+                            <span class="text-zinc-600">
+                                {post.data.date.toLocaleDateString("en-US", {
+                                    month: "short",
+                                    day: "numeric",
+                                })}
+                            </span>
+                        </span>
+                    </li>
+                );
+            })
         }
     </ul>
 </Layout>

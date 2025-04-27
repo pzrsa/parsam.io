@@ -14,3 +14,19 @@
 ::selection {
     @apply bg-black text-white;
 }
+
+@layer base {
+    h1,
+    h2,
+    h3 {
+        @apply font-bold;
+    }
+
+    a {
+        @apply decoration-2 hover:bg-black hover:text-white transition-colors;
+    }
+
+    img {
+        @apply border-2 border-black;
+    }
+}
