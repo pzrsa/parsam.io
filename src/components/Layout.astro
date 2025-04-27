@@ -1,0 +1,13 @@
+---
+import "../styles/global.css";
+import Head from "../components/Head.astro";
+
+const { ...props } = Astro.props;
+---
+
+<html lang="en" class="bg-white text-black antialiased">
+    <Head />
+    <body class="max-w-2xl mx-auto py-8 px-6">
+        <slot />
+    </body>
+</html>
