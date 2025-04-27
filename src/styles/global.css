@@ -6,4 +6,11 @@
     --color-google-red: #db3236;
     --color-google-yellow: #f4c20d;
     --color-google-green: #3cba54;
+    --color-tesla-red: #cc0000;
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+::selection {
+    @apply bg-black text-white;
 }

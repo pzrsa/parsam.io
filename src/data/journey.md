@@ -34,10 +34,10 @@ I didn't care about the selling price - I needed it gone. I was fed up with myse
 After selling my setup, I bought a random refurbished Dell computer - the type you'd use to play [Agar.io](https://en.wikipedia.org/wiki/Agar.io) in the corner of your school's computer room.
 
 I went from a setup like this:
-![](setup-1.jpg)
+![](../assets/setup-1.jpg)
 
 To this:
-![](setup-2.jpg)
+![](../assets/setup-2.jpg)
 
 I felt reborn, but transformed into someone almost robotic. The following months were deeply lonely, but I finally broke free from the autopilot state that had consumed most of my life.
 
@@ -73,7 +73,7 @@ After finishing that, I got bored with just manipulating elements and moved on t
 
 In 2021, I started building projects using [Python](https://python.org) and [Flask](https://flask.palletsprojects.com/en/stable/) (a web framework). The web space really drew me in.
 
-![](2021-contributions.png)
+![](../assets/2021-contributions.png)
 
 My first real project was a PS5 stock checker for Amazon - a web scraper that listened for element changes. Basic stuff, but I felt incredibly proud of it.
 
@@ -97,8 +97,8 @@ I checked out Derek's website and emailed him a novel of my life story, not expe
 
 This is what he said:
 
-> But I don't think you need to pay $16/month to Webflow. For the kind of site you're doing, static HTML would be WAY cheaper, more educational for you, and give you total control to move it anywhere, no monthly fee.  
->  My best advice to make a simple site is this:  
+> But I don't think you need to pay $16/month to Webflow. For the kind of site you're doing, static HTML would be WAY cheaper, more educational for you, and give you total control to move it anywhere, no monthly fee.
+>  My best advice to make a simple site is this:
 >  Start simple from before you even begin : stay simple in how you think of it, and how you make it. Don't let people tell you it needs to be any more complex than this.
 > Create one new folder on your computer called "website" and do everything I say below in that folder.
 
@@ -134,7 +134,7 @@ Before joining, I turned 18 and completed my BTEC.
 
 # The Google Years
 
-![](welcome-google.jpeg)
+![](../assets/welcome-google.jpeg)
 
 I started at Google in September 2021, completed onboarding and joined the [Play Console](https://developer.android.com/distribute/console) team under my first manager.
 
@@ -160,7 +160,7 @@ Our server handled tens of millions of monthly requests, sparking my interest in
 
 My time at Google was invaluable. I worked with brilliant people and felt grateful being the dumbest in the room.
 
-![Even got a photo with Sundar Pichai](pichAI.jpeg)
+![Even got a photo with Sundar Pichai](../assets/pichAI.jpeg)
 
 Life at Google was fantastic - free food and gym, smart people, interesting problems. Still, I knew it was time to look for my next opportunity.
 
@@ -208,6 +208,6 @@ It goes without saying I'm humbled and grateful for everyone I've met through th
 
 This is still just the beginning, I have a long way ahead of me.
 
-![Shoutout to Taimur (@taimurabdaal) for giving me the idea to write this post.](taimur-selfie.jpg)
+![Shoutout to Taimur (@taimurabdaal) for giving me the idea to write this post.](../assets/taimur-selfie.jpg)
 
 I also want to take the time to say thank you so much for reading this far. It means the world to me, and I hope it was of some value to you.

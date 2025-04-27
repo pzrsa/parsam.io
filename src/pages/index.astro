@@ -2,9 +2,7 @@
 import Layout from "../components/Layout.astro";
 import { Image } from "astro:assets";
 import me from "../assets/avatar.jpeg";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Prose from "../components/Prose.astro";
 ---
 
 <Layout>
@@ -18,7 +16,6 @@ import me from "../assets/avatar.jpeg";
                         class="border-2 border-black"
                         height={80}
                         width={80}
-                        style={{ width: "80px", height: "80px" }}
                     />
                 </a>
             </div>
@@ -27,32 +24,30 @@ import me from "../assets/avatar.jpeg";
       </div> -->
         </div>
     </div>
-    <div class="prose">
+    <Prose>
         <p>
             I&apos;m 21 years old, Persian, born in England, and have spent the
             majority of my life in London.
         </p>
         <p>
-            I&apos;m currently working as a Software Engineer at{" "}
-            <a href="https://www.tesla.com" class="text-tesla-red"> Tesla </a>{
-                " "
-            }
+            I&apos;m currently working as a Software Engineer at
+            <a href="https://www.tesla.com" class="text-tesla-red">Tesla</a>
             in Berlin. Prior to this, I was at{" "}
             <a href="https://google.com">
-                <span class="text-google-blue">G</span>
-                <span class="text-google-red">o</span>
-                <span class="text-google-yellow">o</span>
-                <span class="text-google-blue">g</span>
-                <span class="text-google-green">l</span>
-                <span class="text-google-red">e</span>
+                <span class="text-google-blue">G</span><span
+                    class="text-google-red">o</span
+                ><span class="text-google-yellow">o</span><span
+                    class="text-google-blue">g</span
+                ><span class="text-google-green">l</span><span
+                    class="text-google-red">e</span
+                >
             </a>{" "}
-            for 2 years, primarily contributing to the the{" "}
-            <a href="https://web.dev/">Web Platform</a>{" "}
-            through{" "}
-            <a href="https://www.chromium.org/Home/"> Chrome </a>{" "}
-            and{" "}
-            <a href="https://source.android.com/"> Android </a>
-            .
+            for 2 years, primarily contributing to the the
+            <a href="https://web.dev/">Web Platform</a>
+            through
+            <a href="https://www.chromium.org/Home/">Chrome</a>{" "}
+            and
+            <a href="https://source.android.com/">Android</a>.
         </p>
         <p>
             I have a <a href="/blog">blog</a> where I write about stuff I find interesting
@@ -100,8 +95,10 @@ import me from "../assets/avatar.jpeg";
                 </a>
                 <a
                     class="flex items-center gap-2 w-fit underline text-blue-600"
-                    href="https://letterboxd.com/pzrsa/">Letterboxd</a
+                    href="https://letterboxd.com/pzrsa/"
                 >
+                    Letterboxd
+                </a>
                 <a
                     class="flex items-center gap-2 w-fit underline text-blue-600"
                     href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
@@ -129,9 +126,7 @@ import me from "../assets/avatar.jpeg";
         <div>
             <h2>Now</h2>
             <p>
-                I joined Tesla, and moved to Berlin! More details in this post:{
-                    " "
-                }
+                I joined Tesla, and moved to Berlin! More details in this post:
                 <a href={"/tesla"}>I joined Tesla (and moved to Berlin)</a>.
             </p>
         </div>
@@ -213,5 +208,5 @@ import me from "../assets/avatar.jpeg";
         }
       </div> -->
         </div>
-    </div>
+    </Prose>
 </Layout>

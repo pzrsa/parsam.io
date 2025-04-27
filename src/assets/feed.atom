@@ -1,0 +1,1360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://parsam.io/</id>
+    <title>Parsa Mesgarha's Blog</title>
+    <updated>2025-03-21T20:55:05.042Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Parsa Mesgarha</name>
+        <email>hi@parsam.io</email>
+        <uri>https://parsam.io/</uri>
+    </author>
+    <link rel="alternate" href="https://parsam.io/blog"/>
+    <subtitle>Parsa Mesgarha's Blog</subtitle>
+    <logo>https://parsam.io/og/blog.png</logo>
+    <icon>https://parsam.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, Parsa.</rights>
+    <entry>
+        <title type="html"><![CDATA[I went from a gaming addiction at 17 to working at Google and Tesla by 21]]></title>
+        <id>journey</id>
+        <link href="https://parsam.io/journey"/>
+        <updated>2025-01-03T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>4 years ago, I started my software engineering career at 17. During this time, I've had the rare opportunity to work at two innovative companies: <a href="https://google.com">Google</a> and <a href="https://tesla.com">Tesla</a>.</p>
+<p>You might think I'm some educated wiz kid, but I never went to university. I had terrible grades in school, and my worst grade was ironically in computer science. I don't come from a wealthy family either.</p>
+<p>With that background, no one could've predicted I'd end up where I am today. I went from a complete bum to... well... less of a bum.</p>
+<p>2025 has begun, marking roughly 4 years since I started learning to code, so I figured it'd be a good time to finally share my unique journey going from newbie to mid-level software engineer at Tesla.</p>
+<p>I hope I can inspire young people looking to jumpstart their careers through unconventional routes. I would've loved reading something like this when starting out, even though I never used to read.</p>
+<p>One of my life philosophies is authenticity, and I see a lack of it in <a href="https://en.wikipedia.org/wiki/Big_Tech">FAANG</a> stories that resort to clickbait tactics to make a quick buck. This post aims to be a breath of fresh air.</p>
+<p>Without further ado, I hope you enjoy this glimpse into my journey 🤝</p>
+<h1>Reincarnated</h1>
+<p>July 2020, London. I'd just turned 17 and finished my first year of college doing a <a href="https://en.wikipedia.org/wiki/BTEC_Extended_Diploma">BTEC Level 3</a> in Information Technology. In the UK, college means pre-university, similar to senior high school. My college was rough – I'm sure someone got stabbed there.</p>
+<p>For the past 3-4 years until then, my routine on non-school days consisted of hopping on my gaming PC immediately after waking up, and grinding games until the AM with the boys.</p>
+<p>I was quite good at most games since childhood, but took <a href="https://en.wikipedia.org/wiki/Fortnite">Fortnite</a> competitively, earning a few grand from tournaments. Embarrassing to admit now since it's a kids' game, but I loved it.</p>
+<p>The memories I've made playing games with friends is priceless, and I wouldn't trade anything for it. I'm glad I recorded hours of footage to reminisce on.</p>
+<p>Then everything changed. I can't pinpoint exactly what triggered it, but I went cold turkey. Cut ties with friends I'd known since school, deleted social media, and sold all my gaming equipment in the coming weeks.</p>
+<p>I didn't care about the selling price - I needed it gone. I was fed up with myself and knew drastic change was my only route.</p>
+<p>After selling my setup, I bought a random refurbished Dell computer - the type you'd use to play <a href="https://en.wikipedia.org/wiki/Agar.io">Agar.io</a> in the corner of your school's computer room.</p>
+<p>I went from a setup like this:
+<img src="setup-1.jpg" alt=""></p>
+<p>To this:
+<img src="setup-2.jpg" alt=""></p>
+<p>I felt reborn, but transformed into someone almost robotic. The following months were deeply lonely, but I finally broke free from the autopilot state that had consumed most of my life.</p>
+<p>I haven't touched video games since, except I briefly played the <a href="https://en.wikipedia.org/wiki/Spider-Man_(video_game_series)">Spider-Man series</a> on PS5 after joining Google. I returned it immediately after finishing - the guy who collected it was a bit surprised since PS5s were still hard to find.</p>
+<p>My stance on gaming has changed over the years. Initially, I was strongly against it, but now I've grown to realise everyone has their own way to de-stress.</p>
+<p>I prefer weightlifting, following the Kizen 12 Week Powerlifting program and logging my workouts through <a href="https://gravitus.com/">Gravitus</a>. It's more of a duty than a hobby, but I'm progressing on my lifts just as I used to level up in games.</p>
+<p>With that said, I think most people struggling with purpose could start by being more intentional with their free time. This isn't just about video games, but it's a common trap that boys my age get stuck in.</p>
+<p>I still mostly see negatives with gaming. I try to avoid saying this since it's such a touchy subject and people don't want to face the truth. Some people make it work though - I mean, shit, look at <a href="https://www.forbes.com/sites/paultassi/2024/11/22/elon-musk-apparently-just-became-the-no-1-diablo-4-player-in-the-world/">my boss</a>.</p>
+<p>Since I'd carved out gaming (the only thing I did all day) - I started devouring YouTube videos about starting a business. I tried Amazon drop-shipping, which I find hilarious now since it feels like such a scammy thing to do.</p>
+<p>I did extensive research but never spent a penny on buying products from <a href="https://www.alibaba.com/">Alibaba</a>. In hindsight, that experience taught me a lot about communication, even though I practically did nothing.</p>
+<h1>University Plans</h1>
+<p>While exploring business ideas, I also had to think about my future education. In December 2020, I was applying to university. As mentioned earlier, my bad grades limited my options to low-ranked universities.</p>
+<p>It's ridiculous how much you're punished for doing poorly in secondary school. A number on a piece of paper determines your route and directly impacts your career path. Teachers in my college put so much fear in me about this, as if bad grades would wind me up at <a href="https://en.wikipedia.org/wiki/Jobcentre_Plus">jobcentre plus</a> every week.</p>
+<p>At this point, I wasn't even considering anything tech-related. Instead, I applied to Accounting/Finance courses because I wanted to be a finance bro. No trust fund, 6'0", brown eyes.</p>
+<h1>First Lines of Code</h1>
+<p>Around the same time, I’d just watched <a href="https://en.wikipedia.org/wiki/David_Fincher">Fincher's</a> masterpiece: <a href="https://www.imdb.com/title/tt1285016/">The Social Network</a> (I know, how cliche), and let me say that it indeed did have an impact on me to start learning to code. The film just made it look so goddamn cool.</p>
+<p>I started researching this thing called coding, going through various YouTube resources before settling on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> at <a href="https://www.freecodecamp.org">freeCodeCamp</a>. The quick feedback loop of seeing my code visually do something kept me hooked.</p>
+<p>After finishing that, I got bored with just manipulating elements and moved on to learning <a href="https://python.org">Python</a>, my first actual programming language. I learned through some Udemy course (even made a <a href="https://www.youtube.com/watch?v=iAYsqj7_95I">video</a> on it). God, I looked so young in that video. I barely stuck with that course for a few weeks.</p>
+<p>In 2021, I started building projects using <a href="https://python.org">Python</a> and <a href="https://flask.palletsprojects.com/en/stable/">Flask</a> (a web framework). The web space really drew me in.</p>
+<p><img src="2021-contributions.png" alt=""></p>
+<p>My first real project was a PS5 stock checker for Amazon - a web scraper that listened for element changes. Basic stuff, but I felt incredibly proud of it.</p>
+<p>Eventually the stack felt limiting. Everything was vanilla and lacked the sauce. This led me to the final infinity stone of web development: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>. I found <a href="https://www.theodinproject.com/">The Odin Project</a>, which turned out to be a solid resource for learning JS/<a href="https://nodejs.org">Node.js</a>.</p>
+<p>I thought "this programming stuff is pretty cool, I wonder if I could make a career out of it." After research, I declined my accounting offers and applied to study Computer Science at another low-ranked university. They accepted me, and I was set to start that September.</p>
+<h1>Building my Website</h1>
+<p>As you could imagine, I never read books (except the <em>Diary of a Wimpy Kid</em> series). The first "real" book I ever read was <a href="https://en.wikipedia.org/wiki/Think_and_Grow_Rich"><em>Think and Grow Rich</em></a>.</p>
+<p>It was gifted to me by one of my dad's friends, who preached about how much it changed his life. 17 year old me thought "eh I'll read it I guess." Looking back, this book contained a lot of <a href="https://en.wikipedia.org/wiki/Snake_oil">snake-oil BS</a>, but it was exactly what I needed at the time.</p>
+<p>Through this newfound interest in reading, I discovered a man who'd change my life: <a href="https://sive.rs/">Derek Sivers</a>.</p>
+<p>I read his book <a href="https://sive.rs/a"><em>Anything You Want</em></a> after seeing it in an <a href="https://www.youtube.com/watch?v=hv1gOEY3cs4&#x26;t=376s">Ali Abdaal video</a>. I loved it - it was packed with lessons about life and business.</p>
+<p>The first ever book note I wrote was on <em>Anything You Want</em> (<a href="https://parsam.io/anything-you-want">link</a>).</p>
+<p>I checked out Derek's website and emailed him a novel of my life story, not expecting a response. To my surprise, he replied. After a few exchanges, I mentioned I'd built a website using Webflow, costing $16 monthly.</p>
+<p>This is what he said:</p>
+<blockquote>
+<p>But I don't think you need to pay $16/month to Webflow. For the kind of site you're doing, static HTML would be WAY cheaper, more educational for you, and give you total control to move it anywhere, no monthly fee.<br>
+My best advice to make a simple site is this:<br>
+Start simple from before you even begin : stay simple in how you think of it, and how you make it. Don't let people tell you it needs to be any more complex than this.
+Create one new folder on your computer called "website" and do everything I say below in that folder.</p>
+</blockquote>
+<p>He gave me a step-by-step guide on building a website from scratch using pure HTML/CSS. Mind blown, I immediately switched to hosting on <a href="https://pages.github.com/">GitHub Pages</a>, and my new open source website was <a href="https://github.com/pzrsa/parsam.io/commit/7927cccdda9843bdc7c4b17ff80626516d628301">born</a>.</p>
+<p>One of his pieces of advice stuck with me:</p>
+<blockquote>
+<p>But for making a new site? Don't let anyone sell you on some complex solution. They're saying you need a jumbo jet when really you need a bicycle. Do your HTML by hand like this, and then you'll know when your site has become so big that you need a little more automation to help manage changes or links to the hundreds of pages inside. But until then, no no no. Just do HTML by hand.</p>
+</blockquote>
+<h1>A Life-Changing Opportunity</h1>
+<p>Now on track to study computer science, I explored the job opportunities. Like any aspiring CS student, I researched the FAANG companies, dreaming of joining them one day.</p>
+<p>After spending perhaps too much time polishing my resume, I decided to apply for some work experience before university.</p>
+<p>On the Google careers page, I stumbled upon a life-changing opportunity: an early career software engineering position. I applied without much thought, because there's no way they would give me a cha-</p>
+<p>I got a response in 4 days.</p>
+<p>A fire lit under me. I immediately started grinding <a href="https://leetcode.com/">Leetcode</a>, studying <a href="https://www.crackingthecodinginterview.com/">Cracking the Coding Interview</a> and reaching out to strangers for mock interviews. I even did a mock interview at 6 AM, barely awake, with an engineering manager from <a href="https://www.snapchat.com/">Snapchat</a> in the US.</p>
+<p>These were some of the most nerve-wracking yet exciting times. I treated every interaction as a learning experience, detaching myself from the outcome.</p>
+<p>While interviewing, I was still set for university that September. I attended the open day and spoke with students about the course. I wasn't feeling it at all, but felt I had no other choice. The Google position had to work out.</p>
+<p>To make it worse, there was a deadline to finalise accommodation before term started. I held off until my interviews were done.</p>
+<p>With just 2 days left to accept, my recruiter called. I got the job offer.</p>
+<p>After careful thinking, I deferred university and accepted the once-in-a-lifetime offer to join Google.</p>
+<p>Before joining, I turned 18 and completed my BTEC.</p>
+<h1>The Google Years</h1>
+<p><img src="welcome-google.jpeg" alt=""></p>
+<p>I started at Google in September 2021, completed onboarding and joined the <a href="https://developer.android.com/distribute/console">Play Console</a> team under my first manager.</p>
+<p>Our team, under an organisation owning the core platform services, managed the messages feature. We ran the pipeline sending developers notifications about necessary app changes.</p>
+<p>My mentor, a veteran with a 20-year tenure, was an absolute legend - I learned tons from him. The tooling alone took months to grasp, they say it takes 6 months to find your rhythm.</p>
+<p>Ask any current or former Google engineer - the developer experience they've built is fascinating. From code searching to editing, reviewing, and deploying, everything is engineered in-house and just works. Pure magic to me.</p>
+<p>In the Play Console team, I improved the <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a> pipeline and built a <a href="https://en.wikipedia.org/wiki/Command-line_interface">command-line interface</a> in <a href="https://en.wikipedia.org/wiki/Go_(programming_language)">Go</a>. The tool saved hours of engineering time monthly, earning recognition from a senior engineer.</p>
+<p>My learning was compounding exponentially - I was building real software for millions.</p>
+<p>After 9 months, I jumped at an opportunity to join the Web on Android team, working across both <a href="https://www.google.com/chrome/">Chrome</a> and <a href="https://www.android.com/">Android</a> organisations.</p>
+<p>I was thrilled to work on two of the world's biggest open source projects.</p>
+<p>I worked on <a href="https://web.dev/articles/webapks">WebAPKs</a>, a feature letting users install web apps as native Android apps. Most of my work was in Go, but I also tackled some challenging C++ towards the end.</p>
+<p>Our server handled tens of millions of monthly requests, sparking my interest in scalable backend architectures.</p>
+<h1>The Next Move</h1>
+<p>My time at Google was invaluable. I worked with brilliant people and felt grateful being the dumbest in the room.</p>
+<p><img src="pichAI.jpeg" alt="Even got a photo with Sundar Pichai"></p>
+<p>Life at Google was fantastic - free food and gym, smart people, interesting problems. Still, I knew it was time to look for my next opportunity.</p>
+<p>I wanted to change everything while young. A new company would bring fresh challenges, but a new city would push me to grow in different ways. At 20, it was time to leave my parents' home (though I'm grateful for them), learn to live alone, cook for myself - basically become a man for myself.</p>
+<p>I returned to Leetcode and reached out to connections I'd made over the past 2 years. Soon I was interviewing with <a href="https://meta.com/">Meta</a>, <a href="https://spotify.com/">Spotify</a>, <a href="https://www.datadoghq.com/">Datadog</a>, <a href="https://www.cloudflare.com/">Cloudflare</a>, <a href="https://www.jpmorganchase.com/">JPMorgan Chase</a>, <a href="https://www.xtxmarkets.com/">XTX Markets</a>, <a href="https://www.hudsonrivertrading.com/">Hudson River Trading</a>, and others.</p>
+<p>Then the perfect opportunity appeared: Tesla. My friend/mentor <a href="https://x.com/cyrusyari">Cyrus</a> referred me, and I'm forever grateful to him.</p>
+<p>Tesla meant moving to Berlin - close enough to London but far enough for a new adventure. While it's Germany, Berlin is manageable since English is spoken in most places I end up in. I still started learning German over a month ago.</p>
+<p>I went through a few interview rounds with the team, then my recruiter called me to share the fantastic news: an offer to join Tesla.</p>
+<p>Funnily enough, I was also interviewing with another Elon company, <a href="https://x.com">X</a>. At this point I'd already received the Tesla offer, so I didn't proceed with the other rounds, but it was still a great learning experience.</p>
+<h1>Present Day</h1>
+<p>I've been at Tesla since April last year, and it has been one hell of a ride.</p>
+<p>The first few months were tough - once the initial excitement wore off, I felt unexpected pressure related to the move weighing on me. Now I've found my rhythm and established a good routine, which was my main goal after probation.</p>
+<p>My team (I'm sure at least one of you is reading this post) is fantastic. We genuinely enjoy working together, which I've learned is crucial. You could have the best product in the world, but if your team doesn't click, what's the point? I'm fortunate to have found teams I connect with both professionally and personally.</p>
+<p>One thing I find unique about Tesla is that despite being worth over a trillion dollars, it still operates like a startup. I wanted to work in a smaller environment, but I still appreciate not having to deal with a startup going belly up.</p>
+<h1>Final Thoughts</h1>
+<p>If you give someone the opportunity to lock in for a whole year, no outside contact, to change up their habits and entire behaviour, do you think they'd do it? I think under the right circumstances they will, especially if the change is drastic enough.</p>
+<p>Ever since I made this change I've been on a constant cycle of improvement. Most interactions and decisions somehow push me to grow, no matter what they are.</p>
+<p>Everyone does this to some extent, but I often feel like it can be damaging since I never feel stable. I don't hear people speak about this, so I certainly hope I'm not alone.</p>
+<p>It's also worth mentioning that getting in the game early means always being the youngest. To this day, I've never worked with someone younger than me. It rapidly matures you, and your social circle becomes much older than you.</p>
+<p>It doesn't sound like much, but it affects you. You can never fully connect with peers your age who are in completely different life circumstances. Don't get me wrong - I'm extremely lucky and grateful for this position, but I get this feeling that I somehow fast-tracked my way, and I can't afford to stop.</p>
+<p>I can never get back the opportunity to live the full uni experience, which in itself is priceless. You're surrounded by people the same age and circumstances as you, which helps with building lifelong relationships.</p>
+<p>It's also hard to find a wife, but that topic's for another time.</p>
+<p>Luck played a heavy role in my journey, but it's because I set myself up in situations to improve the chances of it. The world notices, and lets serendipity reward you.</p>
+<p>It goes without saying I'm humbled and grateful for everyone I've met through this wild journey. I couldn't have made it this far without the kind people sharing their time with me.</p>
+<p>This is still just the beginning, I have a long way ahead of me.</p>
+<p><img src="taimur-selfie.jpg" alt="Shoutout to Taimur (@taimurabdaal) for giving me the idea to write this post."></p>
+<p>I also want to take the time to say thank you so much for reading this far. It means the world to me, and I hope it was of some value to you.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I added email subscriptions]]></title>
+        <id>email-subs</id>
+        <link href="https://parsam.io/email-subs"/>
+        <updated>2025-01-01T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>Great news for the 2 other people who read my blog – you can now read my posts via email!</p>
+<p>I tried using <a href="https://parsam.substack.com/">Substack</a> as a way to just get my posts in peoples inboxes, but I didn't like how decoupled it was from my personal website.</p>
+<p>I don't like the idea of my posts lazily being posted around the internet, I want them to be in one canonical place.</p>
+<p>But thanks to <a href="https://buttondown.com/">Buttondown</a>, I have a solution that should hopefully be less friction to send and easier to maintain.</p>
+<p>This is all it took:</p>
+<pre><code>&#x3C;form
+	action="https://buttondown.email/api/emails/embed-subscribe/parsam"
+	method="post"
+	target="_blank"
+>
+  &#x3C;input
+	type="email"
+	name="email"
+	required
+  />
+  &#x3C;button type="submit">
+   Subscribe
+  &#x3C;/button>
+&#x3C;/form>
+</code></pre>
+<p>If you'd like to be one of the first subscribers, then please do share your email at the bottom of this post. It would truly mean a lot to me, and I hope to provide value for your time.</p>
+<p>However if you're like me and also enjoy using an RSS reader (I use <a href="https://netnewswire.com/">NetNewsWire</a>), then you can stay updated by following my <a href="feed.atom">ATOM feed</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Favourite photos from 2024]]></title>
+        <id>2024-photos</id>
+        <link href="https://parsam.io/2024-photos"/>
+        <updated>2024-12-31T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="parsa-thomas.jpeg" alt="">
+With <a href="https://x.com/thomaspaulmann">Thomas Paul Mann</a> (CEO of <a href="https://www.raycast.com/">Raycast</a>)</p>
+<p><img src="lindyman.jpeg" alt="">
+With <a href="https://x.com/PaulSkallas">Paul Skallas</a> aka LindyMan</p>
+<h1>Warsaw, Poland</h1>
+<p><img src="thomas-parsa.jpeg" alt="">
+<img src="peacock-lady.jpeg" alt="">
+<img src="warsaw-water.jpeg" alt="">
+<img src="warsaw-water-2.jpeg" alt="">
+<img src="warsaw-grass.jpeg" alt="">
+<img src="warsaw-central.jpeg" alt="">
+Loved Warsaw.</p>
+<h1>Italy</h1>
+<h2>Naples</h2>
+<p><img src="pompeii.jpeg" alt="">
+Pompeii
+<img src="b&#x26;w-geezer.jpeg" alt="">
+<img src="naples-uncles.jpeg" alt="">
+<img src="naples-me.jpeg" alt="">
+<img src="edgy-boat.jpeg" alt="">
+<img src="naples-building.jpeg" alt="">
+<img src="naples-sea.jpeg" alt="">
+<img src="naples-sea-2.jpeg" alt="">
+<img src="naples-me-2.jpeg" alt=""></p>
+<h2>Rome</h2>
+<p><img src="rome-colosseum.jpeg" alt="">
+<img src="rome-wide.jpeg" alt="">
+<img src="rome-bernini.jpeg" alt="">
+<img src="rome-museum.jpeg" alt="">
+<img src="rome-shadows.jpeg" alt="">
+<img src="rome-river.jpeg" alt="">
+<img src="rome-shadows-2.jpeg" alt="">
+<img src="rome-fuji.jpeg" alt=""></p>
+<h1>Misc</h1>
+<p><img src="berlin-car.jpeg" alt="">
+<img src="berlin-sunset.jpeg" alt="">
+<img src="berlin-church.jpeg" alt="">
+<img src="berlin-relaxing.jpeg" alt="">
+<img src="belgrade-wide.jpeg" alt="Belgrade, Serbia"></p>
+<p>Excited for 2025 :)</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[how to grow a network from scratch (especially when you're young)]]></title>
+        <id>grow-network</id>
+        <link href="https://parsam.io/grow-network"/>
+        <updated>2024-12-16T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>before I joined Google in 2021, I was 17 years old, barely knew how to program and had no connections whatsoever in the tech industry.</p>
+<p>but early on I learned the immense value of building a strong network, especially from scratch with complete strangers.</p>
+<p>this also went hand in hand with learning that having a referral (at least in the case of the tech industry), greatly improves the chances of your application being considered, given it literally falls in a recruiters lap.</p>
+<p>I'm now 21, and over the past 4 years I feel like I've built a pretty strong network, especially for someone who didn't have any connections initially.</p>
+<p>I've been very intentional with it because I chose to have quality over quantity. in the case of linkedin, I only have ~160 connections, in contrast to people who spam their way to 500+ without any idea of the person.</p>
+<p>not only am I "connected" with some fascinating people, I've built genuine friendships with them.</p>
+<p>so, in this short post I'll be sharing some tips on how you could get your foot in the door.</p>
+<p>if you're young, ambitious and somewhat outgoing, then I hope this will be of some value to you. I certainly would've wanted a post like this a few years ago.</p>
+<p>this isn't some crazy voodoo advice to get your way, I'm just some guy who knows how to make connections with people from all walks of life.</p>
+<p>in this post:</p>
+<ol>
+<li>find people similar to you</li>
+<li>be curious</li>
+<li>being young lets you off the hook</li>
+</ol>
+<h1>find people similar to you</h1>
+<p>my parents are Persian, and I've been made aware of how talented/vast we are when it comes to producing engineering talent.</p>
+<p>so, naturally I pretty much only reached out to other Persians, since they'd be more willing to help out one of their own.</p>
+<p>if you're not from a thick culture, then honestly it doesn't make a huge difference, just something you have less to connect on.</p>
+<h1>be curious</h1>
+<p>one mistake so many people make is sending some generic message like "hey, how's it going? I graduated at X so I'm applying for Y, would you give me a referral?". you're probably thinking that this sounds so uninspired, but you'd be surprised with how many messages I've received with a similar tone.</p>
+<p>remember, <strong>you do not know this person</strong>. show a reason why they should care for your career.</p>
+<p>what I did was reach out to people who I knew had some interesting story or background.</p>
+<p>that could be a website, their resume/linkedin experience, their current company. there are so many things you can touch up on in your msg that sparks a curious conversation.</p>
+<p>remember that the other person probably receives dozens of messages asking for referrals from desperate candidates, so don't send a generic msg further stating the obvious.</p>
+<h1>being young lets you off the hook</h1>
+<p>now, I'm not saying this for you to do dumb stuff and then say "it's fine I'm young", but I am also saying that being young lets you off the hook in many cases.</p>
+<p>jokes aside in all honesty, if you're young, and by young I mean in your 20s, you literally have nothing to lose reaching out to strangers. in fact, it's the best chance for you to do it.</p>
+<p>I've asked some silly questions to people, yet they find it quite endearing because of my age.</p>
+<p>one thing I learned from a teammate of mine at Google was to reach out to people 30+. because when they reach some sort of senior level, they feel like it's time for them to pay it forward to the next generation.</p>
+<p>in general though, this is just a fraction of the things I learnt.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[On Watching Films Alone]]></title>
+        <id>films-alone</id>
+        <link href="https://parsam.io/films-alone"/>
+        <updated>2024-11-09T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>I watch a lot of <a href="https://letterboxd.com/pzrsa/">films</a>... not as much as I wish but a good amount to say that I think it's so much more enjoyable watching movies alone in the theatre.</p>
+<p>you can really immerse in the filmmakers world, since you don't have to worry about making comments to your friends next to you. I can just let loose and let the film take me away.</p>
+<p><img src="don-cinema.jpg" alt="">
+(pic of me watching films alone)</p>
+<p>I mean yeah you get some loud people in the theatre, but in general I watch films that attracts the type of crowd who appreciates the art of cinema, so are pretty respectful about it.</p>
+<p>I know I'm romanticising cinema, but most of my favourite films were watched alone. I just love it so much, so I look forward to the day I could take my child to the cinema for the first time.</p>
+<p>it's also worth mentioning not every film is fun to watch by yourself, there are films made to be watched with friends. I have so many priceless memories from those films, even the shitty ones I've watched at home on the TV.</p>
+<p>a lot of people are surprised to hear when I say I'm watching a film alone, but I think it's generally because people are just not comfortable with their own presence.</p>
+<p>so if you've never done it before, I suggest you give it a go, it'll be a fun experience, and you'll probably meet some cool people!</p>
+<p><img src="marty.jpg" alt=""></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Monthly Favourites - October 2024]]></title>
+        <id>mf-oct-24</id>
+        <link href="https://parsam.io/mf-oct-24"/>
+        <updated>2024-10-31T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>I'm starting a new series on my blog where I share some of the interesting things I've come across. It's kinda a bookmark dump, but you might find some value in it :)</p>
+<h1>Brave Browser (and vertical tabs)</h1>
+<p>I've toyed with the idea of switching to vertical tabs before, but it's not natively supported in Chrome. I'm fully aware of the benefits of using vertical anything, like I've always used a vertical dock (it's hidden so rly no benefit). I finally made the switch to <a href="https://brave.com/">Brave</a> since it supports it <a href="https://brave.com/blog/vertical-tabs/">natively</a>, and so far it's been great. At the office I have a wide screen monitor, so it's been nice to have a static sidebar of tabs where I can actually read the title of the page, and scroll if needed. The issue with horizontal tabs is that as your tabs scale, it just gets reduced down to a favicon.
+<img src="brave-tabs.jpeg" alt="brave-tabs.heic"></p>
+<h1>Fish Shell</h1>
+<p>I used to <a href="https://fishshell.com/">fish shell</a>, but recently I went back to using it as part of my long term plan to be minimal/intentional with everything. I like having this mentality of using the defaults of things, and fish fits that criteria. This is all I need in my <code>~/.config/fish/config.fish</code>:</p>
+<pre><code>eval (/opt/homebrew/bin/brew shellenv)
+
+alias c="clear"
+alias vi="nvim"
+fish_vi_key_bindings
+
+source "/opt/homebrew/opt/fzf/shell/key-bindings.fish"
+fzf_key_bindings
+
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+fnm env --use-on-cd --shell fish | source
+</code></pre>
+<h1>Solovair Boots</h1>
+<p>I've never had a quality pair of leather boots, so I decided to buy the brown <a href="https://solovair.com/">Solovair</a> Horween Leather Derby Boots. Alongside the boots, the <a href="https://solovair.com/pages/history">history</a> of Solovair is pretty cool.</p>
+<p>So you know Dr Martens, right? Well, Dr Martens used to be manufactured by NPS (parent company of Solovair) boots in a factory in Northamptonshire, England. But in 1990 Dr Martens was about to go bankrupt, so they had to cut costs and decided to move their manufacturing overseas. As a result, Dr Martens' quality degraded a lot, which has been <a href="https://www.youtube.com/results?search_query=dr+martens+quality">documented</a> countless times online. However, Solovair continued to manufacture their shoes the old fashioned way, which is something I find so fascinating.</p>
+<p>If you value craftsmanship and history, Solovair is a great choice for leather shoes/boots. Many people buy Dr Martens just for the yellow stitches, which is not a status game I want to play. I'm so happy with my purchase, and what makes it even more satisfying is that I bought this from their outlet where I got a ~60% discount on them.</p>
+<p>Photo of me wearing them as part of my halloween costume:
+<img src="solovair-boots.jpeg" alt="solovair-boots.heic"></p>
+<h1>Wrangler 31MWZ Cowboy Cut Jeans</h1>
+<p>For someone who squats, I have pretty big thighs, which means it's hard to find a good pair of trousers/jeans that fit the way I want. I was doing some research, and found the Wrangler 31MWZ fits my criteria perfectly. High rise, straight leg, 100% cotton, relaxed, and rich with Western American history. I bought these online for £20. Yes, £20 for a pair jeans that fit me the way I want. Can't wait to see how it patinas over time.</p>
+<p>Happy Halloween 🎃</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[21 years old]]></title>
+        <id>21</id>
+        <link href="https://parsam.io/21"/>
+        <updated>2024-07-02T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>Today I turn 21 years old, which if you didn’t know, is the one after 20. Crazy, I know.</p>
+<p>I think 20 was the most formative year for me so far. I’m generally becoming more well rounded in the important aspects of life.</p>
+<p>I feel the stakes for my decisions getting higher as I age, and this year was eye-opening for that. I’ve been learning a lot from my mistakes, and am constantly self aware of where I need to be better.</p>
+<p>Apparently I could drink alcohol in the US now, but I’m still gonna hold off on drinking until a special occasion with a special someone.</p>
+<p>As always, grateful for everything.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I joined Tesla (and moved to Berlin)]]></title>
+        <id>tesla</id>
+        <link href="https://parsam.io/tesla"/>
+        <updated>2024-04-03T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>I'm pleased to share I joined Tesla! This will be a huge leap in my professional life as a Software Engineer, as well as my personal one as I've moved from London to Berlin, where I've started working from their <a href="https://www.tesla.com/en_eu/giga-berlin">Gigafactory</a>.</p>
+<p><img src="welcome-tesla.png" alt=""></p>
+<p>Two years ago, I got my first ever job as a Software Engineer at one of the best tech companies in the world - <a href="https://parsam.io/joined-google">Google</a>. I genuinely can't believe I worked there, especially alongside some fantastic people who I learned so much from. It was truly a once in a lifetime opportunity.</p>
+<p>But all great things often come to an end :(</p>
+<p>Back in September, my friend <a href="https://twitter.com/CyrusYari">Cyrus</a> kindly referred me to Tesla. I had my interviews across October and November, then received and signed the job offer/contract in December. It also took me about 3 months to get most of the German immigration stuff sorted, and it was definitely... an experience.</p>
+<p>Alongside the new title and compensation, I'm really excited about the fact that I'll be living independently in a new country.</p>
+<p>I never went to university to learn the struggles of living alone (and being broke as shit). All my life I've lived with my parents, and that is such a luxury I am eternally grateful for. I need this independence to grow as a person, and become the man I want to be (cringe but true).</p>
+<p>I'm also looking forward to learning how to properly cook some nice meals for myself and guests, cause when you're living with what I consider the best <a href="https://www.youtube.com/watch?v=HD59d5vJ_kk">jeffs</a>, it's kinda difficult. It's like learning a new language - if you're living in the country but most people speak for example English, it's much harder.</p>
+<p>Here's an Italian style Omelette I made the other day:</p>
+<p><img src="omelette.jpeg" alt=""></p>
+<p>I can't wait to see what this new endeavour holds, and I want to express my gratitude to everyone who's helped me get to where I am today. I'm fully aware I've been extremely lucky, but there's still a long road ahead.</p>
+<p>I still vividly remember the first day I started learning how to program at the beginning of 2021 at 17, and it's ridiculous how far I've come in 3 years.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My beef with YouTube]]></title>
+        <id>beef-yt</id>
+        <link href="https://parsam.io/beef-yt"/>
+        <updated>2024-02-06T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>I like to watch a lot of YouTube, and I also like to watch a few great shows, one of them being an absolute masterpiece which is <a href="https://www.imdb.com/title/tt7660850/">Succession</a>. I won’t go on a passionate ramble in this post about how much I love this show but let me just say that this show is perfection. The <a href="https://www.youtube.com/playlist?list=PLRW80bBvVD3W4wa54jT6jFHm5mOEJ1uNf">soundtrack</a> is <a href="https://www.youtube.com/playlist?list=OLAK5uy_ngeaaHOHWmauqaSqbuEdSbIBl_DjvjJb4">powerful</a>, dialogue is clever, cinematography is beautiful, characters are unique, and have I mentioned how <a href="https://www.youtube.com/playlist?list=PLyUGJOhsTISu7CpFXbmR6vrauZNtxdSkq">amazing</a> the <a href="https://www.youtube.com/playlist?list=OLAK5uy_n9iWeOUpsuxZd_S_xnUW4Pc51ZjswgHY4">soundtrack</a> by <a href="https://www.youtube.com/watch?v=X0WzqanwlG0">Nicholas Britell</a> is? Like how could you listen to the <a href="https://www.youtube.com/watch?v=LlgWqcHXD8w">main theme</a> and not feel so sophisticated?</p>
+<p>Anyways, as someone who likes to dissect and discuss everything when it comes to films/shows, I like rewatching clips from important scenes on YouTube to catch details I didn't notice on first watch. I also love the discourse behind it in the comments, because I get to learn more about the hidden meanings behind every piece of dialogue, body language, etc.</p>
+<p>But oh my God, I wish YouTube would stop showing me spoilers from the show in my recommended and up next. Why on earth does it think it's a good idea to recommend a scene from the finale when I just watched one clip from the first season?</p>
+<p>I’ve constantly clicked “Not interested” on the video after I’ve sadly read the title, but it still keeps coming back with the same shit. I couldn't tell you how many shows they’ve ruined because of this. I feel like I'm getting punished for liking something a bit too much.</p>
+<p>A brute force solution they could implement would be to add a checkbox marking that the video contains spoilers, just like how Reddit has a spoiler tag for posts. A lot of issues would arise with this though, since they probably wouldn’t want to recommend a video containing spoilers, and so people simply won't enable it. Also a lot of video essays on films/shows contain a few spoilers, would they have to enable it as well? I think this would work for videos where it's the entire scene, and users would actually search for it as opposed to it randomly popping up in their recommendations.</p>
+<p>I don't know though, I guess I'll start opening up a YouTube tab in incognito.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Oscar predictions 2024]]></title>
+        <id>2024-oscar</id>
+        <link href="https://parsam.io/2024-oscar"/>
+        <updated>2024-01-25T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>The <a href="https://www.oscars.org/oscars/ceremonies/2024">2024 Oscar's</a> are happening this March, and I thought I'd share my predictions. I'll be doing this for every year, including the Golden Globes and Emmys (which I just missed out on sharing my thoughts with, oh well).</p>
+<h1>Best picture</h1>
+<ul>
+<li>American Fiction</li>
+<li>Anatomy of a Fall</li>
+<li>Barbie</li>
+<li>The Holdovers</li>
+<li>Killers of the Flower Moon</li>
+<li>Maestro</li>
+<li><strong>Oppenheimer</strong></li>
+<li>Past Lives</li>
+<li>Poor Things</li>
+<li>The Zone of Interest</li>
+</ul>
+<p>Watched Barbie, Killers of the Flower Moon, Oppenheimer and Past Lives. I think Oppenheimer will win, what it achieved on a technological level was so impressive to witness in the theatre.</p>
+<h1>Best original score</h1>
+<ul>
+<li>American Fiction</li>
+<li>Indiana Jones and the Dial of Destiny</li>
+<li>Killers of the Flower Moon</li>
+<li><strong>Oppenheimer</strong></li>
+<li>Poor Things</li>
+</ul>
+<p>Oppenheimer. If you wanna know why, just look at my <a href="https://www.last.fm/user/pzrsa/library/music/Ludwig+G%C3%B6ransson/Oppenheimer+(Original+Motion+Picture+Soundtrack)?date_preset=ALL">last.fm scrobbles</a>.</p>
+<h1>Best director</h1>
+<ul>
+<li>Anatomy of a Fall - Justine Triet</li>
+<li>Killers of the Flower Moon - Martin Scorsese</li>
+<li><strong>Oppenheimer - Christopher Nolan</strong></li>
+<li>Poor Things - Yorgos Lanthimos</li>
+<li>The Zone of Interest - Jonathan Glazer</li>
+</ul>
+<p>The goats Scorsese and Nolan going head to head, but I truly think Nolan has set another standard going forward.</p>
+<h1>Best actor</h1>
+<ul>
+<li>Bradley Cooper - Maestro</li>
+<li>Colman Domingo - Rustin</li>
+<li>Paul Giamatti - The Holdovers</li>
+<li><strong>Cillian Murphy - Oppenheimer</strong></li>
+<li>Jeffrey Wright - American Fiction</li>
+</ul>
+<p>Only saw Cillian Murphy, and honestly think it's time for the man to win. Also I think the Academy want to join the hype around it, since I guess that's how it works 🤷‍♂️.</p>
+<h1>Best actress</h1>
+<ul>
+<li>Annette Bening - Nyad</li>
+<li><strong>Lily Gladstone - Killers of the Flower Moon</strong></li>
+<li>Sandra Huller - Anatomy of a Fall</li>
+<li>Carey Mulligan - Maestro</li>
+<li>Emma Stone - Poor Things</li>
+</ul>
+<p>Saw Lily Gladstone, and her performance brought me to tears. She gave me that feeling of guilt, even though I had nothing to do with the Osage murders. I also really like Emma Stone, but I've yet to watch Poor Things but I can see a world where she wins. I'm going with Lily for this one.</p>
+<h1>Best supporting actress</h1>
+<ul>
+<li><strong>Emily Blunt - Oppenheimer</strong></li>
+<li>Danielle Brooks - The Color Purple</li>
+<li>America Ferrera - Barbie</li>
+<li>Jodie Foster - Nyad</li>
+<li><strong>Da'Vine Joy Randolph - The Holdovers</strong></li>
+</ul>
+<p>I liked Emily Blunt (especially in the end scene where Oppenheimer was handed an award, if you've seen the film you know how cold she was in it), but there's a lot of hype around Da'Vine Joy Randolph performance in The Holdovers so idk.</p>
+<h1>Best supporting actor</h1>
+<ul>
+<li>Sterling K Brown - American Fiction</li>
+<li><strong>Robert De Niro - Killers of the Flower Moon</strong></li>
+<li>Robert Downey Jr - Oppenheimer</li>
+<li>Ryan Gosling - Barbie</li>
+<li>Mark Ruffalo - Poor Things</li>
+</ul>
+<p>I mean, De Niro was the scariest mf in Killers of the Flower Moon, and he's one of my favourites, but I also found RDJ chilling as Levi Strauss. De Niro for this one.</p>
+<h1>Best adapted screenplay</h1>
+<ul>
+<li>American Fiction</li>
+<li>Barbie</li>
+<li><strong>Oppenheimer</strong></li>
+<li>Poor Things</li>
+<li>The Zone of Interest</li>
+</ul>
+<p>I think Oppenheimers pacing for a 3 hour biopic was well done.</p>
+<h1>Best original screenplay</h1>
+<ul>
+<li>Anatomy of a Fall</li>
+<li>The Holdovers</li>
+<li>Maestro</li>
+<li>May December</li>
+<li><strong>Past Lives</strong></li>
+</ul>
+<p>Past Lives, great film and score. Definitely brought me to tears, and if you didn't already know, I tend to tear or cry a lot when it comes to films/shows, but rarely anything else. It's really strange.</p>
+<h1>Best original song</h1>
+<ul>
+<li>The Fire Inside - Flamin' Hot (Diane Warren)</li>
+<li><strong>I'm Just Ken - Barbie (Mark Ronson, Andrew Wyatt)</strong></li>
+<li>It Never Went Away - American Symphony (Jon Batiste, Dan Wilson)</li>
+<li>Wahzhazhe (A Song For My People) - Killers of the Flower Moon (Scott George)</li>
+<li>What Was I Made For? - Barbie (Billie Eilish, Finneas O'Connell)</li>
+</ul>
+<p>To be honest, I don't care about this one but I'll just say I'm Just Ken cause Ryan Gosling.</p>
+<h1>Best animated feature</h1>
+<ul>
+<li><strong>The Boy and the Heron</strong></li>
+<li>Elemental</li>
+<li>Nimona</li>
+<li>Robot Dreams</li>
+<li>Spider-Man: Across the Spider-Verse</li>
+</ul>
+<p>The Boy and the Heron, haven't even watched it yet but I just have a hunch it's winning. Across the Spider-Verse was so good though, but doesn't feel complete to win.</p>
+<h1>Best costume design</h1>
+<ul>
+<li><strong>Barbie</strong></li>
+<li>Killers of the Flower Moon</li>
+<li>Napoleon</li>
+<li>Oppenheimer</li>
+<li>Poor Things</li>
+</ul>
+<p>I liked Barbie, Killers of the Flower Moon or Poor Things. I think Barbie. Heard good things about Napoleon costume design, but that film felt like such a joke to many, so I don't think so.</p>
+<h1>Best make-up and hairstyling</h1>
+<ul>
+<li>Golda</li>
+<li>Maestro</li>
+<li>Oppenheimer</li>
+<li><strong>Poor Things</strong></li>
+<li>Society of the Snow</li>
+</ul>
+<p>Poor Things, from the trailer it looks cute.</p>
+<h1>Best production design</h1>
+<ul>
+<li><strong>Barbie</strong></li>
+<li><strong>Killers of the Flower Moon</strong></li>
+<li>Napoleon</li>
+<li><strong>Oppenheimer</strong></li>
+<li>Poor Things</li>
+</ul>
+<p>Barbie's World looked incredible, but I loved the rawness of both Killers of the Flower Moon and Oppenheimer.</p>
+<h1>Best sound</h1>
+<ul>
+<li><strong>The Creator</strong></li>
+<li>Maestro</li>
+<li>Mission: Impossible - Dead Reckoning Part One</li>
+<li><strong>Oppenheimer</strong></li>
+<li>The Zone of Interest</li>
+</ul>
+<p>The Creator was a great sci-fi visually and audibly, but man Oppenheimer was soo good so idk.</p>
+<h1>Best film editing</h1>
+<ul>
+<li>Anatomy of a Fall</li>
+<li>The Holdovers</li>
+<li><strong>Killers of the Flower Moon</strong></li>
+<li><strong>Oppenheimer</strong></li>
+<li>Poor Things</li>
+</ul>
+<p>No idea, no gripes with Killers of the Flower Moon or Oppenheimer.</p>
+<h1>Best cinematography</h1>
+<ul>
+<li>El Conde</li>
+<li>Killers of the Flower Moon</li>
+<li>Maestro</li>
+<li><strong>Oppenheimer</strong></li>
+<li>Poor Things</li>
+</ul>
+<p>Oppenheimer for sure.</p>
+<h1>Best visual effects</h1>
+<ul>
+<li><strong>The Creator</strong></li>
+<li>Godzilla Minus One</li>
+<li>Guardians of the Galaxy Vol. 3</li>
+<li>Mission: Impossible - Dead Reckoning Part One</li>
+<li>Napoleon</li>
+</ul>
+<p>The Creator was beautiful. The fact it was all shot on a <a href="https://nofilmschool.com/greig-fraser-gareth-edwards-sony-fx3">Sony FX3</a> makes it even more impressive. I also loved GOTG3 and MI7 with Tom Cruise famously <a href="https://www.youtube.com/watch?v=-lsFs2615gw">jumping off a mountain</a>.</p>
+<h1>Idk for these</h1>
+<h1>Best international feature</h1>
+<ul>
+<li>Io Capitano</li>
+<li>Perfect Days</li>
+<li>Society of the Snow</li>
+<li>The Teachers' Lounge</li>
+<li>The Zone of Interest</li>
+</ul>
+<h1>Best documentary feature</h1>
+<ul>
+<li>Bobi Wine: The People's President</li>
+<li>The Eternal Memory</li>
+<li>Four Daughters</li>
+<li>To Kill a Tiger</li>
+<li>20 Days in Mariupol</li>
+</ul>
+<h1>Best live action short</h1>
+<ul>
+<li>The After</li>
+<li>Invincible</li>
+<li>Knight of Fortune</li>
+<li>Red, White and Blue</li>
+<li>The Wonderful Story of Henry Sugar</li>
+</ul>
+<h1>Best animated short</h1>
+<ul>
+<li>Letter to a Pig</li>
+<li>Ninety-Five Senses</li>
+<li>Our Uniform</li>
+<li>Pachyderme</li>
+<li>War Is Over! Inspired by the Music of John &#x26; Yoko</li>
+</ul>
+<h1>Best documentary short</h1>
+<ul>
+<li>The ABCs of Book Banning</li>
+<li>The Barber of Little Rock</li>
+<li>Island In Between</li>
+<li>The Last Repair Shop</li>
+<li>Nǎi Nai and Wài Pó</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Photos from 2023]]></title>
+        <id>2023-photos</id>
+        <link href="https://parsam.io/2023-photos"/>
+        <updated>2023-12-31T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="6ps-sunset.jpeg" alt=""></p>
+<p><img src="shard-morning.jpeg" alt=""></p>
+<h1>Canal boat trip</h1>
+<p>In July, my mates and I sailed a canal boat from near <a href="https://en.wikipedia.org/wiki/Napton_on_the_Hill">Napton on the Hill</a> to <a href="https://en.wikipedia.org/wiki/Foxton,_Leicestershire">Foxton</a>, with the trip consisting of 7 days. We got to <a href="https://en.wikipedia.org/wiki/Foxton_Locks">Foxton Locks</a> and back in 4 days, and spent the last 3 days in the Marina. Was such an amazing trip.</p>
+<p><img src="boat.jpeg" alt=""></p>
+<p><img src="pond.jpeg" alt=""></p>
+<p><img src="pichAI.jpeg" alt="">
+Pic with Sundar Pichai, pretty funny story of how I got to this point.</p>
+<p><img src="DEMIS.jpeg" alt="">
+Pic with Demis Hassabis.</p>
+<p><img src="ilyman-parsa-samonthegrind.jpeg" alt=""></p>
+<p>That time when me and <a href="https://www.linkedin.com/in/ilyassung">Ilyas</a> (left) infiltrated the Google interns mini golf event. Pic with <a href="https://www.linkedin.com/in/sam-ezeh">Sam</a>, an actual intern.</p>
+<p><img src="ilyas-parsa-creasing.jpeg" alt=""></p>
+<p>That time when me and Ilyas infiltrated yet another Google interns event, this time a fancy boat party.</p>
+<p><img src="reading-festival.jpeg" alt=""></p>
+<p>Reading Festival 2023 Imagine Dragons.</p>
+<p><img src="goated.jpeg" alt=""></p>
+<p><img src="shard-sunset.jpeg" alt=""></p>
+<p><img src="parsa-canary-wharf.jpeg" alt=""></p>
+<p><img src="isle-of-dogs.jpeg" alt=""></p>
+<p><img src="hhkb.jpeg" alt=""></p>
+<h1>Copenhagen 🇩🇰</h1>
+<p><img src="copenhagen-horse.jpeg" alt=""></p>
+<p><img src="nyhavn-wojak.jpeg" alt=""></p>
+<p><img src="rosenborg-tree.jpeg" alt=""></p>
+<p><img src="rosenborg-slot.jpeg" alt=""></p>
+<p><img src="rosenborg-garden.jpeg" alt=""></p>
+<p><img src="ilyas-parsa-pub.jpeg" alt=""></p>
+<p><img src="tivoli.jpeg" alt=""></p>
+<p><img src="marcus.jpeg" alt=""></p>
+<h1>La La Land at Royal Albert Hall</h1>
+<p><img src="la-la-land.jpeg" alt=""></p>
+<p><img src="royal-albert-hall.jpeg" alt=""></p>
+<p>Man, what a year.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build for yourself, all else will follow]]></title>
+        <id>build-for-yourself</id>
+        <link href="https://parsam.io/build-for-yourself"/>
+        <updated>2023-11-27T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>I recently saw a <a href="https://youtu.be/PW-t3DEi-Wg?t=43">clip</a> of Tarantino saying he watches his own films, and when asked why, he said something that is just perfect:</p>
+<blockquote>
+<p>Ah I love them! I love my movies! I'm making them for me - everyone else is invited. Anytime my movies are on TV I'm like "oh hey", I guess I'm now watching Jackie Brown for a while.</p>
+</blockquote>
+<p>(not the exact quote, but you get the point)</p>
+<p>I resonate with it since I think more people should just build for themselves. The audience will figure itself out.</p>
+<p>I say that, but I'm not going to ignore criticism from others. I just think many people get rid of authenticity just to please a specific audience, so much so that they start blurring the lines between their actual intentions and what they think the reader would be happy to hear.</p>
+<p>An example of writing for an audience would be the <a href="https://news.ycombinator.com/news">Hacker News</a> bunch, who are notoriously frustrating to please. Cause if you leave a tiny detail, they would call you out for it even though it's completely irrelevant to the subject matter. It's sometimes absurd, so a fellow <a href="https://macwright.com/2022/09/15/hacker-news">blogger</a> decided to redirect HN traffic away from his blog since it was starting to subconsciously affect his writing.</p>
+<p>I think the reason Tarantino is so successful is because he loves his craft, and so people are just drawn to his ambition. We should all take a page from his screenplay (very proud of this joke, thank you).</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My Watch Collection]]></title>
+        <id>watch-collection</id>
+        <link href="https://parsam.io/watch-collection"/>
+        <updated>2023-10-27T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>I've been into watches and <a href="https://en.wikipedia.org/wiki/Horology">horology</a> for almost 3 years now, where it all started during the pandemic with an abundance of time, and an internet to surf. I don't really remember who got me into the hobby exactly, but I think I can safely blame someone on YouTube.</p>
+<p>Over the years I’ve built a small collection (with 3 watches I don’t know if you could even call it a collection at this point), and I thought I should share it since a post about my watches is well overdue.</p>
+<h1>SEIKO (the OG)</h1>
+<p><img src="seiko.jpeg" alt=""></p>
+<p>My beloved <em>SEIKO SNZG13K1</em>, the one that started it all. I bought this beauty back in September 2020 as my first ever mechanical watch, all for less than £100.</p>
+<p>What attracted me to it was its practical design. I also love the small red accent on the second hand, it sort of pops alongside all that black and white.</p>
+<p>On the inside, it uses a <a href="https://calibercorner.com/seiko-caliber-7s36/">7S36C</a> automatic movement, which is a pretty basic movement on paper. Yet, despite its shortcomings (lack of <a href="https://en.wikipedia.org/wiki/Hack_watch">hacking</a> or <a href="https://www.google.com/search?q=define+watch+hand+winding">hand-winding</a>), I greatly appreciate the engineering gone into building a decently performant movement at a reasonable price.</p>
+<p><img src="seiko-back.jpeg" alt=""></p>
+<p>I've only ever used 3 straps for this watch. The stock bracelet, a black nato strap, a leather strap, and a Spectre Bond Marine Nationale strap (pictured below). It’s just so versatile, it can pretty much go with any style of strap.</p>
+<p>Anyways, my SEIKO has always held a special place in my heart, and I'm always grateful for how it's introduced me to this hobby. Every time someone asks me what brands they should look at for their first watch, SEIKO is always on the top of that list.</p>
+<p><img src="wearing-seiko.jpeg" alt=""></p>
+<h1>G-SHOCK "CasiOak"</h1>
+<p><img src="g-shock.jpeg" alt=""></p>
+<p>This is my daily driver, the <em>G-SHOCK GA-B2100-1A1ER</em>. I bought this in May 2022, also for about £100 (thank you student discount). It has by far been my most worn watch, simply because it's a G-SHOCK, and that's enough of a reason.</p>
+<p>It also features solar charging, so I never have to worry about it dying (as long as the sun exists), but honestly even if it didn't have solar charging I would have to replace the battery roughly every decade. These things are built to last.</p>
+<p>My favourite part of this watch is the design, I think it's pretty unique for a G-SHOCK. The stealthy black and octagon shape is gorgeous. And obviously the watch reminds many of the <a href="https://www.audemarspiguet.com/com/en/collections/royal-oak.html">Audemars Piguet Royal Oak</a>, hence the nickname "CasiOak".</p>
+<p>I absolutely love this watch since I think it perfectly pictures my minimalistic style.</p>
+<h1>Casio</h1>
+<p>I thought it would also be worth sharing the latest edition in my collection, the <em>Casio A168</em>. I got this for about £30, and I just couldn't see myself going about building a collection without having this in it. It's such a classic, and you can't really go wrong owning a watch like this.</p>
+<p><img src="casio.jpeg" alt=""></p>
+<h1>My Dream Watch</h1>
+<p>For the longest time my dream watch has been the <em><a href="https://www.sinn.de/en/Modell/556_A.htm">Sinn 556A</a></em>. I think it's the finest of German engineering, plus it's something feasible to purchase (€1325.00 / ~£1150.00 / ~$1400.00).</p>
+<p><img src="https://www.sinn.de/bilder/uhr/960x1280/556-A_V.jpg" alt=""></p>
+<p><img src="https://www.sinn.de/bilder/uhr/960x1280/556-A_R.jpg" alt=""></p>
+<p>Prior to this, it was the Rolex Explorer 214270. As you can probably tell, there's a certain type of watch I go for: black and white, big numerals, and straight purity. The best way to put them is boringly beautiful.</p>
+<p><img src="https://hodinkee.imgix.net/uploads/images/1556027813342-6fqp6pww2nu-7b47bd6f571c2faa90334e04609f9d45/3S3A9616.jpg" alt="Explorer"></p>
+<p>(Source: <a href="https://www.hodinkee.com/articles/rolex-explorer-214270-review">Hodinkee</a>)</p>
+<h1>Closing thoughts</h1>
+<p>You probably noticed the recurring theme across all my watches: they're made by Japanese companies.</p>
+<p>Honestly though, I have no real conclusion. I just wanted to say I hope you enjoyed the glimpse into one of the hobbies I'm super passionate about. I'll definitely be updating the blog with any new timepieces (one day the Sinn 556A!), so keep an eye out on that by subscribing to my <a href="https://parsam.io/feed.atom">RSS</a> feed.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Psychology of Money]]></title>
+        <id>psychology-of-money</id>
+        <link href="https://parsam.io/psychology-of-money"/>
+        <updated>2023-09-24T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<h1>Summary</h1>
+<ul>
+<li>Everyone goes through life with unique experiences that shape their view on money. I might make a financial decision that seems odd to you simply because I'm playing a different financial game.</li>
+<li>Getting money is one thing, but keeping it is another. Getting money requires you to take risks, whereas keeping it requires some form of paranoia. It's also important to understand that gaining money involves luck, and to not become discouraged if you can't consistently replicate returns.</li>
+<li>When making financial decisions, aim to be pretty reasonable instead of coldly rational. Being reasonable is more realistic as you have a better chance of sticking with a financial plan for the long term.</li>
+<li>Be cautious of your burn rate, it's difficult to build wealth when you don't put a cap on the fun you have with your money.</li>
+<li>No one cares about your possessions, despite how much you think it would grant you that respect or admiration. You'll earn those through authenticity and humility. Like why would you want to be around people who gravitate to your shiny new possessions anyways?</li>
+</ul>
+<h1>Thoughts</h1>
+<p>Honestly, "The Psychology of Money" was a surprisingly good read since I'm not really a fan of finance books in general. I just think they're a load of BS, but I still took a shot at this one because a friend recommended it to me and I've seen the author, Morgan Housel, pop up on Twitter/X a few times.</p>
+<p>I found it refreshing because I agree with most of the points, but I can't really remember things I disagreed with because I didn't highlight any of them on my Kindle.</p>
+<p>What I must say is that this book heavily reminded me of the fitness industry, specifically in bodybuilding/powerlifting. For example, the book makes the point that you should make reasonable financial decisions because you're more likely to stick with it, to which I absolutely agree with. And just like with workout splits, you should stick with the one that you enjoy working out to because it's accessible. Some like <a href="https://www.google.com/search?q=push+pull+legs">Push/Pull/Legs</a> because it doesn't take up too much time, whereas young newcomers with more time on their hands start out with the <a href="https://www.google.com/search?q=bro+split">"Bro Split"</a>.</p>
+<p>You're better off following some suboptimal financial/workout plan that you're actually going to use because who cares if you're not making 5% more returns/gains if you're not even going to do it? Reasonable > Rational, but that doesn't mean you should completely ignore what data tells you.</p>
+<p>It's a worthwhile read, but you're probably already familiar with most of the concepts detailed, which is a common theme amongst these finance books.</p>
+<h1>Quotes</h1>
+<blockquote>
+<p>When things are going extremely well, realize it's not as good as you think. You are not invincible, and if you acknowledge that luck brought you success then you have to believe in luck's cousin, risk, which can turn your story around just as quickly.</p>
+</blockquote>
+<blockquote>
+<p>Exercise is like being rich. You think, “I did the work and I now deserve to treat myself to a big meal.” Wealth is turning down that treat meal and actually burning net calories. It's hard, and requires self-control. But it creates a gap between what you could do and what you choose to do that accrues to you over time.</p>
+</blockquote>
+<blockquote>
+<p>The world is filled with people who look modest but are actually wealthy and people who look rich who live at the razor's edge of insolvency. Keep this in mind when quickly judging others' success and setting your own goals.</p>
+</blockquote>
+<blockquote>
+<p>Past a certain level of income, what you need is just what sits below your ego.</p>
+</blockquote>
+<blockquote>
+<p>Be nicer and less flashy. No one is impressed with your possessions as much as you are. You might think you want a fancy car or a nice watch. But what you probably want is respect and admiration. And you're more likely to gain those things through kindness and humility than horsepower and chrome.</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Leaving my phone on my desk overnight]]></title>
+        <id>phone-desk</id>
+        <link href="https://parsam.io/phone-desk"/>
+        <updated>2023-09-12T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>A habit I've stuck with for a couple years is where I leave my phone on my desk overnight.</p>
+<p>Pretty much the main reason I started doing this is because I had to get out of bed when my alarm went off. So, it meant I was less likely to jump back into bed, which happened far too often since my phone was arms length away when I was comfortably in bed.</p>
+<p>So yeah, that's the main benefit from doing this I guess, and I suggest you give it a go one night.</p>
+<p>It's nothing groundbreaking, but you'd be surprised with how many people sleep right next to their phone and think it's ok.</p>
+<p><img src="phone-desk.jpg" alt="My phone on my desk"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[20 years old]]></title>
+        <id>20</id>
+        <link href="https://parsam.io/20"/>
+        <updated>2023-07-02T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>Turned 20 years old today, it's quite scary how quickly time is passing by now.</p>
+<p>I think up until now I was able to get away with a lot things given my age, so now I need to start acting like an actual adult.</p>
+<p>Also, I want to make it a yearly thing to write a short post on my birthday just sharing some thoughts.</p>
+<p>So grateful for the people I met from 19-20, look forward to 20-21!</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Halting self-help books at some point]]></title>
+        <id>halt-self-help</id>
+        <link href="https://parsam.io/halt-self-help"/>
+        <updated>2023-01-30T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>I feel like at some point in my life I should pause on seeking out the next self-help book and instead invest that time and energy into reading the classics that have stood the test of time. I won't go over those "classics", but I have a general idea of them that includes books from authors I find to be influential.</p>
+<p>The idea behind why I feel this way about self-help books is mostly because so many of them are BS. I've known this for a long time, but I didn't want to fully believe it for some reason. I know self-help books won't suddenly change my life, so I'd rather enjoy what I'm reading to improve my life in other aspects.</p>
+<p>Besides, most of my time spent reading is on articles online, so I wouldn't be missing out on much. A lot of the things I've learnt come from those articles written by amazing strangers, and on a much bigger variety of topics.</p>
+<p>Also it's hard to come across authors with interesting enough backstories that make their books compelling enough to read. Many authors are just repeating what others have said centuries ago. I know I'm making some bold claims, but that's how I feel about it. And listen, I'm all for stealing like an artist, but sometimes it's a waste of the reader's time. There's a reason why platforms that summarise books exist.</p>
+<p>So, in the future I'll most likely take the approach of re-reading books that have been life-changing to me, while also reading the ones I've compiled in a list because there are some seriously good books out there that I just have to read.</p>
+<p>Obviously I'm still early in my life and need to expose myself to as many ideas as possible, but sometimes nailing in on some core principles from books I respect would seem beneficial. I may be crazy, so if that's the case feel free to <a href="mailto:hi@parsam.io?subject=you&#x27;re%20crazy">reach out</a> with your opposing thoughts.</p>
+<p>And for finding new books, one way would be to anticipate the ones from my favourite authors (like <a href="https://sive.rs/">Derek Sivers</a>), because I genuinely enjoy supporting them.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Some photos from 2022]]></title>
+        <id>2022-photos</id>
+        <link href="https://parsam.io/2022-photos"/>
+        <updated>2023-01-15T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>I was inspired by <a href="https://tiramisu.bearblog.dev/2021-photos/">this post</a> to share some of my favourite photos from 2022.</p>
+<h1>🇪🇸 Tenerife, Spain</h1>
+<p><img src="tenerife-plane.jpg" alt="Plane to Tenerife" title="Plane to Tenerife"></p>
+<p><img src="tenerife-mountains.jpg" alt="Mountains in Tenerife" title="Mountains in Tenerife"></p>
+<p><img src="tenerife-crab.jpg" alt="Crab in Tenerife" title="Crab in Tenerife"></p>
+<p><img src="tenerife-plant.jpg" alt="Echium wildpretii" title="Echium wildpretii">
+<em>This strange looking plant is a <a href="https://en.wikipedia.org/wiki/Echium_wildpretii">Echium wildpretii</a>.</em></p>
+<p><img src="tenerife-goats.jpg" alt="Goats in Tenerife" title="Goats in Tenerife"></p>
+<p><img src="tenerife-plane2.jpg" alt="Plane leaving Tenerife" title="Plane leaving Tenerife"></p>
+<h1>🇨🇭 Zurich, Switzerland</h1>
+<p><img src="zurich-google.jpg" alt="Google in Zurich" title="Google in Zurich"></p>
+<p><img src="zurich-moon.jpg" alt="Moon in Zurich" title="Moon in Zurich"></p>
+<p><img src="zurich-water.jpg" alt="Water in Zurich" title="Water in Zurich"></p>
+<p><img src="zurich-plane.jpg" alt="Plane leaving Zurich" title="Plane leaving Zurich"></p>
+<h1>Misc</h1>
+<p><img src="edc-2022.jpg" alt="Everyday carry" title="Everyday carry"></p>
+<p><img src="seiko.jpg" alt="Seiko 5 SNZG13K1" title="Seiko 5 SNZG13K1"></p>
+<p><img src="dog1.jpg" alt="Doggo" title="Doggo"></p>
+<p><img src="dog2.jpg" alt="Doggo 2.0" title="Doggo 2.0"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Making changes to my posts]]></title>
+        <id>changes</id>
+        <link href="https://parsam.io/changes"/>
+        <updated>2022-12-28T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>Recently I realised that writing posts has become a chore for me. Clearly this is the case as my track record with publishing reflects this. I never wanted this to happen, but as I took on more responsibilities my current writing process was too time consuming.</p>
+<p>I'm not a company who writes perfectly crafted blog posts with hours of research put into them. I'm a guy who wants to document what he's interested in for his future self to look back on, and if even one person finds them resonating then that's a huge bonus.</p>
+<p>I know no one told me all my posts had to be perfectly written, but I still held myself to that standard just for the sake of it. I took so long just to get a blog post out because I kept caring about silly things no one cares about. It's not like I'm PG to be writing <a href="http://www.paulgraham.com/articles.html">essays</a>.</p>
+<p>So, going forward I'll be dumping my thoughts out with stuff that may or may not be interesting to you. Some will be messy, but some might be good, but the point is to just hit <code>git push</code> on new posts without thinking too much of it.</p>
+<p>I'm still adhering to my principle of keeping my posts genuine and realistic. There is no end goal to sell you something, unlike those bloated blogs from tech companies that find a reason to over-explain solutions that someone on Stack Overflow has already answered in 5 words.</p>
+<p>I want to end up in a state of writing short posts, pretty much like <a href="https://sive.rs/blog">Derek Sivers</a> and people on <a href="https://bearblog.dev/discover/">BearBlog</a>.</p>
+<p>Anyways, thank you for reading this far. I genuinely appreciate it.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[And the Oscar goes to...]]></title>
+        <id>oscar</id>
+        <link href="https://parsam.io/oscar"/>
+        <updated>2022-08-03T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>You.</p>
+<p>Consciously or not, I think we all are actors in different parts of our life. Everyone talks or dresses a certain way when they are put in a set environment.</p>
+<p>I recently had the privilege of speaking with <a href="https://twitter.com/arkitus">Ali Eslami</a>, a Senior Research Scientist at <a href="https://www.deepmind.com/">DeepMind</a>. He was a major factor in my success <a href="https://parsam.io/google">joining Google</a>, so I'm grateful to be able to call him a friend. We spoke about many topics, but one point that resonated with me the most was his realisation of how we all are actors.</p>
+<p>Obviously there are many reasons why we do this, but I think the main reason is because we want to be perceived differently by certain types of people.</p>
+<p>At work, I certainly want to be portrayed as someone smart and trustworthy. This has many benefits, but the main one being in hopes of pursuing projects which need a certain degree of responsibility.</p>
+<p>At home, I'm simply different around family members.</p>
+<p>However, no matter what circumstance I'm in, there's a certain baseline of traits I carry to keep me sane.</p>
+<p>I've developed these traits from my favourite characters, but also from personal experiences in life.
+I acted a certain way and it had a positive reaction, so I continued doing that.</p>
+<p>This isn't me saying you should put on a mask to be someone you simply ain't. Instead you should be sharing and withdrawing information from your daily interactions that may not fit into that role you play.</p>
+<p>The beauty of life is that you could just change your behaviour at any given moment for the right time.</p>
+<p>At the end of the day, this idea is nothing new, we all do it in some form.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Make a website]]></title>
+        <id>website</id>
+        <link href="https://parsam.io/website"/>
+        <updated>2022-07-18T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>With all of these social media platforms, it's becoming so polluted in the digital world.</p>
+<p>These platforms come and go, but you know what never does? The core web with pure HTML and CSS.</p>
+<p>I understand that not everyone wants to go through the hassle of building a website from scratch, hence why these sites are so big. You sign up, create a profile, maybe add a link to another social media and there you go you are now a member.</p>
+<p>The problem? You have absolutely no sort of uniqueness besides your name and profile picture.</p>
+<p>All websites are completely different from each other. Sure some people might use the same template, but the content and domain is still what differentiates each other.
+(If you really want to see uniqueness, just take a look at some of the <a href="https://neocities.org/browse">ones hosted on Neocities</a>).</p>
+<p>For me, having a website was never about creating a brand. It was just about writing for myself about my progress to look back on every few months and years. If someone ends up reading it then great, but it should rarely be your goal in the beginning.</p>
+<p>If you want to make money, sell your soul to SEO optimisation writing about nonsense.</p>
+<p>Otherwise if you want to build a platform for decades to come, keep reading.</p>
+<h1>Backstory</h1>
+<p>Before I started this website back in <a href="https://github.com/pzrsa/parsam.io/commit/7927cccdda9843bdc7c4b17ff80626516d628301">February 2021</a>, I was writing book notes as I was trying to make reading a habit. The best way to remember the takeaways was to just write it in my own words. Didn't have to be perfect, I just had to be able to explain it in 3 sentences.</p>
+<p>One of my favourite people, <a href="https://sive.rs/">Derek Sivers</a> told me to build a site from scratch after I emailed him about the <a href="https://parsam.io/anything-you-want">note I wrote</a> on his book <a href="https://sive.rs/a">Anything You Want</a>.</p>
+<p>I was going to use a website builder like <a href="https://webflow.com/">Webflow</a>, but Derek advised against that and instead sent a code snippet for a basic HTML layout. It was the most life changing email I had received in my life. It was the one email that started with me learning about technology.</p>
+<p>One point that stood out to me that Derek said is a philosophy I still stand by when starting anything:</p>
+<blockquote>
+<p>Don't let anyone sell you on some complex solution. They're saying you need a jumbo jet when really you need a bicycle. Do your HTML by hand like this, and then you'll know when your site has become so big that you need a little more automation to help manage changes or links to the hundreds of pages inside. But until then, no no no. Just do HTML by hand.</p>
+</blockquote>
+<p>Derek truly is a one of a kind person, and I'm grateful to have been able to email him on multiple occasions.</p>
+<h1>Benefits</h1>
+<p>After having this website for over a year, I've had a magnitude of noticeable benefits:</p>
+<ul>
+<li><strong>Improved my communication skills</strong>. I'm trying to write less and say more.</li>
+<li><strong>Learn about people letting me know that they've read my posts</strong>. I don't have any statistics on how many people view my site, so it's a nice surprise. Also it's a much deeper connection over social media likes/comments.</li>
+<li><strong>Gained better clarity over my thoughts</strong>. Sometimes writing about something you're going through publicly is a good way to gain control over the situation.</li>
+<li><strong>Increased surface area for serendipity to impact me</strong>. Opportunities simply arise more because I am putting myself out there.</li>
+<li><strong>Met interesting people with mutual interests from their website</strong>. Messaged <a href="https://twitter.com/alistaiiiir">Alistair</a> on twitter randomly one day and ended up meeting him IRL (cool guy).</li>
+<li><strong>Sandbox to experiment new technologies</strong>. I've recently switched to using <a href="https://tailwindcss.com/">Tailwind CSS</a> to style my website, and using my website as the foundation to learn was a no-brainer.</li>
+<li><strong>Separates me from candidates who may only have a resume to show</strong>. I think having a website to show your work is much stronger than a resume because of the unique factor.</li>
+<li><strong>Simply a non-monetary asset I take care of</strong>. I do invest in stocks, but this website will stay with me forever and will continue to increase in my personal value.</li>
+<li><strong>Growth is visible in each post or change I make to my website</strong>. Nice feeling to reflect on every few months with the <a href="https://web.archive.org/">Wayback Machine</a>.</li>
+</ul>
+<h1>Show Your Work</h1>
+<p>A good book I recommend you read is <a href="https://austinkleon.com/show-your-work/">Show Your Work</a> by <a href="https://austinkleon.com/">Austin Kleon</a>. I wrote a <a href="https://parsam.io/show-your-work">book note</a> on it that I encourage you to check out. This was the book that plunged me to start my website, alongside Derek Sivers' actionable steps.</p>
+<p>It goes over why you don't need to be some sort of expert on something to share it. Just write about anything at any time. Heck right now I am writing this all over the place, but still just writing because I had this urge to write something that people might benefit from.</p>
+<h1>Independence</h1>
+<p>When you have a website that you own and manage, you take back that digital freedom that we've all lost as social media websites grow in popularity.</p>
+<p>Technically you are still reliant on the hosting provider (I personally use <a href="https://vercel.com/">Vercel</a> and think they are great), but I'm not trying to take it that far just to host my website.</p>
+<h1>Where To Start</h1>
+<p>Some of the resources I talk about need some knowledge of the terminal. Yes you could build a website without any of that knowledge, but I'm confident you could figure out how to use one.</p>
+<ol>
+<li><strong>Find a hosting provider</strong>. This will be where the code for your website is hosted for others to access. There are two options I was recommended by Derek that still stand through the test of time:</li>
+</ol>
+<ul>
+<li><a href="https://neocities.org/">Neocities</a> - beginner friendly.</li>
+<li><a href="https://pages.github.com/">GitHub Pages</a> - you just need to know how to use <a href="https://git-scm.com/"><code>git</code></a>.</li>
+<li>A <a href="https://en.wikipedia.org/wiki/Virtual_private_server">VPS</a> and just slap the HTML on it. Two choices I recommend are <a href="https://www.digitalocean.com/">DigitalOcean</a> or <a href="https://www.vultr.com/">Vultr</a>.</li>
+</ul>
+<p>If you're technical and want to use a web framework I recommend:</p>
+<ul>
+<li><a href="https://jekyllrb.com/">Jekyll</a> - my site used to use Jekyll and it was fantastic to just write markdown.</li>
+<li><a href="https://gohugo.io/">Hugo</a> - similar to Jekyll. Seen a few friends use it and think it's pretty nice as well.</li>
+</ul>
+<ol start="2">
+<li>
+<p><strong>Purchase a domain name (recommended)</strong>. Although Neocities (<code>.neocities.org</code>) and GitHub (<code>.github.io</code>) will provide one, owning a domain name is still valuable.</p>
+<p>There are plenty of services that you could buy a domain from. I recommend starting with <a href="https://www.namecheap.com/">Namecheap</a>. Don't bother spending more than £10 per year, you want to get up and running quickly. Try to go for something like <code>.xyz</code> if your name is common. The goal is to just own a domain name, you could always change it.</p>
+</li>
+<li>
+<p><strong>Start distributing copies of your content on other platforms</strong>. This practice was something I've been doing since the inception of my website. It's known as <a href="https://indieweb.org/POSSE">POSSE</a>. I never knew until my friend <a href="https://cameronbrown.co.uk/">Cameron</a> showed me.</p>
+<p>Everytime you create a new post, post it on all the social media sites and take advantage of the popular network without being reliant. Put it on Twitter, Substack, Medium, Reddit, Hacker News, Facebook (jk) and any other place you could. The aim is to have all of that traffic also pointed to your website.</p>
+</li>
+</ol>
+<h1>Conclusion</h1>
+<p>After you build your website, you'd be surprised to see how much you instantly stand out. People have gotten so used to these social media pages that when someone actually has a website they maintain, they're wowed.</p>
+<p>Whenever you share a new idea online, it contributes to this digital land you own. It's constantly growing with each thought you share.</p>
+<p>I like the idea of your website being an asset. If you don't become a digital landlord, you will forever stay a tenant with no control.</p>
+<p>What I'm trying to say is that, the more ideas you put out on the internet, the more opportunities there are for luck to sway in your favour. It allows serendipity to do its thing.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MechKeebs]]></title>
+        <id>mechkeebs</id>
+        <link href="https://parsam.io/mechkeebs"/>
+        <updated>2022-07-15T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>After <a href="https://github.com/pzrsa/mechkeebs/graphs/code-frequency">many months</a>, I finally managed to launch a personal project that helped me learn a bunch of <a href="https://github.com/pzrsa/mechkeebs#technologies">technologies</a> I was interested in.</p>
+<p><a href="https://mechkeebs.com/">MechKeebs</a> is (in short) a clone of <a href="https://www.reddit.com/r/MechanicalKeyboards">r/mk</a> where users can post their mechanical keyboard.</p>
+<p><img src="mechkeebs.jpg" alt="MechKeebs Home Page">
+It wasn't intended to solve any problems, but I've learnt from a few great engineers that solving problems at my stage shouldn't be the focus. I should still obviously solve a problem when needed, but that will just come with time as I expose myself to more projects.</p>
+<h1>Technologies</h1>
+<h1>Next.js</h1>
+<p>One of the most popular React frameworks is <a href="https://nextjs.org/">Next.js</a>, created by <a href="https://vercel.com">Vercel</a>.
+The site you're on right now was also of course built with Next.js, using <a href="https://nextjs.org/docs/basic-features/pages#static-generation-recommended">static generation</a>.</p>
+<p>However the <a href="https://nextjs.org/docs/basic-features/image-optimization"><code>next/image</code></a> component could be better. I couldn't get a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Masonry_Layout">masonry layout</a> working without doing some dodgy tricks unfortunately.</p>
+<p>I do know that <a href="https://twitter.com/leeerob/status/1545480513846185984?s=20&#x26;t=Sz5ATLanuOhtZKm9I1JGVQ">they're aware of the feedback</a>, so I'm hoping to see some more improvements on it soon.</p>
+<h1>Chakra UI</h1>
+<p>This was my first time using a component library like <a href="https://chakra-ui.com/">Chakra UI</a> or <a href="https://mui.com/">MUI</a>.
+It was fun slapping components together and making them just work for someone who hates styling. I felt very spoiled.</p>
+<p>But my issue with component libraries is that they tend to feel bloated. I simply enjoy making websites with the most barebones look.
+Plus it's not really the library's fault as I don't think performance is their major selling point. A lot of great work gets put into these projects as they give accessibility support right out of the box.</p>
+<p>After switching away from the default <a href="https://github.com/css-modules/css-modules">CSS Modules</a> Next.js provides, I took a look at using <a href="https://tailwindcss.com/">Tailwind CSS</a> for this site. I'm quite happy with it so far, so will most likely use it in future projects.</p>
+<h1>SWR</h1>
+<p>For keeping the data fresh, I used <a href="https://swr.vercel.app/">SWR</a>, which is also created by Vercel.
+I found it enjoyable to use, mostly because of how minimal it feels. It just works.</p>
+<p>For pagination, I used the <a href="https://swr.vercel.app/docs/pagination#useswrinfinite"><code>useSWRInfinite</code></a> hook. It feels like magic but it certainly does its job. Took me a while to figure out how to implement it, but the provided <a href="https://swr.vercel.app/examples/ssr">example</a> certainly helped a lot.
+SWR also has a handy <a href="https://swr.vercel.app/docs/with-nextjs#pre-rendering-with-default-data">integration with Next.js</a> where you could SSR the page, and later on have the data dynamically update on the client side.</p>
+<p>The SSR + client side fetching combo was perfect, and I look forward to using it more.</p>
+<h1>Google Cloud Storage</h1>
+<p>Using <a href="https://cloud.google.com/storage">Cloud Storage</a> was quite easy to get up and running with the <a href="https://github.com/googleapis/nodejs-storage">Node.js library</a>.</p>
+<p>I made the mistake of sending the image back to the server, then compressing it using <a href="https://github.com/lovell/sharp">sharp</a>. It did not work well at all when I went to production, so I used some <a href="https://www.npmjs.com/package/browser-image-compression">random library</a> which turned out to work well.</p>
+<p>Plus I definitely did not pick GCP because of obvious reasons.</p>
+<h1>DigitalOcean + Dokku</h1>
+<p>The most dev ops stuff I had done was doing a quick <code>git push</code> to Heroku to launch my crappy <a href="https://github.com/pzrsa/flaskify">Python web app</a> back in the day.
+But this time, I was looking forward to finally getting my hands dirty with dev ops work. I had $100 in credits provided by the <a href="https://education.github.com/pack">GitHub Student Developer Pack</a>, so I was ready to use the <a href="https://www.digitalocean.com/">DigitalOcean</a> + <a href="https://dokku.com/">Dokku</a> combo.</p>
+<p>I also took the opportunity to learn Docker, which has been incredible. At the beginning I was paranoid about how Docker images actually work, mostly for security reasons. There were many instances where I nearly pushed some secrets up to <a href="https://hub.docker.com/">Docker Hub</a>, but I refactored my code to accommodate for that.</p>
+<p>You could check out the <a href="https://hub.docker.com/r/pzrsa/mechkeebs">MechKeebs repo</a> that contains all the images if you want.</p>
+<p>DigitalOcean provides computing services, similar to platforms like Google Cloud and AWS but at a bearable scale. I created a $6 VPS (could last me over a year with the free credits), and slapped Dokku onto it which is now my own mini Heroku.</p>
+<p>I can now use the same VPS to deploy other projects in the future without breaking the bank. I want to see how far I could go before my 1GB Memory 25GB SSD could no longer handle it. But if we're going to be real, I don't think I would gain that sort of traffic.</p>
+<h1>Some things I learned</h1>
+<ul>
+<li>
+<p><strong>Spend no more than a couple weeks on a project</strong>.
+I took way too long to get this out the door. I started in November 2021, and deployed it in July 2022. Obviously I didn't work on it daily during that period, it was more of a 1-2 month break and working in bursts. If I had instead abandoned the project I could've built other stuff in that time, which would help me identify patterns for a great project idea.</p>
+</li>
+<li>
+<p><strong>Skip the domain purchase</strong>.
+Before MechKeebs, the original project was SetupScope. As you could guess, it was a similar idea, but for desk setups. Users would've been able to pinpoint on an image the items on their desk, making it more interactive.</p>
+<p>I had bought two domains, <code>setupscope.com</code> and <code>mechkeebs.com</code>, which totalled me £32. Yes, £32 because NameCheap decided to not make it clear that the <code>mechkeebs.com</code> domain was on their marketplace. Meaning I had bought a domain that had expired a few weeks in. Unfortunately I purchased it again like a fool.</p>
+<p>Next time I will just hog a <code>.vercel.app</code> domain for free, up until I am certain to launch. I wasted so much time and brainpower on a domain that barely had any benefits. Still, having <code>api.mechkeebs.com</code> is pretty cool though.</p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Deep Work]]></title>
+        <id>deep-work</id>
+        <link href="https://parsam.io/deep-work"/>
+        <updated>2022-06-03T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<h1>Book in 3 Sentences</h1>
+<ol>
+<li>Deep Work is a state of distraction-free concentration pushing your cognitive capabilities to the limit. Cultivate this skill and you will thrive, as focusing in the modern era with all the unnecessary noise in the world is like a superpower that allows you to work towards your personal and professional goals.</li>
+<li>Context switching from a shallow task (scrolling social media) to a deep one (writing a book note) will heavily draw from your willpower. Instead, create rituals and routines in an appropriate environment to help you ease into the transition of doing cognitively demanding work.</li>
+<li>Take the “craftsman” approach for selecting network tools like social media instead of following the “any-benefit” approach. Use the tool only if it has a substantial benefit and is worth the drag on your time and attention. Misusing tools without awareness of its cons, and just blindly following its one benefit will result in negative impacts to your productivity, resulting in no progress on what needs to be done.</li>
+</ol>
+<h1>Impressions</h1>
+<p>For me, deep work has been something I’ve always wanted to achieve, but it's often very hard to do so in the modern world which is full of distraction. However, this book was able to teach me the value of deep work, and how important it is to master this skill. If you manage to cultivate the skill, you would be able to produce outputs that no other person doing shallow work could.</p>
+<p>Cal emphasises the importance of having a set of rituals and routines that help ease you into deep work. You’ll most likely fail to switch into a deep state of concentration when doing shallow work (like scrolling on Twitter) to doing any sort of deep work (like writing a design document). I’ve mistakenly done it multiple times before, where context switching just draws so much of my finite willpower that in the end I just don't do the work. But, if you have a set routine, where for example you make a cup of morning coffee and head to your desk, that should be the queue for you to change into that deep state of concentration.</p>
+<p>Also, your environment is just as important, if you work in your living room on a laptop with your head looking down (whereas <a href="https://hubermanlab.com/5-science-based-steps-to-improve-your-workspace%EF%BF%BC/#h-3-place-your-screen-and-vision-in-the-right-location">looking up on a monitor can increase alertness</a>), it's simply not as efficient as having a set workspace that puts you into the work state of mind. This also ties back to <a href="https://parsam.io/atomic-habits">Atomic Habits</a> where I briefly touched on the importance of how the environment around you affects your daily habits.</p>
+<p>I’ve thankfully moved away from a lot of these distracting tools like social media. I’ve deleted accounts, apps and now I just never have gone back to using any of them. I can truly say it has been one of the most life-changing decisions I’ve ever made, so I hope others can become aware of the benefits of just giving up these tools once and for all. I still only use <a href="https://twitter.com/pzrsaa">twitter</a> (barely), which is for staying up to date with people I’m genuinely interested in, and sharing stuff going on with myself. I’ve been careful on how I use it, and so far it has benefited me a lot by finding some great friends that share the same interests as me. When you use the platform as you intend, and get rid of any content that an algorithm tries to feed you, there is truly some great stuff that brings me joy.</p>
+<p>However, this is not the case for most people that use these network tools. People aren’t aware of its cons, so they end up with a random benefit justifying their unrestrained use of the platform. Cal names this the “any-benefit” approach, and is a common way of crippling your ability to work towards any personal or professional goals. Instead, take the “craftsman” approach for tool selection, by weighing out the pros and cons to see if the benefits are actually a lot more impactful to invest your time and energy into. It’s a simple approach, yet a lot of people tend to not care about the cons, so they end up blindly using the tool and ending up in a state of hyper distraction.</p>
+<p>But, if you do decide to use these platforms, don’t just be a consumer, be a creator. Take advantage of the platform and audience these tools provide you, and create any sort of content about anything you’re good at. If you don’t, you just end up as a consumer, mindlessly scrolling and numbing your brain to low quality content. Engineers have relentlessly tuned algorithms to keep you engaged on the platform, constantly withdrawing and giving hits of dopamine in return for you to watch more ads.</p>
+<h1>Who Should Read It?</h1>
+<p>I think people heading into University studying something dense, or a knowledge worker heading into a career with a lot of pinging going on (like Google Chat or Slack) should read Cal Newport’s work. Learning how to time-block is crucial for a student, as you would want to make sure you are using up your time efficiently, while also leaving room for personal stuff. As for someone in their career, learning when to be available for meetings is important, as that would set boundaries on who can invade your deep state of work within the work day.</p>
+<p>As I always say, this book won't suddenly turn you into a working machine (if that is your goal), it should however introduce you to some concepts for helping you stay focused in a distracting world.</p>
+<h1>How It Impacted Me</h1>
+<ul>
+<li>Started time-blocking in my calendar as a guide for the day. Not strictly, however that is the plan that I would slowly ease into as I get older with more responsibilities.</li>
+<li>When waiting for something (like in a queue for coffee), my first instinct is to no longer bring out my phone. It might make sense to kill time, but I should learn to be content with myself and what's around me. So far it has helped me with improving my sense of patience and alertness.</li>
+<li>I’m now cautious whenever I embark on selecting a new tool (like a note-taking app) for anything. I’m always tempted to download new shiny apps that popup on <a href="https://news.ycombinator.com/news">Hacker News</a> to freshen things up, but in the end it has rarely done me any good. Most of the apps you see are distracting you from actually doing the work, so just sticking with the basics and getting value out of or improving on the system you already have is much more important.</li>
+</ul>
+<h1>Some Quotes</h1>
+<blockquote>
+<p>In this new economy, three groups will have a particular advantage: those who can work well and creatively with intelligent machines, those who are the best at what they do, and those with access to capital.</p>
+</blockquote>
+<blockquote>
+<p>If you suddenly decide, for example, in the middle of a distracted afternoon spent Web browsing, to switch your attention to a cognitively demanding task, you’ll draw heavily from your finite willpower to wrest your attention away from the online shininess. Such attempts will therefore frequently fail.</p>
+</blockquote>
+<blockquote>
+<p>On the other hand, if you deployed smart routines and rituals—perhaps a set time and quiet location used for your deep tasks each afternoon—you’d require much less willpower to start and keep going. In the long run, you’d therefore succeed with these deep efforts far more often.</p>
+</blockquote>
+<blockquote>
+<p>The use of network tools can be harmful. If you don’t attempt to weigh pros against cons, but instead use any glimpse of some potential benefit as justification for unrestrained use of a tool, then you’re unwittingly crippling your ability to succeed in the world of knowledge work.</p>
+</blockquote>
+<blockquote>
+<p>We spend much of our day on autopilot—not giving much thought to what we’re doing with our time.</p>
+</blockquote>
+<blockquote>
+<p>Without structure, it’s easy to allow your time to devolve into the shallow—e-mail, social media, Web surfing. This type of shallow behaviour, though satisfying in the moment, is not conducive to creativity. With structure, on the other hand, you can ensure that you regularly schedule blocks to grapple with a new idea, or work deeply on something challenging, or brainstorm for a fixed period—the type of commitment more likely to instigate innovation.</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Working with people]]></title>
+        <id>people</id>
+        <link href="https://parsam.io/people"/>
+        <updated>2022-02-09T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>As you might know, I’ve <a href="https://parsam.io/articles/joined-google">joined an apprenticeship at Google</a> 5 months ago. I completed my 3 month bootcamp in December last year, with an additional 3 weeks of internal training. So, when January 2022 started, I was assigned to a team of incredible people which has been really exciting to be a part of.</p>
+<p>I thought it would be valuable to share some thoughts and observations I've made from working in a new environment. Everyone's experience will probably differ, but I still think they’re worth jotting down for anyone in an internship or new job.</p>
+<h1>Independency is fine, but reach out</h1>
+<p>I used to be a bit too independent with programming, up to the point where I would struggle for no reason other than to just be a lone wolf. But recently I realised that asking good, competent questions goes a long way with striking up interesting conversations. Most of the people I’ve asked a question from either answered it, transferred me to someone who can answer, or someone who couldn’t, but spinned up an interesting discussion.</p>
+<h1>You’re not an inconvenience</h1>
+<p>I doubt anyone would be frustrated with you asking a question, unless it's obviously something you could've just searched quickly. Either way, people love being asked good questions as it gives them an opportunity to teach something they're good at. The amount of times I loved just sharing my knowledge with someone else because I got to learn something I might not have noticed. See “<a href="https://en.wikipedia.org/wiki/Curse_of_knowledge">Curse of knowledge</a>” for an interesting read about assuming something from a beginner, and not noticing something they see.</p>
+<h1>Forget memorising everything</h1>
+<p>After joining, I was assigned a new technology to learn quite often, which was obviously overwhelming for me as it's hard to balance it all. But, I noticed how everything I was learning I would forget in a couple of days. This is because I wasn't really using it in a real world project, so my brain wasn't too keen on remembering anything. But the important thing was that I knew about its presence, so if I came across something that might need a specific library, I would know it would be a good fit. I had no idea how to use it, but like I said before, I know how to search and find answers efficiently which would allow me to.</p>
+<p>That's all for now, but I’ll be looking out for any other things I notice in the coming months that’ll be valuable to share.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Steve Jobs]]></title>
+        <id>steve-jobs</id>
+        <link href="https://parsam.io/steve-jobs"/>
+        <updated>2021-11-05T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<h1>Book in 3 Sentences</h1>
+<ol>
+<li>Steve Jobs was a man obsessed with perfectionism and minimalism. He had a unique ability of intense focus, which allowed him to eliminate the unimportant tasks and focus on what's at hand. As a minimalist, he wasn't really materialistic and always had the goal of building something for society, unlike the other business leaders that competed with him at the time.</li>
+<li>The success of Apple was driven by Jobs' ability to manipulate others into believing his ideas through a "<a href="https://en.wikipedia.org/wiki/Reality_distortion_field">reality distortion field</a>". He was an expert in changing the perception of others, and did the same for the Apple products. One way to further cornerstone his belief was by writing it on the "Apple Marketing Philosophy" as 'impute' in the early days of the company.</li>
+<li>Jobs' death was the result of his belief in having total control over everything, ignoring the advice from many doctors, which is something he had shown in Apple products as well. He had kept his fruit only diet since a young age, which resulted in damaging his pancreas. Steve Jobs passed away on October 5th, 2011, which devastated an entire generation of future entrepreneurs. However, his incredible legacy will continue to live on.</li>
+</ol>
+<h1>Impressions</h1>
+<p>I've always been a fan of Steve Jobs for as long as I can remember. I resonate with his perfectionism, as well as having the belief in removing the clutter in our lives. Jobs and Wozniak are a duo that I highly respect, and would love to see be documented about more. On one hand we have Jobs who was a controlling businessman who knew how to portray his products, and on the other we have Wozniak who had a fascination for building stuff people used and was more keeping to himself.</p>
+<p>But one thing people who worked with Jobs tend to point out is his intense focus. Sir Jony Ive (who Jobs respected highly, making him a powerful figure in Apple) spoke about this in an <a href="https://www.youtube.com/watch?v=2oksetv3i90">interview with Vanity Fair</a> which was great (I recommend you check out the <a href="https://www.youtube.com/watch?v=ef69BUlge-A">full video</a>).</p>
+<p>Just like Phil Knight in <a href="https://parsam.io/shoe-dog">Shoe Dog</a>, Steve Jobs also emphasised the importance of having a driving passion for the dark times in a company. He was dropped from his own company, but later came back and saved it. Without him coming back, Apple would go down a dark path and produce some of the worst products to ever exist (like the <a href="https://en.wikipedia.org/wiki/Apple_Newton">Newton</a>). Anyways, Jobs found his passion for design from his adopting father who worked as a car mechanic. His father was the type to paint the back of a fence, even though no one will see it. That attitude allowed Jobs to develop that perfectionism in him for the smallest things, which I think as a result drove Apple to success.</p>
+<h1>Who Should Read It?</h1>
+<p>If you're a fan of Steve Jobs, and want to know what the fascination behind him is, then this book would be a great one. If you're not into reading books, then <a href="https://en.wikipedia.org/wiki/Steve_Jobs_(film)">Danny Boyle's film</a> (not the <a href="https://en.wikipedia.org/wiki/Jobs_(film)">bad one</a>) is another spin of his life, mostly portraying Jobs' relationship with his family, which is something I didn't go over too much in this book note. Regardless of which route you take, they both give insights into his personal and work life, and I'm always happy to see the smaller things in their lives.</p>
+<p>Overall, this was a great book, and one of the most enjoyable biographies I have ever listened to. Walter Isaacson depicted Jobs as many things, but definitely an interesting man that comes once in a lifetime.</p>
+<h1>How It Impacted Me</h1>
+<ul>
+<li>Understanding that the path I take to where I want to be in life doesn’t have to be the same as others.</li>
+<li>Just like Jobs, I don't believe in starting a company to make money, but instead to benefit society as a whole with something I believe in.</li>
+<li>Driven to "make a dent in the universe" as Jobs would say.</li>
+<li>Making a conscious effort in improving my deep focus (won't be as good as Jobs’) to get stuff done.</li>
+<li>To “Think Different”, and not do the same thing as everyone else.</li>
+</ul>
+<h1>Some Quotes</h1>
+<blockquote>
+<p>You should never start a company with the goal of getting rich. Your goal should be making something you believe in and making a company that will last.</p>
+</blockquote>
+<blockquote>
+<p>Some people say, "Give the customers what they want." But that's not my approach. Our job is to figure out what they're going to want before they do. I think Henry Ford once said, "If I'd asked customers what they wanted, they would have told me, 'A faster horse!'" People don't know what they want until you show it to them.</p>
+</blockquote>
+<blockquote>
+<p>When you're doing something for yourself, or your best friend or family, you're not going to cheese out. If you don't love something, you're not gonna go the extra mile, work the extra weekend, challenge the status quo as much.</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I joined Google]]></title>
+        <id>joined-google</id>
+        <link href="https://parsam.io/joined-google"/>
+        <updated>2021-09-01T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>Hi, I just wanted to make this short post sharing that I've joined Google as a Software Development/Engineering Apprentice!</p>
+<p>My official start date is on 6 September 2021 and I'll be taking a 3 month bootcamp beforehand at <a href="https://makers.tech/">Makers</a>. Then, when 2022 comes around I'll be working in their head office in London which is pretty cool.</p>
+<p><img src="google-onboarding.jpeg" alt="Google start date countdown"></p>
+<p>Just for some context, I applied back in late June at the last minute and it took 2 months for the entire selection process. It was a bit nerve-racking, but I did learn a lot in the whole interviewing process. I won't go into much detail here, but I'm looking to make a long video or article just breaking down the entire process as there is not much out there for apprenticeships in engineering roles.</p>
+<p>Also, since I am doing this for 24 months, I'm deferring my year of entry for university to 2023. I think this opportunity is a once in a lifetime one and I want to take advantage of the position I've been given. I'd still love to learn about Computer Science at University because I'm just interested in the history of traditional tech and the fundamentals associated.</p>
+<p>Look out for articles or videos on my <a href="https://www.youtube.com/channel/UCIIXFxDwjdQtIlf5or_DcwQ">channel</a> in the future documenting my experience of working there and what I'm learning. Feel free to follow me on <a href="https://twitter.com/pzrsaa">twitter</a> for any additional updates.</p>
+<p>Thanks for reading this far, it means a lot :)</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[So Good They Can't Ignore You]]></title>
+        <id>so-good</id>
+        <link href="https://parsam.io/so-good"/>
+        <updated>2021-06-27T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<h1>Book in 3 Sentences</h1>
+<ol>
+<li>Instead of listening to the vague cliché "follow your passion", you should first instead master rare and valuable skills, and then cash in those skills for the work you love.</li>
+<li>The craftsman mindset is crucial for building a meaningful career. It focuses on what you can offer the world, whereas following your passion focuses instead on what the world can offer you. First you adopt the craftsman mindset, then the passion will follow as you gain those rare and valuable skills.</li>
+<li>Avoid the trap of attempting to gain control over your career by pursuing an unsustainable idea. You can avoid this by making "little bets", where you make small executions that return concrete feedback. It's worth pursuing the mission if people take notice and are willing to pay you.</li>
+</ol>
+<h1>Impressions</h1>
+<p>We've all heard the term "follow your passion", and that usually comes from people in successful positions. For example, in <a href="https://youtu.be/UF8uR6Z6KLc">Steve Jobs' Stanford Commencement Address</a> he spoke about the importance of having passion, which, don't get me wrong, is in theory correct. However, instead of listening to what he said in that speech, we should instead do what he did. Jobs was not as big of a tech wiz like Wozniak, but he occasionally dabbled into when it was necessary to make a quick buck as a teenager. So, I'm saying that relying on your passion to guide your career will result in disappointment. On the other hand, in the book '<a href="https://parsam.io/shoe-dog">Shoe Dog</a>', Phil mentions the importance of having a passion for what you're doing. He portrayed this by not quitting during the dark days of Nike. In hindsight, what all of them say is correct. Yes, having a passion for what you're doing will result in huge returns when executed correctly, but I don't think anyone is suddenly born with a passion.</p>
+<p>The core idea of the book is mastering valuable skills, then cashing in that "career capital" for work you love. Cal goes much deeper into this topic which I really enjoyed, he debunks the many myths of the "passion hypothesis" with statistical evidence. This is the first book I've read of his, and I really like his writing style.</p>
+<p>So, in addition to finding the work you love, you must at some point use the "career capital" you've gained from being so good that they can't ignore you. This should be into traits that define great work or in other words, control over your life. Before we get into how to cash in the career capital, you might ask how we gain this career capital without any idea of what to do.</p>
+<p>Well, Cal says that we need to adopt the "craftsman mindset". It essentially is acquired through the implementation of deliberate practice. The infamous theoretical physicist Richard Feynman took advantage of deliberate practice. He did it by going deep into important papers and mathematical concepts, until he could understand the material concretely. He had a modest level of intelligence growing up, but what differed him from others was his habit of being used to the strain. Obviously, nowadays there are millions of resources to learn pretty much anything you want without using too much brain capacity. Use the internet to your advantage, you can find what you need to learn for pretty much any topic.</p>
+<p>The biggest trap a lot of people fall into is attempting to gain control without having any career capital to cash in. There are many examples in the book, but a modern example are those "lifestyle influencers". What we see with these influencers is they have all the autonomy in the world, enjoying their life and posting it for others to see. But what we don't see is their frustration of not having any means to support their unconventional lifestyles. You don't want to end up in that situation where you can't even afford your next meal but put yourself blind to it.</p>
+<h1>Who Should Read It?</h1>
+<p>As this book is more catered to landing a successful career, new grads are going to gain the most value from it. But, that doesn't mean people already in their career shouldn't read it. I find that from what I've read, you might already be in the position of being good at your work, but have limited control over what to do next. On the other hand, a new graduate with no idea what to do would follow the "passion hypothesis" and end up regretting obtaining a degree with no use. Obviously, what I'm saying is by no means correct, but that's the best audience I can frame this book for as it fits perfectly for them. If you're someone my age and just turning 18, it wouldn't hurt to read this book as well.</p>
+<h1>How It Impacted Me</h1>
+<ul>
+<li>Reframed the term "follow your passion" into pursuing something you've become good at, instead of diving head first into something you love but has no prospects.</li>
+<li>Focused now on becoming truly great at some skills to offer people, instead of expecting people to pay me because I love what I do with no real purpose.</li>
+<li>Embraced having my brain "melting" when learning new stuff. For example I've been getting into Deep Learning topics like AI, but it has been really difficult trying to grasp the technical concepts. After a while I've started to get a much better understanding of the benefits and limitations of AI instead of just following the buzzwords.</li>
+<li>When I do end up working in a company, I'll be aware of trying to have the best possible control over my career. I don't want to have employers convincing me to invest the career capital back into their company. This would result in me gaining more money and prestige, instead of the control I'm aiming for.</li>
+</ul>
+<h1>Some Quotes</h1>
+<blockquote>
+<p>Telling someone to “follow their passion” is not just an act of innocent optimism, but potentially the foundation for a career riddled with confusion and angst.</p>
+</blockquote>
+<blockquote>
+<p>If you’re not uncomfortable, then you’re probably stuck at an 'acceptable level.'</p>
+</blockquote>
+<blockquote>
+<p>In other words, in most jobs you should expect your employer to resist your move toward more control; they have every incentive to try to convince you to reinvest your career capital back into your career at their company, obtaining more money and prestige instead of more control, and this can be a hard argument to resist</p>
+</blockquote>
+<blockquote>
+<p>If you’re not in control of your career, it can chew you up and spit you out.</p>
+</blockquote>
+<blockquote>
+<p>Working right trumps finding the right work.</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Almanack of Naval Ravikant]]></title>
+        <id>navalmanack</id>
+        <link href="https://parsam.io/navalmanack"/>
+        <updated>2021-05-30T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<h1>Book in 3 Sentences</h1>
+<ol>
+<li>In order to gain wealth, give society new things that it does not know how to get yet. Provided it's within your capabilities and natural for you to accomplish, take the risk with your name and reap the rewards.</li>
+<li>Avoid following whatever is making money right now, explore your genuine curiosity and don't force yourself to fit in with the other monkeys. Doing it for social approval (or FOMO) is not where returns are made in life, it's being out of the pack and thinking things through for yourself.</li>
+<li>To be happy in life, acknowledge that happiness is just like any other muscle that needs to be trained. Accept your current state, instead of desiring a change in your external environment. The less you desire for things that will only add positives, the less you will think "oh I'll be happy when I get this thing."</li>
+</ol>
+<h1>Impressions</h1>
+<p>Naval is an incredibly wise man, and I think more people should listen to what he has to say. He grew up with a family from India who had moved to the US with all their money, resulting in a not so wealthy background. But he amassed large amounts of money through building startups and investing. The book is about how he has lived his life up until now and everything he's learnt from being happy, creating wealth and just building relationships. Overall, Naval has broadened my constantly improving perspective on wealth and living a happy life.</p>
+<p>He really emphasises on the power of compounding in everything which I agree with. If you want to live a "successful" life then build good habits (if you want to learn how to build habits I highly recommend reading <a href="https://parsam.io/atomic-habits">Atomic Habits</a>) and just take care of yourself above everything else. Make hard choices in the short term in order to live an easy life in the long term. A lot of people know this, but the issue is that they continue to live comfortable lives and digitisation has made this even worse for people since everything has become a dopamine supplement.</p>
+<p>It technically isn't a written book, but instead a curated set of wisdom Naval has said on Twitter, Podcasts and Essays over the past decade. The person who created and pieced the entire book together is <a href="https://twitter.com/EricJorgenson">Eric Jorgenson</a>, who I think has done an amazing job highlighting the key points of Naval's work. Due to that, another great thing about the book is that it's free! If you have a Kindle, download the .MOBI format <a href="https://www.navalmanack.com/">from the books website</a> and <a href="https://www.amazon.com/gp/sendtokindle/email">email it to your Kindle</a>. It's as simple as that. If you don't have a Kindle tablet, you can read the book on your phone through the same process but on the Kindle mobile app. Obviously, the paperback edition will cost you money and can be purchased on Amazon.</p>
+<h1>Who Should Read It?</h1>
+<p>If you have never read a book in your life, I think this would be a great way to lay that foundation for yourself in making reading a habit. It still shocks me that people think reading is boring, which I would have agreed with a year ago, but sadly people just want to hop on stereotypes and give their opinion on topics they have a lack of knowledge in.</p>
+<p>I don't want to rant too much here but I'll probably make an article soon about the next generation of innovators. I'm well aware of the amazing projects young people are building. Take a look at the young kids from developing countries who would be on route to a successful career, if they were in a developed country instead. Unfortunately we fail to pay attention to them and give these kids in low economic backgrounds a platform to grow. But nah let's see what the kids on Tiktok are doing! Enough of that, back to the notes (I don't want to sound unlikable, I'm just trying to speak on my thoughts which tend to be true).</p>
+<p>Anyways, young people who are getting started in their life should read this book as it teaches you some lessons in order to "succeed" (I use the word success in quotes as I kind of find the word a bit cringe to say, since people glamorise it so much like it means anything).</p>
+<h1>How It Impacted Me</h1>
+<ul>
+<li>I've started to realise that I need to think more about myself and make my happiness a priority, instead of doing it for others.</li>
+<li>Your family will be the only people who are there for you no matter what, stop forcing yourself to be friends with people who will only need you for a favour.</li>
+<li>Took meditating more seriously, I learnt that meditation isn't something that only monks are supposed to do. I thought I had to sit in a professional position but now I simply do it whenever (usually in the mornings) I want and it feels really good afterwards.</li>
+<li>I learned that I should pick friends or business partners that are high in intelligence, energy and integrity, not someone who fails to sleep and results in looking like a Zombie in the mornings (bit random I know).</li>
+<li>I can leverage my ability to code and write, these skills are behind the newly rich. I can build software and write about the books I read which hopefully someday will work for me in my sleep.</li>
+<li>Money will not make me any happier in the long term, I have everything I need and having access to my family, the internet and building meaningful projects all for free is where I find joy.</li>
+<li>Money will 100% without a doubt remove a set of problems in my life that get in the way of my happiness, but buying external items in order to add positives is a recipe for disaster.</li>
+<li>Others my age calling me weird is generally a good thing, but in my current state I avoid interacting with people that I don't find my values aligning with. Plus the kids my age are really mean and have a lack of curiosity to step outside their comfort zone. I also read something similar to this before in a <a href="https://patrickcollison.com/advice">post by Patrick Collison</a> (talented co-founder of Stripe alongside his brother): "Above all else, don't make the mistake of judging your success based on your current peer group. By all means make friends but being weird as a teenager is generally good."</li>
+</ul>
+<h1>Some Quotes</h1>
+<blockquote>
+<p>You’re not going to get rich renting out your time. You must own equity—a piece of a business—to gain your financial freedom.</p>
+</blockquote>
+<blockquote>
+<p>If you can’t decide, the answer is no. If I’m faced with a difficult choice, such as: Should I marry this person? Should I take this job? Should I buy this house? Should I move to this city? Should I go into business with this person? If you cannot decide, the answer is no. And the reason is, modern society is full of options. There are tons and tons of options. We live on a planet of seven billion people, and we are connected to everybody on the internet. There are hundreds of thousands of careers available to you. There are so many choices.</p>
+</blockquote>
+<blockquote>
+<p>To me, happiness is not about positive thoughts. It’s not about negative thoughts. It’s about the absence of desire, especially the absence of desire for external things. The fewer desires I can have, the more I can accept the current state of things, the less my mind is moving, because the mind really exists in motion toward the future or the past. The more present I am, the happier and more content I will be. If I latch onto a feeling, if I say, “Oh, I’m happy now,” and I want to stay happy, then I’m going to drop out of that happiness. Now, suddenly, the mind is moving. It’s trying to attach to something. It’s trying to create a permanent situation out of a temporary situation.</p>
+</blockquote>
+<blockquote>
+<p>When you’re young, you have time. You have health, but you have no money. When you’re middle-aged, you have money and you have health, but you have no time. When you’re old, you have money and you have time, but you have no health. So the trifecta is trying to get all three at once. By the time people realize they have enough money, they’ve lost their time and their health.</p>
+</blockquote>
+<blockquote>
+<p>Playing video games will make you happier in the short run—and I used to be an avid gamer—but in the long run, it could ruin your happiness. You’re being fed dopamine and having dopamine withdrawn from you in these little uncontrollable ways.</p>
+</blockquote>
+<blockquote>
+<p>The greatest superpower is the ability to change yourself.</p>
+</blockquote>
+<blockquote>
+<p>How do you define wisdom? Understanding the long-term consequences of your actions.</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to start journaling]]></title>
+        <id>start-journal</id>
+        <link href="https://parsam.io/start-journal"/>
+        <updated>2021-05-13T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<p>I've been journaling since late last year, and there are a lot of things I've learnt about myself. But the thing is, I know this isn't the case for the majority of people. It's hard to build the habit since it's so boring and looks like it takes up a lot of time. But in reality I found a way that helped me and might help you. I'll be sharing some of my past experiences of how it's benefited me, and how powerful of a habit journaling can be for a meaningful life.</p>
+<h1>How Journaling Can Benefit You</h1>
+<p>Before I get into how to journal, I would like to first give some points on why you should. There are a lot of reasons to journal. But the reason you should mainly is gaining clarity over your own thoughts. Journaling can allow you to feel calmer and more at ease with yourself, since how you feel is written down and not jumbled in your head. Our focus is constantly distracted from one new hot topic to another, but have you actually sat down and thought for a second on how you feel? That constant context switching can be damaging to your well being, so realising how you feel right now can benefit your future self.</p>
+<p>On the other hand, the bonus of journaling is looking back on yourself months or years later and seeing those improvements visually. Usually there's a problem you're facing in the present that seems impossible to fix, but you tend to overcome it and be surprised. So with journaling you can go back and realise that you've gone through something like this before, and think to yourself "oh yeah, I remember doing that, it can really help me now".</p>
+<h1>My Process</h1>
+<p>Enough of the beauty of journaling, let me explain how to actually start. If you Google "how to journal", you will see loads of results and most of them are just flooded with conflicting advice and people trying to sell you their "self-improvement" course. You're probably well aware of them, but I found this pretty simple process to get started. I'm a lazy guy, and I made a lot of mistakes trying to make it a habit. But I'll try my best to make the process as frictionless as possible. Keep in mind that no book, article (even this amazing one you're reading) or video will magically turn you into a monk. Take what you need and make your own process from those building blocks.</p>
+<p>Anyways, my process with journaling is really simple. I don't like having to type out every question I ask myself so I instead use templates. Doesn't really matter what style you do this in, it's "best practice" to write it down on paper but I find that too slow. I find that templates are just super easy and reduce that friction. Essentially, I use the app <a href="https://www.notion.so/">Notion</a> for this process because of its ability to create templates and flesh them out. I have a page with all my entries, and for every entry I just answer the prompts that I created for myself. I ask myself the same questions every single day in the morning and in the evening.</p>
+<p><img src="journal-prompt.jpg" alt="Notion journaling prompt"></p>
+<h1>How To Get Started With It</h1>
+<p>To save you time, I'll just give you a step by step on what you should do:</p>
+<ol>
+<li>Sign up for a free <a href="https://www.notion.so/personal">Notion account</a> if you don't have one already.</li>
+<li>I made a template on everything you need to get started, and it's pretty much the exact same one I use. Head over to <a href="https://www.notion.so/parsamesgarha/98117e3cf962417381f710707ef6df80?v=e3e2396d3ffe4c4a81704debd8b72b46">this link of the template</a> and have a look around to get an idea of how it works.</li>
+<li>If you're happy to use it, then simply hit Duplicate on the top right (make sure you're logged in). It will then (you guessed it) duplicate the entire page into your own account.</li>
+<li>I put in an example of how it would work. I tend to just write a bit sloppy in my journal but for the template's purpose I had to write a bit more for it to look nice.</li>
+<li>Now just get started with it, no matter what time it is for you, press the blue "New" button and select the premade template for you to journal in.</li>
+</ol>
+<h1>Maintaining The Habit</h1>
+<p>I made this mistake where I felt like I had to write a ton under every question, but the important thing is just writing something. No one besides you is going to see it, so write what makes sense for you. If you want to write just a word, go ahead, DO IT! I think that's the best mindset to go by in the beginning where you just want to write how your day went in a short amount of time. I've had those bad days where I was in a rut and wrote like 3 words for each prompt. But it makes me feel much better and going back a few months later it makes me laugh sometimes of how lazy I was in the situation.</p>
+<p>Building habits are hard, but staying consistent and just showing up is a super useful trick that I found to help me keep journaling. In the journaling template there's a Calendar view that allows you to see that visual progress. It can give you that boost of motivation, although I believe that motivation shouldn't be your fuel. But there is evidence that seeing visual progress gradually can help your ability to keep on doing the habit. If you want to learn more about building habits, I highly recommend you read the book <a href="https://parsam.io/atomic-habits">Atomic Habits</a> (I wrote a summary on it!) as it's a great book for creating lasting ones.</p>
+<p>I really hope my first ever article provides a little bit of value to you. Maybe you learnt something new, or even improved on your journaling habits. I would love to hear your feedback or just talk! You can message me on <a href="https://twitter.com/pzrsaa">twitter</a> (I'm pretty lonely on there), with anything you want to talk about. I'd love to make friends over the internet with similar (or even non-similar) interests.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Getting Things Done for Teens]]></title>
+        <id>gtd-teens</id>
+        <link href="https://parsam.io/gtd-teens"/>
+        <updated>2021-04-07T17:19:19.000Z</updated>
+        <content type="html"><![CDATA[<h1>Book in 3 Sentences</h1>
+<ol>
+<li>Gain control of everything by using the five steps - <strong>Capture</strong>, <strong>Clarify</strong>, <strong>Organise</strong>, <strong>Reflect</strong> and <strong>Engage.</strong></li>
+<li>Our minds aren’t as smart as you might think - we can only hold so much in them, get stuff out of your head and into a system you can trust.</li>
+<li>When you have a system you can trust, it frees up both time and also removes stress since you aren’t constantly worrying about something you might have forgotten.</li>
+</ol>
+<h1>Impressions</h1>
+<p>If I'm going to be honest, I don't think it has changed me as much as it should have. I've gained some insights to how our brains work but there is sort of a lack of necessary steps to take in terms of doing the "Engage" phase. But again, I might be a pit picky and just didn't act upon what the book was supposed to tell me. However, I did find the idea of 'capturing' stuff into a system where we can then act on in the future.</p>
+<h1>How I Discovered It</h1>
+<p>I became extremely embedded into productivity and just getting my life sorted out in general. So after watching countless hours of content nearly every single video was basically explaining how most of the principles they got were from the book (not exactly the teens one). I did buy the original book beforehand, but it was more catered to an audience who are more busy and usually working. I read up to most of the important stuff in the main book but still I felt more comfortable reading this version because of some of the illustrations and relatability.</p>
+<h1>Who Should Read It?</h1>
+<p>Anyone who is aiming to be organised to be honest. This could range from professionals, freelancers, students and pretty much anyone who makes the time to do so. BUT keep in mind this version is for the teens and not the adults. If the adults would want to integrate this methodology, they should read the updated and more suited to adults version. On the other hand, I would point out that there wasn't much difference between the main book and this teenager edition. It literally just had some cartoons and was more of a "Teenager" tone.</p>
+<h1>How It Impacted Me</h1>
+<ul>
+<li>Started using my to do list much more often.</li>
+<li>Implemented the "2 Minute Rule" in my day to day life - if a task takes less than 2 minutes, just get it done so other tasks don’t rack up and end up taking hours.</li>
+<li>Added a someday list to capture things I can put on hold to do on another day.</li>
+<li>When writing tasks in my todo list, I found it better to clarify it enough so that my future self can look back and understand it properly.</li>
+</ul>
+<h1>Some Quotes</h1>
+<blockquote>
+<p>Your mind is for having ideas, not holding them.</p>
+</blockquote>
+<blockquote>
+<p>You can do anything, but not everything.</p>
+</blockquote>
+<blockquote>
+<p>Use your mind to think about things, rather than think of them.</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Atomic Habits]]></title>
+        <id>atomic-habits</id>
+        <link href="https://parsam.io/atomic-habits"/>
+        <updated>2021-03-22T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<h1>Book in 3 Sentences</h1>
+<ol>
+<li>Success isn't reached after making a breakthrough moment, instead it's just the result of doing daily things that compound over a long period of time.</li>
+<li>A lot of things that benefit us are boring, but the most successful people often just get through that boredom regardless and get shit done.</li>
+<li>Instead of focusing on what you want to achieve (like losing 5kg), focus on who you want to become as a person in the long term of attempting that goal (so getting fit over all and going for a run a few times a week).</li>
+</ol>
+<h1>Impressions</h1>
+<p>Ok in short, I liked this book a lot. It made me realise that most of the small decisions we make today shape our life in the future. Habits can compound both positively and negatively, so obviously aim to make them positive!</p>
+<p>One point that stood out to me was that instead of creating the usual goals and achieving them, we can build systems instead that allow us to feel satisfied while it's running. However, goals are crucial for pointing you to the direction you want to go, the system is just your vehicle. Both need each other to work either way.</p>
+<p>Another point I liked a lot is shaping our habits into who we want to become. Let's say you want to become a well rounded programmer, ask yourself these questions when writing code, for example "would a software engineer do this?" or "how would a software engineer approach this?". I know that's a bit vague, but writing good, readable code is something I'm trying to get better at, so those types of questions have been useful to me personally.</p>
+<p>Final point I find interesting is that the environment that we put ourselves in can surprisingly affect our behaviour. Let's say you want to eat healthier, and you usually stock up on Nutella for breakfast regularly. Next time you go to the supermarket, make sure to avoid your traditional path when buying food and avoid the section where that Nutella is. Our brains automatically won't be able to just guide you back there, so making those commitments beforehand can improve your health a lot without realising.</p>
+<h1>Who Should Read It?</h1>
+<p>If you're looking to improve upon yourself and just want to achieve more, read this. In fact, stop reading this book note and get it now from Amazon or whatever! BUT, do keep in mind that no book will magically change you. It's all just tools and it's up to you on what you do with them. But this book has laid out a solid foundation on where I should start with creating habits. Overall, it's a very popular book and I can see why, it can help a lot if you take action on what the author says.</p>
+<h1>How It Impacted Me</h1>
+<ul>
+<li>Started implementing the rule where I cannot miss out on habits for more than 2 days - if I missed out on 1 day of journaling, I make the promise to not miss out on another.</li>
+<li>Asking myself questions before making important decisions - like "would an athlete eat this?" to prevent myself from eating unhealthy foods.</li>
+<li>Acknowledge that goals are for setting my direction, so I make sure that I make well thought out systems that allow me to hit them.</li>
+</ul>
+<h1>Some Quotes</h1>
+<blockquote>
+<p>It’s the work you did long ago—when it seemed that you weren’t making any progress—that makes the jump today possible.</p>
+</blockquote>
+<blockquote>
+<p>You have a new goal and a new plan, but you haven’t changed who you are.</p>
+</blockquote>
+<blockquote>
+<p>Habits reduce cognitive load and free up mental capacity, so you can allocate your attention to other tasks.</p>
+</blockquote>
+<blockquote>
+<p>Be the designer of your world and not merely the consumer of it.</p>
+</blockquote>
+<blockquote>
+<p>One study found that when a chimpanzee learns an effective way to crack nuts open as a member of one group and then switches to a new group that uses a less effective strategy, it will avoid using the superior nut cracking method just to blend in with the rest of the chimps.</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show Your Work!]]></title>
+        <id>show-your-work</id>
+        <link href="https://parsam.io/show-your-work"/>
+        <updated>2021-02-16T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<h1>Book in 3 Sentences</h1>
+<ol>
+<li>You don't have to be an expert in a particular role in order to teach. It's better to be an amateur as you understand how a beginner thinks, unlike a master who won't really remember how it was being a complete newbie.</li>
+<li>Don't worry too much about the numbers, worry about the quality of people that follow and how much they care. Then focus on putting out work of stuff you are doing or have done that would provide value to them. Think of it as a way of teaching yourself and looking back on your past mistakes.</li>
+<li>Since you put out your work on the internet, you come across people who share the same interests or values as you. You can connect with them and bounce back information which will benefit you heavily. Might find a business partner, future spouse, or even an employer since you SHOWED your work. As human beings we all are curious to know a person's process of providing an outcome, something not everyone sees under the hood.</li>
+</ol>
+<h1>Impressions</h1>
+<p>Even though I read this like a day after starting my website, I learned about so many fundamentals in order to maintain it and how to connect with people through my interests. Austin Kleon explains how putting yourself out there on the internet can change your life, as showing off what you are doing opens up opportunities for others to get involved. By "work" he means current projects, hobbies and overall passions that some others may resonate with. No one cares about your latte, post stuff that REAL people will benefit from. The more we put ourselves out there on the internet, the more people we meet that could change our life.</p>
+<p>He also explains that you shouldn't expect a ton of people to come to you after saying "hey I have this blog go check it out its good". Be ENGAGING in those communities, be a good citizen of them and be a connector of people. Stop expecting others to just follow you or anything when you provide no sense of value.</p>
+<h1>How I Discovered It</h1>
+<p>I think it was mainly from <a href="https://youtu.be/hv1gOEY3cs4">Ali Abdaal</a> mentioning it a thousand times on how it changed his life. Alongside Anything You Want, I saw this book in the same video and saw it was less than 100 pages to read. Yeah I sound like some fanboy of him as I mentioned before but who cares, I find value from these books regardless.</p>
+<h1>Who Should Read It?</h1>
+<p>I think that in this day and age we should all be putting ourselves out there, so pretty much everyone who has any sort of interest in starting a YouTube channel, website or even a company. But either if you don't have some sort of interest in that stuff, you should start becoming the person who's active, as it can really change your life and meet some amazing people. Either way, it also has amazing advice on how to just do your own thing and be unique. We're all just interested in each other, so might as well join in on that and SHOW YOUR WORK!</p>
+<h1>How It Impacted Me</h1>
+<ul>
+<li>I don't really care about others' opinions now, they might get to me from time to time, but still realise how everyone is facing their own problems.</li>
+<li>Making an attempt to not waste people's time. I tend to review what I am about to post and think about if anyone would find this useful after reading it (hopefully this book note is for you!).</li>
+<li>Going to make sure I maintain my website and have it grow with me along my journey. I will engage with my audience and provide the best level of quality that I can (message me on <a href="https://twitter.com/pzrsaa">twitter</a>!).</li>
+<li>When this website starts doing well, I want to start a newsletter as he mentions how important it is when providing insight to your more interested audience, even if it's a small update.</li>
+<li>Now, I know I am getting way too ahead of myself, but the idea of a tip/donation on my page if someone feels generous is an idea I like. Not prioritising it of course, but a nice addition if someone wants to give a nice gesture. Something like "buy me a coffee" sounds friendly lol.</li>
+</ul>
+<h1>Some Quotes</h1>
+<blockquote>
+<p>The act of sharing is one of generosity—you’re putting something out there because you think it might be helpful or entertaining to someone on the other side of the screen.</p>
+</blockquote>
+<blockquote>
+<p>Build a good name. Keep your name clean. Don’t make compromises. Don’t worry about making a bunch of money or being successful. Be concerned with doing good work . . . and if you can build a good name, eventually that name will be its own currency.”</p>
+</blockquote>
+<blockquote>
+<p>Make stuff you love and talk about stuff you love and you’ll attract people who love that kind of stuff. It’s that simple.</p>
+</blockquote>
+<blockquote>
+<p>“The trick is not caring what EVERYBODY thinks of you and just caring about what the RIGHT people think of you.” —Brian Michael Bendis</p>
+</blockquote>
+<blockquote>
+<p>“Anyone who isn’t embarrassed of who they were last year probably isn’t learning enough,” writes author Alain de Botton.</p>
+</blockquote>
+<blockquote>
+<p>Look for something new to learn, and when you find it, dedicate yourself to learning it out in the open. Document your progress and share as you go so that others can learn along with you. Show your work, and when the right people show up, pay close attention to them, because they’ll have a lot to show you.</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Shoe Dog]]></title>
+        <id>shoe-dog</id>
+        <link href="https://parsam.io/shoe-dog"/>
+        <updated>2021-02-13T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<h1>Book in 3 Sentences</h1>
+<ol>
+<li>Finding the right people to work and grow with is an important aspect of creating a successful business. It's shown throughout the entire memoir with Phil bringing along many people on the journey.</li>
+<li>Open yourself to as many opportunities so that luck (which somewhat plays a role) can finally reach you. Phil networked with talented athletes and saw something in them where his return on investment when sponsoring them was significant.</li>
+<li>His passion for shoes was the biggest thing that allowed him to keep pushing. There were loads of dark times within the company and even impossible to recover from situations. But he just believed deeply and loved the stuff he was doing - creating innovative shoes.</li>
+</ol>
+<h1>Impressions</h1>
+<p>Overall, an amazing story of the man that created the shoe company we all know called Nike. I found it interesting on how his 'crazy idea' led into this absolute giant of a shoe company. Adidas and Puma were already well established companies, but for someone as small as Phil to come in and disrupt the industry gave me an amazing sense of inspiration in terms anyone can achieve anything. Phil's leadership and passion for shoes was what drove this company that we all know and love today into success. I also loved Bill Bowerman (his former coach) and Jeff Johnson (employee #1), these guys were real necessities in the company. I stayed engaged for the entire Audiobook and also found some hints of comedy in it. Keep in mind Phil was not that good of a social person. He was an introvert and never really liked to put himself out there to people. On the other hand, he also disliked the idea of advertising as he believed that the product should speak for itself, not a commercial. Later on he realised the power of promoting your product to the public and how it made his company grow exponentially.</p>
+<h1>How I Discovered It</h1>
+<p>I had recently just finished <a href="https://www.amazon.co.uk/Think-Grow-Rich-Napoleon-Hill/dp/0091900212/ref=sr_1_1?dchild=1&#x26;keywords=think+and+grow+rich&#x26;qid=1613148278&#x26;quartzVehicle=3514-1426&#x26;replacementKeywords=and+grow+rich&#x26;sr=8-1">Think and Grow Rich</a> around November 2020. So I was looking at the business books since I was trying to get into a bit more reading and the only other "good" book I knew was <a href="https://www.amazon.co.uk/Rich-Dad-Poor-Teach-Middle/dp/1612680178/ref=sr_1_1?crid=1V5FV7UVNA7DY&#x26;dchild=1&#x26;keywords=rich+dad+poor+dad&#x26;qid=1613148325&#x26;sprefix=rich+dad%2Caps%2C165&#x26;sr=8-1">Rich Dad Poor Dad</a>. Anyways, I saw Shoe Dog on the shelf at Waterstones and didn't really pay much attention to it as I was blinded by all the "get rich" books. A month went by and while I just finished <a href="https://parsam.io/gtd-teens">Getting Things Done for Teens</a>, I got recommended Shoe Dog and thought why not use my precious free credit to purchase it on Audible. I made the mistake on using my other 2 credits on Audible during my 3 month trial (1 credit per month) on Rich Dad Poor Dad and 12 Week Year since I realised now that audiobooks are useless to retain information as I can't simply highlight anything. But this was different, the memoir was portrayed in a way where I felt like I was there and just standing behind him watching every move, it really allowed me to soak up all this info and write this book note.</p>
+<h1>Who Should Read It?</h1>
+<p>Anyone who is really trying to find some sort of meaning in their life or give value to the world should read it. On top of that, there's a lot of communicating examples shown throughout the memoir where Phil was just a shy introvert. So if you relate to Phil in lack of people skills, then this book will resonate with you and you might learn how to be better at networking. Overall, most people who are interested in business will for sure find this memoir a great read/listen (I would recommend listening to the audiobook version).</p>
+<h1>How It Impacted Me</h1>
+<ul>
+<li>I learned that having a passion for something in life is really important if you want to pursue it. When the days are dark, your passion for what you are doing must be present in order to continue. Otherwise you will quit at some point.</li>
+<li>I found out that the first people you employ in your company and people you choose to be with for the lifespan of the business would be one of the most important decisions you make. Jeff, Bill, Penny (his wife) and many others were all important people who allowed him to stay running this company.</li>
+<li>Made me want to improve upon negotiating and networking skills, most of the things and different tricks Phil did allowed the company to turn into this behemoth.</li>
+<li>I started to watch more interviews that involve Phil himself, <a href="https://www.youtube.com/watch?v=OHTosaWWKvg">like this by Stanford</a> (where he graduated from with a degree in Accounting) that explains his story as well.</li>
+<li>Realised that sometimes it's healthy to give up, you shouldn't be too naive or ignorant about running your business when it's not succeeding. Similar to what Derek Sivers says in Anything You Want:</li>
+</ul>
+<blockquote>
+<p>We all have lots of ideas, creations, and projects. When you present one to the world and it’s not a hit, don’t keep pushing it as is. Instead, get back to improving and inventing.</p>
+</blockquote>
+<h1>Some Quotes</h1>
+<blockquote>
+<p>And those who urge entrepreneurs to never give up? Charlatans. Sometimes you have to give up. Sometimes knowing when to give up, when to try something else, is genius. Giving up doesn’t mean stopping. Don’t ever stop. Luck plays a big role. Yes, I’d like to publicly acknowledge the power of luck. Athletes get lucky, poets get lucky, businesses get lucky. Hard work is critical, a good team is essential, brains and determination are invaluable, but luck may decide the outcome.</p>
+</blockquote>
+<blockquote>
+<p>Don’t tell people how to do things, tell them what to do and let them surprise you with their results.</p>
+</blockquote>
+<blockquote>
+<p>When it came rolling in, the money affected us all. Not much, and not for long, because none of us was ever driven by money. But that’s the nature of money. Whether you have it or not, whether you want it or not, whether you like it or not, it will try to define your days. Our task as human being is not to let it.</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Anything You Want]]></title>
+        <id>anything-you-want</id>
+        <link href="https://parsam.io/anything-you-want"/>
+        <updated>2021-02-12T18:19:19.000Z</updated>
+        <content type="html"><![CDATA[<h1>Book in 3 Sentences</h1>
+<ol>
+<li>You don't need a crazy amount of professional expertise or funding when creating a business. In fact, it's better if you don't- 9/10 people aren't that bothered to care about the legal things.</li>
+<li>Focus on your product/service and your customers - you don't have to be serious all the time, provide that level of human interaction with your consumers at-least and cater to them as much as possible. In the end, it's the consumers who grow your company.</li>
+<li>Take matters into your own hands when necessary, adapt to enjoying the journey instead of jumping from A to Z. Business is not a sprint, it's a never ending marathon of losing and learning. The whole point of you creating that business is to make you happy since you're providing a solution. Right? So why bother skipping to the finish line?</li>
+</ol>
+<h1>Impressions</h1>
+<p>Gave me so much insight on someone who ran a business all by himself without all the fluff and nonsense in a book. I was pretty engaged reading it in an hour and learning about his thought process while creating this hobby that turned into a business. One message that was being portrayed throughout it was that we should not be too worried about making a quick buck in business. Think long term and enjoy the ride. The more your business makes the more problems.</p>
+<h1>How I Discovered It</h1>
+<p>I stumbled across it by a YouTuber called <a href="https://youtu.be/hv1gOEY3cs4">Ali Abdaal</a>. I saw why not just read it since it's only around 90 pages lol. Really glad I took the small amount of time to do so as it provided me with a clean perspective about running a successful company.</p>
+<h1>Who Should Read It?</h1>
+<p>To be honest, anyone who is looking to get into entrepreneurship (of course lol). Actually no, EVERYONE should. There is an ocean of different life advice that can be applied in your own life even if you aren't that keen into starting a business. Furthermore, it's literally less than 100 pages, so there's no excuse for not being able to read it.</p>
+<h1>How It Impacted Me</h1>
+<ul>
+<li>When I start another business, I will make sure to cater so much to my customers with different human touches that make them feel satisfied with my product or service.</li>
+<li>It kind of also pushed me to finally write this book note and put it on the internet.</li>
+<li>Take matters into my own hands because the whole process of learning something is better than just skipping to the finish line.</li>
+<li>Make sure that if I am going to sell a product or service, that I'm passionate about it as that is what will drive me the most.</li>
+<li>Become more appreciative about the daily habits I have which have led up to some amazing days.</li>
+</ul>
+<h1>Some Quotes</h1>
+<blockquote>
+<p>You’ll notice that as my company got bigger, my stories about it were less happy. That was my lesson learned. I’m happier with five employees than with eighty-five, and happiest working alone.</p>
+</blockquote>
+<blockquote>
+<p>There’s a big difference between being self-employed and being a business owner. Being self-employed feels like freedom until you realise that if you take time off, your business crumbles. To be a true business owner, make it so that you could leave for a year, and when you came back, your business would be doing better than when you left.</p>
+</blockquote>
+<blockquote>
+<p>Yes, it may take longer. Yes, it may be inefficient. Yes, it may even cost you millions of dollars in lost opportunities because your business is growing slower because you’re insisting on doing something yourself. But the whole point of doing anything is because it makes you happy! That’s it!</p>
+</blockquote>
+]]></content>
+    </entry>
+</feed>

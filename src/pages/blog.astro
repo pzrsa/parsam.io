@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../components/Layout.astro";
+
+const posts = await getCollection("blog");
+posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<Layout>
+    <h1>My posts</h1>
+    <ul>
+        {
+            posts.map((post) => (
+                <li>
+                    <a href={`/${post.id}`}>{post.data.title}</a>
+                </li>
+            ))
+        }
+    </ul>
+</Layout>
