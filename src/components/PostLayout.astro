@@ -1,0 +1,62 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { render } from "astro:content";
+import Layout from "./Layout.astro";
+import Prose from "./Prose.astro";
+
+interface Props {
+    post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout>
+    <section>
+        <div class="mb-6">
+            <h1 class="text-2xl sm:text-3xl font-extrabold mb-3">
+                {post.data.title}
+            </h1>
+            <div class="flex gap-3 items-center">
+                <span class="flex-1 text-zinc-600">
+                    {
+                        post.data.author ? (
+                            <>
+                                {post.data.author}
+                                {" // "}
+                            </>
+                        ) : (
+                            ""
+                        )
+                    }
+                    {
+                        post.data.date.toLocaleDateString("en-US", {
+                            day: "numeric",
+                            month: "long",
+                            year: "numeric",
+                        })
+                    }
+                </span>
+            </div>
+        </div>
+        <article>
+            <Prose><Content /></Prose>
+        </article>
+        <hr class="my-12 border-neutral-300" />
+        <div class="prose prose-h3:text-lg">
+            <p>And please consider...</p>
+            <ul>
+                <li>
+                    following me on{" "}
+                    <a href="https://x.com/pzrsaa">Twitter/X</a>
+                </li>
+                <li>sharing this post with a friend</li>
+                <li>
+                    sharing your thoughts over{" "}
+                    <a href="mailto:hi@parsam.io">email</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</Layout>
