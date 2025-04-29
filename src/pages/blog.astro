@@ -36,7 +36,7 @@ posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
                         <span class={`flex ${lastForYear ? "mb-4" : ""}`}>
                             <span class="flex-1">
                                 <a href={`/${post.id}`}>
-                                    <span class="font-bold uppercase">
+                                    <span class="font-bold">
                                         {post.data.title}
                                     </span>
                                     {post.data.author && (

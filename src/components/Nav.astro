@@ -1,28 +1,12 @@
 ---
 const name = "Parsa Mesgarha";
-
-const pathname = Astro.url.pathname;
 ---
 
 <nav class="flex mb-6 items-center">
     <span class="flex-1">
-        {
-            pathname === "/" ? (
-                <h1 class="font-bold text-lg cursor-default">{name}</h1>
-            ) : (
-                <a href={"/"} class="font-bold text-lg underline">
-                    {name}
-                </a>
-            )
-        }
+        <a href={"/"} class="font-bold text-lg text-black">
+            {name}
+        </a>
     </span>
-    {
-        pathname === "/blog" ? (
-            <h1 class="font-bold text-lg cursor-default">blog</h1>
-        ) : (
-            <a href={"/blog"} class="font-bold text-lg underline">
-                blog
-            </a>
-        )
-    }
+    <a href={"/blog"} class="font-bold text-lg text-black"> blog </a>
 </nav>
