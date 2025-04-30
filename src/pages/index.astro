@@ -3,6 +3,7 @@ import Layout from "../components/Layout.astro";
 import { Image } from "astro:assets";
 import me from "../assets/avatar.jpeg";
 import Prose from "../components/Prose.astro";
+import NowPlaying from "../components/NowPlaying.astro";
 ---
 
 <Layout>
@@ -20,9 +21,9 @@ import Prose from "../components/Prose.astro";
                     />
                 </a>
             </div>
-            <!-- <div class="w-fit">
-        <NowPlaying />
-      </div> -->
+            <div class="w-fit">
+                <NowPlaying />
+            </div>
         </div>
     </div>
     <Prose>
@@ -33,7 +34,7 @@ import Prose from "../components/Prose.astro";
         <p>
             I&apos;m currently working as a Software Engineer at
             <a href="https://www.tesla.com"
-                ><span class="text-tesla-red">Tesla</span></a
+                ><span class="text-tesla-red hover:underline">Tesla</span></a
             >
             in Berlin. Prior to this, I was at{" "}
             <a href="https://google.com">

@@ -1,0 +1,30 @@
+---
+let data = null;
+let error = false;
+
+try {
+    const res = await fetch(new URL("/api/now-playing", Astro.url));
+    if (!res.ok) throw new Error("bad status");
+    data = await res.json();
+} catch {
+    error = true;
+}
+---
+
+{!error && !data && <p>loading...</p>}
+
+{
+    error || !data?.isPlaying ? (
+        <a
+            href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
+            target="_blank"
+        >
+            Not Playing
+        </a>
+    ) : (
+        <a href={data.songUrl} target="_blank">
+            Playing <span class="font-bold">{data.title}</span> by
+            <span class="font-bold">{data.artist}</span>
+        </a>
+    )
+}
