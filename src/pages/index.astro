@@ -22,7 +22,7 @@ import NowPlaying from "../components/NowPlaying.astro";
                 </a>
             </div>
             <div class="w-fit">
-                <NowPlaying client:load />
+                <NowPlaying server:defer />
             </div>
         </div>
     </div>
