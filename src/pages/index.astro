@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import me from "../assets/avatar.jpeg";
 import Prose from "../components/Prose.astro";
 import NowPlaying from "../components/NowPlaying.astro";
+import SubscribeForm from "../components/SubscribeForm.astro";
 ---
 
 <Layout>
@@ -64,7 +65,7 @@ import NowPlaying from "../components/NowPlaying.astro";
         </p>
         <div>
             <h3>Newsletter</h3>
-            <!-- <SubscribeForm /> -->
+            <SubscribeForm />
             <h3>Links</h3>
             <div class="not-prose grid grid-cols-3 sm:grid-cols-4">
                 <a class="w-fit" href="https://x.com/pzrsaa">Twitter/X</a>
@@ -107,10 +108,10 @@ import NowPlaying from "../components/NowPlaying.astro";
                 <a href={"/tesla"}>I joined Tesla (and moved to Berlin)</a>.
             </p>
         </div>
-        <div>
+        <!-- <div>
             <h2>Favourites</h2>
             <h3>Albums</h3>
-            <!-- <div class="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">
+            <div class="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">
         {
           FAVOURITE_ALBUMS.map((album) => (
             <a
@@ -130,9 +131,9 @@ import NowPlaying from "../components/NowPlaying.astro";
             </a>
           ))
         }
-      </div> -->
+      </div>
             <h3>Films</h3>
-            <!-- <div class="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">
+            <div class="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">
         {
           FAVOURITE_FILMS.map((film) => (
             <a
@@ -152,18 +153,17 @@ import NowPlaying from "../components/NowPlaying.astro";
             </a>
           ))
         }
-      </div> -->
+      </div>
             <p>
                 You can see the rest on my{" "}
                 <a
                     href="https://letterboxd.com/pzrsa/likes/films/by/date/size/large/"
                 >
-                    Letterboxd
-                </a>
-                .
+                    Letterboxd</a
+                >.
             </p>
             <h3>Shows</h3>
-            <!-- <div class="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">
+            <div class="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">
         {
           FAVOURITE_SHOWS.map((show) => (
             <a
@@ -183,7 +183,7 @@ import NowPlaying from "../components/NowPlaying.astro";
             </a>
           ))
         }
-      </div> -->
-        </div>
+      </div>
+        </div> -->
     </Prose>
 </Layout>
