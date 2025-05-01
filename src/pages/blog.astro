@@ -44,10 +44,10 @@ posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
                                     )}
                                 </a>
                             </span>
-                            <span class="text-zinc-600">
-                                {post.data.date.toLocaleDateString("en-US", {
-                                    month: "short",
+                            <span>
+                                {post.data.date.toLocaleDateString("en-GB", {
                                     day: "numeric",
+                                    month: "short",
                                 })}
                             </span>
                         </span>

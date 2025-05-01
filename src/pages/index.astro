@@ -5,6 +5,12 @@ import me from "../assets/avatar.jpeg";
 import Prose from "../components/Prose.astro";
 import NowPlaying from "../components/NowPlaying.astro";
 import SubscribeForm from "../components/SubscribeForm.astro";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog");
+posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const newestPosts = posts.slice(0, 5);
 ---
 
 <Layout>
@@ -29,11 +35,11 @@ import SubscribeForm from "../components/SubscribeForm.astro";
     </div>
     <Prose>
         <p>
-            I&apos;m 21 years old, Persian, born in England, and have spent the
+            I'm 21 years old, Persian, born in England, and have spent the
             majority of my life in London.
         </p>
         <p>
-            I&apos;m currently working as a Software Engineer at
+            I'm currently working as a Software Engineer at
             <a href="https://www.tesla.com"
                 ><span class="text-tesla-red hover:underline">Tesla</span></a
             >
@@ -59,12 +65,43 @@ import SubscribeForm from "../components/SubscribeForm.astro";
             enough to share.
         </p>
         <p>
-            If anything here piques your interest, don&apos;t hesitate to{" "}
+            If anything here piques your interest, don't hesitate to{" "}
             <a href="mailto:hi@parsam.io">reach out</a>. I love meeting new
             people!
         </p>
         <div>
-            <h3>Newsletter</h3>
+            <h3>Newest Posts</h3>
+            <ul class="flex flex-col gap-4 not-prose">
+                {
+                    newestPosts.map((post) => (
+                        <li>
+                            <span class={`flex`}>
+                                <span class="flex-1">
+                                    <a href={`/${post.id}`}>
+                                        <span class="font-bold">
+                                            {post.data.title}
+                                        </span>
+                                        {post.data.author && (
+                                            <span> ({post.data.author})</span>
+                                        )}
+                                    </a>
+                                </span>
+                                <span>
+                                    {post.data.date.toLocaleDateString(
+                                        "en-GB",
+                                        {
+                                            day: "numeric",
+                                            month: "short",
+                                            year: "2-digit",
+                                        },
+                                    )}
+                                </span>
+                            </span>
+                        </li>
+                    ))
+                }
+            </ul>
+            <h4>Newsletter</h4>
             <SubscribeForm />
             <h3>Links</h3>
             <div class="not-prose grid grid-cols-3 sm:grid-cols-4">
@@ -101,14 +138,13 @@ import SubscribeForm from "../components/SubscribeForm.astro";
                     Monkeytype
                 </a>
             </div>
-        </div>
-        <div>
-            <h2>Now</h2>
-            <p>
-                <a href={"/tesla"}>I joined Tesla (and moved to Berlin)</a>.
-            </p>
-        </div>
-        <!-- <div>
+            <div>
+                <h2>Now</h2>
+                <p>
+                    <a href={"/tesla"}>I joined Tesla (and moved to Berlin)</a>.
+                </p>
+            </div>
+            <!-- <div>
             <h2>Favourites</h2>
             <h3>Albums</h3>
             <div class="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">
@@ -185,5 +221,6 @@ import SubscribeForm from "../components/SubscribeForm.astro";
         }
       </div>
         </div> -->
+        </div>
     </Prose>
 </Layout>
