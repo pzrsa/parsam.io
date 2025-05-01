@@ -1,11 +1,47 @@
 ---
 import "../styles/global.css";
-import Head from "../components/Head.astro";
 import Nav from "./Nav.astro";
+
+interface Props {
+    title?: string;
+}
+
+const baseTitle = "Parsa Mesgarha";
+const description = "Software Engineer at Tesla";
+
+const { title } = Astro.props;
+
+const fullTitle = title ? `${title} - ${baseTitle}` : baseTitle;
 ---
 
 <html lang="en" class="bg-white text-black antialiased">
-    <Head />
+    <head>
+        <link rel="icon" href="/favicon.ico" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{fullTitle}</title>
+        <meta name="description" content={description} />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content={fullTitle} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://parsam.io" />
+        <meta property="og:description" content={description} />
+
+        <!-- todo  -->
+        <!-- <meta
+            property="og:image"
+            content="https://www.example.com/_astro/seo-banner.BZD7kegZ.webp"
+        /> -->
+        <!-- <meta
+            property="og:image"
+            content="https://parsam.io/og/index.png"
+        /> -->
+        <!-- <meta name="twitter:image" content="https://parsam.io/og/index.png" /> -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@pzrsaa" />
+        <meta name="twitter:title" content={fullTitle} />
+        <meta name="twitter:description" content={description} />
+    </head>
     <body class="max-w-2xl mx-auto py-8 px-6">
         <Nav />
         <slot />
