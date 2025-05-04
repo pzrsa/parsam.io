@@ -23,7 +23,7 @@
     }
 
     a {
-        @apply no-underline hover:underline text-blue-700;
+        @apply text-blue-700 underline decoration-2 hover:bg-black hover:text-white;
     }
 
     img {

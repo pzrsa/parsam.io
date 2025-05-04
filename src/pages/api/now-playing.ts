@@ -1,6 +1,7 @@
 export const prerender = false;
 
 import type { APIRoute } from "astro";
+import { Buffer } from "node:buffer";
 
 const NOW_PLAYING_URL =
   "https://api.spotify.com/v1/me/player/currently-playing";
@@ -21,7 +22,7 @@ export const GET: APIRoute = async ({ locals }) => {
     : import.meta.env.SPOTIFY_REFRESH_TOKEN;
 
   const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
-  const resAccessToken = await fetch(TOKEN_URL, {
+  const tokenRes = await fetch(TOKEN_URL, {
     method: "POST",
     headers: {
       Authorization: `Basic ${basic}`,
@@ -30,11 +31,10 @@ export const GET: APIRoute = async ({ locals }) => {
     body: `grant_type=refresh_token&refresh_token=${refresh_token}`,
   });
 
-  const { access_token } = await resAccessToken.json();
-  console.log(access_token);
+  const tokenData = await tokenRes.json();
 
   const res = await fetch(NOW_PLAYING_URL, {
-    headers: { Authorization: `Bearer ${access_token}` },
+    headers: { Authorization: `Bearer ${tokenData.access_token}` },
   });
 
   if (res.status === 204 || res.status > 400) {
