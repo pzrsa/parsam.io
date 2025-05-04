@@ -8,6 +8,9 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-
-  adapter: cloudflare(),
+  adapter: cloudflare({
+    routes: {
+      extend: { include: [{ pattern: "/api" }] },
+    },
+  }),
 });
