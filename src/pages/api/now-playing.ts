@@ -1,7 +1,7 @@
+export const prerender = false;
+
 import type { APIRoute } from "astro";
 import { getNowPlaying } from "../../lib/spotify";
-
-export const prerender = false; // ← forces a server endpoint
 
 export const GET: APIRoute = async () => {
   const res = await getNowPlaying();
