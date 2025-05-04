@@ -1,10 +1,41 @@
 export const prerender = false;
 
 import type { APIRoute } from "astro";
-import { getNowPlaying } from "../../lib/spotify";
 
-export const GET: APIRoute = async () => {
-  const res = await getNowPlaying();
+const NOW_PLAYING_URL =
+  "https://api.spotify.com/v1/me/player/currently-playing";
+const TOKEN_URL = "https://accounts.spotify.com/api/token";
+
+export const GET: APIRoute = async ({ locals }) => {
+  const runtime = locals.runtime;
+  const isProd = import.meta.env.PROD;
+
+  const client_id = isProd
+    ? runtime.env.SPOTIFY_CLIENT_ID
+    : import.meta.env.SPOTIFY_CLIENT_ID;
+  const client_secret = isProd
+    ? runtime.env.SPOTIFY_CLIENT_SECRET
+    : import.meta.env.SPOTIFY_CLIENT_SECRET;
+  const refresh_token = isProd
+    ? runtime.env.SPOTIFY_REFRESH_TOKEN
+    : import.meta.env.SPOTIFY_REFRESH_TOKEN;
+
+  const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
+  const resAccessToken = await fetch(TOKEN_URL, {
+    method: "POST",
+    headers: {
+      Authorization: `Basic ${basic}`,
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: `grant_type=refresh_token&refresh_token=${refresh_token}`,
+  });
+
+  const { access_token } = await resAccessToken.json();
+  console.log(access_token);
+
+  const res = await fetch(NOW_PLAYING_URL, {
+    headers: { Authorization: `Bearer ${access_token}` },
+  });
 
   if (res.status === 204 || res.status > 400) {
     return json({ isPlaying: false });
