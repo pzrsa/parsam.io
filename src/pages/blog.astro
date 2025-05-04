@@ -15,7 +15,7 @@ posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
           <SiRss />
         </a> -->
     </span>
-    <ul class="flex flex-col gap-4">
+    <ul class="flex flex-col gap-2">
         {
             posts.map((post, i) => {
                 const year = post.data.date.getFullYear();
@@ -33,7 +33,9 @@ posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
                                 {year}
                             </span>
                         )}
-                        <span class={`flex ${lastForYear ? "mb-4" : ""}`}>
+                        <span
+                            class={`flex gap-0.5 ${lastForYear ? "mb-4" : ""}`}
+                        >
                             <span class="flex-1">
                                 <a href={`/${post.id}`}>
                                     <span class="font-bold">

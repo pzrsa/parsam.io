@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import cloudflare from "@astrojs/cloudflare";
 
@@ -12,4 +12,13 @@ export default defineConfig({
     },
   },
   adapter: cloudflare(),
+  experimental: {
+    fonts: [
+      {
+        provider: fontProviders.google(),
+        name: "Work Sans",
+        cssVariable: "--font-work-sans",
+      },
+    ],
+  },
 });

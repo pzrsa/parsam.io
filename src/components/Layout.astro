@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Nav from "./Nav.astro";
+import { Font } from "astro:assets";
 
 interface Props {
     title?: string;
@@ -14,8 +15,9 @@ const { title } = Astro.props;
 const fullTitle = title ? `${title} - ${baseTitle}` : baseTitle;
 ---
 
-<html lang="en" class="bg-white text-black antialiased">
+<html lang="en" class="bg-white text-black antialiased font-sans">
     <head>
+        <Font cssVariable="--font-work-sans" preload />
         <link rel="icon" href="/favicon.ico" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

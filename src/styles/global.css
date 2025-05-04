@@ -11,6 +11,10 @@
     --color-black: #000;
 }
 
+@theme inline {
+    --font-sans: var(--font-work-sans);
+}
+
 ::selection {
     @apply bg-black text-white;
 }
