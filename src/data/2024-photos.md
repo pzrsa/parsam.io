@@ -3,54 +3,54 @@ date: "2024-12-31"
 title: "Favourite photos from 2024"
 ---
 
-![](../assets/parsa-thomas.jpeg)
+![](/parsa-thomas.jpeg)
 With [Thomas Paul Mann](https://x.com/thomaspaulmann) (CEO of [Raycast](https://www.raycast.com/))
 
-![](../assets/lindyman.jpeg)
+![](/lindyman.jpeg)
 With [Paul Skallas](https://x.com/PaulSkallas) aka LindyMan
 
 # Warsaw, Poland
 
-![](../assets/thomas-parsa.jpeg)
-![](../assets/peacock-lady.jpeg)
-![](../assets/warsaw-water.jpeg)
-![](../assets/warsaw-water-2.jpeg)
-![](../assets/warsaw-grass.jpeg)
-![](../assets/warsaw-central.jpeg)
+![](/thomas-parsa.jpeg)
+![](/peacock-lady.jpeg)
+![](/warsaw-water.jpeg)
+![](/warsaw-water-2.jpeg)
+![](/warsaw-grass.jpeg)
+![](/warsaw-central.jpeg)
 Loved Warsaw.
 
 # Italy
 
 ## Naples
 
-![](../assets/pompeii.jpeg)
+![](/pompeii.jpeg)
 Pompeii
-![](../assets/b&w-geezer.jpeg)
-![](../assets/naples-uncles.jpeg)
-![](../assets/naples-me.jpeg)
-![](../assets/edgy-boat.jpeg)
-![](../assets/naples-building.jpeg)
-![](../assets/naples-sea.jpeg)
-![](../assets/naples-sea-2.jpeg)
-![](../assets/naples-me-2.jpeg)
+![](/b&w-geezer.jpeg)
+![](/naples-uncles.jpeg)
+![](/naples-me.jpeg)
+![](/edgy-boat.jpeg)
+![](/naples-building.jpeg)
+![](/naples-sea.jpeg)
+![](/naples-sea-2.jpeg)
+![](/naples-me-2.jpeg)
 
 ## Rome
 
-![](../assets/rome-colosseum.jpeg)
-![](../assets/rome-wide.jpeg)
-![](../assets/rome-bernini.jpeg)
-![](../assets/rome-museum.jpeg)
-![](../assets/rome-shadows.jpeg)
-![](../assets/rome-river.jpeg)
-![](../assets/rome-shadows-2.jpeg)
-![](../assets/rome-fuji.jpeg)
+![](/rome-colosseum.jpeg)
+![](/rome-wide.jpeg)
+![](/rome-bernini.jpeg)
+![](/rome-museum.jpeg)
+![](/rome-shadows.jpeg)
+![](/rome-river.jpeg)
+![](/rome-shadows-2.jpeg)
+![](/rome-fuji.jpeg)
 
 # Misc
 
-![](../assets/berlin-car.jpeg)
-![](../assets/berlin-sunset.jpeg)
-![](../assets/berlin-church.jpeg)
-![](../assets/berlin-relaxing.jpeg)
-![Belgrade, Serbia](../assets/belgrade-wide.jpeg)
+![](/berlin-car.jpeg)
+![](/berlin-sunset.jpeg)
+![](/berlin-church.jpeg)
+![](/berlin-relaxing.jpeg)
+![Belgrade, Serbia](/belgrade-wide.jpeg)
 
 Excited for 2025 :)

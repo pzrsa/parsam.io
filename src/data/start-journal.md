@@ -17,7 +17,7 @@ Enough of the beauty of journaling, let me explain how to actually start. If you
 
 Anyways, my process with journaling is really simple. I don't like having to type out every question I ask myself so I instead use templates. Doesn't really matter what style you do this in, it's "best practice" to write it down on paper but I find that too slow. I find that templates are just super easy and reduce that friction. Essentially, I use the app [Notion](https://www.notion.so/) for this process because of its ability to create templates and flesh them out. I have a page with all my entries, and for every entry I just answer the prompts that I created for myself. I ask myself the same questions every single day in the morning and in the evening.
 
-![Notion journaling prompt](../assets/journal-prompt.jpg)
+![Notion journaling prompt](/journal-prompt.jpg)
 
 # How To Get Started With It
 

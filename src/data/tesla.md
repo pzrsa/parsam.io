@@ -5,7 +5,7 @@ title: "I joined Tesla (and moved to Berlin)"
 
 I'm pleased to share I joined Tesla! This will be a huge leap in my professional life as a Software Engineer, as well as my personal one as I've moved from London to Berlin, where I've started working from their [Gigafactory](https://www.tesla.com/en_eu/giga-berlin).
 
-![](../assets/welcome-tesla.png)
+![](/welcome-tesla.png)
 
 Two years ago, I got my first ever job as a Software Engineer at one of the best tech companies in the world - [Google](https://parsam.io/joined-google). I genuinely can't believe I worked there, especially alongside some fantastic people who I learned so much from. It was truly a once in a lifetime opportunity.
 
@@ -21,7 +21,7 @@ I'm also looking forward to learning how to properly cook some nice meals for my
 
 Here's an Italian style Omelette I made the other day:
 
-![](../assets/omelette.jpeg)
+![](/omelette.jpeg)
 
 I can't wait to see what this new endeavour holds, and I want to express my gratitude to everyone who's helped me get to where I am today. I'm fully aware I've been extremely lucky, but there's still a long road ahead.
 
