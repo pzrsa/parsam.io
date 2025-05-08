@@ -22,6 +22,10 @@
         @apply font-bold;
     }
 
+    a {
+        @apply hover:underline decoration-2 font-medium;
+    }
+
     img {
         @apply border-2 border-black;
     }

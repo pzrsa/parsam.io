@@ -17,7 +17,7 @@ One of my life philosophies is authenticity, and I see a lack of it in [FAANG](h
 
 Without further ado, I hope you enjoy this glimpse into my journey 🤝
 
-# Reincarnated
+## Reincarnated
 
 July 2020, London. I'd just turned 17 and finished my first year of college doing a [BTEC Level 3](https://en.wikipedia.org/wiki/BTEC_Extended_Diploma) in Information Technology. In the UK, college means pre-university, similar to senior high school. My college was rough – I'm sure someone got stabbed there.
 
@@ -55,7 +55,7 @@ Since I'd carved out gaming (the only thing I did all day) - I started devouring
 
 I did extensive research but never spent a penny on buying products from [Alibaba](https://www.alibaba.com/). In hindsight, that experience taught me a lot about communication, even though I practically did nothing.
 
-# University Plans
+## University Plans
 
 While exploring business ideas, I also had to think about my future education. In December 2020, I was applying to university. As mentioned earlier, my bad grades limited my options to low-ranked universities.
 
@@ -63,7 +63,7 @@ It's ridiculous how much you're punished for doing poorly in secondary school. A
 
 At this point, I wasn't even considering anything tech-related. Instead, I applied to Accounting/Finance courses because I wanted to be a finance bro. No trust fund, 6'0", brown eyes.
 
-# First Lines of Code
+## First Lines of Code
 
 Around the same time, I’d just watched [Fincher's](https://en.wikipedia.org/wiki/David_Fincher) masterpiece: [The Social Network](https://www.imdb.com/title/tt1285016/) (I know, how cliche), and let me say that it indeed did have an impact on me to start learning to code. The film just made it look so goddamn cool.
 
@@ -81,7 +81,7 @@ Eventually the stack felt limiting. Everything was vanilla and lacked the sauce.
 
 I thought "this programming stuff is pretty cool, I wonder if I could make a career out of it." After research, I declined my accounting offers and applied to study Computer Science at another low-ranked university. They accepted me, and I was set to start that September.
 
-# Building my Website
+## Building my Website
 
 As you could imagine, I never read books (except the _Diary of a Wimpy Kid_ series). The first "real" book I ever read was [_Think and Grow Rich_](https://en.wikipedia.org/wiki/Think_and_Grow_Rich).
 
@@ -108,7 +108,7 @@ One of his pieces of advice stuck with me:
 
 > But for making a new site? Don't let anyone sell you on some complex solution. They're saying you need a jumbo jet when really you need a bicycle. Do your HTML by hand like this, and then you'll know when your site has become so big that you need a little more automation to help manage changes or links to the hundreds of pages inside. But until then, no no no. Just do HTML by hand.
 
-# A Life-Changing Opportunity
+## A Life-Changing Opportunity
 
 Now on track to study computer science, I explored the job opportunities. Like any aspiring CS student, I researched the FAANG companies, dreaming of joining them one day.
 
@@ -132,7 +132,7 @@ After careful thinking, I deferred university and accepted the once-in-a-lifetim
 
 Before joining, I turned 18 and completed my BTEC.
 
-# The Google Years
+## The Google Years
 
 ![](/welcome-google.jpeg)
 
@@ -156,7 +156,7 @@ I worked on [WebAPKs](https://web.dev/articles/webapks), a feature letting users
 
 Our server handled tens of millions of monthly requests, sparking my interest in scalable backend architectures.
 
-# The Next Move
+## The Next Move
 
 My time at Google was invaluable. I worked with brilliant people and felt grateful being the dumbest in the room.
 
@@ -176,7 +176,7 @@ I went through a few interview rounds with the team, then my recruiter called me
 
 Funnily enough, I was also interviewing with another Elon company, [X](https://x.com). At this point I'd already received the Tesla offer, so I didn't proceed with the other rounds, but it was still a great learning experience.
 
-# Present Day
+## Present Day
 
 I've been at Tesla since April last year, and it has been one hell of a ride.
 
@@ -186,7 +186,7 @@ My team (I'm sure at least one of you is reading this post) is fantastic. We gen
 
 One thing I find unique about Tesla is that despite being worth over a trillion dollars, it still operates like a startup. I wanted to work in a smaller environment, but I still appreciate not having to deal with a startup going belly up.
 
-# Final Thoughts
+## Final Thoughts
 
 If you give someone the opportunity to lock in for a whole year, no outside contact, to change up their habits and entire behaviour, do you think they'd do it? I think under the right circumstances they will, especially if the change is drastic enough.
 

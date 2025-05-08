@@ -20,7 +20,7 @@ If you want to make money, sell your soul to SEO optimisation writing about nons
 
 Otherwise if you want to build a platform for decades to come, keep reading.
 
-# Backstory
+## Backstory
 
 Before I started this website back in [February 2021](https://github.com/pzrsa/parsam.io/commit/7927cccdda9843bdc7c4b17ff80626516d628301), I was writing book notes as I was trying to make reading a habit. The best way to remember the takeaways was to just write it in my own words. Didn't have to be perfect, I just had to be able to explain it in 3 sentences.
 
@@ -34,7 +34,7 @@ One point that stood out to me that Derek said is a philosophy I still stand by 
 
 Derek truly is a one of a kind person, and I'm grateful to have been able to email him on multiple occasions.
 
-# Benefits
+## Benefits
 
 After having this website for over a year, I've had a magnitude of noticeable benefits:
 
@@ -48,19 +48,19 @@ After having this website for over a year, I've had a magnitude of noticeable be
 - **Simply a non-monetary asset I take care of**. I do invest in stocks, but this website will stay with me forever and will continue to increase in my personal value.
 - **Growth is visible in each post or change I make to my website**. Nice feeling to reflect on every few months with the [Wayback Machine](https://web.archive.org/).
 
-# Show Your Work
+## Show Your Work
 
 A good book I recommend you read is [Show Your Work](https://austinkleon.com/show-your-work/) by [Austin Kleon](https://austinkleon.com/). I wrote a [book note](https://parsam.io/show-your-work) on it that I encourage you to check out. This was the book that plunged me to start my website, alongside Derek Sivers' actionable steps.
 
 It goes over why you don't need to be some sort of expert on something to share it. Just write about anything at any time. Heck right now I am writing this all over the place, but still just writing because I had this urge to write something that people might benefit from.
 
-# Independence
+## Independence
 
 When you have a website that you own and manage, you take back that digital freedom that we've all lost as social media websites grow in popularity.
 
 Technically you are still reliant on the hosting provider (I personally use [Vercel](https://vercel.com/) and think they are great), but I'm not trying to take it that far just to host my website.
 
-# Where To Start
+## Where To Start
 
 Some of the resources I talk about need some knowledge of the terminal. Yes you could build a website without any of that knowledge, but I'm confident you could figure out how to use one.
 
@@ -83,7 +83,7 @@ If you're technical and want to use a web framework I recommend:
 
    Everytime you create a new post, post it on all the social media sites and take advantage of the popular network without being reliant. Put it on Twitter, Substack, Medium, Reddit, Hacker News, Facebook (jk) and any other place you could. The aim is to have all of that traffic also pointed to your website.
 
-# Conclusion
+## Conclusion
 
 After you build your website, you'd be surprised to see how much you instantly stand out. People have gotten so used to these social media pages that when someone actually has a website they maintain, they're wowed.
 

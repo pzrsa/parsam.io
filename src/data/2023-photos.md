@@ -7,7 +7,7 @@ title: "Photos from 2023"
 
 ![](/shard-morning.jpeg)
 
-# Canal boat trip
+## Canal boat trip
 
 In July, my mates and I sailed a canal boat from near [Napton on the Hill](https://en.wikipedia.org/wiki/Napton_on_the_Hill) to [Foxton](https://en.wikipedia.org/wiki/Foxton,_Leicestershire), with the trip consisting of 7 days. We got to [Foxton Locks](https://en.wikipedia.org/wiki/Foxton_Locks) and back in 4 days, and spent the last 3 days in the Marina. Was such an amazing trip.
 
@@ -43,7 +43,7 @@ Reading Festival 2023 Imagine Dragons.
 
 ![](/hhkb.jpeg)
 
-# Copenhagen 🇩🇰
+## Copenhagen 🇩🇰
 
 ![](/copenhagen-horse.jpeg)
 
@@ -61,7 +61,7 @@ Reading Festival 2023 Imagine Dragons.
 
 ![](/marcus.jpeg)
 
-# La La Land at Royal Albert Hall
+## La La Land at Royal Albert Hall
 
 ![](/la-la-land.jpeg)
 

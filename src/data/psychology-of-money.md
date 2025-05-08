@@ -6,7 +6,7 @@ author: "Morgan Housel"
 description: "Doing well with money isn't necessarily about what you know. It's about how you behave. And behavior is hard to teach, even to really smart people. In The Psychology of Money, author Morgan Housel shares 19 short stories exploring the strange ways people think about money and teaches you how to make better sense of one of life's most important topics."
 ---
 
-# Summary
+## Summary
 
 - Everyone goes through life with unique experiences that shape their view on money. I might make a financial decision that seems odd to you simply because I'm playing a different financial game.
 - Getting money is one thing, but keeping it is another. Getting money requires you to take risks, whereas keeping it requires some form of paranoia. It's also important to understand that gaining money involves luck, and to not become discouraged if you can't consistently replicate returns.
@@ -14,7 +14,7 @@ description: "Doing well with money isn't necessarily about what you know. It's 
 - Be cautious of your burn rate, it's difficult to build wealth when you don't put a cap on the fun you have with your money.
 - No one cares about your possessions, despite how much you think it would grant you that respect or admiration. You'll earn those through authenticity and humility. Like why would you want to be around people who gravitate to your shiny new possessions anyways?
 
-# Thoughts
+## Thoughts
 
 Honestly, "The Psychology of Money" was a surprisingly good read since I'm not really a fan of finance books in general. I just think they're a load of BS, but I still took a shot at this one because a friend recommended it to me and I've seen the author, Morgan Housel, pop up on Twitter/X a few times.
 
@@ -26,7 +26,7 @@ You're better off following some suboptimal financial/workout plan that you're a
 
 It's a worthwhile read, but you're probably already familiar with most of the concepts detailed, which is a common theme amongst these finance books.
 
-# Quotes
+## Quotes
 
 > When things are going extremely well, realize it's not as good as you think. You are not invincible, and if you acknowledge that luck brought you success then you have to believe in luck's cousin, risk, which can turn your story around just as quickly.
 

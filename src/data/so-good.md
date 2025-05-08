@@ -5,13 +5,13 @@ author: "Cal Newport"
 description: "Cal Newport suggests that it should be a person's talent and skill - and not necessarily their passion - that determines their career path. Newport presents compelling scientific and contemporary case study evidence that the key to one's career success is to find out what you do well, then to put all of your efforts into that direction."
 ---
 
-# Book in 3 Sentences
+## Book in 3 Sentences
 
 1. Instead of listening to the vague cliché "follow your passion", you should first instead master rare and valuable skills, and then cash in those skills for the work you love.
 2. The craftsman mindset is crucial for building a meaningful career. It focuses on what you can offer the world, whereas following your passion focuses instead on what the world can offer you. First you adopt the craftsman mindset, then the passion will follow as you gain those rare and valuable skills.
 3. Avoid the trap of attempting to gain control over your career by pursuing an unsustainable idea. You can avoid this by making "little bets", where you make small executions that return concrete feedback. It's worth pursuing the mission if people take notice and are willing to pay you.
 
-# Impressions
+## Impressions
 
 We've all heard the term "follow your passion", and that usually comes from people in successful positions. For example, in [Steve Jobs' Stanford Commencement Address](https://youtu.be/UF8uR6Z6KLc) he spoke about the importance of having passion, which, don't get me wrong, is in theory correct. However, instead of listening to what he said in that speech, we should instead do what he did. Jobs was not as big of a tech wiz like Wozniak, but he occasionally dabbled into when it was necessary to make a quick buck as a teenager. So, I'm saying that relying on your passion to guide your career will result in disappointment. On the other hand, in the book '[Shoe Dog](https://parsam.io/shoe-dog)', Phil mentions the importance of having a passion for what you're doing. He portrayed this by not quitting during the dark days of Nike. In hindsight, what all of them say is correct. Yes, having a passion for what you're doing will result in huge returns when executed correctly, but I don't think anyone is suddenly born with a passion.
 
@@ -23,18 +23,18 @@ Well, Cal says that we need to adopt the "craftsman mindset". It essentially is 
 
 The biggest trap a lot of people fall into is attempting to gain control without having any career capital to cash in. There are many examples in the book, but a modern example are those "lifestyle influencers". What we see with these influencers is they have all the autonomy in the world, enjoying their life and posting it for others to see. But what we don't see is their frustration of not having any means to support their unconventional lifestyles. You don't want to end up in that situation where you can't even afford your next meal but put yourself blind to it.
 
-# Who Should Read It?
+## Who Should Read It?
 
 As this book is more catered to landing a successful career, new grads are going to gain the most value from it. But, that doesn't mean people already in their career shouldn't read it. I find that from what I've read, you might already be in the position of being good at your work, but have limited control over what to do next. On the other hand, a new graduate with no idea what to do would follow the "passion hypothesis" and end up regretting obtaining a degree with no use. Obviously, what I'm saying is by no means correct, but that's the best audience I can frame this book for as it fits perfectly for them. If you're someone my age and just turning 18, it wouldn't hurt to read this book as well.
 
-# How It Impacted Me
+## How It Impacted Me
 
 - Reframed the term "follow your passion" into pursuing something you've become good at, instead of diving head first into something you love but has no prospects.
 - Focused now on becoming truly great at some skills to offer people, instead of expecting people to pay me because I love what I do with no real purpose.
 - Embraced having my brain "melting" when learning new stuff. For example I've been getting into Deep Learning topics like AI, but it has been really difficult trying to grasp the technical concepts. After a while I've started to get a much better understanding of the benefits and limitations of AI instead of just following the buzzwords.
 - When I do end up working in a company, I'll be aware of trying to have the best possible control over my career. I don't want to have employers convincing me to invest the career capital back into their company. This would result in me gaining more money and prestige, instead of the control I'm aiming for.
 
-# Some Quotes
+## Some Quotes
 
 > Telling someone to “follow their passion” is not just an act of innocent optimism, but potentially the foundation for a career riddled with confusion and angst.
 

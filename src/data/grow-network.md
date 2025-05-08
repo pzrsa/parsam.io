@@ -27,7 +27,7 @@ in this post:
 2. be curious
 3. being young lets you off the hook
 
-# find people similar to you
+## find people similar to you
 
 my parents are Persian, and I've been made aware of how talented/vast we are when it comes to producing engineering talent.
 
@@ -35,7 +35,7 @@ so, naturally I pretty much only reached out to other Persians, since they'd be 
 
 if you're not from a thick culture, then honestly it doesn't make a huge difference, just something you have less to connect on.
 
-# be curious
+## be curious
 
 one mistake so many people make is sending some generic message like "hey, how's it going? I graduated at X so I'm applying for Y, would you give me a referral?". you're probably thinking that this sounds so uninspired, but you'd be surprised with how many messages I've received with a similar tone.
 
@@ -47,7 +47,7 @@ that could be a website, their resume/linkedin experience, their current company
 
 remember that the other person probably receives dozens of messages asking for referrals from desperate candidates, so don't send a generic msg further stating the obvious.
 
-# being young lets you off the hook
+## being young lets you off the hook
 
 now, I'm not saying this for you to do dumb stuff and then say "it's fine I'm young", but I am also saying that being young lets you off the hook in many cases.
 
