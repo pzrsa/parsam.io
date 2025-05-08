@@ -5,6 +5,7 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://parsam.io",
   vite: {
     plugins: [tailwindcss()],
     ssr: {
@@ -12,13 +13,4 @@ export default defineConfig({
     },
   },
   adapter: cloudflare(),
-  experimental: {
-    fonts: [
-      {
-        provider: fontProviders.google(),
-        name: "Work Sans",
-        cssVariable: "--font-work-sans",
-      },
-    ],
-  },
 });

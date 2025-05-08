@@ -47,13 +47,13 @@ I thought it would also be worth sharing the latest edition in my collection, th
 
 For the longest time my dream watch has been the _[Sinn 556A](https://www.sinn.de/en/Modell/556_A.htm)_. I think it's the finest of German engineering, plus it's something feasible to purchase (€1325.00 / ~£1150.00 / ~$1400.00).
 
-![](https://www.sinn.de/bilder/uhr/960x1280/556-A_V.jpg)
+![](https://www.sinn.de/out/pictures/generated/product/1/2340_3620_100/556.014_385_20_mit_band.png)
 
-![](https://www.sinn.de/bilder/uhr/960x1280/556-A_R.jpg)
+![](https://www.sinn.de/out/pictures/generated/product/5/900_1400_100/556.014_385_20_n.png)
 
 Prior to this, it was the Rolex Explorer 214270. As you can probably tell, there's a certain type of watch I go for: black and white, big numerals, and straight purity. The best way to put them is boringly beautiful.
 
-![Explorer](https://hodinkee.imgix.net/uploads/images/1556027813342-6fqp6pww2nu-7b47bd6f571c2faa90334e04609f9d45/3S3A9616.jpg)
+![Explorer](https://hodinkee.imgix.net/uploads/images/1556028736751-zemdcenll7a-00a5730e971e099ab90038731136c905/L1010026-Edit.jpg)
 
 (Source: [Hodinkee](https://www.hodinkee.com/articles/rolex-explorer-214270-review))
 
@@ -61,4 +61,4 @@ Prior to this, it was the Rolex Explorer 214270. As you can probably tell, there
 
 You probably noticed the recurring theme across all my watches: they're made by Japanese companies.
 
-Honestly though, I have no real conclusion. I just wanted to say I hope you enjoyed the glimpse into one of the hobbies I'm super passionate about. I'll definitely be updating the blog with any new timepieces (one day the Sinn 556A!), so keep an eye out on that by subscribing to my [RSS](https://parsam.io/feed.atom) feed.
+Honestly though, I have no real conclusion. I just wanted to say I hope you enjoyed the glimpse into one of the hobbies I'm super passionate about. I'll definitely be updating the blog with any new timepieces (one day the Sinn 556A!), so keep an eye out on that by subscribing to my [RSS](https://parsam.io/rss.xml) feed.

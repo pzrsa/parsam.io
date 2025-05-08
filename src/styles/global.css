@@ -11,10 +11,6 @@
     --color-black: #000;
 }
 
-@theme inline {
-    --font-sans: var(--font-work-sans);
-}
-
 ::selection {
     @apply bg-black text-white;
 }
@@ -24,10 +20,6 @@
     h2,
     h3 {
         @apply font-bold;
-    }
-
-    a {
-        @apply text-blue-700 underline decoration-2 hover:bg-black hover:text-white;
     }
 
     img {
