@@ -10,14 +10,7 @@ const base = "text-blue-600 hover:text-blue-800";
     <span>
         <strong class="mr-3">Path</strong> ~ /
         <a href="/" class={base}>home</a> /
-        {
-            Astro.url.pathname === "/blog" ? (
-                <strong>blog</strong>
-            ) : (
-                // prettier-ignore
-                <a href="/blog" class={base}>blog</a>
-            )
-        }
+        <a href="/blog" class={base}>blog</a>
         {
             title ? (
                 <span>
