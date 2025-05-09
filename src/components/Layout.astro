@@ -4,12 +4,13 @@ import Nav from "./Nav.astro";
 
 interface Props {
     title?: string;
+    post?: boolean;
 }
 
 const baseTitle = "Parsa Mesgarha";
 const description = "Software Engineer at Tesla";
 
-const { title } = Astro.props;
+const { title, post } = Astro.props;
 
 const fullTitle = title ? `${title} - ${baseTitle}` : baseTitle;
 ---
@@ -48,8 +49,8 @@ const fullTitle = title ? `${title} - ${baseTitle}` : baseTitle;
         <meta name="twitter:title" content={fullTitle} />
         <meta name="twitter:description" content={description} />
     </head>
-    <body class="max-w-2xl mx-auto py-8 px-6">
-        <Nav />
+    <body class="max-w-2xl py-8 px-6">
+        <Nav title={post ? title : undefined} />
         <slot />
     </body>
 </html>

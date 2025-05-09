@@ -11,26 +11,23 @@ const posts = await getCollection("blog");
 posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
 const newestPosts = posts.slice(0, 5);
+
+const linksClass = "w-fit text-blue-600 hover:text-blue-800";
 ---
 
 <Layout>
-    <div>
-        <div class="flex flex-row items-center gap-4 mb-6">
-            <div class="flex-shrink-0">
-                <a href="https://x.com/pzrsaa" target="_blank">
-                    <Image
-                        alt="Parsa Mesgarha"
-                        src={me}
-                        height={80}
-                        width={80}
-                        loading="eager"
-                    />
-                </a>
-            </div>
-            <div class="w-fit">
-                <NowPlaying server:defer />
-            </div>
-        </div>
+    <h1 class="text-xl mb-6">Parsa Mesgarha</h1>
+    <div class="flex flex-row items-center gap-4 mb-6">
+        <a href="https://x.com/pzrsaa" target="_blank">
+            <Image
+                alt="Parsa Mesgarha"
+                src={me}
+                height={80}
+                width={80}
+                loading="eager"
+            />
+        </a>
+        <NowPlaying server:defer />
     </div>
     <Prose>
         <p>
@@ -103,59 +100,63 @@ const newestPosts = posts.slice(0, 5);
             <SubscribeForm />
             <h3>Links</h3>
             <div class="not-prose grid grid-cols-3 sm:grid-cols-4">
-                <a class="w-fit" href="https://x.com/pzrsaa" target="_blank"
-                    >Twitter/X</a
-                >
-                <a class="w-fit" href="https://github.com/pzrsa" target="_blank"
-                    >GitHub</a
+                <a
+                    class={linksClass}
+                    href="https://x.com/pzrsaa"
+                    target="_blank">Twitter/X</a
                 >
                 <a
-                    class="w-fit"
+                    class={linksClass}
+                    href="https://github.com/pzrsa"
+                    target="_blank">GitHub</a
+                >
+                <a
+                    class={linksClass}
                     href="https://www.youtube.com/@pzrsa"
                     target="_blank">YouTube</a
                 >
                 <a
-                    class="w-fit"
+                    class={linksClass}
                     href="https://www.instagram.com/parsamesgarha"
                     target="_blank"
                 >
                     Instagram
                 </a>
                 <a
-                    class="w-fit"
+                    class={linksClass}
                     href="https://www.linkedin.com/in/parsamesgarha"
                     target="_blank"
                 >
                     LinkedIn
                 </a>
                 <a
-                    class="w-fit"
+                    class={linksClass}
                     href="https://github.com/pzrsa/parsam.io"
                     target="_blank"
                 >
                     Source Code
                 </a>
                 <a
-                    class="w-fit"
+                    class={linksClass}
                     href="https://letterboxd.com/pzrsa/"
                     target="_blank"
                 >
                     Letterboxd
                 </a>
                 <a
-                    class="w-fit"
+                    class={linksClass}
                     href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
                     target="_blank"
                 >
                     Spotify
                 </a>
                 <a
-                    class="w-fit"
+                    class={linksClass}
                     href="https://www.last.fm/user/pzrsa"
                     target="_blank">Last.fm</a
                 >
                 <a
-                    class="w-fit"
+                    class={linksClass}
                     href="https://monkeytype.com/profile/pzrsa"
                     target="_blank"
                 >

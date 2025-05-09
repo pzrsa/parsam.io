@@ -36,7 +36,7 @@ const spotifySVG = `
         </a>
     ) : (
         <a href={data.songUrl} target="_blank" class={base}>
-            <span>
+            <span class="max-w-50 line-clamp-1 sm:max-w-lg sm:line-clamp-2">
                 Playing <span class="font-bold">{data.title}</span> by
                 <span class="font-bold">{data.artist}</span>
             </span>

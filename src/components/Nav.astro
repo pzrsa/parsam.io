@@ -1,12 +1,31 @@
 ---
-const name = "Parsa Mesgarha";
+interface Props {
+    title?: string;
+}
+const { title } = Astro.props;
+const base = "text-blue-600 hover:text-blue-800";
 ---
 
-<nav class="flex mb-6 items-center">
-    <span class="flex-1">
-        <a href={"/"} class="font-bold text-lg">
-            {name}
-        </a>
+<nav class="flex pb-2 mb-6 flex-col border-b">
+    <span>
+        <strong class="mr-3">Path</strong> ~ /
+        <a href="/" class={base}>home</a> /
+        {
+            Astro.url.pathname === "/blog" ? (
+                <strong>blog</strong>
+            ) : (
+                // prettier-ignore
+                <a href="/blog" class={base}>blog</a>
+            )
+        }
+        {
+            title ? (
+                <span>
+                    / <strong>{title}</strong>
+                </span>
+            ) : (
+                ""
+            )
+        }
     </span>
-    <a href={"/blog"} class="font-bold text-lg"> blog </a>
 </nav>

@@ -1,7 +1,12 @@
 ---
-
+interface Props {
+    class?: string;
+}
 ---
 
-<div class="prose">
+<div
+    class={"prose prose-a:text-blue-600 prose-a:hover:text-blue-800 " +
+        Astro.props.class}
+>
     <slot />
 </div>
