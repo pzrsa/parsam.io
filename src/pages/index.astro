@@ -5,11 +5,9 @@ import me from "../assets/avatar.jpeg";
 import Prose from "../components/Prose.astro";
 import NowPlaying from "../components/NowPlaying.astro";
 import SubscribeForm from "../components/SubscribeForm.astro";
-import { getCollection } from "astro:content";
+import { getBlogPosts } from "../content.config";
 
-const posts = await getCollection("blog");
-posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
-
+const posts = await getBlogPosts();
 const newestPosts = posts.slice(0, 5);
 
 const linksClass = "w-fit text-blue-600 hover:text-blue-800";

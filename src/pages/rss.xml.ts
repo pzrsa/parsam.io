@@ -1,14 +1,13 @@
 import rss from "@astrojs/rss";
 import type { APIContext } from "astro";
-import { getCollection } from "astro:content";
 import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
+import { getBlogPosts } from "../content.config";
 
 const parser = new MarkdownIt();
 
 export async function GET(context: APIContext) {
-  const posts = await getCollection("blog");
-  posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+  const posts = await getBlogPosts();
   return rss({
     title: "Parsa Mesgarha",
     description: "",

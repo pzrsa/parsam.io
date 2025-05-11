@@ -1,9 +1,8 @@
 ---
-import { getCollection } from "astro:content";
 import Layout from "../components/Layout.astro";
+import { getBlogPosts } from "../content.config";
 
-const posts = await getCollection("blog");
-posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const posts = await getBlogPosts();
 
 const rssSVG = `
 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="#111">
