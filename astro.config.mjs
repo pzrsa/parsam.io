@@ -12,5 +12,8 @@ export default defineConfig({
       external: ["node:buffer"],
     },
   },
+  image: {
+    domains: ["i.scdn.co", "image.tmdb.org"],
+  },
   adapter: cloudflare(),
 });
