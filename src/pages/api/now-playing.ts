@@ -7,19 +7,10 @@ const NOW_PLAYING_URL =
   "https://api.spotify.com/v1/me/player/currently-playing";
 const TOKEN_URL = "https://accounts.spotify.com/api/token";
 
-export const GET: APIRoute = async ({ locals }) => {
-  const runtime = locals.runtime;
-  const isProd = import.meta.env.PROD;
-
-  const client_id = isProd
-    ? runtime.env.SPOTIFY_CLIENT_ID
-    : import.meta.env.SPOTIFY_CLIENT_ID;
-  const client_secret = isProd
-    ? runtime.env.SPOTIFY_CLIENT_SECRET
-    : import.meta.env.SPOTIFY_CLIENT_SECRET;
-  const refresh_token = isProd
-    ? runtime.env.SPOTIFY_REFRESH_TOKEN
-    : import.meta.env.SPOTIFY_REFRESH_TOKEN;
+export const GET: APIRoute = async () => {
+  const client_id = import.meta.env.SPOTIFY_CLIENT_ID;
+  const client_secret = import.meta.env.SPOTIFY_CLIENT_SECRET;
+  const refresh_token = import.meta.env.SPOTIFY_REFRESH_TOKEN;
 
   const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
   const tokenRes = await fetch(TOKEN_URL, {
