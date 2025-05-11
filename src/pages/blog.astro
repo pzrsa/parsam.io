@@ -1,6 +1,6 @@
 ---
 import Layout from "../components/Layout.astro";
-import { getBlogPosts } from "../content.config";
+import { getBlogPosts } from "../lib/utils";
 
 const posts = await getBlogPosts();
 

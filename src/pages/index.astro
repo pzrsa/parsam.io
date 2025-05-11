@@ -5,8 +5,8 @@ import me from "../assets/avatar.jpeg";
 import Prose from "../components/Prose.astro";
 import NowPlaying from "../components/NowPlaying.astro";
 import SubscribeForm from "../components/SubscribeForm.astro";
-import { getBlogPosts } from "../content.config";
 import { getCollection } from "astro:content";
+import { getBlogPosts } from "../lib/utils";
 
 const posts = await getBlogPosts();
 const newestPosts = posts.slice(0, 5);

@@ -41,9 +41,3 @@ const shows = defineCollection({
 });
 
 export const collections = { blog, albums, films, shows };
-
-export const getBlogPosts = async () => {
-  const posts = await getCollection("blog");
-  posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
-  return posts;
-};
