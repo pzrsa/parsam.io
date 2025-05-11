@@ -23,7 +23,7 @@
     }
 
     a {
-        @apply hover:underline decoration-2 font-medium;
+        @apply hover:underline hover:text-blue-600 decoration-2 font-medium;
     }
 
     img {

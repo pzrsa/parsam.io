@@ -10,7 +10,7 @@ import { getBlogPosts } from "../content.config";
 const posts = await getBlogPosts();
 const newestPosts = posts.slice(0, 5);
 
-const linksClass = "w-fit text-blue-600 hover:text-blue-800";
+const linksClass = "w-fit";
 ---
 
 <Layout>
@@ -34,18 +34,21 @@ const linksClass = "w-fit text-blue-600 hover:text-blue-800";
         </p>
         <p>
             I'm currently working as a Software Engineer at
-            <a href="https://www.tesla.com" target="_blank">
-                <span class="text-tesla-red">Tesla</span></a
-            > in Berlin. Prior to this, I was at{" "}
-            <a href="https://google.com" target="_blank">
-                <span class="text-google-blue">G</span><span
-                    class="text-google-red">o</span
-                ><span class="text-google-yellow">o</span><span
-                    class="text-google-blue">g</span
-                ><span class="text-google-green">l</span><span
-                    class="text-google-red">e</span
-                >
-            </a>
+            <span class="prose-a:text-tesla-red"
+                ><a href="https://www.tesla.com" target="_blank">Tesla</a>
+            </span>
+            in Berlin. Prior to this, I was at{" "}
+            <span class="prose-a:decoration-google-yellow"
+                ><a href="https://google.com" target="_blank">
+                    <span class="text-google-blue">G</span><span
+                        class="text-google-red">o</span
+                    ><span class="text-google-yellow">o</span><span
+                        class="text-google-blue">g</span
+                    ><span class="text-google-green">l</span><span
+                        class="text-google-red">e</span
+                    ></a
+                ></span
+            >
             for 2 years, primarily contributing to the the
             <a href="https://web.dev/" target="_blank">Web Platform</a>
             through
