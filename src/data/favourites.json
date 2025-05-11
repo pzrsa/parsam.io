@@ -61,7 +61,7 @@
       "imageID": "ab67616d0000b273d0bbd3ea2ec554f17a6603cc"
     }
   ],
-  "films": [
+  "filmsShows": [
     {
       "id": "tt1285016",
       "title": "The Social Network",
@@ -91,9 +91,7 @@
       "id": "tt1392190",
       "title": "Mad Max: Fury Road",
       "imageID": "8tZYtuWezp8JbcsvHYO0O46tFbo"
-    }
-  ],
-  "shows": [
+    },
     {
       "id": "tt11126994",
       "title": "Arcane",

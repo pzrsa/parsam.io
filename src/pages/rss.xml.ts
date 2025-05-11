@@ -2,7 +2,7 @@ import rss from "@astrojs/rss";
 import type { APIContext } from "astro";
 import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
-import { getBlogPosts } from "../lib/utils";
+import { getBlogPosts } from "../data/utils";
 
 const parser = new MarkdownIt();
 

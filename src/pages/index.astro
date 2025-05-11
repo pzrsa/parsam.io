@@ -6,15 +6,14 @@ import Prose from "../components/Prose.astro";
 import NowPlaying from "../components/NowPlaying.astro";
 import SubscribeForm from "../components/SubscribeForm.astro";
 import { getCollection } from "astro:content";
-import { getBlogPosts } from "../lib/utils";
+import { getBlogPosts } from "../data/utils";
 
 const posts = await getBlogPosts();
 const newestPosts = posts.slice(0, 5);
 
-const [albums, films, shows] = await Promise.all([
+const [albums, filmsShows] = await Promise.all([
     getCollection("albums"),
-    getCollection("films"),
-    getCollection("shows"),
+    getCollection("filmsShows"),
 ]);
 
 const linksClass = "w-fit";
@@ -199,19 +198,19 @@ const linksClass = "w-fit";
                         ))
                     }
                 </div>
-                <h3>Films</h3>
+                <h3>Films/Shows</h3>
                 <div
                     class="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-6 not-prose"
                 >
                     {
-                        films.map((film) => (
+                        filmsShows.map((filmShow) => (
                             <a
-                                href={`https://www.imdb.com/title/${film.id}`}
+                                href={`https://www.imdb.com/title/${filmShow.id}`}
                                 target="_blank"
                             >
                                 <Image
-                                    alt={film.data.title}
-                                    src={`https://image.tmdb.org/t/p/original/${film.data.imageID}.jpg`}
+                                    alt={filmShow.data.title}
+                                    src={`https://image.tmdb.org/t/p/original/${filmShow.data.imageID}.jpg`}
                                     width={624}
                                     height={320}
                                 />
@@ -227,26 +226,6 @@ const linksClass = "w-fit";
                         Letterboxd</a
                     >.
                 </p>
-                <h3>Shows</h3>
-                <div
-                    class="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-6 not-prose"
-                >
-                    {
-                        shows.map((show) => (
-                            <a
-                                href={`https://www.imdb.com/title/${show.id}`}
-                                target="_blank"
-                            >
-                                <Image
-                                    alt={show.data.title}
-                                    src={`https://image.tmdb.org/t/p/original/${show.data.imageID}.jpg`}
-                                    width={624}
-                                    height={320}
-                                />{" "}
-                            </a>
-                        ))
-                    }
-                </div>
             </div>
         </div>
     </Prose>

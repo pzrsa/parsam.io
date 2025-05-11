@@ -1,4 +1,4 @@
-import { defineCollection, getCollection, z } from "astro:content";
+import { defineCollection, z } from "astro:content";
 import { file, glob } from "astro/loaders";
 
 const blog = defineCollection({
@@ -21,23 +21,14 @@ const albums = defineCollection({
   }),
 });
 
-const filmShowSchema = z.object({
-  title: z.string(),
-  imageID: z.string(),
-});
-
-const films = defineCollection({
+const filmsShows = defineCollection({
   loader: file("src/data/favourites.json", {
-    parser: (text) => JSON.parse(text).films,
+    parser: (text) => JSON.parse(text).filmsShows,
   }),
-  schema: filmShowSchema,
+  schema: z.object({
+    title: z.string(),
+    imageID: z.string(),
+  }),
 });
 
-const shows = defineCollection({
-  loader: file("src/data/favourites.json", {
-    parser: (text) => JSON.parse(text).shows,
-  }),
-  schema: filmShowSchema,
-});
-
-export const collections = { blog, albums, films, shows };
+export const collections = { blog, albums, filmsShows };
