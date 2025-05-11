@@ -6,9 +6,16 @@ import Prose from "../components/Prose.astro";
 import NowPlaying from "../components/NowPlaying.astro";
 import SubscribeForm from "../components/SubscribeForm.astro";
 import { getBlogPosts } from "../content.config";
+import { getCollection } from "astro:content";
 
 const posts = await getBlogPosts();
 const newestPosts = posts.slice(0, 5);
+
+const [albums, films, shows] = await Promise.all([
+    getCollection("albums"),
+    getCollection("films"),
+    getCollection("shows"),
+]);
 
 const linksClass = "w-fit";
 ---
@@ -170,83 +177,77 @@ const linksClass = "w-fit";
                     <a href={"/tesla"}>I joined Tesla (and moved to Berlin)</a>.
                 </p>
             </div>
-            <!-- <div>
-            <h2>Favourites</h2>
-            <h3>Albums</h3>
-            <div class="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">
-        {
-          FAVOURITE_ALBUMS.map((album) => (
-            <a
-              href={`https://open.spotify.com/album/${album.spotifyID}`}
-              class="group"
-              key={album.title}
-              rel="prefetch noreferrer"
-              target="_blank"
-            >
-              <div class="aspect-w-1 aspect-h-1 cursor-pointer shadow-2xl">
-                <Image
-                  alt={album.title}
-                  src={`https://i.scdn.co/image/${album.spotifyImageID}`}
-                  fill
-                />
-              </div>
-            </a>
-          ))
-        }
-      </div>
-            <h3>Films</h3>
-            <div class="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">
-        {
-          FAVOURITE_FILMS.map((film) => (
-            <a
-              href={`https://www.imdb.com/title/${film.imdbID}`}
-              class="group"
-              key={film.title}
-              rel="prefetch noreferrer"
-              target="_blank"
-            >
-              <div class="aspect-w-2 aspect-h-3 cursor-pointer shadow-2xl">
-                <Image
-                  alt={film.title}
-                  src={`https://image.tmdb.org/t/p/original/${film.tmdbImageID}.jpg`}
-                  fill
-                />
-              </div>
-            </a>
-          ))
-        }
-      </div>
-            <p>
-                You can see the rest on my{" "}
-                <a
-                    href="https://letterboxd.com/pzrsa/likes/films/by/date/size/large/"
+            <div>
+                <h2>Favourites</h2>
+                <h3>Albums</h3>
+                <div
+                    class="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-6 not-prose"
                 >
-                    Letterboxd</a
-                >.
-            </p>
-            <h3>Shows</h3>
-            <div class="grid grid-cols-4 gap-x-6 gap-y-6 not-prose">
-        {
-          FAVOURITE_SHOWS.map((show) => (
-            <a
-              href={`https://www.imdb.com/title/${show.imdbID}`}
-              class="group"
-              key={show.title}
-              rel="prefetch noreferrer"
-              target="_blank"
-            >
-              <div class="aspect-w-2 aspect-h-3 cursor-pointer shadow-2xl">
-                <Image
-                  alt={show.title}
-                  src={`https://image.tmdb.org/t/p/original/${show.tmdbImageID}.jpg`}
-                  fill
-                />
-              </div>
-            </a>
-          ))
-        }
-      </div>
-        </div> -->
+                    {
+                        albums.map((album) => (
+                            <a
+                                href={`https://open.spotify.com/album/${album.id}`}
+                                target="_blank"
+                            >
+                                <Image
+                                    alt={album.data.title}
+                                    src={`https://i.scdn.co/image/${album.data.imageID}`}
+                                    width={624}
+                                    height={624}
+                                />
+                            </a>
+                        ))
+                    }
+                </div>
+                <h3>Films</h3>
+                <div
+                    class="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-6 not-prose"
+                >
+                    {
+                        films.map((film) => (
+                            <a
+                                href={`https://www.imdb.com/title/${film.id}`}
+                                target="_blank"
+                            >
+                                <Image
+                                    alt={film.data.title}
+                                    src={`https://image.tmdb.org/t/p/original/${film.data.imageID}.jpg`}
+                                    width={624}
+                                    height={320}
+                                />
+                            </a>
+                        ))
+                    }
+                </div>
+                <p>
+                    You can see the rest on my{" "}
+                    <a
+                        href="https://letterboxd.com/pzrsa/likes/films/by/date/size/large/"
+                    >
+                        Letterboxd</a
+                    >.
+                </p>
+                <h3>Shows</h3>
+                <div
+                    class="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-6 not-prose"
+                >
+                    {
+                        shows.map((show) => (
+                            <a
+                                href={`https://www.imdb.com/title/${show.id}`}
+                                target="_blank"
+                            >
+                                <Image
+                                    alt={show.data.title}
+                                    src={`https://image.tmdb.org/t/p/original/${show.data.imageID}.jpg`}
+                                    width={624}
+                                    height={320}
+                                />{" "}
+                            </a>
+                        ))
+                    }
+                </div>
+            </div>
         </div>
     </Prose>
 </Layout>
