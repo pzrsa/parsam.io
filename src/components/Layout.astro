@@ -24,6 +24,12 @@ const fullTitle = title ? `${title} - ${baseTitle}` : baseTitle;
             href={new URL("rss.xml", Astro.site)}
         />
         <link rel="icon" href="/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-icon.png"
+            type="image/png"
+        />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{fullTitle}</title>
