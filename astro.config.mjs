@@ -5,7 +5,7 @@ import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://parsam-io.pages.dev",
+  site: "https://parsam.io",
   vite: {
     plugins: [tailwindcss()],
     ssr: {
