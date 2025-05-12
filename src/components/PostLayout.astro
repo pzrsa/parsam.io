@@ -1,0 +1,59 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { render } from "astro:content";
+import Layout from "./Layout.astro";
+import Prose from "./Prose.astro";
+import SubscribeForm from "./SubscribeForm.astro";
+
+interface Props {
+    post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout title={post.data.title} post>
+    <section>
+        <div class="mb-6">
+            <h1 class="text-xl mb-2">
+                <span class="font-extrabold">
+                    {post.data.title}
+                </span>
+                <span class="font-medium">
+                    {post.data.author ? `(${post.data.author})` : ""}
+                </span>
+            </h1>
+            <div class="flex gap-3 items-center">
+                <span class="flex-1 text-zinc-600">
+                    {
+                        post.data.date.toLocaleDateString("en-GB", {
+                            day: "numeric",
+                            month: "long",
+                            year: "numeric",
+                        })
+                    }
+                </span>
+            </div>
+        </div>
+        <article>
+            <Prose><Content /></Prose>
+        </article>
+        <Prose class="prose-h3:text-lg mt-6 pt-8 border-t">
+            <h3>Enjoyed this post?</h3>
+            <SubscribeForm />
+            <p>And please consider...</p>
+            <ul>
+                <li>
+                    following me on{" "}
+                    <a href="https://x.com/pzrsaa">Twitter/X</a>
+                </li>
+                <li>sharing this post with a friend</li>
+                <li>
+                    sharing your thoughts over{" "}
+                    <a href="mailto:hi@parsam.io">email</a>
+                </li>
+            </ul>
+        </Prose>
+    </section>
+</Layout>

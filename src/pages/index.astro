@@ -1,0 +1,232 @@
+---
+import Layout from "../components/Layout.astro";
+import { Image } from "astro:assets";
+import me from "../assets/avatar.jpeg";
+import Prose from "../components/Prose.astro";
+import NowPlaying from "../components/NowPlaying.astro";
+import SubscribeForm from "../components/SubscribeForm.astro";
+import { getCollection } from "astro:content";
+import { getBlogPosts } from "../data/utils";
+
+const posts = await getBlogPosts();
+const newestPosts = posts.slice(0, 5);
+
+const [albums, filmsShows] = await Promise.all([
+    getCollection("albums"),
+    getCollection("filmsShows"),
+]);
+
+const linksClass = "w-fit";
+---
+
+<Layout>
+    <h1 class="text-xl mb-6">Parsa Mesgarha</h1>
+    <div class="flex flex-row items-center gap-4 mb-6">
+        <a href="https://x.com/pzrsaa" target="_blank">
+            <Image
+                alt="Parsa Mesgarha"
+                src={me}
+                height={80}
+                width={80}
+                loading="eager"
+            />
+        </a>
+        <NowPlaying server:defer />
+    </div>
+    <Prose>
+        <p>
+            I'm 21 years old, Persian, born in England, and have spent the
+            majority of my life in London.
+        </p>
+        <p>
+            I'm currently working as a Software Engineer at
+            <span class="prose-a:text-tesla-red"
+                ><a href="https://www.tesla.com" target="_blank">Tesla</a>
+            </span>
+            in Berlin. Prior to this, I was at{" "}
+            <span class="prose-a:decoration-google-yellow"
+                ><a href="https://google.com" target="_blank">
+                    <span class="text-google-blue">G</span><span
+                        class="text-google-red">o</span
+                    ><span class="text-google-yellow">o</span><span
+                        class="text-google-blue">g</span
+                    ><span class="text-google-green">l</span><span
+                        class="text-google-red">e</span
+                    ></a
+                ></span
+            >
+            for 2 years, primarily contributing to the the
+            <a href="https://web.dev/" target="_blank">Web Platform</a>
+            through
+            <a href="https://www.chromium.org/Home/" target="_blank">Chrome</a>
+            and
+            <a href="https://source.android.com/" target="_blank">Android</a>.
+        </p>
+        <p>
+            I have a <a href="/blog">blog</a> where I write about stuff I find interesting
+            enough to share.
+        </p>
+        <p>
+            If anything here piques your interest, don't hesitate to{" "}
+            <a href="mailto:hi@parsam.io" target="_blank">reach out</a>. I love
+            meeting new people!
+        </p>
+        <div>
+            <h3>Newest Posts</h3>
+            <ul class="flex flex-col gap-4 not-prose">
+                {
+                    newestPosts.map((post) => (
+                        <li>
+                            <span class="flex gap-1">
+                                <span class="flex-1">
+                                    <a href={`/${post.id}`}>
+                                        <span class="font-bold">
+                                            {post.data.title}
+                                        </span>
+                                        {post.data.author && (
+                                            <span> ({post.data.author})</span>
+                                        )}
+                                    </a>
+                                </span>
+                                <span>
+                                    {post.data.date.toLocaleDateString(
+                                        "en-GB",
+                                        {
+                                            day: "numeric",
+                                            month: "short",
+                                            year: "2-digit",
+                                        },
+                                    )}
+                                </span>
+                            </span>
+                        </li>
+                    ))
+                }
+            </ul>
+            <h4>Newsletter</h4>
+            <SubscribeForm />
+            <h3>Links</h3>
+            <div class="not-prose grid grid-cols-3 sm:grid-cols-4">
+                <a
+                    class={linksClass}
+                    href="https://x.com/pzrsaa"
+                    target="_blank">Twitter/X</a
+                >
+                <a
+                    class={linksClass}
+                    href="https://github.com/pzrsa"
+                    target="_blank">GitHub</a
+                >
+                <a
+                    class={linksClass}
+                    href="https://www.youtube.com/@pzrsa"
+                    target="_blank">YouTube</a
+                >
+                <a
+                    class={linksClass}
+                    href="https://www.instagram.com/parsamesgarha"
+                    target="_blank"
+                >
+                    Instagram
+                </a>
+                <a
+                    class={linksClass}
+                    href="https://www.linkedin.com/in/parsamesgarha"
+                    target="_blank"
+                >
+                    LinkedIn
+                </a>
+                <a
+                    class={linksClass}
+                    href="https://github.com/pzrsa/parsam.io"
+                    target="_blank"
+                >
+                    Source Code
+                </a>
+                <a
+                    class={linksClass}
+                    href="https://letterboxd.com/pzrsa/"
+                    target="_blank"
+                >
+                    Letterboxd
+                </a>
+                <a
+                    class={linksClass}
+                    href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
+                    target="_blank"
+                >
+                    Spotify
+                </a>
+                <a
+                    class={linksClass}
+                    href="https://www.last.fm/user/pzrsa"
+                    target="_blank">Last.fm</a
+                >
+                <a
+                    class={linksClass}
+                    href="https://monkeytype.com/profile/pzrsa"
+                    target="_blank"
+                >
+                    Monkeytype
+                </a>
+            </div>
+            <div>
+                <h2>Now</h2>
+                <p>
+                    <a href={"/tesla"}>I joined Tesla (and moved to Berlin)</a>.
+                </p>
+            </div>
+            <div>
+                <h2>Favourites</h2>
+                <h3>Albums</h3>
+                <div
+                    class="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-6 not-prose"
+                >
+                    {
+                        albums.map((album) => (
+                            <a
+                                href={`https://open.spotify.com/album/${album.id}`}
+                                target="_blank"
+                            >
+                                <Image
+                                    alt={album.data.title}
+                                    src={`https://i.scdn.co/image/${album.data.imageID}`}
+                                    width={624}
+                                    height={624}
+                                />
+                            </a>
+                        ))
+                    }
+                </div>
+                <h3>Films/Shows</h3>
+                <div
+                    class="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-6 not-prose"
+                >
+                    {
+                        filmsShows.map((filmShow) => (
+                            <a
+                                href={`https://www.imdb.com/title/${filmShow.id}`}
+                                target="_blank"
+                            >
+                                <Image
+                                    alt={filmShow.data.title}
+                                    src={`https://image.tmdb.org/t/p/original/${filmShow.data.imageID}.jpg`}
+                                    width={624}
+                                    height={320}
+                                />
+                            </a>
+                        ))
+                    }
+                </div>
+                <p>
+                    You can see the rest on my{" "}
+                    <a
+                        href="https://letterboxd.com/pzrsa/likes/films/by/date/size/large/"
+                    >
+                        Letterboxd</a
+                    >.
+                </p>
+            </div>
+        </div>
+    </Prose>
+</Layout>

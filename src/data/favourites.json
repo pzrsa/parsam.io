@@ -1,0 +1,131 @@
+{
+  "albums": [
+    {
+      "id": "6pwuKxMUkNg673KETsXPUV",
+      "title": "KIDS SEE GHOSTS",
+      "imageID": "ab67616d0000b273013c00ee367dd85396f79c82"
+    },
+    {
+      "id": "5zi7WsKlIiUXv09tbGLKsE",
+      "title": "IGOR",
+      "imageID": "ab67616d0000b2737005885df706891a3c182a57"
+    },
+    {
+      "id": "748dZDqSZy6aPXKcI9H80u",
+      "title": "good kid, m.A.A.d city",
+      "imageID": "ab67616d0000b27378de8b28de36a74afc0348b5"
+    },
+    {
+      "id": "20r762YmB5HeofjMCiPMLv",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "imageID": "ab67616d0000b273d9194aa18fa4c9362b47464f"
+    },
+    {
+      "id": "7D2NdGvBHIavgLhmcwhluK",
+      "title": "Yeezus",
+      "imageID": "ab67616d0000b2731dacfbc31cc873d132958af9"
+    },
+    {
+      "id": "7gsWAHLeT0w7es6FofOXk1",
+      "title": "The Life Of Pablo",
+      "imageID": "ab67616d0000b2732a7db835b912dc5014bd37f4"
+    },
+    {
+      "id": "4SZko61aMnmgvNhfhgTuD3",
+      "title": "Graduation",
+      "imageID": "ab67616d0000b27326f7f19c7f0381e56156c94a"
+    },
+    {
+      "id": "7Ks4VCY1wFebnOdJrM13t6",
+      "title": "To Pimp A Butterfly",
+      "imageID": "ab67616d0000b273cdb645498cd3d8a2db4d05e1"
+    },
+    {
+      "id": "4m2880jivSbbyEGAKfITCa",
+      "title": "Random Access Memories",
+      "imageID": "ab67616d0000b2739b9b36b0e22870b9f542d937"
+    },
+    {
+      "id": "2Ek1q2haOnxVqhvVKqMvJe",
+      "title": "ye",
+      "imageID": "ab67616d0000b2730cd942c1a864afa4e92d04f2"
+    },
+    {
+      "id": "4qZBW3f2Q8y0k1A84d4iAO",
+      "title": "My Dear Melancholy,",
+      "imageID": "ab67616d0000b2731f6a2a40bb692936879db730"
+    },
+    {
+      "id": "5lka5RUbLVQGO94mKAPMRO",
+      "title": "An Evening With Silk Sonic",
+      "imageID": "ab67616d0000b273d0bbd3ea2ec554f17a6603cc"
+    }
+  ],
+  "filmsShows": [
+    {
+      "id": "tt1285016",
+      "title": "The Social Network",
+      "imageID": "n0ybibhJtQ5icDqTp8eRytcIHJx"
+    },
+    {
+      "id": "tt0156887",
+      "title": "Perfect Blue",
+      "imageID": "bee6ZQVaSAUhlBinsP9In8x8vO1"
+    },
+    {
+      "id": "tt3783958",
+      "title": "La La Land",
+      "imageID": "uDO8zWDhfWwoFdKS4fzkUJt0Rf0"
+    },
+    {
+      "id": "tt0075314",
+      "title": "Taxi Driver",
+      "imageID": "ekstpH614fwDX8DUln1a2Opz0N8"
+    },
+    {
+      "id": "tt0425112",
+      "title": "Hot Fuzz",
+      "imageID": "zPib4ukTSdXvHP9pxGkFCe34f3y"
+    },
+    {
+      "id": "tt1392190",
+      "title": "Mad Max: Fury Road",
+      "imageID": "8tZYtuWezp8JbcsvHYO0O46tFbo"
+    },
+    {
+      "id": "tt11126994",
+      "title": "Arcane",
+      "imageID": "oTGEwkp1mPgWNMgVSM53TWfzgSc"
+    },
+    {
+      "id": "tt3398228",
+      "title": "BoJack Horseman",
+      "imageID": "pB9L0jAnEQLMKgexqCEocEW8TA"
+    },
+    {
+      "id": "tt4288182",
+      "title": "Atlanta",
+      "imageID": "pDaERwg3NdKiLAApjxGTU7aYzze"
+    },
+    {
+      "id": "tt1439629",
+      "title": "Community",
+      "imageID": "tfX9KvvHdzfChgM7TZOd39QhOqN"
+    },
+    {
+      "id": "tt3032476",
+      "title": "Better Call Saul",
+      "imageID": "rbNc44otT6VRd7QpxqlUAMyByaQ"
+    },
+    {
+      "id": "tt1220617",
+      "title": "The Inbetweeners",
+      "imageID": "qNmcaXDndOkY6v9QiJjnxQD09GJ"
+    },
+    {
+      "id": "tt1830379",
+      "title": "Top Boy",
+      "imageID": "cfqHWQQDwvKT8Xoe0AXzHBXcF1u"
+    }
+  ]
+}
