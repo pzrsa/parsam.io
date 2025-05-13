@@ -4,6 +4,6 @@ interface Props {
 }
 ---
 
-<div class={"prose prose-a:text-blue-600" + " " + Astro.props.class}>
+<div class={"prose prose-a:text-blue-600" + " " + (Astro.props.class || "")}>
     <slot />
 </div>
