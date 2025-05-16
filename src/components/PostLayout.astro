@@ -13,7 +13,11 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<Layout title={post.data.title} post>
+<Layout
+    title={post.data.title}
+    image={new URL(`${post.id}/og.png`, Astro.url)}
+    post
+>
     <section>
         <div class="mb-6">
             <h1 class="text-xl mb-2">
@@ -25,7 +29,7 @@ const { Content } = await render(post);
                 </span>
             </h1>
             <div class="flex gap-3 items-center">
-                <span class="flex-1 text-zinc-600">
+                <span class="flex-1">
                     {
                         post.data.date.toLocaleDateString("en-GB", {
                             day: "numeric",

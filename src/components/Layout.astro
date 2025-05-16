@@ -4,25 +4,22 @@ import Nav from "./Nav.astro";
 
 interface Props {
     title?: string;
+    image?: URL;
     post?: boolean;
 }
 
 const baseTitle = "Parsa Mesgarha";
 const description = "Software Engineer at Tesla";
 
-const { title, post } = Astro.props;
+const { title, post, image } = Astro.props;
 
 const fullTitle = title ? `${title} - ${baseTitle}` : baseTitle;
 ---
 
 <html lang="en" class="bg-white text-black antialiased">
     <head>
-        <link
-            rel="alternate"
-            type="application/rss+xml"
-            title={baseTitle}
-            href={new URL("rss.xml", Astro.site)}
-        />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link
             rel="apple-touch-icon"
@@ -30,20 +27,30 @@ const fullTitle = title ? `${title} - ${baseTitle}` : baseTitle;
             href="/apple-icon.png"
             type="image/png"
         />
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title={baseTitle}
+            href={new URL("rss.xml", Astro.site)}
+        />
+
+        <link rel="canonical" href={Astro.url} />
+        <meta name="robots" content="index, follow" />
+
         <title>{fullTitle}</title>
         <meta name="description" content={description} />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={fullTitle} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={Astro.site} />
-        <meta property="og:description" content={description} />
 
+        <meta property="og:title" content={title ?? "Parsa Mesgarha"} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={Astro.url} />
+        <meta property="og:image" content={image} />
+
+        <meta name="twitter:title" content={title ?? "Parsa Mesgarha"} />
+        <meta name="twitter:description" content={description} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@pzrsaa" />
-        <meta name="twitter:title" content={fullTitle} />
-        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={image} />
     </head>
     <body class="max-w-2xl py-8 px-6">
         <Nav title={post ? title : undefined} />
