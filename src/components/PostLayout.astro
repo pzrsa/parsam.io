@@ -15,7 +15,7 @@ const { Content } = await render(post);
 
 <Layout
     title={post.data.title}
-    image={new URL(`${post.id}/og.png`, Astro.url)}
+    image={new URL(`${post.id}/og.png`, Astro.url.href)}
     post
 >
     <section>
