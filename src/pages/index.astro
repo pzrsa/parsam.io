@@ -7,7 +7,6 @@ import NowPlaying from "../components/NowPlaying.astro";
 import SubscribeForm from "../components/SubscribeForm.astro";
 import { getCollection } from "astro:content";
 import { getBlogPosts } from "../data/utils";
-import { Picture } from "astro:assets";
 
 const posts = await getBlogPosts();
 const newestPosts = posts.slice(0, 5);
@@ -24,7 +23,7 @@ const linksClass = "w-fit";
     <h1 class="text-xl mb-6">Parsa Mesgarha</h1>
     <div class="flex flex-row items-center gap-4 mb-6">
         <a href="https://x.com/pzrsaa" target="_blank">
-            <Picture
+            <Image
                 alt="Parsa Mesgarha"
                 src={me}
                 height={111}
