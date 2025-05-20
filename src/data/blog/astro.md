@@ -1,6 +1,6 @@
 ---
 date: "2025-05-16"
-title: "Migrating this website from Next.js to Astro"
+title: "Migrating my blog from Next.js to Astro"
 ---
 I recently migrated this site from [Next.js](https://nextjs.org/) to [Astro](https://astro.build), and I wish I did it earlier.
 
