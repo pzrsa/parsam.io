@@ -1,6 +1,6 @@
 ---
 date: "2025-01-03"
-title: "I went from a gaming addiction at 17 to working at Google and Tesla by 21"
+title: "From a gaming addiction to Google and Tesla by 21"
 ---
 
 4 years ago, I started my software engineering career at 17. During this time, I've had the rare opportunity to work at two innovative companies: [Google](https://google.com) and [Tesla](https://tesla.com).
@@ -98,8 +98,8 @@ I checked out Derek's website and emailed him a novel of my life story, not expe
 This is what he said:
 
 > But I don't think you need to pay $16/month to Webflow. For the kind of site you're doing, static HTML would be WAY cheaper, more educational for you, and give you total control to move it anywhere, no monthly fee.
->  My best advice to make a simple site is this:
->  Start simple from before you even begin : stay simple in how you think of it, and how you make it. Don't let people tell you it needs to be any more complex than this.
+> My best advice to make a simple site is this:
+> Start simple from before you even begin : stay simple in how you think of it, and how you make it. Don't let people tell you it needs to be any more complex than this.
 > Create one new folder on your computer called "website" and do everything I say below in that folder.
 
 He gave me a step-by-step guide on building a website from scratch using pure HTML/CSS. Mind blown, I immediately switched to hosting on [GitHub Pages](https://pages.github.com/), and my new open source website was [born](https://github.com/pzrsa/parsam.io/commit/7927cccdda9843bdc7c4b17ff80626516d628301).
@@ -208,6 +208,7 @@ It goes without saying I'm humbled and grateful for everyone I've met through th
 
 This is still just the beginning, I have a long way ahead of me.
 
-![Shoutout to Taimur (@taimurabdaal) for giving me the idea to write this post.](/taimur-selfie.jpg)
+![](/taimur-selfie.jpg)
+Shoutout to [Taimur Abdaal](https://x.com/taimurabdaal) for giving me the idea to write this post.
 
 I also want to take the time to say thank you so much for reading this far. It means the world to me, and I hope it was of some value to you.
