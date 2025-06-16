@@ -8,9 +8,6 @@ export default defineConfig({
   site: "https://parsam.io",
   vite: {
     plugins: [tailwindcss()],
-    ssr: {
-      external: ["node:buffer"],
-    },
   },
   image: {
     domains: ["i.scdn.co", "image.tmdb.org"],
@@ -21,4 +18,9 @@ export default defineConfig({
     },
     edgeMiddleware: true,
   }),
+  markdown: {
+    shikiConfig: {
+      theme: "gruvbox-dark-hard",
+    },
+  },
 });
