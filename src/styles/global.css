@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
 
+@theme inline {
+    --font-sans: var(--font-plex-mono);
+}
+
 @theme {
     --color-google-blue: #4885ed;
     --color-google-red: #db3236;

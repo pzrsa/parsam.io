@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import vercel from "@astrojs/vercel";
 
@@ -23,4 +23,11 @@ export default defineConfig({
       theme: "gruvbox-dark-hard",
     },
   },
+  experimental: {
+    fonts: [{
+      provider: fontProviders.google(),
+      name: "IBM Plex Mono",
+      cssVariable: "--font-plex-mono"
+    }]
+  }
 });
