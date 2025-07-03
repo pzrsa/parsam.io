@@ -2,35 +2,35 @@
 @plugin '@tailwindcss/typography';
 
 @theme inline {
-    --font-sans: var(--font-plex-mono);
+  --font-sans: var(--font-plex-sans);
 }
 
 @theme {
-    --color-google-blue: #4885ed;
-    --color-google-red: #db3236;
-    --color-google-yellow: #f4c20d;
-    --color-google-green: #3cba54;
-    --color-tesla-red: #cc0000;
-    --color-white: #fff;
-    --color-black: #000;
+  --color-google-blue: #4885ed;
+  --color-google-red: #db3236;
+  --color-google-yellow: #f4c20d;
+  --color-google-green: #3cba54;
+  --color-tesla-red: #cc0000;
+  --color-white: #fff;
+  --color-black: #000;
 }
 
 ::selection {
-    @apply bg-black text-white;
+  @apply bg-black text-white;
 }
 
 @layer base {
-    h1,
-    h2,
-    h3 {
-        @apply font-bold;
-    }
+  h1,
+  h2,
+  h3 {
+    @apply font-bold;
+  }
 
-    a {
-        @apply hover:underline hover:text-blue-600 decoration-2 font-medium;
-    }
+  a {
+    @apply hover:underline hover:text-blue-600 decoration-2 font-medium;
+  }
 
-    img {
-        @apply border-2 border-black;
-    }
+  img {
+    @apply border-2 border-black;
+  }
 }

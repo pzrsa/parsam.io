@@ -24,10 +24,12 @@ export default defineConfig({
     },
   },
   experimental: {
-    fonts: [{
-      provider: fontProviders.google(),
-      name: "IBM Plex Mono",
-      cssVariable: "--font-plex-mono"
-    }]
-  }
+    fonts: [
+      {
+        provider: fontProviders.google(),
+        name: "IBM Plex Sans Condensed",
+        cssVariable: "--font-plex-sans",
+      },
+    ],
+  },
 });
