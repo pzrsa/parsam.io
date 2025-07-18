@@ -41,12 +41,6 @@ From ["Generation Z and Mental Health"](https://www.aecf.org/blog/generation-z-a
 
 I also felt like such an asshole. I was seeing the flaws as opposed to the positives, because that's all thats projected to me through photos and some supposedly clever prompts.
 
-# The profiles
-
-One thing that was so strange to me was how unoriginal and boring most of the girls were. They put in absolutely zero effort. Some girls even went as far as to just put the same answer in random prompts. I was more surprised when a girl had something original.
-
-It just goes to show how little effort is required to garner attention. I love the statistic about how something like [80% of men are competing for the 22% of women](https://medium.com/@worstonlinedater/tinder-experiments-ii-guys-unless-you-are-really-hot-you-are-probably-better-off-not-wasting-your-2ddf370a6e9a). 
-
 Also, since I'm in Berlin, most profiles were written in German, and I honestly could not be bothered to translate each prompt, I ain't that thirsty. Most of the time I responded to the ones in English.
 
 # Deleting my account
