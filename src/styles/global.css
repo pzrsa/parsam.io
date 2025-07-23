@@ -2,7 +2,12 @@
 @plugin '@tailwindcss/typography';
 
 @theme inline {
-  --font-sans: var(--font-plex-sans);
+  --font-sans:
+    var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif:
+    var(--font-plex-serif), ui-serif, Georgia, Cambria, "Times New Roman",
+    Times, serif;
 }
 
 @theme {
@@ -23,7 +28,7 @@
   h1,
   h2,
   h3 {
-    @apply font-bold;
+    @apply font-bold font-serif;
   }
 
   a {

@@ -7,13 +7,13 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.12",
-    "@astrojs/vercel": "^8.1.5",
-    "@tailwindcss/vite": "^4.1.10",
+    "@astrojs/vercel": "^8.2.3",
+    "@tailwindcss/vite": "^4.1.11",
     "@vercel/og": "^0.6.8",
-    "astro": "^5.9.4",
+    "astro": "^5.12.3",
     "markdown-it": "^14.1.0",
     "sanitize-html": "^2.17.0",
-    "tailwindcss": "^4.1.10"
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",

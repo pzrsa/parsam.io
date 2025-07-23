@@ -30,6 +30,11 @@ export default defineConfig({
         name: "IBM Plex Sans Condensed",
         cssVariable: "--font-plex-sans",
       },
+      {
+        provider: fontProviders.google(),
+        name: "IBM Plex Serif",
+        cssVariable: "--font-plex-serif",
+      },
     ],
   },
 });

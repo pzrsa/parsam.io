@@ -3,14 +3,14 @@ let data = null;
 let error = false;
 
 try {
-    const res = await fetch(new URL("/api/now-playing", Astro.url));
-    if (!res.ok) throw new Error("bad status");
-    data = await res.json();
+  const res = await fetch(new URL("/api/now-playing", Astro.url));
+  if (!res.ok) throw new Error("bad status");
+  data = await res.json();
 } catch {
-    error = true;
+  error = true;
 }
 
-const base = "flex gap-2 items-baseline";
+const base = "flex gap-2 items-baseline font-serif";
 
 const spotifySVG = `
 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="#1DB954">
@@ -22,24 +22,24 @@ const spotifySVG = `
 {!error && !data && <p>loading...</p>}
 
 {
-    error || !data?.isPlaying ? (
-        <a
-            href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
-            target="_blank"
-            class={base}
-        >
-            <>
-                <span>Not Playing Music</span>
-                <span set:html={spotifySVG} />
-            </>
-        </a>
-    ) : (
-        <a href={data.songUrl} target="_blank" class={base}>
-            <span class="max-w-50 line-clamp-1 sm:max-w-lg sm:line-clamp-2">
-                Playing <span class="font-bold">{data.title}</span> by
-                <span class="font-bold">{data.artist}</span>
-            </span>
-            <span set:html={spotifySVG} />
-        </a>
-    )
+  error || !data?.isPlaying ? (
+    <a
+      href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
+      target="_blank"
+      class={base}
+    >
+      <>
+        <span>Not Playing Music</span>
+        <span set:html={spotifySVG} />
+      </>
+    </a>
+  ) : (
+    <a href={data.songUrl} target="_blank" class={base}>
+      <span class="max-w-50 line-clamp-1 sm:max-w-lg sm:line-clamp-2">
+        Playing <span class="font-bold">{data.title}</span> by
+        <span class="font-bold">{data.artist}</span>
+      </span>
+      <span set:html={spotifySVG} />
+    </a>
+  )
 }

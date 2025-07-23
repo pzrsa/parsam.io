@@ -1,24 +1,27 @@
 ---
 interface Props {
-    title?: string;
+  title?: string;
 }
 const { title } = Astro.props;
-const base = "text-blue-600 hover:text-blue-800";
+const base = "text-blue-600 hover:text-blue-800 font-bold";
 ---
 
 <nav class="flex pb-2 mb-6 flex-col border-b">
-    <span>
-        <strong class="mr-3">Navigation</strong> ~ /
-        <a href="/" class={base}>home</a> /
-        <a href="/blog" class={base}>blog</a>
-        {
-            title ? (
-                <span>
-                    / <strong>{title}</strong>
-                </span>
-            ) : (
-                ""
-            )
-        }
+  <span class="flex gap-x-10">
+    <span class="font-serif font-bold">Navigation</span>
+    <span class="font-bold">
+      ~ /
+      <a href="/" class={base}>home</a> /
+      <a href="/blog" class={base}>blog</a>
+      {
+        title ? (
+          <span>
+            / <span>{title}</span>
+          </span>
+        ) : (
+          ""
+        )
+      }
     </span>
+  </span>
 </nav>
