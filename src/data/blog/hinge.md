@@ -4,7 +4,7 @@ date: "2025-07-04"
 ---
 For the majority of my life, I had the identity of being somewhat of a purist. I didn't have my first sip of alcohol till last year, nor gone to the club till earlier this year (I live in Berlin so it was inevitable). In general I was against a lot of things that I felt did not have a meaningful impact on my life, but also because I never deemed myself cool enough to do them.
 
-As I've gotten older (I [turned 22](https://parsam.io/22) 2 days ago), I've become more lax with these dumb rules. I think having these "streaks" of not doing something was dumb. I remember telling myself "☝️🤓 I will have my first glass of alcohol with that special someone". I had my first pint with my dad, and that brought me joy more than anything in the world.
+As I've gotten older (I [turned 22](https://parsam.io/22) 2 days ago), I've become more lax with these strict rules. I think having these "streaks" of not doing something was dumb. I remember telling myself "☝️🤓 I will have my first glass of alcohol with that special someone". I had my first pint with my dad, and that brought me joy more than anything in the world.
 
 Many of my friends turn to me for advice (though I'm not sure why), and I feel like it should be a duty of mine to provide them evidence based on actual experiences. If I have no skin in the game, then I'm basing them off of what others say. This has worked well for a while, but I should start basing decisions on my own judgement.
 
