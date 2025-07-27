@@ -1,4 +1,7 @@
 ---
+import explicit from "../assets/explicit.png";
+import missing from "../assets/missing.png";
+
 let data = null;
 let error = false;
 
@@ -9,8 +12,6 @@ try {
 } catch {
   error = true;
 }
-
-const base = "flex gap-2 items-baseline";
 
 const spotifySVG = `
 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="#1DB954">
@@ -23,23 +24,47 @@ const spotifySVG = `
 
 {
   error || !data?.isPlaying ? (
-    <a
-      href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
-      target="_blank"
-      class={base}
-    >
-      <>
-        <span>Not Playing Music</span>
-        <span set:html={spotifySVG} />
-      </>
-    </a>
+    <div class="flex flex-row items-center gap-4 mb-6">
+      <a
+        href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
+        target="_blank"
+      >
+        <img
+          src={missing.src}
+          height={111}
+          width={111}
+          loading="eager"
+          decoding="async"
+        />
+      </a>
+      <a
+        href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
+        target="_blank"
+      >
+        <span>🔇 Not Playing Anything</span>
+      </a>
+    </div>
   ) : (
-    <a href={data.songUrl} target="_blank" class={base}>
-      <span class="max-w-50 line-clamp-1 sm:max-w-lg sm:line-clamp-2">
-        Playing <span class="font-bold">{data.title}</span> by
-        <span class="font-bold">{data.artist}</span>
-      </span>
-      <span set:html={spotifySVG} />
-    </a>
+    <div class="flex flex-row items-center gap-4 mb-6">
+      <a href={data.songUrl} target="_blank">
+        <img
+          alt={data.title}
+          src={data.albumImageUrl}
+          height={111}
+          width={111}
+          loading="eager"
+          decoding="async"
+        />
+      </a>
+      <div class="flex items-center">
+        <span class="animate-spin mr-2">💿</span>
+        <a href={data.songUrl} target="_blank" class="flex-1 min-w-0">
+          <span class="block max-w-50 line-clamp-1 sm:max-w-lg sm:line-clamp-2">
+            Playing <span class="font-bold">{data.title}</span> by
+            <span class="font-bold">{data.artist}</span>
+          </span>
+        </a>
+      </div>
+    </div>
   )
 }

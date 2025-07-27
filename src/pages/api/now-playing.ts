@@ -34,17 +34,20 @@ export const GET: APIRoute = async () => {
 
   const data = await res.json();
 
+  console.log(JSON.stringify(data, null, 2));
+
   if (data.currently_playing_type !== "track") {
     return json({ isPlaying: false });
   }
 
   const payload = {
-    isPlaying: data.is_playing as boolean,
-    title: data.item.name as string,
+    isPlaying: data.is_playing,
+    title: data.item.name,
     artist: data.item.artists.map((a: { name: string }) => a.name).join(", "),
-    album: data.item.album.name as string,
-    albumImageUrl: data.item.album.images[0].url as string,
-    songUrl: data.item.external_urls.spotify as string,
+    album: data.item.album.name,
+    albumImageUrl: data.item.album.images[0].url,
+    songUrl: data.item.external_urls.spotify,
+    explicit: data.item.explicit,
   };
 
   return json(payload);
