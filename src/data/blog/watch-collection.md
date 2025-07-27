@@ -7,7 +7,7 @@ I've been into watches and [horology](https://en.wikipedia.org/wiki/Horology) fo
 
 Over the years I’ve built a small collection (with 3 watches I don’t know if you could even call it a collection at this point), and I thought I should share it since a post about my watches is well overdue.
 
-## SEIKO (the OG)
+# SEIKO (the OG)
 
 ![](/seiko.jpeg)
 
@@ -25,7 +25,7 @@ Anyways, my SEIKO has always held a special place in my heart, and I'm always gr
 
 ![](/wearing-seiko.jpeg)
 
-## G-SHOCK "CasiOak"
+# G-SHOCK "CasiOak"
 
 ![](/g-shock.jpeg)
 
@@ -37,13 +37,13 @@ My favourite part of this watch is the design, I think it's pretty unique for a 
 
 I absolutely love this watch since I think it perfectly pictures my minimalistic style.
 
-## Casio
+# Casio
 
 I thought it would also be worth sharing the latest edition in my collection, the _Casio A168_. I got this for about £30, and I just couldn't see myself going about building a collection without having this in it. It's such a classic, and you can't really go wrong owning a watch like this.
 
 ![](/casio.jpeg)
 
-## My Dream Watch
+# My Dream Watch
 
 For the longest time my dream watch has been the _[Sinn 556A](https://www.sinn.de/en/Modell/556_A.htm)_. I think it's the finest of German engineering, plus it's something feasible to purchase (€1325.00 / ~£1150.00 / ~$1400.00).
 
@@ -57,7 +57,7 @@ Prior to this, it was the Rolex Explorer 214270. As you can probably tell, there
 
 (Source: [Hodinkee](https://www.hodinkee.com/articles/rolex-explorer-214270-review))
 
-## Closing thoughts
+# Closing thoughts
 
 You probably noticed the recurring theme across all my watches: they're made by Japanese companies.
 

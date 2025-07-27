@@ -10,7 +10,7 @@ After [many months](https://github.com/pzrsa/mechkeebs/graphs/code-frequency), I
 ![MechKeebs Home Page](/mechkeebs.jpg)
 It wasn't intended to solve any problems, but I've learnt from a few great engineers that solving problems at my stage shouldn't be the focus. I should still obviously solve a problem when needed, but that will just come with time as I expose myself to more projects.
 
-## Technologies
+# Technologies
 
 ## Next.js
 
@@ -62,7 +62,7 @@ DigitalOcean provides computing services, similar to platforms like Google Cloud
 
 I can now use the same VPS to deploy other projects in the future without breaking the bank. I want to see how far I could go before my 1GB Memory 25GB SSD could no longer handle it. But if we're going to be real, I don't think I would gain that sort of traffic.
 
-## Some things I learned
+# Some things I learned
 
 - **Spend no more than a couple weeks on a project**.
   I took way too long to get this out the door. I started in November 2021, and deployed it in July 2022. Obviously I didn't work on it daily during that period, it was more of a 1-2 month break and working in bursts. If I had instead abandoned the project I could've built other stuff in that time, which would help me identify patterns for a great project idea.

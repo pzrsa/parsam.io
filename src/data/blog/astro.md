@@ -16,7 +16,7 @@ Now after switching to Astro, the only injected script I ship is [Vercel Web Ana
 Initially I also attempted to try out [Cloudflare Pages](https://pages.cloudflare.com/), but went back to [Vercel](https://vercel.com/) for convenience sake. I think Vercel has done a great job on their platform's UI.
 
 The [migration](https://docs.astro.build/en/guides/migrate-to-astro/from-nextjs/) process was smooth for a relatively simple site like [mine](https://github.com/pzrsa/parsam.io/pull/10).
-## Content collections
+# Content collections
 Using [content collections](https://docs.astro.build/en/guides/content-collections/) meant I no longer have to manually write code to retrieve and process my markdown posts.
 
 This is all I have to do to define a collection of posts and retrieve them.
@@ -122,18 +122,18 @@ export const getPostWithHtml = async (id: string) => {
 };
 ```
 
-## API Endpoints
+# API Endpoints
 I like to display the song I'm currently playing using the [Spotify API](https://developer.spotify.com/documentation/web-api/reference/get-the-users-currently-playing-track). Thanks to server [endpoints](https://docs.astro.build/en/guides/endpoints/#server-endpoints-api-routes) and [islands](https://docs.astro.build/en/concepts/islands/#server-islands) I didn't have to sacrifice this. It works even better than before, the island is server side rendered, so no JS calls.
 
 ![](/now-playing.jpeg)
 
-## Images
+# Images
 Images stored in `src/` are optimised, but they cannot be accessed through a public link. On the other hand, ones stored in `public/`, i.e the ones used in my posts, are [not optimised](https://docs.astro.build/en/guides/images/#where-to-store-images), which is a shame.
 
 Since I use RSS feeds and believe in them whole heartedly, I will stick with storing them in `public/`. It's fine, I try to display relatively optimised images, but it's something I'm missing out on which is a bit annoying.
 
 P.S, if you were subscribed to my old RSS feed, `parsam.io/feed.atom`, please update to using `parsam.io/rss.xml` ([link](https://parsam.io/rss.xml))
-## Dependencies
+# Dependencies
 I love how much I've cut down on dependencies during the migration. It was a much needed cleanup.
 
 Anyways, at the end of the day, these are minuscule improvements. What matters is the content I produce, but I also think having a fast website should be a right for visitors.

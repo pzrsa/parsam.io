@@ -9,7 +9,7 @@ With [Thomas Paul Mann](https://x.com/thomaspaulmann) (CEO of [Raycast](https://
 ![](/lindyman.jpeg)
 With [Paul Skallas](https://x.com/PaulSkallas) aka LindyMan
 
-## Warsaw, Poland
+# Warsaw, Poland
 
 ![](/thomas-parsa.jpeg)
 ![](/peacock-lady.jpeg)
@@ -19,9 +19,9 @@ With [Paul Skallas](https://x.com/PaulSkallas) aka LindyMan
 ![](/warsaw-central.jpeg)
 Loved Warsaw.
 
-## Italy
+# Italy
 
-### Naples
+## Naples
 
 ![](/pompeii.jpeg)
 Pompeii
@@ -34,7 +34,7 @@ Pompeii
 ![](/naples-sea-2.jpeg)
 ![](/naples-me-2.jpeg)
 
-### Rome
+## Rome
 
 ![](/rome-colosseum.jpeg)
 ![](/rome-wide.jpeg)
@@ -45,7 +45,7 @@ Pompeii
 ![](/rome-shadows-2.jpeg)
 ![](/rome-fuji.jpeg)
 
-## Misc
+# Misc
 
 ![](/berlin-car.jpeg)
 ![](/berlin-sunset.jpeg)
