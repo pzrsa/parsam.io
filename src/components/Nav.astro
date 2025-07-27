@@ -3,12 +3,12 @@ interface Props {
   title?: string;
 }
 const { title } = Astro.props;
-const base = "text-blue-600 hover:text-blue-800 font-bold";
+const base = "text-blue-600 hover:text-blue-800";
 ---
 
 <nav class="flex pb-2 mb-6 flex-col border-b">
   <span class="flex gap-x-10">
-    <span class="font-serif font-bold">Navigation</span>
+    <span class="font-bold font-serif text-lg">Navigation</span>
     <span class="font-bold">
       ~ /
       <a href="/" class={base}>home</a> /

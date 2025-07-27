@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 import me from "../assets/avatar.webp";
 import Prose from "../components/Prose.astro";
 import NowPlaying from "../components/NowPlaying.astro";
-import SubscribeForm from "../components/SubscribeForm.astro";
+import SubscribeForm from "../components/NewsletterForm.astro";
 import { getCollection } from "astro:content";
 import { getBlogPosts } from "../data/utils";
 
@@ -20,7 +20,7 @@ const linksClass = "w-fit font-bold";
 ---
 
 <Layout image={new URL("og/home.png", Astro.url)}>
-  <h1 class="text-xl mb-6">Parsa Mesgarha</h1>
+  <h1 class="font-bold text-2xl mb-6">Parsa Mesgarha</h1>
   <div class="flex flex-row items-center gap-4 mb-6">
     <a href="https://x.com/pzrsaa" target="_blank">
       <img
@@ -78,10 +78,12 @@ const linksClass = "w-fit font-bold";
         {
           newestPosts.map((post) => (
             <li>
-              <span class="flex gap-1">
+              <span class="flex gap-1 items-center">
                 <span class="flex-1">
                   <a href={`/${post.id}`}>
-                    <span class="font-bold">{post.data.title}</span>
+                    <span class="font-bold font-serif text-lg">
+                      {post.data.title}
+                    </span>
                     {post.data.author && <span> ({post.data.author})</span>}
                   </a>
                 </span>
@@ -97,7 +99,7 @@ const linksClass = "w-fit font-bold";
           ))
         }
       </ul>
-      <h4>Newsletter</h4>
+      <h3 class="font-bold">Newsletter</h3>
       <SubscribeForm />
       <h3>Links</h3>
       <div class="not-prose grid grid-cols-3 sm:grid-cols-4">

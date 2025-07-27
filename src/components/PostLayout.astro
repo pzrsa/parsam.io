@@ -3,10 +3,10 @@ import type { CollectionEntry } from "astro:content";
 import { render } from "astro:content";
 import Layout from "./Layout.astro";
 import Prose from "./Prose.astro";
-import SubscribeForm from "./SubscribeForm.astro";
+import SubscribeForm from "./NewsletterForm.astro";
 
 interface Props {
-    post: CollectionEntry<"blog">;
+  post: CollectionEntry<"blog">;
 }
 
 const { post } = Astro.props;
@@ -14,50 +14,50 @@ const { Content } = await render(post);
 ---
 
 <Layout
-    title={post.data.title}
-    image={new URL(`${Astro.url.href}/og.png`)}
-    post
+  title={post.data.title}
+  image={new URL(`${Astro.url.href}/og.png`)}
+  post
 >
-    <section>
-        <div class="mb-6">
-            <h1 class="text-xl mb-2">
-                <span class="font-extrabold">
-                    {post.data.title}
-                </span>
-                <span class="font-medium">
-                    {post.data.author ? `(${post.data.author})` : ""}
-                </span>
-            </h1>
-            <div class="flex gap-3 items-center">
-                <span class="flex-1">
-                    {
-                        post.data.date.toLocaleDateString("en-GB", {
-                            day: "numeric",
-                            month: "long",
-                            year: "numeric",
-                        })
-                    }
-                </span>
-            </div>
-        </div>
-        <article>
-            <Prose><Content /></Prose>
-        </article>
-        <Prose class="prose-h3:text-lg mt-6 pt-8 border-t">
-            <h3>Enjoyed this post?</h3>
-            <SubscribeForm />
-            <p>And please consider...</p>
-            <ul>
-                <li>
-                    following me on{" "}
-                    <a href="https://x.com/pzrsaa">Twitter/X</a>
-                </li>
-                <li>sharing this post with a friend</li>
-                <li>
-                    sharing your thoughts over{" "}
-                    <a href="mailto:hi@parsam.io">email</a>
-                </li>
-            </ul>
-        </Prose>
-    </section>
+  <section>
+    <div class="mb-6">
+      <h1 class="font-bold text-4xl mb-2">
+        {post.data.title}
+        <span class="font-medium">
+          {post.data.author ? `(${post.data.author})` : ""}
+        </span>
+      </h1>
+      <div class="flex gap-3 items-center">
+        <span class="flex-1">
+          {
+            post.data.date.toLocaleDateString("en-GB", {
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+            })
+          }
+        </span>
+      </div>
+    </div>
+    <article>
+      <Prose class="prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl"
+        ><Content /></Prose
+      >
+    </article>
+    <Prose class="prose-h3:text-xl mt-6 pt-8 border-t">
+      <h3>Enjoyed this post?</h3>
+      <SubscribeForm />
+      <p>And consider...</p>
+      <ul>
+        <li>
+          following me on{" "}
+          <a href="https://x.com/pzrsaa">Twitter/X</a>
+        </li>
+        <li>sharing this post with a friend</li>
+        <li>
+          sharing your thoughts over{" "}
+          <a href="mailto:hi@parsam.io">email</a>
+        </li>
+      </ul>
+    </Prose>
+  </section>
 </Layout>

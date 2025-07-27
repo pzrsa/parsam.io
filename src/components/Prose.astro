@@ -1,9 +1,9 @@
 ---
 interface Props {
-    class?: string;
+  class?: string;
 }
 ---
 
 <div class={"prose prose-a:text-blue-600" + " " + (Astro.props.class || "")}>
-    <slot />
+  <slot />
 </div>
