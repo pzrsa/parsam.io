@@ -34,8 +34,6 @@ export const GET: APIRoute = async () => {
 
   const data = await res.json();
 
-  console.log(JSON.stringify(data, null, 2));
-
   if (data.currently_playing_type !== "track") {
     return json({ isPlaying: false });
   }
