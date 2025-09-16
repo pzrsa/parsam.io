@@ -1,5 +1,5 @@
 ---
-title: "Serendipitous Finds 1"
+title: "Serendipitous Finds #1"
 date: "2025-09-16"
 ---
 
