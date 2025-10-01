@@ -27,14 +27,9 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: "IBM Plex Sans Condensed",
-        cssVariable: "--font-plex-sans",
-        weights: ["400 700"],
-      },
-      {
-        provider: fontProviders.google(),
-        name: "Instrument Serif",
-        cssVariable: "--font-instrument-serif",
+        name: "Spectral",
+        cssVariable: "--font-spectral",
+        weights: ["200 800"],
       },
     ],
   },
