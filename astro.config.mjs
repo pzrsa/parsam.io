@@ -27,9 +27,9 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: "Noto Serif",
-        cssVariable: "--font-spectral",
-        weights: ["100 900"],
+        name: "Alegreya",
+        cssVariable: "--font-alegreya",
+        weights: ["400 900"],
       },
     ],
   },

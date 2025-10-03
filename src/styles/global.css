@@ -3,7 +3,7 @@
 
 @theme inline {
   --font-serif:
-    var(--font-spectral), ui-serif, Georgia, Cambria, "Times New Roman", Times,
+    var(--font-alegreya), ui-serif, Georgia, Cambria, "Times New Roman", Times,
     serif;
 }
 
