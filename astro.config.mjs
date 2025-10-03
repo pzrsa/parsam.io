@@ -27,9 +27,9 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: "Spectral",
+        name: "Noto Serif",
         cssVariable: "--font-spectral",
-        weights: ["200 800"],
+        weights: ["100 900"],
       },
     ],
   },
