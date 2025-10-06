@@ -31,4 +31,13 @@ const filmsShows = defineCollection({
   }),
 });
 
-export const collections = { blog, albums, filmsShows };
+const books = defineCollection({
+  loader: file("src/data/favourites.json", {
+    parser: (text) => JSON.parse(text).books,
+  }),
+  schema: z.object({
+    title: z.string(),
+  }),
+});
+
+export const collections = { blog, albums, filmsShows, books };

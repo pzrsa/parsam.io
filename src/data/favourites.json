@@ -132,5 +132,23 @@
       "title": "Top Boy",
       "imageID": "cfqHWQQDwvKT8Xoe0AXzHBXcF1u"
     }
+  ],
+  "books": [
+    {
+      "id": "uzkX3Vpj3ywC",
+      "title": "Fooled by Randomness"
+    },
+    {
+      "id": "COVJBgAAQBAJ",
+      "title": "Anything You Want"
+    },
+    {
+      "id": "B1hSG45JCX4C",
+      "title": "Dune"
+    },
+    {
+      "id": "dMMqzwEACAAJ",
+      "title": "How to Live"
+    }
   ]
 }

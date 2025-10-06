@@ -11,9 +11,10 @@ import { getBlogPosts } from "../data/utils";
 const posts = await getBlogPosts();
 const newestPosts = posts.slice(0, 5);
 
-const [albums, filmsShows] = await Promise.all([
+const [albums, filmsShows, books] = await Promise.all([
   getCollection("albums"),
   getCollection("filmsShows"),
+  getCollection("books"),
 ]);
 
 const linksClass = "w-fit font-bold";
@@ -166,12 +167,6 @@ const linksClass = "w-fit font-bold";
       </div>
     </div>
     <div>
-      <h2>Now</h2>
-      <p>
-        <a href={"/tesla"}>I joined Tesla (and moved to Berlin)</a>.
-      </p>
-    </div>
-    <div>
       <h2>Favourites</h2>
       <h3>Albums</h3>
       <div class="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-6 not-prose">
@@ -184,8 +179,26 @@ const linksClass = "w-fit font-bold";
               <Image
                 alt={album.data.title}
                 src={`https://i.scdn.co/image/${album.data.imageID}`}
+                width={640}
+                height={640}
+              />
+            </a>
+          ))
+        }
+      </div>
+      <h3>Books</h3>
+      <div class="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-6 not-prose">
+        {
+          books.map((book) => (
+            <a
+              href={`https://books.google.com/books?id=${book.id}`}
+              target="_blank"
+            >
+              <Image
+                alt={book.data.title}
+                src={`https://books.google.com/books/content?id=${book.id}&printsec=frontcover&img=1&zoom=1`}
                 width={624}
-                height={624}
+                height={320}
               />
             </a>
           ))
