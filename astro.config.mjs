@@ -27,9 +27,9 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: "Alegreya",
-        cssVariable: "--font-alegreya",
-        weights: ["400 900"],
+        name: "Faustina",
+        cssVariable: "--font-faustina",
+        weights: ["300 800"],
       },
     ],
   },
