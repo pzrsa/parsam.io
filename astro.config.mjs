@@ -27,9 +27,9 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: "Chivo Mono",
-        cssVariable: "--font-chivo-mono",
-        weights: ["100 900"],
+        name: "Alegreya",
+        cssVariable: "--font-alegreya",
+        weights: ["400 900"],
       },
     ],
   },
