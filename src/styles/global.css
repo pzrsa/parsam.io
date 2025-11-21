@@ -3,8 +3,8 @@
 
 @theme inline {
   --font-serif:
-    var(--font-alegreya), ui-serif, Georgia, Cambria, "Times New Roman", Times,
-    serif;
+    var(--font-chivo-mono), ui-serif, Georgia, Cambria, "Times New Roman",
+    Times, serif;
 }
 
 @theme {
