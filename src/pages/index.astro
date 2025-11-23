@@ -2,6 +2,7 @@
 import Layout from "../components/Layout.astro";
 import { Image } from "astro:assets";
 import me from "../assets/avatar.webp";
+import name from "../assets/name.svg";
 import Prose from "../components/Prose.astro";
 import NowPlaying from "../components/NowPlaying.astro";
 import SubscribeForm from "../components/NewsletterForm.astro";
@@ -22,7 +23,15 @@ const linksClass = "w-fit font-bold";
 
 <Layout image={new URL("og/home.png", Astro.url)}>
   <div class="flex flex-row justify-between items-center mb-2">
-    <h1 class="font-bold text-2xl">Parsa Mesgarha</h1>
+    <a href="https://x.com/pzrsaa" target="_blank">
+      <img
+        alt="Parsa Mesgarha"
+        src={name.src}
+        loading="eager"
+        decoding="async"
+        class="h-5 sm:h-8 border-none hover:opacity-80"
+      />
+    </a>
     <a href="https://x.com/pzrsaa" target="_blank">
       <img
         alt="Parsa Mesgarha"
@@ -31,6 +40,7 @@ const linksClass = "w-fit font-bold";
         width={111}
         loading="eager"
         decoding="async"
+        class="hover:opacity-80"
       />
     </a>
   </div>
@@ -180,6 +190,7 @@ const linksClass = "w-fit font-bold";
                 src={`https://i.scdn.co/image/${album.data.imageID}`}
                 width={640}
                 height={640}
+                class="hover:opacity-80"
               />
             </a>
           ))
@@ -198,6 +209,7 @@ const linksClass = "w-fit font-bold";
                 src={`https://books.google.com/books/content?id=${book.id}&printsec=frontcover&img=1&zoom=1`}
                 width={624}
                 height={320}
+                class="hover:opacity-80"
               />
             </a>
           ))
@@ -216,6 +228,7 @@ const linksClass = "w-fit font-bold";
                 src={`https://image.tmdb.org/t/p/original/${filmShow.data.imageID}.jpg`}
                 width={624}
                 height={320}
+                class="hover:opacity-80"
               />
             </a>
           ))
