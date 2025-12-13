@@ -27,9 +27,9 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: "Faustina",
-        cssVariable: "--font-faustina",
-        weights: ["300 800"],
+        name: "JetBrains Mono",
+        cssVariable: "--font-jetbrains-mono",
+        weights: ["400 800"],
       },
     ],
   },

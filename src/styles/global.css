@@ -2,9 +2,9 @@
 @plugin '@tailwindcss/typography';
 
 @theme inline {
-  --font-serif:
-    var(--font-faustina), ui-serif, Georgia, Cambria, "Times New Roman", Times,
-    serif;
+  --font-mono:
+    var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 @theme {
@@ -23,7 +23,7 @@
 
 @layer base {
   html {
-    @apply font-serif;
+    @apply font-mono;
   }
 
   a {
