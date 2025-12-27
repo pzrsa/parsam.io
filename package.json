@@ -6,14 +6,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.12",
-    "@astrojs/vercel": "^8.2.8",
-    "@tailwindcss/vite": "^4.1.14",
-    "@vercel/og": "^0.8.5",
-    "astro": "^5.14.1",
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/rss": "^4.0.14",
+    "@astrojs/vercel": "^8.2.11",
+    "@tailwindcss/vite": "^4.1.18",
+    "@vercel/og": "^0.8.6",
+    "astro": "^5.16.6",
     "markdown-it": "^14.1.0",
     "sanitize-html": "^2.17.0",
-    "tailwindcss": "^4.1.14"
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.19",
