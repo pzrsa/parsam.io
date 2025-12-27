@@ -4,7 +4,7 @@ import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
 import { getBlogPosts } from "../data/utils";
 
-const parser = new MarkdownIt();
+const parser = new MarkdownIt({ html: true });
 
 export async function GET(context: APIContext) {
   const posts = await getBlogPosts();
@@ -17,7 +17,12 @@ export async function GET(context: APIContext) {
       pubDate: post.data.date,
       link: `/${post.id}/`,
       content: sanitizeHtml(parser.render(post.body!), {
-        allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
+        allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img", "video", "source"]),
+        allowedAttributes: {
+          ...sanitizeHtml.defaults.allowedAttributes,
+          video: ["controls", "width", "height", "style", "autoplay", "loop", "muted", "playsinline"],
+          source: ["src", "type"],
+        },
       }),
     })),
   });
