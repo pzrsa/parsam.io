@@ -8,7 +8,7 @@
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/rss": "^4.0.14",
-    "@astrojs/vercel": "^8.2.11",
+    "@astrojs/vercel": "^8.2.8",
     "@tailwindcss/vite": "^4.1.18",
     "@vercel/og": "^0.8.6",
     "astro": "^5.16.6",
