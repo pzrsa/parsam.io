@@ -37,6 +37,12 @@ export default defineConfig({
         cssVariable: "--font-jetbrains-mono",
         weights: ["400 800"],
       },
+      {
+        provider: fontProviders.google(),
+        name: "Bitter",
+        cssVariable: "--font-bitter",
+        weights: ["400", "600"],
+      },
     ],
   },
 
