@@ -43,7 +43,7 @@ const linksClass = "w-fit font-bold";
       />
     </a>
   </div>
-  <div class="h-[123px]">
+  <div class="h-[123px] mb-4">
     <NowPlaying server:defer />
   </div>
   <Prose>
@@ -84,30 +84,33 @@ const linksClass = "w-fit font-bold";
       meeting new people!
     </p>
     <div>
-      <h3>Newest Posts // <a href="/blog">Blog</a></h3>
-      <ul class="flex flex-col gap-4 not-prose">
-        {
-          newestPosts.map((post) => (
-            <li>
-              <span class="flex gap-1 items-center">
-                <span class="flex-1">
-                  <a href={`/${post.id}`}>
-                    <span class="font-bold text-lg">{post.data.title}</span>
-                    {post.data.author && <span> ({post.data.author})</span>}
-                  </a>
+      <div>
+        <h3>Newest Posts</h3>
+        <ul class="flex flex-col gap-4 not-prose">
+          {
+            newestPosts.map((post) => (
+              <li>
+                <span class="flex gap-1 items-center">
+                  <span class="flex-1">
+                    <a href={`/${post.id}`}>
+                      <span class="font-bold text-lg">{post.data.title}</span>
+                      {post.data.author && <span> ({post.data.author})</span>}
+                    </a>
+                  </span>
+                  <span>
+                    {post.data.date.toLocaleDateString("en-GB", {
+                      day: "numeric",
+                      month: "short",
+                      year: "2-digit",
+                    })}
+                  </span>
                 </span>
-                <span>
-                  {post.data.date.toLocaleDateString("en-GB", {
-                    day: "numeric",
-                    month: "short",
-                    year: "2-digit",
-                  })}
-                </span>
-              </span>
-            </li>
-          ))
-        }
-      </ul>
+              </li>
+            ))
+          }
+        </ul>
+        <h4><a href="/blog">All Posts →</a></h4>
+      </div>
       <h3 class="font-bold">Newsletter</h3>
       <SubscribeForm />
       <h3>Links</h3>

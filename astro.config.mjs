@@ -33,12 +33,6 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: "JetBrains Mono",
-        cssVariable: "--font-jetbrains-mono",
-        weights: ["400 800"],
-      },
-      {
-        provider: fontProviders.google(),
         name: "Bitter",
         cssVariable: "--font-bitter",
         weights: ["400 800"],
@@ -48,4 +42,3 @@ export default defineConfig({
 
   integrations: [mdx()],
 });
-
