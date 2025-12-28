@@ -41,7 +41,7 @@ export default defineConfig({
         provider: fontProviders.google(),
         name: "Bitter",
         cssVariable: "--font-bitter",
-        weights: ["400", "600"],
+        weights: ["400 800"],
       },
     ],
   },
