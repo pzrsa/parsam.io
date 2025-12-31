@@ -23,7 +23,10 @@
 
 @layer base {
   html {
-    @apply font-serif;
+    @apply font-serif text-black antialiased;
+    background: url('/noise.svg'), rgb(254 215 170);
+    background-size: 200px 200px;
+    filter: contrast(120%) brightness(105%);
   }
 
   a {
