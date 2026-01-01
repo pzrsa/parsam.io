@@ -5,7 +5,7 @@ import me from "../assets/avatar.webp";
 import name from "../assets/name.svg";
 import Prose from "../components/Prose.astro";
 import NowPlaying from "../components/NowPlaying.astro";
-import SubscribeForm from "../components/NewsletterForm.astro";
+import NewsletterForm from "../components/NewsletterForm.astro";
 import { getCollection } from "astro:content";
 import { getBlogPosts } from "../data/utils";
 
@@ -112,7 +112,7 @@ const linksClass = "w-fit font-bold";
         <h4><a href="/blog">More →</a></h4>
       </div>
       <h3 class="font-bold">Newsletter</h3>
-      <SubscribeForm />
+      <NewsletterForm />
       <h3>Links</h3>
       <div class="not-prose gap-1 grid grid-cols-3 sm:grid-cols-4">
         <a class={linksClass} href="https://x.com/pzrsaa" target="_blank"
