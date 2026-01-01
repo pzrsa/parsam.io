@@ -44,14 +44,11 @@ async function processPostContent(markdown: string, siteUrl: URL): Promise<strin
     const src = match[1];
     if (src.startsWith("http") || src.startsWith("//")) continue;
 
-    const filename = src.includes("assets/blog/")
-      ? src.split("/").pop()!
-      : src.replace(/^\//, "");
-
-    if (/\.(jpeg|jpg|png|webp|gif)$/i.test(filename) && imageMap.has(filename)) {
-      transformations.set(src, await optimizeImage(filename, siteUrl));
-    } else if (src.startsWith("/")) {
-      transformations.set(src, new URL(src, siteUrl).href);
+    if (src.includes("assets/blog/")) {
+      const filename = src.split("/").pop()!;
+      if (imageMap.has(filename)) {
+        transformations.set(src, await optimizeImage(filename, siteUrl));
+      }
     }
   }
 
