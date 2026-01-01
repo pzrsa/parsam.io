@@ -17,7 +17,7 @@ In pursuit of being intentional with what I consume on my devices, RSS feeds fit
 
 I prefer tapping into the noise myself, from the sources I trust and enjoy reading.
 
-![](/netnewswire.png)
+![](../../assets/blog/netnewswire.png)
 
 I can recommend these readers, but there are a myriad of options if you do some searching:
 - iOS/macOS: [NetNewsWire](https://netnewswire.com/) - I use this daily (pictured above), it brings me so much joy with how simple it is. Plus it's [open source](https://github.com/Ranchero-Software/NetNewsWire)!

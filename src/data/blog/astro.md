@@ -6,12 +6,12 @@ I recently migrated this site from [Next.js](https://nextjs.org/) to [Astro](htt
 
 As much as I love Next, it was just overkill for a static blog like mine. I shouldn't be shipping all of this js junk to render some text and images.
 
-![](/nextjs-network-tab.jpeg)
+![](../../assets/blog/nextjs-network-tab.jpeg)
 
 I'm not exactly an expert with Next to know why all of this needed, but I don't think I need to be. If I specify my pages are static, then it should be as it says on the tin.
 
 Now after switching to Astro, the only injected script I ship is [Vercel Web Analytics](https://vercel.com/docs/analytics).
-![](/astro-network-tab.jpeg)
+![](../../assets/blog/astro-network-tab.jpeg)
 
 Initially I also attempted to try out [Cloudflare Pages](https://pages.cloudflare.com/), but went back to [Vercel](https://vercel.com/) for convenience sake. I think Vercel has done a great job on their platform's UI.
 
@@ -125,7 +125,7 @@ export const getPostWithHtml = async (id: string) => {
 # API Endpoints
 I like to display the song I'm currently playing using the [Spotify API](https://developer.spotify.com/documentation/web-api/reference/get-the-users-currently-playing-track). Thanks to server [endpoints](https://docs.astro.build/en/guides/endpoints/#server-endpoints-api-routes) and [islands](https://docs.astro.build/en/concepts/islands/#server-islands) I didn't have to sacrifice this. It works even better than before, the island is server side rendered, so no JS calls.
 
-![](/now-playing.jpeg)
+![](../../assets/blog/now-playing.jpeg)
 
 # Images
 Images stored in `src/` are optimised, but they cannot be accessed through a public link. On the other hand, ones stored in `public/`, i.e the ones used in my posts, are [not optimised](https://docs.astro.build/en/guides/images/#where-to-store-images), which is a shame.
