@@ -23,12 +23,7 @@ async function optimizeImage(filename: string, siteUrl: URL): Promise<string> {
   if (!metadata) return new URL(`/${filename}`, siteUrl).href;
 
   try {
-    const optimized = await getImage({
-      src: metadata,
-      format: "webp",
-      width: 1200,
-      quality: 80,
-    });
+    const optimized = await getImage({ src: metadata });
     return new URL(optimized.src, siteUrl).href;
   } catch {
     return new URL(`/${filename}`, siteUrl).href;
@@ -40,15 +35,21 @@ async function processPostContent(markdown: string, siteUrl: URL): Promise<strin
   const transformations = new Map<string, string>();
   const imgRegex = /<img[^>]+src="([^"]+)"[^>]*>/g;
 
-  for (const match of html.matchAll(imgRegex)) {
+  let match;
+  while ((match = imgRegex.exec(html)) !== null) {
     const src = match[1];
     if (src.startsWith("http") || src.startsWith("//")) continue;
 
-    if (src.includes("assets/blog/")) {
-      const filename = src.split("/").pop()!;
-      if (imageMap.has(filename)) {
-        transformations.set(src, await optimizeImage(filename, siteUrl));
-      }
+    const filename = src.includes("assets/blog/")
+      ? src.split("/").pop()!
+      : src.substring(1);
+
+    const isImage = /\.(jpeg|jpg|png|webp|gif)$/i.test(filename);
+
+    if (isImage && imageMap.has(filename)) {
+      transformations.set(src, await optimizeImage(filename, siteUrl));
+    } else if (src.startsWith("/")) {
+      transformations.set(src, new URL(src, siteUrl).href);
     }
   }
 
