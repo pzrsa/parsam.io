@@ -15,17 +15,16 @@ const imageModules = import.meta.glob<{ default: ImageMetadata }>(
 
 const imageMap = new Map<string, ImageMetadata>();
 for (const [path, module] of Object.entries(imageModules)) {
-  const filename = path.split("/").pop()!;
-  imageMap.set(filename, module.default);
+  imageMap.set(path.split("/").pop()!, module.default);
 }
 
 async function optimizeImage(filename: string, siteUrl: URL): Promise<string> {
-  const imageMetadata = imageMap.get(filename);
-  if (!imageMetadata) return new URL(`/${filename}`, siteUrl).href;
+  const metadata = imageMap.get(filename);
+  if (!metadata) return new URL(`/${filename}`, siteUrl).href;
 
   try {
     const optimized = await getImage({
-      src: imageMetadata,
+      src: metadata,
       format: "webp",
       width: 1200,
       quality: 80,
@@ -38,61 +37,35 @@ async function optimizeImage(filename: string, siteUrl: URL): Promise<string> {
 
 async function processPostContent(markdown: string, siteUrl: URL): Promise<string> {
   const html = parser.render(markdown);
-  const imgRegex = /<img[^>]+src="([^"]+)"[^>]*>/g;
   const transformations = new Map<string, string>();
+  const imgRegex = /<img[^>]+src="([^"]+)"[^>]*>/g;
 
-  let match;
-  while ((match = imgRegex.exec(html)) !== null) {
+  for (const match of html.matchAll(imgRegex)) {
     const src = match[1];
+    if (src.startsWith("http") || src.startsWith("//")) continue;
 
-    if (src.startsWith("/") && !src.startsWith("//")) {
-      const filename = src.substring(1);
-      const isImage = /\.(jpeg|jpg|png|webp|gif)$/i.test(filename);
+    const filename = src.includes("assets/blog/")
+      ? src.split("/").pop()!
+      : src.replace(/^\//, "");
 
-      if (isImage && imageMap.has(filename)) {
-        transformations.set(src, await optimizeImage(filename, siteUrl));
-      } else {
-        transformations.set(src, new URL(src, siteUrl).href);
-      }
-    }
-
-    if (src.includes("assets/blog/")) {
-      const filename = src.split("/").pop()!;
-      const isImage = /\.(jpeg|jpg|png|webp|gif)$/i.test(filename);
-
-      if (isImage && imageMap.has(filename)) {
-        transformations.set(src, await optimizeImage(filename, siteUrl));
-      }
+    if (/\.(jpeg|jpg|png|webp|gif)$/i.test(filename) && imageMap.has(filename)) {
+      transformations.set(src, await optimizeImage(filename, siteUrl));
+    } else if (src.startsWith("/")) {
+      transformations.set(src, new URL(src, siteUrl).href);
     }
   }
 
-  let processedHtml = html;
+  let result = html;
   for (const [original, optimized] of transformations) {
-    const escapedOriginal = original.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    processedHtml = processedHtml.replace(
-      new RegExp(`src="${escapedOriginal}"`, "g"),
-      `src="${optimized}"`,
-    );
+    const escaped = original.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    result = result.replace(new RegExp(`src="${escaped}"`, "g"), `src="${optimized}"`);
   }
 
-  return sanitizeHtml(processedHtml, {
-    allowedTags: sanitizeHtml.defaults.allowedTags.concat([
-      "img",
-      "video",
-      "source",
-    ]),
+  return sanitizeHtml(result, {
+    allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img", "video", "source"]),
     allowedAttributes: {
       ...sanitizeHtml.defaults.allowedAttributes,
-      video: [
-        "controls",
-        "width",
-        "height",
-        "style",
-        "autoplay",
-        "loop",
-        "muted",
-        "playsinline",
-      ],
+      video: ["controls", "width", "height", "style", "autoplay", "loop", "muted", "playsinline"],
       source: ["src", "type"],
     },
   });
