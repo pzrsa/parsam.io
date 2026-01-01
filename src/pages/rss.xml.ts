@@ -19,9 +19,9 @@ for (const [path, module] of Object.entries(imageModules)) {
   imageMap.set(filename, module.default);
 }
 
-async function optimizeImage(filename: string): Promise<string> {
+async function optimizeImage(filename: string, siteUrl: URL): Promise<string> {
   const imageMetadata = imageMap.get(filename);
-  if (!imageMetadata) return `https://parsam.io/${filename}`;
+  if (!imageMetadata) return new URL(`/${filename}`, siteUrl).href;
 
   try {
     const optimized = await getImage({
@@ -30,13 +30,13 @@ async function optimizeImage(filename: string): Promise<string> {
       width: 1200,
       quality: 80,
     });
-    return new URL(optimized.src, "https://parsam.io").href;
+    return new URL(optimized.src, siteUrl).href;
   } catch {
-    return `https://parsam.io/${filename}`;
+    return new URL(`/${filename}`, siteUrl).href;
   }
 }
 
-async function processPostContent(markdown: string): Promise<string> {
+async function processPostContent(markdown: string, siteUrl: URL): Promise<string> {
   const html = parser.render(markdown);
   const imgRegex = /<img[^>]+src="([^"]+)"[^>]*>/g;
   const transformations = new Map<string, string>();
@@ -44,14 +44,24 @@ async function processPostContent(markdown: string): Promise<string> {
   let match;
   while ((match = imgRegex.exec(html)) !== null) {
     const src = match[1];
+
     if (src.startsWith("/") && !src.startsWith("//")) {
       const filename = src.substring(1);
       const isImage = /\.(jpeg|jpg|png|webp|gif)$/i.test(filename);
 
       if (isImage && imageMap.has(filename)) {
-        transformations.set(src, await optimizeImage(filename));
+        transformations.set(src, await optimizeImage(filename, siteUrl));
       } else {
-        transformations.set(src, `https://parsam.io${src}`);
+        transformations.set(src, new URL(src, siteUrl).href);
+      }
+    }
+
+    if (src.includes("assets/blog/")) {
+      const filename = src.split("/").pop()!;
+      const isImage = /\.(jpeg|jpg|png|webp|gif)$/i.test(filename);
+
+      if (isImage && imageMap.has(filename)) {
+        transformations.set(src, await optimizeImage(filename, siteUrl));
       }
     }
   }
@@ -90,20 +100,21 @@ async function processPostContent(markdown: string): Promise<string> {
 
 export async function GET(context: APIContext) {
   const posts = await getBlogPosts();
+  const siteUrl = new URL(context.site!);
 
   const items = await Promise.all(
     posts.map(async (post) => ({
       title: post.data.title,
       pubDate: post.data.date,
       link: `/${post.id}/`,
-      content: await processPostContent(post.body!),
+      content: await processPostContent(post.body!, siteUrl),
     })),
   );
 
   return rss({
     title: "Parsa Mesgarha",
     description: "",
-    site: new URL(context.site!),
+    site: siteUrl,
     items,
   });
 }
