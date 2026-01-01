@@ -10,11 +10,11 @@ Many of my friends turn to me for advice (though I'm not sure why), and I feel l
 
 This brings us to the topic of dating apps, a so called necessary evil that I've notoriously been against ever since I learned of the existence of them.
 
-![](/levelsio-dating.webp)
+![](../../assets/blog/levelsio-dating.webp)
 
 ([link](https://x.com/levelsio/status/1880943325261295712))
 
-![](/wsj-dating.webp)
+![](../../assets/blog/wsj-dating.webp)
 ([link](https://x.com/davidu/status/1937149103986651552))
 
 # I thought it'd be a good idea
@@ -47,7 +47,7 @@ Also, since I'm in Berlin, most profiles were written in German, and I honestly 
 
 I told myself I will try it for just a week, but everyone said that's not enough for the algorithms to kick in, so I said ok I'll do 2 weeks. After the second week I was certain that these dating apps were not for me, so I deleted my account immediately. I sent enough likes/comments in the first week to know that it just wouldn't work for me no matter how long people tell me I need to keep it installed.
 
-![](/deleted-hinge-account.jpeg)
+![](../../assets/blog/deleted-hinge-account.jpeg)
 
 In total, I had one match with a girl I already knew IRL but we didn't go on a date.
 
@@ -57,21 +57,21 @@ Here's the profile I had before deleting my account. It went through a bunch of 
 
 Looking back on it, I think my friends were bullshitting. My profile is quite shit, but it was definitely better than a lot of the ones I saw.
 
-![](/hinge1.jpeg)
+![](../../assets/blog/hinge1.jpeg)
 
-![](/hinge2.jpeg)
+![](../../assets/blog/hinge2.jpeg)
 
-![](/hinge3.jpeg)
+![](../../assets/blog/hinge3.jpeg)
 
-![](/hinge4.jpeg)
+![](../../assets/blog/hinge4.jpeg)
 
-![](/hinge5.jpeg)
+![](../../assets/blog/hinge5.jpeg)
 
-![](/hinge6.jpeg)
+![](../../assets/blog/hinge6.jpeg)
 
-![](/hinge7.jpeg)
+![](../../assets/blog/hinge7.jpeg)
 
-![](/hinge8.jpeg)
+![](../../assets/blog/hinge8.jpeg)
 
 
 # Don't get fooled by randomness (it's all luck)

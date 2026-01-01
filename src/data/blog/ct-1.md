@@ -14,7 +14,7 @@ I’ve been inspired by [Thorsten Ball](https://thorstenball.com/) to share my o
 - [nix-darwin](https://github.com/nix-darwin/nix-darwin) - creating a declarative OS intrigues me, because I like having all aspects of it expressed in clear text. Kinda like how I prefer having an `init.lua` (my Neovim [config](https://github.com/pzrsa/dotfiles/blob/main/nvim/init.lua)) that could be reproduced on other machines.
 - [You're a Slow Thinker. Now what?](https://chillphysicsenjoyer.substack.com/p/youre-a-slow-thinker-now-what) - I think I'm a mix of both a fast and slow thinker. I think fast in social interactions, but I struggle with quick mathematics on the spot.
 
-![](/us-graphics-beige.png)
+![](../../assets/blog/us-graphics-beige.png)
 [x.com/usgraphics/status/1962645267976753206](https://x.com/usgraphics/status/1962645267976753206) - love this, exactly why I find joy in my tank of a keyboard, the [HHKB](https://www.youtube.com/watch?v=bCd6KBqvCcg).
 
 hope you enjoyed! do share anything you've stumbled on recently.

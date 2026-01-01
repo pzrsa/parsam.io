@@ -3,7 +3,6 @@ import type { CollectionEntry } from "astro:content";
 import { render } from "astro:content";
 import Layout from "./Layout.astro";
 import Prose from "./Prose.astro";
-import SubscribeForm from "./NewsletterForm.astro";
 
 interface Props {
   post: CollectionEntry<"blog">;
@@ -45,7 +44,6 @@ const { Content } = await render(post);
     </article>
     <Prose class="prose-h3:text-xl mt-6 pt-8 border-t">
       <h3>Enjoyed this post?</h3>
-      <SubscribeForm />
       <p>And consider...</p>
       <ul>
         <li>
