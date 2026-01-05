@@ -2,6 +2,11 @@
 title: "I deleted Hinge after a week - on dating apps"
 date: "2025-07-04"
 ---
+
+**Update (Jan 2026)**: After posting this I realised how hard it is to write about dating apps without sounding whiny or like you can't no hoes. Most people agree that apps are genuinely shit since a lot of them don't take them seriously, but I still think I was being too rigid about them which was ignorant of me. Reading [Black Swan](https://en.wikipedia.org/wiki/The_Black_Swan:_The_Impact_of_the_Highly_Improbable) made me realise I should be exposing myself to upside risks, and the risk is worth it if something good happens. IRL is always the way to go, but ruling out apps entirely even if using them passively is dumb.
+
+---
+
 For the majority of my life, I had the identity of being somewhat of a purist. I didn't have my first sip of alcohol till last year, nor gone to the club till earlier this year (I live in Berlin so it was inevitable). In general I was against a lot of things that I felt did not have a meaningful impact on my life, but also because I never deemed myself cool enough to do them.
 
 As I've gotten older (I [turned 22](https://parsam.io/22) 2 days ago), I've become more lax with these strict rules. I think having these "streaks" of not doing something was dumb. I remember telling myself "☝️🤓 I will have my first glass of alcohol with that special someone". I had my first pint with my dad, and that brought me joy more than anything in the world.
@@ -19,7 +24,7 @@ This brings us to the topic of dating apps, a so called necessary evil that I've
 
 # I thought it'd be a good idea
 
-Here's the thing though, I started working at 18, and most of the people in my daily life are much older than me. So when I [moved to Berlin last year](https://parsam.io/tesla) on my own, this put me in a rather unique position for my age. I don't know a single other 22 year old besides my friend who's interning at Tesla. I'm always the youngest in the environments I’m in. 
+Here's the thing though, I started working at 18, and most of the people in my daily life are much older than me. So when I [moved to Berlin last year](https://parsam.io/tesla) on my own, this put me in a rather unique position for my age. I don't know a single other 22 year old besides my friend who's interning at Tesla. I'm always the youngest in the environments I’m in.
 
 It also doesn't help that I look and behave much older than my age. Funnily enough, not a single person has guessed my age correctly, they always overestimate by at least 3 years. One guy even thought I was 30! I don't even think I look older, maybe it's because my Persian genetics in the western world makes me seem older.
 
@@ -49,8 +54,6 @@ I told myself I will try it for just a week, but everyone said that's not enough
 
 ![](../../assets/blog/deleted-hinge-account.jpeg)
 
-In total, I had one match with a girl I already knew IRL but we didn't go on a date.
-
 # My profile
 
 Here's the profile I had before deleting my account. It went through a bunch of tweaks, and most friends said it was good. I also tried to ask some people I didn't know as well to remove the bias.
@@ -73,8 +76,8 @@ Looking back on it, I think my friends were bullshitting. My profile is quite sh
 
 ![](../../assets/blog/hinge8.jpeg)
 
-
 # Don't get fooled by randomness (it's all luck)
+
 You hear about all these success stories about couples who go on to get married after meeting on a dating app. But what you don't realise is that they were on these apps in the golden era. I would say this golden era was before the pandemic.
 
 The friends I mentioned earlier who just got married met on Tinder over 6 years ago, which was a completely different time. I think after COVID the apps declined, because people became so used to being socially isolated behind a screen.
@@ -86,11 +89,13 @@ I downloaded the app at a perfect time because I was absolutely immersed in [Nas
 So I knew not to expect anything, as luck has struck me in other areas, just not in this one.
 
 # It's based on optics
+
 People treat these apps like it's Instagram, they just don't care about finding a life partner, they want the validation. Everyone knows they're not going to find their life partner on there, yet still participate in these status games.
 
-When flaws are so easily projected, there's not much else to latch onto. Prompt's are still too shallow to represent a whole person. 
+When flaws are so easily projected, there's not much else to latch onto. Prompt's are still too shallow to represent a whole person.
 
 # Zero repercussions
+
 When you're hiding behind a screen, it's easy to feel like there's zero consequences with how you behave online.
 
 There's no sort of reputation at stake here. If you ghost, nothing will happen.
@@ -98,6 +103,7 @@ There's no sort of reputation at stake here. If you ghost, nothing will happen.
 But when you're meeting someone from your school or neighbourhood, you have a reputation at stake you need to preserve.
 
 # Touch grass
+
 As funny as it is, if you truly want to find your life partner, you need to be maximising your exposure in real life. Go to meetups, find your third space, find your people. Naturally the world will gift you when you're doing cool stuff. You can just do things.
 
 The problem with these apps is that when there's no common ground, i.e meeting your spouse at the gym or some place you go to on a recurring basis, it's harder to gauge how a person is over the long term. But when you see someone on a daily basis through work or at your gym, then you grow to like each other. Your flaws suddenly become endearing.
@@ -106,7 +112,7 @@ Furthermore, at least in real life I can have some sort of control over how many
 
 # Closing thoughts
 
-As for me, idk. 
+As for me, idk.
 
 My friends tell me that I'm just too young to be looking for a wife. The girls my age are not in my immediate day to day vicinity, and I'm not going to force my way into that sphere. I just need to wait patiently.
 
