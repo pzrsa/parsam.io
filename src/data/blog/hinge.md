@@ -3,7 +3,7 @@ title: "I deleted Hinge after a week - on dating apps"
 date: "2025-07-04"
 ---
 
-**Update (Jan 2026)**: After posting this I realised how hard it is to write about dating apps without sounding whiny or like you can't no hoes. Most people agree that apps are genuinely shit since a lot of them don't take them seriously, but I still think I was being too rigid about them which was ignorant of me. Reading [Black Swan](https://en.wikipedia.org/wiki/The_Black_Swan:_The_Impact_of_the_Highly_Improbable) made me realise I should be exposing myself to upside risks, and the risk is worth it if something good happens. IRL is always the way to go, but ruling out apps entirely even if using them passively is dumb.
+**Update (Jan 2026)**: After posting this I realised how hard it is to write about dating apps without sounding whiny or like you can't get no hoes. Most people agree that apps are genuinely shit since a lot of them don't take them seriously, but I still think I was being too rigid about them which was ignorant of me. Reading [Black Swan](https://en.wikipedia.org/wiki/The_Black_Swan:_The_Impact_of_the_Highly_Improbable) made me realise I should be exposing myself to upside risks, and the risk is worth it if something good happens. IRL is always the way to go, but ruling out apps entirely even if using them passively is dumb.
 
 ---
 
