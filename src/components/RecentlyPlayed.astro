@@ -1,0 +1,42 @@
+---
+let data = null;
+let error = false;
+
+try {
+  const res = await fetch(new URL("/api/recently-played", Astro.url));
+  if (!res.ok) throw new Error("bad status");
+  data = await res.json();
+} catch {
+  error = true;
+}
+---
+
+{!error && !data && <p>loading...</p>}
+
+{
+  error || !data?.tracks?.length ? (
+    <p>No recently played tracks</p>
+  ) : (
+    <div class="flex flex-col gap-2">
+      {data.tracks.map((track: any) => (
+        <div class="flex flex-row items-center gap-2">
+          <a href={track.songUrl} target="_blank">
+            <img
+              alt={track.title}
+              src={track.albumImageUrl}
+              height={48}
+              width={48}
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+          <a href={track.songUrl} target="_blank" class="flex-1 min-w-0">
+            <span class="block line-clamp-1 text-sm">
+              <span class="font-bold">{track.title}</span> by {track.artist}
+            </span>
+          </a>
+        </div>
+      ))}
+    </div>
+  )
+}

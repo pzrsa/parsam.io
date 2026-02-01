@@ -5,6 +5,7 @@ import me from "../assets/avatar.webp";
 import name from "../assets/name.svg";
 import Prose from "../components/Prose.astro";
 import NowPlaying from "../components/NowPlaying.astro";
+import RecentlyPlayed from "../components/RecentlyPlayed.astro";
 import NewsletterForm from "../components/NewsletterForm.astro";
 import { getCollection } from "astro:content";
 import { getBlogPosts } from "../data/utils";
@@ -46,6 +47,34 @@ const linksClass = "w-fit font-bold";
   <div class="h-[123px] mb-4">
     <NowPlaying server:defer />
   </div>
+  <div class="mb-4">
+    <button
+      id="recently-played-toggle"
+      class="flex items-center gap-2 font-bold mb-2 hover:opacity-80"
+      aria-expanded="false"
+    >
+      <span id="recently-played-arrow" class="transition-transform">▶</span>
+      <h3>Recently Played</h3>
+    </button>
+    <div id="recently-played-content" class="hidden">
+      <RecentlyPlayed server:defer />
+    </div>
+  </div>
+
+  <script>
+    const toggle = document.getElementById("recently-played-toggle");
+    const content = document.getElementById("recently-played-content");
+    const arrow = document.getElementById("recently-played-arrow");
+
+    toggle?.addEventListener("click", () => {
+      const isExpanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!isExpanded));
+      content?.classList.toggle("hidden");
+      if (arrow) {
+        arrow.style.transform = isExpanded ? "rotate(0deg)" : "rotate(90deg)";
+      }
+    });
+  </script>
   <Prose>
     <p>
       I'm a 22 year old Persian born in England, raised in London. I'm currently
