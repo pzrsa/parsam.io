@@ -1,6 +1,7 @@
 ---
 date: "2023-10-27"
 title: "My Watch Collection"
+cover: seiko.jpeg
 ---
 
 I've been into watches and [horology](https://en.wikipedia.org/wiki/Horology) for almost 3 years now, where it all started during the pandemic with an abundance of time, and an internet to surf. I don't really remember who got me into the hobby exactly, but I think I can safely blame someone on YouTube.

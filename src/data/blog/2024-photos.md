@@ -1,6 +1,7 @@
 ---
 date: "2024-12-31"
 title: "Favourite photos from 2024"
+cover: parsa-thomas.jpeg
 ---
 
 ![](../../assets/blog/parsa-thomas.jpeg)

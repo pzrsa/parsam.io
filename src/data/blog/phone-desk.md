@@ -1,6 +1,7 @@
 ---
 date: "2023-09-12"
 title: "Leaving my phone on my desk overnight"
+cover: phone-desk.jpg
 ---
 
 A habit I've stuck with for a couple years is where I leave my phone on my desk overnight.

@@ -8,10 +8,22 @@ import NowPlaying from "../components/NowPlaying.astro";
 import RecentlyPlayed from "../components/RecentlyPlayed.astro";
 import NewsletterForm from "../components/NewsletterForm.astro";
 import { getCollection } from "astro:content";
+import type { ImageMetadata } from "astro";
 import { getBlogPosts } from "../data/utils";
 
 const posts = await getBlogPosts();
 const newestPosts = posts.slice(0, 5);
+
+const allImages = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/blog/**/*.{webp,jpg,jpeg,png,gif}",
+);
+const newestCovers = await Promise.all(
+  newestPosts.map(async (post) => {
+    if (!post.data.cover) return undefined;
+    const loader = allImages[`/src/assets/blog/${post.data.cover}`];
+    return loader ? (await loader()).default : undefined;
+  }),
+);
 
 const [albums, filmsShows, books] = await Promise.all([
   getCollection("albums"),
@@ -22,7 +34,7 @@ const [albums, filmsShows, books] = await Promise.all([
 const linksClass = "w-fit font-bold";
 ---
 
-<Layout image={new URL("og/home.png", Astro.url)}>
+<Layout image={new URL("home.png", Astro.url)}>
   <div class="flex flex-row justify-between items-center mb-2">
     <a href="https://x.com/pzrsaa" target="_blank">
       <img
@@ -44,7 +56,7 @@ const linksClass = "w-fit font-bold";
       />
     </a>
   </div>
-  <div class="h-[123px] mb-4">
+  <div class="h-30.75 mb-4">
     <NowPlaying server:defer />
   </div>
   <div class="mb-4">
@@ -80,7 +92,8 @@ const linksClass = "w-fit font-bold";
       I'm a 22 year old Persian born in England, raised in London. I'm currently
       working as a Senior Machine Learning Engineer at
       <a href="https://www.yaak.ai/" target="_blank">Yaak AI</a>
-      in Berlin, getting robots to understand and interact with the world around them.
+      in Berlin, getting robots to understand and interact with the world around
+      them.
     </p>
 
     <p>
@@ -88,8 +101,7 @@ const linksClass = "w-fit font-bold";
       <span class="prose-a:text-tesla-red"
         ><a href="https://www.tesla.com" target="_blank">Tesla</a>
       </span>
-      in Berlin for almost 2 years.
-      And before that I worked at{" "}
+      in Berlin for almost 2 years. And before that I worked at{" "}
       <span class="prose-a:decoration-google-blue prose-a:hover:text-blue-800"
         ><a href="https://google.com" target="_blank">
           <span class="text-google-blue">G</span><span class="text-google-red"
@@ -120,25 +132,39 @@ const linksClass = "w-fit font-bold";
         <h3>Newest Posts</h3>
         <ul class="flex flex-col gap-4 not-prose">
           {
-            newestPosts.map((post) => (
-              <li>
-                <span class="flex gap-1 items-center">
-                  <span class="flex-1">
-                    <a href={`/${post.id}`}>
-                      <span class="font-bold text-lg">{post.data.title}</span>
-                      {post.data.author && <span> ({post.data.author})</span>}
-                    </a>
+            newestPosts.map((post, i) => {
+              const cover = newestCovers[i];
+              return (
+                <li>
+                  <span class="flex gap-3 items-center">
+                    {cover ? (
+                      <a href={`/${post.id}`} class="shrink-0">
+                        <Image
+                          src={cover}
+                          alt={post.data.title}
+                          class="h-12 w-20 object-cover hover:translate-x-px hover:translate-y-px hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]"
+                        />
+                      </a>
+                    ) : (
+                      <span class="shrink-0 w-20" />
+                    )}
+                    <span class="flex-1 min-w-0">
+                      <a href={`/${post.id}`}>
+                        <span class="font-bold text-lg">{post.data.title}</span>
+                        {post.data.author && <span> ({post.data.author})</span>}
+                      </a>
+                    </span>
+                    <span class="shrink-0">
+                      {post.data.date.toLocaleDateString("en-GB", {
+                        day: "numeric",
+                        month: "short",
+                        year: "2-digit",
+                      })}
+                    </span>
                   </span>
-                  <span>
-                    {post.data.date.toLocaleDateString("en-GB", {
-                      day: "numeric",
-                      month: "short",
-                      year: "2-digit",
-                    })}
-                  </span>
-                </span>
-              </li>
-            ))
+                </li>
+              );
+            })
           }
         </ul>
         <h4><a href="/blog">More →</a></h4>

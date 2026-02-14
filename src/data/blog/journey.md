@@ -1,6 +1,7 @@
 ---
 date: "2025-01-03"
 title: "From a gaming addiction to Google and Tesla by 21"
+cover: welcome-google.jpeg
 ---
 
 4 years ago, I started my software engineering career at 17. During this time, I've had the rare opportunity to work at two innovative companies: [Google](https://google.com) and [Tesla](https://tesla.com).

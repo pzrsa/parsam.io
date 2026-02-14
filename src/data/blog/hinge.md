@@ -1,6 +1,7 @@
 ---
 title: "I deleted Hinge after a week - on dating apps"
 date: "2025-07-04"
+cover: deleted-hinge-account.jpeg
 ---
 
 **Update (Jan 2026)**: After posting this I realised how hard it is to write about dating apps without sounding whiny or like you can't get no hoes. Most people agree that apps are genuinely shit since a lot of them don't take them seriously, but I still think I was being too rigid about them which was ignorant of me. Reading [Black Swan](https://en.wikipedia.org/wiki/The_Black_Swan:_The_Impact_of_the_Highly_Improbable) made me realise I should be exposing myself to upside risks, and the risk is worth it if something good happens. IRL is always the way to go, but ruling out apps entirely even if using them passively is dumb.
@@ -15,11 +16,11 @@ Many of my friends turn to me for advice (though I'm not sure why), and I feel l
 
 This brings us to the topic of dating apps, a so called necessary evil that I've notoriously been against ever since I learned of the existence of them.
 
-![](../../assets/blog/levelsio-dating.webp)
+![](../../assets/blog/levelsio-dating.jpeg)
 
 ([link](https://x.com/levelsio/status/1880943325261295712))
 
-![](../../assets/blog/wsj-dating.webp)
+![](../../assets/blog/wsj-dating.jpeg)
 ([link](https://x.com/davidu/status/1937149103986651552))
 
 # I thought it'd be a good idea

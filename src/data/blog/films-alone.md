@@ -1,6 +1,7 @@
 ---
 date: "2024-11-09"
 title: "On Watching Films Alone"
+cover: don-cinema.jpg
 ---
 
 I watch a lot of [films](https://letterboxd.com/pzrsa/)... not as much as I wish but a good amount to say that I think it's so much more enjoyable watching movies alone in the theatre.

@@ -1,6 +1,7 @@
 ---
 date: "2024-04-03"
 title: "I joined Tesla (and moved to Berlin)"
+cover: welcome-tesla.png
 ---
 
 I'm pleased to share I joined Tesla! This will be a huge leap in my professional life as a Software Engineer, as well as my personal one as I've moved from London to Berlin, where I've started working from their [Gigafactory](https://www.tesla.com/en_eu/giga-berlin).

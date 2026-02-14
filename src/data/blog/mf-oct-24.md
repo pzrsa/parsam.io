@@ -1,6 +1,7 @@
 ---
 date: "2024-10-31"
 title: "Monthly Favourites - October 2024"
+cover: brave-tabs.jpeg
 ---
 
 I'm starting a new series on my blog where I share some of the interesting things I've come across. It's kinda a bookmark dump, but you might find some value in it :)

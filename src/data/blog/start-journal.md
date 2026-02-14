@@ -1,6 +1,7 @@
 ---
 date: "2021-05-13"
 title: "How to start journaling"
+cover: journal-prompt.jpg
 ---
 
 I've been journaling since late last year, and there are a lot of things I've learnt about myself. But the thing is, I know this isn't the case for the majority of people. It's hard to build the habit since it's so boring and looks like it takes up a lot of time. But in reality I found a way that helped me and might help you. I'll be sharing some of my past experiences of how it's benefited me, and how powerful of a habit journaling can be for a meaningful life.

@@ -1,6 +1,7 @@
 ---
 date: "2025-05-16"
 title: "Migrating my blog from Next.js to Astro"
+cover: nextjs-network-tab.jpeg
 ---
 I recently migrated this site from [Next.js](https://nextjs.org/) to [Astro](https://astro.build), and I wish I did it earlier.
 

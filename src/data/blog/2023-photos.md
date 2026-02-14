@@ -1,6 +1,7 @@
 ---
 date: "2023-12-31"
 title: "Photos from 2023"
+cover: shard-sunset.jpeg
 ---
 
 ![](../../assets/blog/6ps-sunset.jpeg)

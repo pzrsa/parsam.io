@@ -1,6 +1,7 @@
 ---
 title: "Cool Things #1"
 date: "2025-09-16"
+cover: us-graphics-beige.png
 ---
 
 

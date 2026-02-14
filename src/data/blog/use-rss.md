@@ -1,6 +1,7 @@
 ---
 title: "You should be using an RSS reader"
 date: "2025-09-17"
+cover: netnewswire.png
 ---
 
 I love the open web, and by extension, I love what [RSS](https://en.wikipedia.org/wiki/RSS) stands for: ~~Really Simple Syndication~~ freedom.
