@@ -57,6 +57,9 @@ my [CTO](https://www.linkedin.com/in/harsi/) gave me his physical copy, and I'm 
 gifted by my CTO, not relevant to my studies, but it seems relevant in the age of agents and as something miscellaneous to read.
 
 ## Videos and Courses
+
+![](../../assets/blog/3b1b-nn.png)
+
 - [Neural Networks](https://www.3blue1brown.com/topics/neural-networks) by 3Blue1Brown - I think the [visuals](https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) (of course the url is suffixed with `pi`) are even more important in learning AI, so I'm happy with it so far
 - [Neural Networks: Zero to Hero](https://youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) by Andrej Karpathy
 - [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com) by Michael Nielsen - I went through the first few chapters a couple months ago, I like how it teaches from the absolute foundations of deep learning that won't go out of fashion any time soon ([aka Lindy](https://en.wikipedia.org/wiki/Lindy_effect))
@@ -65,6 +68,9 @@ gifted by my CTO, not relevant to my studies, but it seems relevant in the age o
 - [Robotics Course](https://huggingface.co/learn/robotics-course/unit0/1) by Hugging Face
 
 ## Papers
+
+![](../../assets/blog/pi0-blog.png)
+
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762) - the transformer architecture that changed everything
 - [An Image is Worth 16x16 Words (ViT)](https://research.google/blog/transformers-for-image-recognition-at-scale/) - transformers applied to vision
 - [Denoising Diffusion Probabilistic Models](https://hojonathanho.github.io/diffusion/) - the maths behind diffusion models
