@@ -7,23 +7,8 @@ import Prose from "../components/Prose.astro";
 import NowPlaying from "../components/NowPlaying.astro";
 import RecentlyPlayed from "../components/RecentlyPlayed.astro";
 import NewsletterForm from "../components/NewsletterForm.astro";
+import PostList from "../components/PostList.astro";
 import { getCollection } from "astro:content";
-import type { ImageMetadata } from "astro";
-import { getBlogPosts } from "../data/utils";
-
-const posts = await getBlogPosts();
-const newestPosts = posts.slice(0, 5);
-
-const allImages = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/blog/**/*.{webp,jpg,jpeg,png,gif}",
-);
-const newestCovers = await Promise.all(
-  newestPosts.map(async (post) => {
-    if (!post.data.cover) return undefined;
-    const loader = allImages[`/src/assets/blog/${post.data.cover}`];
-    return loader ? (await loader()).default : undefined;
-  }),
-);
 
 const [albums, filmsShows, books] = await Promise.all([
   getCollection("albums"),
@@ -120,7 +105,8 @@ const linksClass = "w-fit font-bold";
     </p>
     <p>
       I have a <a href="/blog">blog</a> where I write about stuff I find interesting
-      enough to share, mostly on things like tech, philosophy and life.
+      enough to share, mostly on things like tech, philosophy and life. You can
+      also <a href="/newsletter">subscribe</a> to get notified about new posts.
     </p>
     <p>
       If anything here piques your interest, don't hesitate to{" "}
@@ -130,43 +116,7 @@ const linksClass = "w-fit font-bold";
     <div>
       <div>
         <h3>Newest Posts</h3>
-        <ul class="flex flex-col gap-4 not-prose">
-          {
-            newestPosts.map((post, i) => {
-              const cover = newestCovers[i];
-              return (
-                <li>
-                  <span class="flex gap-3 items-center">
-                    {cover ? (
-                      <a href={`/${post.id}`} class="shrink-0">
-                        <Image
-                          src={cover}
-                          alt={post.data.title}
-                          class="h-12 w-20 object-cover hover:translate-x-px hover:translate-y-px hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]"
-                        />
-                      </a>
-                    ) : (
-                      <span class="shrink-0 w-20" />
-                    )}
-                    <span class="flex-1 min-w-0">
-                      <a href={`/${post.id}`}>
-                        <span class="font-bold text-lg">{post.data.title}</span>
-                        {post.data.author && <span> ({post.data.author})</span>}
-                      </a>
-                    </span>
-                    <span class="shrink-0">
-                      {post.data.date.toLocaleDateString("en-GB", {
-                        day: "numeric",
-                        month: "short",
-                        year: "2-digit",
-                      })}
-                    </span>
-                  </span>
-                </li>
-              );
-            })
-          }
-        </ul>
+        <PostList count={5} />
         <h4><a href="/blog">More →</a></h4>
       </div>
       <h3 class="font-bold">Newsletter</h3>

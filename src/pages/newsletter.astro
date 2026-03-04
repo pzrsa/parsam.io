@@ -1,0 +1,15 @@
+---
+import Layout from "../components/Layout.astro";
+import Prose from "../components/Prose.astro";
+import NewsletterForm from "../components/NewsletterForm.astro";
+import PostList from "../components/PostList.astro";
+---
+
+<Layout title="Newsletter" image={new URL("newsletter.png", Astro.url)}>
+  <Prose>
+    <h1 class="text-2xl font-bold mb-6">Newsletter</h1>
+    <NewsletterForm server:defer />
+    <h2>Latest Posts</h2>
+    <PostList count={5} />
+  </Prose>
+</Layout>
