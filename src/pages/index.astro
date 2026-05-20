@@ -1,6 +1,5 @@
 ---
 import Layout from "../components/Layout.astro";
-import { Image } from "astro:assets";
 import me from "../assets/avatar.webp";
 import name from "../assets/name.svg";
 import Prose from "../components/Prose.astro";
@@ -10,13 +9,15 @@ import NewsletterForm from "../components/NewsletterForm.astro";
 import PostList from "../components/PostList.astro";
 import { getCollection } from "astro:content";
 
-const [albums, filmsShows, books] = await Promise.all([
+const [albums, films, books] = await Promise.all([
   getCollection("albums"),
-  getCollection("filmsShows"),
+  getCollection("films"),
   getCollection("books"),
 ]);
 
 const linksClass = "w-fit font-bold";
+const gridClass = "grid grid-cols-3 sm:grid-cols-4 gap-x-3 gap-y-5 not-prose";
+const thumbClass = "h-24 w-auto mb-2 block";
 ---
 
 <Layout image={new URL("home.png", Astro.url)}>
@@ -192,66 +193,83 @@ const linksClass = "w-fit font-bold";
     </div>
     <div>
       <h2>Favourites</h2>
-      <h3>Albums</h3>
-      <div class="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-6 not-prose">
-        {
-          albums.map((album) => (
-            <a
-              href={`https://open.spotify.com/album/${album.id}`}
-              target="_blank"
-            >
-              <Image
-                alt={album.data.title}
-                src={`https://i.scdn.co/image/${album.data.imageID}`}
-                width={640}
-                height={640}
-              />
-            </a>
-          ))
-        }
-      </div>
       <h3>Books</h3>
-      <div class="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-6 not-prose">
+      <div class={gridClass}>
         {
           books.map((book) => (
-            <a
-              href={`https://books.google.com/books?id=${book.id}`}
-              target="_blank"
-            >
-              <Image
-                alt={book.data.title}
-                src={`https://books.google.com/books/content?id=${book.id}&printsec=frontcover&img=1&zoom=1`}
-                width={624}
-                height={320}
-              />
-            </a>
+            <div>
+              <a
+                class="block"
+                href={
+                  book.data.notesSlug
+                    ? `/${book.data.notesSlug}`
+                    : `https://books.google.com/books?id=${book.id}`
+                }
+                target={book.data.notesSlug ? undefined : "_blank"}
+              >
+                <img
+                  src={`https://books.google.com/books/content?id=${book.id}&printsec=frontcover&img=1&zoom=1`}
+                  alt={book.data.title}
+                  loading="lazy"
+                  class={thumbClass}
+                />
+                <span class="font-bold block">{book.data.title}</span>
+              </a>
+              <div class="text-sm opacity-60">
+                {book.data.author} · {book.data.year}
+              </div>
+            </div>
           ))
         }
       </div>
-      <h3>Films/Shows</h3>
-      <div class="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-6 not-prose">
+      <h3>Music</h3>
+      <div class={gridClass}>
         {
-          filmsShows.map((filmShow) => (
-            <a
-              href={`https://www.imdb.com/title/${filmShow.id}`}
-              target="_blank"
-            >
-              <Image
-                alt={filmShow.data.title}
-                src={`https://image.tmdb.org/t/p/original/${filmShow.data.imageID}.jpg`}
-                width={624}
-                height={320}
-              />
-            </a>
+          albums.map((album) => (
+            <div>
+              <a
+                class="block"
+                href={`https://open.spotify.com/album/${album.id}`}
+                target="_blank"
+              >
+                <img
+                  src={`https://i.scdn.co/image/${album.data.imageID}`}
+                  alt={album.data.title}
+                  loading="lazy"
+                  class={thumbClass}
+                />
+                <span class="font-bold block">{album.data.title}</span>
+              </a>
+              <div class="text-sm opacity-60">
+                {album.data.artist} · {album.data.year}
+              </div>
+            </div>
           ))
         }
       </div>
-      <p>
-        You can see the rest on my{" "}
-        <a href="https://letterboxd.com/pzrsa/likes/films/by/date/size/large/">
-          Letterboxd</a
-        >.
-      </p>
+      <h3>Films</h3>
+      <div class={gridClass}>
+        {
+          films.map((film) => (
+            <div>
+              <a
+                class="block"
+                href={`https://letterboxd.com/pzrsa/film/${film.id}/`}
+                target="_blank"
+              >
+                <img
+                  src={film.data.posterUrl}
+                  alt={film.data.title}
+                  loading="lazy"
+                  class={thumbClass}
+                />
+                <span class="font-bold block">{film.data.title}</span>
+              </a>
+              <div class="text-sm opacity-60">{film.data.year}</div>
+            </div>
+          ))
+        }
+      </div>
     </div>
   </Prose>
 </Layout>

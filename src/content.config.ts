@@ -18,17 +18,20 @@ const albums = defineCollection({
   }),
   schema: z.object({
     title: z.string(),
+    artist: z.string(),
+    year: z.string(),
     imageID: z.string(),
   }),
 });
 
-const filmsShows = defineCollection({
+const films = defineCollection({
   loader: file("src/data/favourites.json", {
-    parser: (text) => JSON.parse(text).filmsShows,
+    parser: (text) => JSON.parse(text).films,
   }),
   schema: z.object({
     title: z.string(),
-    imageID: z.string(),
+    year: z.string(),
+    posterUrl: z.string(),
   }),
 });
 
@@ -38,7 +41,10 @@ const books = defineCollection({
   }),
   schema: z.object({
     title: z.string(),
+    author: z.string(),
+    year: z.string(),
+    notesSlug: z.string().optional(),
   }),
 });
 
-export const collections = { blog, albums, filmsShows, books };
+export const collections = { blog, albums, films, books };
