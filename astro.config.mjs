@@ -31,16 +31,15 @@ export default defineConfig({
     },
   },
 
-  experimental: {
-    fonts: [
-      {
-        provider: fontProviders.google(),
-        name: "Bitter",
-        cssVariable: "--font-bitter",
-        weights: ["400 800"],
-      },
-    ],
-  },
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: "Charis SIL",
+      cssVariable: "--font-charis-sil",
+      weights: ["400", "700"],
+      styles: ["normal", "italic"],
+    },
+  ],
 
   integrations: [mdx(), preact()],
 });

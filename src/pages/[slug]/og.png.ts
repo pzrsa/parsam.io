@@ -127,7 +127,7 @@ export async function GET({ props }: Props) {
         padding: "60px",
         backgroundColor: "#ffedd5",
         color: "black",
-        fontFamily: "Bitter",
+        fontFamily: "Charis SIL",
         gap: coverDataUrl ? "48px" : "0",
       },
       children: coverDataUrl
@@ -157,17 +157,17 @@ export async function GET({ props }: Props) {
     height: 600,
     fonts: [
       {
-        name: "Bitter",
+        name: "Charis SIL",
         data: await fetch(
-          "https://cdn.jsdelivr.net/npm/@fontsource/bitter/files/bitter-latin-700-normal.woff",
+          "https://cdn.jsdelivr.net/npm/@fontsource/charis-sil/files/charis-sil-latin-700-normal.woff",
         ).then((res) => res.arrayBuffer()),
         weight: 700,
         style: "normal",
       },
       {
-        name: "Bitter",
+        name: "Charis SIL",
         data: await fetch(
-          "https://cdn.jsdelivr.net/npm/@fontsource/bitter/files/bitter-latin-400-normal.woff",
+          "https://cdn.jsdelivr.net/npm/@fontsource/charis-sil/files/charis-sil-latin-400-normal.woff",
         ).then((res) => res.arrayBuffer()),
         weight: 400,
         style: "normal",
