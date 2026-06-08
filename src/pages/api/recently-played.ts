@@ -2,16 +2,17 @@ export const prerender = false;
 
 import type { APIRoute } from "astro";
 import { Buffer } from "node:buffer";
+import { env } from "cloudflare:workers";
 
 const RECENTLY_PLAYED_URL =
   "https://api.spotify.com/v1/me/player/recently-played?limit=10";
 const TOKEN_URL = "https://accounts.spotify.com/api/token";
 
-const CLIENT_ID = import.meta.env.SPOTIFY_CLIENT_ID;
-const CLIENT_SECRET = import.meta.env.SPOTIFY_CLIENT_SECRET;
-const REFRESH_TOKEN = import.meta.env.SPOTIFY_REFRESH_TOKEN;
-
 export const GET: APIRoute = async () => {
+  const CLIENT_ID = env.SPOTIFY_CLIENT_ID;
+  const CLIENT_SECRET = env.SPOTIFY_CLIENT_SECRET;
+  const REFRESH_TOKEN = env.SPOTIFY_REFRESH_TOKEN;
+
   const basic = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString("base64");
 
   const tokenRes = await fetch(TOKEN_URL, {

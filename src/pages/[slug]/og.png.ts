@@ -1,7 +1,11 @@
 import { getCollection, type CollectionEntry } from "astro:content";
-import { ImageResponse } from "@vercel/og";
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
+import { ImageResponse } from "workers-og";
+
+const covers = import.meta.glob<string>("../../assets/blog/*", {
+  eager: true,
+  query: "?inline",
+  import: "default",
+});
 
 interface Props {
   params: { slug: string };
@@ -17,19 +21,9 @@ export async function GET({ props }: Props) {
     year: "numeric",
   });
 
-  let coverDataUrl: string | undefined;
-  if (post.data.cover) {
-    try {
-      const imgBuffer = readFileSync(
-        join(process.cwd(), "src/assets/blog", post.data.cover),
-      );
-      const ext = post.data.cover.split(".").pop()?.toLowerCase() ?? "jpeg";
-      const mime = ext === "png" ? "image/png" : "image/jpeg";
-      coverDataUrl = `data:${mime};base64,${imgBuffer.toString("base64")}`;
-    } catch {
-      // cover not found, continue without it
-    }
-  }
+  const coverDataUrl = post.data.cover
+    ? covers[`../../assets/blog/${post.data.cover}`]
+    : undefined;
 
   const leftPanel = {
     type: "div",
