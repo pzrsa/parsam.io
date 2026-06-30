@@ -8,7 +8,7 @@ import preact from "@astrojs/preact";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://parsam-io.parsa-eb1.workers.dev",
+  site: "https://pzrsa.com",
 
   vite: {
     plugins: [tailwindcss()],
