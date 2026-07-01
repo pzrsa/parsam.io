@@ -1,29 +1,39 @@
-import { getCollection, type CollectionEntry } from "astro:content";
+export const prerender = false;
+
+import { getCollection } from "astro:content";
+import type { APIRoute } from "astro";
 import { ImageResponse } from "workers-og";
+import { Buffer } from "node:buffer";
 
 const covers = import.meta.glob<string>("../../assets/blog/*", {
   eager: true,
-  query: "?inline",
+  query: "?url",
   import: "default",
 });
 
-interface Props {
-  params: { slug: string };
-  props: { post: CollectionEntry<"blog"> };
-}
+export const GET: APIRoute = async ({ params, url }) => {
+  const post = (await getCollection("blog")).find((p) => p.id === params.slug);
+  if (!post) return new Response("Not found", { status: 404 });
 
-export async function GET({ props }: Props) {
-  const { post } = props;
-
-  const formattedDate = post.data.date.toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
-
-  const coverDataUrl = post.data.cover
+  const coverPath = post.data.cover
     ? covers[`../../assets/blog/${post.data.cover}`]
     : undefined;
+
+  let coverDataUrl: string | undefined;
+  if (coverPath) {
+    const res = await fetch(new URL(coverPath, url));
+    if (res.ok) {
+      const buf = await res.arrayBuffer();
+      const ext = coverPath.split(".").pop()?.toLowerCase();
+      const mime =
+        ext === "png"
+          ? "image/png"
+          : ext === "webp"
+            ? "image/webp"
+            : "image/jpeg";
+      coverDataUrl = `data:${mime};base64,${Buffer.from(buf).toString("base64")}`;
+    }
+  }
 
   const leftPanel = {
     type: "div",
@@ -58,16 +68,6 @@ export async function GET({ props }: Props) {
                   children: post.data.title,
                 },
               },
-              // {
-              //   type: "span",
-              //   props: {
-              //     style: {
-              //       fontSize: "18px",
-              //       fontWeight: "400",
-              //     },
-              //     children: formattedDate,
-              //   },
-              // },
             ],
           },
         },
@@ -168,12 +168,4 @@ export async function GET({ props }: Props) {
       },
     ],
   });
-}
-
-export async function getStaticPaths() {
-  const posts = await getCollection("blog");
-  return posts.map((post) => ({
-    params: { slug: post.id },
-    props: { post },
-  }));
-}
+};
