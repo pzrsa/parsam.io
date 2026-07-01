@@ -1,12 +1,13 @@
 export const prerender = false;
 
 import type { APIRoute } from "astro";
+import { env } from "cloudflare:workers";
 
 const BUTTONDOWN_API_URL = "https://api.buttondown.com/v1/subscribers";
-const API_KEY = import.meta.env.BUTTONDOWN_API_KEY;
 
 export const POST: APIRoute = async ({ request }) => {
   try {
+    const API_KEY = env.BUTTONDOWN_API_KEY;
     const body = await request.json();
     const { email } = body;
 

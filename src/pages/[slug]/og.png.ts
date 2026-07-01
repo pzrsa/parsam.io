@@ -1,33 +1,37 @@
-import { getCollection, type CollectionEntry } from "astro:content";
-import { ImageResponse } from "@vercel/og";
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
+export const prerender = false;
 
-interface Props {
-  params: { slug: string };
-  props: { post: CollectionEntry<"blog"> };
-}
+import { getCollection } from "astro:content";
+import type { APIRoute } from "astro";
+import { ImageResponse } from "workers-og";
+import { Buffer } from "node:buffer";
 
-export async function GET({ props }: Props) {
-  const { post } = props;
+const covers = import.meta.glob<string>("../../assets/blog/*", {
+  eager: true,
+  query: "?url",
+  import: "default",
+});
 
-  const formattedDate = post.data.date.toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
+export const GET: APIRoute = async ({ params, url }) => {
+  const post = (await getCollection("blog")).find((p) => p.id === params.slug);
+  if (!post) return new Response("Not found", { status: 404 });
+
+  const coverPath = post.data.cover
+    ? covers[`../../assets/blog/${post.data.cover}`]
+    : undefined;
 
   let coverDataUrl: string | undefined;
-  if (post.data.cover) {
-    try {
-      const imgBuffer = readFileSync(
-        join(process.cwd(), "src/assets/blog", post.data.cover),
-      );
-      const ext = post.data.cover.split(".").pop()?.toLowerCase() ?? "jpeg";
-      const mime = ext === "png" ? "image/png" : "image/jpeg";
-      coverDataUrl = `data:${mime};base64,${imgBuffer.toString("base64")}`;
-    } catch {
-      // cover not found, continue without it
+  if (coverPath) {
+    const res = await fetch(new URL(coverPath, url));
+    if (res.ok) {
+      const buf = await res.arrayBuffer();
+      const ext = coverPath.split(".").pop()?.toLowerCase();
+      const mime =
+        ext === "png"
+          ? "image/png"
+          : ext === "webp"
+            ? "image/webp"
+            : "image/jpeg";
+      coverDataUrl = `data:${mime};base64,${Buffer.from(buf).toString("base64")}`;
     }
   }
 
@@ -64,16 +68,6 @@ export async function GET({ props }: Props) {
                   children: post.data.title,
                 },
               },
-              // {
-              //   type: "span",
-              //   props: {
-              //     style: {
-              //       fontSize: "18px",
-              //       fontWeight: "400",
-              //     },
-              //     children: formattedDate,
-              //   },
-              // },
             ],
           },
         },
@@ -174,12 +168,4 @@ export async function GET({ props }: Props) {
       },
     ],
   });
-}
-
-export async function getStaticPaths() {
-  const posts = await getCollection("blog");
-  return posts.map((post) => ({
-    params: { slug: post.id },
-    props: { post },
-  }));
-}
+};
