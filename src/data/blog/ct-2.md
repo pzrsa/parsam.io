@@ -1,7 +1,8 @@
 ---
+date: 2025-10-01
 title: "Cool Things #2"
-date: "2025-10-01"
 ---
+
 welcome to the second edition of cool things. you can check out the [first edition](https://parsam.io/ct-1) if you missed that one.
 
 - [My Approach to Building Large Technical Projects - Mitchell Hashimoto](https://mitchellh.com/writing/building-large-technical-projects) - big fan of Mitchell's work on [Ghostty](https://ghostty.org/), and I found this post to be a good reminder that perfection can be the enemy of progress. Getting the demo out is more important than anything else to validate an idea.
