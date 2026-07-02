@@ -214,7 +214,17 @@ const thumbClass = "h-24 w-auto mb-2 block";
                   loading="lazy"
                   class={thumbClass}
                 />
-                <span class="font-bold block">{book.data.title}</span>
+              </a>
+              <a
+                class="font-bold block"
+                href={
+                  book.data.notesSlug
+                    ? `/${book.data.notesSlug}`
+                    : `https://books.google.com/books?id=${book.id}`
+                }
+                target={book.data.notesSlug ? undefined : "_blank"}
+              >
+                {book.data.title}
               </a>
               <div class="text-sm opacity-60">
                 {book.data.author} · {book.data.year}
@@ -239,7 +249,13 @@ const thumbClass = "h-24 w-auto mb-2 block";
                   loading="lazy"
                   class={thumbClass}
                 />
-                <span class="font-bold block">{album.data.title}</span>
+              </a>
+              <a
+                class="font-bold block"
+                href={`https://open.spotify.com/album/${album.id}`}
+                target="_blank"
+              >
+                {album.data.title}
               </a>
               <div class="text-sm opacity-60">
                 {album.data.artist} · {album.data.year}
@@ -264,7 +280,13 @@ const thumbClass = "h-24 w-auto mb-2 block";
                   loading="lazy"
                   class={thumbClass}
                 />
-                <span class="font-bold block">{film.data.title}</span>
+              </a>
+              <a
+                class="font-bold block"
+                href={`https://letterboxd.com/pzrsa/film/${film.id}/`}
+                target="_blank"
+              >
+                {film.data.title}
               </a>
               <div class="text-sm opacity-60">{film.data.year}</div>
             </div>
