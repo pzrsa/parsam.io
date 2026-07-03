@@ -4,7 +4,7 @@ title: "too much keyboard"
 cover: tired-boss.png
 ---
 
-recently I stopped using my [ZSA Voyager](https://www.zsa.io/voyager), a $365 ortholinear split keyboard (I bought it second hand in new condition for €300).
+recently I stopped using my [ZSA Voyager](https://www.zsa.io/voyager), a $365 ortholinear split keyboard (I bought it second hand in new condition for €300 in February).
 
 all the cool kids are switching to split keyboards, swearing they'll never switch back, so why did I?
 
