@@ -23,7 +23,7 @@ const { Content } = await render(post);
       <h1 class="font-bold text-4xl mb-2">
         {post.data.title}
         <span class="font-medium">
-          {post.data.author ? `(${post.data.author})` : ""}
+          {post.data.author ? ` (${post.data.author})` : ""}
         </span>
       </h1>
       <div class="flex gap-3 items-center">
