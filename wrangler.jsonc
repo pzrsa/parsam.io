@@ -7,5 +7,11 @@
 		"global_fetch_strictly_public"
 	],
 	"workers_dev": false,
-	"preview_urls": false
+	"preview_urls": false,
+	"kv_namespaces": [
+		{
+			"binding": "SPOTIFY_KV",
+			"id": "7b4a5fbd84c54eefbcb0dd36577d28e0"
+		}
+	]
 }

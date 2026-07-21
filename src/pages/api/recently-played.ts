@@ -1,36 +1,23 @@
 export const prerender = false;
 
 import type { APIRoute } from "astro";
-import { Buffer } from "node:buffer";
-import { env } from "cloudflare:workers";
+import { getSpotifyAccessToken } from "../../lib/spotify";
 
 const RECENTLY_PLAYED_URL =
   "https://api.spotify.com/v1/me/player/recently-played?limit=10";
-const TOKEN_URL = "https://accounts.spotify.com/api/token";
 
 export const GET: APIRoute = async () => {
-  const CLIENT_ID = env.SPOTIFY_CLIENT_ID;
-  const CLIENT_SECRET = env.SPOTIFY_CLIENT_SECRET;
-  const REFRESH_TOKEN = env.SPOTIFY_REFRESH_TOKEN;
+  const accessToken = await getSpotifyAccessToken();
 
-  const basic = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString("base64");
-
-  const tokenRes = await fetch(TOKEN_URL, {
-    method: "POST",
-    headers: {
-      Authorization: `Basic ${basic}`,
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
-    body: `grant_type=refresh_token&refresh_token=${REFRESH_TOKEN}`,
-  });
-
-  const tokenData = await tokenRes.json();
+  if (!accessToken) {
+    return json({ tracks: [] });
+  }
 
   const res = await fetch(RECENTLY_PLAYED_URL, {
-    headers: { Authorization: `Bearer ${tokenData.access_token}` },
+    headers: { Authorization: `Bearer ${accessToken}` },
   });
 
-  if (res.status === 204 || res.status > 400) {
+  if (res.status === 204 || !res.ok) {
     return json({ tracks: [] });
   }
 
