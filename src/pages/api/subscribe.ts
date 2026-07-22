@@ -8,7 +8,7 @@ const BUTTONDOWN_API_URL = "https://api.buttondown.com/v1/subscribers";
 export const POST: APIRoute = async ({ request }) => {
   try {
     const API_KEY = env.BUTTONDOWN_API_KEY;
-    const body = await request.json();
+    const body = await request.json<{ email?: string }>();
     const { email } = body;
 
     if (!email) {
@@ -27,7 +27,7 @@ export const POST: APIRoute = async ({ request }) => {
       }),
     });
 
-    const data = await res.json();
+    const data = await res.json<{ code?: string }>();
 
     if (!res.ok) {
       if (data.code === "email_already_exists") {

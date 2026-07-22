@@ -21,7 +21,17 @@ export const GET: APIRoute = async () => {
     return json({ isPlaying: false });
   }
 
-  const data = await res.json();
+  const data = await res.json<{
+    currently_playing_type: string;
+    is_playing: boolean;
+    item: {
+      name: string;
+      artists: { name: string }[];
+      album: { name: string; images: { url: string }[] };
+      external_urls: { spotify: string };
+      explicit: boolean;
+    };
+  }>();
 
   if (data.currently_playing_type !== "track") {
     return json({ isPlaying: false });

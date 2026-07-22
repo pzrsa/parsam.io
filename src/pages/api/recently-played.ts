@@ -21,7 +21,7 @@ export const GET: APIRoute = async () => {
     return json({ tracks: [] });
   }
 
-  const data = await res.json();
+  const data = await res.json<{ items: any[] }>();
 
   const tracks = data.items.map((item: any) => ({
     title: item.track.name,
