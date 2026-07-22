@@ -31,8 +31,8 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.google(),
-      name: "Charis SIL",
-      cssVariable: "--font-charis-sil",
+      name: "Literata",
+      cssVariable: "--font-literata",
       weights: ["400", "700"],
       styles: ["normal", "italic"],
     },

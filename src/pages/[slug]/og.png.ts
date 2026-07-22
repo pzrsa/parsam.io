@@ -121,7 +121,7 @@ export const GET: APIRoute = async ({ params, url }) => {
         padding: "60px",
         backgroundColor: "#ffedd5",
         color: "black",
-        fontFamily: "Charis SIL",
+        fontFamily: "Literata",
         gap: coverDataUrl ? "48px" : "0",
       },
       children: coverDataUrl
@@ -151,17 +151,17 @@ export const GET: APIRoute = async ({ params, url }) => {
     height: 600,
     fonts: [
       {
-        name: "Charis SIL",
+        name: "Literata",
         data: await fetch(
-          "https://cdn.jsdelivr.net/npm/@fontsource/charis-sil/files/charis-sil-latin-700-normal.woff",
+          "https://cdn.jsdelivr.net/npm/@fontsource/literata/files/literata-latin-700-normal.woff",
         ).then((res) => res.arrayBuffer()),
         weight: 700,
         style: "normal",
       },
       {
-        name: "Charis SIL",
+        name: "Literata",
         data: await fetch(
-          "https://cdn.jsdelivr.net/npm/@fontsource/charis-sil/files/charis-sil-latin-400-normal.woff",
+          "https://cdn.jsdelivr.net/npm/@fontsource/literata/files/literata-latin-400-normal.woff",
         ).then((res) => res.arrayBuffer()),
         weight: 400,
         style: "normal",
