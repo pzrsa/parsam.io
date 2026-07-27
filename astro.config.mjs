@@ -33,8 +33,15 @@ export default defineConfig({
       provider: fontProviders.google(),
       name: "Literata",
       cssVariable: "--font-literata",
-      weights: ["400", "700"],
+      weights: ["400 700"],
       styles: ["normal", "italic"],
+    },
+    {
+      provider: fontProviders.google(),
+      name: "IBM Plex Mono",
+      cssVariable: "--font-plex-mono",
+      weights: ["400 700"],
+      styles: ["normal"],
     },
   ],
 

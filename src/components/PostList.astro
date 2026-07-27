@@ -24,7 +24,7 @@ const covers = await Promise.all(
 );
 ---
 
-<ul class="flex flex-col gap-4 not-prose">
+<ul class="font-mono flex flex-col gap-4 not-prose">
   {
     latestPosts.map((post, i) => {
       const cover = covers[i];
@@ -44,11 +44,13 @@ const covers = await Promise.all(
             )}
             <span class="flex-1 min-w-0">
               <a href={`/${post.id}`}>
-                <span class="font-bold text-lg">{post.data.title}</span>
-                {post.data.author && <span> ({post.data.author})</span>}
+                <span class="font-bold">{post.data.title}</span>
+                {post.data.author && (
+                  <span class="text-sm"> ({post.data.author})</span>
+                )}
               </a>
             </span>
-            <span class="shrink-0">
+            <span class="shrink-0 text-sm">
               {post.data.date.toLocaleDateString("en-GB", {
                 day: "numeric",
                 month: "short",
