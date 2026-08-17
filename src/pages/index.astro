@@ -1,7 +1,6 @@
 ---
 import Layout from "../components/Layout.astro";
 import me from "../assets/avatar.webp";
-import name from "../assets/name.svg";
 import Prose from "../components/Prose.astro";
 import NowPlaying from "../components/NowPlaying.astro";
 import RecentlyPlayed from "../components/RecentlyPlayed.astro";
@@ -9,9 +8,8 @@ import NewsletterForm from "../components/NewsletterForm.astro";
 import PostList from "../components/PostList.astro";
 import { getCollection } from "astro:content";
 
-const [albums, films, books] = await Promise.all([
+const [albums, books] = await Promise.all([
   getCollection("albums"),
-  getCollection("films"),
   getCollection("books"),
 ]);
 
@@ -22,17 +20,11 @@ const thumbClass = "h-24 w-auto mb-2 block";
 ---
 
 <Layout image={new URL("home.png", Astro.url)}>
-  <div class="flex flex-row justify-between items-center mb-2">
-    <a href="https://x.com/pzrsaa" target="_blank">
-      <img
-        alt="Parsa Mesgarha"
-        src={name.src}
-        loading="eager"
-        decoding="async"
-        class="h-5 sm:h-8 border-none shadow-none hover:translate-none hover:opacity-80"
-      />
-    </a>
-    <a href="https://x.com/pzrsaa" target="_blank">
+  <div class="flex flex-row justify-between items-center gap-4 mb-4">
+    <div class="h-30.75 flex-1 min-w-0 content-center">
+      <NowPlaying server:defer />
+    </div>
+    <a href="https://x.com/pzrsaa" target="_blank" class="shrink-0">
       <img
         alt="Parsa Mesgarha"
         src={me.src}
@@ -40,11 +32,9 @@ const thumbClass = "h-24 w-auto mb-2 block";
         width={111}
         loading="eager"
         decoding="async"
+        class="size-20 sm:size-[111px]"
       />
     </a>
-  </div>
-  <div class="h-30.75 mb-4">
-    <NowPlaying server:defer />
   </div>
   <div class="mb-4">
     <button
@@ -227,7 +217,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
               >
                 {book.data.title}
               </a>
-              <div class="text-xs opacity-60">
+              <div class="font-mono text-xs opacity-60">
                 {book.data.author} · {book.data.year}
               </div>
             </div>
@@ -258,38 +248,9 @@ const thumbClass = "h-24 w-auto mb-2 block";
               >
                 {album.data.title}
               </a>
-              <div class="text-xs opacity-60">
+              <div class="font-mono text-xs opacity-60">
                 {album.data.artist} · {album.data.year}
               </div>
-            </div>
-          ))
-        }
-      </div>
-      <h3>Films</h3>
-      <div class={gridClass}>
-        {
-          films.map((film) => (
-            <div>
-              <a
-                class="block"
-                href={`https://letterboxd.com/pzrsa/film/${film.id}/`}
-                target="_blank"
-              >
-                <img
-                  src={film.data.posterUrl}
-                  alt={film.data.title}
-                  loading="lazy"
-                  class={thumbClass}
-                />
-              </a>
-              <a
-                class="font-bold block"
-                href={`https://letterboxd.com/pzrsa/film/${film.id}/`}
-                target="_blank"
-              >
-                {film.data.title}
-              </a>
-              <div class="text-xs opacity-60">{film.data.year}</div>
             </div>
           ))
         }

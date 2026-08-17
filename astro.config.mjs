@@ -36,6 +36,13 @@ export default defineConfig({
       weights: ["400 700"],
       styles: ["normal", "italic"],
     },
+    {
+      provider: fontProviders.google(),
+      name: "JetBrains Mono",
+      cssVariable: "--font-jetbrains-mono",
+      weights: ["400 700"],
+      styles: ["normal"],
+    },
   ],
 
   integrations: [mdx(), preact()],

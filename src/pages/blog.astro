@@ -46,7 +46,9 @@ const rssSVG = `
         return (
           <li>
             {firstForYear && (
-              <span class="font-bold flex justify-end mb-3">{year}</span>
+              <span class="font-mono font-bold flex justify-end mb-3">
+                {year}
+              </span>
             )}
             <span
               class={`flex items-center gap-3 ${lastForYear ? "mb-4" : ""}`}
@@ -73,7 +75,7 @@ const rssSVG = `
                   )}
                 </a>
               </span>
-              <span class="shrink-0">
+              <span class="shrink-0 font-mono">
                 {post.data.date.toLocaleDateString("en-GB", {
                   day: "numeric",
                   month: "short",

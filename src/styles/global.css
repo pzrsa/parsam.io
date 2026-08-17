@@ -5,6 +5,10 @@
   --font-serif:
     var(--font-literata), ui-serif, Georgia, Cambria, "Times New Roman", Times,
     serif;
+  --font-mono:
+    var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
+  --default-mono-font-family: var(--font-mono);
 }
 
 @theme {
