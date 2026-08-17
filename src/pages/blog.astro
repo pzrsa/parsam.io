@@ -33,7 +33,7 @@ const rssSVG = `
       <span set:html={rssSVG} />
     </a>
   </span>
-  <ul class="font-mono flex flex-col gap-2">
+  <ul class="flex flex-col gap-2">
     {
       posts.map((post, i) => {
         const cover = covers[i];
@@ -56,6 +56,9 @@ const rssSVG = `
                   <Image
                     src={cover}
                     alt={post.data.title}
+                    width={160}
+                    height={96}
+                    fit="cover"
                     class="h-12 w-20 object-cover hover:translate-x-px hover:translate-y-px hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]"
                   />
                 </a>
@@ -64,13 +67,13 @@ const rssSVG = `
               )}
               <span class="flex-1 min-w-0">
                 <a href={`/${post.id}`}>
-                  <span class="font-bold">{post.data.title}</span>
+                  <span class="font-bold text-lg">{post.data.title}</span>
                   {post.data.author && (
                     <span class="text-sm"> ({post.data.author})</span>
                   )}
                 </a>
               </span>
-              <span class="shrink-0 text-sm">
+              <span class="shrink-0">
                 {post.data.date.toLocaleDateString("en-GB", {
                   day: "numeric",
                   month: "short",

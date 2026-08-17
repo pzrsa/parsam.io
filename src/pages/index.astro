@@ -15,9 +15,9 @@ const [albums, films, books] = await Promise.all([
   getCollection("books"),
 ]);
 
-const linksClass = "w-fit font-mono text-sm font-bold";
+const linksClass = "w-fit font-bold";
 const gridClass =
-  "font-mono grid grid-cols-3 sm:grid-cols-4 gap-x-3 gap-y-5 not-prose";
+  "grid grid-cols-3 sm:grid-cols-4 gap-x-3 gap-y-5 not-prose";
 const thumbClass = "h-24 w-auto mb-2 block";
 ---
 
@@ -96,8 +96,8 @@ const thumbClass = "h-24 w-auto mb-2 block";
           ><span class="text-google-yellow">o</span><span
             class="text-google-blue">g</span
           ><span class="text-google-green">l</span><span class="text-google-red"
-            >e </span
-          ></a
+            >e
+          </span></a
         ></span
       >
       in London for 2 years, contributing to
@@ -120,7 +120,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
       <div>
         <h3>Newest Posts</h3>
         <PostList count={5} />
-        <h4 class="font-mono"><a href="/blog">More →</a></h4>
+        <h4><a href="/blog">More →</a></h4>
       </div>
       <h3 class="font-bold">Newsletter</h3>
       <NewsletterForm server:defer />
@@ -217,7 +217,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
                 />
               </a>
               <a
-                class="font-bold text-sm block"
+                class="font-bold block"
                 href={
                   book.data.notesSlug
                     ? `/${book.data.notesSlug}`
@@ -227,7 +227,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
               >
                 {book.data.title}
               </a>
-              <div class="font-mono text-xs opacity-60">
+              <div class="text-xs opacity-60">
                 {book.data.author} · {book.data.year}
               </div>
             </div>
@@ -252,13 +252,13 @@ const thumbClass = "h-24 w-auto mb-2 block";
                 />
               </a>
               <a
-                class="font-bold text-sm block"
+                class="font-bold block"
                 href={`https://open.spotify.com/album/${album.id}`}
                 target="_blank"
               >
                 {album.data.title}
               </a>
-              <div class="font-mono text-xs opacity-60">
+              <div class="text-xs opacity-60">
                 {album.data.artist} · {album.data.year}
               </div>
             </div>
@@ -283,13 +283,13 @@ const thumbClass = "h-24 w-auto mb-2 block";
                 />
               </a>
               <a
-                class="font-bold text-sm block"
+                class="font-bold block"
                 href={`https://letterboxd.com/pzrsa/film/${film.id}/`}
                 target="_blank"
               >
                 {film.data.title}
               </a>
-              <div class="font-mono text-xs opacity-60">{film.data.year}</div>
+              <div class="text-xs opacity-60">{film.data.year}</div>
             </div>
           ))
         }
