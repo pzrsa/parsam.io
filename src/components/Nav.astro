@@ -1,14 +1,5 @@
 ---
 import name from "../assets/name.svg";
-
-interface Props {
-  title?: string;
-}
-const { title } = Astro.props;
-const slug = title
-  ? Astro.url.pathname.split("/").filter(Boolean).pop()
-  : undefined;
-const base = "text-blue-600 hover:text-blue-800";
 ---
 
 <nav class="flex justify-between items-center gap-4 py-2 mb-6 border-b">
@@ -21,10 +12,5 @@ const base = "text-blue-600 hover:text-blue-800";
       class="h-4.5 sm:h-5 border-none shadow-none hover:translate-none hover:opacity-80"
     />
   </a>
-  <span class="font-mono min-w-0 truncate"
-    ><a href="/" class={`${base} inline-block py-1`}>~</a>/<a
-      href="/blog"
-      class={`${base} inline-block py-1`}>blog</a
-    >{slug ? <span>/{slug}</span> : ""}</span
-  >
+  <a href="/blog" class="py-1">blog</a>
 </nav>

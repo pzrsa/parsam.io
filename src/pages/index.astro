@@ -14,8 +14,7 @@ const [albums, books] = await Promise.all([
 ]);
 
 const linksClass = "w-fit font-bold";
-const gridClass =
-  "grid grid-cols-3 sm:grid-cols-4 gap-x-3 gap-y-5 not-prose";
+const gridClass = "grid grid-cols-3 sm:grid-cols-4 gap-x-3 gap-y-5 not-prose";
 const thumbClass = "h-24 w-auto mb-2 block";
 ---
 
@@ -32,7 +31,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
         width={111}
         loading="eager"
         decoding="async"
-        class="size-20 sm:size-[111px]"
+        class="size-20 sm:size-27.75"
       />
     </a>
   </div>
@@ -217,7 +216,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
               >
                 {book.data.title}
               </a>
-              <div class="font-mono text-xs opacity-60">
+              <div class="text-xs opacity-60">
                 {book.data.author} · {book.data.year}
               </div>
             </div>
@@ -248,7 +247,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
               >
                 {album.data.title}
               </a>
-              <div class="font-mono text-xs opacity-60">
+              <div class="text-xs opacity-60">
                 {album.data.artist} · {album.data.year}
               </div>
             </div>

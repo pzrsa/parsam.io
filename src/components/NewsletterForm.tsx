@@ -53,12 +53,12 @@ export default function NewsletterForm() {
         name="email"
         placeholder="tony@soprano.com"
         required
-        class="flex-1 font-mono px-4 py-2 border-2 border-black focus:outline-none shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+        class="flex-1 px-4 py-2 border-2 border-black focus:outline-none shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
       />
       <button
         type="submit"
         disabled={disabled}
-        class={`font-mono tracking-wide px-4 py-2 ${bg} text-white font-bold border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-px hover:translate-y-px hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] disabled:opacity-50 disabled:cursor-not-allowed transition-colors`}
+        class={`tracking-wide px-4 py-2 ${bg} text-white font-bold border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-px hover:translate-y-px hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] disabled:opacity-50 disabled:cursor-not-allowed transition-colors`}
       >
         {text}
       </button>

@@ -11,13 +11,13 @@ try {
 }
 ---
 
-{!error && !data && <p class="font-mono">loading...</p>}
+{!error && !data && <p>loading...</p>}
 
 {
   error || !data?.tracks?.length ? (
-    <p class="font-mono">No recently played tracks</p>
+    <p>No recently played tracks</p>
   ) : (
-    <div class="font-mono flex flex-col gap-2">
+    <div class="flex flex-col gap-2">
       {data.tracks.map((track: any) => (
         <div class="flex flex-row items-center gap-2 w-fit">
           <a href={track.songUrl} target="_blank">
