@@ -19,35 +19,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
 ---
 
 <Layout image={new URL("home.png", Astro.url)}>
-  <div class="flex flex-row justify-between items-center gap-4 mb-4">
-    <div class="h-30.75 flex-1 min-w-0 content-center">
-      <NowPlaying server:defer />
-    </div>
-    <a href="https://x.com/pzrsaa" target="_blank" class="shrink-0">
-      <img
-        alt="Parsa Mesgarha"
-        src={me.src}
-        height={111}
-        width={111}
-        loading="eager"
-        decoding="async"
-        class="size-20 sm:size-27.75"
-      />
-    </a>
-  </div>
-  <div class="mb-4">
-    <button
-      id="recently-played-toggle"
-      class="flex items-center gap-2 font-bold mb-2 hover:opacity-80"
-      aria-expanded="false"
-    >
-      <span id="recently-played-arrow" class="transition-transform">▶</span>
-      <h3>Recently Played</h3>
-    </button>
-    <div id="recently-played-content" class="hidden">
-      <RecentlyPlayed server:defer />
-    </div>
-  </div>
+  <h1 class="sr-only">Parsa Mesgarha</h1>
 
   <script>
     const toggle = document.getElementById("recently-played-toggle");
@@ -63,6 +35,19 @@ const thumbClass = "h-24 w-auto mb-2 block";
       }
     });
   </script>
+  <a
+    href="https://x.com/pzrsaa"
+    target="_blank"
+    class="float-right ml-4 mb-2"
+  >
+    <img
+      alt="Parsa Mesgarha"
+      src={me.src}
+      loading="eager"
+      decoding="async"
+      class="size-20 sm:size-28"
+    />
+  </a>
   <Prose>
     <p>
       I'm a 23 year old Persian born in England, raised in London. I'm currently
@@ -88,8 +73,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
             >e
           </span></a
         ></span
-      >
-      in London for 2 years, contributing to
+      >{" "}in London for 2 years, contributing to
       <a href="https://www.chromium.org/Home/" target="_blank"> Chrome</a>,
       <a href="https://source.android.com/" target="_blank"> Android</a>, and
       generally the <a href="https://web.dev/" target="_blank">web platform</a>.
@@ -105,15 +89,29 @@ const thumbClass = "h-24 w-auto mb-2 block";
       <a href="mailto:hi@parsam.io" target="_blank">reach out</a>. I love
       meeting new people!
     </p>
+    <div class="not-prose clear-right mb-4">
+      <NowPlaying server:defer />
+      <button
+        id="recently-played-toggle"
+        class="flex items-center gap-2 font-bold mt-4 hover:opacity-80"
+        aria-expanded="false"
+      >
+        <span id="recently-played-arrow" class="transition-transform">▶</span>
+        <span>Recently Played</span>
+      </button>
+      <div id="recently-played-content" class="hidden mt-2">
+        <RecentlyPlayed server:defer />
+      </div>
+    </div>
     <div>
       <div>
-        <h3>Recently</h3>
+        <h3 class="border-t-2 border-black pt-4">Recently</h3>
         <PostList count={5} />
         <h4><a href="/blog">More →</a></h4>
       </div>
-      <h3 class="font-bold">Newsletter</h3>
+      <h3 class="border-t-2 border-black pt-4">Newsletter</h3>
       <NewsletterForm server:defer />
-      <h3>Links</h3>
+      <h3 class="border-t-2 border-black pt-4">Links</h3>
       <div class="not-prose gap-1 grid grid-cols-3 sm:grid-cols-4">
         <a class={linksClass} href="https://x.com/pzrsaa" target="_blank"
           >Twitter/X</a
@@ -183,7 +181,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
       </div>
     </div>
     <div>
-      <h2>Favourites</h2>
+      <h2 class="border-t-2 border-black pt-4">Favourites</h2>
       <h3>Books</h3>
       <div class={gridClass}>
         {
@@ -201,6 +199,8 @@ const thumbClass = "h-24 w-auto mb-2 block";
                 <img
                   src={`https://books.google.com/books/content?id=${book.id}&printsec=frontcover&img=1&zoom=1`}
                   alt={book.data.title}
+                  width={85}
+                  height={128}
                   loading="lazy"
                   class={thumbClass}
                 />
@@ -236,6 +236,8 @@ const thumbClass = "h-24 w-auto mb-2 block";
                 <img
                   src={`https://i.scdn.co/image/${album.data.imageID}`}
                   alt={album.data.title}
+                  width={128}
+                  height={128}
                   loading="lazy"
                   class={thumbClass}
                 />

@@ -4,7 +4,7 @@ import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
 import { getImage } from "astro:assets";
 import type { ImageMetadata } from "astro";
-import { getBlogPosts } from "../data/utils";
+import { getBlogPosts, getPostDescription } from "../data/utils";
 
 const parser = new MarkdownIt({ html: true });
 
@@ -63,7 +63,7 @@ async function processPostContent(markdown: string, siteUrl: URL): Promise<strin
     allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img", "video", "source"]),
     allowedAttributes: {
       ...sanitizeHtml.defaults.allowedAttributes,
-      video: ["controls", "width", "height", "style", "autoplay", "loop", "muted", "playsinline"],
+      video: ["controls", "preload", "width", "height", "style", "autoplay", "loop", "muted", "playsinline"],
       source: ["src", "type"],
     },
   });
@@ -78,13 +78,15 @@ export async function GET(context: APIContext) {
       title: post.data.title,
       pubDate: post.data.date,
       link: `/${post.id}/`,
+      description: getPostDescription(post),
       content: await processPostContent(post.body!, siteUrl),
     })),
   );
 
   return rss({
     title: "Parsa Mesgarha",
-    description: "",
+    description:
+      "Writing about stuff I find interesting enough to share, mostly on things in technology.",
     site: siteUrl,
     items,
   });

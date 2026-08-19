@@ -4,6 +4,7 @@ import { render } from "astro:content";
 import Layout from "./Layout.astro";
 import Prose from "./Prose.astro";
 import NewsletterForm from "./NewsletterForm.astro";
+import { getPostDescription } from "../data/utils";
 
 interface Props {
   post: CollectionEntry<"blog">;
@@ -11,11 +12,18 @@ interface Props {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+const ogImage = new URL(
+  `${Astro.url.pathname.replace(/\/+$/, "")}/og.png`,
+  Astro.site,
+);
 ---
 
 <Layout
   title={post.data.title}
-  image={new URL(`${Astro.url.href}/og.png`)}
+  image={ogImage}
+  description={getPostDescription(post)}
+  date={post.data.date}
   post
 >
   <section>

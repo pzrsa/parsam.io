@@ -3,6 +3,7 @@ import { defineConfig, fontProviders } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import cloudflare from "@astrojs/cloudflare";
 import mdx from "@astrojs/mdx";
+import sitemap from "@astrojs/sitemap";
 
 import preact from "@astrojs/preact";
 
@@ -38,5 +39,5 @@ export default defineConfig({
     },
   ],
 
-  integrations: [mdx(), preact()],
+  integrations: [mdx(), preact(), sitemap()],
 });

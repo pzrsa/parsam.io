@@ -1,11 +1,21 @@
 ---
-let data = null;
+interface Track {
+  title: string;
+  artist: string;
+  album: string;
+  albumImageUrl?: string;
+  songUrl: string;
+  explicit: boolean;
+  playedAt: string;
+}
+
+let data: { tracks: Track[] } | null = null;
 let error = false;
 
 try {
   const res = await fetch(new URL("/api/recently-played", Astro.url));
   if (!res.ok) throw new Error("bad status");
-  data = await res.json();
+  data = await res.json<{ tracks: Track[] }>();
 } catch {
   error = true;
 }
@@ -18,8 +28,8 @@ try {
     <p>No recently played tracks</p>
   ) : (
     <div class="flex flex-col gap-2">
-      {data.tracks.map((track: any) => (
-        <div class="flex flex-row items-center gap-2 w-fit">
+      {data.tracks.map((track) => (
+        <div class="flex items-center gap-2 w-fit">
           <a href={track.songUrl} target="_blank">
             <img
               alt={track.title}

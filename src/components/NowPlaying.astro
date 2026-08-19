@@ -1,52 +1,36 @@
 ---
-import missing from "../assets/missing.webp";
+interface NowPlaying {
+  isPlaying: boolean;
+  title?: string;
+  artist?: string;
+  album?: string;
+  albumImageUrl?: string;
+  songUrl?: string;
+  explicit?: boolean;
+}
 
-let data = null;
+let data: NowPlaying | null = null;
 let error = false;
 
 try {
   const res = await fetch(new URL("/api/now-playing", Astro.url));
   if (!res.ok) throw new Error("bad status");
-  data = await res.json();
+  data = await res.json<NowPlaying>();
 } catch {
   error = true;
 }
 ---
 
-{!error && !data && <p>loading...</p>}
-
 {
-  error || !data?.isPlaying ? (
-    <div class="flex flex-row items-center gap-4">
-      <a
-        href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
-        target="_blank"
-      >
-        <img
-          src={missing.src}
-          height={111}
-          width={111}
-          loading="eager"
-          decoding="async"
-        />
-      </a>
-      <a
-        href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
-        target="_blank"
-      >
-        <span>🔇 Not Playing Anything</span>
-      </a>
-    </div>
-  ) : (
-    <div class="flex flex-row items-center gap-4">
+  !error && data?.isPlaying && (
+    <div class="flex items-center gap-4">
       <a href={data.songUrl} target="_blank">
         <img
           alt={data.title}
           src={data.albumImageUrl}
-          height={111}
-          width={111}
           loading="eager"
           decoding="async"
+          class="size-16 sm:size-20"
         />
       </a>
       <div class="flex items-center">
