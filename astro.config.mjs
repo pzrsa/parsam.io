@@ -7,6 +7,52 @@ import sitemap from "@astrojs/sitemap";
 
 import preact from "@astrojs/preact";
 
+// Turns a paragraph that is just an image with alt text into a <figure>
+// with a visible <figcaption>. CommonMark flattens markdown inside alt text
+// ("[Muay Thai](url)" becomes "Muay Thai"), so the raw caption is recovered
+// from the source and re-parsed; links etc. render in the caption while the
+// alt attribute stays plain text for screen readers.
+function remarkImageCaptions() {
+  const processor = this;
+  return (tree, file) => {
+    const src = String(file.value);
+    const visit = (node) => {
+      if (!node.children) return;
+      node.children.forEach(visit);
+      for (const child of node.children) {
+        if (child.type !== "paragraph" || child.children.length !== 1)
+          continue;
+        const img = child.children[0];
+        if (img.type !== "image" || !img.alt || !img.position) continue;
+
+        const raw = src.slice(
+          img.position.start.offset,
+          img.position.end.offset,
+        );
+        let caption = img.alt;
+        for (let i = 1, depth = 0; i < raw.length; i++) {
+          if (raw[i] === "[") depth++;
+          else if (raw[i] === "]" && --depth === 0) {
+            caption = raw.slice(2, i);
+            break;
+          }
+        }
+
+        child.data = { hName: "figure" };
+        child.children = [
+          img,
+          {
+            type: "paragraph",
+            data: { hName: "figcaption" },
+            children: processor.parse(caption).children[0]?.children ?? [],
+          },
+        ];
+      }
+    };
+    visit(tree);
+  };
+}
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://parsam.io",
@@ -27,6 +73,7 @@ export default defineConfig({
     shikiConfig: {
       theme: "gruvbox-dark-hard",
     },
+    remarkPlugins: [remarkImageCaptions],
   },
 
   fonts: [
@@ -35,7 +82,6 @@ export default defineConfig({
       name: "Literata",
       cssVariable: "--font-literata",
       weights: ["400 700"],
-      styles: ["normal", "italic"],
     },
   ],
 

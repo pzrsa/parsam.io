@@ -38,10 +38,14 @@ export default function NewsletterForm() {
   };
 
   const buttonConfig = {
-    idle: { text: "SUBSCRIBE", bg: "bg-black", disabled: false },
-    loading: { text: "SUBSCRIBING...", bg: "bg-black", disabled: true },
-    success: { text: "SUBSCRIBED!", bg: "bg-green-600", disabled: true },
-    error: { text: "ERROR", bg: "bg-red-600", disabled: true },
+    idle: { text: "SUBSCRIBE", bg: "bg-foreground text-background", disabled: false },
+    loading: {
+      text: "SUBSCRIBING...",
+      bg: "bg-foreground text-background",
+      disabled: true,
+    },
+    success: { text: "SUBSCRIBED!", bg: "bg-green-600 text-white", disabled: true },
+    error: { text: "ERROR", bg: "bg-red-600 text-white", disabled: true },
   };
 
   const { text, bg, disabled } = buttonConfig[buttonState];
@@ -53,12 +57,12 @@ export default function NewsletterForm() {
         name="email"
         placeholder="tony@soprano.com"
         required
-        class="flex-1 px-4 py-2 border-2 border-black focus:outline-none shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+        class="flex-1 px-4 py-2 border-2 border-foreground focus:outline-none shadow-[4px_4px_0px_0px_var(--color-foreground)]"
       />
       <button
         type="submit"
         disabled={disabled}
-        class={`tracking-wide px-4 py-2 ${bg} text-white font-bold border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-px hover:translate-y-px hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] disabled:opacity-50 disabled:cursor-not-allowed transition-colors`}
+        class={`tracking-wide px-4 py-2 ${bg} font-bold border-2 border-foreground shadow-[4px_4px_0px_0px_var(--color-foreground)] hover:translate-x-px hover:translate-y-px hover:shadow-[1px_1px_0px_0px_var(--color-foreground)] disabled:opacity-50 disabled:cursor-not-allowed transition-colors`}
       >
         {text}
       </button>

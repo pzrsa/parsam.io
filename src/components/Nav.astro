@@ -1,16 +1,18 @@
 ---
 import name from "../assets/name.svg";
+
+const mask = `url(${name.src}) no-repeat left center / contain`;
 ---
 
-<nav class="flex justify-between items-center gap-4 py-2 mb-6 border-b-2 border-black">
-  <a href="/" class="shrink-0 py-1">
-    <img
-      alt="Parsa Mesgarha"
-      src={name.src}
-      loading="eager"
-      decoding="async"
-      class="h-4.5 sm:h-5 border-none shadow-none hover:translate-none hover:opacity-80"
-    />
+<nav
+  class="flex justify-between items-center gap-4 py-2 mb-6 border-b-2 border-foreground"
+>
+  <a href="/" class="shrink-0 py-1 hover:opacity-80">
+    <span
+      role="img"
+      aria-label="Parsa Mesgarha"
+      class="block bg-foreground h-4.5 sm:h-5 aspect-1601/155"
+      style={`mask: ${mask}; -webkit-mask: ${mask};`}></span>
   </a>
   <a href="/blog" class="py-1">blog</a>
 </nav>

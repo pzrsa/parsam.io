@@ -35,11 +35,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
       }
     });
   </script>
-  <a
-    href="https://x.com/pzrsaa"
-    target="_blank"
-    class="float-right ml-4 mb-2"
-  >
+  <a href="https://x.com/pzrsaa" target="_blank" class="float-right ml-4 mb-2">
     <img
       alt="Parsa Mesgarha"
       src={me.src}
@@ -50,19 +46,13 @@ const thumbClass = "h-24 w-auto mb-2 block";
   </a>
   <Prose>
     <p>
-      I'm a 23 year old Persian born in England, raised in London. I'm currently
-      working as a Senior Machine Learning Engineer at
-      <a href="https://www.yaak.ai/" target="_blank"> Yaak AI </a>
-      in Berlin, getting robots to understand and interact with the world around
-      them.
-    </p>
-
-    <p>
-      Previously I worked at{" "}
-      <span class="prose-a:text-tesla-red"
-        ><a href="https://www.tesla.com" target="_blank">Tesla </a>
-      </span>
-      in Berlin for almost 2 years. And before that I worked at{" "}
+      I work at
+      <a href="https://www.yaak.ai/" target="_blank"> Yaak AI </a> as a Senior Machine
+      Learning Engineer, where I run everything robotics, from infra to models. Previously
+      I worked at {" "}
+      <span class="prose-a:text-tesla-red! dark:prose-a:text-red-500!"
+        ><a href="https://www.tesla.com" target="_blank">Tesla</a>
+      </span>. And before that at {" "}
       <span class="prose-a:decoration-google-blue prose-a:hover:text-blue-800"
         ><a href="https://google.com" target="_blank">
           <span class="text-google-blue">G</span><span class="text-google-red"
@@ -71,23 +61,28 @@ const thumbClass = "h-24 w-auto mb-2 block";
             class="text-google-blue">g</span
           ><span class="text-google-green">l</span><span class="text-google-red"
             >e
-          </span></a
-        ></span
-      >{" "}in London for 2 years, contributing to
-      <a href="https://www.chromium.org/Home/" target="_blank"> Chrome</a>,
-      <a href="https://source.android.com/" target="_blank"> Android</a>, and
-      generally the <a href="https://web.dev/" target="_blank">web platform</a>.
+          </span>
+        </a></span
+      > in London on {" "}
+      <a href="https://www.chromium.org/Home/" target="_blank">Chrome</a>, {" "}
+      <a href="https://source.android.com/" target="_blank">Android</a>, and {
+        " "
+      }
+      <a href="https://web.dev/" target="_blank">the web platform</a>.
+    </p>
+
+    <p>
+      I'm 23, born in England to Persian parents, grew up in London, and now
+      live in Berlin.
     </p>
     <p>
-      On my <a href="/blog">blog</a> I write about stuff I find interesting enough
-      to share, mostly on things in technology. You can also <a
-        href="/newsletter">subscribe</a
+      I <a href="/blog">write</a> about stuff I find interesting enough to share,
+      mostly on things in technology. You can <a href="/newsletter">subscribe</a
       > to get notified about new posts.
     </p>
     <p>
-      If anything here piques your interest, don't hesitate to{" "}
-      <a href="mailto:hi@parsam.io" target="_blank">reach out</a>. I love
-      meeting new people!
+      Say <a href="mailto:hi@parsam.io" target="_blank">hi</a>. I love meeting
+      new people.
     </p>
     <div class="not-prose clear-right mb-4">
       <NowPlaying server:defer />
@@ -105,13 +100,13 @@ const thumbClass = "h-24 w-auto mb-2 block";
     </div>
     <div>
       <div>
-        <h3 class="border-t-2 border-black pt-4">Recently</h3>
+        <h3 class="border-t-2 border-foreground pt-4">Recently</h3>
         <PostList count={5} />
-        <h4><a href="/blog">More →</a></h4>
+        <h4><a href="/blog">See all posts →</a></h4>
       </div>
-      <h3 class="border-t-2 border-black pt-4">Newsletter</h3>
+      <h3 class="border-t-2 border-foreground pt-4">Newsletter</h3>
       <NewsletterForm server:defer />
-      <h3 class="border-t-2 border-black pt-4">Links</h3>
+      <h3 class="border-t-2 border-foreground pt-4">Links</h3>
       <div class="not-prose gap-1 grid grid-cols-3 sm:grid-cols-4">
         <a class={linksClass} href="https://x.com/pzrsaa" target="_blank"
           >Twitter/X</a
@@ -181,7 +176,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
       </div>
     </div>
     <div>
-      <h2 class="border-t-2 border-black pt-4">Favourites</h2>
+      <h2 class="border-t-2 border-foreground pt-4">Favourites</h2>
       <h3>Books</h3>
       <div class={gridClass}>
         {
@@ -206,7 +201,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
                 />
               </a>
               <a
-                class="font-bold block"
+                class="font-bold block text-sm"
                 href={
                   book.data.notesSlug
                     ? `/${book.data.notesSlug}`
@@ -243,7 +238,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
                 />
               </a>
               <a
-                class="font-bold block"
+                class="font-bold block text-sm"
                 href={`https://open.spotify.com/album/${album.id}`}
                 target="_blank"
               >

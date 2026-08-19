@@ -5,6 +5,8 @@
   --font-serif:
     var(--font-literata), ui-serif, Georgia, Cambria, "Times New Roman", Times,
     serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
 }
 
 @theme {
@@ -17,24 +19,57 @@
   --color-black: #000;
 }
 
+:root {
+  --background: var(--color-orange-100);
+  --foreground: var(--color-black);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--color-zinc-900);
+    --foreground: var(--color-orange-100);
+  }
+}
+
 ::selection {
-  @apply bg-black text-white;
+  @apply bg-foreground text-background;
 }
 
 @layer base {
   html {
-    @apply font-serif bg-orange-100 text-black antialiased;
+    @apply font-serif bg-background text-foreground antialiased;
+    color-scheme: light dark;
   }
 
   a {
-    @apply hover:underline hover:text-blue-800 decoration-2 font-medium;
+    @apply hover:underline hover:text-blue-800 dark:hover:text-blue-300 decoration-2 font-medium;
   }
 
   a img {
-    @apply hover:translate-x-px hover:translate-y-px hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)];
+    @apply hover:translate-x-px hover:translate-y-px hover:shadow-[3px_3px_0px_0px_var(--color-foreground)];
   }
 
   img {
-    @apply border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)];
+    @apply border-2 border-foreground shadow-[4px_4px_0px_0px_var(--color-foreground)];
   }
+}
+
+.prose {
+  --tw-prose-body: var(--color-foreground);
+  --tw-prose-headings: var(--color-foreground);
+  --tw-prose-lead: var(--color-foreground);
+  --tw-prose-bold: var(--color-foreground);
+  --tw-prose-counters: var(--color-foreground);
+  --tw-prose-bullets: var(--color-foreground);
+  --tw-prose-hr: var(--color-foreground);
+  --tw-prose-quotes: var(--color-foreground);
+  --tw-prose-quote-borders: var(--color-foreground);
+  --tw-prose-captions: var(--color-foreground);
+  --tw-prose-code: var(--color-foreground);
+  --tw-prose-th-borders: var(--color-foreground);
+  --tw-prose-td-borders: var(--color-foreground);
+}
+
+.prose figcaption {
+  @apply text-center text-sm mt-2 opacity-60;
 }
