@@ -47,7 +47,9 @@ const covers = await Promise.all(
             )}
             <span class="flex-1 min-w-0">
               <a href={`/${post.id}`}>
-                <span class="font-bold text-lg">{post.data.title}</span>
+                <span class="font-sans font-bold text-lg">
+                  {post.data.title}
+                </span>
                 {post.data.author && (
                   <span class="text-sm"> ({post.data.author})</span>
                 )}

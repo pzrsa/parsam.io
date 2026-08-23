@@ -23,14 +23,16 @@ try {
 
 {
   !error && data?.isPlaying && (
-    <div class="flex items-center gap-4">
+    <div class="flex items-center gap-4 font-sans">
       <a href={data.songUrl} target="_blank">
         <img
           alt={data.title}
           src={data.albumImageUrl}
+          width="80"
+          height="80"
           loading="eager"
           decoding="async"
-          class="size-16 sm:size-20"
+          class="size-16 object-cover sm:size-20"
         />
       </a>
       <div class="flex items-center">

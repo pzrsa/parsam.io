@@ -7,11 +7,6 @@ import sitemap from "@astrojs/sitemap";
 
 import preact from "@astrojs/preact";
 
-// Turns a paragraph that is just an image with alt text into a <figure>
-// with a visible <figcaption>. CommonMark flattens markdown inside alt text
-// ("[Muay Thai](url)" becomes "Muay Thai"), so the raw caption is recovered
-// from the source and re-parsed; links etc. render in the caption while the
-// alt attribute stays plain text for screen readers.
 function remarkImageCaptions() {
   const processor = this;
   return (tree, file) => {
@@ -20,8 +15,7 @@ function remarkImageCaptions() {
       if (!node.children) return;
       node.children.forEach(visit);
       for (const child of node.children) {
-        if (child.type !== "paragraph" || child.children.length !== 1)
-          continue;
+        if (child.type !== "paragraph" || child.children.length !== 1) continue;
         const img = child.children[0];
         if (img.type !== "image" || !img.alt || !img.position) continue;
 
@@ -81,6 +75,12 @@ export default defineConfig({
       provider: fontProviders.google(),
       name: "Literata",
       cssVariable: "--font-literata",
+      weights: ["400 700"],
+    },
+    {
+      provider: fontProviders.google(),
+      name: "Archivo",
+      cssVariable: "--font-archivo",
       weights: ["400 700"],
     },
   ],
