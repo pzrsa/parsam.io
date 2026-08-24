@@ -77,12 +77,6 @@ export default defineConfig({
       cssVariable: "--font-literata",
       weights: ["400 700"],
     },
-    {
-      provider: fontProviders.google(),
-      name: "Archivo",
-      cssVariable: "--font-archivo",
-      weights: ["400 700"],
-    },
   ],
 
   integrations: [mdx(), preact(), sitemap()],

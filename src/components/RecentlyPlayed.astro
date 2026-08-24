@@ -27,7 +27,7 @@ try {
   error || !data?.tracks?.length ? (
     <p>No recently played tracks</p>
   ) : (
-    <div class="flex flex-col gap-2 font-sans">
+    <div class="flex flex-col gap-2">
       {data.tracks.map((track) => (
         <div class="flex items-center gap-2 w-fit">
           <a href={track.songUrl} target="_blank">

@@ -46,7 +46,7 @@ const rssSVG = `
         return (
           <li>
             {firstForYear && (
-              <span class="mb-3 flex justify-end font-sans text-sm font-bold">
+              <span class="mb-3 flex justify-end text-sm font-bold">
                 {year}
               </span>
             )}
@@ -69,15 +69,13 @@ const rssSVG = `
               )}
               <span class="flex-1 min-w-0">
                 <a href={`/${post.id}`}>
-                  <span class="font-sans font-bold text-lg">
-                    {post.data.title}
-                  </span>
+                  <span class="font-bold text-lg">{post.data.title}</span>
                   {post.data.author && (
                     <span class="text-sm"> ({post.data.author})</span>
                   )}
                 </a>
               </span>
-              <span class="shrink-0 font-sans text-sm">
+              <span class="shrink-0 text-sm">
                 {post.data.date.toLocaleDateString("en-GB", {
                   day: "numeric",
                   month: "short",

@@ -13,7 +13,7 @@ const [albums, books] = await Promise.all([
   getCollection("books"),
 ]);
 
-const linksClass = "w-fit font-sans font-bold";
+const linksClass = "w-fit font-bold";
 const gridClass = "grid grid-cols-3 sm:grid-cols-4 gap-x-3 gap-y-5 not-prose";
 const thumbClass = "h-24 w-auto mb-2 block";
 ---
@@ -48,8 +48,8 @@ const thumbClass = "h-24 w-auto mb-2 block";
     <p>
       I work at
       <a href="https://www.yaak.ai/" target="_blank"> Yaak AI </a> as a Senior Machine
-      Learning Engineer, where I run everything robotics, like infra, models and
-      hardware. Previously I was at {" "}
+      Learning Engineer, where I run everything robotics, like infra, models and hardware.
+      Previously I was at {" "}
       <span class="prose-a:text-tesla-red! dark:prose-a:text-red-500!"
         ><a href="https://www.tesla.com" target="_blank">Tesla</a>
       </span>, writing software that scaled Gigafactories, and at {" "}
@@ -88,7 +88,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
       <NowPlaying server:defer />
       <button
         id="recently-played-toggle"
-        class="mt-4 flex items-center gap-2 font-sans font-bold hover:opacity-80"
+        class="mt-4 flex items-center gap-2 font-bold hover:opacity-80"
         aria-expanded="false"
       >
         <span id="recently-played-arrow" class="transition-transform">▶</span>
@@ -201,7 +201,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
                 />
               </a>
               <a
-                class="block font-sans text-sm font-bold"
+                class="block text-sm font-bold"
                 href={
                   book.data.notesSlug
                     ? `/${book.data.notesSlug}`
@@ -211,7 +211,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
               >
                 {book.data.title}
               </a>
-              <div class="font-sans text-xs opacity-60">
+              <div class="text-xs opacity-60">
                 {book.data.author} · {book.data.year}
               </div>
             </div>
@@ -238,13 +238,13 @@ const thumbClass = "h-24 w-auto mb-2 block";
                 />
               </a>
               <a
-                class="block font-sans text-sm font-bold"
+                class="block text-sm font-bold"
                 href={`https://open.spotify.com/album/${album.id}`}
                 target="_blank"
               >
                 {album.data.title}
               </a>
-              <div class="font-sans text-xs opacity-60">
+              <div class="text-xs opacity-60">
                 {album.data.artist} · {album.data.year}
               </div>
             </div>
