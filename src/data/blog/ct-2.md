@@ -1,5 +1,5 @@
 ---
-date: 2025-10-01
+date: "2025-10-01"
 title: "Cool Things #2"
 ---
 

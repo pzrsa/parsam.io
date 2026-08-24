@@ -1,6 +1,6 @@
 ---
-title: On boredom
-date: 2025-05-20
+date: "2025-05-20"
+title: "On boredom"
 ---
 Boredom is one of the most important states you should get comfortable with.
 

@@ -1,6 +1,6 @@
 ---
-title: "I deleted Hinge after a week - on dating apps"
 date: "2025-07-04"
+title: "I deleted Hinge after a week - on dating apps"
 cover: deleted-hinge-account.jpeg
 ---
 

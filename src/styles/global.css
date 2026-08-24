@@ -38,6 +38,7 @@
 @layer base {
   html {
     @apply font-serif bg-background text-foreground antialiased;
+    scroll-padding-top: 2rem;
     color-scheme: light dark;
   }
 
@@ -72,4 +73,13 @@
 
 .prose figcaption {
   @apply text-center text-sm mt-2 opacity-60;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }

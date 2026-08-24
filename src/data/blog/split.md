@@ -1,5 +1,5 @@
 ---
-date: 2026-07-03
+date: "2026-07-03"
 title: "too much keyboard"
 cover: tired-boss.png
 ---

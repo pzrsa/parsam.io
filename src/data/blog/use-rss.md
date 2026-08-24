@@ -1,6 +1,6 @@
 ---
-title: "You should be using an RSS reader"
 date: "2025-09-17"
+title: "You should be using an RSS reader"
 cover: netnewswire.png
 ---
 

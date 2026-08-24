@@ -3,15 +3,21 @@ import type { CollectionEntry } from "astro:content";
 import { render } from "astro:content";
 import Layout from "./Layout.astro";
 import Prose from "./Prose.astro";
+import TableOfContents from "./TableOfContents.astro";
 import NewsletterForm from "./NewsletterForm.astro";
-import { getPostDescription } from "../data/utils";
+import { getBlogPosts, getPostDescription } from "../data/utils";
 
 interface Props {
   post: CollectionEntry<"blog">;
 }
 
 const { post } = Astro.props;
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
+
+const posts = await getBlogPosts();
+const index = posts.findIndex((p) => p.id === post.id);
+const newer = index > 0 ? posts[index - 1] : undefined;
+const older = index < posts.length - 1 ? posts[index + 1] : undefined;
 
 const ogImage = new URL(
   `${Astro.url.pathname.replace(/\/+$/, "")}/og.png`,
@@ -46,12 +52,15 @@ const ogImage = new URL(
         </span>
       </div>
     </div>
-    <article>
-      <Prose
-        class="prose-headings:mt-7 prose-headings:mb-3 prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl"
-        ><Content /></Prose
-      >
-    </article>
+    <div class="relative">
+      <TableOfContents headings={headings} />
+      <article>
+        <Prose
+          class="prose-headings:mt-7 prose-headings:mb-3 prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl"
+          ><Content /></Prose
+        >
+      </article>
+    </div>
     <Prose class="prose-h3:text-xl mt-6 pt-8 border-t">
       <h3>Enjoyed this post?</h3>
       <NewsletterForm />
@@ -68,5 +77,40 @@ const ogImage = new URL(
         </li>
       </ul>
     </Prose>
+
+    <nav
+      aria-label="More posts"
+      class="mt-8 grid grid-cols-3 items-center border-t-2 border-foreground pt-2 text-sm"
+    >
+      {
+        older ? (
+          <a
+            href={`/${older.id}`}
+            title={older.data.title}
+            class="py-2 text-left font-normal"
+          >
+            prev
+          </a>
+        ) : (
+          <span />
+        )
+      }
+      <a href="#top" title="Go to top" class="py-2 text-center font-normal">
+        back to top
+      </a>
+      {
+        newer ? (
+          <a
+            href={`/${newer.id}`}
+            title={newer.data.title}
+            class="py-2 text-right font-normal"
+          >
+            next
+          </a>
+        ) : (
+          <span />
+        )
+      }
+    </nav>
   </section>
 </Layout>

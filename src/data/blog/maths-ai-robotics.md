@@ -1,5 +1,5 @@
 ---
-date: 2026-02-16
+date: "2026-02-16"
 title: "the books, videos and papers I'm using to learn Maths, AI and Robotics"
 cover: pim-dl-papers.jpeg
 ---

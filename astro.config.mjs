@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig, fontProviders } from "astro/config";
+import { unified } from "@astrojs/markdown-remark";
 import tailwindcss from "@tailwindcss/vite";
 import cloudflare from "@astrojs/cloudflare";
 import mdx from "@astrojs/mdx";
@@ -67,7 +68,7 @@ export default defineConfig({
     shikiConfig: {
       theme: "gruvbox-dark-hard",
     },
-    remarkPlugins: [remarkImageCaptions],
+    processor: unified({ remarkPlugins: [remarkImageCaptions] }),
   },
 
   fonts: [

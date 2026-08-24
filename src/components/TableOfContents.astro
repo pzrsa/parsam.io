@@ -1,0 +1,85 @@
+---
+import type { MarkdownHeading } from "astro";
+
+interface Props {
+  headings: MarkdownHeading[];
+}
+
+const { headings } = Astro.props;
+const top = Math.min(...headings.map((h) => h.depth));
+const entries = headings.filter((h) => h.depth <= top + 1);
+
+const show = entries.length >= 3;
+---
+
+{
+  show && (
+    <aside
+      aria-label="Table of contents"
+      class="toc not-prose absolute top-0 right-full mr-10 hidden h-full w-48 xl:block"
+    >
+      <ul class="no-scrollbar sticky top-8 flex max-h-[80vh] flex-col gap-3 overflow-y-auto text-sm leading-snug">
+        {entries.map((heading) => (
+          <li class={heading.depth === top ? "" : "pl-3"}>
+            <a href={`#${heading.slug}`} data-toc={heading.slug}>
+              {heading.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </aside>
+  )
+}
+
+<style>
+  .toc a {
+    position: relative;
+  }
+
+  .toc a[aria-current] {
+    font-weight: 700;
+  }
+
+  .toc a[aria-current]::before {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    left: -0.75rem;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--color-foreground);
+  }
+</style>
+
+<script>
+  const links = document.querySelectorAll<HTMLAnchorElement>("[data-toc]");
+
+  if (links.length) {
+    const sections = [...links]
+      .map((link) => ({
+        link,
+        heading: document.getElementById(link.dataset.toc!),
+      }))
+      .filter((s): s is { link: HTMLAnchorElement; heading: HTMLElement } =>
+        Boolean(s.heading),
+      );
+
+    let current: HTMLAnchorElement | null = null;
+
+    const update = () => {
+      let active = sections[0];
+      for (const section of sections) {
+        if (section.heading.getBoundingClientRect().top > 96) break;
+        active = section;
+      }
+      if (active.link === current) return;
+      current?.removeAttribute("aria-current");
+      active.link.setAttribute("aria-current", "true");
+      current = active.link;
+    };
+
+    update();
+    document.addEventListener("scroll", update, { passive: true });
+  }
+</script>
