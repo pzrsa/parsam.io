@@ -32,23 +32,9 @@ const show = entries.length >= 3;
 }
 
 <style>
-  .toc a {
-    position: relative;
-  }
-
+  /* marks the section you're currently reading */
   .toc a[aria-current] {
     font-weight: 700;
-  }
-
-  .toc a[aria-current]::before {
-    content: "";
-    position: absolute;
-    top: 0.5em;
-    left: -0.75rem;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: var(--color-foreground);
   }
 </style>
 
