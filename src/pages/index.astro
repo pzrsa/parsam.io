@@ -92,7 +92,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
         aria-expanded="false"
       >
         <span id="recently-played-arrow" class="transition-transform">▶</span>
-        <span>Recently Played</span>
+        <span>recently played</span>
       </button>
       <div id="recently-played-content" class="hidden mt-2">
         <RecentlyPlayed server:defer />
@@ -100,13 +100,13 @@ const thumbClass = "h-24 w-auto mb-2 block";
     </div>
     <div>
       <div>
-        <h3 class="border-t-2 border-foreground pt-4">Recently</h3>
+        <h3 class="border-t-2 border-foreground pt-4">recent</h3>
         <PostList count={5} />
         <h4><a href="/blog">See all posts →</a></h4>
       </div>
-      <h3 class="border-t-2 border-foreground pt-4">Newsletter</h3>
+      <h3 class="border-t-2 border-foreground pt-4">newsletter</h3>
       <NewsletterForm />
-      <h3 class="border-t-2 border-foreground pt-4">Links</h3>
+      <h3 class="border-t-2 border-foreground pt-4">links</h3>
       <div class="not-prose gap-1 grid grid-cols-3 sm:grid-cols-4">
         <a class={linksClass} href="https://x.com/pzrsaa" target="_blank"
           >Twitter/X</a
@@ -176,8 +176,8 @@ const thumbClass = "h-24 w-auto mb-2 block";
       </div>
     </div>
     <div>
-      <h2 class="border-t-2 border-foreground pt-4">Favourites</h2>
-      <h3>Books</h3>
+      <h2 class="border-t-2 border-foreground pt-4">favourites</h2>
+      <h3>books</h3>
       <div class={gridClass}>
         {
           books.map((book) => (
@@ -218,7 +218,7 @@ const thumbClass = "h-24 w-auto mb-2 block";
           ))
         }
       </div>
-      <h3>Music</h3>
+      <h3>music</h3>
       <div class={gridClass}>
         {
           albums.map((album) => (

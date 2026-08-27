@@ -20,7 +20,7 @@
 }
 
 :root {
-  --background: var(--color-orange-100);
+  --background: var(--color-orange-50);
   --foreground: var(--color-black);
 }
 
