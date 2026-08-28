@@ -1,21 +1,6 @@
 ---
 import Layout from "../components/Layout.astro";
-import { Image } from "astro:assets";
-import type { ImageMetadata } from "astro";
-import { getBlogPosts } from "../data/utils";
-
-const posts = await getBlogPosts();
-
-const allImages = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/blog/**/*.{webp,jpg,jpeg,png,gif}",
-);
-const covers = await Promise.all(
-  posts.map(async (post) => {
-    if (!post.data.cover) return undefined;
-    const loader = allImages[`/src/assets/blog/${post.data.cover}`];
-    return loader ? (await loader()).default : undefined;
-  }),
-);
+import PostList from "../components/PostList.astro";
 
 const rssSVG = `
 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="#ff4f00">
@@ -33,58 +18,5 @@ const rssSVG = `
       <span set:html={rssSVG} />
     </a>
   </span>
-  <ul class="flex flex-col gap-2">
-    {
-      posts.map((post, i) => {
-        const cover = covers[i];
-        const year = post.data.date.getFullYear();
-        const firstForYear =
-          !posts[i - 1] || posts[i - 1].data.date.getFullYear() !== year;
-        const lastForYear =
-          !posts[i + 1] || posts[i + 1].data.date.getFullYear() !== year;
-
-        return (
-          <li>
-            {firstForYear && (
-              <span class="mb-3 flex justify-end text-sm font-bold">
-                {year}
-              </span>
-            )}
-            <span
-              class={`flex items-center gap-3 ${lastForYear ? "mb-4" : ""}`}
-            >
-              {cover ? (
-                <a href={`/${post.id}`} class="shrink-0">
-                  <Image
-                    src={cover}
-                    alt={post.data.title}
-                    width={160}
-                    height={96}
-                    fit="cover"
-                    class="h-12 w-20 object-cover hover:translate-x-px hover:translate-y-px hover:shadow-[3px_3px_0px_0px_var(--color-foreground)]"
-                  />
-                </a>
-              ) : (
-                <span class="shrink-0 w-20" />
-              )}
-              <span class="flex-1 min-w-0">
-                <a href={`/${post.id}`}>
-                  <span class="font-bold text-lg">{post.data.title}</span>
-                  {post.data.author && (
-                    <span class="text-sm"> ({post.data.author})</span>
-                  )}
-                </a>
-              </span>
-              <span class="shrink-0 text-sm">
-                {post.data.date.toLocaleDateString("en-GB", {
-                  day: "numeric",
-                  month: "short",
-                })}
-              </span>
-            </span>
-          </li>
-        );
-      })
-    }
-  </ul>
+  <PostList showDates />
 </Layout>

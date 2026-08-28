@@ -1,4 +1,7 @@
 import { getCollection, type CollectionEntry } from "astro:content";
+import MarkdownIt from "markdown-it";
+
+const markdown = new MarkdownIt({ html: true });
 
 export const getBlogPosts = async () => {
   const posts = await getCollection("blog");
@@ -6,21 +9,31 @@ export const getBlogPosts = async () => {
   return posts;
 };
 
-export const getPostDescription = (post: CollectionEntry<"blog">) => {
-  if (post.data.description) return post.data.description;
-
-  const text = (post.body ?? "")
-    .replace(/```[\s\S]*?```/g, " ")
-    .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
-    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/^#{1,6}\s+/gm, "")
-    .replace(/[*_`]/g, "")
-    .replace(/^\s*[-+]\s+/gm, "")
-    .replace(/^\s*>\s?/gm, "")
+export const getPostExcerpt = (post: CollectionEntry<"blog">) => {
+  const text = markdown
+    .parse(post.body ?? "", {})
+    .flatMap((token) =>
+      token.type === "inline"
+        ? (token.children ?? [])
+            .map((child) => {
+              if (child.type === "text" || child.type === "code_inline") {
+                return child.content;
+              }
+              if (child.type === "softbreak" || child.type === "hardbreak") {
+                return " ";
+              }
+              return "";
+            })
+            .join("")
+        : [],
+    )
+    .join(" ")
     .replace(/\s+/g, " ")
     .trim();
 
   if (text.length <= 160) return text;
   return `${text.slice(0, 160).replace(/\s+\S*$/, "")}…`;
 };
+
+export const getPostDescription = (post: CollectionEntry<"blog">) =>
+  post.data.description || getPostExcerpt(post);

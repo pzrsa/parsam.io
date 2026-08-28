@@ -1,16 +1,17 @@
 ---
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
-import { getBlogPosts } from "../data/utils";
+import { getBlogPosts, getPostExcerpt } from "../data/utils";
 
 interface Props {
   count?: number;
+  showDates?: boolean;
 }
 
-const { count = 5 } = Astro.props;
+const { count, showDates = false } = Astro.props;
 
 const posts = await getBlogPosts();
-const latestPosts = posts.slice(0, count);
+const latestPosts = count ? posts.slice(0, count) : posts;
 
 const allImages = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/blog/**/*.{webp,jpg,jpeg,png,gif}",
@@ -24,13 +25,29 @@ const covers = await Promise.all(
 );
 ---
 
-<ul class="flex flex-col gap-4 not-prose">
+<ul class:list={["flex flex-col not-prose", showDates ? "gap-2" : "gap-4"]}>
   {
     latestPosts.map((post, i) => {
       const cover = covers[i];
+      const year = post.data.date.getFullYear();
+      const firstForYear =
+        !latestPosts[i - 1] ||
+        latestPosts[i - 1].data.date.getFullYear() !== year;
+      const lastForYear =
+        !latestPosts[i + 1] ||
+        latestPosts[i + 1].data.date.getFullYear() !== year;
+
       return (
         <li>
-          <span class="flex gap-3 items-center">
+          {showDates && firstForYear && (
+            <span class="mb-3 flex justify-end text-sm font-bold">{year}</span>
+          )}
+          <span
+            class:list={[
+              "flex gap-3 items-center",
+              showDates && lastForYear && "mb-4",
+            ]}
+          >
             {cover ? (
               <a href={`/${post.id}`} class="shrink-0">
                 <Image
@@ -46,13 +63,26 @@ const covers = await Promise.all(
               <span class="shrink-0 w-20" />
             )}
             <span class="flex-1 min-w-0">
-              <a href={`/${post.id}`}>
-                <span class="font-bold text-lg">{post.data.title}</span>
-                {post.data.author && (
-                  <span class="text-sm"> ({post.data.author})</span>
-                )}
+              <a href={`/${post.id}`} class="block">
+                <span class="block">
+                  <span class="font-bold text-lg">{post.data.title}</span>
+                  {post.data.author && (
+                    <span class="text-sm"> ({post.data.author})</span>
+                  )}
+                </span>
+                <span class="block line-clamp-2 text-sm opacity-60">
+                  {getPostExcerpt(post)}
+                </span>
               </a>
             </span>
+            {showDates && (
+              <span class="shrink-0 text-sm">
+                {post.data.date.toLocaleDateString("en-GB", {
+                  day: "numeric",
+                  month: "short",
+                })}
+              </span>
+            )}
           </span>
         </li>
       );
