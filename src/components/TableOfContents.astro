@@ -2,10 +2,11 @@
 import type { MarkdownHeading } from "astro";
 
 interface Props {
+  title: string;
   headings: MarkdownHeading[];
 }
 
-const { headings } = Astro.props;
+const { title, headings } = Astro.props;
 const top = Math.min(...headings.map((h) => h.depth));
 const entries = headings.filter((h) => h.depth <= top + 1);
 
@@ -19,9 +20,18 @@ const show = entries.length >= 3;
       class="toc not-prose absolute top-0 right-full mr-10 hidden h-full w-48 xl:block"
     >
       <ul class="no-scrollbar sticky top-8 flex max-h-[80vh] flex-col gap-3 overflow-y-auto text-sm leading-snug">
+        <li>
+          <a href="#top" data-toc="top" class="aria-current:font-bold">
+            {title}
+          </a>
+        </li>
         {entries.map((heading) => (
           <li class={heading.depth === top ? "" : "pl-3"}>
-            <a href={`#${heading.slug}`} data-toc={heading.slug}>
+            <a
+              href={`#${heading.slug}`}
+              data-toc={heading.slug}
+              class="aria-current:font-bold"
+            >
               {heading.text}
             </a>
           </li>
@@ -30,13 +40,6 @@ const show = entries.length >= 3;
     </aside>
   )
 }
-
-<style>
-  /* marks the section you're currently reading */
-  .toc a[aria-current] {
-    font-weight: 700;
-  }
-</style>
 
 <script>
   const links = document.querySelectorAll<HTMLAnchorElement>("[data-toc]");

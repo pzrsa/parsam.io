@@ -34,7 +34,7 @@ const ogImage = new URL(
 >
   <section>
     <div class="mb-6">
-      <h1 class="mb-2 text-3xl font-bold sm:text-4xl">
+      <h1 id="top" class="mb-2 text-3xl font-bold sm:text-4xl">
         {post.data.title}
         <span class="font-medium">
           {post.data.author ? ` (${post.data.author})` : ""}
@@ -53,7 +53,7 @@ const ogImage = new URL(
       </div>
     </div>
     <div class="relative">
-      <TableOfContents headings={headings} />
+      <TableOfContents title={post.data.title} headings={headings} />
       <article>
         <Prose
           class="prose-headings:mt-7 prose-headings:mb-3 prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl"
