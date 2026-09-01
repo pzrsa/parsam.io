@@ -8,11 +8,11 @@ Recently I built a teleoperation stack controlled by motion-capture (mocap) glov
 
 It works with the gloves measuring the movement of my fingers and wrist, while an electromagnetic tracker gives my hand an absolute position in space. Together they let me move a robot arm by moving my own arm, and it feels like magic.
 
-This kind of setup is often used by game studios for capturing human motion, but surprisingly it's found a place in robotics research.
-
 <video controls autoplay muted loop playsinline preload="metadata" data-scroll-play>
  <source src="/blog/teleop-hero.mp4" type="video/mp4"/>
 </video>
+
+This kind of setup is often used by game studios for capturing human motion, but surprisingly it's found a place in robotics research.
 
 A lot of robot data is collected through teleoperation. A common setup involves two robot arms: a human moves the leader, while a follower copies its joint angles. This approach is ideal because everything being recorded is already a robot action, but it requires duplicate hardware and an operator who knows how to use it, making it fairly slow and expensive.
 
