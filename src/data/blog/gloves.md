@@ -1,7 +1,7 @@
 ---
 date: "2026-09-01"
 title: "Teleoperating a robot arm with gloves"
-cover: teleop-setup.jpg
+cover: gloves-cover.png
 ---
 
 Recently I built a teleoperation stack controlled by motion-capture (mocap) gloves, and used it to collect roughly an hour of robot demonstrations.
@@ -21,7 +21,6 @@ Some of our customers have people working in warehouses assembling products, whi
 The problem is that human motion doesn't magically become robot data. Humans and ~~clankers~~ robots have different proportions, joints, and limits, so the movement somehow has to be mapped from us to them. Although human demonstrations could eventually provide more data, [Physical Intelligence's recent work](https://www.pi.website/research/human_to_robot) suggests that models become better at learning from human data after pretraining on sufficiently diverse robot data.
 
 So before trying to collect demonstrations without a robot, I used the gloves to control one directly. I essentially killed two birds with one stone:
-
 1. it gives me native robot demonstrations
 2. it tests whether the mapping from human to robot works on physical hardware
 
@@ -30,21 +29,20 @@ In this post, I'll be sharing how I made it usable, from choosing the gloves, tr
 # The Setup
 
 It consists of:
+- 2x 7-DOF [AgileX Nero arms](https://global.agilex.ai/products/nero)
+- 2x 6-DOF [Brainco Revo2 Touch hands](https://www.brainco-hz.com/docs/revolimb-hand/en/revo2/parameters.html)
+- 2x [Rokoko Smartgloves II](https://www.rokoko.com/products/smartgloves-ii)
+- 1x [Rokoko Coil Pro](https://www.rokoko.com/products/coil-pro)
 
-- 2x 7-DOF AgileX Nero arms
-- 2x 6-DOF Brainco Revo2 Touch hands
-- 2x Rokoko Smartgloves II
-- 1x Rokoko Coil Pro
+![the full setup](../../assets/blog/teleop-setup.jpg)
 
-![](../../assets/blog/teleop-setup.jpg)
+Hypothetically, the setup is bimanual, meaning it controls two arms. But the work was done on the left arm because the right hand has a faulty thumb motor. I was pretty disappointed since each hand costs a couple grand, so I expected better quality hardware. 
 
-Hypothetically, the setup is bimanual, meaning it controls two arms. But the work was done on the left arm because the right hand has a faulty thumb motor. I was pretty disappointed since each hand costs a couple grand, so I expected better quality hardware.
-
-Our electrical engineers mounted the arms on a custom stand, which makes them hang from the sides like a human.
+Our electrical engineers mounted the arms on a custom stand, which makes them hang from the sides like a human. 
 
 ## Picking the gloves
 
-The first gloves I tried were the Manus Metagloves Pro. I shared some notes with the team after that one-week trial. Keep in mind these are from mid April, so things might have changed since then:
+The first gloves I tried were the [Manus Metagloves Pro](https://www.manus-meta.com/products/metagloves-pro). I shared some notes with the team after that one-week trial. Keep in mind these are from mid April, so things might have changed since then:
 
 - The fingertips are quite obtrusive. They gave my fingertips a weird feeling initially, though that went away. I could barely type on a keyboard with them, which would be annoying for operators
 - The calibration software is Windows only, and the SDK only runs on x86, so our Jetson couldn't connect to them directly
@@ -53,11 +51,12 @@ The first gloves I tried were the Manus Metagloves Pro. I shared some notes with
 - Complex C++ SDK stack
 - Expensive
 
-So we returned them, and I suggested we try the Rokoko Smartgloves instead. Mostly because that's what [DexCap](https://dex-cap.github.io/), the paper that introduced me to the notion of wearables used.
+So we returned them, and I suggested we try the [Rokoko Smartgloves](https://www.rokoko.com/products/smartgloves-coil-pro-precision-finger-capture) instead. Mostly because that's what [DexCap](https://dex-cap.github.io/), the paper that introduced me to the notion of wearables used. 
 
-![](../../assets/blog/teleop-glove-revo2.jpg)
 
-At the time I bought them, Rokoko didn't have any sort of SDK, but they were pretty open about one being in development. After a month or so they shared an early version with us. Now it's in public release, and I've been using it to interact with the gloves. I've gotten pretty familiar with their stack, and even had the pleasure of meeting the engineering team in Copenhagen on a work trip. They also built an ARM64 variant of the SDK for our Jetson, which is worth mentioning since the Manus stack being x86 only was a reason we sent their gloves back.
+![the hands on either side of the mapping](../../assets/blog/teleop-glove-revo2.jpg)
+
+At the time I bought them, Rokoko didn't have any sort of SDK, but they were pretty open about one being in development. After a month or so they shared an early version with us. Now it's in [public release](https://sdk.rokoko.com/), and I've been using it to interact with the gloves. I've gotten pretty familiar with their stack, and even had the pleasure of meeting the engineering team in Copenhagen on a work trip. They also built an ARM64 variant of the SDK for our Jetson, which is worth mentioning since the Manus stack being x86 only was a reason we sent their gloves back.
 
 ## Finding the glove in space
 
@@ -73,7 +72,7 @@ The second issue took me ages to debug. One day I went to teleoperate the robot,
 
 To make the two branches distinguishable, I used gravity to my advantage. I angled the Coil roughly 30 degrees down, and oddly enough, it gave me enough information to fix the issue. Think about it: if the Coil sits flat, gravity points straight down its axis and both branches look identical, so a wrong guess is undetectable. But if I angle it, gravity has a horizontal component in the Coil’s coordinate system, and that component points the opposite way on the wrong branch. That lets me detect when it picked the wrong one.
 
-![](../../assets/blog/teleop-coil-stand.jpg)
+![my very sophisticated solution](../../assets/blog/teleop-coil-stand.jpg)
 
 There's no flag telling you which of those two horizontal branches it picked, but I flagged (pun intended) the issue with the Rokoko team, who shared that they're looking for a better way to deal with it.
 
@@ -85,19 +84,18 @@ Just to be clear, I don't think the Coil is the final answer for our setup. It's
 
 So now we know where my hand is, how do we get a robot to move there?
 
-![](../../assets/blog/glove-teleop-diagram.png)
+![glove data passes through the Rokoko SDK and teleoperation stack to control the robot, while robot, glove and camera data are recorded to MCAP](../../assets/blog/glove-teleop-diagram.png)
 
 ## Reading the glove data
 
 The Rokoko SDK has a driver, which after running exposes two main protocols:
+- RCSP ([Rokoko Command Server Protocol](https://sdk.rokoko.com/reference/rcsp/)): for abstracting the low-level binary Rokoko device protocol into JSON over TCP. For things like listing devices and subscribing to button presses.
+- RGMP ([Rokoko General Motion Protocol](https://sdk.rokoko.com/reference/rgmp/)): where binary motion data is streamed over TCP. The one I'm most interested in.
 
-- RCSP (Rokoko Command Server Protocol): for abstracting the low-level binary Rokoko device protocol into JSON over TCP. For things like listing devices and subscribing to button presses.
-- RGMP (Rokoko General Motion Protocol): where binary motion data is streamed over TCP. The one I'm most interested in.
 
 After connecting to RGMP, the first message you get is a JSON-based definition, defining every device, group of streams and data types for each value that follow. After precomputing the byte offset of everything that mattered, it's pure binary so I just parsed it like usual.
 
 What comes out per hand:
-
 - status flags
 - angular velocity and acceleration from the IMU in each finger sensor
 - finger-sensor transforms (position and quaternion) and the wrist relative to the hub
@@ -105,7 +103,7 @@ What comes out per hand:
 
 Their [examples](https://sdk.rokoko.com/examples/) were useful to grasp what was happening since there's quite a few moving parts, so I recommend checking them out.
 
-I started with the [RGMP streaming example](https://sdk.rokoko.com/examples/rgmp_stream/), pulled the glove data on a button press, saved it into an [MCAP](https://mcap.dev/) file, and streamed it to [Nutron](https://www.yaak.ai/nutron).
+I started with the [RGMP streaming example](https://sdk.rokoko.com/examples/rgmp_stream/), pulled the glove data on a [button press](https://sdk.rokoko.com/examples/rcsp_button_click/), saved it into an [MCAP](https://mcap.dev/) file, and streamed it to [Nutron](https://www.yaak.ai/nutron).
 
 ## Calibration
 
@@ -125,7 +123,7 @@ I made a UI to visualise this process, showing me where the center is, which dir
 
 The fingers are easier to map than the arms. How far each finger should curl is derived from the finger transforms using translation direction, chain shortening and rotation relative to a neutral pose.
 
-My five fingers are mapped onto the Revo2's six motors: two for the thumb, and one for each of the other fingers.
+My five fingers are mapped onto the Revo2's six motors: two for the thumb, and one for each of the other fingers. 
 
 This step also required calibration. I recorded an open hand and a closed fist. For the open pose, I wanted my relaxed hand to mean fully open on the robot. Human hands aren’t as binary as robot ones, and I didn’t want to uncomfortably extend my fingers every time I wanted it to fully open.
 
@@ -133,7 +131,7 @@ This step also required calibration. I recorded an open hand and a closed fist. 
  <source src="/blog/teleop-fingers.mp4" type="video/mp4"/>
 </video>
 
-## Clutch
+## Clutch 
 
 The clutch lets me engage the robot. It's common in teleoperation systems, from [surgical robots](https://pmc.ncbi.nlm.nih.gov/articles/PMC6488009/) to VR setups.
 
@@ -159,7 +157,7 @@ I also pass the wrist position through a [1€ filter](https://gery.casiez.net/1
 
 The problem that IK solves is given an end effector pose, in our case the robot's wrist, what joint angles do we need to get there? There's no general formula that works for every robot, so there are different ways to approach it.
 
-The way I approached it was to use DLS: damped least squares, it's a common numerical method for solving it. I also tried [SSIK](https://github.com/personalrobotics/ssik/). It was fast most of the time, but it would sometimes pause while trying to find a valid arm configuration. That isn't great for collecting demonstrations, since the model can learn those pauses too, so I settled on DLS.
+The way I approached it was to use DLS: damped least squares, it's a common numerical method for solving it. I also tried [SSIK](https://github.com/personalrobotics/ssik/). It was fast most of the time, but it would sometimes pause while trying to find a valid arm configuration. That isn't great for collecting demonstrations, since the model can learn those pauses too, so I settled on DLS. 
 
 Here's how it works:
 
@@ -186,9 +184,9 @@ I made a pretty ghetto simulator in [Rerun](https://rerun.io/) since I was alrea
 # Conclusion
 
 Once it worked well enough, I used it to collect 99 demonstrations of picking up a cube and placing it inside a box.
-
+ 
 The "dataset" contains ~28 minutes of robot motion. Collecting them took around an hour once you include resetting the cube and failed attempts.
-
+ 
 Teleoperating also got noticeably easier as I continued. During the first quarter of one session, 73.5% of the control ticks were clean (the controller didn't freeze the arm) and the median IK error was 93mm. By the last quarter, those numbers were 99.3% and 1.3mm. I was getting much better at knowing where its limits were and when to use the clutch.
 
 I had some teammates who'd never done teleoperation before try it and they even managed to contribute to the robot data.
@@ -198,9 +196,9 @@ I had some teammates who'd never done teleoperation before try it and they even 
 </video>
 
 I later used it to collect another 122 robot demonstrations, bringing the total to 221 unique demonstrations. By then teleoperating felt much more natural, and I was getting surprisingly good at performing tasks with the robot.
-
+ 
 Remember though, this still isn’t the original goal of having people perform work naturally by wearing the gloves. I’m still directly controlling a robot here, with a Coil sitting beside it and a calibration specific to that setup.
-
+ 
 But it proved that the mapping worked well enough on physical hardware to collect useful robot data. I've since trained a policy on some of the data and got the robot to perform the task on its own, but that part deserves another post.
 
 <video controls muted loop playsinline preload="none" data-scroll-play>
