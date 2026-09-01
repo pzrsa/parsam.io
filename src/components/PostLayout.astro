@@ -114,3 +114,30 @@ const ogImage = new URL(
     </nav>
   </section>
 </Layout>
+
+<script>
+  const videos = document.querySelectorAll<HTMLVideoElement>(
+    "video[data-scroll-play]",
+  );
+
+  if (
+    videos.length &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  ) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          const video = entry.target as HTMLVideoElement;
+          if (entry.intersectionRatio >= 0.35) {
+            void video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
+        }
+      },
+      { threshold: 0.35 },
+    );
+
+    videos.forEach((video) => observer.observe(video));
+  }
+</script>
