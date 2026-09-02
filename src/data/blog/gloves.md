@@ -207,4 +207,6 @@ But it proved that the mapping worked well enough on physical hardware to collec
  <source src="/blog/teleop-policy-success.mp4" type="video/mp4"/>
 </video>
 
+Rokoko also recently posted [a video which features me](https://lnkd.in/p/d8Jh5sa9) using the setup, which was pretty cool to see.
+
 I plan to open-source the reusable parts of the teleoperation stack once I’ve cleaned them up and worked through the release details. If you want to know when that happens, you can [follow me on X](https://x.com/pzrsaa) or [subscribe to my newsletter](https://parsam.substack.com/subscribe).
