@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Nav from "./Nav.astro";
+import SubscribeDialog from "./SubscribeDialog.astro";
 import { Font } from "astro:assets";
 
 interface Props {
@@ -66,5 +67,6 @@ const fullTitle = title ? `${title} - ${baseTitle}` : baseTitle;
   <body class="max-w-2xl mx-auto px-4 py-5 sm:px-6 sm:py-8">
     <Nav />
     <slot />
+    <SubscribeDialog />
   </body>
 </html>

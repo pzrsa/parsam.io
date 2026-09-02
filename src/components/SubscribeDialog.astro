@@ -1,0 +1,50 @@
+<dialog
+  id="subscribe-dialog"
+  aria-labelledby="subscribe-dialog-title"
+  class="m-auto w-[calc(100%-2rem)] max-w-lg border-2 border-foreground bg-background p-0 text-foreground shadow-[6px_6px_0px_0px_var(--color-foreground)] backdrop:bg-black/50"
+>
+  <div
+    class="flex items-center justify-between border-b-2 border-foreground px-4 py-2"
+  >
+    <h2 id="subscribe-dialog-title" class="text-lg font-bold">subscribe</h2>
+    <form method="dialog">
+      <button type="submit" class="p-1 font-medium hover:underline"
+        >close</button
+      >
+    </form>
+  </div>
+  <iframe
+    title="Subscribe to Parsa Mesgarha on Substack"
+    data-src="https://parsam.substack.com/embed?utm_source=parsam.io"
+    class="block h-[150px] w-full border-0 bg-white"></iframe>
+</dialog>
+
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>("#subscribe-dialog");
+  const frame = dialog?.querySelector<HTMLIFrameElement>("iframe[data-src]");
+  const subscribeUrl = "https://parsam.substack.com/subscribe";
+
+  document
+    .querySelectorAll<HTMLAnchorElement>(`a[href="${subscribeUrl}"]`)
+    .forEach((link) => {
+      link.addEventListener("click", (event) => {
+        if (!dialog || !frame) return;
+        if (
+          event.button !== 0 ||
+          event.metaKey ||
+          event.ctrlKey ||
+          event.shiftKey ||
+          event.altKey
+        )
+          return;
+
+        event.preventDefault();
+        if (!frame.hasAttribute("src")) frame.src = frame.dataset.src ?? "";
+        dialog.showModal();
+      });
+    });
+
+  dialog?.addEventListener("click", (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+</script>

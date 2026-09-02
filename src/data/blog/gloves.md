@@ -80,6 +80,8 @@ Placement also matters just as much. If the gloves are within roughly 50cm, the 
 
 Just to be clear, I don't think the Coil is the final answer for our setup. It's not really portable and needs mains power, so I doubt it's something we would ship to users. I'm mostly using it as scaffolding, and since it gives me a reliable absolute position besides the issue above, I can build and validate everything downstream. Maybe good old cameras and SLAM will replace it.
 
+_I'm planning to write more posts like this. [Get the next one by email](https://parsam.substack.com/subscribe)._
+
 # From hand to joint angles
 
 So now we know where my hand is, how do we get a robot to move there?
