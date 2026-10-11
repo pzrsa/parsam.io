@@ -46,42 +46,57 @@ const thumbClass = "h-24 w-auto mb-2 block";
   </a>
   <Prose>
     <p>
-      I work at
-      <a href="https://www.yaak.ai/" target="_blank"> Yaak </a> as a Senior Machine
-      Learning Engineer, where I run everything robotics, like infra, models and hardware.
-      Previously I was at {" "}
-      <span class="prose-a:text-tesla-red! dark:prose-a:text-red-500!"
-        ><a href="https://www.tesla.com" target="_blank">Tesla</a>
-      </span>, writing software that scaled Gigafactories, and at {" "}
-      <span class="prose-a:decoration-google-blue prose-a:hover:text-blue-800"
-        ><a href="https://google.com" target="_blank">
-          <span class="text-google-blue">G</span><span class="text-google-red"
-            >o</span
-          ><span class="text-google-yellow">o</span><span
-            class="text-google-blue">g</span
-          ><span class="text-google-green">l</span><span class="text-google-red"
-            >e
-          </span>
-        </a></span
-      > in London, working on {" "}
-      <a href="https://www.chromium.org/Home/" target="_blank">Chrome</a>, {" "}
-      <a href="https://source.android.com/" target="_blank">Android</a>, and {
-        " "
-      }
-      <a href="https://web.dev/" target="_blank">the web platform</a>.
+      I’m a Senior Machine Learning Engineer at{" "}
+      <a href="https://www.yaak.ai/" target="_blank">
+        Yaak
+      </a>
+      , where I lead all robotics work, from hardware and data collection to
+      training policies and deploying them on robots. Before that I was at{" "}
+      <span class="prose-a:text-tesla-red! dark:prose-a:text-red-500!">
+        <a href="https://www.tesla.com/" target="_blank">
+          Tesla
+        </a>
+      </span>
+      , writing software for Gigafactory expansion, and I started my career at{" "}
+      <span class="prose-a:decoration-google-blue prose-a:hover:text-blue-800">
+        <a href="https://google.com/" target="_blank">
+          <span class="text-google-blue">G</span>
+          <span class="text-google-red">o</span>
+          <span class="text-google-yellow">o</span>
+          <span class="text-google-blue">g</span>
+          <span class="text-google-green">l</span>
+          <span class="text-google-red">e</span>
+        </a>
+      </span>{" "}
+      at 18 in London, working on{" "}
+      <a href="https://www.chromium.org/Home/" target="_blank">
+        Chrome
+      </a>
+      ,{" "}
+      <a href="https://source.android.com/" target="_blank">
+        Android
+      </a>{" "}
+      and{" "}
+      <a href="https://web.dev/" target="_blank">
+        the web platform
+      </a>
+      .
     </p>
 
     <p>
-      I'm 23, born in England to Persian parents, grew up in London, and now
-      live in Berlin.
+      Born in England to Persian parents, grew up in London, now living in
+      Berlin.
     </p>
     <p>
-      I <a href="/blog">write</a> about stuff I find interesting enough to share,
-      mostly on things in technology.
+      I <a href="/blog">write</a> about robot learning, ML and engineering, and
+      sometimes life.
     </p>
     <p>
-      Say <a href="mailto:hi@parsam.io" target="_blank">hi</a>. I love meeting
-      new people.
+      Say{" "}
+      <a href="mailto:hi@parsam.io" target="_blank">
+        hi
+      </a>
+      . I love meeting new people.
     </p>
     <div class="not-prose clear-right mb-4">
       <NowPlaying server:defer />
@@ -90,7 +105,9 @@ const thumbClass = "h-24 w-auto mb-2 block";
         class="mt-4 flex items-center gap-2 font-bold hover:opacity-80"
         aria-expanded="false"
       >
-        <span id="recently-played-arrow" class="transition-transform">▶</span>
+        <span id="recently-played-arrow" class="transition-transform">
+          ▶
+        </span>
         <span>recently played</span>
       </button>
       <div id="recently-played-content" class="hidden mt-2">
@@ -101,18 +118,20 @@ const thumbClass = "h-24 w-auto mb-2 block";
       <div>
         <h3 class="border-t-2 border-foreground pt-4">recent</h3>
         <PostList count={5} />
-        <h4><a href="/blog">view all →</a></h4>
+        <h4>
+          <a href="/blog">view all →</a>
+        </h4>
       </div>
       <h3 class="border-t-2 border-foreground pt-4">newsletter</h3>
       <NewsletterForm />
       <h3 class="border-t-2 border-foreground pt-4">links</h3>
       <div class="not-prose gap-1 grid grid-cols-3 sm:grid-cols-4">
-        <a class={linksClass} href="https://x.com/pzrsaa" target="_blank"
-          >Twitter/X</a
-        >
-        <a class={linksClass} href="https://github.com/pzrsa" target="_blank"
-          >GitHub</a
-        >
+        <a class={linksClass} href="https://x.com/pzrsaa" target="_blank">
+          Twitter/X
+        </a>
+        <a class={linksClass} href="https://github.com/pzrsa" target="_blank">
+          GitHub
+        </a>
         <a
           class={linksClass}
           href="https://www.linkedin.com/in/parsamesgarha"
@@ -123,8 +142,10 @@ const thumbClass = "h-24 w-auto mb-2 block";
         <a
           class={linksClass}
           href="https://www.youtube.com/@pzrsa"
-          target="_blank">YouTube</a
+          target="_blank"
         >
+          YouTube
+        </a>
         <a
           class={linksClass}
           href="https://parsam.substack.com"
@@ -149,8 +170,10 @@ const thumbClass = "h-24 w-auto mb-2 block";
         <a
           class={linksClass}
           href="https://www.last.fm/user/pzrsa"
-          target="_blank">Last.fm</a
+          target="_blank"
         >
+          Last.fm
+        </a>
         <a
           class={linksClass}
           href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
@@ -178,77 +201,73 @@ const thumbClass = "h-24 w-auto mb-2 block";
       <h2 class="border-t-2 border-foreground pt-4">favourites</h2>
       <h3>books</h3>
       <div class={gridClass}>
-        {
-          books.map((book) => (
-            <div>
-              <a
-                class="block"
-                href={
-                  book.data.notesSlug
-                    ? `/${book.data.notesSlug}`
-                    : `https://books.google.com/books?id=${book.id}`
-                }
-                target={book.data.notesSlug ? undefined : "_blank"}
-              >
-                <img
-                  src={`https://books.google.com/books/content?id=${book.id}&printsec=frontcover&img=1&zoom=1`}
-                  alt={book.data.title}
-                  width={85}
-                  height={128}
-                  loading="lazy"
-                  class={thumbClass}
-                />
-              </a>
-              <a
-                class="block text-sm font-bold"
-                href={
-                  book.data.notesSlug
-                    ? `/${book.data.notesSlug}`
-                    : `https://books.google.com/books?id=${book.id}`
-                }
-                target={book.data.notesSlug ? undefined : "_blank"}
-              >
-                {book.data.title}
-              </a>
-              <div class="text-xs opacity-60">
-                {book.data.author} · {book.data.year}
-              </div>
+        {books.map((book) => (
+          <div>
+            <a
+              class="block"
+              href={
+                book.data.notesSlug
+                  ? `/${book.data.notesSlug}`
+                  : `https://books.google.com/books?id=${book.id}`
+              }
+              target={book.data.notesSlug ? undefined : "_blank"}
+            >
+              <img
+                src={`https://books.google.com/books/content?id=${book.id}&printsec=frontcover&img=1&zoom=1`}
+                alt={book.data.title}
+                width={85}
+                height={128}
+                loading="lazy"
+                class={thumbClass}
+              />
+            </a>
+            <a
+              class="block text-sm font-bold"
+              href={
+                book.data.notesSlug
+                  ? `/${book.data.notesSlug}`
+                  : `https://books.google.com/books?id=${book.id}`
+              }
+              target={book.data.notesSlug ? undefined : "_blank"}
+            >
+              {book.data.title}
+            </a>
+            <div class="text-xs opacity-60">
+              {book.data.author} · {book.data.year}
             </div>
-          ))
-        }
+          </div>
+        ))}
       </div>
       <h3>music</h3>
       <div class={gridClass}>
-        {
-          albums.map((album) => (
-            <div>
-              <a
-                class="block"
-                href={`https://open.spotify.com/album/${album.id}`}
-                target="_blank"
-              >
-                <img
-                  src={`https://i.scdn.co/image/${album.data.imageID}`}
-                  alt={album.data.title}
-                  width={128}
-                  height={128}
-                  loading="lazy"
-                  class={thumbClass}
-                />
-              </a>
-              <a
-                class="block text-sm font-bold"
-                href={`https://open.spotify.com/album/${album.id}`}
-                target="_blank"
-              >
-                {album.data.title}
-              </a>
-              <div class="text-xs opacity-60">
-                {album.data.artist} · {album.data.year}
-              </div>
+        {albums.map((album) => (
+          <div>
+            <a
+              class="block"
+              href={`https://open.spotify.com/album/${album.id}`}
+              target="_blank"
+            >
+              <img
+                src={`https://i.scdn.co/image/${album.data.imageID}`}
+                alt={album.data.title}
+                width={128}
+                height={128}
+                loading="lazy"
+                class={thumbClass}
+              />
+            </a>
+            <a
+              class="block text-sm font-bold"
+              href={`https://open.spotify.com/album/${album.id}`}
+              target="_blank"
+            >
+              {album.data.title}
+            </a>
+            <div class="text-xs opacity-60">
+              {album.data.artist} · {album.data.year}
             </div>
-          ))
-        }
+          </div>
+        ))}
       </div>
     </div>
   </Prose>
