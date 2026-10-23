@@ -7,6 +7,10 @@
     serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-link: var(--link);
+  --color-link-hover: var(--link-hover);
+  --color-rule: var(--rule);
 }
 
 @theme {
@@ -15,19 +19,25 @@
   --color-google-yellow: #f4c20d;
   --color-google-green: #3cba54;
   --color-tesla-red: #cc0000;
-  --color-white: #fff;
-  --color-black: #000;
 }
 
 :root {
-  --background: var(--color-orange-50);
-  --foreground: var(--color-black);
+  --background: #f3f0e8;
+  --foreground: #37352f;
+  --muted: #6b675e;
+  --link: #2563eb;
+  --link-hover: #1e40af;
+  --rule: #d4d0c6;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--color-zinc-900);
-    --foreground: var(--color-orange-100);
+    --background: #18181b;
+    --foreground: #ffedd5;
+    --muted: #b8afa0;
+    --link: #60a5fa;
+    --link-hover: #93c5fd;
+    --rule: #46464c;
   }
 }
 
@@ -43,19 +53,19 @@
   }
 
   a {
-    @apply hover:underline hover:text-blue-800 dark:hover:text-blue-300 decoration-2 font-medium;
+    @apply text-foreground hover:underline font-medium;
+    text-underline-offset: 0.15em;
   }
 
-  a img {
-    @apply hover:translate-x-px hover:translate-y-px hover:shadow-[3px_3px_0px_0px_var(--color-foreground)];
-  }
-
-  img {
-    @apply border-2 border-foreground shadow-[4px_4px_0px_0px_var(--color-foreground)];
+  :focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 4px;
   }
 }
 
 .prose {
+  overflow-wrap: anywhere;
+  --tw-prose-links: var(--link);
   --tw-prose-body: var(--color-foreground);
   --tw-prose-headings: var(--color-foreground);
   --tw-prose-lead: var(--color-foreground);
@@ -72,7 +82,18 @@
 }
 
 .prose figcaption {
-  @apply text-center text-sm mt-2 opacity-60;
+  @apply text-center text-sm mt-2 text-muted;
+}
+
+.content-link {
+  text-decoration-line: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+  text-decoration-thickness: 1px;
+}
+
+.content-link:is(:hover, :focus-visible) {
+  color: var(--link);
+  text-decoration-color: currentColor;
 }
 
 .no-scrollbar {

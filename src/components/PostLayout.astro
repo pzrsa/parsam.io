@@ -34,86 +34,83 @@ const ogImage = new URL(
 >
   <section>
     <div class="mb-6">
-      <h1 id="top" class="mb-2 text-3xl font-bold sm:text-4xl">
+      <h1 id="top" class="mb-2 text-2xl leading-snug font-semibold sm:text-3xl">
         {post.data.title}
         <span class="font-medium">
           {post.data.author ? ` (${post.data.author})` : ""}
         </span>
       </h1>
-      <div class="flex items-center gap-3 text-sm">
+      <div class="flex items-center gap-3 text-sm text-muted">
         <span class="flex-1">
-          {
-            post.data.date.toLocaleDateString("en-GB", {
-              day: "numeric",
-              month: "long",
-              year: "numeric",
-            })
-          }
+          {post.data.date.toLocaleDateString("en-GB", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          })}
         </span>
       </div>
     </div>
-    <div class="relative">
+    <div>
       <TableOfContents title={post.data.title} headings={headings} />
       <article>
-        <Prose
-          class="prose-headings:mt-7 prose-headings:mb-3 prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl"
-          ><Content /></Prose
-        >
+        <Prose class="prose-headings:mt-7 prose-headings:mb-3 prose-h1:text-2xl prose-h2:text-xl prose-h3:text-lg">
+          <Content />
+        </Prose>
       </article>
     </div>
-    <Prose class="prose-h3:text-xl mt-6 pt-8 border-t">
-      <h3>Enjoyed this post?</h3>
-      <p>
-        I'm planning to write more posts like this. Get the next one by email.
-      </p>
-      <NewsletterForm />
-      <p>And consider...</p>
-      <ul>
-        <li>
-          following me on{" "}
-          <a href="https://x.com/pzrsaa">Twitter/X</a>
-        </li>
-        <li>sharing this post with a friend</li>
-        <li>
-          sharing your thoughts over{" "}
-          <a href="mailto:hi@parsam.io">email</a>
-        </li>
-      </ul>
-    </Prose>
+    <footer class="mt-10 border-t border-rule pt-5">
+      <Prose class="prose-h3:mt-0 prose-h3:text-lg">
+        <h3>Enjoyed this post?</h3>
+        <p>
+          I'm planning to write more posts like this. Get the next one by email.
+        </p>
+        <NewsletterForm />
+        <p>And consider...</p>
+        <ul>
+          <li>
+            following me on <a href="https://x.com/pzrsaa">twitter/x</a>
+          </li>
+          <li>sharing this post with a friend</li>
+          <li>
+            sharing your thoughts over <a href="mailto:hi@parsam.io">email</a>
+          </li>
+        </ul>
+      </Prose>
+    </footer>
 
     <nav
       aria-label="More posts"
-      class="mt-8 grid grid-cols-3 items-center border-t-2 border-foreground pt-2 text-sm"
+      class="mt-6 grid grid-cols-3 items-center text-sm"
     >
-      {
-        older ? (
-          <a
-            href={`/${older.id}`}
-            title={older.data.title}
-            class="py-2 text-left font-normal"
-          >
-            prev
-          </a>
-        ) : (
-          <span />
-        )
-      }
-      <a href="#top" title="Go to top" class="py-2 text-center font-normal">
+      {older ? (
+        <a
+          href={`/${older.id}`}
+          title={older.data.title}
+          class="w-fit justify-self-start py-2 font-normal"
+        >
+          prev
+        </a>
+      ) : (
+        <span />
+      )}
+      <a
+        href="#top"
+        title="Go to top"
+        class="w-fit justify-self-center py-2 font-normal"
+      >
         back to top
       </a>
-      {
-        newer ? (
-          <a
-            href={`/${newer.id}`}
-            title={newer.data.title}
-            class="py-2 text-right font-normal"
-          >
-            next
-          </a>
-        ) : (
-          <span />
-        )
-      }
+      {newer ? (
+        <a
+          href={`/${newer.id}`}
+          title={newer.data.title}
+          class="w-fit justify-self-end py-2 font-normal"
+        >
+          next
+        </a>
+      ) : (
+        <span />
+      )}
     </nav>
   </section>
 </Layout>
