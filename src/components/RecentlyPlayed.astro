@@ -23,31 +23,24 @@ try {
 
 {!error && !data && <p>loading...</p>}
 
-{
-  error || !data?.tracks?.length ? (
-    <p>No recently played tracks</p>
-  ) : (
-    <div class="flex flex-col gap-2">
-      {data.tracks.map((track) => (
-        <div class="flex items-center gap-2 w-fit">
-          <a href={track.songUrl} target="_blank">
-            <img
-              alt={track.title}
-              src={track.albumImageUrl}
-              height={48}
-              width={48}
-              loading="lazy"
-              decoding="async"
-              class="size-12 object-cover"
-            />
-          </a>
-          <a href={track.songUrl} target="_blank" class="flex-1 min-w-0">
-            <span class="block line-clamp-1 text-sm">
-              <span class="font-bold">{track.title}</span> by {track.artist}
-            </span>
-          </a>
-        </div>
-      ))}
-    </div>
-  )
-}
+{error || !data?.tracks?.length ? (
+  <p>No recently played tracks</p>
+) : (
+  <ul class="min-w-0 max-w-full space-y-3 text-sm leading-relaxed">
+    {data.tracks.map((track) => (
+      <li class="min-w-0">
+        <a
+          href={track.songUrl}
+          target="_blank"
+          title={track.title}
+          class="content-link block w-fit max-w-full truncate"
+        >
+          {track.title}
+        </a>
+        <span title={track.artist} class="block truncate text-xs text-muted">
+          {track.artist}
+        </span>
+      </li>
+    ))}
+  </ul>
+)}

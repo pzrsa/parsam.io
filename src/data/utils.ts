@@ -12,8 +12,8 @@ export const getBlogPosts = async () => {
 export const getPostExcerpt = (post: CollectionEntry<"blog">) => {
   const text = markdown
     .parse(post.body ?? "", {})
-    .flatMap((token) =>
-      token.type === "inline"
+    .flatMap((token, index, tokens) =>
+      token.type === "inline" && tokens[index - 1]?.type === "paragraph_open"
         ? (token.children ?? [])
             .map((child) => {
               if (child.type === "text" || child.type === "code_inline") {

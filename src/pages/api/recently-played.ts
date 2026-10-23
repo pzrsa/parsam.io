@@ -4,7 +4,7 @@ import type { APIRoute } from "astro";
 import { getSpotifyAccessToken } from "../../lib/spotify";
 
 const RECENTLY_PLAYED_URL =
-  "https://api.spotify.com/v1/me/player/recently-played?limit=10";
+  "https://api.spotify.com/v1/me/player/recently-played?limit=5";
 
 export const GET: APIRoute = async () => {
   const accessToken = await getSpotifyAccessToken();

@@ -2,273 +2,173 @@
 import Layout from "../components/Layout.astro";
 import me from "../assets/avatar.webp";
 import Prose from "../components/Prose.astro";
-import NowPlaying from "../components/NowPlaying.astro";
-import RecentlyPlayed from "../components/RecentlyPlayed.astro";
-import NewsletterForm from "../components/NewsletterForm.astro";
+import Listening from "../components/Listening.astro";
 import PostList from "../components/PostList.astro";
 import { getCollection } from "astro:content";
 
-const [albums, books] = await Promise.all([
-  getCollection("albums"),
-  getCollection("books"),
-]);
+const books = await getCollection("books");
 
-const linksClass = "w-fit font-bold";
-const gridClass = "grid grid-cols-3 sm:grid-cols-4 gap-x-3 gap-y-5 not-prose";
-const thumbClass = "h-24 w-auto mb-2 block";
+const primaryLinks = [
+  ["twitter/x", "https://x.com/pzrsaa"],
+  ["linkedin", "https://www.linkedin.com/in/parsamesgarha"],
+  ["github", "https://github.com/pzrsa"],
+  ["youtube", "https://www.youtube.com/@pzrsa"],
+];
+
+const moreLinks = [
+  ["substack", "https://parsam.substack.com"],
+  ["letterboxd", "https://letterboxd.com/pzrsa/"],
+  ["instagram", "https://www.instagram.com/parsamesgarha"],
+  ["last.fm", "https://www.last.fm/user/pzrsa"],
+  ["spotify", "https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"],
+  ["source code", "https://github.com/pzrsa/parsam.io"],
+  ["monkeytype", "https://monkeytype.com/profile/pzrsa"],
+];
 ---
 
 <Layout image={new URL("home.png", Astro.url)}>
-  <h1 class="sr-only">Parsa Mesgarha</h1>
+  <main>
+    <h1 class="sr-only">Parsa Mesgarha</h1>
 
-  <script>
-    const toggle = document.getElementById("recently-played-toggle");
-    const content = document.getElementById("recently-played-content");
-    const arrow = document.getElementById("recently-played-arrow");
-
-    toggle?.addEventListener("click", () => {
-      const isExpanded = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", String(!isExpanded));
-      content?.classList.toggle("hidden");
-      if (arrow) {
-        arrow.style.transform = isExpanded ? "rotate(0deg)" : "rotate(90deg)";
-      }
-    });
-  </script>
-  <a href="https://x.com/pzrsaa" target="_blank" class="float-right ml-4 mb-2">
-    <img
-      alt="Parsa Mesgarha"
-      src={me.src}
-      loading="eager"
-      decoding="async"
-      class="size-20 sm:size-28"
-    />
-  </a>
-  <Prose>
-    <p>
-      I’m a Senior Machine Learning Engineer at{" "}
-      <a href="https://www.yaak.ai/" target="_blank">
-        Yaak
-      </a>
-      , where I lead all robotics work, from hardware and data collection to
-      training policies and deploying them on robots. Before that I was at{" "}
-      <span class="prose-a:text-tesla-red! dark:prose-a:text-red-500!">
-        <a href="https://www.tesla.com/" target="_blank">
-          Tesla
+    <a
+      href="https://x.com/pzrsaa"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="float-right mb-2 ml-5 size-14"
+    >
+      <img
+        alt="Parsa Mesgarha on twitter/x"
+        src={me.src}
+        width={56}
+        height={56}
+        loading="eager"
+        decoding="async"
+        class="size-14"
+      />
+    </a>
+    <Prose class="prose-p:first:mt-0">
+      <p>
+        I’m a Senior Machine Learning Engineer at{" "}
+        <a href="https://www.yaak.ai/" target="_blank">
+          Yaak
         </a>
-      </span>
-      , writing software for Gigafactory expansion, and I started my career at{" "}
-      <span class="prose-a:decoration-google-blue prose-a:hover:text-blue-800">
-        <a href="https://google.com/" target="_blank">
-          <span class="text-google-blue">G</span>
-          <span class="text-google-red">o</span>
-          <span class="text-google-yellow">o</span>
-          <span class="text-google-blue">g</span>
-          <span class="text-google-green">l</span>
-          <span class="text-google-red">e</span>
-        </a>
-      </span>{" "}
-      at 18 in London, working on{" "}
-      <a href="https://www.chromium.org/Home/" target="_blank">
-        Chrome
-      </a>
-      ,{" "}
-      <a href="https://source.android.com/" target="_blank">
-        Android
-      </a>{" "}
-      and{" "}
-      <a href="https://web.dev/" target="_blank">
-        the web platform
-      </a>
-      .
-    </p>
-
-    <p>
-      Born in England to Persian parents, grew up in London, now living in
-      Berlin.
-    </p>
-    <p>
-      I <a href="/blog">write</a> about robot learning, ML and engineering, and
-      sometimes life.
-    </p>
-    <p>
-      Say{" "}
-      <a href="mailto:hi@parsam.io" target="_blank">
-        hi
-      </a>
-      . I love meeting new people.
-    </p>
-    <div class="not-prose clear-right mb-4">
-      <NowPlaying server:defer />
-      <button
-        id="recently-played-toggle"
-        class="mt-4 flex items-center gap-2 font-bold hover:opacity-80"
-        aria-expanded="false"
-      >
-        <span id="recently-played-arrow" class="transition-transform">
-          ▶
+        , where I lead all robotics work, from hardware and data collection to
+        training models and deploying them on robots.
+      </p>
+      <p>
+        Before that I was at{" "}
+        <span class="prose-a:text-tesla-red! dark:prose-a:text-red-500!">
+          <a href="https://www.tesla.com/" target="_blank">
+            Tesla
+          </a>
         </span>
-        <span>recently played</span>
-      </button>
-      <div id="recently-played-content" class="hidden mt-2">
-        <RecentlyPlayed server:defer />
-      </div>
+        , writing software for Gigafactory expansion, and I started my career at{" "}
+        <span class="prose-a:decoration-google-blue prose-a:hover:text-blue-800">
+          <a href="https://google.com/" target="_blank">
+            <span class="text-google-blue">G</span>
+            <span class="text-google-red">o</span>
+            <span class="text-google-yellow">o</span>
+            <span class="text-google-blue">g</span>
+            <span class="text-google-green">l</span>
+            <span class="text-google-red">e</span>
+          </a>
+        </span>{" "}
+        at 18 in London, working on{" "}
+        <a href="https://www.chromium.org/Home/" target="_blank">
+          Chrome
+        </a>
+        ,{" "}
+        <a href="https://source.android.com/" target="_blank">
+          Android
+        </a>{" "}
+        and{" "}
+        <a href="https://web.dev/" target="_blank">
+          the web platform
+        </a>
+        .
+      </p>
+      <p>
+        Born in England to Persian parents, grew up in London, now living in
+        Berlin.
+      </p>
+      <p>
+        I <a href="/blog">write</a> about robot learning, ML and engineering,
+        and sometimes life. Say <a href="mailto:hi@parsam.io">hi</a>. I love
+        meeting new people.
+      </p>
+    </Prose>
+    <nav aria-label="Social links" class="mt-3 text-sm">
+      {primaryLinks.map(([label, href]) => (
+        <a
+          href={href}
+          target="_blank"
+          class="mr-px inline-block py-2 min-[360px]:mr-2 sm:mr-4"
+        >
+          {label}
+        </a>
+      ))}
+      <details id="more-links" class="inline">
+        <summary class="list-inside cursor-pointer py-2 text-muted hover:text-foreground [display:inline_list-item]">
+          more
+        </summary>
+        <ul class="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+          {moreLinks.map(([label, href]) => (
+            <li>
+              <a href={href} target="_blank" class="inline-block py-1">
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </details>
+    </nav>
+
+    <section aria-labelledby="writing-title" class="mt-9">
+      <h2 id="writing-title" class="mb-3 text-base font-semibold">
+        recent
+      </h2>
+      <PostList count={5} />
+      <p class="mt-4 text-sm">
+        <a href="/blog">view all →</a>
+      </p>
+    </section>
+
+    <div class="mt-10 grid gap-9 sm:grid-cols-2 sm:gap-8">
+      <section aria-labelledby="books-title" class="min-w-0">
+        <h2 id="books-title" class="mb-4 text-base font-semibold">
+          favourite books
+        </h2>
+        <ul class="space-y-3 text-sm leading-relaxed">
+          {books.map((book) => (
+            <li>
+              <a
+                href={
+                  book.data.notesSlug
+                    ? "/" + book.data.notesSlug
+                    : "https://books.google.com/books?id=" + book.id
+                }
+                target={book.data.notesSlug ? undefined : "_blank"}
+                class="content-link"
+              >
+                {book.data.title}
+              </a>
+              <span class="block text-xs text-muted">{book.data.author}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section aria-labelledby="listening-title" class="min-w-0">
+        <h2 id="listening-title" class="mb-4 text-base font-semibold">
+          listening
+        </h2>
+        <div class="min-h-96">
+          <Listening server:defer>
+            <p slot="fallback" class="text-xs text-muted">
+              loading listening history…
+            </p>
+          </Listening>
+        </div>
+      </section>
     </div>
-    <div>
-      <div>
-        <h3 class="border-t-2 border-foreground pt-4">recent</h3>
-        <PostList count={5} />
-        <h4>
-          <a href="/blog">view all →</a>
-        </h4>
-      </div>
-      <h3 class="border-t-2 border-foreground pt-4">newsletter</h3>
-      <NewsletterForm />
-      <h3 class="border-t-2 border-foreground pt-4">links</h3>
-      <div class="not-prose gap-1 grid grid-cols-3 sm:grid-cols-4">
-        <a class={linksClass} href="https://x.com/pzrsaa" target="_blank">
-          Twitter/X
-        </a>
-        <a class={linksClass} href="https://github.com/pzrsa" target="_blank">
-          GitHub
-        </a>
-        <a
-          class={linksClass}
-          href="https://www.linkedin.com/in/parsamesgarha"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
-        <a
-          class={linksClass}
-          href="https://www.youtube.com/@pzrsa"
-          target="_blank"
-        >
-          YouTube
-        </a>
-        <a
-          class={linksClass}
-          href="https://parsam.substack.com"
-          target="_blank"
-        >
-          Substack
-        </a>
-        <a
-          class={linksClass}
-          href="https://letterboxd.com/pzrsa/"
-          target="_blank"
-        >
-          Letterboxd
-        </a>
-        <a
-          class={linksClass}
-          href="https://www.instagram.com/parsamesgarha"
-          target="_blank"
-        >
-          Instagram
-        </a>
-        <a
-          class={linksClass}
-          href="https://www.last.fm/user/pzrsa"
-          target="_blank"
-        >
-          Last.fm
-        </a>
-        <a
-          class={linksClass}
-          href="https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
-          target="_blank"
-        >
-          Spotify
-        </a>
-        <a
-          class={linksClass}
-          href="https://github.com/pzrsa/parsam.io"
-          target="_blank"
-        >
-          Source Code
-        </a>
-        <a
-          class={linksClass}
-          href="https://monkeytype.com/profile/pzrsa"
-          target="_blank"
-        >
-          Monkeytype
-        </a>
-      </div>
-    </div>
-    <div>
-      <h2 class="border-t-2 border-foreground pt-4">favourites</h2>
-      <h3>books</h3>
-      <div class={gridClass}>
-        {books.map((book) => (
-          <div>
-            <a
-              class="block"
-              href={
-                book.data.notesSlug
-                  ? `/${book.data.notesSlug}`
-                  : `https://books.google.com/books?id=${book.id}`
-              }
-              target={book.data.notesSlug ? undefined : "_blank"}
-            >
-              <img
-                src={`https://books.google.com/books/content?id=${book.id}&printsec=frontcover&img=1&zoom=1`}
-                alt={book.data.title}
-                width={85}
-                height={128}
-                loading="lazy"
-                class={thumbClass}
-              />
-            </a>
-            <a
-              class="block text-sm font-bold"
-              href={
-                book.data.notesSlug
-                  ? `/${book.data.notesSlug}`
-                  : `https://books.google.com/books?id=${book.id}`
-              }
-              target={book.data.notesSlug ? undefined : "_blank"}
-            >
-              {book.data.title}
-            </a>
-            <div class="text-xs opacity-60">
-              {book.data.author} · {book.data.year}
-            </div>
-          </div>
-        ))}
-      </div>
-      <h3>music</h3>
-      <div class={gridClass}>
-        {albums.map((album) => (
-          <div>
-            <a
-              class="block"
-              href={`https://open.spotify.com/album/${album.id}`}
-              target="_blank"
-            >
-              <img
-                src={`https://i.scdn.co/image/${album.data.imageID}`}
-                alt={album.data.title}
-                width={128}
-                height={128}
-                loading="lazy"
-                class={thumbClass}
-              />
-            </a>
-            <a
-              class="block text-sm font-bold"
-              href={`https://open.spotify.com/album/${album.id}`}
-              target="_blank"
-            >
-              {album.data.title}
-            </a>
-            <div class="text-xs opacity-60">
-              {album.data.artist} · {album.data.year}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </Prose>
+  </main>
 </Layout>

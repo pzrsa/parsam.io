@@ -1,21 +1,16 @@
----
-import name from "../assets/name.svg";
-
-const mask = `url(${name.src}) no-repeat left center / contain`;
----
-
 <nav
-  class="mb-6 flex items-center justify-between gap-4 border-b-2 border-foreground py-2"
+  aria-label="Main navigation"
+  class="mb-10 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2"
 >
-  <a href="/" class="shrink-0 hover:opacity-80">
-    <span
-      role="img"
-      aria-label="Parsa Mesgarha"
-      class="block bg-foreground h-4.5 sm:h-5 aspect-1601/155"
-      style={`mask: ${mask}; -webkit-mask: ${mask};`}></span>
+  <a href="/" class="text-lg font-semibold text-foreground">
+    Parsa Mesgarha
   </a>
-  <div class="flex items-center gap-2">
-    <a href="/blog">blog</a>
-    <a href="https://parsam.substack.com/subscribe">subscribe</a>
+  <div class="flex gap-4 text-sm">
+    <a href="/blog" class="py-2">
+      blog
+    </a>
+    <a href="https://parsam.substack.com/subscribe" class="py-2">
+      subscribe
+    </a>
   </div>
 </nav>
