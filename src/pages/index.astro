@@ -102,7 +102,7 @@ const moreLinks = [
         <a
           href={href}
           target="_blank"
-          class="mr-px inline-block py-2 min-[360px]:mr-2 sm:mr-4"
+          class="mr-px inline-block py-2 hover:text-link focus-visible:text-link min-[360px]:mr-2 sm:mr-4"
         >
           {label}
         </a>
@@ -114,7 +114,11 @@ const moreLinks = [
         <ul class="mt-2 flex flex-wrap gap-x-4 gap-y-1">
           {moreLinks.map(([label, href]) => (
             <li>
-              <a href={href} target="_blank" class="inline-block py-1">
+              <a
+                href={href}
+                target="_blank"
+                class="inline-block py-1 hover:text-link focus-visible:text-link"
+              >
                 {label}
               </a>
             </li>
@@ -148,11 +152,26 @@ const moreLinks = [
                     : "https://books.google.com/books?id=" + book.id
                 }
                 target={book.data.notesSlug ? undefined : "_blank"}
-                class="content-link"
+                class="group flex w-fit max-w-full items-start gap-3 hover:no-underline"
               >
-                {book.data.title}
+                <img
+                  src={`https://books.google.com/books/content?id=${book.id}&printsec=frontcover&img=1&zoom=1`}
+                  alt=""
+                  width={32}
+                  height={48}
+                  loading="lazy"
+                  decoding="async"
+                  class="h-12 w-8 shrink-0 object-cover"
+                />
+                <span class="min-w-0">
+                  <span class="content-link group-hover:text-link">
+                    {book.data.title}
+                  </span>
+                  <span class="block text-xs font-normal text-muted">
+                    {book.data.author}
+                  </span>
+                </span>
               </a>
-              <span class="block text-xs text-muted">{book.data.author}</span>
             </li>
           ))}
         </ul>
