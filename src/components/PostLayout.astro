@@ -40,18 +40,21 @@ const ogImage = new URL(
           {post.data.author ? ` (${post.data.author})` : ""}
         </span>
       </h1>
-      <div class="flex items-center gap-3 text-sm text-muted">
-        <span class="flex-1">
+      <div class="text-sm text-muted">
+        <time
+          datetime={post.data.date.toISOString().slice(0, 10)}
+          class="mr-4 inline-block"
+        >
           {post.data.date.toLocaleDateString("en-GB", {
             day: "numeric",
             month: "long",
             year: "numeric",
           })}
-        </span>
+        </time>
+        <TableOfContents title={post.data.title} headings={headings} />
       </div>
     </div>
     <div>
-      <TableOfContents title={post.data.title} headings={headings} />
       <article>
         <Prose class="prose-headings:mt-7 prose-headings:mb-3 prose-h1:text-2xl prose-h2:text-xl prose-h3:text-lg">
           <Content />

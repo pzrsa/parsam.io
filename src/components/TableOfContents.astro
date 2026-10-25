@@ -12,8 +12,8 @@ const entries = headings.filter((heading) => heading.depth <= top + 1);
 ---
 
 {entries.length >= 3 && (
-  <details class="not-prose mb-7 text-sm">
-    <summary class="w-fit cursor-pointer text-muted hover:text-foreground">
+  <details class="not-prose inline text-sm">
+    <summary class="list-inside cursor-pointer whitespace-nowrap text-muted hover:text-foreground [display:inline_list-item]">
       contents
     </summary>
     <ul class="mt-3 space-y-2 leading-relaxed">

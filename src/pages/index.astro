@@ -97,12 +97,12 @@ const moreLinks = [
         meeting new people.
       </p>
     </Prose>
-    <nav aria-label="Social links" class="mt-3 text-sm">
+    <nav aria-label="Social links" class="mt-3 whitespace-nowrap text-sm">
       {primaryLinks.map(([label, href]) => (
         <a
           href={href}
           target="_blank"
-          class="mr-px inline-block py-2 hover:text-link focus-visible:text-link min-[360px]:mr-2 sm:mr-4"
+          class="mr-1 inline-block py-2 hover:text-link focus-visible:text-link sm:mr-4"
         >
           {label}
         </a>
@@ -111,7 +111,7 @@ const moreLinks = [
         <summary class="list-inside cursor-pointer py-2 text-muted hover:text-foreground [display:inline_list-item]">
           more
         </summary>
-        <ul class="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+        <ul class="mt-2 flex flex-wrap gap-x-4 gap-y-1 whitespace-normal">
           {moreLinks.map(([label, href]) => (
             <li>
               <a
