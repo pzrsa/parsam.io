@@ -48,7 +48,7 @@ const covers = await Promise.all(
           ]}
         >
           {cover ? (
-            <a href={`/${post.id}`} class="shrink-0">
+            <a href={`/${post.id}`} class="post-cover shrink-0">
               <Image
                 src={cover}
                 alt={post.data.title}
@@ -62,7 +62,7 @@ const covers = await Promise.all(
             <span class="shrink-0 w-20" />
           )}
           <span class="flex-1 min-w-0">
-            <a href={`/${post.id}`} class="block">
+            <a href={`/${post.id}`} class="post-link block">
               <span class="block">
                 <span class="font-bold text-lg">{post.data.title}</span>
                 {post.data.author && (
@@ -87,3 +87,10 @@ const covers = await Promise.all(
     );
   })}
 </ul>
+
+<style>
+  .post-cover:is(:hover, :focus-visible) + span > .post-link {
+    color: var(--link-hover);
+    text-decoration-line: underline;
+  }
+</style>
