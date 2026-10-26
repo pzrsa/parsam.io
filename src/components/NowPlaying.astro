@@ -1,4 +1,6 @@
 ---
+import MediaRow from "./MediaRow.astro";
+
 interface NowPlaying {
   isPlaying: boolean;
   title?: string;
@@ -22,32 +24,18 @@ try {
 ---
 
 {!error && data?.isPlaying ? (
-  <div class="flex min-w-0 max-w-full items-start gap-3 text-sm leading-relaxed">
-    <a href={data.songUrl} target="_blank" class="shrink-0">
-      <img
-        alt={data.title}
-        src={data.albumImageUrl}
-        width="48"
-        height="48"
-        loading="eager"
-        decoding="async"
-        class="size-12 object-cover"
-      />
-    </a>
-    <div class="min-w-0 flex-1">
-      <p class="text-xs text-muted">now playing</p>
-      <a
-        href={data.songUrl}
-        target="_blank"
-        title={data.title}
-        class="content-link block w-fit max-w-full truncate"
-      >
-        {data.title}
-      </a>
-      <p title={data.artist} class="truncate text-xs text-muted">
-        {data.artist}
-      </p>
-    </div>
+  <div class="min-w-0">
+    <p class="mb-3 text-xs text-muted">now playing</p>
+    <MediaRow
+      href={
+        data.songUrl ??
+        "https://open.spotify.com/user/e4ebkdi70a4wu03jwbwrglzhk"
+      }
+      title={data.title ?? ""}
+      subtitle={data.artist ?? ""}
+      image={data.albumImageUrl}
+      eager
+    />
   </div>
 ) : (
   <p class="text-xs">

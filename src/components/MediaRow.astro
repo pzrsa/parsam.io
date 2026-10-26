@@ -1,0 +1,54 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  subtitle: string;
+  image?: string;
+  imageHeight?: number;
+  external?: boolean;
+  eager?: boolean;
+}
+
+const {
+  href,
+  title,
+  subtitle,
+  image,
+  imageHeight = 40,
+  external = true,
+  eager = false,
+} = Astro.props;
+---
+
+<a
+  href={href}
+  target={external ? "_blank" : undefined}
+  rel={external ? "noopener noreferrer" : undefined}
+  title={title}
+  class="media-row grid w-fit max-w-full grid-cols-[2.5rem_minmax(0,1fr)] items-center gap-3 hover:no-underline"
+>
+  <span class="flex w-10 items-center">
+    {image && (
+      <img
+        src={image}
+        alt=""
+        width={40}
+        height={imageHeight}
+        loading={eager ? "eager" : "lazy"}
+        decoding="async"
+        class="h-auto max-h-15 w-10 object-contain"
+      />
+    )}
+  </span>
+  <span class="min-w-0">
+    <span class="content-link block truncate text-sm font-medium leading-5">
+      {title}
+    </span>
+    <span
+      title={subtitle}
+      class="block truncate text-xs font-normal leading-4 text-muted"
+    >
+      {subtitle}
+    </span>
+  </span>
+</a>

@@ -1,4 +1,6 @@
 ---
+import MediaRow from "./MediaRow.astro";
+
 interface Track {
   title: string;
   artist: string;
@@ -29,17 +31,12 @@ try {
   <ul class="min-w-0 max-w-full space-y-3 text-sm leading-relaxed">
     {data.tracks.map((track) => (
       <li class="min-w-0">
-        <a
+        <MediaRow
           href={track.songUrl}
-          target="_blank"
           title={track.title}
-          class="content-link block w-fit max-w-full truncate"
-        >
-          {track.title}
-        </a>
-        <span title={track.artist} class="block truncate text-xs text-muted">
-          {track.artist}
-        </span>
+          subtitle={track.artist}
+          image={track.albumImageUrl}
+        />
       </li>
     ))}
   </ul>

@@ -19,25 +19,25 @@
   --color-google-yellow: #f4c20d;
   --color-google-green: #3cba54;
   --color-tesla-red: #cc0000;
+  --color-white: #fff;
+  --color-black: #000;
 }
 
 :root {
-  --background: #f3f0e8;
-  --foreground: #37352f;
-  --muted: #6b675e;
-  --link: #2563eb;
-  --link-hover: #1e40af;
-  --rule: #d4d0c6;
+  --background: var(--color-orange-50);
+  --foreground: var(--color-black);
+  --muted: color-mix(in srgb, var(--foreground) 60%, transparent);
+  --link: var(--color-blue-600);
+  --link-hover: var(--color-blue-800);
+  --rule: var(--foreground);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #18181b;
-    --foreground: #ffedd5;
-    --muted: #b8afa0;
-    --link: #60a5fa;
-    --link-hover: #93c5fd;
-    --rule: #46464c;
+    --background: var(--color-zinc-900);
+    --foreground: var(--color-orange-100);
+    --link: var(--color-blue-400);
+    --link-hover: var(--color-blue-300);
   }
 }
 
@@ -53,8 +53,16 @@
   }
 
   a {
-    @apply text-foreground hover:underline font-medium;
+    @apply text-foreground hover:text-link-hover hover:underline decoration-2 font-medium;
     text-underline-offset: 0.15em;
+  }
+
+  a img {
+    @apply hover:translate-x-px hover:translate-y-px hover:shadow-[3px_3px_0px_0px_var(--color-foreground)];
+  }
+
+  img {
+    @apply border-2 border-foreground shadow-[4px_4px_0px_0px_var(--color-foreground)];
   }
 
   :focus-visible {
@@ -91,8 +99,9 @@
   text-decoration-thickness: 1px;
 }
 
-.content-link:is(:hover, :focus-visible) {
-  color: var(--link);
+.content-link:is(:hover, :focus-visible),
+.media-row:is(:hover, :focus-visible) .content-link {
+  color: var(--link-hover);
   text-decoration-color: currentColor;
 }
 

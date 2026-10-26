@@ -1,0 +1,30 @@
+- id: "uzkX3Vpj3ywC"
+  title: "Fooled by Randomness"
+  author: "Nassim Nicholas Taleb"
+  year: "2001"
+
+- id: "B1hSG45JCX4C"
+  title: "Dune"
+  author: "Frank Herbert"
+  year: "1965"
+
+- id: "2unAEAAAQBAJ"
+  title: "Poor Charlie's Almanack"
+  author: "Charles T. Munger"
+  year: "2005"
+
+- id: "COVJBgAAQBAJ"
+  title: "Anything You Want"
+  author: "Derek Sivers"
+  year: "2011"
+  notesSlug: "anything-you-want"
+
+- id: "dMMqzwEACAAJ"
+  title: "How to Live"
+  author: "Derek Sivers"
+  year: "2021"
+# Other favourites (uncomment to include).
+# - id: "XWlcAQAAQBAJ"
+#   title: "The Outsider"
+#   author: "Albert Camus"
+#   year: "1942"

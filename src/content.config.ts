@@ -13,9 +13,7 @@ const blog = defineCollection({
 });
 
 const albums = defineCollection({
-  loader: file("src/data/favourites.json", {
-    parser: (text) => JSON.parse(text).albums,
-  }),
+  loader: file("src/data/albums.yaml"),
   schema: z.object({
     title: z.string(),
     artist: z.string(),
@@ -25,9 +23,7 @@ const albums = defineCollection({
 });
 
 const films = defineCollection({
-  loader: file("src/data/favourites.json", {
-    parser: (text) => JSON.parse(text).films,
-  }),
+  loader: file("src/data/films.yaml"),
   schema: z.object({
     title: z.string(),
     year: z.string(),
@@ -36,9 +32,7 @@ const films = defineCollection({
 });
 
 const books = defineCollection({
-  loader: file("src/data/favourites.json", {
-    parser: (text) => JSON.parse(text).books,
-  }),
+  loader: file("src/data/books.yaml"),
   schema: z.object({
     title: z.string(),
     author: z.string(),

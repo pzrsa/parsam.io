@@ -1,12 +1,16 @@
 ---
 import Layout from "../components/Layout.astro";
+import { getCollection } from "astro:content";
 import me from "../assets/avatar.webp";
 import Prose from "../components/Prose.astro";
 import Listening from "../components/Listening.astro";
+import FavouriteAlbums from "../components/FavouriteAlbums.astro";
+import MediaRow from "../components/MediaRow.astro";
 import PostList from "../components/PostList.astro";
-import { getCollection } from "astro:content";
 
-const books = await getCollection("books");
+const books = (await getCollection("books")).sort((a, b) =>
+  a.data.title.localeCompare(b.data.title, "en"),
+);
 
 const primaryLinks = [
   ["twitter/x", "https://x.com/pzrsaa"],
@@ -97,18 +101,18 @@ const moreLinks = [
         meeting new people.
       </p>
     </Prose>
-    <nav aria-label="Social links" class="mt-3 whitespace-nowrap text-sm">
+    <nav aria-label="Social links" class="mt-3 text-sm">
       {primaryLinks.map(([label, href]) => (
         <a
           href={href}
           target="_blank"
-          class="mr-1 inline-block py-2 hover:text-link focus-visible:text-link sm:mr-4"
+          class="mr-px inline-block py-2 text-link hover:text-link-hover focus-visible:text-link-hover min-[360px]:mr-1 sm:mr-4"
         >
           {label}
         </a>
       ))}
       <details id="more-links" class="inline">
-        <summary class="list-inside cursor-pointer py-2 text-muted hover:text-foreground [display:inline_list-item]">
+        <summary class="list-inside cursor-pointer whitespace-nowrap py-2 text-muted hover:text-foreground [display:inline_list-item]">
           more
         </summary>
         <ul class="mt-2 flex flex-wrap gap-x-4 gap-y-1 whitespace-normal">
@@ -117,7 +121,7 @@ const moreLinks = [
               <a
                 href={href}
                 target="_blank"
-                class="inline-block py-1 hover:text-link focus-visible:text-link"
+                class="inline-block py-1 text-link hover:text-link-hover focus-visible:text-link-hover"
               >
                 {label}
               </a>
@@ -127,67 +131,58 @@ const moreLinks = [
       </details>
     </nav>
 
-    <section aria-labelledby="writing-title" class="mt-9">
-      <h2 id="writing-title" class="mb-3 text-base font-semibold">
+    <section
+      aria-labelledby="writing-title"
+      class="mt-8 border-t-2 border-foreground pt-4"
+    >
+      <h2 id="writing-title" class="mb-4 text-xl font-bold">
         recent
       </h2>
       <PostList count={5} />
-      <p class="mt-4 text-sm">
+      <p class="mt-4 font-bold">
         <a href="/blog">view all →</a>
       </p>
     </section>
 
-    <div class="mt-10 grid gap-9 sm:grid-cols-2 sm:gap-8">
+    <section
+      aria-labelledby="listening-title"
+      class="mt-8 min-w-0 border-t-2 border-foreground pt-4"
+    >
+      <h2 id="listening-title" class="mb-4 text-base font-semibold">
+        listening
+      </h2>
+      <Listening server:defer>
+        <p slot="fallback" class="text-xs text-muted">
+          loading listening history…
+        </p>
+      </Listening>
+    </section>
+
+    <div class="mt-8 grid gap-9 sm:grid-cols-2 sm:gap-8">
       <section aria-labelledby="books-title" class="min-w-0">
         <h2 id="books-title" class="mb-4 text-base font-semibold">
           favourite books
         </h2>
         <ul class="space-y-3 text-sm leading-relaxed">
-          {books.map((book) => (
+          {books.map(({ id, data: book }) => (
             <li>
-              <a
+              <MediaRow
                 href={
-                  book.data.notesSlug
-                    ? "/" + book.data.notesSlug
-                    : "https://books.google.com/books?id=" + book.id
+                  book.notesSlug
+                    ? "/" + book.notesSlug
+                    : "https://books.google.com/books?id=" + id
                 }
-                target={book.data.notesSlug ? undefined : "_blank"}
-                class="group flex w-fit max-w-full items-start gap-3 hover:no-underline"
-              >
-                <img
-                  src={`https://books.google.com/books/content?id=${book.id}&printsec=frontcover&img=1&zoom=1`}
-                  alt=""
-                  width={32}
-                  height={48}
-                  loading="lazy"
-                  decoding="async"
-                  class="h-12 w-8 shrink-0 object-cover"
-                />
-                <span class="min-w-0">
-                  <span class="content-link group-hover:text-link">
-                    {book.data.title}
-                  </span>
-                  <span class="block text-xs font-normal text-muted">
-                    {book.data.author}
-                  </span>
-                </span>
-              </a>
+                title={book.title}
+                subtitle={book.author}
+                image={`https://books.google.com/books/content?id=${id}&printsec=frontcover&img=1&zoom=1`}
+                imageHeight={60}
+                external={!book.notesSlug}
+              />
             </li>
           ))}
         </ul>
       </section>
-      <section aria-labelledby="listening-title" class="min-w-0">
-        <h2 id="listening-title" class="mb-4 text-base font-semibold">
-          listening
-        </h2>
-        <div class="min-h-96">
-          <Listening server:defer>
-            <p slot="fallback" class="text-xs text-muted">
-              loading listening history…
-            </p>
-          </Listening>
-        </div>
-      </section>
+      <FavouriteAlbums />
     </div>
   </main>
 </Layout>

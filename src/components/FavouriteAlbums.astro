@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import MediaRow from "./MediaRow.astro";
+
+const albums = (await getCollection("albums")).sort((a, b) =>
+  a.data.title.localeCompare(b.data.title, "en"),
+);
+---
+
+<section aria-labelledby="albums-title" class="min-w-0">
+  <h2 id="albums-title" class="mb-4 text-base font-semibold">
+    favourite albums
+  </h2>
+  <ul class="space-y-3 text-sm leading-relaxed">
+    {albums.map(({ id, data: album }) => (
+      <li class="min-w-0">
+        <MediaRow
+          href={`https://open.spotify.com/album/${id}`}
+          title={album.title}
+          subtitle={album.artist}
+          image={`https://i.scdn.co/image/${album.imageID}`}
+        />
+      </li>
+    ))}
+  </ul>
+</section>
