@@ -8,18 +8,18 @@
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^14.3.4",
-    "@astrojs/markdown-remark": "^7.3.2",
-    "@astrojs/mdx": "^8.0.3",
-    "@astrojs/preact": "^6.0.6",
+    "@astrojs/cloudflare": "^14.4.2",
+    "@astrojs/markdown-remark": "^7.3.4",
+    "@astrojs/mdx": "^8.1.1",
+    "@astrojs/preact": "^6.1.1",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
-    "@linear/sdk": "^97.1.0",
+    "@linear/sdk": "^99.0.0",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.3.8",
-    "markdown-it": "^15.0.2",
-    "preact": "^11.0.1",
-    "sanitize-html": "^2.18.0",
+    "astro": "^7.4.2",
+    "markdown-it": "^15.0.3",
+    "preact": "^11.0.2",
+    "sanitize-html": "^2.18.1",
     "tailwindcss": "^4.3.3",
     "workers-og": "^0.0.27"
   },
@@ -27,8 +27,8 @@
     "@tailwindcss/typography": "^0.5.20",
     "@types/markdown-it": "^14.2.0",
     "@types/sanitize-html": "^2.16.2",
-    "prettier-plugin-astro": "^1.1.1",
-    "wrangler": "^4.149.0"
+    "prettier-plugin-astro": "^1.1.2",
+    "wrangler": "^4.152.0"
   },
   "prettier": {
     "plugins": ["prettier-plugin-astro"],
