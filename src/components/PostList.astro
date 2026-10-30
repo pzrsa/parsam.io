@@ -41,56 +41,48 @@ const covers = await Promise.all(
         {showDates && firstForYear && (
           <span class="mb-3 flex justify-end text-sm font-bold">{year}</span>
         )}
-        <span
-          class:list={[
-            "flex gap-3 items-center",
-            showDates && lastForYear && "mb-4",
-          ]}
-        >
-          {cover ? (
-            <a href={`/${post.id}`} class="post-cover shrink-0">
-              <Image
-                src={cover}
-                alt={post.data.title}
-                width={160}
-                height={96}
-                fit="cover"
-                class="h-12 w-20 object-cover hover:translate-x-px hover:translate-y-px hover:shadow-[3px_3px_0px_0px_var(--color-foreground)]"
-              />
-            </a>
-          ) : (
-            <span class="shrink-0 w-20" />
-          )}
-          <span class="flex-1 min-w-0">
-            <a href={`/${post.id}`} class="post-link block">
-              <span class="block">
-                <span class="font-bold text-lg">{post.data.title}</span>
-                {post.data.author && (
-                  <span class="text-sm"> ({post.data.author})</span>
-                )}
-              </span>
-              <span class="block line-clamp-2 text-sm opacity-60">
-                {getPostExcerpt(post)}
-              </span>
-            </a>
-          </span>
+        <div class:list={["post-row", showDates && lastForYear && "mb-4"]}>
           {showDates && (
-            <span class="shrink-0 text-sm">
+            <time
+              datetime={post.data.date.toISOString().slice(0, 10)}
+              class="mb-1.5 block text-right text-sm text-muted"
+            >
               {post.data.date.toLocaleDateString("en-GB", {
                 day: "numeric",
                 month: "short",
               })}
-            </span>
+            </time>
           )}
-        </span>
+          <a
+            href={`/${post.id}`}
+            class="post-body group/entry flex items-start gap-4 text-foreground no-underline max-[480px]:gap-3"
+          >
+            <span class="min-w-0 flex-1 wrap-anywhere">
+              <span class="post-link text-lg font-bold decoration-1 underline-offset-[0.15em] group-hover/entry:text-link-hover group-hover/entry:underline group-focus-visible/entry:text-link-hover group-focus-visible/entry:underline">
+                {post.data.title}
+              </span>
+              {post.data.author && (
+                <span class="text-sm"> ({post.data.author})</span>
+              )}
+              <span class="mt-1.5 line-clamp-2 text-sm leading-normal font-normal text-muted">
+                {getPostExcerpt(post)}
+              </span>
+            </span>
+            {cover && (
+              <span class="post-cover block aspect-3/2 w-24 flex-none bg-foreground/3 max-[480px]:w-18">
+                <Image
+                  src={cover}
+                  alt=""
+                  width={240}
+                  height={160}
+                  fit="cover"
+                  class="block h-full w-full object-cover shadow-none transform-none"
+                />
+              </span>
+            )}
+          </a>
+        </div>
       </li>
     );
   })}
 </ul>
-
-<style>
-  .post-cover:is(:hover, :focus-visible) + span > .post-link {
-    color: var(--link-hover);
-    text-decoration-line: underline;
-  }
-</style>
