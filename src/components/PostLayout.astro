@@ -5,6 +5,7 @@ import Layout from "./Layout.astro";
 import Prose from "./Prose.astro";
 import TableOfContents from "./TableOfContents.astro";
 import NewsletterForm from "./NewsletterForm.astro";
+import PostImageZoom from "./PostImageZoom.astro";
 import { getBlogPosts, getPostDescription } from "../data/utils";
 
 interface Props {
@@ -56,7 +57,7 @@ const ogImage = new URL(
     </div>
     <div>
       <article>
-        <Prose class="prose-headings:mt-7 prose-headings:mb-3 prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl">
+        <Prose class="prose-headings:mt-7 prose-headings:mb-3 prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl prose-img:border-foreground/18">
           <Content />
         </Prose>
       </article>
@@ -116,6 +117,7 @@ const ogImage = new URL(
       )}
     </nav>
   </section>
+  <PostImageZoom />
 </Layout>
 
 <script>

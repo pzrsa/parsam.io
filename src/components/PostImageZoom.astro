@@ -1,0 +1,70 @@
+<dialog
+  id="post-image-zoom"
+  aria-label="Enlarged image"
+  class="fixed inset-0 m-auto h-fit w-fit max-h-none max-w-none overflow-visible border-0 bg-transparent p-0 text-white backdrop:bg-black/85"
+>
+  <img
+    alt=""
+    decoding="async"
+    class="m-0 h-auto max-h-[calc(100dvh-2rem)] w-auto max-w-[calc(100vw-2rem)] cursor-zoom-out border-0 object-contain sm:max-h-[calc(100dvh-4rem)] sm:max-w-[calc(100vw-4rem)]"
+  />
+</dialog>
+
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>("#post-image-zoom");
+  const preview = dialog?.querySelector("img");
+
+  if (dialog && preview && typeof dialog.showModal === "function") {
+    const root = document.documentElement;
+    let trigger: HTMLAnchorElement | undefined;
+    let overflow = "";
+    let scrollbarGutter = "";
+
+    for (const image of document.querySelectorAll<HTMLImageElement>(
+      "article img",
+    )) {
+      if (image.closest("a, button")) continue;
+
+      const link = document.createElement("a");
+      link.href = image.currentSrc || image.src;
+      link.className = "cursor-zoom-in no-underline";
+      link.title = "Enlarge image";
+      image.before(link);
+      link.append(image);
+
+      link.addEventListener("click", (event) => {
+        if (
+          event.defaultPrevented ||
+          event.button !== 0 ||
+          event.metaKey ||
+          event.ctrlKey ||
+          event.shiftKey ||
+          event.altKey
+        )
+          return;
+
+        event.preventDefault();
+        trigger = link;
+        preview.src = image.currentSrc || image.src;
+        preview.alt = image.alt;
+        overflow = root.style.overflow;
+        scrollbarGutter = root.style.scrollbarGutter;
+        root.style.scrollbarGutter = "stable";
+        root.style.overflow = "hidden";
+        dialog.showModal();
+      });
+    }
+
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog || event.target === preview) dialog.close();
+    });
+
+    dialog.addEventListener("close", () => {
+      root.style.overflow = overflow;
+      root.style.scrollbarGutter = scrollbarGutter;
+      preview.removeAttribute("src");
+      preview.alt = "";
+      trigger?.focus({ preventScroll: true });
+    });
+  }
+</script>
