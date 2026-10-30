@@ -58,7 +58,7 @@ const covers = await Promise.all(
             class="post-body group/entry flex items-start gap-4 text-foreground no-underline max-[480px]:gap-3"
           >
             <span class="min-w-0 flex-1 wrap-anywhere">
-              <span class="post-link text-lg font-bold decoration-1 underline-offset-[0.15em] group-hover/entry:text-link-hover group-hover/entry:underline group-focus-visible/entry:text-link-hover group-focus-visible/entry:underline">
+              <span class="post-link text-lg font-bold underline decoration-current/40 decoration-1 underline-offset-[0.15em] group-hover/entry:text-link-hover group-hover/entry:decoration-current group-focus-visible/entry:text-link-hover group-focus-visible/entry:decoration-current">
                 {post.data.title}
               </span>
               {post.data.author && (

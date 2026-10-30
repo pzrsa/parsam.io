@@ -53,8 +53,7 @@
   }
 
   a {
-    @apply text-foreground hover:text-link-hover hover:underline decoration-2 font-medium;
-    text-underline-offset: 0.15em;
+    @apply text-foreground font-medium underline decoration-current/40 decoration-1 underline-offset-[0.15em] hover:text-link-hover hover:decoration-current focus-visible:text-link-hover focus-visible:decoration-current;
   }
 
   a:is(:hover, :focus-visible) img {
@@ -91,18 +90,6 @@
 
 .prose figcaption {
   @apply text-center text-sm mt-2 text-muted;
-}
-
-.content-link {
-  text-decoration-line: underline;
-  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
-  text-decoration-thickness: 1px;
-}
-
-.content-link:is(:hover, :focus-visible),
-.media-row:is(:hover, :focus-visible) .content-link {
-  color: var(--link-hover);
-  text-decoration-color: currentColor;
 }
 
 .no-scrollbar {
