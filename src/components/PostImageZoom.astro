@@ -16,7 +16,7 @@
 
   if (dialog && preview && typeof dialog.showModal === "function") {
     const root = document.documentElement;
-    let trigger: HTMLAnchorElement | undefined;
+    let trigger: HTMLButtonElement | undefined;
     let overflow = "";
     let scrollbarGutter = "";
 
@@ -25,26 +25,16 @@
     )) {
       if (image.closest("a, button")) continue;
 
-      const link = document.createElement("a");
-      link.href = image.currentSrc || image.src;
-      link.className = "cursor-zoom-in no-underline";
-      link.title = "Enlarge image";
-      image.before(link);
-      link.append(image);
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className =
+        "my-[2em] block w-fit max-w-full cursor-zoom-in border-0 bg-transparent p-0 [figure_&]:my-0 [&_img]:m-0";
+      button.title = "Enlarge image";
+      image.before(button);
+      button.append(image);
 
-      link.addEventListener("click", (event) => {
-        if (
-          event.defaultPrevented ||
-          event.button !== 0 ||
-          event.metaKey ||
-          event.ctrlKey ||
-          event.shiftKey ||
-          event.altKey
-        )
-          return;
-
-        event.preventDefault();
-        trigger = link;
+      button.addEventListener("click", () => {
+        trigger = button;
         preview.src = image.currentSrc || image.src;
         preview.alt = image.alt;
         overflow = root.style.overflow;
